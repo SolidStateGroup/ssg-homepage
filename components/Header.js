@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { withRouter } from 'next/router';
 import Link from 'next/link';
 import Popover from './base/Popover';
 import Button from './base/forms/Button';
@@ -17,17 +18,17 @@ class Header extends PureComponent {
   render() {
       // todo: fix
       const isLegal = false;
-      const isHomepage = true;
+      const isHomepage = this.props.router.pathname === '/';
       const redirect = '';
-      const isDark = false;
-
+      const isDark = !isHomepage;
       return (
       <>
+          {isHomepage && (
           <nav className="show navbar navbar__master-brand">
               <div className="navbar-left">
                   <div className="navbar-nav">
 
-                      <a
+                      <Link
                         href="https://labs.solidstategroup.com/" target="__blank"
                         className="nav-item nav-item-brand nav-link"
                       >
@@ -37,7 +38,7 @@ class Header extends PureComponent {
                                 className="brand"
                               />
                           </div>
-                      </a>
+                      </Link>
 
                   </div>
               </div>
@@ -47,7 +48,7 @@ class Header extends PureComponent {
                     style={{ padding: 10 }} className="popover-right"
                     renderTitle={(toggle, isActive) => (
                         <div className="products-button" onClick={toggle}>
-                  Products
+                            Products
                             <ion
                               className={isActive ? 'ion-ios-arrow-dropup' : 'ion-ios-arrow-dropdown'}
                             />
@@ -89,6 +90,7 @@ class Header extends PureComponent {
                   </Popover>
               </div>
           </nav>
+          )}
           <nav
             className={`navbar navbar-fixed-top ${isHomepage ? ' navbar-homepage ' : ''}${isLegal ? 'navbar-aside dark-header ' : ''}${isDark ? ' dark-header ' : ''}${this.state.myClassName ? this.state.myClassName : ''}`}
           >
@@ -131,7 +133,7 @@ class Header extends PureComponent {
                                   <li><Link href="/pricing"><a>Pricing</a></Link></li>
                                   <li><a target="_blank" href="https://docs.bullet-train.io/">Docs</a></li>
                                   <li><Link href="/open-source">Open Source</Link></li>
-                                  <li><Link href="/demo">Demo</Link></li>
+                                  <li><Link href={`${Project.appUrl}/demo`}>Demo</Link></li>
                               </ul>
                           </div>
 
@@ -177,4 +179,4 @@ class Header extends PureComponent {
   }
 }
 
-export default Header;
+export default withRouter(Header);
