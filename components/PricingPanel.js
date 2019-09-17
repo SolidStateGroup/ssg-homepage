@@ -25,7 +25,7 @@ const PricingPanel = class extends React.Component {
                                     <div className="panel-content">
                                         <p className="featured" />
                                         <p className="pricing-price">Free</p>
-                                        <img src="/images/growth.svg" alt="free icon" className="pricing-icon"/>
+                                        <img src="/static/images/growth.svg" alt="free icon" className="pricing-icon"/>
                                         <p className="pricing-type">Free</p>
                                         <p className="text-small text-center">more flags than the UN</p>
                                         <Link href={`/${redirect}#sign-up`} className="pricing-cta blue">Sign up</Link>
@@ -61,7 +61,7 @@ const PricingPanel = class extends React.Component {
                                     <div className="panel-content">
                                         <p className="featured" />
                                         <p className="pricing-price">Start-Up</p>
-                                        <img src="/images/startup.svg" alt="Startup icon" className="pricing-icon"/>
+                                        <img src="/static/images/startup.svg" alt="Startup icon" className="pricing-icon"/>
                                         <p className="pricing-type">$29</p>
                                         <p className="text-small text-center">billed monthly</p>
                                         <Link to={`/${redirect}#sign-up`} className="pricing-cta blue">Sign up</Link>
@@ -99,7 +99,7 @@ Team Members
                                     <div className="panel-content">
                                         <p className="featured">Most Popular</p>
                                         <p className="pricing-price">Scale-Up</p>
-                                        <img src="/images/layers2.svg" alt="Scale-up icon" className="pricing-icon"/>
+                                        <img src="/static/images/layers2.svg" alt="Scale-up icon" className="pricing-icon"/>
                                         <p className="pricing-type">$99</p>
                                         <p className="text-small text-center">billed monthly</p>
                                         <Link to={`/${redirect}#sign-up`} className="pricing-cta blue">Sign up</Link>
@@ -136,7 +136,7 @@ Team Members
                                     <div className="panel-content">
                                         <p className="featured" />
                                         <p className="pricing-price">Enterprise</p>
-                                        <img src="/images/cubes.svg" alt="Enterprise icon" className="pricing-icon"/>
+                                        <img src="/static/images/cubes.svg" alt="Enterprise icon" className="pricing-icon"/>
                                         <p className="pricing-type">Contact Us</p>
                                         <p className="text-small text-center">for enterprise pricing</p>
                                         <a href="mailto:enterprise@bullet-train.io" className="pricing-cta blue">Contact Us</a>
