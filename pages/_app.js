@@ -2,6 +2,7 @@ import App, { Container } from 'next/app';
 import Head from 'next/head';
 import React from 'react';
 import '../project/polyfill';
+import Header from '../components/Header';
 
 class MyApp extends App {
     render() {
@@ -63,6 +64,7 @@ class MyApp extends App {
                         <script src="/static/scripts/inspectlet.js" type="text/javascript" id="inspectletjs" />
                         <script src="/static/scripts/fullstory.js" type="text/javascript" />
                     </Head>
+                    <Header/>
                     <Component {...pageProps} />
                     <div id="confirm"/>
                     <div id="alert"/>

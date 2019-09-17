@@ -1,72 +1,73 @@
 /**
  * Created by kylejohnson on 30/07/2016.
  */
-import React from 'react';
-import propTypes from 'prop-types';
+import { isMobile } from 'react-device-detect';
+import Button from './Button';
+const _isMobile = isMobile;
 
-const Tabs = ({ children, className, onChange, value }) => (
-    <div className={`tabs ${className || ''}`}>
-        <div className="tabs-nav">
-            {children.map((child, i) => {
-                const isSelected = value === i;
-                return (
-                    <Button
-                      id={child.props.id}
-                      key={`button${i}`}
-                      onClick={(e) => {
-                          e.stopPropagation();
-                          e.preventDefault();
-                          onChange(i);
-                      }}
-                      className={`btn ${isSelected ? 'tab-active' : ''}`}
-                    >
-                        {child.props.tablabel}
-                    </Button>
-                );
-            })}
-        </div>
-        <div
-          className="tab-line"
-          style={{
-              width: `${100 / children.length}%`,
-              left: `${100 / children.length * value}%`,
-          }}
-        />
-        <div className="tabs-content">
-            {children.map((child, i) => {
-                const isSelected = value === i;
-                return (
-                    <div key={`content${i}`} className={`tab-item${isSelected ? ' tab-active' : ''}`}>
-                        {child}
-                    </div>
-                );
-            })}
-        </div>
-    </div>
-);
+const Tabs = class extends React.Component {
+  static displayName = 'Tabs'
 
-Tabs.displayName = 'Tabs';
+
+  render() {
+      return (
+          <div className={`tabs ${this.props.className || ''}`}>
+              <div className="tabs-nav" style={_isMobile ? { flexWrap: 'wrap' } : {}}>
+                  {this.props.children.map((child, i) => {
+                      const isSelected = this.props.value == i;
+                      return (
+                          <Button
+                            data-test={child.props['data-test']}
+                            id={child.props.id}
+                            key={`button${i}`}
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                e.preventDefault();
+                                this.props.onChange(i);
+                            }}
+                            className={`btn-tab btn-primary${isSelected ? ' tab-active' : ''}`}
+                          >
+                              {child.props.tabLabel}
+                          </Button>
+                      );
+                  })}
+              </div>
+              <div
+                className="tab-line" style={{
+                    width: `${100 / this.props.children.length}%`,
+                    left: `${100 / this.props.children.length * this.props.value}%`,
+                }}
+              />
+              <div className="tabs-content">
+                  {this.props.children.map((child, i) => {
+                      const isSelected = this.props.value == i;
+                      return (
+                          <div key={`content${i}`} className={`tab-item${isSelected ? ' tab-active' : ''}`}>
+                              {child}
+                          </div>
+                      );
+                  })}
+              </div>
+          </div>
+      );
+  }
+};
 
 Tabs.defaultProps = {
     className: '',
     value: 0,
 };
 
-Tabs.propTypes = {
-    className: propTypes.string,
-    onChange: propTypes.func.isRequired,
-    children: propTypes.node.isRequired,
-    value: propTypes.number,
-};
+Tabs.propTypes = {};
 
-global.Tabs = Tabs;
+export default Tabs;
 
 // Example Usage
 //   <Tabs value={this.state.tab} onChange={this.selectTab}>
-//     <div tabLabel={(<span className="fa fa-phone tab-icon"/>)}>
+//     <TabItem tabLabel={(<span className="fa fa-phone tab-icon"/>)}>
 //       <h2>Tab 1 content</h2>
-//     </div>
-//     <div tabLabel={(<span className="fa fa-phone tab-icon"/>)}>
+//     </TabItem>
+//     <TabItem tabLabel={(<span className="fa fa-phone tab-icon"/>)}>
 //       <h2>Tab 2 content</h2>
-//     </div>
+//     </TabItem>
 //   </Tabs>
