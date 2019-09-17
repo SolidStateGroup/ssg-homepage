@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import Head from 'next/head';
 
 const WhatAreFeatureFlagsPage = class extends Component {
   static displayName = 'WhatAreFeatureFlagsPage'
@@ -15,6 +16,11 @@ const WhatAreFeatureFlagsPage = class extends Component {
   render() {
       return (
           <div className="app-container">
+              <Head>
+                  <title>
+                      Bullet Train - What are feature flags and remote config?
+                  </title>
+              </Head>
               <FormGroup className="striped-section">
                   <div className="container">
                       <h3>What are feature flags?</h3>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Footer from '../components/Footer';
 import PricingPanel from '../components/PricingPanel';
 import Feedback from '../components/Feedback';
@@ -26,6 +27,11 @@ const PricingPage = class extends React.Component {
       // const redirect = this.props.location.query.redirect ? `?redirect=${this.props.location.query.redirect}` : '';
       return (
           <div>
+              <Head>
+                  <title>
+                    Bullet Train - Pricing
+                  </title>
+              </Head>
               <PricingPanel redirect={redirect}/>
 
               <div className="faq">

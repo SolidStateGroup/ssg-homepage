@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Tabs from '../components/base/forms/Tabs';
 import TabItem from '../components/base/forms/TabItem';
+import Head from 'next/head';
 
 export default class OpenSource extends Component {
     static displayName = 'OpenSourcePage'
@@ -15,6 +16,12 @@ export default class OpenSource extends Component {
     render() {
         return (
             <div className="">
+
+                <Head>
+                    <title>
+                      Bullet Train - Open Source Projects
+                    </title>
+                </Head>
                 <div className="hero__open-source pt-3 text-center">
                     <h1 className="display pt-5">Open Source</h1>
                     <p className="pb-3">All of our open source repositiories are listed here</p>

@@ -3,6 +3,7 @@
  */
 
 import React, { Component } from 'react';
+import Head from 'next/head';
 import anime from 'animejs';
 import Button from '../components/base/forms/Button';
 import FeatureFlagsHero from '../animations/FeatureFlagsHero';
@@ -37,6 +38,11 @@ export default class FeaturessExampleView extends Component {
     render() {
         return (
             <div className="features-page">
+                <Head>
+                    <title>
+                        Bullet Train - Terms of Service
+                    </title>
+                </Head>
                 <div className="hero hero--features-page ">
                     <div>
                         <div className="row" style={{ width: '100%', margin: 0, marginRight: 0 }}>

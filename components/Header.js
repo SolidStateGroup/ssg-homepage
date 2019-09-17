@@ -20,7 +20,7 @@ class Header extends PureComponent {
       const isLegal = false;
       const isHomepage = this.props.router.pathname === '/';
       const redirect = '';
-      const isDark = false;
+      const isDark = !isHomepage;
       return (
       <>
           {isHomepage && (

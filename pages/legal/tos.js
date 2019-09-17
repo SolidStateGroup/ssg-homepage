@@ -1,8 +1,16 @@
+import Head from 'next/head';
+
 const TermsOfService = props => (
-    <div className="legal-container">
-        <div className="container">
-            <h2>Terms of Service</h2>
-            <p>
+    <div>
+        <Head>
+            <title>
+              Bullet Train - Terms of Service
+            </title>
+        </Head>
+        <div className="legal-container">
+            <div className="container">
+                <h2>Terms of Service</h2>
+                <p>
                 These Bullet Train terms of service ("agreement") contains the terms for use of the Bullet Train service
                 and is between Solid State Group Ltd ("Bullet Train"), a London based company having a place of business
                 at 86-90 Paul St, London, EC2A 4NE and the party agreeing to the terms of this agreement ("customer").
@@ -13,119 +21,119 @@ const TermsOfService = props => (
                 agreement first. If a written agreement regarding customer's use of the Bullet Train service exists
                 between and has been executed by both Bullet Train and customer, the terms of that written agreement
                 shall take precedence over this agreement.
-            </p>
-            <h3>1. Definitions</h3>
-            <ul>
-                <li>
-                    <strong>"Affiliate"</strong>
-                    {' '}
+                </p>
+                <h3>1. Definitions</h3>
+                <ul>
+                    <li>
+                        <strong>"Affiliate"</strong>
+                        {' '}
                     means, with respect to a party, any entity which directly or indirectly Controls, is Controlled by,
                     or is under common Control with such party.
-                </li>
-                <li>
-                    <strong>"Confidential Information"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Confidential Information"</strong>
+                        {' '}
                     has the meaning set forth in Section 8.
-                </li>
-                <li>
-                    <strong>"Control"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Control"</strong>
+                        {' '}
                     means ownership or control, directly or indirectly, of at least 50% of the voting interests of the
                     subject entity.
-                </li>
-                <li>
-                    <strong>"Customer Data"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Customer Data"</strong>
+                        {' '}
                     means all electronic data or information submitted by Customer or any of its Affiliates in the
                     Bullet Train Service.
-                </li>
-                <li>
-                    <strong>"Customer Equipment"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Customer Equipment"</strong>
+                        {' '}
                     means Customer's and its Affiliates' computer hardware, software and network infrastructure used to
                     access the Bullet Train Service.
-                </li>
-                <li>
-                    <strong>"Data Protection Laws and Regulations"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Data Protection Laws and Regulations"</strong>
+                        {' '}
                     means all EU/Swiss applicable legislations with respect to the processing of Personal Data,
                     including but not limited to the EU Data Protection Directive (95/46/EC).
-                </li>
-                <li>
-                    <strong>"Documentation"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Documentation"</strong>
+                        {' '}
                     means the published specifications of the Bullet Train Service, as may be updated or amended from
                     time to time as necessary due to updates and enhancements, as determined and provided by Bullet
                     Train to Customer.
-                </li>
-                <li>
-                    <strong>"Extension Term"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Extension Term"</strong>
+                        {' '}
                     means each renewal subscription period for which the subscription term applicable to an Order Form
                     is extended pursuant to Section 10.
-                </li>
-                <li>
-                    <strong>"Force Majeure Event"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Force Majeure Event"</strong>
+                        {' '}
                     means a natural disaster, actions or decrees of governmental bodies or communications line failure
                     which (i) hinders, delays or prevents a party from performing its obligations, and (ii) is beyond
                     the reasonable control of, and without the fault or negligence of, such party, and (iii) by the
                     exercise of reasonable diligence such party is unable to prevent or provide against.
-                </li>
-                <li>
-                    <strong>"Initial Term"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Initial Term"</strong>
+                        {' '}
                     means the first subscription term period for the Bullet Train Service defined on an Order Form, or
                     if no such term period is defined, twelve (12) months, commencing on the date Customer executes such
                     Order Form.
-                </li>
-                <li>
-                    <strong>"Order Form"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Order Form"</strong>
+                        {' '}
                     means a paper-based or online ordering document for the Bullet Train Service accepted by Bullet
                     Train and Customer.
-                </li>
-                <li>
-                    <strong>"Bullet Train Service"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Bullet Train Service"</strong>
+                        {' '}
                     means the Bullet Train online, cloud-based feature flag management tool as further described in the
                     Documentation, including the Bullet Train SDK.
-                </li>
-                <li>
-                    <strong>"SDK"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"SDK"</strong>
+                        {' '}
                     means Bullet Train's software development kit for use with Customer's products in accordance with
                     the Documentation.
-                </li>
-                <li>
-                    <strong>"Subscription Fees"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Subscription Fees"</strong>
+                        {' '}
                     mean the fees paid by Customer for the right to access and use the Bullet Train Service and receive
                     standard support during the Term.
-                </li>
-                <li>
-                    <strong>"Taxes"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Taxes"</strong>
+                        {' '}
                     means any direct or indirect local, state, federal or foreign value-added, sales, use or withholding
                     taxes.
-                </li>
-                <li>
-                    <strong>"Term"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Term"</strong>
+                        {' '}
                     as it relates to an Order Form means the Initial Term and any Extension Term applicable to each
                     Order Form, and as it relates to this Agreement, is as defined in Section 10.1 below.
-                </li>
-                <li>
-                    <strong>"Users"</strong>
-                    {' '}
+                    </li>
+                    <li>
+                        <strong>"Users"</strong>
+                        {' '}
                     means Customer's and its Affiliates and their respective employees, agents, contractors, service
                     providers or consultants who are authorized by Customer to use the Bullet Train Service and who have
                     been supplied user identifications and passwords by Customer or by Bullet Train at Customer's or its
                     Affiliates' request.
-                </li>
-            </ul>
-            <h3>2. Terms of Bullet Train Service</h3>
-            <p>
+                    </li>
+                </ul>
+                <h3>2. Terms of Bullet Train Service</h3>
+                <p>
 Bullet Train shall make the Bullet Train Service available to Customer and its Affiliates in accordance
                 with this Agreement, and each Order Form mutually entered into and, to the extent not in conflict with
                 this Agreement or an Order Form or the Documentation. Subject to the terms of this Agreement, Bullet
@@ -137,22 +145,22 @@ Bullet Train shall make the Bullet Train Service available to Customer and its A
                 party component embedded, included or provided by Bullet Train for use with the Bullet Train Service may
                 only be used in conjunction with the Bullet Train Service, and such use is subject to this
                 Agreement.
-            </p>
-            <h3>3. Customer Responsabilities Relatings to Use of the Bullet Train Service</h3>
-            <ol>
-                <li>
+                </p>
+                <h3>3. Customer Responsabilities Relatings to Use of the Bullet Train Service</h3>
+                <ol>
+                    <li>
 Customer is responsible for obtaining and maintaining any Customer Equipment and any ancillary
                     services needed to connect to, access or otherwise use the Bullet Train Service.
-                </li>
-                <li>
+                    </li>
+                    <li>
 Customer agrees to use the Bullet Train Service in compliance with applicable law, and not: (a)
                     resell, sublicense, lease, time-share or otherwise make the Bullet Train Service available to any
                     third party other than as contemplated or allowed by this Agreement; or (b) use the Bullet Train
                     Service to intentionally send or store infringing or unlawful material or material containing
                     software viruses, worms, Trojan horses or other harmful computer code, files, scripts, agents or
                     programs.
-                </li>
-                <li>
+                    </li>
+                    <li>
 Customer agrees to not (a) modify, copy or create derivative works of the Bullet Train Service; (b)
                     reverse engineer the Bullet Train Service; (c) access the Bullet Train Service for the purpose of
                     building a competitive product or service; (d) do any "mirroring" or "framing" of any part of the
@@ -161,23 +169,23 @@ Customer agrees to not (a) modify, copy or create derivative works of the Bullet
                     cookies; (e) use the Bullet Train Service, for purposes of product evaluation, benchmarking or other
                     comparative analysis intended for publication without Bullet Train's prior written consent; or (f)
                     provide access to the Bullet Train Service by a known direct competitor of Bullet Train.
-                </li>
-                <li>
+                    </li>
+                    <li>
 In addition, Customer acknowledges that the SDK is subject to the Apache 2.0 license (or successor
                     version as indicated by Bullet Train).
-                </li>
-                <li>
+                    </li>
+                    <li>
 If customer fails to comply with the obligations set forth in this section 3 Bullet Train shall
                     inform customer thereof in writing and reserves the right to suspend the Bullet Train service if the
                     failure is not remedied within five (5) business days. Bullet Train also reserves the right to
                     throttle or suspend the service if Bullet Train reasonably determines that customer is using the
                     service in excess of the volumes intended by Bullet Train or such use overloads the services as a
                     whole.
-                </li>
-            </ol>
-            <h3>4. Ownership</h3>
-            <ol>
-                <li>
+                    </li>
+                </ol>
+                <h3>4. Ownership</h3>
+                <ol>
+                    <li>
 As between the parties, Bullet Train shall retain all ownership rights in the Bullet Train Service,
                     the technology, software, hardware, products, processes, algorithms, user interfaces and know-how
                     related to the Bullet Train Service and all work developed or created by Bullet Train during the
@@ -189,15 +197,15 @@ As between the parties, Bullet Train shall retain all ownership rights in the Bu
                     (collectively, "Customer Information'). As applicable, Bullet Train hereby assigns and will assign
                     all Customer Information to Customer. No license, right or interest in any Bullet Train or Customer
                     trademark, copyright, trade name or service mark is granted hereunder.
-                </li>
-                <li>
+                    </li>
+                    <li>
 Bullet Train shall own any suggestions, enhancement requests, recommendations or other feedback
                     provided by Customer or its Users relating to the operation of the Bullet Train Service.
-                </li>
-            </ol>
-            <h3>5. Fees</h3>
-            <ol>
-                <li>
+                    </li>
+                </ol>
+                <h3>5. Fees</h3>
+                <ol>
+                    <li>
 Unless otherwise specified on an Order Form, the Fees (if any) shall be as stated in each Order and
                     shall be payable in advance. In the event Customer issues purchase orders in its normal course of
                     business, Customer shall provide Bullet Train with a purchase order within five (5) days of the
@@ -206,8 +214,8 @@ Unless otherwise specified on an Order Form, the Fees (if any) shall be as state
                     is paying by credit card as indicated in an Order Form, Customer acknowledges that Bullet Train uses
                     a third-party for the processing of such payments and that Bullet Train's credit card processor will
                     have access to certain information provided by Customer as a result.
-                </li>
-                <li>
+                    </li>
+                    <li>
 For payments made by credit card, Customer's credit card will be charged at the time the Order Form
                     is placed and thereafter, at the frequency listed in the Order Form, which will continue until this
                     Agreement is terminated. For all other payment methods, fees shall be due and payable within thirty
@@ -215,38 +223,38 @@ For payments made by credit card, Customer's credit card will be charged at the 
                     in suspension of Customer's ability to access the Bullet Train Service until payment is made,
                     provided that Bullet Train notifies Customer in writing of the delinquency and such delinquency is
                     not corrected within ten (10) business days.
-                </li>
-                <li>
+                    </li>
+                    <li>
 Unless otherwise provided, Bullet Train's fees do not include any Taxes, and Customer is responsible
                     for paying all Taxes arising from its purchases hereunder, excluding Taxes based on Bullet Train's
                     net income, employees, or property. If Bullet Train has the legal obligation to pay or collect Taxes
                     for which Customer is responsible, the appropriate amount of such Taxes shall be invoiced to and
                     paid by Customer, unless Customer provides a valid tax exemption certificate authorized by the
                     appropriate taxing authority.
-                </li>
-                <li>
+                    </li>
+                    <li>
 The license granted hereunder is limited to the maximum number of Users licensed (where applicable)
                     and any additional terms and conditions specified on an Order Form. In the event Customer exceeds
                     such usage, Bullet Train may charge Customer for such excess usage.
-                </li>
-            </ol>
-            <h3>6. Representations and Warranties</h3>
-            <ol>
-                <li>
+                    </li>
+                </ol>
+                <h3>6. Representations and Warranties</h3>
+                <ol>
+                    <li>
 Each party represents and warrants that it has all necessary right, title and authority to enter
                     into and perform under this Agreement. Customer warrants that it has the rights to provide and use
                     any and all Customer Data in accordance with the terms of the Agreement and the foregoing and its
                     performance hereunder doesn't violate any laws.
-                </li>
-                <li>
+                    </li>
+                    <li>
 Except as expressly provided herein, neither party nor its licensors or suppliers makes any
                     warranties of any kind, whether implied, statutory or otherwise, including any warranties of
                     merchantability or fitness for a particular purpose. Bullet Train does not warrant the operation of
                     the Bullet Train service will be uninterrupted or error-free.
-                </li>
-            </ol>
-            <h3>7. Indemnification by Customer</h3>
-            <p>
+                    </li>
+                </ol>
+                <h3>7. Indemnification by Customer</h3>
+                <p>
 Customer shall defend, indemnify and hold Bullet Train and its Affiliates (collectively, "Bullet Train
                 Group") harmless against any loss, damage or costs (including reasonable attorneys' fees) incurred in
                 connection with Claims made or brought against Bullet Train any member of Bullet Train Group, by a third
@@ -259,10 +267,10 @@ Customer shall defend, indemnify and hold Bullet Train and its Affiliates (colle
                 defense and settlement of the Claim (provided that Customer may not settle any Claim unless it
                 unconditionally releases Bullet Train of all liability and obligation); and (c) provide to Customer, at
                 Customer's cost, all reasonable assistance.
-            </p>
-            <h3>8. Confidentiality</h3>
-            <ol>
-                <li>
+                </p>
+                <h3>8. Confidentiality</h3>
+                <ol>
+                    <li>
 As used herein, "Confidential Information" means all confidential and proprietary information of a
                     party ("Disclosing Party") disclosed to the other party ("Receiving Party"), whether orally or in
                     writing, that is designated as confidential or that reasonably Bullet Train Master Subscription
@@ -276,8 +284,8 @@ As used herein, "Confidential Information" means all confidential and proprietar
                     developed by Receiving Party without breach of any confidentiality obligation owed to Disclosing
                     Party or access to or reliance on Disclosing Party's Confidential Information; or (iv) is received
                     from a third party without breach of any confidentiality obligation owed to Disclosing Party.
-                </li>
-                <li>
+                    </li>
+                    <li>
 Receiving Party shall not disclose any Confidential Information of Disclosing Party for any purpose
                     outside the scope of this Agreement, except as allowed by the terms of this Agreement or with
                     Disclosing Party's prior written consent. Receiving Party shall protect the confidentiality of
@@ -293,27 +301,27 @@ Receiving Party shall not disclose any Confidential Information of Disclosing Pa
                     to any individual. Receiving Party shall promptly notify Disclosing Party if it becomes aware of any
                     actual or reasonably suspected breach of confidentiality of Disclosing Party's Confidential
                     Information.
-                </li>
-                <li>
+                    </li>
+                    <li>
 If Receiving Party is compelled by law to disclose Confidential Information of Disclosing Party, it
                     shall provide Disclosing Party with (a) prior written notice of such compelled disclosure (to the
                     extent legally permitted) and (b) reasonable assistance in contesting the disclosure, at Disclosing
                     Party's option and cost. Any actual disclosure shall be limited to the minimum amount of information
                     necessary to comply with the disclosure demand as advised by legal counsel.
-                </li>
-                <li>
+                    </li>
+                    <li>
 If Receiving Party discloses (or threatens to disclose) any Confidential Information of Disclosing
                     Party in breach of confidentiality protections hereunder, Disclosing Party shall have the right, in
                     addition to any other remedies available to it, to seek injunctive relief to enjoin such acts, it
                     being acknowledged by the parties that any other available remedies are inadequate.
-                </li>
-                <li>
+                    </li>
+                    <li>
 Upon any termination of this Agreement, the Receiving Party shall continue to maintain the
                     confidentiality of the Disclosing Party's Confidential Information and, upon request and to the
                     extent practicable, return to the Disclosing Party or destroy (at the Disclosing Party's election)
                     all materials containing such Confidential Information.
-                </li>
-                <li>
+                    </li>
+                    <li>
 Bullet Train has in place reasonable security procedures in accordance with industry standards.
                     Bullet Train will provide the Bullet Train Service in accordance with its standard security policy,
                     disaster recovery plan, and resilience plan. Bullet Train will also undergo a penetration test
@@ -330,26 +338,26 @@ Bullet Train has in place reasonable security procedures in accordance with indu
                     personnel used by Bullet Train to provide the Bullet Train Service are under strict confidentiality
                     provisions and are aware of and are suitably trained in any such technical, organizational and
                     security measures.
-                </li>
-            </ol>
-            <h3>9. Limitation of Liability</h3>
-            <ol>
-                <li>
+                    </li>
+                </ol>
+                <h3>9. Limitation of Liability</h3>
+                <ol>
+                    <li>
 Except for the parties' indemnification obligations (the "exclusions"), in no event shall either
                     party's aggregate liability arising out of this agreement, whether in contract, tort or under any
                     other theory of liability, exceed the fees paid or payable to Bullet Train during the (12) twelve
                     months prior to when the claim accrued.
-                </li>
-                <li>
+                    </li>
+                    <li>
 To the maximum extent permitted by law, in no event shall either party or its licensors or suppliers
                     have any liability to the other party for any lost profits or for any special, incidental, punitive,
                     or consequential damages however caused and, whether in contract, tort or under any other theory of
                     liability, whether or not the party has been advised of the possibility of such damages.
-                </li>
-            </ol>
-            <h3>10. Term and Termination</h3>
-            <ol>
-                <li>
+                    </li>
+                </ol>
+                <h3>10. Term and Termination</h3>
+                <ol>
+                    <li>
 This Agreement commences on the Effective Date and continues until all Order Forms entered into
                     under this Agreement have expired or been terminated unless terminated as otherwise provided herein.
                     The Initial Term applicable to each Order Form commences upon Customer's execution of such Order
@@ -357,37 +365,37 @@ This Agreement commences on the Effective Date and continues until all Order For
                     to such Order Form shall continue to renew for Extension Terms equal to the term of the most recent
                     Term, unless either party gives notice to the other party of its desire to not renew at least thirty
                     (30) days prior to the end of the then- current Term.
-                </li>
-                <li>
+                    </li>
+                    <li>
 A party may terminate this Agreement for cause: (i) upon 30 days written notice to the other party
                     of a material breach of this Agreement if such breach remains uncured at the expiration of such
                     period; (ii) immediately upon written notice if the other party becomes the subject of a bankruptcy,
                     insolvency, receivership, liquidation, assignment for the benefit of creditors or similar
                     proceeding; or (iii) as otherwise provided herein.
-                </li>
-                <li>
+                    </li>
+                    <li>
 The parties' rights and obligations under Sections 4, 5, 6.2, 7-19, 10.3, and 11 shall survive
                     termination of this Agreement.
-                </li>
-                <li>
+                    </li>
+                    <li>
 Upon the effective date of termination of this Agreement Customer's license to use the Bullet Train
                     Service will cease. After such 30 day period Bullet Train will have no obligation to maintain any
                     Customer Data.
-                </li>
-            </ol>
-            <h3>11. General</h3>
-            <ol>
-                <li>
+                    </li>
+                </ol>
+                <h3>11. General</h3>
+                <ol>
+                    <li>
 The parties are independent contractors, and no partnership, franchise, joint venture, agency,
                     fiduciary or employment Bullet Train Master Subscription Agreement (Click-through) May 2017
                     relationship between the parties is created hereby. There are no third party beneficiaries to this
                     Agreement.
-                </li>
-                <li>
+                    </li>
+                    <li>
 Notices shall be in writing and delivered by nationally recognized overnight delivery service or
                     certified or registered U.S. Mail, and are effective upon receipt.
-                </li>
-                <li>
+                    </li>
+                    <li>
 To the extent of any conflict between this Agreement and any other Exhibit or document referenced
                     herein, this Agreement shall prevail unless expressly stated otherwise. Notwithstanding any language
                     to the contrary therein, no terms stated in a purchase order or similar ordering document (other
@@ -395,30 +403,30 @@ To the extent of any conflict between this Agreement and any other Exhibit or do
                     shall be incorporated into this Agreement, and all such terms shall be void. This Agreement
                     represents the entire agreement of the parties, and supersedes all prior or contemporaneous
                     agreements, proposals or representations, written or oral, concerning its subject matter.
-                </li>
-                <li>
+                    </li>
+                    <li>
 Either party may include the other's name or logo in customer or vendor lists in accordance with the
                     other's standard guidelines. In addition, Bullet Train may refer to Customer's intended use of the
                     Bullet Train Service in its marketing materials and on its websites as well as in discussions with
                     Bullet Train customers, prospective customers, and industry and financial analysts.
-                </li>
-                <li>
+                    </li>
+                    <li>
 No failure or delay in exercising any right hereunder shall constitute a waiver of such right.
                     Except as otherwise provided, remedies provided herein are in addition to, and not exclusive of, any
                     other remedies of a party at law or in equity. If any provision of this Agreement is held by a court
                     of competent jurisdiction to be contrary to law, such provision shall be modified by the court and
                     interpreted so as best to accomplish the objectives of the original provision to the fullest extent
                     permitted by law, and the remaining provisions shall remain in effect.
-                </li>
-                <li>
+                    </li>
+                    <li>
 Neither party shall be liable to the other for any delay or failure to perform hereunder (excluding
                     payment obligations) due to a natural disaster, actions or decrees of governmental bodies or
                     communications failure which (i) hinders, delays or prevents a party in performing any of its
                     obligations, (ii) is beyond the control of, and without the fault or negligence of, such party, or
                     (iii) by the exercise of reasonable diligence such party is unable to prevent or provide against
                     ("Force Majeure Event").
-                </li>
-                <li>
+                    </li>
+                    <li>
 Neither party may assign any of its rights or obligations hereunder, whether by operation of law or
                     otherwise, without the prior written consent of the other (not to be unreasonably withheld).
                     Notwithstanding the foregoing, (i) either party may assign this Agreement in its entirety (including
@@ -428,8 +436,9 @@ Neither party may assign any of its rights or obligations hereunder, whether by 
                     subcontractors in the ordinary course of business. Any attempted assignment in breach of this
                     Section shall be void. This Agreement shall bind and inure to the benefit of the parties, their
                     respective successors and permitted assigns.
-                </li>
-            </ol>
+                    </li>
+                </ol>
+            </div>
         </div>
     </div>
 );
