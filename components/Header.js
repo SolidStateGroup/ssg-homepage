@@ -20,7 +20,7 @@ class Header extends PureComponent {
       const isLegal = false;
       const isHomepage = this.props.router.pathname === '/';
       const redirect = '';
-      const isDark = !isHomepage;
+      const isDark = false;
       return (
       <>
           {isHomepage && (
@@ -28,7 +28,7 @@ class Header extends PureComponent {
               <div className="navbar-left">
                   <div className="navbar-nav">
 
-                      <Link
+                      <a
                         href="https://labs.solidstategroup.com/" target="__blank"
                         className="nav-item nav-item-brand nav-link"
                       >
@@ -38,7 +38,7 @@ class Header extends PureComponent {
                                 className="brand"
                               />
                           </div>
-                      </Link>
+                      </a>
 
                   </div>
               </div>
@@ -48,7 +48,7 @@ class Header extends PureComponent {
                     style={{ padding: 10 }} className="popover-right"
                     renderTitle={(toggle, isActive) => (
                         <div className="products-button" onClick={toggle}>
-                            Products
+                    Products
                             <ion
                               className={isActive ? 'ion-ios-arrow-dropup' : 'ion-ios-arrow-dropdown'}
                             />
