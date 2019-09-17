@@ -75,9 +75,9 @@ const Footer = class extends React.Component {
                       <div className="col-md-2">
                           <h6>Company</h6>
                           <ul className=" float-left nav-list">
-                              <li><Link href="/legal/tos" target="_blank">Terms of Service</Link></li>
-                              <li><Link href="/legal/privacy-policy" target="_blank">Privacy Policy</Link></li>
-                              <li><Link href="/legal/sla" target="_blank">Service Level Agreement</Link></li>
+                              <li><a href="/legal/tos" target="_blank">Terms of Service</a></li>
+                              <li><a href="/legal/privacy-policy" target="_blank">Privacy Policy</a></li>
+                              <li><a href="/legal/sla" target="_blank">Service Level Agreement</a></li>
                           </ul>
                       </div>
                   </div>

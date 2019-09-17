@@ -1,9 +1,11 @@
 const withSass = require('@zeit/next-sass');
 const withCSS = require('@zeit/next-css');
-const withOffline = require('next-offline');
+// const withOffline = require('next-offline');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
     enabled: process.env.BUNDLE_ANALYZE === 'true',
 });
+const withSourceMaps = require('@zeit/next-source-maps')();
+
 
 const nextConfig = {
     target: 'serverless',
@@ -39,10 +41,12 @@ const nextConfig = {
     },
 };
 
-module.exports = withOffline(
-    withBundleAnalyzer(
-        withSass(
-            withCSS(nextConfig),
+module.exports = withSourceMaps(
+    // withOffline(
+        withBundleAnalyzer(
+            withSass(
+                withCSS(nextConfig),
+            ),
         ),
-    ),
+    // ),
 );

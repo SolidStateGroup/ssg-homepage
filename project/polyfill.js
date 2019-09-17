@@ -2,7 +2,6 @@ import propTypes from 'prop-types';
 import '../common/utils';
 import '../components/base';
 import './api';
-import './localization';
 import '../styles/styles.scss';
 import React from 'react';
 

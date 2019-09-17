@@ -25,7 +25,7 @@ function Header(props) {
                     {props.user ? (
                         <a role="button" className="nav-link" onClick={props.logout}>Logout</a>
                     ) : (
-                        <Link href="/login">
+                        <Link href="/#login">
                             <a className="nav-link">Login</a>
                         </Link>
                     )}

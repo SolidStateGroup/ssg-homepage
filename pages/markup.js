@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import Switch from 'rc-switch';
 import { ModalHeader, Modal, ModalBody, ModalFooter } from '../components/Modal';
-
-import withWidgets from '../common/providers/withWidgets';
 import DatePicker from '../components/DatePicker';
 
 class Examples extends React.Component {
@@ -227,4 +225,4 @@ class MarkupPage extends Component {
 }
 
 
-export default withWidgets(MarkupPage);
+export default MarkupPage;

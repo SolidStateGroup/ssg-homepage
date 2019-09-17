@@ -394,13 +394,13 @@ Learn more
                                                     Login
                                                 </button>
                                                 <div>
-                                                    <Link to={`/${redirect}`} className="float-left">
+                                                    <Link href={`/${redirect}`} className="float-left">
                                                         Not got
                                                         an account?
                                                     </Link>
                                                     <Link
                                                       className="float-right"
-                                                      to={`/password-recovery${redirect}`}
+                                                      href={`/password-recovery${redirect}`}
                                                       onClick={this.showForgotPassword}
                                                     >
                                                         Forgot
@@ -571,7 +571,7 @@ Sign up to accept your
                                                   Sign Up
                                             </ButtonWhite>
 
-                                            <Link id="existing-member-btn" to={`/login${redirect}`}>
+                                            <Link id="existing-member-btn" href={`/#login${redirect}`}>
                                                   Already a member?
                                             </Link>
                                         </div>

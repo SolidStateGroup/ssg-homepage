@@ -1,4 +1,5 @@
 import React from 'react';
+import Constants from '../common/utils/constants';
 
 const TermsPoliciesPage = class extends React.Component {
   static contextTypes = {
@@ -24,3 +25,4 @@ const TermsPoliciesPage = class extends React.Component {
       );
   }
 };
+export default TermsPoliciesPage;
