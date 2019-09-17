@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-
+import Button from './base/forms/Button';
 const Feedback = class extends Component {
     static displayName = 'Feedback'
 

@@ -1,4 +1,5 @@
 nav.navbar {
+    z-index: 1030;
     box-shadow:none;
     background:$aside-bg;
     margin-bottom: 0;
@@ -68,7 +69,7 @@ nav.navbar {
         height: 50px;
         padding-top: 3px;
     }
-    
+
     .brand {
         margin-top: 5px;
     }
@@ -233,7 +234,7 @@ nav.navbar {
         &--open{
                 height:auto;
                 transition: height 1s ease-out;
-            
+
             & > .project-nav__button{
                 background: #2bafa5;
                 min-width: 100%;

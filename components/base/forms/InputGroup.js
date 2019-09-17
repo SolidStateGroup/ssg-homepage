@@ -3,6 +3,10 @@ import propTypes from 'prop-types';
 import Utils from '../../../common/utils/utils';
 
 class InputGroup extends Component {
+    focus = () => {
+        this.input.focus();
+    };
+
     render() {
         const {
             props: {
@@ -34,7 +38,7 @@ class InputGroup extends Component {
 
                 {input || (
                     <Input
-                      ref="input"
+                      ref={c => this.input = c}
                       {...inputProps}
                       isValid={isValid}
                       disabled={disabled}

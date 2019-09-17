@@ -6,6 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Confirm from './ModalConfirm';
+import ModalDefault from './ModalDefault';
 import Alert from './ModalAlert';
 
 export const ModalHeader = _ModalHeader;
@@ -45,6 +46,7 @@ const withModal = (WrappedComponent) => {
 
 const _Confirm = withModal(Confirm);
 const _Alert = withModal(Alert);
+const _ModalDefault = withModal(ModalDefault);
 
 export const openAlert = global.openAlert = (title, children, onDismiss) => {
     ReactDOM.unmountComponentAtNode(document.getElementById('alert'));
@@ -72,4 +74,17 @@ export const openConfirm = global.openConfirm = (title, body, onYes, onNo) => {
         </_Confirm>
     ),
     document.getElementById('confirm'));
+};
+
+export const openModal = global.openModal = (title, body) => {
+    ReactDOM.unmountComponentAtNode(document.getElementById('confirm'));
+    ReactDOM.render((
+        <_ModalDefault
+          isOpen
+          title={title}
+        >
+            {body}
+        </_ModalDefault>
+    ),
+    document.getElementById('modal'));
 };

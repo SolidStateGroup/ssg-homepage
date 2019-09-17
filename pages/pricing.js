@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import PricingPanel from '../components/PricingPanel';
 import Feedback from '../components/Feedback';
 import Constants from '../common/utils/constants';
+import '../components/Modal';
 
 const PricingPage = class extends React.Component {
   static displayName = 'PricingPage'
