@@ -1,75 +1,65 @@
-import React, { Component } from 'react';
-import propTypes from 'prop-types';
-import Utils from '../../../common/utils/utils';
+/**
+ * Created by kylejohnson on 25/07/2016.
+ */
+import React, { Component, PropTypes } from 'react';
 
-class InputGroup extends Component {
+const InputGroup = class extends Component {
+    static displayName = 'InputGroup'
+
+    constructor(props, context) {
+        super(props, context);
+        this.state = {};
+    }
+
     focus = () => {
         this.input.focus();
     };
 
     render() {
-        const {
-            props: {
-                disabled,
-                id = Utils.GUID(),
-                inputProps,
-                isValid,
-                onChange,
-                placeholder,
-                title,
-                value,
-                inputGroupClassName,
-                className,
-                input,
-            },
-        } = this;
-
+        const { props } = this;
+        const id = Utils.GUID();
+        const { inputProps } = this.props;
         return (
-            <div className={`${className} form-group`}>
-                {title ? (<label htmlFor={id} className="cols-sm-2">{title}</label>) : null}
+            <div className="form-group">
+                <label htmlFor={id} className="cols-sm-2 control-label">{props.title}</label>
                 {inputProps && inputProps.error && (
                 <span>
                     <span> - </span>
-                    <span id={inputProps.name ? `${inputProps.name}-error` : ''} className="text-danger">
+                    <span id={props.inputProps.name ? `${props.inputProps.name}-error` : ''} className="text-danger">
                         {inputProps.error}
                     </span>
                 </span>
                 )}
 
-                {input || (
-                    <Input
-                      ref={c => this.input = c}
-                      {...inputProps}
-                      isValid={isValid}
-                      disabled={disabled}
-                      value={value}
-                      onChange={onChange}
-                      id={id}
-                      placeholder={placeholder}
-                      className={inputGroupClassName}
-                    />
-                )}
+                <div>
+                    <div>
+                        {
+                          this.props.textarea ? (
+                              <textarea
+                                ref={c => this.input = c} {...props.inputProps} isValid={props.isValid}
+                                disabled={props.disabled}
+                                value={props.value}
+                                data-test={props['data-test']}
+                                onChange={props.onChange} type={props.type || 'text'} id={id}
+                                placeholder={props.placeholder}
+                              />
+                          ) : (
+                              <Input
+                                ref={c => this.input = c} {...props.inputProps} isValid={props.isValid}
+                                disabled={props.disabled}
+                                value={props.value}
+                                data-test={props['data-test']}
+                                onChange={props.onChange} type={props.type || 'text'} id={id}
+                                placeholder={props.placeholder}
+                              />
+                          )
+                      }
 
+                    </div>
+                </div>
             </div>
         );
     }
-}
-
-global.InputGroup = InputGroup;
-
-InputGroup.defaultProps = {};
-
-InputGroup.propTypes = {
-    className: propTypes.string,
-    disabled: propTypes.bool,
-    id: propTypes.string,
-    input: propTypes.node,
-    inputProps: propTypes.object,
-    isValid: propTypes.bool,
-    onChange: propTypes.func,
-    placeholder: propTypes.string,
-    title: propTypes.string,
-    value: propTypes.string,
 };
-
+global.InputGroup = InputGroup;
 export default InputGroup;
