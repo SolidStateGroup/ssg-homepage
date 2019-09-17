@@ -43,10 +43,10 @@ const nextConfig = {
 
 module.exports = withSourceMaps(
     // withOffline(
-        withBundleAnalyzer(
-            withSass(
-                withCSS(nextConfig),
-            ),
+    withBundleAnalyzer(
+        withSass(
+            withCSS(nextConfig),
         ),
+    ),
     // ),
 );

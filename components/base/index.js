@@ -10,3 +10,4 @@ import './forms/InputGroup';
 import './forms/Button';
 import './forms/Panel';
 import './forms/Tabs';
+import './Gif';

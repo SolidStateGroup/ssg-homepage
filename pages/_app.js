@@ -18,6 +18,7 @@ class MyApp extends App {
                           name="description"
                           content="Manage your Feature Flags, Feature Toggles and Remote Config in your Mobile, React, React Native, Java, Javascript (Node) and Python projects."
                         />
+                        <script src="/static/chromefix.js"/>
                         <script
                           src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"
                         />
@@ -53,6 +54,8 @@ class MyApp extends App {
                           href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
                           rel="stylesheet"
                         />
+                        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"/>
+
                         <title>
                                 Bullet Train - Feature Flags, Feature Toggles and Remote Config - Ship features with confidence
                         </title>
