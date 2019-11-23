@@ -21,7 +21,7 @@ class MyApp extends App {
                         />
                         <script src="/static/chromefix.js"/>
                         <script
-                          src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"
+                          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"
                         />
                         <script
                           src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"

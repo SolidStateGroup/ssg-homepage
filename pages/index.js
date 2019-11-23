@@ -57,69 +57,70 @@ const HomePage = class extends React.Component {
         return (
             <div className="homepage">
                 <Hero redirect={redirect}/>
+
                 <div className="tech">
                     <div className="container">
                         <div className="text-center col-md-12 col-lg-8 push-lg-2">
                             <h2>We currently support these popular languages</h2>
                             <div className="row">
                                 <div className="col-md-1 col-xs-6">
-                                    <a href="https://github.com/SolidStateGroup/bullet-train-java-client">
+                                    <a href="https://docs.bullet-train.io/clients/java/">
                                         <img src="/static/images/tech-logos/java.png" alt="Java" title="Java"/>
                                     </a>
                                 </div>
                                 <div className="col-md-1 col-xs-6">
-                                    <a href="https://github.com/SolidStateGroup/bullet-train-js-client">
+                                    <a href="https://docs.bullet-train.io/clients/javascript/">
                                         <img src="/static/images/tech-logos/javascript.png" alt="JavaScript" title="JavaScript"/>
                                     </a>
                                 </div>
                                 <div className="col-md-1 col-xs-6">
-                                    <a href="https://github.com/SolidStateGroup/bullet-train-js-client">
+                                    <a href="https://docs.bullet-train.io/clients/javascript/">
                                         <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS"/>
                                     </a>
                                 </div>
                                 <div className="col-md-1 col-xs-6">
-                                    <a href="https://github.com/SolidStateGroup/bullet-train-nodejs-client">
+                                    <a href="https://docs.bullet-train.io/clients/node/">
                                         <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js"/>
                                     </a>
                                 </div>
                                 <div className="col-md-1 col-xs-6">
-                                    <a href="https://github.com/SolidStateGroup/bullet-train-python-client">
+                                    <a href="https://docs.bullet-train.io/clients/python/">
                                         <img
-                                          src="/static/images/tech-logos/python.png" className="img-fluid"
-                                          alt="Python" title="Python"
+                                          src="/static/images/tech-logos/python.png" className="img-fluid" alt="Python"
+                                          title="Python"
                                         />
                                     </a>
                                 </div>
                                 <div className="col-md-1 col-xs-6">
-                                    <a href="https://github.com/SolidStateGroup/bullet-train-ruby-client">
+                                    <a href="https://docs.bullet-train.io/clients/ruby/">
                                         <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby"/>
                                     </a>
                                 </div>
                                 <div className="col-md-1 col-xs-6">
-                                    <a href="https://github.com/SolidStateGroup/bullet-train-dotnet-client">
+                                    <a href="https://docs.bullet-train.io/clients/dotnet/">
                                         <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET"/>
                                     </a>
                                 </div>
                                 <div className="col-md-1 col-xs-6">
-                                    <a href="https://github.com/SolidStateGroup/bullet-train-java-client">
+                                    <a href="https://docs.bullet-train.io/clients/java/">
                                         <img src="/static/images/tech-logos/android2x.png" alt="android" title="android" />
                                     </a>
                                 </div>
                                 <div className="col-md-1 col-xs-6">
-                                    <a href="https://github.com/SolidStateGroup/bullet-train-ios-client">
+                                    <a href="https://docs.bullet-train.io/clients/ios/">
                                         <img src="/static/images/tech-logos/bt-IOS.png" alt="IOS" title="IOS" />
                                     </a>
                                 </div>
                             </div>
                             <p className="text-small margin-top no-mb">
-                                    Don't worry if you don't see your
-                                    preferred tech, we'll be adding support for more clients as we grow but
-                                    please
+                      Don't worry if you don't see your
+                      preferred tech, we'll be adding support for more clients as we grow but
+                      please
                                 {' '}
                                 <a href="mailto:support@bullet-train.io">get in touch</a>
                                 {' '}
-                                    and let
-                                    us know what you'd like to see.
+                      and let
+                      us know what you'd like to see.
                             </p>
                         </div>
                     </div>
@@ -144,20 +145,18 @@ const HomePage = class extends React.Component {
                             <div className="mb-3 flex-row">
                                 <div className="col-md-4">
                                     <div className="card card--feature">
-                                        <ion className="card__icon ion-ios-switch mb-3"/>
-                                        <h5 className="card__title">Feature Flags</h5>
-                                        <p className="card__paragraph-text mb-5">
+                                        <span className="card__icon ion-ios-switch mb-3"/>
+                                        <h5 className="card__title">Feature Flag Management</h5>
+                                        <p className="card__paragraph-text">
 Ship features remotely across
-                                                multiple environments. Deliver true Continuous Integration.
+                            multiple environments. Deliver true Continuous Integration.
                                         </p>
                                         <a
                                           className="card__link"
                                           href="https://docs.bullet-train.io/managing-features/"
-                                          target="_blank"
                                         >
-Learn more
-                                            {' '}
-                                            <ion
+Feature flags
+                                            <span
                                               className="pl-2 ion-md-arrow-dropright"
                                             />
                                         </a>
@@ -165,22 +164,20 @@ Learn more
                                 </div>
                                 <div className="col-md-4">
                                     <div className="card card--feature">
-                                        <ion className="card__icon ion-ios-options mb-3"/>
-                                        <h5 className="card__title">Remote Config</h5>
-                                        <p className="card__paragraph-text mb-5">
+                                        <span className="card__icon ion-ios-options mb-3"/>
+                                        <h5 className="card__title">Customise Features</h5>
+                                        <p className="card__paragraph-text">
                                             {' '}
 Change the behaviour,
-                                                appearance and configuration of your app without needing to
-                                                deploy.
+                            appearance and configuration of your app without needing to
+                            deploy.
                                         </p>
                                         <a
                                           className="card__link"
                                           href="https://docs.bullet-train.io/managing-features/"
-                                          target="_blank"
                                         >
-Learn more
-                                            {' '}
-                                            <ion
+Remote config
+                                            <span
                                               className="pl-2 ion-md-arrow-dropright"
                                             />
                                         </a>
@@ -188,20 +185,18 @@ Learn more
                                 </div>
                                 <div className="col-md-4">
                                     <div className="card card--feature">
-                                        <ion className="card__icon ion-ios-person mb-3"/>
+                                        <span className="card__icon ion-ios-person mb-3"/>
                                         <h5 className="card__title">User Traits</h5>
-                                        <p className="card__paragraph-text mb-5">
+                                        <p className="card__paragraph-text">
 Store traits against your users
-                                                without modifying your back-end.
+                            without modifying your back-end and target features specifically for them.
                                         </p>
                                         <a
                                           className="card__link"
                                           href="https://docs.bullet-train.io/managing-identities/#identity-traits"
-                                          target="_blank"
                                         >
-Learn more
-                                            {' '}
-                                            <ion
+User Traits
+                                            <span
                                               className="pl-2 ion-md-arrow-dropright"
                                             />
                                         </a>
@@ -211,20 +206,18 @@ Learn more
                             <div className="flex-row">
                                 <div className="col-md-4">
                                     <div className="card card--feature">
-                                        <ion className="card__icon ion-md-contacts mb-3"/>
-                                        <h5 className="card__title">Segment Users</h5>
-                                        <p className="card__paragraph-text mb-5">
+                                        <span className="card__icon ion-md-contacts mb-3"/>
+                                        <h5 className="card__title">Create User Segements</h5>
+                                        <p className="card__paragraph-text">
 Create detailed user segments
-                                                based on their traits, then target features based on the segment.
+                            based on their traits, then target features based on the segment.
                                         </p>
                                         <a
                                           className="card__link"
                                           href="https://docs.bullet-train.io/managing-segments/"
-                                          target="_blank"
                                         >
-Learn more
-                                            {' '}
-                                            <ion
+User Segments
+                                            <span
                                               className="pl-2 ion-md-arrow-dropright"
                                             />
                                         </a>
@@ -232,20 +225,18 @@ Learn more
                                 </div>
                                 <div className="col-md-4">
                                     <div className="card card--feature">
-                                        <ion className="card__icon ion-ios-browsers mb-3"/>
+                                        <span className="card__icon ion-ios-browsers mb-3"/>
                                         <h5 className="card__title">Staged Feature Rollouts</h5>
-                                        <p className="card__paragraph-text mb-5">
+                                        <p className="card__paragraph-text">
 Deploy features to 1% of your user base.
-                                                All good? Roll out to everybody.
+                            All good? Roll out to everybody.
                                         </p>
                                         <a
                                           className="card__link"
                                           href="https://docs.bullet-train.io/staged-feature-rollouts/"
-                                          target="_blank"
                                         >
-Learn more
-                                            {' '}
-                                            <ion
+A/B Testing
+                                            <span
                                               className="pl-2 ion-md-arrow-dropright"
                                             />
                                         </a>
@@ -253,20 +244,18 @@ Learn more
                                 </div>
                                 <div className="col-md-4">
                                     <div className="card card--feature">
-                                        <ion className="card__icon ion-md-done-all mb-3"/>
+                                        <span className="card__icon ion-md-done-all mb-3"/>
                                         <h5 className="card__title">Track Changes</h5>
-                                        <p className="card__paragraph-text mb-5">
+                                        <p className="card__paragraph-text">
 Audit changes &amp;
-                                                rollback any mistakes or issues.
+                            rollback any mistakes or issues.
                                         </p>
                                         <a
                                           className="card__link"
                                           href="https://docs.bullet-train.io/audit-logs/"
-                                          target="_blank"
                                         >
-Learn more
-                                            {' '}
-                                            <ion
+Feature Audit
+                                            <span
                                               className="pl-2 ion-md-arrow-dropright"
                                             />
                                         </a>
@@ -463,7 +452,8 @@ Sign up to accept your
                                       )
                                       }
                                     <fieldset id="details" className="col-lg-6 offset-lg-3">
-                                        <Input
+                                        <InputGroup
+                                          title="First Name"
                                           data-test="firstName"
                                           inputProps={{
                                               name: 'firstName',
@@ -474,18 +464,17 @@ Sign up to accept your
                                               this.setState({ first_name: Utils.safeParseEventValue(e) });
                                           }}
                                           className="input-default full-width"
-                                          placeholder="First name"
                                           type="text"
                                           name="firstName" id="firstName"
                                         />
-                                        <Input
+                                        <InputGroup
+                                          title="Last Name"
                                           data-test="lastName"
                                           inputProps={{
                                               name: 'lastName',
                                               className: 'full-width',
                                               error: error && error.last_name,
                                           }}
-                                          placeholder="Last Name"
                                           onChange={(e) => {
                                               this.setState({ last_name: Utils.safeParseEventValue(e) });
                                           }}
@@ -494,21 +483,20 @@ Sign up to accept your
                                           name="lastName" id="lastName"
                                         />
                                         {!isInvite && (
-                                            <Input
-                                              data-test="companyName"
-                                              inputProps={{
-                                                  name: 'companyName',
-                                                  className: 'full-width',
-                                              }}
-                                              placeholder="Organisation name"
-
-                                              onChange={(e) => {
-                                                  this.setState({ organisation_name: Utils.safeParseEventValue(e) });
-                                              }}
-                                              className="input-default full-width"
-                                              type="text"
-                                              name="companyName" id="organisation"
-                                            />
+                                        <InputGroup
+                                          title="Organisation name"
+                                          data-test="companyName"
+                                          inputProps={{
+                                              name: 'companyName',
+                                              className: 'full-width',
+                                          }}
+                                          onChange={(e) => {
+                                              this.setState({ organisation_name: Utils.safeParseEventValue(e) });
+                                          }}
+                                          className="input-default full-width"
+                                          type="text"
+                                          name="companyName" id="organisation"
+                                        />
                                         )}
 
                                         {error && error.email ? (
@@ -519,20 +507,21 @@ Sign up to accept your
                                                 {error.email}
                                             </span>
                                         ) : null}
-                                        <Input
+                                        <InputGroup
+                                          title="Email address"
                                           data-test="email"
                                           inputProps={{
                                               name: 'email',
                                               className: 'full-width',
                                               error: error && error.email,
                                           }}
-                                          placeholder="Email Address"
                                           onChange={(e) => {
                                               this.setState({ email: Utils.safeParseEventValue(e) });
                                           }}
                                           className="input-default full-width"
                                           type="text"
-                                          name="email" id="email"
+                                          name="email"
+                                          id="email"
                                         />
 
                                         {error && error.password1 ? (
@@ -543,14 +532,14 @@ Sign up to accept your
                                                 {error.password1}
                                             </span>
                                         ) : null}
-                                        <Input
+                                        <InputGroup
+                                          title="Password"
                                           data-test="password"
                                           inputProps={{
                                               name: 'password',
                                               className: 'full-width',
                                               error: error && error.password1,
                                           }}
-                                          placeholder="Password"
                                           onChange={(e) => {
                                               this.setState({ password: Utils.safeParseEventValue(e) });
                                           }}
@@ -568,11 +557,11 @@ Sign up to accept your
                                               className="full-width"
                                               type="submit"
                                             >
-                                                  Sign Up
+                                        Sign Up
                                             </ButtonWhite>
 
-                                            <Link id="existing-member-btn" href={`/#login${redirect}`}>
-                                                  Already a member?
+                                            <Link id="existing-member-btn" to={`/login${redirect}`}>
+                                        Already a member?
                                             </Link>
                                         </div>
                                     </fieldset>

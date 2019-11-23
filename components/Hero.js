@@ -29,6 +29,7 @@ const Hero = class extends React.Component {
                             <p className="">
                                 {'We\'re '}
                                 <a
+                                  rel="noreferrer"
                                   className="link" href="https://github.com/SolidStateGroup?utf8=%E2%9C%93&q=bullet-train"
                                   target="_blank"
                                 >
