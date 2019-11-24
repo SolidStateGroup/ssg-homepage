@@ -123,13 +123,46 @@ const HomePage = class extends React.Component {
                                 {' '}
                       and let
                       us know what you'd like to see.
-                              <br/>
+                                <br/>
                               We also have a core RESTful API.
                             </p>
                         </div>
                     </div>
                 </div>
 
+                <div className="feature-container">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-4">
+                                <h2>Manage features without deployments</h2>
+                                <p>
+                                  Bullet Train combines the concepts of feature toggles with the flexibility of remote config. Rather than just switching features on and off, you can configure them for individual segments, users and development environments.
+                                </p>
+                            </div>
+                            <div className="col-md-8 text-right">
+                                <img alt="Feature use cases" src="/static/images/homepage-features.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="feature-container alt">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-8">
+                                <div className="text-left">
+                                    <img alt="User segmentation and ab testing" src="/static/images/homepage-segments.png"/>
+                                </div>
+                            </div>
+                            <div className="col-md-4">
+                                <h2>Powerful user segmentation</h2>
+                                <p>
+                                  Utilise our powerful rules engine to manage your features for the users you wish to target. You can even use segments for <strong>staged rollouts</strong> or <strong>a/b testing</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="feature-container">
                     <div className="text-center text-center col-lg-4 offset-lg-4">
                         <h2>Fully Featured Platform</h2>
