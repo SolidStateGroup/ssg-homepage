@@ -8,6 +8,25 @@ import 'lazyframe/dist/lazyframe.css';
 import { ButtonWhite } from '../components/base/forms/Button';
 import Link from 'next/link';
 
+
+const Guide = props => (
+    <div>
+        <div onClick={() => window.location = props.href} style={{ cursor: 'pointer', color: 'white', width: 360, alignItems: 'center', height: 183, backgroundColor: '#1d2d3f', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+            <img style={{ marginBottom: props.title ? 10 : 0 }} alt="Feature flags in JavaScript" src={props.image}/>
+            {props.title && (
+            <h4 style={{ fontSize: 14 }}>
+                {props.title}
+            </h4>
+            )}
+        </div>
+        <a style={{ color: '#1c2b3d', textAlign: 'center', display: 'block' }} href={props.href}>
+            <strong>
+                {props.description}
+            </strong>
+        </a>
+    </div>
+);
+
 const HomePage = class extends React.Component {
     static displayName = 'HomePage';
 
@@ -292,6 +311,46 @@ Feature Audit
                         </div>
                     </div>
                 </div>
+
+
+                <div style={{ padding: '1rem' }} className="feature-container alt">
+                    <div className="container">
+                        <div className="text-center">
+                            <h2>Resources</h2>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-4">
+                                <Guide
+                                  href="https://www.youtube.com/watch?v=_lyNzKLZ8rc"
+                                  description="A tutorial on how to use Bullet Train using React Native."
+                                  image="/static/images/tech-logos/react.png"
+                                  title="React Feature Flags Guide"
+                                />
+                            </div>
+                            <div className="col-md-4">
+                                <Guide
+                                  href="https://www.youtube.com/watch?v=GPkCLO0F-5g"
+                                  description="A quick introduction to Bullet Train."
+                                  image="/static/images/90seconds.png"
+                                />
+                            </div>
+                            <div className="col-md-4">
+                                <Guide
+                                  href="https://www.youtube.com/watch?v=8cD-t7KKitU"
+                                  description="A tutorial on how to use Bullet Train using vanilla JavaScript."
+                                  image="/static/images/tech-logos/javascript.png"
+                                  title="JavaScript Feature Flags Guide"
+                                />
+                            </div>
+                        </div>
+                        <div className="text-center">
+                            <a style={{ color: '#1c2b3d', fontSize: 18 }} href="https://www.youtube.com/channel/UCki7GZrOdZZcsV9rAIRchCw">
+                        View all
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="sign-up" id="sign-up">
                     {isLogin ? (
                         <div className="card signup-form container animated fadeIn col-md-8 col-xl-8">
