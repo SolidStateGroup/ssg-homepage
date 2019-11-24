@@ -57,7 +57,7 @@ app.prepare().then(() => {
             return articleCache({ req, res, pagePath, queryParams });
         });
 
-        const homeCache = ssrCache(1000 * 60 * 15);
+        const homeCache = ssrCache(1000 * 60 * 60);
         server.get('/', (req, res) => {
             const queryParams = { id: req.params.id };
             const pagePath = '/';
