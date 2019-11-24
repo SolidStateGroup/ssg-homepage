@@ -43,6 +43,8 @@ class MyApp extends App {
                         <title>
                                 Bullet Train - Feature Flags, Feature Toggles and Remote Config
                         </title>
+                        {/* Chromefix */}
+                        <script></script>
                         <link rel="shortcut icon" href="/static/images/favicon.ico"/>
                         <script src="/static/scripts/inspectlet.js" type="text/javascript" id="inspectletjs" />
                         <script src="/static/scripts/fullstory.js" type="text/javascript" />
