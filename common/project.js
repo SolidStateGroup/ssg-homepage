@@ -2,7 +2,7 @@ export default global.Project = {
     debug: false,
     api: '',
     ga: '',
-    appUrl: 'https://bullet-train.io/',
+    appUrl: 'https://app.bullet-train.io/',
     logs: {
         DATA: true,
         STORE: true,
