@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
-    <title>pointer-screen-pointer</title>
-    <desc>Created with Sketch.</desc>
-    <g id="features-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-Copy-4" transform="translate(-890.000000, -415.000000)" fill-rule="nonzero">
-            <g id="2-copy" transform="translate(739.000000, 199.000000)">
-                <g id="user-traits-cookie-illus" transform="translate(76.000000, 177.000000)">
-                    <g id="pointer-screen-pointer" transform="translate(75.000000, 39.000000)">
-                        <polygon id="pointer-inner" fill="#FFFFFF" points="11.068913 22.2037198 3.05453121 3.02442677 22.2890273 11.0148636 13.9868424 13.9263281"></polygon>
-                        <path d="M11.1585625,25.3567769 L0.949070011,0.92529798 L25.4505411,11.10316 L14.8757056,14.8114292 L11.1585625,25.3567769 L11.1585625,25.3567769 Z M5.16000363,5.122459 L10.9792635,19.0494542 L13.0979903,13.038922 L19.1275023,10.9243853 L5.16000363,5.122459 L5.16000363,5.122459 Z" id="pointer-outer" stroke="#FFFFFF" fill="#373A3C"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg height="26" viewBox="0 0 26 26" width="26" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="m11.068913 22.2037198-8.01438179-19.17929303 19.23449609 7.99043683-8.3021849 2.9114645z" fill="#fff"/><path d="m11.1585625 25.3567769-10.20949249-24.43147892 24.50147109 10.17786202-10.5748355 3.7082692zm-5.99855887-20.2343179 5.81925987 13.9269952 2.1187268-6.0105322 6.029512-2.1145367z" fill="#373a3c" stroke="#fff"/></g></svg>
