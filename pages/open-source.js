@@ -61,7 +61,7 @@ Python REST API for Bullet-Train.
                                         <div className="panel-content">
                                             <h2>bullet-train-frontend</h2>
                                             <p className="m-0">
-Website and mobile app for Bullet Train.
+                                              Website Bullet Train.
                                             </p>
                                             <div className="colour-block colour-block--small colour-block--javascript"/>
                                             <small className="technology-name">JavaScript</small>
@@ -123,7 +123,19 @@ Evaluate objects against a set of JSON rules supporting nested ALL, NONE and ANY
                                         <div className="panel-content">
                                             <h2>bullet-train-js-client</h2>
                                             <p className="m-0">
-Javascript/React/React Native client.
+                                              Javascript client.
+                                            </p>
+                                            <div className="colour-block colour-block--small colour-block--javascript"/>
+                                            <small className="technology-name">JavaScript</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-js-client" target="_blank">
+                                    <div className="panel panel-default panel--open-source mt-4">
+                                        <div className="panel-content">
+                                            <h2>react-native-bullet-train</h2>
+                                            <p className="m-0">
+                                              React Native client.
                                             </p>
                                             <div className="colour-block colour-block--small colour-block--javascript"/>
                                             <small className="technology-name">JavaScript</small>

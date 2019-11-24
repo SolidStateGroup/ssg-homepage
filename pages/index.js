@@ -6,6 +6,7 @@ import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import 'lazyframe/dist/lazyframe.css';
 import { ButtonWhite } from '../components/base/forms/Button';
+import Link from 'next/link';
 
 const HomePage = class extends React.Component {
     static displayName = 'HomePage';
@@ -116,13 +117,14 @@ const HomePage = class extends React.Component {
                             </div>
                             <p className="text-small margin-top no-mb">
                       Don't worry if you don't see your
-                      preferred tech, we'll be adding support for more clients as we grow but
-                      please
+                      preferred tech,
                                 {' '}
                                 <a href="mailto:support@bullet-train.io">get in touch</a>
                                 {' '}
                       and let
                       us know what you'd like to see.
+                              <br/>
+                              We also have a core RESTful API.
                             </p>
                         </div>
                     </div>

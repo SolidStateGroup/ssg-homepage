@@ -28,13 +28,14 @@ const Hero = class extends React.Component {
                             </p>
                             <p className="">
                                 {'We\'re '}
-                                <a
-                                  rel="noreferrer"
-                                  className="link" href="https://github.com/SolidStateGroup?utf8=%E2%9C%93&q=bullet-train"
-                                  target="_blank"
-                                >
+
+                                <Link prefetch={false} href="/open-source">
+                                    <a
+                                      className="link"
+                                    >
                                   100% Open Source
-                                </a>
+                                    </a>
+                                </Link>
                                 . Host with us or on your own infrastructure.
                             </p>
                             <div className="hero-cta mt-1">

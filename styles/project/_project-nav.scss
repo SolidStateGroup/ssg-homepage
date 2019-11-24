@@ -154,9 +154,10 @@ nav.navbar {
         a {
             color: white;
             font-weight: $bold;
-            font-size: 14px;
-            opacity: 0.75;
-
+            font-size: 15px;
+            opacity: 0.9;
+            display: block;
+            line-height: 34px;
             &:hover {
                 opacity: 1;
                 text-decoration: none;

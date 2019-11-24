@@ -58,15 +58,12 @@ class Header extends PureComponent {
                       <div>
 
                           <div className="hidden-sm-down">
-                              <a className="float-right" onClick={Utils.scrollToSignUp}>
-                                  <Button className="btn-primary">Login</Button>
-                              </a>
                               <ul className="nav-list list-unstyled float-right">
                                   <li><Link prefetch={false} href="/features"><a>Features</a></Link></li>
                                   <li><Link prefetch={false} href="/pricing"><a>Pricing</a></Link></li>
                                   <li><Link prefetch={false} href="https://docs.bullet-train.io/"><a>Documentation</a></Link></li>
                                   <li><Link prefetch={false} href="/open-source"><a>Open Source</a></Link></li>
-                                  <li><Link prefetch={false} href={`${Project.appUrl}demo`}><a>Demo</a></Link></li>
+                                  <li><Link prefetch={false} href={`${Project.appUrl}login`}><a>Sign in</a></Link></li>
                               </ul>
                           </div>
 
@@ -100,8 +97,6 @@ class Header extends PureComponent {
                                   )}
                               </Popover>
                           </div>
-
-
                       </div>
                   </div>
               </Row>
