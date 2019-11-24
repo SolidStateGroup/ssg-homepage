@@ -599,7 +599,7 @@ Sign up to accept your
                                             >
                                         Sign Up
                                             </ButtonWhite>
-                                            <a onClick={this.toggleLogin} id="existing-member-btn">
+                                            <a href={`${Project.appUrl}login`} id="existing-member-btn">
                                                   Already a member?
                                             </a>
                                         </div>
