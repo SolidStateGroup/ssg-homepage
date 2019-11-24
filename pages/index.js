@@ -176,7 +176,7 @@ const HomePage = class extends React.Component {
                                 </p>
                             </div>
                             <div className="col-md-8 text-right">
-                                <img alt="Feature use cases" src="/static/images/homepage-features.png"/>
+                                <img style={{maxWidth:"100%"}} alt="Feature use cases" src="/static/images/homepage-features.png"/>
                             </div>
                         </div>
                     </div>
