@@ -21,22 +21,6 @@ class MyApp extends App {
                         />
                         <script src="/static/chromefix.js"/>
                         <script
-                          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"
-                        />
-                        <script
-                          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"
-                        />
-                        <script
-                          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"
-                        />
-                        <script
-                          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"
-                        />
-                        <script
-                          src="https://browser.sentry-cdn.com/4.3.0/bundle.min.js"
-                          crossOrigin="anonymous"
-                        />
-                        <script
                           src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
                           integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
                           crossOrigin="anonymous"
@@ -55,10 +39,9 @@ class MyApp extends App {
                           href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
                           rel="stylesheet"
                         />
-                        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"/>
 
                         <title>
-                                Bullet Train - Feature Flags, Feature Toggles and Remote Config - Ship features with confidence
+                                Bullet Train - Feature Flags, Feature Toggles and Remote Config
                         </title>
                         <link rel="shortcut icon" href="/static/images/favicon.ico"/>
                         <script src="/static/scripts/inspectlet.js" type="text/javascript" id="inspectletjs" />
