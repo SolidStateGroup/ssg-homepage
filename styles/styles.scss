@@ -60,6 +60,10 @@
     }
 }
 
+.margin-auto {
+    margin: auto;
+}
+
 .feature-value-container {
     font-size: 0.8em;
     background: #23364a;
@@ -186,10 +190,10 @@ hr {
 }
 
 @media screen and (max-width: 576px) {
-    
+
     .alert-bar {
         padding: 10px 10px 5px 0;
         font-size: 1em;
     }
-    
+
 }

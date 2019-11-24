@@ -1,6 +1,5 @@
 import React from 'react';
-import lazyframe from 'lazyframe';
-import Link from 'next/link';
+import '../components/Modal';
 
 import ForgotPasswordModal from '../components/ForgotPasswordModal';
 import Hero from '../components/Hero';
@@ -17,8 +16,6 @@ const HomePage = class extends React.Component {
     }
 
     componentDidMount() {
-        lazyframe('.lazyframe');
-
         API.trackPage(Constants.pages.HOME);
 
         $(window).scroll(() => {
@@ -46,6 +43,11 @@ const HomePage = class extends React.Component {
         />);
     }
 
+
+    toggleLogin = () => {
+        this.setState({ isLogin: !this.state.isLogin });
+    }
+
     render = () => {
         const { email, password, organisation_name, first_name, last_name, error, isLoading, isSaving } = this.state;
         // const redirect = this.props.location.query.redirect ? `?redirect=${this.props.location.query.redirect}` : '';
@@ -53,14 +55,14 @@ const HomePage = class extends React.Component {
         // const isLogin = document.location.href.indexOf('login') != -1;
         const redirect = ''; // todo: fixme
         const isInvite = false;
-        const isLogin = false;
+        const isLogin = this.state.isLogin;
         return (
             <div className="homepage">
                 <Hero redirect={redirect}/>
 
                 <div className="tech">
                     <div className="container">
-                        <div className="text-center col-md-12 col-lg-8 push-lg-2">
+                        <div className="text-center margin-auto col-md-12 col-lg-8 push-lg-2">
                             <h2>We currently support these popular languages</h2>
                             <div className="row">
                                 <div className="col-md-1 col-xs-6">
@@ -123,16 +125,6 @@ const HomePage = class extends React.Component {
                       us know what you'd like to see.
                             </p>
                         </div>
-                    </div>
-                </div>
-
-                <div className="container text-center">
-                    <div className="video embed-responsive embed-responsive-16by9">
-                        <div
-                          className="lazyframe embed-responsive-item"
-                          data-src="https://www.youtube.com/embed/GPkCLO0F-5g" data-vendor="youtube"
-                          data-apikey={Project.youtubeApi}
-                        />
                     </div>
                 </div>
 
@@ -265,60 +257,19 @@ Feature Audit
                         </div>
                     </div>
                 </div>
-
-                <div className="mobile-app tech">
-                    <div className="container text-center">
-                        <div className="col-md-6 offset-md-3 pb-3">
-                            <h2>Feature Flags on the go</h2>
-                            <p>
-                                    Now you can manage feature flags and remote config across web, mobile and server
-                                    side applications with our Android and IOS apps.
-                            </p>
-                        </div>
-                        <a
-                          href="https://itunes.apple.com/us/app/bullet-train-feature-manager/id1460735497?ls=1&mt=8"
-                          target="__blank"
-                        >
-                            <img
-                              width={160} className="img-fluid mr-5 app-store-badge"
-                              src="/static/images/app-store-icons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
-                              alt="download on the app store"
-                            />
-                        </a>
-                        <a
-                          href="https://play.google.com/store/apps/details?id=com.solidstategroup.bullettrain"
-                          target="__blank"
-                        >
-                            <img
-                              width={180} className="img-fluid ml-5 play-badge"
-                              src="/static/images/app-store-icons/google-play-badge2x.png"
-                              alt="get it on google play"
-                            />
-                        </a>
-                        <div className="col-md-12">
-                            <img
-                              className="img-fluid pt-5" src="/static/images/mobile_1.png"
-                              alt="bullet train mobile"
-                            />
-                        </div>
-                    </div>
-                </div>
-
                 <div className="sign-up" id="sign-up">
                     {isLogin ? (
                         <div className="card signup-form container animated fadeIn col-md-8 col-xl-8">
-                            <AccountProvider>
-                                {({ isLoading, isSaving, error }, { login }) => (
-                                    <form
-                                      id="form" name="form" onSubmit={(e) => {
-                                          Utils.preventDefault(e);
-                                          login({ email, password });
-                                      }}
-                                    >
-                                        <div className="form-intro text-center">
-                                            <h3 className="mb-4">User login</h3>
-                                        </div>
-                                        {isInvite
+                            <form
+                              id="form" name="form" onSubmit={(e) => {
+                                  Utils.preventDefault(e);
+                                  this.login({ email, password });
+                              }}
+                            >
+                                <div className="form-intro text-center">
+                                    <h3 className="mb-4">User login</h3>
+                                </div>
+                                {isInvite
                                         && (
                                         <div className="notification flex-row">
                                             <ion
@@ -328,85 +279,80 @@ Feature Audit
                                         </div>
                                         )
                                         }
-                                        <fieldset id="details" className="col-lg-6 offset-lg-3">
-                                            {error && error.email ? (
-                                                <span
-                                                  id="email-error"
-                                                  className="text-danger"
-                                                >
-                                                    {error.email}
-                                                </span>
-                                            ) : null}
-                                            <Input
-                                              inputProps={{
-                                                  name: 'email',
-                                                  className: 'full-width',
-                                                  error: error && error.email,
-                                              }}
-                                              onChange={(e) => {
-                                                  this.setState({ email: Utils.safeParseEventValue(e) });
-                                              }}
-                                              className="input-default full-width"
-                                              placeholder="Email"
-                                              type="text"
-                                              name="email" id="email"
-                                            />
-                                            {error && error.password1 ? (
-                                                <span
-                                                  id="password-error"
-                                                  className="text-danger"
-                                                >
-                                                    {error.password1}
-                                                </span>
-                                            ) : null}
-                                            <Input
-                                              inputProps={{
-                                                  name: 'password',
-                                                  className: 'full-width',
-                                                  error: error && error.password1,
-                                              }}
-                                              onChange={(e) => {
-                                                  this.setState({ password: Utils.safeParseEventValue(e) });
-                                              }}
-                                              className="input-default full-width"
-                                              placeholder="Password"
-                                              type="password"
-                                              name="password"
-                                              id="password"
-                                            />
-                                            <div className="form-cta">
-                                                <button
-                                                  id="login-btn"
-                                                  disabled={isLoading || isSaving}
-                                                  className="btn white full-width" type="submit"
-                                                >
+                                <fieldset id="details" className="col-lg-6 offset-lg-3">
+                                    {error && error.email ? (
+                                        <span
+                                          id="email-error"
+                                          className="text-danger"
+                                        >
+                                            {error.email}
+                                        </span>
+                                    ) : null}
+                                    <Input
+                                      inputProps={{
+                                          name: 'email',
+                                          className: 'full-width',
+                                          error: error && error.email,
+                                      }}
+                                      onChange={(e) => {
+                                          this.setState({ email: Utils.safeParseEventValue(e) });
+                                      }}
+                                      className="input-default full-width"
+                                      placeholder="Email"
+                                      type="text"
+                                      name="email" id="email"
+                                    />
+                                    {error && error.password1 ? (
+                                        <span
+                                          id="password-error"
+                                          className="text-danger"
+                                        >
+                                            {error.password1}
+                                        </span>
+                                    ) : null}
+                                    <Input
+                                      inputProps={{
+                                          name: 'password',
+                                          className: 'full-width',
+                                          error: error && error.password1,
+                                      }}
+                                      onChange={(e) => {
+                                          this.setState({ password: Utils.safeParseEventValue(e) });
+                                      }}
+                                      className="input-default full-width"
+                                      placeholder="Password"
+                                      type="password"
+                                      name="password"
+                                      id="password"
+                                    />
+                                    <div className="form-cta">
+                                        <button
+                                          id="login-btn"
+                                          disabled={isLoading || isSaving}
+                                          className="btn white full-width" type="submit"
+                                        >
                                                     Login
-                                                </button>
-                                                <div>
-                                                    <Link href={`/${redirect}`} className="float-left">
-                                                        Not got
-                                                        an account?
-                                                    </Link>
-                                                    <Link
-                                                      className="float-right"
-                                                      href={`/password-recovery${redirect}`}
-                                                      onClick={this.showForgotPassword}
-                                                    >
-                                                        Forgot
-                                                        password?
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                        {error && (
-                                            <div id="error-alert" className="alert alert-danger">
+                                        </button>
+                                        <div>
+                                            <a onClick={this.toggleLogin} className="float-left">
+                                                        Not got an account?
+                                            </a>
+                                            <a
+                                              onClick={this.showForgotPassword}
+                                              className="float-right"
+                                            >
+                                                        Forgot password?
+                                            </a>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                {error && (
+                                <div id="error-alert" className="alert alert-danger">
                                               Please check your details and try again
-                                            </div>
-                                        )}
-
-                                    </form>
+                                </div>
                                 )}
-                            </AccountProvider>
+
+                            </form>
                         </div>
                     ) : (
                         <div>
@@ -415,7 +361,7 @@ Feature Audit
                                   id="form" name="form" onSubmit={(e) => {
                                       Utils.preventDefault(e);
                                       const isInvite = document.location.href.indexOf('invite') != -1;
-                                      register({ email, password, organisation_name, first_name, last_name },
+                                      this.register({ email, password, organisation_name, first_name, last_name },
                                           isInvite);
                                   }}
                                 >
@@ -559,10 +505,9 @@ Sign up to accept your
                                             >
                                         Sign Up
                                             </ButtonWhite>
-
-                                            <Link id="existing-member-btn" to={`/login${redirect}`}>
-                                        Already a member?
-                                            </Link>
+                                            <a onClick={this.toggleLogin} id="existing-member-btn">
+                                                  Already a member?
+                                            </a>
                                         </div>
                                     </fieldset>
                                 </form>

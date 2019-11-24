@@ -3,6 +3,7 @@ import propTypes from 'prop-types';
 import Switch from 'rc-switch';
 import { ModalHeader, Modal, ModalBody, ModalFooter } from '../components/Modal';
 import DatePicker from '../components/DatePicker';
+import Button, { ButtonSecondary } from '../components/base/forms/Button';
 
 class Examples extends React.Component {
     static displayName = 'Examples';
@@ -63,11 +64,6 @@ class Examples extends React.Component {
 class MarkupPage extends Component {
     displayName = 'MarkupPage';
 
-    static async getInitialProps({ ctx: { store } }) {
-        await store.dispatch(AppActions.getWidgets());
-        return {};
-    }
-
     constructor(props) {
         super(props);
         this.state = {};
@@ -92,19 +88,15 @@ class MarkupPage extends Component {
 
                     <FormGroup>
                         <h4 className="mt-5 mb-5">Buttons (click to toggle modal)</h4>
-                        <ButtonPrimary onClick={this.toggle}>Primary</ButtonPrimary>
+                        <Button onClick={this.toggle}>Primary</Button>
                     </FormGroup>
                     <FormGroup>
                         <ButtonSecondary onClick={this.toggle}>Secondary</ButtonSecondary>
                     </FormGroup>
 
-                    <FormGroup>
-                        <ButtonTertiary onClick={this.toggle}>Tertiary</ButtonTertiary>
-                    </FormGroup>
-
                     <Row>
-                        <ButtonTertiary className="mr-2" onClick={this.toggle}>Toggle inline modal</ButtonTertiary>
-                        <ButtonTertiary
+                        <ButtonSecondary className="mr-2" onClick={this.toggle}>Toggle inline modal</ButtonSecondary>
+                        <ButtonSecondary
                           className="mr-2"
                           onClick={() => openConfirm('Confirm', 'Body',
                               () => {
@@ -115,14 +107,14 @@ class MarkupPage extends Component {
                               })}
                         >
                             Open confirm
-                        </ButtonTertiary>
-                        <ButtonTertiary
+                        </ButtonSecondary>
+                        <ButtonSecondary
                           onClick={() => openAlert('Confirm', 'Body', () => {
                               alert('Dismissed');
                           })}
                         >
                             Open alert
-                        </ButtonTertiary>
+                        </ButtonSecondary>
                     </Row>
                     <h4 className="mt-5 mb-5">Panel</h4>
 
@@ -181,14 +173,6 @@ class MarkupPage extends Component {
                     />
 
                     <h4 className="mt-5 mb-5">Tabs</h4>
-                    <Tabs value={this.state.tab} onChange={tab => this.setState({ tab })}>
-                        <div tablabel="Tab 1">
-                            <p>Tab 1 content</p>
-                        </div>
-                        <div tablabel="Tab 2">
-                            <p>Tab 2 content</p>
-                        </div>
-                    </Tabs>
 
                     <InputGroup
                       id="date-picker"

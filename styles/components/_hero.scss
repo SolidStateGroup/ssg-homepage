@@ -7,17 +7,15 @@
       //font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
       font-size: 3rem;
       color: white;
+      margin-top: 0;
     }
     p {
-      //font-weight: 200;
-      //font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
-      font-size: 1em;
-      color: #A1AEB7;
+      font-size: 1.25em;
+      color: #d3e0ea;
       opacity:1;
     }
     .btn {
       font-size: 1.2em;
-      //font-weight: 200;
       padding:13px 20px;
     }
 
@@ -30,10 +28,8 @@
   }
 
   &--homepage {
-    min-height: 768px;
-    margin-top: -30px;
-    padding-top: 170px;
-    padding-bottom:40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     overflow: hidden;
     background: linear-gradient($hero-bg, $hero-bg-dark);
     color: white;
@@ -96,7 +92,7 @@
     &--features-page {
       height: 520px;
       background-color: $hero-bg;
-    
+
       .hero-illustration {
         position: absolute;
         top: 0em;

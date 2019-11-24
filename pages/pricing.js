@@ -89,17 +89,17 @@ const PricingPage = class extends React.Component {
                       <div className="panel panel-default panel-grey">
                           <p className="question">What about an annual discount?</p>
                           <p className="answer">
-                We're working on this - please
+                            If this sort of pricing is important to you - please
                               {' '}
-                              <a href="mailto:support@bullettrain.io">get in touch</a>
+                              <a style={{ color: '#22354a' }} href="mailto:support@bullettrain.io">get in touch</a>
                               {' '}
-                if this is important to you right now.
+
                           </p>
                       </div>
                       <div className="panel panel-default panel-grey">
                           <p className="question">Wait, what? This seems too cheap?</p>
                           <p className="answer">
-                We like to think of it as offering great value 🤪
+                            This was one of the drivers for creating Bullet Train, we will always aim to offer the best value.
                           </p>
                       </div>
                       <div className="text-center cta-container">

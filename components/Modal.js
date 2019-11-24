@@ -24,6 +24,7 @@ const withModal = (WrappedComponent) => {
             this.state = {
                 isOpen: true,
             };
+            global.closeModal = this.toggle;
         }
 
         toggle = () => {

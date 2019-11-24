@@ -31,8 +31,8 @@ class Header extends PureComponent {
                       <div className="navbar-nav">
                           <Link
                             href="/"
-                            className="nav-item nav-item-brand nav-link"
                           >
+                              <a className="nav-item nav-item-brand nav-link">
                               {isLegal ? null : (
                                   <Row>
                                       {isHomepage || isDark ? (
@@ -50,6 +50,7 @@ class Header extends PureComponent {
                                           )}
                                   </Row>
                               )}
+                              </a>
                           </Link>
                       </div>
                   </div>
@@ -57,15 +58,15 @@ class Header extends PureComponent {
                       <div>
 
                           <div className="hidden-sm-down">
-                              <Link prefetch={false} className="float-right" to={`/${redirect}`} onClick={Utils.scrollToSignUp}>
+                              <a className="float-right" onClick={Utils.scrollToSignUp}>
                                   <Button className="btn-primary">Login</Button>
-                              </Link>
+                              </a>
                               <ul className="nav-list list-unstyled float-right">
                                   <li><Link prefetch={false} href="/features"><a>Features</a></Link></li>
                                   <li><Link prefetch={false} href="/pricing"><a>Pricing</a></Link></li>
-                                  <li><Link prefetch={false} href="https://docs.bullet-train.io/">Demo</Link></li>
-                                  <li><Link prefetch={false} href="/open-source">Open Source</Link></li>
-                                  <li><Link prefetch={false} href={`${Project.appUrl}demo`}>Demo</Link></li>
+                                  <li><Link prefetch={false} href="https://docs.bullet-train.io/"><a>Documentation</a></Link></li>
+                                  <li><Link prefetch={false} href="/open-source"><a>Open Source</a></Link></li>
+                                  <li><Link prefetch={false} href={`${Project.appUrl}demo`}><a>Demo</a></Link></li>
                               </ul>
                           </div>
 
@@ -80,19 +81,18 @@ class Header extends PureComponent {
                                         />
                                     </div>
                                 )}
-                                ref={c => this.mobileNav = c}
                               >
                                   {toggle => (
                                       <div className="mobile-navigation__bg">
                                           <ul className="list-unstyled mb-0">
-                                              <li><Link prefetch={false} to="/features">Features</Link></li>
-                                              <li><Link prefetch={false} to="/pricing">Pricing</Link></li>
-                                              <li><Link prefetch={false} to="https://docs.bullet-train.io">Documentation</Link></li>
-                                              <li><Link to="/open-source">Open Source</Link></li>
-                                              <li><Link to={`${Project.appUrl}demo`}>Demo</Link></li>
+                                              <li><Link prefetch={false} href="/features"><a>Features</a></Link></li>
+                                              <li><Link prefetch={false} href="/pricing"><a>Pricing</a></Link></li>
+                                              <li><a href="https://docs.bullet-train.io">Documentation</a></li>
+                                              <li><Link href="/open-source"><a>Open Source</a></Link></li>
+                                              <li><a href={`${Project.appUrl}demo`}>Demo</a></li>
                                               <li>
-                                                  <Link to={`/login${redirect}`}>
-                                                      <Button className="btn-block">Login</Button>
+                                                  <Link href={`/login${redirect}`}>
+                                                      <a className="btn-block">Login</a>
                                                   </Link>
                                               </li>
                                           </ul>

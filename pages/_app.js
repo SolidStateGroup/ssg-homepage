@@ -6,7 +6,7 @@ import Header from '../components/Header';
 
 class MyApp extends App {
     render() {
-        const { Component, pageProps, store } = this.props;
+        const { Component, pageProps } = this.props;
 
         return (
             <Container>

@@ -1,4 +1,6 @@
 import data from '../common/utils/_data';
+import Button from './base/forms/Button';
+import InputGroup from './base/forms/InputGroup';
 
 const ForgotPassword = class extends React.Component {
     constructor(props, context) {

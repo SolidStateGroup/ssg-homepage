@@ -60,7 +60,7 @@ const Footer = class extends React.Component {
                           <ul className=" float-left nav-list">
                               <li><a href={`${Project.appUrl}demo`}>Demo</a></li>
                               <li><a href="https://docs.bullet-train.io/">Documentation</a></li>
-                              <li><Link prefetch={false} to="/pricing#pricing">Pricing</Link></li>
+                              <li><Link prefetch={false} href="/pricing#pricing"><a>Pricing</a></Link></li>
                           </ul>
                       </div>
                       <div className="col-md-2">
@@ -68,16 +68,16 @@ const Footer = class extends React.Component {
                           <ul className=" float-left nav-list">
                               <li><a href="mailto:support@bullet-train.io">Contact Us</a></li>
                               <li><a href="https://status.bullet-train.io/">Status</a></li>
-                              <li><Link prefetch={false} to="/blog/remote-config-and-feature-flags">What are feature flags?</Link></li>
-                              <li><Link prefetch={false} to="/blog/remote-config-and-feature-flags">What is remote config?</Link></li>
+                              <li><Link prefetch={false} href="/blog/remote-config-and-feature-flags"><a>What are feature flags?</a></Link></li>
+                              <li><Link prefetch={false} href="/blog/remote-config-and-feature-flags"><a>What is remote config?</a></Link></li>
                           </ul>
                       </div>
                       <div className="col-md-2">
                           <h6>Company</h6>
                           <ul className=" float-left nav-list">
-                              <li><Link prefetch={false} to="/legal/tos">Terms of Service</Link></li>
-                              <li><Link prefetch={false} to="/legal/privacy-policy">Privacy Policy</Link></li>
-                              <li><Link prefetch={false} to="/legal/sla">Service Level Agreement</Link></li>
+                              <li><Link prefetch={false} href="/legal/tos"><a>Terms of Service</a></Link></li>
+                              <li><Link prefetch={false} href="/legal/privacy-policy"><a>Privacy Policy</a></Link></li>
+                              <li><Link prefetch={false} href="/legal/sla"><a>Service Level Agreement</a></Link></li>
                           </ul>
                       </div>
                   </div>

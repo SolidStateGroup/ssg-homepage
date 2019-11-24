@@ -61,6 +61,7 @@ module.exports = {
         'react/destructuring-assignment': 0,
         'react/forbid-prop-types': 0,
         'react/jsx-filename-extension': 0,
+        'react/jsx-one-expression-per-line': 0,
         'react/jsx-no-undef': 0,
         'react/jsx-pascal-case': 0,
         'react/jsx-tag-spacing': 0, //Disabled to it not looking for global components
