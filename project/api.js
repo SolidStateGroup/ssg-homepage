@@ -21,7 +21,7 @@ const API = {
             const parsedCookies = cookie.parse(req.headers.cookie || '');
             return parsedCookies && parsedCookies.token;
         }
-        cookies.get('token');
+        return cookies.get('t');
     },
     getStoredLocale(req) {
         if (req) {
@@ -45,7 +45,7 @@ const API = {
         return cookies.set('locale', v);
     },
     setStoredToken(v) {
-        return cookies.set('token', v);
+        return cookies.set('t', v);
     },
     trackEvent(data) {
         if (__DEV__) {

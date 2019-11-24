@@ -6,6 +6,8 @@ import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import 'lazyframe/dist/lazyframe.css';
 import { ButtonWhite } from '../components/base/forms/Button';
+import data from '../common/utils/_data';
+import Link from 'next/link';
 
 const Guide = props => (
     <div>
@@ -66,14 +68,31 @@ const HomePage = class extends React.Component {
         this.setState({ isLogin: !this.state.isLogin });
     }
 
+    register = (details) => {
+        const { email, password, first_name, last_name, organisation_name = 'Default Organisation' } = details;
+        this.setState({ isSaving: true });
+
+        data.post(`${Project.api}auth/register/`, {
+            email,
+            password1: password,
+            password2: password,
+            first_name,
+            last_name,
+        })
+            .then((res) => {
+                if (res && res.key) {
+                    API.setStoredToken(res.key)
+                    document.location = Project.appUrl;
+                }
+            })
+            .catch((error) => {
+                this.setState({ error, isSaving: false });
+            });
+    }
+
     render = () => {
         const { email, password, organisation_name, first_name, last_name, error, isLoading, isSaving } = this.state;
-        // const redirect = this.props.location.query.redirect ? `?redirect=${this.props.location.query.redirect}` : '';
-        // const isInvite = document.location.href.indexOf('invite') != -1;
-        // const isLogin = document.location.href.indexOf('login') != -1;
         const redirect = ''; // todo: fixme
-        const isInvite = false;
-        const isLogin = this.state.isLogin;
         return (
             <div className="homepage">
                 <Hero redirect={redirect}/>
@@ -350,37 +369,60 @@ Feature Audit
                 </div>
 
                 <div className="sign-up" id="sign-up">
-                    {isLogin ? (
+                    <div>
                         <div className="card signup-form container animated fadeIn col-md-8 col-xl-8">
                             <form
                               id="form" name="form" onSubmit={(e) => {
                                   Utils.preventDefault(e);
-                                  this.login({ email, password });
+                                  this.register({ email, password, organisation_name, first_name, last_name });
                               }}
                             >
                                 <div className="form-intro text-center">
-                                    <h3 className="mb-4">User login</h3>
+                                    <h3>It's free to get started.</h3>
+                                    <p className="text-white">
+                                        We have a 100% free for life plan for smaller projects.
+                                        {' '}
+                                        <Link href="/pricing">
+                                            <a>
+                                              Check out our Pricing
+                                            </a>
+                                        </Link>
+                                    </p>
                                 </div>
-                                {isInvite
-                                        && (
-                                        <div className="notification flex-row">
-                                            <ion
-                                              className="notification__icon ion-md-information-circle-outline mb-3"
-                                            />
-                                            <p className="notification__text pl-3">Login to accept your invite</p>
-                                        </div>
-                                        )
-                                        }
                                 <fieldset id="details" className="col-lg-6 offset-lg-3">
-                                    {error && error.email ? (
-                                        <span
-                                          id="email-error"
-                                          className="text-danger"
-                                        >
-                                            {error.email}
-                                        </span>
-                                    ) : null}
-                                    <Input
+                                    <InputGroup
+                                      title="First Name"
+                                      data-test="firstName"
+                                      inputProps={{
+                                          name: 'firstName',
+                                          className: 'full-width',
+                                          error: error && error.first_name,
+                                      }}
+                                      onChange={(e) => {
+                                          this.setState({ first_name: Utils.safeParseEventValue(e) });
+                                      }}
+                                      className="input-default full-width"
+                                      type="text"
+                                      name="firstName" id="firstName"
+                                    />
+                                    <InputGroup
+                                      title="Last Name"
+                                      data-test="lastName"
+                                      inputProps={{
+                                          name: 'lastName',
+                                          className: 'full-width',
+                                          error: error && error.last_name,
+                                      }}
+                                      onChange={(e) => {
+                                          this.setState({ last_name: Utils.safeParseEventValue(e) });
+                                      }}
+                                      className="input-default full-width"
+                                      type="text"
+                                      name="lastName" id="lastName"
+                                    />
+                                    <InputGroup
+                                      title="Email address"
+                                      data-test="email"
                                       inputProps={{
                                           name: 'email',
                                           className: 'full-width',
@@ -390,19 +432,13 @@ Feature Audit
                                           this.setState({ email: Utils.safeParseEventValue(e) });
                                       }}
                                       className="input-default full-width"
-                                      placeholder="Email"
                                       type="text"
-                                      name="email" id="email"
+                                      name="email"
+                                      id="email"
                                     />
-                                    {error && error.password1 ? (
-                                        <span
-                                          id="password-error"
-                                          className="text-danger"
-                                        >
-                                            {error.password1}
-                                        </span>
-                                    ) : null}
-                                    <Input
+                                    <InputGroup
+                                      title="Password"
+                                      data-test="password"
                                       inputProps={{
                                           name: 'password',
                                           className: 'full-width',
@@ -412,200 +448,40 @@ Feature Audit
                                           this.setState({ password: Utils.safeParseEventValue(e) });
                                       }}
                                       className="input-default full-width"
-                                      placeholder="Password"
                                       type="password"
                                       name="password"
                                       id="password"
                                     />
-                                    <div className="form-cta">
-                                        <button
-                                          id="login-btn"
+
+                                    {error
+                                  && (
+                                  <FormGroup>
+                                      <div id="error-alert" className="alert alert-danger">
+                                        Please check your details and try again
+                                      </div>
+                                  </FormGroup>
+                                  )
+                                  }
+
+                                    <div className="form-cta margin-top">
+
+                                        <ButtonWhite
+                                          data-test="signup-btn"
+                                          name="signup-btn"
                                           disabled={isLoading || isSaving}
-                                          className="btn white full-width" type="submit"
+                                          className="full-width"
+                                          type="submit"
                                         >
-                                                    Login
-                                        </button>
-                                        <div>
-                                            <a onClick={this.toggleLogin} className="float-left">
-                                                        Not got an account?
-                                            </a>
-                                            <a
-                                              onClick={this.showForgotPassword}
-                                              className="float-right"
-                                            >
-                                                        Forgot password?
-                                            </a>
-                                        </div>
+                                        Sign Up
+                                        </ButtonWhite>
+                                        <a href={`${Project.appUrl}login`} id="existing-member-btn">
+                                                  Already a member?
+                                        </a>
                                     </div>
                                 </fieldset>
-                                {error && (
-                                <div id="error-alert" className="alert alert-danger">
-                                              Please check your details and try again
-                                </div>
-                                )}
-
                             </form>
                         </div>
-                    ) : (
-                        <div>
-                            <div className="card signup-form container animated fadeIn col-md-8 col-xl-8">
-                                <form
-                                  id="form" name="form" onSubmit={(e) => {
-                                      Utils.preventDefault(e);
-                                      const isInvite = document.location.href.indexOf('invite') != -1;
-                                      this.register({ email, password, organisation_name, first_name, last_name },
-                                          isInvite);
-                                  }}
-                                >
-
-                                    <div className="form-intro text-center">
-                                        <h3>It's free to get started.</h3>
-                                        {!isInvite && (
-                                            <p className="text-white">
-We have a 100% free for life plan for smaller projects.
-                                                <a href="/pricing">Check out our Pricing</a>
-                                            </p>
-                                        )}
-                                    </div>
-                                    {error
-                                      && (
-                                      <FormGroup className="col-lg-6 offset-lg-3">
-                                          <div id="error-alert" className="alert alert-danger">
-                                                Please check your details and try again
-                                          </div>
-                                      </FormGroup>
-                                      )
-                                      }
-                                    {isInvite
-                                      && (
-                                      <div className="notification flex-row">
-                                          <ion
-                                            className="notification__icon ion-md-information-circle-outline mb-3"
-                                          />
-                                          <p className="notification__text pl-3">
-Sign up to accept your
-                                              invite
-                                          </p>
-                                      </div>
-                                      )
-                                      }
-                                    <fieldset id="details" className="col-lg-6 offset-lg-3">
-                                        <InputGroup
-                                          title="First Name"
-                                          data-test="firstName"
-                                          inputProps={{
-                                              name: 'firstName',
-                                              className: 'full-width',
-                                              error: error && error.first_name,
-                                          }}
-                                          onChange={(e) => {
-                                              this.setState({ first_name: Utils.safeParseEventValue(e) });
-                                          }}
-                                          className="input-default full-width"
-                                          type="text"
-                                          name="firstName" id="firstName"
-                                        />
-                                        <InputGroup
-                                          title="Last Name"
-                                          data-test="lastName"
-                                          inputProps={{
-                                              name: 'lastName',
-                                              className: 'full-width',
-                                              error: error && error.last_name,
-                                          }}
-                                          onChange={(e) => {
-                                              this.setState({ last_name: Utils.safeParseEventValue(e) });
-                                          }}
-                                          className="input-default full-width"
-                                          type="text"
-                                          name="lastName" id="lastName"
-                                        />
-                                        {!isInvite && (
-                                        <InputGroup
-                                          title="Organisation name"
-                                          data-test="companyName"
-                                          inputProps={{
-                                              name: 'companyName',
-                                              className: 'full-width',
-                                          }}
-                                          onChange={(e) => {
-                                              this.setState({ organisation_name: Utils.safeParseEventValue(e) });
-                                          }}
-                                          className="input-default full-width"
-                                          type="text"
-                                          name="companyName" id="organisation"
-                                        />
-                                        )}
-
-                                        {error && error.email ? (
-                                            <span
-                                              id="email-error"
-                                              className="text-danger"
-                                            >
-                                                {error.email}
-                                            </span>
-                                        ) : null}
-                                        <InputGroup
-                                          title="Email address"
-                                          data-test="email"
-                                          inputProps={{
-                                              name: 'email',
-                                              className: 'full-width',
-                                              error: error && error.email,
-                                          }}
-                                          onChange={(e) => {
-                                              this.setState({ email: Utils.safeParseEventValue(e) });
-                                          }}
-                                          className="input-default full-width"
-                                          type="text"
-                                          name="email"
-                                          id="email"
-                                        />
-
-                                        {error && error.password1 ? (
-                                            <span
-                                              id="password-error"
-                                              className="text-danger"
-                                            >
-                                                {error.password1}
-                                            </span>
-                                        ) : null}
-                                        <InputGroup
-                                          title="Password"
-                                          data-test="password"
-                                          inputProps={{
-                                              name: 'password',
-                                              className: 'full-width',
-                                              error: error && error.password1,
-                                          }}
-                                          onChange={(e) => {
-                                              this.setState({ password: Utils.safeParseEventValue(e) });
-                                          }}
-                                          className="input-default full-width"
-                                          type="password"
-                                          name="password"
-                                          id="password"
-                                        />
-                                        <div className="form-cta margin-top">
-
-                                            <ButtonWhite
-                                              data-test="signup-btn"
-                                              name="signup-btn"
-                                              disabled={isLoading || isSaving}
-                                              className="full-width"
-                                              type="submit"
-                                            >
-                                        Sign Up
-                                            </ButtonWhite>
-                                            <a href={`${Project.appUrl}login`} id="existing-member-btn">
-                                                  Already a member?
-                                            </a>
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            </div>
-                        </div>
-                    )}
+                    </div>
                 </div>
 
                 <Footer className="homepage"/>

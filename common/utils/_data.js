@@ -27,8 +27,12 @@ const _data = {
                     document.getElementById('e2e-error').innerText = JSON.stringify(error);
                 }
                 API.log(response.url, response.status, err);
-                // eslint-disable-next-line
-                return Promise.reject({ ...response, _bodyText: err });
+                try {
+                    const json = JSON.parse(err);
+                    return Promise.reject(json);
+                } catch (e) {
+                    return Promise.reject(response);
+                }
             });
     },
 
@@ -111,9 +115,6 @@ const _data = {
             .then((response) => {
                 API.log('API', 'RESPONSE', method, url, 'Response body', response, 'Original request', options);
                 return response;
-            })
-            .catch(() => {
-                throw new Error(Constants.simulate.FAKE_API_ERROR ? 'API Error' : 'Network request failed');
             });
     },
 

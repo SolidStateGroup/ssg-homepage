@@ -5,6 +5,7 @@ import '../project/polyfill';
 import Header from '../components/Header';
 
 class MyApp extends App {
+
     render() {
         const { Component, pageProps } = this.props;
 
@@ -44,7 +45,7 @@ class MyApp extends App {
                                 Bullet Train - Feature Flags, Feature Toggles and Remote Config
                         </title>
                         {/* Chromefix */}
-                        <script></script>
+                        <script />
                         <link rel="shortcut icon" href="/static/images/favicon.ico"/>
                         <script src="/static/scripts/inspectlet.js" type="text/javascript" id="inspectletjs" />
                         <script src="/static/scripts/fullstory.js" type="text/javascript" />
