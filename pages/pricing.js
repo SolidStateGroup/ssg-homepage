@@ -6,6 +6,8 @@ import Feedback from '../components/Feedback';
 import Constants from '../common/utils/constants';
 import '../components/Modal';
 
+export const config = { amp: true };
+
 const PricingPage = class extends React.Component {
   static displayName = 'PricingPage'
 

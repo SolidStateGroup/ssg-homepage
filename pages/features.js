@@ -3,13 +3,14 @@
  */
 
 import React, { Component } from 'react';
-import Head from 'next/head';
 import anime from 'animejs';
 import Button from '../components/base/forms/Button';
 import FeatureFlagsHero from '../animations/FeatureFlagsHero';
 import FeatureFlagsAnimation from '../animations/FeatureFlagsAnimation';
 import RemoteConfigAnimation from '../animations/RemoteConfigAnimation';
 import UserTraitsAnimation from '../animations/UserTraitsAnimation';
+
+export const config = { amp: true };
 
 export default class FeaturessExampleView extends Component {
   static displayName = 'FeaturesExamplePage';

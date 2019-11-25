@@ -9,6 +9,8 @@ import { ButtonWhite } from '../components/base/forms/Button';
 import data from '../common/utils/_data';
 import Link from 'next/link';
 
+export const config = { amp: true };
+
 const Guide = props => (
     <div>
         <div onClick={() => window.location = props.href} style={{ cursor: 'pointer', color: 'white', width: 360, alignItems: 'center', height: 183, backgroundColor: '#1d2d3f', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
@@ -37,22 +39,6 @@ const HomePage = class extends React.Component {
 
     componentDidMount() {
         API.trackPage(Constants.pages.HOME);
-
-        $(window).scroll(() => {
-            const scroll = $(window).scrollTop();
-
-            // >=, not <=
-            if (scroll >= 75) {
-                // clearHeader, not clearheader - caps H
-                $('.navbar-homepage').addClass('dark-header');
-            } else if (scroll <= 75) {
-                $('.navbar-homepage').removeClass('dark-header');
-            }
-        });
-
-        if (document.location.href.indexOf('invite') != -1) {
-            Utils.scrollToSignUp();
-        }
     }
 
     showForgotPassword = (e) => {
@@ -81,7 +67,7 @@ const HomePage = class extends React.Component {
         })
             .then((res) => {
                 if (res && res.key) {
-                    API.setStoredToken(res.key)
+                    API.setStoredToken(res.key);
                     document.location = Project.appUrl;
                 }
             })
@@ -176,7 +162,7 @@ const HomePage = class extends React.Component {
                                 </p>
                             </div>
                             <div className="col-md-8 text-right">
-                                <img style={{maxWidth:"100%"}} alt="Feature use cases" src="/static/images/homepage-features.png"/>
+                                <img style={{ maxWidth: '100%' }} alt="Feature use cases" src="/static/images/homepage-features.png"/>
                             </div>
                         </div>
                     </div>
@@ -187,7 +173,7 @@ const HomePage = class extends React.Component {
                         <div className="row">
                             <div className="col-md-8">
                                 <div className="text-left">
-                                    <img style={{maxWidth:"100%"}} alt="User segmentation and ab testing" src="/static/images/homepage-segments.png"/>
+                                    <img style={{ maxWidth: '100%' }} alt="User segmentation and ab testing" src="/static/images/homepage-segments.png"/>
                                 </div>
                             </div>
                             <div className="col-md-4">

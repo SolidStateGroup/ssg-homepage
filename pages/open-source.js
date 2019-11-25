@@ -3,6 +3,8 @@ import Tabs from '../components/base/forms/Tabs';
 import TabItem from '../components/base/forms/TabItem';
 import Head from 'next/head';
 
+export const config = { amp: true };
+
 export default class OpenSource extends Component {
     static displayName = 'OpenSourcePage'
 
