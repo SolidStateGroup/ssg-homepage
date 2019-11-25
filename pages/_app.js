@@ -20,20 +20,14 @@ class MyApp extends App {
                           name="description"
                           content="Manage your Feature Flags, Feature Toggles and Remote Config in your Mobile, React, React Native, Java, Javascript (Node) and Python projects."
                         />
-                        <script src="/static/chromefix.js"/>
                         <script
                           src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
                           integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
                           crossOrigin="anonymous"
                         />
-                        <script
-                          src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"
-                          integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB"
-                          crossOrigin="anonymous"
-                        />
 
                         <link
-                          href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800,900&display=swap"
+                          href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap"
                           rel="stylesheet"
                         />
                         <link
@@ -44,11 +38,7 @@ class MyApp extends App {
                         <title>
                                 Bullet Train - Feature Flags, Feature Toggles and Remote Config
                         </title>
-                        {/* Chromefix */}
-                        <script />
                         <link rel="shortcut icon" href="/static/images/favicon.ico"/>
-                        <script src="/static/scripts/inspectlet.js" type="text/javascript" id="inspectletjs" />
-                        <script src="/static/scripts/fullstory.js" type="text/javascript" />
                     </Head>
                     <Header/>
                     <Component {...pageProps} />
@@ -64,6 +54,7 @@ class MyApp extends App {
                             )
                         }
                 </React.Fragment>
+                <script src="/static/scripts/fullstory.js" type="text/javascript" />
             </Container>
         );
     }
