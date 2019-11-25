@@ -8,7 +8,6 @@ const withSourceMaps = require('@zeit/next-source-maps')();
 
 
 const nextConfig = {
-    target: 'serverless',
     // next-offline options
     workboxOpts: {
         swDest: 'static/service-worker.js',
