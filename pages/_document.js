@@ -6,16 +6,9 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import '../project/api';
 
 class MyDocument extends Document {
-    static async getInitialProps(ctx) {
-        const initialProps = await Document.getInitialProps(ctx);
-        const locale = API.getStoredLocale(ctx.req);
-        return { ...initialProps, locale };
-    }
-
-
     render() {
         return (
-            <html lang={this.props.locale}>
+            <html lang="en">
                 <Head />
                 <body>
                     <Main />
