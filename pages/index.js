@@ -9,8 +9,6 @@ import { ButtonWhite } from '../components/base/forms/Button';
 import data from '../common/utils/_data';
 import Link from 'next/link';
 
-export const config = { amp: true };
-
 const Guide = props => (
     <div>
         <div onClick={() => window.location = props.href} style={{ cursor: 'pointer', color: 'white', width: 360, alignItems: 'center', height: 183, backgroundColor: '#1d2d3f', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>

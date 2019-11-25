@@ -10,8 +10,6 @@ import FeatureFlagsAnimation from '../animations/FeatureFlagsAnimation';
 import RemoteConfigAnimation from '../animations/RemoteConfigAnimation';
 import UserTraitsAnimation from '../animations/UserTraitsAnimation';
 
-export const config = { amp: true };
-
 export default class FeaturessExampleView extends Component {
   static displayName = 'FeaturesExamplePage';
 
