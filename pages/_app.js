@@ -24,6 +24,7 @@ class MyApp extends App {
                           href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:300,400&display=swap"
                           rel="stylesheet"
                         />
+                        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" />
                         <title>
                                 Bullet Train - Feature Flags, Feature Toggles and Remote Config
                         </title>
@@ -43,7 +44,6 @@ class MyApp extends App {
                             )
                         }
                 </React.Fragment>
-                <script src="/static/scripts/fullstory.js" type="text/javascript" />
             </Container>
         );
     }
