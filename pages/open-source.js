@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import Head from 'next/head';
 import Tabs from '../components/base/forms/Tabs';
 import TabItem from '../components/base/forms/TabItem';
-import Head from 'next/head';
 
 export default class OpenSource extends Component {
     static displayName = 'OpenSourcePage'
@@ -16,7 +16,6 @@ export default class OpenSource extends Component {
     render() {
         return (
             <div className="">
-
                 <Head>
                     <title>
                       Bullet Train - Open Source Projects
@@ -24,7 +23,7 @@ export default class OpenSource extends Component {
                 </Head>
                 <div className="hero__open-source pt-3 text-center">
                     <h1 className="display pt-5">Open Source</h1>
-                    <p className="pb-3">All of our open source repositiories are listed here</p>
+                    <p className="pb-3">All of our open source repositories are listed here</p>
                 </div>
 
                 <div className="container">
@@ -43,7 +42,10 @@ export default class OpenSource extends Component {
                             )}
                         >
                             <div className="mb-5">
-                                <a className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-api" target="_blank">
+                                <a
+                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-api" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
                                             <h2>bullet-train-api</h2>
@@ -56,7 +58,10 @@ Python REST API for Bullet-Train.
                                     </div>
                                 </a>
 
-                                <a className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-frontend" target="_blank">
+                                <a
+                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-frontend" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
                                             <h2>bullet-train-frontend</h2>
@@ -69,7 +74,10 @@ Python REST API for Bullet-Train.
                                     </div>
                                 </a>
 
-                                <a className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-docs" target="_blank">
+                                <a
+                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-docs" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
                                             <h2>bullet-train-docs</h2>
@@ -80,7 +88,10 @@ This is the documentation repository for the Docs of Bullet Train.
                                     </div>
                                 </a>
 
-                                <a className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-examples" target="_blank">
+                                <a
+                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-examples" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
                                             <h2>bullet-train-examples</h2>
@@ -93,7 +104,10 @@ A collection of integrations to Bullet Train in a number of different frameworks
                                     </div>
                                 </a>
 
-                                <a className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-rules-engine" target="_blank">
+                                <a
+                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-rules-engine" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
                                             <h2>bullet-train-rules-engine</h2>
@@ -118,7 +132,10 @@ Evaluate objects against a set of JSON rules supporting nested ALL, NONE and ANY
                         )}
                         >
                             <div className="mb-5">
-                                <a className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-js-client" target="_blank">
+                                <a
+                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-js-client" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
                                             <h2>bullet-train-js-client</h2>
@@ -130,7 +147,10 @@ Evaluate objects against a set of JSON rules supporting nested ALL, NONE and ANY
                                         </div>
                                     </div>
                                 </a>
-                                <a className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-js-client" target="_blank">
+                                <a
+                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-js-client" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
                                             <h2>react-native-bullet-train</h2>
@@ -142,7 +162,10 @@ Evaluate objects against a set of JSON rules supporting nested ALL, NONE and ANY
                                         </div>
                                     </div>
                                 </a>
-                                <a className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-nodejs-client" target="_blank">
+                                <a
+                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-nodejs-client" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
                                             <h2>bullet-train-nodejs-client</h2>
@@ -155,7 +178,10 @@ Node.js client.
                                     </div>
                                 </a>
 
-                                <a className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-dotnet-client" target="_blank">
+                                <a
+                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-dotnet-client" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
                                             <h2>bullet-train-dotnet-client</h2>
@@ -168,7 +194,10 @@ Node.js client.
                                     </div>
                                 </a>
 
-                                <a className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-ruby-client" target="_blank">
+                                <a
+                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-ruby-client" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
                                             <h2>bullet-train-ruby-client</h2>
@@ -181,7 +210,10 @@ Ruby client.
                                     </div>
                                 </a>
 
-                                <a className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-python-client" target="_blank">
+                                <a
+                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-python-client" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
                                             <h2>bullet-train-python-client</h2>
@@ -194,7 +226,10 @@ Python client.
                                     </div>
                                 </a>
 
-                                <a className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-java-client" target="_blank">
+                                <a
+                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-java-client" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
                                             <h2>bullet-train-java-client</h2>
@@ -207,7 +242,10 @@ Java/Android client.
                                     </div>
                                 </a>
 
-                                <a className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-ios-client" target="_blank">
+                                <a
+                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-ios-client" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
                                             <h2>bullet-train-ios-client</h2>

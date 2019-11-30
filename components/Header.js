@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import { withRouter } from 'next/router';
 import Link from 'next/link';
-import Popover from './base/Popover';
 import Button from './base/forms/Button';
 // import propTypes from 'prop-types';
 
@@ -56,7 +55,6 @@ class Header extends PureComponent {
                   </div>
                   <div className="navbar-right">
                       <div>
-
                           <div className="hidden-sm-down">
                               <ul className="nav-list list-unstyled float-right">
                                   <li><Link prefetch={false} href="/features"><a>Features</a></Link></li>
@@ -65,37 +63,6 @@ class Header extends PureComponent {
                                   <li><Link prefetch={false} href="/open-source"><a>Open Source</a></Link></li>
                                   <li><Link prefetch={false} href={`${Project.appUrl}login`}><a>Sign in</a></Link></li>
                               </ul>
-                          </div>
-
-
-                          <div className="hidden-md-up">
-                              <Popover
-                                className="popover-right mobile-navigation"
-                                renderTitle={(toggle, isActive) => (
-                                    <div className="mobile-navigation__button" onClick={toggle}>
-                                        <ion
-                                          className={isActive ? 'icon ion-ios-close' : 'icon ion-md-menu'}
-                                        />
-                                    </div>
-                                )}
-                              >
-                                  {toggle => (
-                                      <div className="mobile-navigation__bg">
-                                          <ul className="list-unstyled mb-0">
-                                              <li><Link prefetch={false} href="/features"><a>Features</a></Link></li>
-                                              <li><Link prefetch={false} href="/pricing"><a>Pricing</a></Link></li>
-                                              <li><a href="https://docs.bullet-train.io">Documentation</a></li>
-                                              <li><Link href="/open-source"><a>Open Source</a></Link></li>
-                                              <li><a href={`${Project.appUrl}demo`}>Demo</a></li>
-                                              <li>
-                                                  <Link href={`/login${redirect}`}>
-                                                      <a className="btn-block">Login</a>
-                                                  </Link>
-                                              </li>
-                                          </ul>
-                                      </div>
-                                  )}
-                              </Popover>
                           </div>
                       </div>
                   </div>

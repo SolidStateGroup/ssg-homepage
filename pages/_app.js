@@ -5,9 +5,8 @@ import '../project/polyfill';
 import Header from '../components/Header';
 
 class MyApp extends App {
-
     render() {
-        const { Component, pageProps } = this.props;
+        const { Component } = this.props;
 
         return (
             <Container>
@@ -19,11 +18,6 @@ class MyApp extends App {
                         <meta
                           name="description"
                           content="Manage your Feature Flags, Feature Toggles and Remote Config in your Mobile, React, React Native, Java, Javascript (Node) and Python projects."
-                        />
-                        <script
-                          src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
-                          integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
-                          crossOrigin="anonymous"
                         />
 
                         <link
@@ -41,7 +35,7 @@ class MyApp extends App {
                         <link rel="shortcut icon" href="/static/images/favicon.ico"/>
                     </Head>
                     <Header/>
-                    <Component {...pageProps} />
+                    <Component />
                     <div id="confirm"/>
                     <div id="alert"/>
                     <div id="modal"/>
