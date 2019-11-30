@@ -44,7 +44,7 @@ module.exports = withSourceMaps(
     // withOffline(
     withBundleAnalyzer(
         withSass(
-            withCSS(nextConfig),
+                withCSS(nextConfig),
         ),
     ),
     // ),

@@ -35,18 +35,14 @@ class Header extends PureComponent {
                               {isLegal ? null : (
                                   <Row>
                                       {isHomepage || isDark ? (
-                                          <amp-img
-                                            width="185.547px"
-                                            height="24px"
-                                            title="Bullet Train"
+                                          <img
+                                            title="Bullet Train" height={24}
                                             src="/static/images/bullet-train-1.svg"
                                             className="brand" alt="Bullet Train logo"
                                           />)
                                           : (
-                                              <amp-img
-                                                width="185.547px"
-                                                height="24px"
-                                                title="Bullet Train"
+                                              <img
+                                                title="Bullet Train" height={24}
                                                 src="/static/images/bullet-train-black.svg"
                                                 className="brand" alt="Bullet Train logo"
                                               />
