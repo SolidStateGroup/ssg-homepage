@@ -43,7 +43,7 @@ export default class OpenSource extends Component {
                         >
                             <div className="mb-5">
                                 <a
-                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-api" target="_blank"
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-api" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -59,7 +59,7 @@ Python REST API for Bullet-Train.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-frontend" target="_blank"
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-frontend" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -75,7 +75,7 @@ Python REST API for Bullet-Train.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-docs" target="_blank"
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-docs" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -89,7 +89,7 @@ This is the documentation repository for the Docs of Bullet Train.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-examples" target="_blank"
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-examples" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -105,7 +105,7 @@ A collection of integrations to Bullet Train in a number of different frameworks
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-rules-engine" target="_blank"
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-rules-engine" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -133,7 +133,7 @@ Evaluate objects against a set of JSON rules supporting nested ALL, NONE and ANY
                         >
                             <div className="mb-5">
                                 <a
-                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-js-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-js-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -148,7 +148,7 @@ Evaluate objects against a set of JSON rules supporting nested ALL, NONE and ANY
                                     </div>
                                 </a>
                                 <a
-                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-js-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-js-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -163,7 +163,7 @@ Evaluate objects against a set of JSON rules supporting nested ALL, NONE and ANY
                                     </div>
                                 </a>
                                 <a
-                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-nodejs-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-nodejs-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -179,7 +179,7 @@ Node.js client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-dotnet-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-dotnet-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -195,7 +195,7 @@ Node.js client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-ruby-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-ruby-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -211,7 +211,7 @@ Ruby client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-python-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-python-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -227,7 +227,7 @@ Python client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-java-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-java-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -243,7 +243,7 @@ Java/Android client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/SolidStateGroup/bullet-train-ios-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-ios-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
