@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.bullet-train.io/sitemap.xml
+Host: https://www.bullet-train.io

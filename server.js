@@ -34,6 +34,7 @@ app.prepare().then(() => {
     const sw = join(__dirname, '.next/service-worker.js');
     const favicon = join(__dirname, '/static/images/favicon.ico');
     const sitemap = join(__dirname, '/static/sitemap.xml');
+    const robots = join(__dirname, '/static/robots.txt');
     const apple = join(__dirname, '/static/apple-app-site-association');
     //
     // server.get('/service-worker.js', (req, res) => {
@@ -42,6 +43,10 @@ app.prepare().then(() => {
 
     server.get('/sitemap.xml', (req, res) => {
         app.serveStatic(req, res, sitemap);
+    });
+
+    server.get('/robots.txt', (req, res) => {
+        app.serveStatic(req, res, robots);
     });
 
     server.get('/favicon.ico', (req, res) => {
