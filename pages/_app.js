@@ -21,7 +21,7 @@ class MyApp extends App {
                         />
 
                         <link
-                          href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:300,400&display=swap"
+                          href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:300,400,700&display=swap"
                           rel="stylesheet"
                         />
                         <title>

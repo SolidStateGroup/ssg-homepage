@@ -1,12 +1,10 @@
 import React from 'react';
-import '../components/Modal';
+import Link from 'next/link';
 
-import ForgotPasswordModal from '../components/ForgotPasswordModal';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import { ButtonWhite } from '../components/base/forms/Button';
 import data from '../common/utils/_data';
-import Link from 'next/link';
 
 
 class Delay extends React.Component {
@@ -67,19 +65,6 @@ const HomePage = class extends React.Component {
 
     componentDidMount() {
         API.trackPage(Constants.pages.HOME);
-    }
-
-    showForgotPassword = (e) => {
-        e.preventDefault();
-        openModal('Forgot password', <ForgotPasswordModal onComplete={() => {
-            toast('Forgot password submitted');
-        }}
-        />);
-    }
-
-
-    toggleLogin = () => {
-        this.setState({ isLogin: !this.state.isLogin });
     }
 
     register = (details) => {
