@@ -36,10 +36,6 @@ app.prepare().then(() => {
     const sitemap = join(__dirname, '/static/sitemap.xml');
     const robots = join(__dirname, '/static/robots.txt');
     const apple = join(__dirname, '/static/apple-app-site-association');
-    //
-    // server.get('/service-worker.js', (req, res) => {
-    //     app.serveStatic(req, res, sw);
-    // });
 
     server.get('/sitemap.xml', (req, res) => {
         app.serveStatic(req, res, sitemap);
