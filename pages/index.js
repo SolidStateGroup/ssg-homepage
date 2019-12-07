@@ -20,7 +20,7 @@ class Delay extends React.Component {
   componentWillMount() {
       setTimeout(() => {
           this.setState({ visible: true });
-      }, 100);
+      }, this.props.delay || 100);
   }
 
   render() {
@@ -38,7 +38,7 @@ const Guide = props => (
         flexDirection: 'column' }}
     >
         <div onClick={() => window.location = props.href} style={{ cursor: 'pointer', color: 'white', width: 360, alignItems: 'center', height: 183, backgroundColor: '#1d2d3f', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
-            <Delay>
+            <Delay delay={500}>
                 <img style={{ marginBottom: props.title ? 10 : 0 }} alt="Feature flags in JavaScript" src={props.image}/>
             </Delay>
             {props.title && (
