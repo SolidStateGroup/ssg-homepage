@@ -32,6 +32,7 @@ class MyApp extends App {
                         <title>
                                 Bullet Train - Feature Flags, Feature Toggles and Remote Config
                         </title>
+                        <link rel="manifest" href="/manifest.json"/>
                         <link rel="shortcut icon" href="/static/images/favicon.ico"/>
                     </Head>
                     <Header/>

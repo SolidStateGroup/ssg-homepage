@@ -1,21 +1,21 @@
 {
-  "short_name": "Project Name",
-  "name": "Project Name",
+  "short_name": "Bullet Train",
+  "name": "Bullet Train",
   "icons": [
     {
-      "src": "/static/images/icons-192.png",
+      "src": "/static/icons-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/static/images/icons-512.png",
+      "src": "/static/icons-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": "/?source=pwa",
-  "background_color": "#3367D6",
+  "background_color": "#1d2d3f",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#3367D6"
+  "theme_color": "#1d2d3f"
 }
