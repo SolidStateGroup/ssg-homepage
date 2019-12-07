@@ -43,6 +43,7 @@ app.prepare().then(() => {
     });
 
     server.get('/manifest.json', (req, res) => {
+        res.setHeader('Content-Type', 'application/json');
         app.serveStatic(req, res, manifest);
     });
 
