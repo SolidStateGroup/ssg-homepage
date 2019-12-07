@@ -16,16 +16,15 @@ class Delay extends React.Component {
       super(props);
       this.state = {};
   }
-  //
-  // componentWillMount() {
-  //     setTimeout(() => {
-  //         this.setState({ visible: true });
-  //     }, 100);
-  // }
+
+  componentWillMount() {
+      setTimeout(() => {
+          this.setState({ visible: true });
+      }, 100);
+  }
 
   render() {
       // const { props } = this;
-      return this.props.children;
       return this.state.visible ? this.props.children : (
           <div className="loading"/>
       );
