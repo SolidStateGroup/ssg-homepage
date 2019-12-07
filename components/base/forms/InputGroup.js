@@ -17,7 +17,7 @@ const InputGroup = class extends Component {
 
     render() {
         const { props } = this;
-        const id = Utils.GUID();
+        const id = props.inputProps.id || props.inputProps.name || Utils.GUID();
         const { inputProps } = this.props;
         return (
             <div className="form-group">

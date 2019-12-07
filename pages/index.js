@@ -13,6 +13,7 @@ const Guide = props => (
     <div style={{ textAlign: 'center',
         display: 'flex',
         alignItems: 'center',
+        marginBottom: 20,
         flexDirection: 'column' }}
     >
         <div onClick={() => window.location = props.href} style={{ cursor: 'pointer', color: 'white', width: 360, alignItems: 'center', height: 183, backgroundColor: '#1d2d3f', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
@@ -188,129 +189,125 @@ const HomePage = class extends React.Component {
                     </div>
                 </div>
                 <div className="feature-container">
-                    <div className="text-center text-center col-lg-4 offset-lg-4">
+                    <div className="text-center text-center col-xl-4 offset-lg-4">
                         <h2>Fully Featured Platform</h2>
                     </div>
                     <div className="container">
-                        <div className="mt-5">
-                            <div className="flex-row">
-                                <div className="col-md-4 text-center">
-                                    <div className="card mb-3 card--feature">
-                                        <span className="card__icon ion-ios-switch mb-3"/>
-                                        <h5 className="card__title">Feature Flag Management</h5>
-                                        <p className="card__paragraph-text">
+                        <div className="mt-5 row">
+                            <div className="col-xl-4 col-md-6 text-center">
+                                <div className="card mb-3 card--feature">
+                                    <span className="card__icon ion-ios-switch mb-3"/>
+                                    <h5 className="card__title">Feature Flag Management</h5>
+                                    <p className="card__paragraph-text">
 Ship features remotely across
                             multiple environments. Deliver true Continuous Integration.
-                                        </p>
-                                        <a
-                                          className="card__link"
-                                          href="https://docs.bullet-train.io/managing-features/"
-                                        >
+                                    </p>
+                                    <a
+                                      className="card__link"
+                                      href="https://docs.bullet-train.io/managing-features/"
+                                    >
 Feature flags
-                                            <span
-                                              className="pl-2 ion-md-arrow-dropright"
-                                            />
-                                        </a>
-                                    </div>
+                                        <span
+                                          className="pl-2 ion-md-arrow-dropright"
+                                        />
+                                    </a>
                                 </div>
-                                <div className="col-md-4">
-                                    <div className="card mb-3 card--feature">
-                                        <span className="card__icon ion-ios-options mb-3"/>
-                                        <h5 className="card__title">Customise Features</h5>
-                                        <p className="card__paragraph-text">
-                                            {' '}
+                            </div>
+                            <div className="col-xl-4 col-md-6">
+                                <div className="card mb-3 card--feature">
+                                    <span className="card__icon ion-ios-options mb-3"/>
+                                    <h5 className="card__title">Customise Features</h5>
+                                    <p className="card__paragraph-text">
+                                        {' '}
 Change the behaviour,
                             appearance and configuration of your app without needing to
                             deploy.
-                                        </p>
-                                        <a
-                                          className="card__link"
-                                          href="https://docs.bullet-train.io/managing-features/"
-                                        >
+                                    </p>
+                                    <a
+                                      className="card__link"
+                                      href="https://docs.bullet-train.io/managing-features/"
+                                    >
 Remote config
-                                            <span
-                                              className="pl-2 ion-md-arrow-dropright"
-                                            />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="card mb-3 card--feature">
-                                        <span className="card__icon ion-ios-person mb-3"/>
-                                        <h5 className="card__title">User Traits</h5>
-                                        <p className="card__paragraph-text">
-Store traits against your users
-                            without modifying your back-end and target features specifically for them.
-                                        </p>
-                                        <a
-                                          className="card__link"
-                                          href="https://docs.bullet-train.io/managing-identities/#identity-traits"
-                                        >
-User Traits
-                                            <span
-                                              className="pl-2 ion-md-arrow-dropright"
-                                            />
-                                        </a>
-                                    </div>
+                                        <span
+                                          className="pl-2 ion-md-arrow-dropright"
+                                        />
+                                    </a>
                                 </div>
                             </div>
-                            <div className="flex-row">
-                                <div className="col-md-4">
-                                    <div className="card mb-3 card--feature">
-                                        <span className="card__icon ion-md-contacts mb-3"/>
-                                        <h5 className="card__title">Create User Segements</h5>
-                                        <p className="card__paragraph-text">
+                            <div className="col-xl-4 col-md-6">
+                                <div className="card mb-3 card--feature">
+                                    <span className="card__icon ion-ios-person mb-3"/>
+                                    <h5 className="card__title">User Traits</h5>
+                                    <p className="card__paragraph-text">
+Store traits against your users
+                            without modifying your back-end and target features specifically for them.
+                                    </p>
+                                    <a
+                                      className="card__link"
+                                      href="https://docs.bullet-train.io/managing-identities/#identity-traits"
+                                    >
+User Traits
+                                        <span
+                                          className="pl-2 ion-md-arrow-dropright"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="col-xl-4 col-md-6">
+                                <div className="card mb-3 card--feature">
+                                    <span className="card__icon ion-md-contacts mb-3"/>
+                                    <h5 className="card__title">Create User Segements</h5>
+                                    <p className="card__paragraph-text">
 Create detailed user segments
                             based on their traits, then target features based on the segment.
-                                        </p>
-                                        <a
-                                          className="card__link"
-                                          href="https://docs.bullet-train.io/managing-segments/"
-                                        >
+                                    </p>
+                                    <a
+                                      className="card__link"
+                                      href="https://docs.bullet-train.io/managing-segments/"
+                                    >
 User Segments
-                                            <span
-                                              className="pl-2 ion-md-arrow-dropright"
-                                            />
-                                        </a>
-                                    </div>
+                                        <span
+                                          className="pl-2 ion-md-arrow-dropright"
+                                        />
+                                    </a>
                                 </div>
-                                <div className="col-md-4">
-                                    <div className="card mb-3 card--feature">
-                                        <span className="card__icon ion-ios-browsers mb-3"/>
-                                        <h5 className="card__title">Staged Feature Rollouts</h5>
-                                        <p className="card__paragraph-text">
+                            </div>
+                            <div className="col-xl-4 col-md-6">
+                                <div className="card mb-3 card--feature">
+                                    <span className="card__icon ion-ios-browsers mb-3"/>
+                                    <h5 className="card__title">Staged Feature Rollouts</h5>
+                                    <p className="card__paragraph-text">
 Deploy features to 1% of your user base.
                             All good? Roll out to everybody.
-                                        </p>
-                                        <a
-                                          className="card__link"
-                                          href="https://docs.bullet-train.io/staged-feature-rollouts/"
-                                        >
+                                    </p>
+                                    <a
+                                      className="card__link"
+                                      href="https://docs.bullet-train.io/staged-feature-rollouts/"
+                                    >
 A/B Testing
-                                            <span
-                                              className="pl-2 ion-md-arrow-dropright"
-                                            />
-                                        </a>
-                                    </div>
+                                        <span
+                                          className="pl-2 ion-md-arrow-dropright"
+                                        />
+                                    </a>
                                 </div>
-                                <div className="col-md-4">
-                                    <div className="card mb-3 card--feature">
-                                        <span className="card__icon ion-md-done-all mb-3"/>
-                                        <h5 className="card__title">Track Changes</h5>
-                                        <p className="card__paragraph-text">
+                            </div>
+                            <div className="col-xl-4 col-md-6">
+                                <div className="card mb-3 card--feature">
+                                    <span className="card__icon ion-md-done-all mb-3"/>
+                                    <h5 className="card__title">Track Changes</h5>
+                                    <p className="card__paragraph-text">
 Audit changes &amp;
                             rollback any mistakes or issues.
-                                        </p>
-                                        <a
-                                          className="card__link"
-                                          href="https://docs.bullet-train.io/audit-logs/"
-                                        >
+                                    </p>
+                                    <a
+                                      className="card__link"
+                                      href="https://docs.bullet-train.io/audit-logs/"
+                                    >
 Feature Audit
-                                            <span
-                                              className="pl-2 ion-md-arrow-dropright"
-                                            />
-                                        </a>
-                                    </div>
+                                        <span
+                                          className="pl-2 ion-md-arrow-dropright"
+                                        />
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -324,7 +321,7 @@ Feature Audit
                             <h2>Resources</h2>
                         </div>
                         <div className="row">
-                            <div className="col-md-4">
+                            <div className="col-xl-4">
                                 <Guide
                                   href="https://www.youtube.com/watch?v=_lyNzKLZ8rc"
                                   description="A tutorial on how to use Bullet Train using React Native."
@@ -332,14 +329,14 @@ Feature Audit
                                   title="React Feature Flags Guide"
                                 />
                             </div>
-                            <div className="col-md-4">
+                            <div className="col-xl-4">
                                 <Guide
                                   href="https://www.youtube.com/watch?v=GPkCLO0F-5g"
                                   description="A quick introduction to Bullet Train."
                                   image="/static/images/90seconds.png"
                                 />
                             </div>
-                            <div className="col-md-4">
+                            <div className="col-xl-4">
                                 <Guide
                                   href="https://www.youtube.com/watch?v=8cD-t7KKitU"
                                   description="A tutorial on how to use Bullet Train using vanilla JavaScript."

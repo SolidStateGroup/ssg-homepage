@@ -48,7 +48,6 @@ class MyApp extends App {
                             )
                         }
                 </React.Fragment>
-                <script src="/static/scripts/fullstory.js" type="text/javascript" />
             </Container>
         );
     }

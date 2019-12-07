@@ -10,3 +10,7 @@ global.propTypes = propTypes;
 if (__DEV__ && typeof window !== 'undefined') {
     const whyDidYouRender = require('@welldone-software/why-did-you-render/dist/no-classes-transpile/umd/whyDidYouRender.min.js'); whyDidYouRender(React);
 }
+
+if (typeof window !== 'undefined') {
+    require('../static/scripts/fullstory');
+}
