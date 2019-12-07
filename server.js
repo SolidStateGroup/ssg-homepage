@@ -53,6 +53,10 @@ app.prepare().then(() => {
         app.serveStatic(req, res, favicon);
     });
 
+    server.get('/service-worker.js', (req, res) => {
+        app.serveStatic(req, res, sw);
+    });
+
     server.get('/apple-app-site-association', (req, res) => {
         // req.setHeader('Content-Type', 'application/json');
         res.setHeader('Content-Type', 'application/json');

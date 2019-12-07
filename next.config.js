@@ -40,8 +40,8 @@ const nextConfig = {
     },
 };
 
-module.exports = withSourceMaps(
-    withOffline(
+module.exports = withOffline(
+    withSourceMaps(
         withBundleAnalyzer(
             withSass(
                 withCSS(nextConfig),
