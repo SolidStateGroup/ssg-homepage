@@ -1,24 +1,8 @@
 /**
  * Created by kylejohnson on 30/07/2016.
  */
-import MaskedInput from 'react-maskedinput';
 import cn from 'classnames';
 
-const maskedCharacters = {
-    'a': {
-        validate(char) {
-            return /[ap]/.test(char);
-        },
-    },
-    'm': {
-        validate(char) {
-            return /\w/.test(char);
-        },
-        transform() {
-            return 'm';
-        },
-    },
-};
 const Input = class extends React.Component {
     static displayName = 'Input'
 
@@ -60,7 +44,7 @@ const Input = class extends React.Component {
     }
 
     render() {
-        const { isValid, onSearchChange, mask, placeholderChar, ...rest } = this.props;
+        const { isValid, onSearchChange, placeholderChar, ...rest } = this.props;
 
         const className = cn({
             'input-container': true,
@@ -73,22 +57,9 @@ const Input = class extends React.Component {
         }, this.props.inputClassName);
 
         return (
-          <div
-            className={className}
-          >
-              {mask ? (
-                <MaskedInput
-                  ref={c => this.input = c}
-                  {...rest}
-                  mask={this.props.mask}
-                  formatCharacters={maskedCharacters}
-                  onKeyDown={this.onKeyDown}
-                  onFocus={this.onFocus}
-                  onBlur={this.onBlur}
-                  className={inputClassName}
-                  placeholderChar={placeholderChar}
-                />
-              ) : (
+            <div
+              className={className}
+            >
                 <input
                   ref={c => this.input = c}
                   {...rest} onFocus={this.onFocus}
@@ -97,8 +68,7 @@ const Input = class extends React.Component {
                   value={this.props.value}
                   className={inputClassName}
                 />
-              )}
-          </div>
+            </div>
         );
     }
 };

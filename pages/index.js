@@ -4,7 +4,6 @@ import '../components/Modal';
 import ForgotPasswordModal from '../components/ForgotPasswordModal';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
-import 'lazyframe/dist/lazyframe.css';
 import { ButtonWhite } from '../components/base/forms/Button';
 import data from '../common/utils/_data';
 import Link from 'next/link';
