@@ -44,7 +44,7 @@ const Footer = class extends React.Component {
 
                           <ul className="list-inline">
                               <li className="list-inline-item">
-                                  <a rel="noreferrer" href="https://github.com/SolidStateGroup?utf8=%E2%9C%93&q=bullet+train" title="GitHub">
+                                  <a rel="noreferrer" href="https://github.com/BulletTrainHQ" title="GitHub">
                                       <span className="icon ion-logo-github"/>
                                   </a>
                               </li>
