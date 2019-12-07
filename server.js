@@ -34,17 +34,11 @@ app.prepare().then(() => {
     const sw = join(__dirname, '.next/service-worker.js');
     const favicon = join(__dirname, '/static/images/favicon.ico');
     const sitemap = join(__dirname, '/static/sitemap.xml');
-    const manifest = join(__dirname, '/static/manifest.json');
     const robots = join(__dirname, '/static/robots.txt');
     const apple = join(__dirname, '/static/apple-app-site-association');
 
     server.get('/sitemap.xml', (req, res) => {
         app.serveStatic(req, res, sitemap);
-    });
-
-    server.get('/manifest.json', (req, res) => {
-        res.setHeader('Content-Type', 'application/json');
-        app.serveStatic(req, res, manifest);
     });
 
     server.get('/robots.txt', (req, res) => {
