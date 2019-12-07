@@ -10,7 +10,11 @@ import data from '../common/utils/_data';
 import Link from 'next/link';
 
 const Guide = props => (
-    <div>
+    <div style={{ textAlign: 'center',
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column' }}
+    >
         <div onClick={() => window.location = props.href} style={{ cursor: 'pointer', color: 'white', width: 360, alignItems: 'center', height: 183, backgroundColor: '#1d2d3f', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
             <img style={{ marginBottom: props.title ? 10 : 0 }} alt="Feature flags in JavaScript" src={props.image}/>
             {props.title && (
@@ -86,27 +90,27 @@ const HomePage = class extends React.Component {
                         <div className="text-center margin-auto col-md-12 col-lg-8 push-lg-2">
                             <h2>We currently support these popular languages</h2>
                             <div className="row">
-                                <div className="col-md-1 col-xs-6">
+                                <div className="col-md-1 col-sm-4 col-4">
                                     <a href="https://docs.bullet-train.io/clients/java/">
                                         <img src="/static/images/tech-logos/java.png" alt="Java" title="Java"/>
                                     </a>
                                 </div>
-                                <div className="col-md-1 col-xs-6">
+                                <div className="col-md-1 col-sm-4 col-4">
                                     <a href="https://docs.bullet-train.io/clients/javascript/">
                                         <img src="/static/images/tech-logos/javascript.png" alt="JavaScript" title="JavaScript"/>
                                     </a>
                                 </div>
-                                <div className="col-md-1 col-xs-6">
+                                <div className="col-md-1 col-sm-4 col-4">
                                     <a href="https://docs.bullet-train.io/clients/javascript/">
                                         <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS"/>
                                     </a>
                                 </div>
-                                <div className="col-md-1 col-xs-6">
+                                <div className="col-md-1 col-sm-4 col-4">
                                     <a href="https://docs.bullet-train.io/clients/node/">
                                         <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js"/>
                                     </a>
                                 </div>
-                                <div className="col-md-1 col-xs-6">
+                                <div className="col-md-1 col-sm-4 col-4">
                                     <a href="https://docs.bullet-train.io/clients/python/">
                                         <img
                                           src="/static/images/tech-logos/python.png" className="img-fluid" alt="Python"
@@ -114,22 +118,22 @@ const HomePage = class extends React.Component {
                                         />
                                     </a>
                                 </div>
-                                <div className="col-md-1 col-xs-6">
+                                <div className="col-md-1 col-sm-4 col-4">
                                     <a href="https://docs.bullet-train.io/clients/ruby/">
                                         <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby"/>
                                     </a>
                                 </div>
-                                <div className="col-md-1 col-xs-6">
+                                <div className="col-md-1 col-sm-4 col-4">
                                     <a href="https://docs.bullet-train.io/clients/dotnet/">
                                         <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET"/>
                                     </a>
                                 </div>
-                                <div className="col-md-1 col-xs-6">
+                                <div className="col-md-1 col-sm-4 col-4">
                                     <a href="https://docs.bullet-train.io/clients/java/">
                                         <img src="/static/images/tech-logos/android2x.png" alt="android" title="android" />
                                     </a>
                                 </div>
-                                <div className="col-md-1 col-xs-6">
+                                <div className="col-md-1 col-sm-4 col-4">
                                     <a href="https://docs.bullet-train.io/clients/ios/">
                                         <img src="/static/images/tech-logos/bt-IOS.png" alt="IOS" title="IOS" />
                                     </a>
@@ -189,9 +193,9 @@ const HomePage = class extends React.Component {
                     </div>
                     <div className="container">
                         <div className="mt-5">
-                            <div className="mb-3 flex-row">
-                                <div className="col-md-4">
-                                    <div className="card card--feature">
+                            <div className="flex-row">
+                                <div className="col-md-4 text-center">
+                                    <div className="card mb-3 card--feature">
                                         <span className="card__icon ion-ios-switch mb-3"/>
                                         <h5 className="card__title">Feature Flag Management</h5>
                                         <p className="card__paragraph-text">
@@ -210,7 +214,7 @@ Feature flags
                                     </div>
                                 </div>
                                 <div className="col-md-4">
-                                    <div className="card card--feature">
+                                    <div className="card mb-3 card--feature">
                                         <span className="card__icon ion-ios-options mb-3"/>
                                         <h5 className="card__title">Customise Features</h5>
                                         <p className="card__paragraph-text">
@@ -231,7 +235,7 @@ Remote config
                                     </div>
                                 </div>
                                 <div className="col-md-4">
-                                    <div className="card card--feature">
+                                    <div className="card mb-3 card--feature">
                                         <span className="card__icon ion-ios-person mb-3"/>
                                         <h5 className="card__title">User Traits</h5>
                                         <p className="card__paragraph-text">
@@ -252,7 +256,7 @@ User Traits
                             </div>
                             <div className="flex-row">
                                 <div className="col-md-4">
-                                    <div className="card card--feature">
+                                    <div className="card mb-3 card--feature">
                                         <span className="card__icon ion-md-contacts mb-3"/>
                                         <h5 className="card__title">Create User Segements</h5>
                                         <p className="card__paragraph-text">
@@ -271,7 +275,7 @@ User Segments
                                     </div>
                                 </div>
                                 <div className="col-md-4">
-                                    <div className="card card--feature">
+                                    <div className="card mb-3 card--feature">
                                         <span className="card__icon ion-ios-browsers mb-3"/>
                                         <h5 className="card__title">Staged Feature Rollouts</h5>
                                         <p className="card__paragraph-text">
@@ -290,7 +294,7 @@ A/B Testing
                                     </div>
                                 </div>
                                 <div className="col-md-4">
-                                    <div className="card card--feature">
+                                    <div className="card mb-3 card--feature">
                                         <span className="card__icon ion-md-done-all mb-3"/>
                                         <h5 className="card__title">Track Changes</h5>
                                         <p className="card__paragraph-text">

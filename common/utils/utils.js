@@ -6,14 +6,31 @@ const Utils = global.Utils = Object.assign({}, BaseUtils, {
         $('html,body').animate({ scrollTop: 0 }, timeout);
     },
 
-    scrollToElement: (selector, timeout = 500) => {
-        const el = $(selector);
-        if (!el || !el.offset) return;
-        $('html,body').animate({ scrollTop: el.offset().top }, timeout);
+    scrollToElement: (element, duration = 500) => {
+        const elementY = window.pageYOffset + element.getBoundingClientRect().top;
+        const startingY = window.pageYOffset;
+        const diff = elementY - startingY;
+        let start;
+
+        // Bootstrap our animation - it will get called right before next frame shall be rendered.
+        window.requestAnimationFrame(function step(timestamp) {
+            if (!start) start = timestamp;
+            // Elapsed milliseconds since start of scrolling.
+            const time = timestamp - start;
+            // Get percent of completion in range [0, 1].
+            const percent = Math.min(time / duration, 1);
+
+            window.scrollTo(0, startingY + diff * percent);
+
+            // Proceed with animation as long as we wanted it to.
+            if (time < duration) {
+                window.requestAnimationFrame(step);
+            }
+        });
     },
 
     scrollToSignUp: () => {
-        Utils.scrollToElement('.signup-form');
+        Utils.scrollToElement(document.getElementsByClassName('signup-form')[0]);
     },
 
     getPlanName: (plan) => {
