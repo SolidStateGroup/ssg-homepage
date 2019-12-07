@@ -9,6 +9,30 @@ import { ButtonWhite } from '../components/base/forms/Button';
 import data from '../common/utils/_data';
 import Link from 'next/link';
 
+
+class Delay extends React.Component {
+  static displayName = 'Delay';
+
+  static propTypes = {};
+
+  constructor(props) {
+      super(props);
+      this.state = {};
+  }
+
+  componentWillMount() {
+      setTimeout(() => {
+          this.setState({ visible: true });
+      }, 100);
+  }
+
+  render() {
+      // const { props } = this;
+      return this.state.visible ? this.props.children : (
+          <div className="loading"/>
+      );
+  }
+}
 const Guide = props => (
     <div style={{ textAlign: 'center',
         display: 'flex',
@@ -17,7 +41,9 @@ const Guide = props => (
         flexDirection: 'column' }}
     >
         <div onClick={() => window.location = props.href} style={{ cursor: 'pointer', color: 'white', width: 360, alignItems: 'center', height: 183, backgroundColor: '#1d2d3f', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
-            <img style={{ marginBottom: props.title ? 10 : 0 }} alt="Feature flags in JavaScript" src={props.image}/>
+            <Delay>
+                <img style={{ marginBottom: props.title ? 10 : 0 }} alt="Feature flags in JavaScript" src={props.image}/>
+            </Delay>
             {props.title && (
             <h4 style={{ fontSize: 14 }}>
                 {props.title}
@@ -165,7 +191,9 @@ const HomePage = class extends React.Component {
                                 </p>
                             </div>
                             <div className="col-md-8 text-right">
-                                <img style={{ maxWidth: '100%' }} alt="Feature use cases" src="/static/images/homepage-features.png"/>
+                                <Delay>
+                                    <img style={{ maxWidth: '100%' }} alt="Feature use cases" src="/static/images/homepage-features.png"/>
+                                </Delay>
                             </div>
                         </div>
                     </div>
@@ -176,7 +204,9 @@ const HomePage = class extends React.Component {
                         <div className="row">
                             <div className="col-md-8">
                                 <div className="text-left">
-                                    <img style={{ maxWidth: '100%' }} alt="User segmentation and ab testing" src="/static/images/homepage-segments.png"/>
+                                    <Delay>
+                                        <img style={{ maxWidth: '100%' }} alt="User segmentation and ab testing" src="/static/images/homepage-segments.png"/>
+                                    </Delay>
                                 </div>
                             </div>
                             <div className="col-md-4">
