@@ -1,6 +1,6 @@
 const withSass = require('@zeit/next-sass');
 const withCSS = require('@zeit/next-css');
-// const withOffline = require('next-offline');
+const withOffline = require('next-offline');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
     enabled: process.env.BUNDLE_ANALYZE === 'true',
 });
@@ -41,11 +41,11 @@ const nextConfig = {
 };
 
 module.exports = withSourceMaps(
-    // withOffline(
-    withBundleAnalyzer(
-        withSass(
+    withOffline(
+        withBundleAnalyzer(
+            withSass(
                 withCSS(nextConfig),
+            ),
         ),
     ),
-    // ),
 );
