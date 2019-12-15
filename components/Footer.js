@@ -15,30 +15,25 @@ const Footer = class extends React.Component {
               <div className="container">
                   <div className="row footer__homepage-content pt-5">
                       <div className="col-md-4">
-                          <img
-                            src="/static/images/bullet-train-1.svg" width={166} alt="Bullet Train Logo"
-                            className="img-responsive"
-                          />
                           <div className="service-status">
                               <a href="https://status.bullet-train.io/">
-                                  {this.state.operational
-                                      ? (
-                                          <div>
-                                              <span className="dot green" />
-                                        Bullet Train services are operational
-                                          </div>
-                                      )
-                                      : (
-                                          <div>
-                                              <span className="dot orange" />
-                                        Bullet Train services are experiencing problems. Click
-                                              {' '}
-                                              <a href="https://cachet.dokku1.solidstategroup.com/">here</a>
-                                              {' '}
-                                        for more info
-                                          </div>
-                                      )
-                                }
+                                  <span className="uptime-badge">
+                                      <span className="label">
+                                      Status
+                                      </span>
+                                      {this.state.operational ? (
+                                          <span className="success">
+                                            Operational
+                                          </span>
+                                      ) : (
+                                          <span className="error">
+                                            Experiencing issues
+                                          </span>
+                                      )}
+                                  </span>
+                                  <span>
+                                      Uptime is important, view our uptime history here.
+                                  </span>
                               </a>
                           </div>
 

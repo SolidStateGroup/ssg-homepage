@@ -16,7 +16,7 @@ const PricingPanel = class extends React.Component {
       return (
           <div className="pricing" id="pricing">
               <div className="container">
-                  <h2 className="text-center margin-bottom margin-top">Start using Bullet Train for free</h2>
+                  <h2 className="text-center margin-bottom margin-top mt-5">Start using Bullet Train for free</h2>
                   <p className="text-center">Then increase your plan as your business grows.</p>
                   <div className="col-md-12">
                       <div className="flex-row row-center">
@@ -29,9 +29,9 @@ const PricingPanel = class extends React.Component {
                                       <p className="pricing-type">Free</p>
                                       <p className="text-small text-center">more flags than the UN</p>
                                       <Link href={`/${redirect}#sign-up`}>
-                                        <a className="pricing-cta blue" onClick={Utils.scrollToSignUp}>
+                                          <a className="pricing-cta blue" onClick={Utils.scrollToSignUp}>
                                         Sign up
-                                        </a>
+                                          </a>
                                       </Link>
                                   </div>
                                   <div className="panel-footer">
@@ -39,7 +39,7 @@ const PricingPanel = class extends React.Component {
                                       <ul className="pricing-features">
                                           <li>
                                               <p>
-                          Up to
+                                                  Up to {' '}
                                                   <strong>20,000</strong>
                                                   {' '}
                           requests per month
@@ -68,9 +68,9 @@ const PricingPanel = class extends React.Component {
                                       <p className="pricing-type">$29</p>
                                       <p className="text-small text-center">billed monthly</p>
                                       <Link href={`/${redirect}#sign-up`}>
-                                        <a className="pricing-cta blue" onClick={Utils.scrollToSignUp}>
+                                          <a className="pricing-cta blue" onClick={Utils.scrollToSignUp}>
                                           Sign up
-                                        </a>
+                                          </a>
                                       </Link>
                                   </div>
                                   <div className="panel-footer">
@@ -103,9 +103,9 @@ const PricingPanel = class extends React.Component {
                                       <p className="pricing-type">$99</p>
                                       <p className="text-small text-center">billed monthly</p>
                                       <Link href={`/${redirect}#sign-up`}>
-                                        <a className="pricing-cta blue" onClick={Utils.scrollToSignUp}>
+                                          <a className="pricing-cta blue" onClick={Utils.scrollToSignUp}>
                                           Sign up
-                                        </a>
+                                          </a>
                                       </Link>
                                   </div>
                                   <div className="panel-footer">

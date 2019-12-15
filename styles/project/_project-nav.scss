@@ -45,3 +45,35 @@
         }
     }
 }
+.service-status {
+    font-size: 14px;
+    a:hover {
+        color: white !important;
+    }
+    .uptime-badge {
+        display: block;
+        font-size: 14px;
+        margin-bottom:5px;
+        color: #f1f1f1 !important;
+        text-decoration: none !important;
+
+        .label {
+            display: inline-block;
+            background: linear-gradient(#5e5e5e, #4c4c4c);
+            padding: 2px 5px;
+            border-radius: 4px 0 0 4px;
+        }
+        .success {
+            display: inline-block;
+            background: linear-gradient(#5bc870, #4e9c4e);
+            border-radius: 0 4px 4px 0;
+            padding: 2px 5px;
+        }
+        .error {
+            display: inline-block;
+            background: linear-gradient(#dab32a, #cca417);
+            border-radius: 0 4px 4px 0;
+            padding: 2px 5px;
+        }
+    }
+}
