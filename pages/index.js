@@ -94,8 +94,9 @@ const HomePage = class extends React.Component {
         const redirect = ''; // todo: fixme
         return (
             <div className="homepage">
-                <Hero redirect={redirect}/>
-
+                <div className="hero-container">
+                    <Hero redirect={redirect}/>
+                </div>
                 <div className="tech">
                     <div className="container">
                         <div className="text-center margin-auto col-md-12 col-lg-8 push-lg-2">

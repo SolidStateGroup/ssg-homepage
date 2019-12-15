@@ -11,7 +11,7 @@ const app = next({ dev });
 
 const handle = app.getRequestHandler();
 
-const IS_SSR_CACHE_ENABLED = true; // TODO move to config
+const IS_SSR_CACHE_ENABLED = !dev; // TODO move to config
 
 // TODO: move to config
 // Default 1 hour ttl
