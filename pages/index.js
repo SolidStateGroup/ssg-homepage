@@ -95,26 +95,7 @@ const HomePage = class extends React.Component {
         return (
             <div className="homepage">
                 <Hero redirect={redirect}/>
-
                 <div className="feature-container alt">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-4">
-                                <h2>Manage features without deployments</h2>
-                                <p>
-                                  Bullet Train combines the concepts of feature toggles with the flexibility of remote config. Rather than just switching features on and off, you can configure them for individual segments, users and development environments.
-                                </p>
-                            </div>
-                            <div className="col-md-8 text-right">
-                                <Delay>
-                                    <img style={{ maxWidth: '100%' }} alt="Feature use cases" src="/static/images/homepage-features.png"/>
-                                </Delay>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="feature-container">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-8">
@@ -129,6 +110,23 @@ const HomePage = class extends React.Component {
                                 <p>
                                   Utilise our powerful rules engine to manage your features for the users you wish to target. You can even use segments for <strong>staged rollouts</strong> or <strong>a/b testing</strong>.
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="feature-container ">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-4">
+                                <h2>Manage features without deployments</h2>
+                                <p>
+                        Bullet Train combines the concepts of feature toggles with the flexibility of remote config. Rather than just switching features on and off, you can configure them for individual segments, users and development environments.
+                                </p>
+                            </div>
+                            <div className="col-md-8 text-right">
+                                <Delay>
+                                    <img style={{ maxWidth: '100%' }} alt="Feature use cases" src="/static/images/homepage-features.png"/>
+                                </Delay>
                             </div>
                         </div>
                     </div>

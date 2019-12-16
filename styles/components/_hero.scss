@@ -49,12 +49,12 @@
     .white {
       display: block;
       position: absolute;
-      bottom: -240rem;
-      left: -111rem;
+      bottom: -258rem;
+      left: -208rem;
       width: 966rem;
       height: 384rem;
       background: #fff;
-      transform: rotate(-22deg) translateY(-101.85px);
+      transform: rotate(-26deg) translateY(0);
     }
   }
   .tech {
@@ -63,7 +63,7 @@
     position: absolute;
     left: 0;
     right:0;
-    bottom:80px;
+    bottom:10px;
     p {
       width: 100%;
       color: $body-text;
@@ -140,6 +140,9 @@
 @media screen and (min-width: 1070px) and (max-width: 1270px) {
   .hero {
     &--homepage {
+      .white {
+        left: -210rem !important;
+      }
       .hero-illustration {
         display: none;
       }
@@ -160,6 +163,12 @@
 @media (max-width: 768px) {
   .hero {
     &--homepage {
+      .white {
+        left: -210rem !important;
+      }
+      .tech{
+        bottom: -120px;
+      }
       .hero-illustration {
         display: none;
       }
