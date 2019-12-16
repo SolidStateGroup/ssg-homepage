@@ -27,8 +27,8 @@ class MyApp extends App {
                         <link rel="apple-touch-icon" href="/static/icons-192.png"/>
                         <link rel="manifest" href="/static/manifest.json"/>
                         <link rel="shortcut icon" href="/static/images/favicon.ico"/>
-                        <script src="/static/chromefix.js"></script>
                         <meta name="theme-color" content="#1d2d3f"/>
+                        <script type="text/javascript" src="/static/chromefix.js" />
                     </Head>
                     <Header/>
                     <Component />
