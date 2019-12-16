@@ -32,6 +32,7 @@ const Hero = class extends React.Component {
                         . Host with us or on your own infrastructure.
                     </div>
                 </div>
+                <img alt="Bullet Train Logo" className="hero-illustration" src="/static/images/bullet-train-illustration.svg"/>
                 <div className="hero hero--homepage">
                     <div className="container">
                         <h1 className="margin-bottom margin-top">Release features with confidence</h1>
