@@ -36,30 +36,30 @@ const Hero = class extends React.Component {
                         </div>
                         <div className="white"/>
                         <div className="tech">
-                            <div className="text-center margin-auto col-md-12 col-lg-8 push-lg-2">
+                            <div className="text-center margin-auto col-md-12 text-center">
                                 <h2>We currently support these popular languages</h2>
                                 <div className="row">
-                                    <div className="col-md-1 col-sm-4 col-4">
+                                    <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/java/">
                                             <img src="/static/images/tech-logos/java.png" alt="Java" title="Java"/>
                                         </a>
                                     </div>
-                                    <div className="col-md-1 col-sm-4 col-4">
+                                    <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/javascript/">
                                             <img src="/static/images/tech-logos/javascript.png" alt="JavaScript" title="JavaScript"/>
                                         </a>
                                     </div>
-                                    <div className="col-md-1 col-sm-4 col-4">
+                                    <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/javascript/">
                                             <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS"/>
                                         </a>
                                     </div>
-                                    <div className="col-md-1 col-sm-4 col-4">
+                                    <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/node/">
                                             <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js"/>
                                         </a>
                                     </div>
-                                    <div className="col-md-1 col-sm-4 col-4">
+                                    <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/python/">
                                             <img
                                               src="/static/images/tech-logos/python.png" className="img-fluid" alt="Python"
@@ -67,28 +67,28 @@ const Hero = class extends React.Component {
                                             />
                                         </a>
                                     </div>
-                                    <div className="col-md-1 col-sm-4 col-4">
+                                    <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/ruby/">
                                             <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby"/>
                                         </a>
                                     </div>
-                                    <div className="col-md-1 col-sm-4 col-4">
+                                    <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/dotnet/">
                                             <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET"/>
                                         </a>
                                     </div>
-                                    <div className="col-md-1 col-sm-4 col-4">
+                                    <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/java/">
                                             <img src="/static/images/tech-logos/android2x.png" alt="android" title="android" />
                                         </a>
                                     </div>
-                                    <div className="col-md-1 col-sm-4 col-4">
+                                    <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/ios/">
                                             <img src="/static/images/tech-logos/bt-IOS.png" alt="IOS" title="IOS" />
                                         </a>
                                     </div>
                                 </div>
-                                <p className="text-small margin-top no-mb">
+                                <p className="text-small no-mb">
                                     Don't worry if you don't see your
                                     preferred tech,
                                     {' '}
