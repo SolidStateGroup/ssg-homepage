@@ -39,7 +39,7 @@ class Header extends PureComponent {
                   <Link
                     href="/"
                   >
-                      <a className="nav-link d-block d-md-none navbar-brand">
+                      <a className="nav-link d-block d-md-none mt-3 navbar-brand">
                           <img
                             title="Bullet Train" height={24}
                             src="/static/images/bullet-train-1.svg"

@@ -14,7 +14,7 @@ if (typeof window !== 'undefined') {
     require('../static/scripts/fullstory');
 }
 
-if (Project.freshChat) {
+if (Project.freshChat && typeof window !== 'undefined') {
     function initFreshChat() {
         window.fcWidget.init(Project.freshChat);
     }

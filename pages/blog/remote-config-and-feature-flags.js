@@ -15,15 +15,15 @@ const WhatAreFeatureFlagsPage = class extends Component {
 
   render() {
       return (
-          <div className="app-container">
+          <div>
               <Head>
                   <title>
                       Bullet Train - What are feature flags and remote config?
                   </title>
               </Head>
               <FormGroup className="striped-section">
-                  <div className="container">
-                      <h3>What are feature flags?</h3>
+                  <div className="container mt-5">
+                      <h3 className="mt-5 pt-5">What are feature flags?</h3>
                       <div className="row">
                           <div className="col-xl-6">
                               <p>

@@ -53,7 +53,7 @@ const Footer = class extends React.Component {
                       <div className="col-md-2 offset-md-2">
                           <h6>Product</h6>
                           <ul className=" float-left nav-list">
-                              <li><a href={`${Project.appUrl}demo`}>Demo</a></li>
+                              <li><a href={`${Project.appUrl}demo`}>Demo Account</a></li>
                               <li><a href="https://docs.bullet-train.io/">Documentation</a></li>
                               <li><Link prefetch={false} href="/pricing#pricing"><a>Pricing</a></Link></li>
                           </ul>
@@ -62,7 +62,6 @@ const Footer = class extends React.Component {
                           <h6>Support</h6>
                           <ul className=" float-left nav-list">
                               <li><a href="mailto:support@bullet-train.io">Contact Us</a></li>
-                              <li><a href="https://status.bullet-train.io/">Status</a></li>
                               <li><Link prefetch={false} href="/blog/remote-config-and-feature-flags"><a>What are feature flags?</a></Link></li>
                               <li><Link prefetch={false} href="/blog/remote-config-and-feature-flags"><a>What is remote config?</a></Link></li>
                           </ul>
