@@ -3,6 +3,7 @@ import '../common/utils';
 import '../components/base';
 import './api';
 import '../styles/styles.scss';
+import '../styles/fonts.css';
 import React from 'react';
 
 global.propTypes = propTypes;

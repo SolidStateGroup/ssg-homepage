@@ -13,6 +13,20 @@ const nextConfig = {
         swDest: 'static/service-worker.js',
         runtimeCaching: [
             {
+                urlPattern: new RegExp('.*?.woff'),
+                handler: 'CacheFirst',
+                options: {
+                    cacheName: 'fonts',
+                    expiration: {
+                        maxEntries: 150,
+                        maxAgeSeconds: (60 * 60 * 24) * 10, // 2 days
+                    },
+                    cacheableResponse: {
+                        statuses: [0, 200, 304],
+                    },
+                },
+            },
+            {
                 urlPattern: /^https?.*/,
                 handler: 'NetworkFirst',
                 options: {

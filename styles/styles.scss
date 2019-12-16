@@ -54,6 +54,10 @@ body {
     color:$body-text;
 }
 
+strong {
+    font-weight: bold;
+}
+
 a {
     color: $link-color;
     font-weight: 400;

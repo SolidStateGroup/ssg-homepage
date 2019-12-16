@@ -20,11 +20,6 @@ class MyApp extends App {
                           content="Manage your Feature Flags, Feature Toggles and Remote Config in your Mobile, React, React Native, Java, Javascript (Node) and Python projects."
                         />
                         <link rel="preconnect" href="https://fullstory.com"/>
-                        <link rel="preconnect" href="https://fonts.gstatic.com/"/>
-                        <link
-                          href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:300,400,700&display=swap"
-                          rel="stylesheet"
-                        />
                         <title>
                                 Bullet Train - Feature Flags, Feature Toggles and Remote Config
                         </title>
