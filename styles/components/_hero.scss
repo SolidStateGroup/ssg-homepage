@@ -103,11 +103,60 @@
     line-height: 2;
   }
   &--homepage {
+    .hero-example {
+      font-size: 14px;
+      position: absolute;
+      top: 45%;
+      right: 10%;
+      z-index: 1000000;
+      p {
+        font-size: 14px;
+        width: 100%;
+      }
+
+      .line-1{
+        display: inline-block;
+        position: relative;
+        width: 9em;
+        margin: 0 auto;
+        border-right: 2px solid rgba(255,255,255,.75);
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      /* Animation */
+      .anim-typewriter{
+        animation: typewriter 3s steps(44) 500ms 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+      }
+      .anim-typewriter-after {
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+      }
+      @keyframes typewriter{
+        from{width: 9em;}
+        50%{width: 24em;}
+        70%{width: 24em;}
+        90%{width: 9em;}
+        to{width: 9em;}
+      }
+      @keyframes blinkTextCursor{
+        from{border-right-color: rgba(255,255,255,.75);}
+        to{border-right-color: transparent;}
+      }
+      .card-body {
+        width: 400px;
+        font-size: 14px;
+      }
+    }
     .hero-illustration {
       position: absolute;
-      height: 550px;
-      right: -8%;
-      top: 37%;
+      height: 420px;
+      right: 3%;
+      top: 24%;
       z-index: 100000000;
     }
   }
@@ -185,3 +234,5 @@
     }
   }
 }
+
+

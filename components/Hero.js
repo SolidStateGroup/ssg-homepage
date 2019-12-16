@@ -7,15 +7,50 @@ const Hero = class extends React.Component {
 
     constructor(props, context) {
         super(props, context);
-        this.state = { value: props.defaultValue };
+        this.state = {
+            index: 0,
+            animating: true,
+            values: [
+                {
+                    a: 'bulletTrain.hasFeature(',
+                    b: "'show_coupon'",
+                },
+                {
+                    a: 'bulletTrain.getTrait(',
+                    b: "'accepted-term'",
+                },
+                {
+                    a: 'bulletTrain.getTrait(',
+                    b: "'login_count'",
+                    c: '>3',
+                },
+            ],
+        };
     }
 
-    toggle = () => {
-        this.setState({ value: !this.state.value });
-    };
+    componentDidMount() {
+        this.interval = setInterval(this.toggleText, 3300);
+    }
+
+    componentWillUnmount() {
+        if (this.interval) {
+            clearInterval(this.interval);
+        }
+    }
+
+    toggleText = () => {
+        this.setState({ animating: false });
+        setTimeout(() => {
+            if (this.interval) {
+                const currentValue = this.state.index;
+                const newIndex = currentValue + 1 >= this.state.values.length ? 0 : currentValue + 1;
+                this.setState({ index: newIndex, animating: true });
+            }
+        }, 100);
+    }
 
     render() {
-        const explain = true;
+        const value = this.state.values[this.state.index];
         return (
             <div className="hero-container">
                 <div className="hero hero--homepage">
@@ -99,6 +134,19 @@ const Hero = class extends React.Component {
                                     <br/>
                                     We also have a core RESTful API.
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="hero-example">
+                        <div className="card card--navy card--code">
+                            <div className="card-body">
+                                <span className={`code line-1${this.state.animating ? ' anim-typewriter' : ''}`}>
+                                    <span className="code code--green">if </span>
+                                    ({value.a}
+                                    <span className="code code--red">{value.b}</span>
+                                    {value.c}
+                                </span>
+                                <span className="anim-typewriter-after">)</span>
                             </div>
                         </div>
                     </div>

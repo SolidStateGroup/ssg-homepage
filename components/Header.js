@@ -58,9 +58,6 @@ class Header extends PureComponent {
                       <div className="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul className="navbar-nav mr-auto">
                               <li className="nav-item">
-                                  <Link prefetch={false} href="/features"><a className="nav-link">Features</a></Link>
-                              </li>
-                              <li className="nav-item">
                                   <Link prefetch={false} href="/pricing"><a className="nav-link">Pricing</a></Link>
                               </li>
                               <li className="nav-item active">
