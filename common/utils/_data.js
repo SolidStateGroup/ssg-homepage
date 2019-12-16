@@ -26,7 +26,7 @@ const _data = {
                     };
                     document.getElementById('e2e-error').innerText = JSON.stringify(error);
                 }
-                API.log(response.url, response.status, err);
+                API.log('API', response.url, response.status, err);
                 try {
                     const json = JSON.parse(err);
                     return Promise.reject(json);

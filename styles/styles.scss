@@ -64,6 +64,9 @@ a {
     color: $link-color;
     font-weight: 400;
     cursor: pointer;
+    &:hover {
+        color: $link-hover-color;
+    }
 }
 
 h1, h2, h3 {

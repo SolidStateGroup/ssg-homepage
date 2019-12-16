@@ -14,6 +14,7 @@
 
 module.exports = global.Project = {
     api: 'https://api.bullet-train.io/api/v1/',
+    appUrl: 'https://app.bullet-train.io/',
     ga: 'UA-120237963-1', // This is our Google Analytics key
     freshChat: {
         token: '5a71b820-b007-4bc4-86f6-4145411604c2',

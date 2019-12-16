@@ -128,6 +128,9 @@ const API = {
         }
     },
     log(namespace, ...args) {
+        if (!Project.logs) {
+            return
+        }
         if (Project.logs[namespace]) {
             console.log.apply(this, [namespace, ...args]);
         }
