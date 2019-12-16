@@ -69,11 +69,13 @@ class Header extends PureComponent {
                           </ul>
                           <ul className="navbar-nav">
                               <li className="nav-item">
-                                  <a href="#" onClick={Utils.scrollToSignUp} className="nav-link">
-                                      <span className="nav-link-featured">
-                                        Try it Free
-                                      </span>
-                                  </a>
+                                  <Link prefetch={false} href="/?signup">
+                                      <a className="nav-link">
+                                          <span className="nav-link-featured">
+                                            Try it Free
+                                          </span>
+                                      </a>
+                                  </Link>
                               </li>
                               <li className="nav-item">
                                   <Link prefetch={false} href={`${Project.appUrl}login`}><a className="nav-link">Log in</a></Link>

@@ -65,29 +65,44 @@ const HomePage = class extends React.Component {
 
     componentDidMount() {
         API.trackPage(Constants.pages.HOME);
+        this.checkSignup();
     }
 
-    register = (details) => {
-        const { email, password, first_name, last_name, organisation_name = 'Default Organisation' } = details;
-        this.setState({ isSaving: true });
-
-        data.post(`${Project.api}auth/register/`, {
-            email,
-            password1: password,
-            password2: password,
-            first_name,
-            last_name,
-        })
-            .then((res) => {
-                if (res && res.key) {
-                    API.setStoredToken(res.key);
-                    document.location = Project.appUrl;
-                }
-            })
-            .catch((error) => {
-                this.setState({ error, isSaving: false });
-            });
+    componentWillReceiveProps(nextProps, nextContext) {
+        this.checkSignup();
     }
+
+    checkSignup = () => {
+        if (!this.signup) {
+            const isSignup = document.location.href.includes('?signup');
+            if (isSignup) {
+                this.signup = true;
+                Utils.scrollToSignUp();
+            }
+        }
+    }
+
+  register = (details) => {
+      const { email, password, first_name, last_name, organisation_name = 'Default Organisation' } = details;
+      this.setState({ isSaving: true });
+
+      data.post(`${Project.api}auth/register/`, {
+          email,
+          password1: password,
+          password2: password,
+          first_name,
+          last_name,
+      })
+          .then((res) => {
+              if (res && res.key) {
+                  API.setStoredToken(res.key);
+                  document.location = Project.appUrl;
+              }
+          })
+          .catch((error) => {
+              this.setState({ error, isSaving: false });
+          });
+  }
 
     render = () => {
         const { email, password, organisation_name, first_name, last_name, error, isLoading, isSaving } = this.state;

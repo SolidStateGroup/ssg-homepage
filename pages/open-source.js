@@ -15,14 +15,14 @@ export default class OpenSource extends Component {
 
     render() {
         return (
-            <div className="">
+            <div>
                 <Head>
                     <title>
                       Bullet Train - Open Source Projects
                     </title>
                 </Head>
                 <div className="hero__open-source pt-3 text-center">
-                    <h1 className="display pt-5">Open Source</h1>
+                    <h1 className="pt-5 mt-5">Open Source</h1>
                     <p className="pb-3">All of our open source repositories are listed here</p>
                 </div>
 

@@ -63,7 +63,7 @@
     position: absolute;
     left: 0;
     right:0;
-    bottom:10px;
+    bottom:20px;
     p {
       width: 100%;
       color: $body-text;
@@ -216,7 +216,10 @@
         left: -210rem !important;
       }
       .tech{
-        bottom: -120px;
+        bottom: -200px;
+      }
+      .hero-example {
+        display: none;
       }
       .hero-illustration {
         display: none;
