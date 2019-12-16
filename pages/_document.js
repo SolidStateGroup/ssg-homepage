@@ -3,8 +3,6 @@
 
 // ./pages/_document.js
 import Document, { Head, Main, Html, NextScript } from 'next/document';
-import '../styles/styles.scss';
-import '../styles/fonts.css';
 import '../project/api';
 
 class MyDocument extends Document {
