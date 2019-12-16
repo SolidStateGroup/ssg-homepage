@@ -211,12 +211,15 @@
 
 @media (max-width: 768px) {
   .hero {
+    p {
+      width: 100%;
+    }
     &--homepage {
       .white {
         left: -210rem !important;
       }
       .tech{
-        bottom: -200px;
+        bottom: -210px;
       }
       .hero-example {
         display: none;

@@ -51,6 +51,11 @@
         }
     }
 }
+.navbar-nav {
+    display: flex !important;
+    flex-basis: auto;
+    flex-direction: row !important;
+}
 .service-status {
     font-size: 14px;
     a:hover {

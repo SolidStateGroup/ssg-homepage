@@ -36,7 +36,9 @@
 .margin-auto {
     margin: auto;
 }
-
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
 .alert {
     background: #f94f73;
     border: none;

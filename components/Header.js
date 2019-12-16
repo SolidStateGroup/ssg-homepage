@@ -36,7 +36,7 @@ class Header extends PureComponent {
       return (
           <div className="navbar-container">
               <div className="container">
-                  <nav className="navbar navbar-expand-lg">
+                  <nav style={{ flex: 1 }} className="navbar navbar-expand-lg">
                       <Link
                         href="/"
                       >
@@ -48,22 +48,15 @@ class Header extends PureComponent {
                               />
                           </a>
                       </Link>
-                      <button
-                        className="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation"
-                      >
-                          <span className="navbar-toggler-icon" />
-                      </button>
-                      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                      <div style={{ flex: 1 }} className="navbar" id="navbarSupportedContent">
                           <ul className="navbar-nav mr-auto">
-                              <li className="nav-item">
+                              <li className="nav-item d-none d-lg-block">
                                   <Link prefetch={false} href="/pricing"><a className="nav-link">Pricing</a></Link>
                               </li>
-                              <li className="nav-item active">
+                              <li className="nav-item d-none d-lg-block">
                                   <Link prefetch={false} href="https://docs.bullet-train.io/"><a className="nav-link">Documentation</a></Link>
                               </li>
-                              <li className="nav-item">
+                              <li className="nav-item d-none d-lg-block">
                                   <Link prefetch={false} href="/open-source"><a className="nav-link">Open Source</a></Link>
                               </li>
                           </ul>
