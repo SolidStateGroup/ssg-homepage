@@ -1,5 +1,6 @@
 .hero-container {
   position: relative;
+  overflow: hidden;
 }
 
 .hero-cta {
@@ -15,8 +16,8 @@
   }
 }
 .hero {
-  height: calc(100vh - 200px);
-  min-height: 685px;
+  height: calc(110vh);
+  min-height: 920px;
   padding-top: $navbar-height;
   background-color: $bt-brand-secondary-light;
   overflow: hidden;
@@ -31,35 +32,58 @@
       display: block;
       content: " ";
       position: absolute;
-      bottom: -155rem;
       z-index: -1;
-      left: -190rem;
+      bottom: -170rem;
+      left: -140rem;
       width: 250rem;
       height: 200rem;
-      background: $bt-brand-secondary;
       -webkit-transform: rotate(-30deg);
       transform: rotate(30deg);
+      background: $bt-brand-secondary;
     }
     &:after {
       content: " ";
+      clear: both;
       display: table;
     }
     .white {
       display: block;
       position: absolute;
-      bottom: -218rem;
-      left: -100rem;
-      width: 1000rem;
-      height: 403rem;
+      bottom: -240rem;
+      left: -111rem;
+      width: 966rem;
+      height: 384rem;
       background: #fff;
-      transform: rotate(-30deg) translateY(0px);
+      transform: rotate(-22deg) translateY(-101.85px);
+    }
+  }
+  .tech {
+    z-index: 10000000;
+    padding: 40px 0;
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom:0;
+    .row > div {
+      margin: 0 auto;
+      img {
+        width: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        opacity: 0.75;
+      }
+    }
+
+    a {
+      color: #22354a;
+      font-weight: bold;
     }
   }
 }
 
 .hero {
   color: white;
-  padding-top: 6rem;
+  padding-top: 8rem;
   button.btn {
     font-size: 1.2em !important;
   }
@@ -77,10 +101,10 @@
   &--homepage {
     .hero-illustration {
       position: absolute;
-      right: -15rem;
-      z-index: 1000;
-      bottom: 2.5rem;
-      height: 620px;
+      height: 550px;
+      right: -8%;
+      top: 37%;
+      z-index: 100000000;
     }
   }
 }
@@ -113,6 +137,7 @@
   .hero {
     &--homepage {
       .hero-illustration {
+        display: none;
       }
     }
   }
@@ -122,6 +147,7 @@
   .hero {
     &--homepage {
       .hero-illustration {
+        display: none;
       }
     }
   }
@@ -131,6 +157,7 @@
   .hero {
     &--homepage {
       .hero-illustration {
+        display: none;
       }
     }
     &--features-page {

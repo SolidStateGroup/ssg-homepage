@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import React from 'react';
 import Button from './base/forms/Button';
 
 const Hero = class extends React.Component {
@@ -17,22 +18,6 @@ const Hero = class extends React.Component {
         const explain = true;
         return (
             <div className="hero-container">
-
-                <div className="open-source">
-                    <div>
-                        <img alt="github" src="/static/images/github.svg"/>
-                        {'We\'re '}
-                        <Link prefetch={false} href="/open-source">
-                            <a
-                              className="link"
-                            >
-                                100% Open Source
-                            </a>
-                        </Link>
-                        . Host with us or on your own infrastructure.
-                    </div>
-                </div>
-                {/*<img alt="Bullet Train Logo" className="hero-illustration" src="/static/images/bullet-train-illustration.svg"/>*/}
                 <div className="hero hero--homepage">
                     <div className="container">
                         <h1 className="margin-bottom margin-top">Release features with confidence</h1>
@@ -50,6 +35,72 @@ const Hero = class extends React.Component {
                             <p className="text-small">No payment card required</p>
                         </div>
                         <div className="white"/>
+                        <div className="tech">
+                            <div className="text-center margin-auto col-md-12 col-lg-8 push-lg-2">
+                                <h2>We currently support these popular languages</h2>
+                                <div className="row">
+                                    <div className="col-md-1 col-sm-4 col-4">
+                                        <a href="https://docs.bullet-train.io/clients/java/">
+                                            <img src="/static/images/tech-logos/java.png" alt="Java" title="Java"/>
+                                        </a>
+                                    </div>
+                                    <div className="col-md-1 col-sm-4 col-4">
+                                        <a href="https://docs.bullet-train.io/clients/javascript/">
+                                            <img src="/static/images/tech-logos/javascript.png" alt="JavaScript" title="JavaScript"/>
+                                        </a>
+                                    </div>
+                                    <div className="col-md-1 col-sm-4 col-4">
+                                        <a href="https://docs.bullet-train.io/clients/javascript/">
+                                            <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS"/>
+                                        </a>
+                                    </div>
+                                    <div className="col-md-1 col-sm-4 col-4">
+                                        <a href="https://docs.bullet-train.io/clients/node/">
+                                            <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js"/>
+                                        </a>
+                                    </div>
+                                    <div className="col-md-1 col-sm-4 col-4">
+                                        <a href="https://docs.bullet-train.io/clients/python/">
+                                            <img
+                                              src="/static/images/tech-logos/python.png" className="img-fluid" alt="Python"
+                                              title="Python"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div className="col-md-1 col-sm-4 col-4">
+                                        <a href="https://docs.bullet-train.io/clients/ruby/">
+                                            <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby"/>
+                                        </a>
+                                    </div>
+                                    <div className="col-md-1 col-sm-4 col-4">
+                                        <a href="https://docs.bullet-train.io/clients/dotnet/">
+                                            <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET"/>
+                                        </a>
+                                    </div>
+                                    <div className="col-md-1 col-sm-4 col-4">
+                                        <a href="https://docs.bullet-train.io/clients/java/">
+                                            <img src="/static/images/tech-logos/android2x.png" alt="android" title="android" />
+                                        </a>
+                                    </div>
+                                    <div className="col-md-1 col-sm-4 col-4">
+                                        <a href="https://docs.bullet-train.io/clients/ios/">
+                                            <img src="/static/images/tech-logos/bt-IOS.png" alt="IOS" title="IOS" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <p className="text-small margin-top no-mb">
+                                    Don't worry if you don't see your
+                                    preferred tech,
+                                    {' '}
+                                    <a href="mailto:support@bullet-train.io">get in touch</a>
+                                    {' '}
+                                    and let
+                                    us know what you'd like to see.
+                                    <br/>
+                                    We also have a core RESTful API.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
