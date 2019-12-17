@@ -326,7 +326,7 @@ Feature Audit
                                         {' '}
                                         <Link href="/pricing">
                                             <a>
-                                              Check out our Pricing
+                                              Check out our Pricing.
                                             </a>
                                         </Link>
                                     </p>
