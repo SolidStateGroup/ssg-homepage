@@ -41,22 +41,22 @@ const PricingPage = class extends React.Component {
                       <div className="panel panel-default panel-grey">
                           <p className="question">So how does this all work?</p>
                           <p className="answer">
-                First off, you're free to host Bullet Train yourself, free of charge. We're open source,
+                First off, you're free to host Bullet Train yourself, without charge. We're 100% open source,
                 and totally fine with you doing that.
                           </p>
                           <p className="answer">
                 If you want to support the project, or you don't fancy going through the hassle of
-                managing that infrastructure, we'd love you to sign up.
+                managing that infrastructure yourself, we'd love you to sign up and use our hosted platform.
                           </p>
                           <p className="answer">
-                The only metric you need to count when deciding on your plan is the number of Monthly
-                Active Users you need to serve flags for (see below).
-                You can create as many projects, flags, admin users as you like. We feel that this is
+                The only metrics you need to consider when deciding on your plan is the number of API calls
+                you plan on making, and the number of team members you have that need access to Bullet Train. 
+                You can create as many projects, environments, flags and segments as you like. We feel that this is
                 the fairest measure of usage.
                           </p>
                       </div>
                       <div className="panel panel-default panel-grey">
-                          <p className="question">How do you calculate requests per month</p>
+                          <p className="question">How do you calculate API calls per month?</p>
                           <p className="answer">
                 This is simply the total number of API requests you make for each calendar month, across
                 all the projects in your organisation.
@@ -81,9 +81,9 @@ const PricingPage = class extends React.Component {
                       <div className="panel panel-default panel-grey">
                           <p className="question">What happens if I go over my plan limit?</p>
                           <p className="answer">
-                Don't worry - we'll carry on serving your flags to your users. We realise that this is
+                Don't worry; we'll carry on serving your flags to your users. We realise that this is
                 important to your application.
-                If this does happen, we'll be in touch to discuss moving you to a new plan.
+                If this does happen, we'll be in touch to discuss upgrading you to a new plan.
                           </p>
                       </div>
                       <div className="panel panel-default panel-grey">
@@ -93,7 +93,6 @@ const PricingPage = class extends React.Component {
                               {' '}
                               <a style={{ color: '#22354a' }} href="mailto:support@bullettrain.io">get in touch</a>
                               {' '}
-
                           </p>
                       </div>
                       <div className="panel panel-default panel-grey">

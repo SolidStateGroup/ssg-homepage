@@ -55,6 +55,7 @@ const PricingPanel = class extends React.Component {
                                           <li><p>Unlimited Projects</p></li>
                                           <li><p>Unlimited Environments</p></li>
                                           <li><p>Unlimited Feature Flags</p></li>
+                                          <li><p>Unlimited Identities and Segments</p></li>
                                       </ul>
                                   </div>
                               </div>
@@ -89,6 +90,7 @@ const PricingPanel = class extends React.Component {
                                           <li><p>Unlimited Projects</p></li>
                                           <li><p>Unlimited Environments</p></li>
                                           <li><p>Unlimited Feature Flags</p></li>
+                                          <li><p>Unlimited Identities and Segments</p></li>
                                           <li><p>Email Technical Support</p></li>
                                       </ul>
                                   </div>
@@ -122,7 +124,7 @@ const PricingPanel = class extends React.Component {
                                               </p>
                                           </li>
                                           <li><p>All Startup Features</p></li>
-                                          <li><p>Private Discord Technical Support</p></li>
+                                          <li><p>Priority Email Technical Support</p></li>
                                       </ul>
 
                                   </div>
@@ -154,7 +156,8 @@ const PricingPanel = class extends React.Component {
                                           </li>
                                           <li><p>All Startup Features</p></li>
                                           <li><p>SAML, 2-factor and SSO options</p></li>
-                                          <li><p>Telephone and Discord Technical Support</p></li>
+                                          <li><p>Uptime SLA</p></li>
+                                          <li><p>Telephone and Priority Email Technical Support</p></li>
                                           <li><p>Optional On Premise Installation</p></li>
                                       </ul>
                                   </div>
