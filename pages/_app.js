@@ -2,7 +2,6 @@ import App, { Container } from 'next/app';
 import Head from 'next/head';
 import React from 'react';
 import '../styles/styles.scss';
-import '../styles/fonts.css';
 import '../project/polyfill';
 import Header from '../components/Header';
 

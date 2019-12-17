@@ -2,7 +2,23 @@
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/variables";
 
-//MARGIN AND PADDING
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/static/fonts/Proxima-Nova-Regular.woff');
+  font-display:swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/static/fonts/Proxima-Nova-Semibold.woff');
+  font-weight:bold;
+  font-display:swap;
+}
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('/static/fonts/Proxima-Nova-Semibold.woff');
+  font-display:swap;
+}
+//Fonts
 $font-family: "Proxima Nova", sans-serif;
 $font-family-headers: "Proxima Nova Bold", sans-serif;
 

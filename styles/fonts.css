@@ -10,9 +10,3 @@
     font-weight:bold;
     font-display:swap;
 }
-@font-face {
-    font-family: 'Proxima Nova Bold';
-    src: url('/static/fonts/Proxima-Nova-Semibold.woff');
-    font-weight:bold;
-    font-display:swap;
-}
