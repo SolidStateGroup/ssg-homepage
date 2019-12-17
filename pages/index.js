@@ -110,25 +110,6 @@ const HomePage = class extends React.Component {
         return (
             <div className="homepage">
                 <Hero redirect={redirect}/>
-                <div className="feature-container alt">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-8">
-                                <div className="text-left">
-                                    <Delay>
-                                        <img style={{ maxWidth: '100%' }} alt="User segmentation and ab testing" src="/static/images/homepage-segments.png"/>
-                                    </Delay>
-                                </div>
-                            </div>
-                            <div className="col-md-4">
-                                <h2>Powerful user segmentation</h2>
-                                <p>
-                                  Utilise our powerful rules engine to manage your features for the users you wish to target. You can even use segments for <strong>staged rollouts</strong> or <strong>a/b testing</strong>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div className="feature-container ">
                     <div className="container">
                         <div className="row">
@@ -147,6 +128,25 @@ const HomePage = class extends React.Component {
                     </div>
                 </div>
                 <div className="feature-container alt">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-8">
+                                <div className="text-left">
+                                    <Delay>
+                                        <img style={{ maxWidth: '100%' }} alt="User segmentation and ab testing" src="/static/images/homepage-segments.png"/>
+                                    </Delay>
+                                </div>
+                            </div>
+                            <div className="col-md-4">
+                                <h2>Powerful user segmentation</h2>
+                                <p>
+                        Utilise our powerful rules engine to manage your features for the users you wish to target. You can even use segments for <strong>staged rollouts</strong> or <strong>a/b testing</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="feature-container">
                     <div className="text-center text-center col-xl-4 offset-lg-4">
                         <h2>Fully Featured Platform</h2>
                     </div>
