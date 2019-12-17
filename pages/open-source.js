@@ -66,7 +66,7 @@ Python REST API for Bullet-Train.
                                         <div className="panel-content">
                                             <h2>bullet-train-frontend</h2>
                                             <p className="m-0">
-                                              Website Bullet Train.
+                                              The admininstration interface for Bullet Train.
                                             </p>
                                             <div className="colour-block colour-block--small colour-block--javascript"/>
                                             <small className="technology-name">JavaScript</small>
