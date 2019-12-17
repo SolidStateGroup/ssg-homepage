@@ -45,7 +45,7 @@ const API = {
         return cookies.set('locale', v);
     },
     setStoredToken(v) {
-        return cookies.set('t', v);
+        return cookies.set('t', v, { path: '', domain: '.bullet-train.io' });
     },
     trackEvent(data) {
         if (__DEV__) {
