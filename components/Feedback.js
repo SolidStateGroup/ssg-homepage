@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import Button from './base/forms/Button';
+
 const Feedback = class extends Component {
     static displayName = 'Feedback'
 
@@ -8,10 +9,6 @@ const Feedback = class extends Component {
         this.state = {
             isSending: false,
         };
-    }
-
-    close() {
-        closeModal();
     }
 
     componentDidMount = () => {
@@ -72,8 +69,9 @@ const Feedback = class extends Component {
         fetch(url, options)
             .then((res) => {
                 const isSuccess = res.status >= 200 && res.status < 300;
-                this.close();
-                toast(isSuccess ? 'Feedback sent' : 'Failed to send, try again later');
+                this.setState({
+                    message: isSuccess ? 'Your feedback has been sent' : 'Failed to send, try again later',
+                });
             });
     }
 
@@ -126,6 +124,7 @@ const Feedback = class extends Component {
                         />
                     </FormGroup>
                 </form>
+                {this.state.message}
                 <div className="text-right">
                     <Button
                       disabled={isSending || !this.isValid()} onClick={this.sendFeedback}

@@ -4,7 +4,6 @@ import Footer from '../components/Footer';
 import PricingPanel from '../components/PricingPanel';
 import Feedback from '../components/Feedback';
 import Constants from '../common/utils/constants';
-import '../components/Modal';
 
 const PricingPage = class extends React.Component {
   static displayName = 'PricingPage'
@@ -50,7 +49,7 @@ const PricingPage = class extends React.Component {
                           </p>
                           <p className="answer">
                 The only metrics you need to consider when deciding on your plan is the number of API calls
-                you plan on making, and the number of team members you have that need access to Bullet Train. 
+                you plan on making, and the number of team members you have that need access to Bullet Train.
                 You can create as many projects, environments, flags and segments as you like. We feel that this is
                 the fairest measure of usage.
                           </p>
@@ -101,9 +100,13 @@ const PricingPage = class extends React.Component {
                             This was one of the drivers for creating Bullet Train, we will always aim to offer the best value.
                           </p>
                       </div>
-                      <div className="text-center cta-container">
-                          <h5>Didn't find an answer to your question?</h5>
-                          <a onClick={this.feedback} className="pricing-cta blue">Get in touch</a>
+                      <div className="cta-container">
+                          <h5>Didn't find an answer to your question? Get in touch</h5>
+                          <div className="row">
+                              <div className="col-md-6">
+                                  <Feedback/>
+                              </div>
+                          </div>
                       </div>
                   </div>
               </div>
