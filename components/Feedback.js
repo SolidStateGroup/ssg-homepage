@@ -11,19 +11,6 @@ const Feedback = class extends Component {
         };
     }
 
-    componentDidMount = () => {
-        this.focusTimeout = setTimeout(() => {
-            this.nameInput.focus();
-            this.focusTimeout = null;
-        }, 500);
-    };
-
-    componentWillUnmount() {
-        if (this.focusTimeout) {
-            clearTimeout(this.focusTimeout);
-        }
-    }
-
     isValid = () => {
         if (!this.state.name || this.state.name.trim().length === 0) {
             return false;
