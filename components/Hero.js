@@ -14,15 +14,17 @@ const Hero = class extends React.Component {
                 {
                     a: 'bulletTrain.hasFeature(',
                     b: "'show_coupon'",
+                    c: ')',
                 },
                 {
                     a: 'bulletTrain.getTrait(',
                     b: "'accepted-term'",
+                    c: ')',
                 },
                 {
                     a: 'bulletTrain.getTrait(',
                     b: "'login_count'",
-                    c: '>3',
+                    c: ')>3',
                 },
             ],
         };
@@ -144,9 +146,11 @@ const Hero = class extends React.Component {
                                     <span className="code code--green">if </span>
                                     ({value.a}
                                     <span className="code code--red">{value.b}</span>
-                                    {value.c}
+                                    <span className="code">
+                                        {value.c}
+                                    </span>
                                 </span>
-                                <span className="anim-typewriter-after">)</span>
+                                <span className="code anim-typewriter-after">)</span>
                             </div>
                         </div>
                     </div>
