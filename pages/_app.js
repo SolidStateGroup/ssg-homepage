@@ -30,7 +30,7 @@ class MyApp extends App {
                         <script type="text/javascript" src="/static/chromefix.js" />
                     </Head>
                     <Header className={this.props.router.route === '/' ? 'homepage' : ''}/>
-                    <Component />
+                    <Component {...this.props}/>
                     <div id="confirm"/>
                     <div id="alert"/>
                     <div id="modal"/>

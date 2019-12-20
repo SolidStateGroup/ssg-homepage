@@ -4,11 +4,11 @@ const { join } = require('path');
 const cacheableResponse = require('cacheable-response');
 const express = require('express');
 const next = require('next');
+const sortBy = require('lodash/sortBy');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
-
 const handle = app.getRequestHandler();
 
 const IS_SSR_CACHE_ENABLED = !dev; // TODO move to config
@@ -28,9 +28,31 @@ const ssrCache = (ttl) => {
     });
 };
 
-app.prepare().then(() => {
-    const server = express();
+const testFolder = './pages-blog-markdown';
+const fs = require('fs');
+const parseMarkdown = require('./common/parse-markdown');
 
+const prom = new Promise((resolve, reject) => {
+    fs.readdir(testFolder, (err, files) => {
+        const res = [];
+        files.forEach((file) => {
+            const md = fs.readFileSync(`${testFolder}/${file}`, 'utf8');
+            const data = parseMarkdown(md);
+            res.push({
+                ...data,
+                url: file.replace('.md', ''),
+                content: null,
+            });
+        });
+        resolve(sortBy(res, 'sort'));
+    });
+});
+
+Promise.all([
+    prom,
+    app.prepare(),
+]).then(([blog]) => {
+    const server = express();
     const sw = join(__dirname, '.next/service-worker.js');
     const favicon = join(__dirname, '/static/images/favicon.ico');
     const sitemap = join(__dirname, '/static/sitemap.xml');
@@ -43,6 +65,10 @@ app.prepare().then(() => {
 
     server.get('/robots.txt', (req, res) => {
         app.serveStatic(req, res, robots);
+    });
+
+    server.get('/api/blog', (req, res) => {
+        res.json(blog);
     });
 
     server.get('/favicon.ico', (req, res) => {

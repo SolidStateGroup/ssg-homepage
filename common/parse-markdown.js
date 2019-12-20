@@ -1,10 +1,10 @@
-import each from 'lodash/each';
-import filter from 'lodash/filter';
-import moment from 'moment';
+const each = require('lodash/each');
+const map = require('lodash/map');
+const moment = require('moment');
 
 const splitAt = index => x => [x.slice(0, index), x.slice(index)];
 
-export default (source) => {
+module.exports = (source) => {
     const metaLength = source.match(/---.*?---\n*/sg)[0].length;
     const split = splitAt(metaLength)(source);
     const meta = split[0].split('\n');
@@ -27,11 +27,12 @@ export default (source) => {
         }
         if (item.includes('date: ')) {
             const m = moment(item.replace('date: ', ''), 'DD-MMM-YYYY');
-            res.dateFormated = m.format('MMM DD YYYY');
+            res.dateFormatted = m.format('MMM DD YYYY');
             res.date = m.toISOString();
+            res.sort = -m.valueOf();
         }
         if (item.includes('tags: ')) {
-            res.tags = filter(item.replace('tags: ', '').split(','), i => i);
+            res.tags = map(item.replace('tags: ', '').split(','), i => i.trim());
         }
     });
     return res;

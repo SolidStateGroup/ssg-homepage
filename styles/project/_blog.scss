@@ -31,3 +31,53 @@
         }
     }
 }
+
+.blog-item {
+    box-shadow: 0 2px 19px 0 rgba(119, 119, 119, 0.5);
+    border-radius: 20px;
+    margin-bottom: 3em;
+    font-size: 21px;
+    line-height: 1.58;
+    text-rendering:optimizelegibility;
+    word-break:break-word;
+    -webkit-font-smoothing:antialiased;
+    .blog-item-content {
+        padding: 20px;
+    }
+    h1, h2, h3, p,a  {
+        color: rgba(0, 0, 0, 0.84);
+    }
+    .date {
+        color: #666;
+        font-size: 14px;
+    }
+    .tag {
+        padding:2px 10px;
+        margin-right: 5px;
+        border-radius: 10px;
+        font-size:14px;
+        background-color: #333;
+        color: white;
+        font-weight: bold;
+        &.javascript {
+            background-color: #f6de1d;
+            color: black;
+        }
+        &.java {
+            background-color: #f1f1f1;
+            color: #027089;
+        }
+        &.react {
+            background-color: #222222;
+            color: #60daf6;
+        }
+        &.continuous_integration,&.ci {
+            background-color: #40af63;
+            color: #fff;
+        }
+        &.webdev {
+            background-color: #4c235a;
+            color: #fff;
+        }
+    }
+}

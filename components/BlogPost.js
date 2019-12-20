@@ -20,7 +20,7 @@ export default class TheComponent extends Component {
           description,
           content,
           author,
-          dateFormated,
+          dateFormatted,
       } = parseMarkdown(this.props.source);
       return (
           <div className="container blog pt-5">
@@ -56,7 +56,7 @@ export default class TheComponent extends Component {
                               {author}
                           </div>
                           <div className="date">
-                              {dateFormated}
+                              {dateFormatted}
                           </div>
                       </div>
                   </Row>
