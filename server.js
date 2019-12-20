@@ -29,6 +29,7 @@ const ssrCache = (ttl) => {
 };
 
 const testFolder = join(__dirname, '/static/pages-blog-markdown');
+const blogOutput = join(__dirname, '/static/blog.json');
 const fs = require('fs');
 const parseMarkdown = require('./common/parse-markdown');
 
@@ -44,20 +45,22 @@ const prom = new Promise((resolve, reject) => {
                 content: null,
             });
         });
-        resolve(sortBy(res, 'sort'));
+        fs.writeFileSync(blogOutput, JSON.stringify(sortBy(res, 'sort')));
+        resolve();
     });
 });
 
 Promise.all([
     prom,
     app.prepare(),
-]).then(([blog]) => {
+]).then(() => {
     const server = express();
     const sw = join(__dirname, '.next/service-worker.js');
     const favicon = join(__dirname, '/static/images/favicon.ico');
     const sitemap = join(__dirname, '/static/sitemap.xml');
     const robots = join(__dirname, '/static/robots.txt');
     const apple = join(__dirname, '/static/apple-app-site-association');
+    const blog = join(__dirname, '/static/blog.json');
 
     server.get('/sitemap.xml', (req, res) => {
         app.serveStatic(req, res, sitemap);
@@ -69,7 +72,7 @@ Promise.all([
 
     server.get('/api/blog', (req, res) => {
         res.setHeader('Content-Type', 'application/json');
-        res.json(blog);
+        app.serveStatic(req, res, blog);
     });
 
     server.get('/favicon.ico', (req, res) => {
