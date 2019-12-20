@@ -47,11 +47,6 @@ Promise.all([
         app.serveStatic(req, res, robots);
     });
 
-    server.get('/api/blog', (req, res) => {
-        res.setHeader('Content-Type', 'application/json');
-        app.serveStatic(req, res, blog);
-    });
-
     server.get('/favicon.ico', (req, res) => {
         app.serveStatic(req, res, favicon);
     });
