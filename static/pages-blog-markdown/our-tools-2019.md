@@ -5,7 +5,7 @@ description: The development tools we can't live without in 2019
 tags: productivity, python, javascript, ci
 author: Ben Rometsch
 avatar: /static/images/blog/ben.png
-date: 12-jul-2019
+date: 24-jun-2019
 
 ---
 

@@ -5,7 +5,7 @@ description: How Bullet Train adjusted their nightwatch e2e tests to provide API
 tags: webdev, javascript, testing
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
-date: 22-nov-2019
+date: 22-nov-2018
 ---
 
 In this post, we're going to run through an overview of my experience using e2e tests for the [feature flag platform, Bullet Train](https://bullet-train.io/). I'll discuss the pros and cons of adding e2e coverage to your project, and how I eventually improved their usefulness with a bit of clever JavaScript. I'll also provide a code example that's used in production for all of you to play with.
