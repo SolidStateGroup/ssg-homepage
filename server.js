@@ -28,7 +28,7 @@ const ssrCache = (ttl) => {
     });
 };
 
-const testFolder = './static/pages-blog-markdown';
+const testFolder = join(__dirname, '/static/pages-blog-markdown');
 const fs = require('fs');
 const parseMarkdown = require('./common/parse-markdown');
 
