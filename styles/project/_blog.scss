@@ -20,7 +20,14 @@
     word-break:break-word;
     -webkit-font-smoothing:antialiased;
     color: rgba(0, 0, 0, 0.84);
-    h1, h2, h3, p {
+    h1, h2, h3, p,a  {
         color: rgba(0, 0, 0, 0.84);
+    }
+    a {
+        font-weight: bold;
+        text-decoration: underline;
+        &:hover {
+            color: rgba(0, 0, 0, 0.84);
+        }
     }
 }
