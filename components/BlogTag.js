@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 import Head from 'next/head';
+import Link from 'next/link';
 import parseMarkdown from '../common/parse-markdown';
 
 export default class TheComponent extends Component {
@@ -14,7 +15,9 @@ export default class TheComponent extends Component {
 
   render() {
       return (
-          <span className={`tag ${this.props.tag.replace(/ /g, '_').toLowerCase()}`}>{this.props.tag}</span>
+          <Link href={`/blog?tag=${encodeURIComponent(this.props.tag)}`}>
+              <span className={`blog-tag ${this.props.tag.replace(/ /g, '_').toLowerCase()}`}>{this.props.tag}</span>
+          </Link>
       );
   }
 }

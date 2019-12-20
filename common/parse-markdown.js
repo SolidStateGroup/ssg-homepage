@@ -32,7 +32,7 @@ module.exports = (source) => {
             res.sort = -m.valueOf();
         }
         if (item.includes('tags: ')) {
-            res.tags = map(item.replace('tags: ', '').split(','), i => i.trim());
+            res.tags = map(item.replace('tags: ', '').split(','), i => i.trim().toLowerCase()).sort();
         }
     });
     return res;

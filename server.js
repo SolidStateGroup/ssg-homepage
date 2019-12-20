@@ -37,7 +37,6 @@ Promise.all([
     const sitemap = join(__dirname, '/static/sitemap.xml');
     const robots = join(__dirname, '/static/robots.txt');
     const apple = join(__dirname, '/static/apple-app-site-association');
-    const blog = join(__dirname, '/static/blog.json');
 
     server.get('/sitemap.xml', (req, res) => {
         app.serveStatic(req, res, sitemap);

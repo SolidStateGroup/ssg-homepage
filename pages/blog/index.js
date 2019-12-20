@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import Head from 'next/head';
-import fetch from 'isomorphic-unfetch';
 import Link from 'next/link';
+import filter from 'lodash/filter';
 import BlogTag from '../../components/BlogTag';
 import blog from '../../static/blog.json';
 // import propTypes from 'prop-types';
@@ -57,7 +57,9 @@ const WhatAreFeatureFlagsPage = class extends Component {
 
   constructor(props, context) {
       super(props, context);
-      this.state = {};
+      this.state = {
+          filter: 'javascript',
+      };
   }
 
   componentWillMount() {
@@ -65,19 +67,36 @@ const WhatAreFeatureFlagsPage = class extends Component {
   }
 
   getBlog = () => {
-      return blog;
+      if (!this.props.router.query.tag) {
+          return blog;
+      }
+      return filter(blog, (item) => {
+          return item.tags.includes(this.props.router.query.tag);
+      });
   }
 
   render() {
       const blog = this.getBlog();
+      const filter = this.props.router.query.tag;
       return (
-          <div>
+          <div className="blog">
               <Head>
                   <title>
                     Bullet Train - Blog
                   </title>
               </Head>
               <div className="container mt-5">
+                  {!!filter && (
+                  <div className="mb-3 text-center">
+                    Filtering by <BlogTag tag={filter}/>
+                      {' '}
+                      <Link>
+                          <a href="/blog">
+                          View all
+                          </a>
+                      </Link>
+                  </div>
+                  ) }
                   {blog.map(b => (
                       <BlogItem key={b.title} item={b}/>
                   ))}

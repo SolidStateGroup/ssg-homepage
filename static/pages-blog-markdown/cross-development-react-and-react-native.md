@@ -2,7 +2,10 @@
 title: A sensible approach to Cross platform development with React and React Native
 published: true
 description: How I go about developing shared code between web and React Native
-tags: 
+tags: react, react native, javascript, showdev
+author: Kyle Johnson
+avatar: /static/images/blog/kyle.png
+date: 27-aug-2018
 ---
 
 The ability to develop simultaneously for Android, iOS and recently Windows Phone is often advertised as the biggest selling point for businesses considering adopting React Native. Arguably an even bigger and often overlooked opportunity this tech stack brings is the ability to extend this cross platform ecosystem to web with React. 
