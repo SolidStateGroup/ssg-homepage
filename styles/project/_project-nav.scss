@@ -1,8 +1,11 @@
 .navbar-container {
-    position: absolute;
-    left:0;
-    right:0;
     background-color: $bt-brand-secondary-light;
+    &.homepage {
+        position: absolute;
+        left:0;
+        right:0;
+        background-color: transparent;
+    }
     z-index: 10;
 }
 .navbar {

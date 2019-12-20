@@ -50,6 +50,11 @@ const nextConfig = {
             config.plugins = config.plugins.concat(base.plugins);
         }
 
+        config.module.rules.push({
+            test: /\.md$/,
+            use: 'raw-loader',
+        });
+
         return config;
     },
 };

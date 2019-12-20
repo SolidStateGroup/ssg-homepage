@@ -8,7 +8,6 @@ import Header from '../components/Header';
 class MyApp extends App {
     render() {
         const { Component } = this.props;
-
         return (
             <Container>
                 <React.Fragment>
@@ -30,7 +29,7 @@ class MyApp extends App {
                         <meta name="theme-color" content="#1d2d3f"/>
                         <script type="text/javascript" src="/static/chromefix.js" />
                     </Head>
-                    <Header/>
+                    <Header className={this.props.router.route === '/' ? 'homepage' : ''}/>
                     <Component />
                     <div id="confirm"/>
                     <div id="alert"/>

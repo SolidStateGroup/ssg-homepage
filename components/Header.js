@@ -34,7 +34,7 @@ class Header extends PureComponent {
 
   render() {
       return (
-          <div className="navbar-container">
+          <div className={`navbar-container ${this.props.className || ''}`}>
               <div className="container">
                   <Link
                     href="/"

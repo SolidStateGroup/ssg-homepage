@@ -21,8 +21,9 @@ export default class OpenSource extends Component {
                       Bullet Train - Open Source Projects
                     </title>
                 </Head>
-                <div className="hero__open-source pt-3 text-center">
-                    <h1 className="pt-5 mt-5">Open Source</h1>
+                <div className="pt-5 hero__open-source text-center">
+                    <h1 className="text-center margin-bottom">Open Source</h1>
+
                     <p className="pb-3">All of our open source repositories are listed here</p>
                 </div>
 
