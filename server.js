@@ -68,6 +68,7 @@ Promise.all([
     });
 
     server.get('/api/blog', (req, res) => {
+        res.setHeader('Content-Type', 'application/json');
         res.json(blog);
     });
 
