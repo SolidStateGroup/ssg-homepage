@@ -83,45 +83,45 @@ const Hero = class extends React.Component {
                                     </div>
                                     <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/javascript/">
-                                            <img src="/static/images/tech-logos/javascript.png" alt="JavaScript" title="JavaScript"/>
+                                            <img src="/static/images/tech-logos/javascript.png" alt="JavaScript" title="JavaScript Feature Flags"/>
                                         </a>
                                     </div>
                                     <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/javascript/">
-                                            <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS"/>
+                                            <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS Feature Flags"/>
                                         </a>
                                     </div>
                                     <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/node/">
-                                            <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js"/>
+                                            <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js Feature Flags"/>
                                         </a>
                                     </div>
                                     <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/python/">
                                             <img
-                                              src="/static/images/tech-logos/python.png" className="img-fluid" alt="Python"
+                                              src="/static/images/tech-logos/python.png" className="img-fluid" alt="Python Feature Flags"
                                               title="Python"
                                             />
                                         </a>
                                     </div>
                                     <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/ruby/">
-                                            <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby"/>
+                                            <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby Feature Flags"/>
                                         </a>
                                     </div>
                                     <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/dotnet/">
-                                            <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET"/>
+                                            <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET Feature Flags"/>
                                         </a>
                                     </div>
                                     <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/java/">
-                                            <img src="/static/images/tech-logos/android2x.png" alt="android" title="android" />
+                                            <img src="/static/images/tech-logos/android2x.png" alt="android" title="android Feature Flags" />
                                         </a>
                                     </div>
                                     <div className="col-md-1 col-sm-2 col-4">
                                         <a href="https://docs.bullet-train.io/clients/ios/">
-                                            <img src="/static/images/tech-logos/bt-IOS.png" alt="IOS" title="IOS" />
+                                            <img src="/static/images/tech-logos/bt-IOS.png" alt="IOS" title="IOS Feature Flags" />
                                         </a>
                                     </div>
                                 </div>
