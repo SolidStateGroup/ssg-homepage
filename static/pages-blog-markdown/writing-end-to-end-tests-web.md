@@ -8,7 +8,7 @@ avatar: /static/images/blog/kyle.png
 date: 10-dec-2018
 ---
 
-Based on my previous post [Hacking our e2e tests to make them more useful](https://dev.to/kylessg/hacking-our-e2e-tests-to-make-them-more-useful-2gaj), there seemed to be little resources available for writing e2e tests. This is something I've become a strong advocate of since helping write [Bullet Train](https://bullet-train.io).
+Based on my previous post [Hacking our e2e tests to make them more useful](https://bullet-train.io/blog/hacking-our-end-to-end-tests), there seemed to be little resources available for writing e2e tests. This is something I've become a strong advocate of since helping write [Bullet Train](https://bullet-train.io).
 
 <img src="https://media.giphy.com/media/1AIR5b2wYTtNUVuSlw/giphy.gif"/>
 

@@ -110,12 +110,16 @@ The baseline score was not too bad, with performance not being a problem for a r
 Most of these items are trivial to solve and involve employing best practices such as image alt tags, input roles and aria attributes.
 
 ### Appropriate colour contrast
+
 <img src="https://i.ibb.co/Y3FQhFk/image.png"/>
-Lighthouse is clever enough to know which of your elements are not meeting the WCAG 2 AA contrast ratio thresholds, stating that your foreground and background should have a contrast ratio of at least 4.5:1 for small text or 3:1 for large text. You can run tools such as [Web AIM's contrast checker](https://webaim.org/resources/contrastchecker/). A quick CSS change fixed this but obviously, this will mean a good amount of refactoring for content-rich sites.
+
+Lighthouse is clever enough to know which of your elements are not meeting the WCAG 2 AA contrast ratio thresholds, stating that your foreground and background should have a contrast ratio of at least 4.5:1 for small text or 3:1 for large text. You can run tools such as
+ [Web AIM's contrast checker](https://webaim.org/resources/contrastchecker/). A quick CSS change fixed this but obviously, this will mean a good amount of refactoring for content-rich sites.
 
 ### Localisation
 
 <img src="https://i.ibb.co/wpFPGtb/image.png"/>
+
 This one was a little more tricky. To do a good job of this I wanted the serverside render to detect the user's preferred locale and set the lang attribute as well as serve localised content. Searching around I did come across [next-i18next](https://github.com/isaachinman/next-i18next), however, I noticed that it doesn't support serverless and it's difficult to share locale strings with [react-native-localization](https://www.npmjs.com/package/react-native-localization).
 
 I wanted something that would work with  [react-localization](https://www.npmjs.com/package/react-localization), so my approach was as follows:
