@@ -51,7 +51,7 @@ const Footer = class extends React.Component {
                           </ul>
                       </div>
                       <div className="col-md-2 offset-md-2">
-                          <h6>Product</h6>
+                          <h5>Product</h5>
                           <ul className=" float-left nav-list">
                               <li><a href={`${Project.appUrl}demo`}>Demo Account</a></li>
                               <li><a href="https://docs.bullet-train.io/">Documentation</a></li>
@@ -59,18 +59,18 @@ const Footer = class extends React.Component {
                           </ul>
                       </div>
                       <div className="col-md-2">
-                          <h6>Support</h6>
+                          <h5>Support</h5>
                           <ul className=" float-left nav-list">
                               <li><a href="mailto:support@bullet-train.io">Contact Us</a></li>
                               <li><Link prefetch={false} href="/blog"><a>Blog</a></Link></li>
                           </ul>
                       </div>
                       <div className="col-md-2">
-                          <h6>Company</h6>
+                          <h5>Company</h5>
                           <ul className=" float-left nav-list">
                               <li><Link prefetch={false} href="/legal/tos"><a>Terms of Service</a></Link></li>
                               <li><Link prefetch={false} href="/legal/privacy-policy"><a>Privacy Policy</a></Link></li>
-                              <li><Link prefetch={false} href="/legal/sla"><a>Service Level Agreement</a></Link></li>
+                              <li><Link prefetch={false} href="/legal/sla"><a>SLA</a></Link></li>
                           </ul>
                       </div>
                   </div>
