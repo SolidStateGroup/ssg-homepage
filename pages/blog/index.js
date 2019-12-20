@@ -3,7 +3,7 @@ import Head from 'next/head';
 import fetch from 'isomorphic-unfetch';
 import Link from 'next/link';
 import BlogTag from '../../components/BlogTag';
-
+import blog from '../../static/blog.json';
 // import propTypes from 'prop-types';
 
 class BlogItem extends Component {
@@ -64,18 +64,8 @@ const WhatAreFeatureFlagsPage = class extends Component {
       API.trackPage(Constants.pages.BLOG);
   }
 
-  static async getInitialProps({ req }) {
-      const protocol = req.headers['x-forwarded-proto'] || 'http';
-      const baseUrl = req ? `${protocol}://${req.headers.host}` : '';
-      const res = await fetch(`${baseUrl}/static/blog.json`);
-      const blog = await res.json();
-      return {
-          blog,
-      };
-  }
-
   getBlog = () => {
-      return this.props.pageProps.blog;
+      return blog;
   }
 
   render() {

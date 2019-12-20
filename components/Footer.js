@@ -62,8 +62,7 @@ const Footer = class extends React.Component {
                           <h6>Support</h6>
                           <ul className=" float-left nav-list">
                               <li><a href="mailto:support@bullet-train.io">Contact Us</a></li>
-                              <li><Link prefetch={false} href="/blog/remote-config-and-feature-flags"><a>What are feature flags?</a></Link></li>
-                              <li><Link prefetch={false} href="/blog/remote-config-and-feature-flags"><a>What is remote config?</a></Link></li>
+                              <li><Link prefetch={false} href="/blog/"><a>Blog</a></Link></li>
                           </ul>
                       </div>
                       <div className="col-md-2">

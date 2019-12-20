@@ -1,11 +1,11 @@
 ---
 title: Bullet Train: Using feature flags and remote config in CI
 published: true
+description: Why we developed and open sourced Bullet Train, the remote feature management tool.
+tags: ci, java, javascript, showdev
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
-description: Why we developed and open sourced Bullet Train, the remote feature management tool.
 date: 12-jun-2018
-tags: ci, java, javascript, showdev
 ---
 
 Asking a lot of my developer friends, it seems like CI and CD are two practices that people either already employ or wish they did. Developers universally love to get their new features released, it's a satisfying part of the job. In an ideal world, we could release features constantly, but as projects grow in complexity and users, that hasty push to master becomes far too risky.
