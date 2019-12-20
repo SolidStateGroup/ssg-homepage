@@ -15,7 +15,7 @@ This post explains what I found when using feature flags and why Solid State Gro
 
 ## Reducing release cycles and stress
 <p align="center">
-<img height="400" src="https://cdn2.stylecraze.com/wp-content/uploads/2015/07/2798-How-To-Make-A-Stress-Ball-At-Home-ss.jpg"/>
+<img alt="Reduce stress with Bullet Train" height="400" src="https://cdn2.stylecraze.com/wp-content/uploads/2015/07/2798-How-To-Make-A-Stress-Ball-At-Home-ss.jpg"/>
 </p>
 
 Having worked on projects with release cycles in the months, I found great relief employing this approach. Previously, I found the following:
@@ -61,7 +61,7 @@ Feel free to give some feedback on the site at bullettrain@solidstategroup.com.
 Happy Developing!
 
 <a href="https://bullet-train.io">
-<img src="https://raw.githubusercontent.com/SolidStateGroup/bullet-train-frontend/master/hero.png"/>
+<img alt="Bullet Train - Ship features with confidence" src="https://raw.githubusercontent.com/SolidStateGroup/bullet-train-frontend/master/hero.png"/>
 </a>
 
 
