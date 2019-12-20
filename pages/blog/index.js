@@ -65,7 +65,8 @@ const WhatAreFeatureFlagsPage = class extends Component {
   }
 
   static async getInitialProps({ req }) {
-      const baseUrl = req ? `${req.protocol}://${req.get('Host')}` : '';
+      const protocol = req.headers['x-forwarded-proto'] || 'http';
+      const baseUrl = req ? `${protocol}://${req.headers.host}` : '';
       const res = await fetch(`${baseUrl}/api/blog`);
       const blog = await res.json();
       return {
