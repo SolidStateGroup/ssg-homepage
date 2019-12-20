@@ -28,7 +28,7 @@ const ssrCache = (ttl) => {
     });
 };
 
-const testFolder = './pages-blog-markdown';
+const testFolder = './static/pages-blog-markdown';
 const fs = require('fs');
 const parseMarkdown = require('./common/parse-markdown');
 
@@ -52,7 +52,6 @@ Promise.all([
     prom,
     app.prepare(),
 ]).then(([blog]) => {
-    console.log('BLOG IS', blog);
     const server = express();
     const sw = join(__dirname, '.next/service-worker.js');
     const favicon = join(__dirname, '/static/images/favicon.ico');
