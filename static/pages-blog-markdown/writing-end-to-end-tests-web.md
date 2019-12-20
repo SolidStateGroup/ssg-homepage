@@ -2,7 +2,7 @@
 title: Step by Step - Writing end  to end tests for your web project
 published: true
 description: How to implement end-to-end tests using Nightwatch and NodeJS
-tags: javascript, react, testing, e2e
+tags: webdev, javascript, react, testing
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
 date: 10-dec-2018

@@ -2,7 +2,7 @@
 title: Hacking our e2e tests to make them more useful
 published: true
 description: How Bullet Train adjusted their nightwatch e2e tests to provide API error reporting.
-tags: javascript, nightwatch, e2e, testing
+tags: webdev, javascript, testing
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
 date: 22-nov-2019
