@@ -12,7 +12,6 @@ Asking a lot of my developer friends, it seems like CI and CD are two practices 
 
 This post explains what I found when using feature flags and why Solid State Group ended up open-sourcing https://bullet-train.io.
 
-
 ## Reducing release cycles and stress
 <p align="center">
 <img alt="Reduce stress with Bullet Train" height="400" src="https://cdn2.stylecraze.com/wp-content/uploads/2015/07/2798-How-To-Make-A-Stress-Ball-At-Home-ss.jpg"/>
@@ -48,7 +47,6 @@ There are a few feature flag services out there boasting several benefits:
 It's great being able to turn features on and off without doing a build, but with some features, it's not as simple as that.  This is where **remote config** comes in. 
 Often there's a need to configure feature properties, for example updating some text to promote an in-app currency sale. For mobile apps, I'd previously used Firebase's remote config, which often meant the difference between waiting for a 2 days or more collaborating iOS and Android builds.
 
-
 ## Introducing Bullet Train
 
 Since we'd seen great benefits in using both feature flags and remote config we decided to build our own internal product. This would mean we could take our existing websites/mobile apps and use a more consistent/formal approach to the work we'd done.
@@ -63,7 +61,3 @@ Happy Developing!
 <a href="https://bullet-train.io">
 <img alt="Bullet Train - Ship features with confidence" src="https://raw.githubusercontent.com/SolidStateGroup/bullet-train-frontend/master/hero.png"/>
 </a>
-
-
-
-

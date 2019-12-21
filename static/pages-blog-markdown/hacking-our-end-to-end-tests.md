@@ -10,19 +10,19 @@ date: 22-nov-2018
 
 In this post, we're going to run through an overview of my experience using e2e tests for the [feature flag platform, Bullet Train](https://bullet-train.io/). I'll discuss the pros and cons of adding e2e coverage to your project, and how I eventually improved their usefulness with a bit of clever JavaScript. I'll also provide a code example that's used in production for all of you to play with.
 
-# What are end-to-end tests
+## What are end-to-end tests
 Unlike unit tests which verify individual segments of code are working, end-to-end (e2e) testing is a methodology that is more of a high-level run-through of your project, which tests whether automated interactions against the UI work as expected.
 
 In the case of a web project, we write code that launches a browser and tests the actual application as if we were a real user, interacting with elements and making sure the app behaves as e with both good and bad data.
 
 There are a bunch of frameworks that make this fairly easy to implement, in my case I've found that [Nightwatch](http://nightwatchjs.org/) provides a very terse API and has been easy to work with. There are many alternatives in this area so it's mainly down to personal preference.
 
-## The benefits
+### The benefits
  - Increases confidence in the application. We can write all the unit tests in the world, but there's no substitute for clicking around and verifying it all works together.
  - Tests a lot of the component parts in one swoop with the least amount of effort. 
  - Great for regression. Actually running the application as our test touches everything: the UI, frontend business logic, contracts with API and even the API itself. If any of these things break it can be caught with E2E.
 
-## The drawbacks
+### The drawbacks
 
 - Can introduce annoying false positives. If the tests are written in a brittle fashion (e.g. looking for li>span>.myClass>input) it's easy to break them by changing the UI.
 - If the UI of your project is constantly changing, the tests can be costly to maintain. Unit tests can often go untouched as they are isolated, however constant UI changes may require e2e tests to be maintained and regularly updated.
@@ -30,7 +30,7 @@ There are a bunch of frameworks that make this fairly easy to implement, in my c
 
 This last point brings us to our topic at hand.
 
-# Better Root Cause Identification
+## Better Root Cause Identification
 
 In the strive for achieving fault tolerance and redundancy, we recently we migrated the [Bullet Train API](https://bullet-train.io) over to AWS. The move went pretty well, however we hit a brief issue where users were unable to create organisations. Straight away the E2E tests started shouting at us:
 
@@ -40,7 +40,7 @@ Ok, great. But what does that actually mean? Thankfully, in this case, I had a p
 
 <img src="https://image.ibb.co/niMG2A/download-1.png"/>
 
-# 1. Sending screenshots of e2e tests to slack
+## 1. Sending screenshots of e2e tests to slack
 
 This part was quite straightforward. Any selenium framework (even if it uses headless PhantomJS) has the ability to take screenshots of the browser in its current state. And fortunately Slack has a great API for uploading images to a channel.
 
@@ -110,7 +110,7 @@ And voila, we get our screenshot sent to slack when our test finishes!
 
 <img src="https://image.ibb.co/nNkZNA/download-2.png"/>
 
-# 2. Reporting API errors
+## 2. Reporting API errors
 
 This was where things get a bit clever. A common problem of end-to-end testing is the visibility of what's actually going on under the hood. After all, we're only really checking the state of DOM elements. Errors at the API or database level are a world away. 
 
@@ -178,8 +178,7 @@ We then use this E2E variable to write our debug info to DOM elements. Which we 
 
 <img src="https://image.ibb.co/mpWaCA/download-3.png"/>
 
-
-# A real-world example
+## A real-world example
 If you're curious to how this actually gets used in production, here's the commit which is now running in our gitlab pipelines https://github.com/SolidStateGroup/bullet-train-frontend/commit/4a1d41b3ea103a3c2b823803d3fa273eae8bd49f.
 
 

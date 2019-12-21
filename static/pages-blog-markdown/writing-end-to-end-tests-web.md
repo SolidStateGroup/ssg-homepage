@@ -16,7 +16,7 @@ This guide starts with a simple project and step by step adds e2e testing, each 
 
 If you find this useful or would maybe prefer me to do a video covering this let me know.
 
-# The project
+## The project
  
 End to end tests are super useful for regression testing time-consuming workflows, this example will go over perhaps the prime use-case for this, user registration and confirming a user's email address. 
 
@@ -28,10 +28,10 @@ The scope of this tutorial isn’t to go over how the application is built, howe
 - Then on the frontend side we have [a few pages](https://github.com/kyle-ssg/e2e-tutorial/tree/master/web/pages) written in React that host our login/register/confirm email address fields and functionality.
 
 
-# 1. Project Setup
+## 1. Project Setup
 *The Project: [https://github.com/kyle-ssg/e2e-tutorial/](https://github.com/kyle-ssg/e2e-tutorial/tree/master)*
 
-## 1.1. Installing nightwatch, selenium and chromedriver
+### 1.1. Installing nightwatch, selenium and chromedriver
 
 ```
 npm i nightwatch selenium-server chromedriver --save
@@ -45,7 +45,7 @@ We are going to need to install 3 things to get started:
 
 Installing selenium-server and chrome driver as npm modules mean that you don't need to worry about global dependencies to run the tests. You can run this on any machine with different operating systems, and more importantly as part of CI pipelines without having to worry about if and where these binaries come preinstalled.
 
-## 1.2. Writing a nightwatch.conf.js file
+### 1.2. Writing a nightwatch.conf.js file
 
 Nightwatch comes with a lot of [configuration options](http://nightwatchjs.org/gettingstarted#settings-file) which can be a bit overwhelming.
 
@@ -90,8 +90,7 @@ module.exports = {
 
 Rather than go into a lengthy explanation, see the comments above on exactly what each property is used for.
 
-
-## 1.3. adding a script in package.json to run tests 
+### 1.3. adding a script in package.json to run tests 
 
 In our package.json we just need to write an npm script to [run nightwatch](https://github.com/kyle-ssg/e2e-tutorial/blob/master/package.json#L16).
 
@@ -100,7 +99,7 @@ In our package.json we just need to write an npm script to [run nightwatch](http
     
 ```
 
-## 1.4. Writing our test entry file
+### 1.4. Writing our test entry file
 
 The entry file exports an object containing our tests and a before and after hook:
 
@@ -123,7 +122,7 @@ module.exports = Object.assign(
 );
 ```
 
-## 1.5. Our skeleton tests
+### 1.5. Our skeleton tests
 
 Before we go into writing our e2e tests, the following is some example syntax on how our tests are structured:
 
@@ -158,10 +157,10 @@ browser.url('http://localhost:8080')
 At this point, we are ready to start integrating Nightwatch with our code. We can currently run **npm run test:e2e*** which launches Chrome, navigates to Google and validates that the body tag is visible. 
 
 
-# 2. Writing our first test
+## 2. Writing our first test
 *[Code for this section](https://github.com/kyle-ssg/e2e-tutorial/compare/step_1_adding_our_first_test)*
 
-## 2.1 Running our application locally with Nightwatch
+### 2.1 Running our application locally with Nightwatch
 
 So now that we have Nightwatch configured and we can run tests on external pages, we now want to do the same but on localhost as if we ran the application locally. The only tricky thing about this is that we need to know our server is ready before we progress with our tests. With a bit of trickery, we can do exactly that with Node's [child_process.fork()](https://nodejs.org/api/child_process.html#child_process_child_process_fork_modulepath_args_options) which spawns a child process that can communicate via IPC.
 
@@ -192,7 +191,7 @@ Once we start the server with ***process.fork()*** we listen for it to tell our 
 ```
 
 
-## 2.2 Targeting DOM elements sensibly
+### 2.2 Targeting DOM elements sensibly
 
 While we could target our elements via their class name's or id's, I personally feel it's better to target via data-test properties. This way, you have a better idea of whether you're going to affect your tests. To add a bit of syntactic sugar I created the following util:
 

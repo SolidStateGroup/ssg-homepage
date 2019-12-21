@@ -12,10 +12,9 @@ date: 26-aug-2019
 
 This post covers how we can build a React/NextJS app with Redux that achieves a 100% audit score with server-rendering, localisation support and can be installed as a PWA and navigated whilst offline.
 
-# next.js
+## next.js
 
 [next.js](https://nextjs.org) is my new favourite thing. Built specifically for react, NextJS lets you server render your react application with little compromise to how you would normally build your app.
-
 
 Developing a React app will be pretty familiar, you'll have to switch out react-router with their built-in router, and be aware that your components will have to be executable in NodeJS (just like if you were unit testing them).
 
@@ -33,10 +32,10 @@ Any asynchronous tasks or fetching can occur here on our pages.
 
 Rather than regurgitate all of the power of next, I'd recommend just stepping through their [getting started guide](https://nextjs.org/learn/basics/getting-started). This post details how I added redux, sagas and achieved a 100% score on Lighthouse.
 
-# I'm bored, just send me the code.
+## I'm bored, just send me the code.
 [Fine](https://github.com/kyle-ssg/nextjs-redux). The project is also hosted at https://nextjs-redux.kyle-ssg.now.sh/. But read on if you're interested.
 
-# 1. next.js with Redux
+## 1. next.js with Redux
 <img src="https://i.ibb.co/pZsxSRF/image.png"/>
 
 Rather than defining routes within JavaScript, routes in next are based on what's in your /pages directory.
@@ -88,7 +87,6 @@ Some of this will probably look familiar to you, the main differences being:
 - Next.js provides a Head component that lets us render out any standard tags that live inside the head, this can even be done per page. This is useful for adding opengraph/meta tags/titles per page.
 - next-redux-wrapper is an out of box library that lets us use createStore.
 
-
 **The outcome**
 
 Adding a simple get widgets action we can see the following differences depending on if we loaded the page from landing straight on it vs navigating to it from another page.
@@ -97,10 +95,10 @@ Adding a simple get widgets action we can see the following differences dependin
 
 This happens because getInitialProps is called on the server during the initial page load, it knows which page to call it on based on the route.
 
-# 2. Achieving a 100% Lighthouse score
+## 2. Achieving a 100% Lighthouse score
 Even locally, I noticed how fast everything felt. This leads me to wonder how performant I could get the page. Within chrome dev tools there's a great tool called L that rates your site based on several recognised best practices and meets the progressive web app standard.
 
-## Baseline score
+### Baseline score
 <img src="https://i.ibb.co/10VMz8W/image.png"/>
 
 The baseline score was not too bad, with performance not being a problem for a redux page hitting an API.
@@ -266,5 +264,5 @@ next.config.js
 ```
 
 
-# The result
+## The result
 As a result of this, we now have a solid base project with a 100% audit score, server-rendered, localised and can be installed and navigated whilst offline. Feel free to [Clone it and hack around](https://github.com/kyle-ssg/nextjs-redux)!
