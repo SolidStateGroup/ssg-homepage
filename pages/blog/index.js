@@ -29,7 +29,7 @@ class BlogItem extends Component {
           },
       } = this;
       return (
-          <Link prefetch={false} href={`/blog/${url}`} to={`/blog/${url}`}>
+          <Link prefetch={false} href={`/blog/${url}`}>
               <div className="blog-item clickable">
                   <div className="blog-item-content">
                       <h2>
