@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Head from 'next/head';
+import Footer from '../components/Footer';
 import Tabs from '../components/base/forms/Tabs';
 import TabItem from '../components/base/forms/TabItem';
 
@@ -23,8 +24,10 @@ export default class OpenSource extends Component {
                 </Head>
                 <div className="pt-5 hero__open-source text-center">
                     <h1 className="text-center margin-bottom">Open Source</h1>
-
-                    <p className="pb-3">All of our open source repositories are listed here</p>
+                    <p className="pb-3">
+                        Bullet Train is 100% Open Source Software. 
+                        We welcome pull requests!
+                    </p>
                 </div>
 
                 <div className="container">
@@ -128,7 +131,7 @@ Evaluate objects against a set of JSON rules supporting nested ALL, NONE and ANY
                           value="Client"
                           id="btn-select-remote-config" tabLabel={(
                               <Row className="row-center">
-                                Client libraries
+                                SDK Client Libraries
                               </Row>
                         )}
                         >
@@ -264,7 +267,7 @@ iOS/Swift client.
                     </Tabs>
 
                 </div>
-
+                <Footer className="homepage"/>
             </div>
         );
     }

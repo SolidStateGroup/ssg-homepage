@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 import Head from 'next/head';
+import Footer from '../components/Footer';
 import parseMarkdown from '../common/parse-markdown';
 
 export default class TheComponent extends Component {
