@@ -2,7 +2,7 @@
 title: Overcoming bottlenecks between design, frontend and backend developers
 published: true
 description: A few things you can do to help work better together in your development team
-tags: webdev, development, productivity, tips
+tags: webdev, development, productivity
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
 date: 29-may-2019

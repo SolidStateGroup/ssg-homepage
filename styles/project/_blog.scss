@@ -35,14 +35,14 @@
         color: rgba(0, 0, 0, 0.84);
     }
     h1, h2 {
-        margin-block-end: 16px;    
+        margin-block-end: 16px;
     }
     h2 {
         margin-block-start: 40px;
     }
     h3 {
         margin-block-start: 30px;
-        margin-block-end: 12px;    
+        margin-block-end: 12px;
     }
     a {
         font-weight: bold;
@@ -90,9 +90,17 @@
         background-color: #f1f1f1;
         color: #027089;
     }
+    &.testing {
+        background-color: #f1f1f1;
+        color: #333;
+    }
     &.react {
         background-color: #222222;
         color: #60daf6;
+    }
+    &.react_native {
+        background-color: #0ec7f8;
+        color: #fff;
     }
     &.continuous_integration,&.ci,.testing {
         background-color: #40af63;
