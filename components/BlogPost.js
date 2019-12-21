@@ -24,7 +24,8 @@ export default class TheComponent extends Component {
           dateFormatted,
       } = parseMarkdown(this.props.source);
       return (
-          <div className="container blog pt-5">
+        <>
+          <div className="container blog pt-5 pb-5">
               <Head>
                   <meta charSet="utf-8"/>
                   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -67,6 +68,9 @@ export default class TheComponent extends Component {
                 source={content}
               />
           </div>
+
+        <Footer className="homepage"/>
+      </>
       );
   }
 }

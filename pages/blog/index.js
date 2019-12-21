@@ -4,6 +4,7 @@ import Link from 'next/link';
 import filter from 'lodash/filter';
 import BlogTag from '../../components/BlogTag';
 import blog from '../../static/blog.json';
+import Footer from '../../components/Footer';
 // import propTypes from 'prop-types';
 
 class BlogItem extends Component {
@@ -79,29 +80,33 @@ const WhatAreFeatureFlagsPage = class extends Component {
       const blog = this.getBlog();
       const filter = this.props.router.query.tag;
       return (
-          <div className="blog">
-              <Head>
-                  <title>
+        <>
+            <div className="blog">
+                <Head>
+                    <title>
                     Bullet Train - Blog
-                  </title>
-              </Head>
-              <div className="container mt-5">
-                  {!!filter && (
-                  <div className="mb-3 text-center">
+                    </title>
+                </Head>
+                <div className="container mt-5">
+                    {!!filter && (
+                    <div className="mb-3 text-center">
                     Filtering by <BlogTag tag={filter}/>
-                      {' '}
-                      <Link>
-                          <a href="/blog">
+                        {' '}
+                        <Link>
+                            <a href="/blog">
                           View all
-                          </a>
-                      </Link>
-                  </div>
-                  ) }
-                  {blog.map(b => (
-                      <BlogItem key={b.title} item={b}/>
-                  ))}
-              </div>
-          </div>
+                            </a>
+                        </Link>
+                    </div>
+                    ) }
+                    {blog.map(b => (
+                        <BlogItem key={b.title} item={b}/>
+                    ))}
+                </div>
+            </div>
+
+            <Footer className="homepage"/>
+          </>
       );
   }
 };
