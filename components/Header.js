@@ -67,7 +67,7 @@ class Header extends PureComponent {
                               <li className="nav-item d-none d-sm-block">
                                   <Link prefetch={false} href="https://docs.bullet-train.io/"><a className="nav-link">Documentation</a></Link>
                               </li>
-                              <li className="nav-item">
+                              <li className="nav-item d-none d-sm-block">
                                   <Link prefetch={false} href="/blog"><a className="nav-link">Blog</a></Link>
                               </li>
                               <li className="nav-item d-none d-sm-block">
