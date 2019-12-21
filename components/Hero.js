@@ -59,7 +59,7 @@ const Hero = class extends React.Component {
                     <div className="container">
                         <h1 className="margin-bottom margin-top">Release features with confidence</h1>
                         <p className="">
-                        Manage feature flags and remote config across web, mobile and
+                        Manage feature flags across web, mobile and
                         server side applications. Deliver true Continuous Integration. Get builds out faster.
                         Control who has access to new features.
                         </p>
