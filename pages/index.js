@@ -242,7 +242,7 @@ Deploy features to 1% of your user base.
                                       className="card__link"
                                       href="https://docs.bullet-train.io/staged-feature-rollouts/"
                                     >
-A/B Testing
+Staged Feature Rollouts
                                         <span
                                           className="pl-2 ion-md-arrow-dropright"
                                         />
@@ -261,7 +261,7 @@ Audit changes &amp;
                                       className="card__link"
                                       href="https://docs.bullet-train.io/audit-logs/"
                                     >
-Feature Audit
+Track Changes
                                         <span
                                           className="pl-2 ion-md-arrow-dropright"
                                         />
