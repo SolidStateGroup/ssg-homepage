@@ -52,7 +52,6 @@ export default class TheComponent extends Component {
                     <meta data-rh="true" name="author" content={author}/>
                     <meta data-rh="true" name="robots" content="index,follow"/>
                     <meta data-rh="true" property="article:published_time" content={date}/>
-                    <script src="https://code.jquery.com/jquery-3.4.1.min.js"/>
                     {typeof window !== 'undefined' && (
                     <script
                       src="https://isso.bullet-train.io/js/embed.min.js/"
