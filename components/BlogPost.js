@@ -13,6 +13,15 @@ export default class TheComponent extends Component {
       source: propTypes.string.isRequired,
   };
 
+  constructor(props) {
+      super(props);
+      this.state = { loading: true };
+  }
+
+  componentDidMount() {
+      this.setState({ loading: false });
+  }
+
   render() {
       const {
           title,
@@ -43,10 +52,13 @@ export default class TheComponent extends Component {
                     <meta data-rh="true" name="author" content={author}/>
                     <meta data-rh="true" name="robots" content="index,follow"/>
                     <meta data-rh="true" property="article:published_time" content={date}/>
+                    <script src="https://code.jquery.com/jquery-3.4.1.min.js"/>
+                    {typeof window !== 'undefined' && (
                     <script
-                      src="https://posativ.org/isso/api/js/embed.min.js"
-                      data-isso="//posativ.org/isso/api/"
+                      src="https://isso.bullet-train.io/js/embed.min.js/"
+                      data-isso="https://isso.bullet-train.io/"
                     />
+                    )}
                     <title>
                         {title}
                     </title>
@@ -72,7 +84,11 @@ export default class TheComponent extends Component {
                   source={content}
                 />
             </div>
-            <section id="isso-thread"/>
+            <div className="container pb-3">
+                {!this.state.loading && (
+                <section id="isso-thread" />
+                )}
+            </div>
             <Footer className="homepage"/>
       </>
       );
