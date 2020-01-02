@@ -8,7 +8,7 @@ avatar: /static/images/blog/kyle.png
 date: 26-aug-2019
 ---
 
-<img src="https://camo.githubusercontent.com/60e01c505310b31551ee45c7f8a144bc4c69cfcb/687474703a2f2f672e7265636f726469742e636f2f545938776369547351482e676966"/>
+<img alt="100% lighthouse score" src="https://camo.githubusercontent.com/60e01c505310b31551ee45c7f8a144bc4c69cfcb/687474703a2f2f672e7265636f726469742e636f2f545938776369547351482e676966"/>
 
 This post covers how we can build a React/NextJS app with Redux that achieves a 100% audit score with server-rendering, localisation support and can be installed as a PWA and navigated whilst offline.
 
@@ -36,7 +36,7 @@ Rather than regurgitate all of the power of next, I'd recommend just stepping th
 [Fine](https://github.com/kyle-ssg/nextjs-redux). The project is also hosted at https://nextjs-redux.kyle-ssg.now.sh/. But read on if you're interested.
 
 ## 1. next.js with Redux
-<img src="https://i.ibb.co/pZsxSRF/image.png"/>
+<img alt="NextJS routes" src="https://i.ibb.co/pZsxSRF/image.png"/>
 
 Rather than defining routes within JavaScript, routes in next are based on what's in your /pages directory.
 Next.js defines how pages are rendered with an App component, which we can customise by making our very own _app.js. Great, that means we can create our store and give it our root app component just like any other app.

@@ -55,6 +55,7 @@ export default class TheComponent extends Component {
                     {typeof window !== 'undefined' && (
                     <script
                       src="/static/comments.js"
+                      data-isso-require-author="true"
                       data-isso="https://isso.bullet-train.io/"
                     />
                     )}
