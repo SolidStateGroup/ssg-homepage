@@ -12,6 +12,14 @@
     color: $text-muted;
     font-size: 0.8em;
 }
+#isso-thread {
+    a {
+        color: $bt-brand-secondary;
+    }
+    div.avatar {
+        margin-right: 0;
+    }
+}
 
 .faint-lg {
     color: $text-muted;
