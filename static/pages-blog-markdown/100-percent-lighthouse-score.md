@@ -121,7 +121,7 @@ Lighthouse is clever enough to know which of your elements are not meeting the W
 This one was a little more tricky. To do a good job of this I wanted the serverside render to detect the user's preferred locale and set the lang attribute as well as serve localised content. Searching around I did come across [next-i18next](https://github.com/isaachinman/next-i18next), however, I noticed that it doesn't support serverless and it's difficult to share locale strings with [react-native-localization](https://www.npmjs.com/package/react-native-localization).
 
 I wanted something that would work with  [react-localization](https://www.npmjs.com/package/react-localization), so my approach was as follows:
-- 1: When the document attempts to render on the server, we want to get the preferred locale and set the lang attribute to the HTML tag. This info comes from the server, either from a cookie which we could set or by parsing the [Accept-Language Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language). A code snippet for how I did this can be found [here](https://github.com/kyle-ssg/nextjs-redux/blob/master/project/api.js#L27).
+- 1: When the document attempts to render on the server, we want to get the preferred locale and set the lang attribute to the HTML tag. This info comes from the server, either from a cookie which we could set or by parsing the [Accept-Language Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language). A code snippet for how I did this can be found [!here](https://github.com/kyle-ssg/nextjs-redux/blob/master/project/api.js#L27 "Code snippet").
 ```
     // _document.js
     static async getInitialProps(ctx) {
