@@ -91,7 +91,7 @@ Some of this will probably look familiar to you, the main differences being:
 
 Adding a simple get widgets action we can see the following differences depending on if we loaded the page from landing straight on it vs navigating to it from another page.
 
-<img src="https://i.ibb.co/30xjFxy/image.png"/>
+<img alt="Client vs Server rendering" src="https://i.ibb.co/30xjFxy/image.png"/>
 
 This happens because getInitialProps is called on the server during the initial page load, it knows which page to call it on based on the route.
 
@@ -99,7 +99,7 @@ This happens because getInitialProps is called on the server during the initial 
 Even locally, I noticed how fast everything felt. This leads me to wonder how performant I could get the page. Within chrome dev tools there's a great tool called L that rates your site based on several recognised best practices and meets the progressive web app standard.
 
 ### Baseline score
-<img src="https://i.ibb.co/10VMz8W/image.png"/>
+<img alt="Baseline lighthouse score" src="https://i.ibb.co/10VMz8W/image.png"/>
 
 The baseline score was not too bad, with performance not being a problem for a redux page hitting an API.
 
@@ -109,14 +109,14 @@ Most of these items are trivial to solve and involve employing best practices su
 
 ### Appropriate colour contrast
 
-<img src="https://i.ibb.co/Y3FQhFk/image.png"/>
+<img alt="Lighthouse colour contrast" src="https://i.ibb.co/Y3FQhFk/image.png"/>
 
 Lighthouse is clever enough to know which of your elements are not meeting the WCAG 2 AA contrast ratio thresholds, stating that your foreground and background should have a contrast ratio of at least 4.5:1 for small text or 3:1 for large text. You can run tools such as
  [Web AIM's contrast checker](https://webaim.org/resources/contrastchecker/). A quick CSS change fixed this but obviously, this will mean a good amount of refactoring for content-rich sites.
 
 ### Localisation
 
-<img src="https://i.ibb.co/wpFPGtb/image.png"/>
+<img alt="Lighthouse localisation" src="https://i.ibb.co/wpFPGtb/image.png"/>
 
 This one was a little more tricky. To do a good job of this I wanted the serverside render to detect the user's preferred locale and set the lang attribute as well as serve localised content. Searching around I did come across [next-i18next](https://github.com/isaachinman/next-i18next), however, I noticed that it doesn't support serverless and it's difficult to share locale strings with [react-native-localization](https://www.npmjs.com/package/react-native-localization).
 
@@ -200,7 +200,7 @@ Since the project had pretty up to date libraries and didn't do anything unruly,
 Thanks to nextJS you can easily add meta tags on a per-page basis, even using dynamic data from getInitialProps.
 
 ### Progressive web app
-<img src="https://i.ibb.co/WkBg4yK/image.png"/>
+<img alt="Lighthouse progressive web app" src="https://i.ibb.co/WkBg4yK/image.png"/>
 
 PWAs make our web apps installable, combined with service workers we can serve content whilst the user is offline.
 
