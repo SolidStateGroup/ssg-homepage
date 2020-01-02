@@ -54,7 +54,7 @@ export default class TheComponent extends Component {
                     <meta data-rh="true" property="article:published_time" content={date}/>
                     {typeof window !== 'undefined' && (
                     <script
-                      src="https://isso.bullet-train.io/js/embed.min.js/"
+                      src="/static/comments.js"
                       data-isso="https://isso.bullet-train.io/"
                     />
                     )}
