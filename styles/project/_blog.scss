@@ -114,9 +114,22 @@
         background-color: #af5300;
         color: #fff;
     }
+    &.infrastructure {
+        background-color: #af851d;
+        color: #fff;
+    }
     &.python {
         background-color: #356fa0;
         color: #f8c93f;
+    }
+    &.bullet-train {
+        background-color: $bt-brand-secondary;
+        color: $bt-brand-primary;
+    }
+    &.docker {
+        background-color: white;
+        color: #2395ec;
+        border: 1px solid #eaeaea;
     }
     &:hover {
         text-decoration: underline;
