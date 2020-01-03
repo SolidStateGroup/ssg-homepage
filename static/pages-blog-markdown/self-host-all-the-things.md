@@ -2,7 +2,7 @@
 title: Self Hosting all the Things
 published: true
 description: Why pay when you can host? 
-tags: bullet-train, infrastructure, docker
+tags: infrastructure, docker, showdev
 author: Ben Rometsch
 avatar: /static/images/blog/ben.png
 date: 02-jan-2020
