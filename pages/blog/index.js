@@ -86,6 +86,7 @@ const WhatAreFeatureFlagsPage = class extends Component {
                     <title>
                     Bullet Train - Blog
                     </title>
+                    <link rel="canonical" href="https://bullet-train.io/blog" />
                 </Head>
                 <div className="container mt-5">
                     {!!filter && (

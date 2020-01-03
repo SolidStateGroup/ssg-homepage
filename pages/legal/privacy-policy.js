@@ -8,6 +8,7 @@ const PrivacyPolicyPage = props => (
             <title>
                 Privacy Policy - Bullet Train
             </title>
+            <link rel="canonical" href="https://bullet-train.io/legal/privacy-policy/" />
         </Head>
         <div className="legal-container">
             <div className="container">

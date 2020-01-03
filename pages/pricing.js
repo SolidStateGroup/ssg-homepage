@@ -31,6 +31,7 @@ const PricingPage = class extends React.Component {
                   <title>
                     Pricing - Bullet Train
                   </title>
+                  <link rel="canonical" href="https://bullet-train.io/pricing" />
               </Head>
               <PricingPanel redirect={redirect}/>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
+import Head from 'next/head';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import { ButtonWhite } from '../components/base/forms/Button';
@@ -109,6 +110,13 @@ const HomePage = class extends React.Component {
         const redirect = ''; // todo: fixme
         return (
             <div className="homepage">
+
+                <Head>
+                    <title>
+                      Feature Flags and Toggles for Continuous Integration - Bullet Train
+                    </title>
+                    <link rel="canonical" href="https://bullet-train.io/" />
+                </Head>
                 <Hero redirect={redirect}/>
                 <div className="feature-container ">
                     <div className="container">

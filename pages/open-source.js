@@ -21,6 +21,7 @@ export default class OpenSource extends Component {
                     <title>
                       Open Source Projects - Bullet Train
                     </title>
+                    <link rel="canonical" href="https://bullet-train.io/open-source" />
                 </Head>
                 <div className="pt-5 hero__open-source text-center">
                     <h1 className="text-center margin-bottom">Open Source</h1>

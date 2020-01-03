@@ -6,6 +6,7 @@ const TermsOfService = props => (
             <title>
               Terms of Service - Bullet Train
             </title>
+            <link rel="canonical" href="https://bullet-train.io/legal/tos/" />
         </Head>
         <div className="legal-container">
             <div className="container">
