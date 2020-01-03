@@ -29,7 +29,7 @@ const PricingPage = class extends React.Component {
           <div>
               <Head>
                   <title>
-                    Bullet Train - Pricing
+                    Pricing - Bullet Train
                   </title>
               </Head>
               <PricingPanel redirect={redirect}/>

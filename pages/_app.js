@@ -21,7 +21,7 @@ class MyApp extends App {
                         />
                         <link rel="preconnect" href="https://fullstory.com"/>
                         <title>
-                                Bullet Train - Feature Flags, Feature Toggles and Remote Config
+                                Feature Flags and Toggles for Continuous Integration - Bullet Train
                         </title>
                         <link rel="icon" sizes="192x192" href="/static/icons-192.png"/>
                         <link rel="apple-touch-icon" href="/static/icons-192.png"/>

@@ -4,7 +4,7 @@ const TermsOfService = props => (
     <div>
         <Head>
             <title>
-              Bullet Train - Terms of Service
+              Terms of Service - Bullet Train
             </title>
         </Head>
         <div className="legal-container">

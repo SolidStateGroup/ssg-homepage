@@ -6,7 +6,7 @@ const PrivacyPolicyPage = props => (
 
         <Head>
             <title>
-        Bullet Train - Open Source
+                Privacy Policy - Bullet Train
             </title>
         </Head>
         <div className="legal-container">

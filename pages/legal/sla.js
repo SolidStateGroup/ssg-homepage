@@ -4,7 +4,7 @@ const ServiceLevelAgreement = props => (
     <div>
         <Head>
             <title>
-          Bullet Train - Service Level Agreement
+              Service Level Agreement - Bullet Train
             </title>
         </Head>
         <div className="legal-container">
