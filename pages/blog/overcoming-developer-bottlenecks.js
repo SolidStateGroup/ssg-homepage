@@ -6,7 +6,7 @@ import BlogPost from '../../components/BlogPost';
 const BlogPostPage = (props) => (
   <>
       <Head>
-          <link rel="canonical" href={`https://bullet-train.io${this.props.router.route}`} />
+          <link rel="canonical" href={`https://bullet-train.io${props.router.route}`} />
       </Head>
       <BlogPost
         source={md}
