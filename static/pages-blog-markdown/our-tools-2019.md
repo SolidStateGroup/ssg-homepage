@@ -1,7 +1,7 @@
 ---
 title: Our Tools - 2019 Edition
 published: true
-description: The development tools we can't live without in 2019
+description: The development tools Bullet Train can't live without in 2019
 tags: bullet-train, productivity, python, javascript, ci
 author: Ben Rometsch
 avatar: /static/images/blog/ben.png
