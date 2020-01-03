@@ -15,6 +15,13 @@
       "headers": {
         "cache-control": "public, max-age=43200, immutable"
       }
+    },
+    {
+      "src": "^/sitemap.xml",
+      "dest": "/static/sitemap.xml",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable"
+      }
     }
   ],
   "builds": [

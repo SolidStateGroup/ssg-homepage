@@ -73,7 +73,7 @@ class Header extends PureComponent {
                           </ul>
                           <ul className="navbar-nav">
                               <li className="nav-item">
-                                  <Link prefetch={false} href="/?signup">
+                                  <Link prefetch={false} href="?signup">
                                       <a className="nav-link">
                                           <span className="nav-link-featured">
                                             Try it Free

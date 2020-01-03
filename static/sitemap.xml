@@ -1,33 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://bullet-train.io/</loc>
-        <lastmod>2019-12-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://bullet-train.io/</loc>
+        <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
     <url>
-        <loc>http://bullet-train.io/pricing</loc>
-        <lastmod>2019-12-07</lastmod>
+        <loc>https://bullet-train.io/pricing</loc>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
     <url>
-        <loc>http://bullet-train.io/legal/tos</loc>
-        <lastmod>2019-11-07</lastmod>
+        <loc>https://bullet-train.io/legal/tos</loc>
         <changefreq>monthly</changefreq>
         <priority>0.1</priority>
     </url>
     <url>
-        <loc>http://bullet-train.io/legal/privacy-policy</loc>
-        <lastmod>2019-11-07</lastmod>
+        <loc>https://bullet-train.io/legal/privacy-policy</loc>
         <changefreq>monthly</changefreq>
         <priority>0.1</priority>
     </url>
     <url>
-        <loc>http://bullet-train.io/legal/sla</loc>
-        <lastmod>2019-11-07</lastmod>
+        <loc>https://bullet-train.io/legal/sla</loc>
         <changefreq>monthly</changefreq>
         <priority>0.1</priority>
+    </url>
+    <url>
+        <loc>https://bullet-train.io/blog</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://bullet-train.io/blog/100-percent-lighthouse-score</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://bullet-train.io/blog/cross-development-react-and-react-native</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://bullet-train.io/blog/hacking-our-end-to-end-tests</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://bullet-train.io/blog/our-tools-2019</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://bullet-train.io/blog/overcoming-developer-bottlenecks</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://bullet-train.io/blog/self-host-all-the-things</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://bullet-train.io/blog/using-feature-flags-in-ci</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://bullet-train.io/blog/writing-end-to-end-tests-web</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
 </urlset>
