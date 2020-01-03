@@ -9,7 +9,8 @@ date: 02-jan-2020
 ---
 
 We're big proponents of Open Source here at [Bullet Train](https://bullet-train.io/) towers. One of the strengths of open source is that you're free to run services yourself. 
-`g a [Dokku](http://dokku.viewdocs.io/dokku/) server set up and deploying the [Bitwarden](https://bitwarden.com/) password manager onto the platform.
+
+This post will guide you through getting a [Dokku](http://dokku.viewdocs.io/dokku/) server set up and deploying the [Bitwarden](https://bitwarden.com/) password manager onto the platform.
 
 ## VPS's are really cheap and good these days
 
