@@ -10,6 +10,7 @@ const Constants = global.Constants = {
     pages: {
         'ACCOUNT': 'Account Page',
         'AUDIT_LOG': 'Audit Log Page',
+        'BLOG': 'Blog Page',
         'WHAT_ARE_FEATURE_FLAGS': 'What are feature flags Page',
         'RESET_PASSWORD': 'Reset Password Page',
         'COMING_SOON': 'Coming Soon Page',
@@ -22,6 +23,7 @@ const Constants = global.Constants = {
         'NOT_FOUND': '404 Page',
         'ORGANISATION_SETTINGS': 'Organisation Settings Page',
         'POLICIES': 'Terms & Policies Page',
+        'OPEN_SOURCE': 'Open Source Page',
         'PRICING': 'Pricing Page',
         'PROJECT_SELECT': 'Project Select Page',
         'PROJECT_SETTINGS': 'Project Settings Page',

@@ -14,6 +14,10 @@ export default class OpenSource extends Component {
         };
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.OPEN_SOURCE);
+    }
+
     render() {
         return (
             <div>

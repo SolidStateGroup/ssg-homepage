@@ -96,6 +96,7 @@ const HomePage = class extends React.Component {
       })
           .then((res) => {
               if (res && res.key) {
+                  API.trackEvent(Constants.events.REGISTER);
                   API.setStoredToken(res.key);
                   document.location = Project.appUrl;
               }

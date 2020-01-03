@@ -19,6 +19,11 @@ export default class TheComponent extends Component {
   }
 
   componentDidMount() {
+      const {
+          title,
+      } = parseMarkdown(this.props.source);
+
+      API.trackPage(`Post - ${title}`);
       this.setState({ loading: false });
   }
 
