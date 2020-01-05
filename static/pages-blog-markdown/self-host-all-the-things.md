@@ -27,7 +27,7 @@ Now we can install [Dokku](http://dokku.viewdocs.io/dokku/). Dokku is a fantasti
 
     # There might be later versions of this script, so check the dokku docs for the most recent one!
     wget https://raw.githubusercontent.com/dokku/dokku/v0.19.11/bootstrap.sh;
-    sudo DOKKU_TAG=v0.19.11 bash [bootstrap.sh](http://bootstrap.sh/)
+    sudo DOKKU_TAG=v0.19.11 bash bootstrap.sh
 
 This command will take a while to run as there is a fair amount of software to install. Once its finished, you can browse to the IP address of your instance in a browser to supply your SSH public key. It's important to set up Dokku to use VirtualHost naming, which makes it easier to configure different services as subdomains on your server. 
 
