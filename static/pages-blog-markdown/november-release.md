@@ -1,11 +1,11 @@
 ---
-title: Goodbye Intercom, hello Freshchat!
+title: Bullet Train - November release
 published: true
-description: Our Decision to drop intercom for Freshchat 
+description: Our Bullet Train November Release 
 tags: bullet-train, new-feature
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
-date: 06-jan-2019
+date: 15-dec-2019
 ---
 
 <img alt="November" src="/static/images/blog/new-feature/freshchat.svg"/>

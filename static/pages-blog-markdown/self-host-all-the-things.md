@@ -1,5 +1,5 @@
 ---
-title: Self Hosting all the Things
+title: Self Hosting all the things
 published: true
 description: Why pay when you can host? 
 tags: infrastructure, docker, showdev

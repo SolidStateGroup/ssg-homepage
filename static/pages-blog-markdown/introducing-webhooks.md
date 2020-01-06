@@ -1,5 +1,5 @@
 ---
-title: Introducing: Webhooks for Feature Flags
+title: Introducing: Webhooks for feature flags
 published: true
 description: With Bullet Train you can now receive webhooks when features have changed 
 tags: bullet-train, new-feature
