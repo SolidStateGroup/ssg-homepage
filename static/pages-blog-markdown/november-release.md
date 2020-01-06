@@ -14,7 +14,7 @@ This month has been mainly about stability and tightening up our infrastructure 
 
 However, a couple notable improvements have been made.
 
-- One of our customers highlighted an issue with [toggling issues whilst filtering](https://github.com/BulletTrainHQ/bullet-train-frontend/issues/8)
+- One of our customers highlighted an issue with [toggling flags whilst filtering](https://github.com/BulletTrainHQ/bullet-train-frontend/issues/8)
 - When calling identify, characters that needed URL encoding are now supported.
 - For all the users using our core REST API, we have added cURL snippets
 
