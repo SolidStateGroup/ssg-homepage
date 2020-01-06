@@ -223,7 +223,7 @@ User Traits
                             <div className="col-xl-4 col-md-6">
                                 <div className="card mb-3 card--feature">
                                     <span className="card__icon ion-md-contacts mb-3"/>
-                                    <h5 className="card__title">Create User Segements</h5>
+                                    <h5 className="card__title">Create User Segments</h5>
                                     <p className="card__paragraph-text">
 Create detailed user segments
                             based on their traits, then target features based on the segment.
