@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import md from '../../static/pages-blog-markdown/november-release.md';
+import md from '../../static/pages-blog-markdown/hello-freshchat-goodbye-intercom.md';
 import BlogPost from '../../components/BlogPost';
 
 
