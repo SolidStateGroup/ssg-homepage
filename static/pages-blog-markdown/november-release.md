@@ -5,7 +5,7 @@ description: Our Bullet Train November Release
 tags: bullet-train, new-feature
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
-date: 15-dec-2019
+date: 15-nov-2020
 ---
 
 <img alt="November" src="/static/images/blog/new-feature/freshchat.svg"/>
