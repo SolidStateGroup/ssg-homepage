@@ -5,7 +5,7 @@ description: Our Decision to drop intercom for Freshchat
 tags: bullet-train
 author: Ben Rometsch
 avatar: /static/images/blog/ben.png
-date: 06-jan-2019
+date: 06-jan-2020
 ---
 
 <img alt="Bullet Train and Freshchat" src="/static/images/blog/new-feature/freshchat.png"/>
