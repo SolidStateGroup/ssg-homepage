@@ -8,7 +8,7 @@ avatar: /static/images/blog/kyle.png
 date: 15-nov-2020
 ---
 
-<img alt="November" src="/static/images/blog/new-feature/freshchat.svg"/>
+<img alt="November" src="/static/images/blog/new-feature/november.svg"/>
 
 This month has been mainly about stability and tightening up our infrastructure with all the load, stress and peak tests under the sun!
 
