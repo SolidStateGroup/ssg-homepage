@@ -8,7 +8,7 @@ avatar: /static/images/blog/kyle.png
 date: 06-jan-2019
 ---
 
-<img alt="November" src="/static/images/blog/new-feature/freshchat.svg.svg"/>
+<img alt="November" src="/static/images/blog/new-feature/freshchat.svg"/>
 
 This month has been mainly about stability and tightening up our infrastructure with all the load, stress and peak tests under the sun!
 

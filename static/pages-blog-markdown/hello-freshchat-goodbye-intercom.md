@@ -8,7 +8,7 @@ avatar: /static/images/blog/ben.png
 date: 06-jan-2019
 ---
 
-<img alt="Bullet Train and Freshchat" src="/static/images/blog/new-feature/freshchat.svg.svg"/>
+<img alt="Bullet Train and Freshchat" src="/static/images/blog/new-feature/freshchat.png"/>
 
 After some brief discussion between the members of Bullet Train, we concluded that it was time to say goodbye to Intercom.
 
