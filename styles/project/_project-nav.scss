@@ -15,7 +15,17 @@
     }
 }
 
+
 .navbar {
+    .nav-open {
+        .nav-item {
+            display: block !important;
+        }
+        .d-none {
+            background-color: red;
+            display: block !important;
+        }
+    }
     padding: 0;
     line-height: $navbar-height;
     background-color: transparent;

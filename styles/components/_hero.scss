@@ -212,16 +212,19 @@
 
 @media (max-width: 768px) {
   .hero {
+
+    min-height: 1180px;
+    max-height: 1180px;
     p {
       width: 100%;
     }
     &--homepage {
       .white {
         left: -200rem !important;
-        bottom: -252rem !important;
+        bottom: -240rem !important;
       }
       .tech{
-        bottom: -200px;
+        bottom: -40px;
       }
       .hero-example {
         display: none;

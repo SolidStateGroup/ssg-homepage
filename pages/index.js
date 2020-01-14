@@ -299,7 +299,7 @@ Track Changes
                                 <Guide
                                   href="https://www.youtube.com/watch?v=GPkCLO0F-5g"
                                   description="A quick introduction to Bullet Train."
-                                  image="/static/images/90seconds.png"
+                                  image="/static/images/90seconds.jpg"
                                 />
                             </div>
                             <div className="col-xl-4">
