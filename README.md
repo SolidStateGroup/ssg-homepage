@@ -31,6 +31,10 @@ Hot reloading for client / server
 npm run dev
 ```
 
+## Deploying
+
+Every branch gets deployed with Zeit. See the deployments tab in this GitHub.
+
 ## Creating pages
 
 As with any standard nextjs project you need to add any pages to /pages/url.js. See https://nextjs.org/learn/basics/navigate-between-pages/using-link.
