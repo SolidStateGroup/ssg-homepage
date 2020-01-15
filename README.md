@@ -31,6 +31,42 @@ Hot reloading for client / server
 npm run dev
 ```
 
+## Creating pages
+
+As with any standard nextjs project you need to add any pages to /pages/url.js. See https://nextjs.org/learn/basics/navigate-between-pages/using-link.
+
+There's a standardised Page component which will add any seo meta tags necessary. Usage:
+
+```$xslt
+          <Page title={Constants.titles.partners} canonical="partners">
+               <div>Content</div>
+          </Page>
+```
+
+
+## Creating a blog
+
+There is an automatic blog generator built into this project, any pages within /static/pages/blog-markdown will be parsed and the metadata inside will generate a blog.json.
+
+
+
+```$xslt
+         ---
+         title: Achieving a perfect 100% Google Lighthouse audit score with Next and Redux
+         published: true
+         description: Jumping down a satisfying rabbit hole with NextJS
+         tags: webdev, showdev, react, javascript
+         author: Kyle Johnson
+         avatar: /static/images/blog/kyle.png
+         date: 26-aug-2019
+         ---
+         <--- Markdown content here -->
+```
+
+## Blog comments
+
+This project makes use of isso, if you add a valid isso api to project.js.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/kyle-ssg/c36a03aebe492e45cbd3eefb21cb0486) for details on our code of conduct, and the process for submitting pull requests to us.
