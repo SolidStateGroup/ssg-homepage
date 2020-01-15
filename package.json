@@ -7,7 +7,7 @@
     "now-build": "npm run build",
     "analyze": "cross-env BUNDLE_ANALYZE=true next build ",
     "watch:blog": "nodemon --watch 'static/pages-blog-markdown/*' -e md --exec 'node' ./bin/blog.js",
-    "dev": "node ./bin/blog.js && node server.js",
+    "dev": "npm run watch:blog & node ./bin/blog.js && node server.js",
     "env": "node ./bin/env.js",
     "build": "next build ",
     "postinstall": "node ./bin/blog.js",
