@@ -3,4 +3,5 @@ module.exports = global.Project = {
     cookieDomain: '.solidstategroup.com',
     canonicalUrl: 'https://www.solidstategroup.com',
     ga: '',
+    isso: 'https://isso.bullet-train.io/',
 };
