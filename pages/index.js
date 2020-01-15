@@ -15,6 +15,7 @@ const HomePage = class extends React.Component {
         return (
             <Page title={Constants.titles.home} canonical="">
                 <Header/>
+                <h1>Home</h1>
                 <Footer/>
             </Page>
         );

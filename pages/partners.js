@@ -15,6 +15,7 @@ const PartnersPage = class extends React.Component {
       return (
           <Page title={Constants.titles.partners} canonical="partners">
               <Header/>
+              <h1>Partners</h1>
               <Footer/>
           </Page>
       );

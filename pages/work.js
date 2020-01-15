@@ -15,6 +15,7 @@ const WorkPage = class extends React.Component {
       return (
           <Page title={Constants.titles.work} canonical="work">
               <Header/>
+              <h1>Work</h1>
               <Footer/>
           </Page>
       );
