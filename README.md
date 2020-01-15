@@ -72,6 +72,27 @@ There is an automatic blog generator built into this project, any pages within /
          <--- Markdown content here -->
 ```
 
+Once you have created the post in the required folder you will need to create a route at blog/filename.js, within that you can create your markup, e.g.
+
+```$xslt
+
+import md from '../../static/pages-blog-markdown/100-percent-lighthouse-score.md';
+import BlogPost from '../../components/BlogPost';
+
+
+const BlogPostPage = props => (
+    <BlogPost
+      route={props.router.route}
+      source={md}
+    />
+);
+
+BlogPostPage.displayName = 'BlogPostPage';
+
+export default BlogPostPage;
+
+```
+
 ## Blog comments
 
 This project makes use of isso, if you add a valid isso api to project.js.

@@ -12,6 +12,7 @@ export default class TheComponent extends Component {
 
   static propTypes = {
       source: propTypes.string.isRequired,
+      route: propTypes.string.isRequired,
   };
 
   constructor(props) {
@@ -28,12 +29,52 @@ export default class TheComponent extends Component {
       this.setState({ loading: false });
   }
 
-  render() {
+  renderSEOTags = () => {
       const {
           title,
           date,
-          avatar,
           description,
+          author,
+      } = parseMarkdown(this.props.source);
+      return (
+          <Head>
+              <meta charSet="utf-8"/>
+              <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+              <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
+              <meta
+                name="description"
+                content="Manage your Feature Flags, Feature Toggles and Remote Config in your Mobile, React, React Native, Java, Javascript (Node) and Python projects."
+              />
+              {this.props.route && (
+                  <link rel="canonical" href={`${Project.canonicalUrl}${this.props.route}`} />
+              )}
+              <meta data-rh="true" property="og:site_name" content={Project.siteName}/>
+              <meta data-rh="true" property="og:type" content="article"/>
+              <meta data-rh="true" property="og:title" content={title}/>
+              <meta data-rh="true" property="og:description" content={description}/>
+              <meta data-rh="true" name="description" content={description}/>
+              <meta data-rh="true" property="article:author" content={author}/>
+              <meta data-rh="true" name="author" content={author}/>
+              <meta data-rh="true" name="robots" content="index,follow"/>
+              <meta data-rh="true" property="article:published_time" content={date}/>
+              {typeof window !== 'undefined' && Project.isso && (
+              <script
+                src="/static/comments.js"
+                data-isso-require-author="true"
+                data-isso={Project.isso}
+              />
+              )}
+              <title>
+                  {title}
+              </title>
+          </Head>
+      );
+  }
+
+  render() {
+      const {
+          title,
+          avatar,
           content,
           author,
           dateFormatted,
@@ -41,34 +82,7 @@ export default class TheComponent extends Component {
       return (
         <>
             <div className="container blog pt-5 pb-5">
-                <Head>
-                    <meta charSet="utf-8"/>
-                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-                    <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
-                    <meta
-                      name="description"
-                      content="Manage your Feature Flags, Feature Toggles and Remote Config in your Mobile, React, React Native, Java, Javascript (Node) and Python projects."
-                    />
-                    <meta data-rh="true" property="og:site_name" content={Project.siteName}/>
-                    <meta data-rh="true" property="og:type" content="article"/>
-                    <meta data-rh="true" property="og:title" content={title}/>
-                    <meta data-rh="true" property="og:description" content={description}/>
-                    <meta data-rh="true" name="description" content={description}/>
-                    <meta data-rh="true" property="article:author" content={author}/>
-                    <meta data-rh="true" name="author" content={author}/>
-                    <meta data-rh="true" name="robots" content="index,follow"/>
-                    <meta data-rh="true" property="article:published_time" content={date}/>
-                    {typeof window !== 'undefined' && Project.isso && (
-                    <script
-                      src="/static/comments.js"
-                      data-isso-require-author="true"
-                      data-isso={Project.isso}
-                    />
-                    )}
-                    <title>
-                        {title}
-                    </title>
-                </Head>
+                {this.renderSEOTags()}
                 <h1>
                     {title}
                 </h1>
