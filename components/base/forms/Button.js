@@ -1,8 +1,17 @@
 import React from 'react';
 import cn from 'classnames';
+import propTypes from 'prop-types';
+
+const _propTypes = {
+    className: propTypes.string,
+    children: propTypes.node,
+    onClick: propTypes.func,
+};
 
 const Button = global.Button = class extends React.PureComponent {
     static displayName = 'Button';
+
+    static propTypes = _propTypes;
 
     render() {
         const { children, ...rest } = this.props;
@@ -27,6 +36,8 @@ export default Button;
 export const ButtonPrimary = global.ButtonPrimary = class extends React.PureComponent {
     static displayName = 'ButtonPrimary';
 
+    static propTypes = _propTypes;
+
     render() {
         const { props } = this;
         return (
@@ -41,6 +52,8 @@ export const ButtonPrimary = global.ButtonPrimary = class extends React.PureComp
 export const ButtonTertiary = global.ButtonTertiary = class extends React.PureComponent {
     static displayName = 'ButtonButtonTertiary';
 
+    static propTypes = _propTypes;
+
     render() {
         const { props } = this;
         return (
@@ -53,10 +66,18 @@ export const ButtonTertiary = global.ButtonTertiary = class extends React.PureCo
 };
 
 
-export const ButtonSecondary = props => (
-    <Button {...props} className={`btn--secondary ${props.className || ''}`}/>
-);
+export const ButtonSecondary = global.ButtonTertiary = class extends React.PureComponent {
+    static displayName = 'ButtonSecondary';
 
-export const ButtonWhite = props => (
-    <Button {...props} className={`white ${props.className || ''}`}/>
-);
+    static propTypes = _propTypes;
+
+    render() {
+        const { props } = this;
+        return (
+            <Button
+              {...props}
+              className={cn(props.className, 'btn btn-secondary')}
+            />
+        );
+    }
+};

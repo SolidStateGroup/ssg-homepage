@@ -11,8 +11,10 @@
     "env": "node ./bin/env.js",
     "build": "next build ",
     "postinstall": "node ./bin/blog.js",
+    "storybook": "start-storybook",
     "start": "cross-env NODE_ENV=production npm run build && cross-env NODE_ENV=production node server.js",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test:unit": "TEST=true jest ./.storybook/storybook.test.js"
   },
   "keywords": [],
   "author": "",
@@ -68,6 +70,18 @@
   "devDependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
+    "jest": "^24.9.0",
+    "jest-css-modules": "^2.1.0",
+    "storybook-addon-smart-knobs": "^5.0.0",
+    "@storybook/addon-actions": "^5.2.3",
+    "@storybook/addon-info": "^5.2.3",
+    "@storybook/addon-knobs": "^5.2.3",
+    "@storybook/addon-options": "^5.0.0",
+    "@storybook/addon-storyshots": "^5.2.5",
+    "@storybook/react": "^5.2.5",
     "nodemon": "^1.19.1"
   }
 }

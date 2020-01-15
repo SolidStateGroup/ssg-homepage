@@ -35,6 +35,11 @@ npm run dev
 
 Every branch gets deployed with Zeit. See the deployments tab in this GitHub.
 
+## Storybook
+
+This project uses storybook, you can run ```npm run storybook``` , this will render stories according to /stories/index.
+
+
 ## Creating pages
 
 As with any standard nextjs project you need to add any pages to /pages/url.js. See https://nextjs.org/learn/basics/navigate-between-pages/using-link.
