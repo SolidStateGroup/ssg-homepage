@@ -20,6 +20,8 @@ files.forEach((file) => {
         content: null,
     });
 });
-res = sortBy(res, 'sort')
+res = sortBy(res, 'sort');
 res[0].allTags = uniq(allTags);
 fs.writeFileSync(blogOutput, JSON.stringify(res));
+// eslint-disable-next-line no-console
+console.log(`Wrote blog to ${blogOutput}`);

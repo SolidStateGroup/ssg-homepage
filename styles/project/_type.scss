@@ -1,50 +1,20 @@
 h1,h2,h3,h4,h5,h6{
-    font-weight:400!important;
-    font-family: $font-family-headers, sans-serif;
+    font-weight:bold!important;
 }
 
 .text-small{
     font-size:0.75rem!important;
 }
 
-.text-white {
-    color: white;
-}
-
 p{
-    color: $body-text;
-    line-height: 1.58;
+    color: #22354a;
+    opacity: 0.85;
 }
 
-* {
-    text-rendering:optimizelegibility;
-    word-break:normal;
-    -webkit-font-smoothing:antialiased;
-}
 .large-para{
     font-size:1.25rem;
 }
 
 .bold-link{
     font-weight:bold!important;
-}
-
-.feature {
-    &--off {
-        color: $bt-brand-red;
-    }
-    &--on {
-        color: $bt-brand-primary;
-    }
-}
-
-
-.features-page {
-    h1,h2,h3,h4,h5,h6{
-        font-weight:bold!important;
-        font-family: $font-family-headers, sans-serif;
-    }
-    p {
-        font-weight: 400;
-    }
 }

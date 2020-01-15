@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import Head from 'next/head';
 import Footer from './Footer';
 import parseMarkdown from '../common/parse-markdown';
+import Project from '../common/project';
 
 export default class TheComponent extends Component {
   static displayName = 'BlogPost';
@@ -48,7 +49,7 @@ export default class TheComponent extends Component {
                       name="description"
                       content="Manage your Feature Flags, Feature Toggles and Remote Config in your Mobile, React, React Native, Java, Javascript (Node) and Python projects."
                     />
-                    <meta data-rh="true" property="og:site_name" content="Bullet Train"/>
+                    <meta data-rh="true" property="og:site_name" content={Project.siteName}/>
                     <meta data-rh="true" property="og:type" content="article"/>
                     <meta data-rh="true" property="og:title" content={title}/>
                     <meta data-rh="true" property="og:description" content={description}/>
@@ -57,11 +58,11 @@ export default class TheComponent extends Component {
                     <meta data-rh="true" name="author" content={author}/>
                     <meta data-rh="true" name="robots" content="index,follow"/>
                     <meta data-rh="true" property="article:published_time" content={date}/>
-                    {typeof window !== 'undefined' && (
+                    {typeof window !== 'undefined' && Project.isso && (
                     <script
                       src="/static/comments.js"
                       data-isso-require-author="true"
-                      data-isso="https://isso.bullet-train.io/"
+                      data-isso={Project.isso}
                     />
                     )}
                     <title>
@@ -90,7 +91,7 @@ export default class TheComponent extends Component {
                 />
             </div>
             <div className="container pb-3">
-                {!this.state.loading && (
+                {!this.state.loading && Project.isso && (
                 <section id="isso-thread" />
                 )}
             </div>

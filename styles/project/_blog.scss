@@ -12,7 +12,7 @@
     }
     a {
         font-weight: bold;
-        color: $body-text;
+        color: $body-color;
     }
     .avatar {
         width: 48px;
@@ -122,10 +122,6 @@
     &.python {
         background-color: #356fa0;
         color: #f8c93f;
-    }
-    &.bullet-train {
-        background-color: $bt-brand-secondary;
-        color: $bt-brand-primary;
     }
     &.docker {
         background-color: white;

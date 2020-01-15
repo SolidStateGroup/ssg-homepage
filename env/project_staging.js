@@ -1,11 +1,5 @@
 module.exports = global.Project = {
-    debug: false,
-    api: '',
+    cookieDomain: '.solidstategroup.com',
+    canonicalUrl: 'https://www.solidstategroup.com',
     ga: '',
-    logs: {
-        DATA: true,
-        STORE: true,
-        DISPATCHER: true,
-        SERVER: true,
-    },
 };

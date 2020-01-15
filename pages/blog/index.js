@@ -1,18 +1,27 @@
-import React, { Component, PropTypes } from 'react';
-import Head from 'next/head';
+import React, { Component } from 'react';
 import Link from 'next/link';
 import filter from 'lodash/filter';
+import propTypes from 'prop-types';
 import BlogTag from '../../components/BlogTag';
 import blog from '../../static/blog.json';
 import Footer from '../../components/Footer';
-// import propTypes from 'prop-types';
+import Header from '../../components/Header';
+import Page from '../../components/Page';
 
 class BlogItem extends Component {
   static displayName = 'BlogItem';
 
-  static propTypes = {};
+  static propTypes = {
+      item: propTypes.shape({
+          description: propTypes.string,
+          title: propTypes.string,
+          dateFormatted: propTypes.string,
+          tags: propTypes.array,
+          url: propTypes.string,
+      }),
+  }
 
-  shouldComponentUpdate(nextProps, nextState, nextContext) {
+  shouldComponentUpdate() {
       return false;
   }
 
@@ -53,8 +62,14 @@ class BlogItem extends Component {
       );
   }
 }
-const WhatAreFeatureFlagsPage = class extends Component {
-  static displayName = 'WhatAreFeatureFlagsPage'
+
+
+const BlogPage = class extends Component {
+  static displayName = 'BlogPage'
+
+  static propTypes = {
+      router: propTypes.object,
+  };
 
   constructor(props, context) {
       super(props, context);
@@ -77,41 +92,35 @@ const WhatAreFeatureFlagsPage = class extends Component {
   }
 
   render() {
-      const blog = this.getBlog();
-      const filter = this.props.router.query.tag;
+      const blogItems = this.getBlog();
+      const filteredBy = this.props.router.query.tag;
       return (
-        <>
-            <div className="blog">
-                <Head>
-                    <title>
-                    Bullet Train - Blog
-                    </title>
-                    <link rel="canonical" href="https://bullet-train.io/blog" />
-                </Head>
-                <div className="container mt-5">
-                    {!!filter && (
-                    <div className="mb-3 text-center">
-                    Filtering by <BlogTag tag={filter}/>
-                        {' '}
-                        <Link>
-                            <a href="/blog">
-                          View all
-                            </a>
-                        </Link>
-                    </div>
-                    ) }
-                    {blog.map(b => (
-                        <BlogItem key={b.title} item={b}/>
-                    ))}
-                </div>
-            </div>
-
-            <Footer className="homepage"/>
-          </>
+          <Page title={Constants.titles.blog} canonical="blog">
+              <Header/>
+              <div className="blog">
+                  <div className="container mt-5">
+                      {!!filteredBy && (
+                      <div className="mb-3 text-center">
+                          Filtering by <BlogTag tag={filteredBy}/>
+                          {' '}
+                          <Link href="/blog">
+                              <a href="/blog">
+                                View all
+                              </a>
+                          </Link>
+                      </div>
+                      )}
+                      {blogItems.map(b => (
+                          <BlogItem key={b.title} item={b}/>
+                      ))}
+                  </div>
+              </div>
+              <Footer/>
+          </Page>
       );
   }
 };
 
-WhatAreFeatureFlagsPage.propTypes = {};
+BlogPage.propTypes = {};
 
-export default WhatAreFeatureFlagsPage;
+export default BlogPage;

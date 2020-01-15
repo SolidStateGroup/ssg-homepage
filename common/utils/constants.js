@@ -7,28 +7,28 @@ const Constants = global.Constants = {
     simulate: {
         FORCE_LANGUAGE: false, // set to "en" etc to specify a language
     },
+    // <title>
+    titles: {
+        home: 'Solid State Group', // Used by default on all pages
+        blog: 'Blog | Solid State Group',
+        work: 'Work | Solid State Group',
+        partners: 'Partners | Solid State Group',
+        jobs: 'Jobs | Solid State Group',
+        services: 'Services | Solid State Group',
+        contact: 'Contact | Solid State Group',
+    },
+    // meta:description
+    descriptions: {
+        // Used by default
+        home: 'At Solid State Group, we help design and build new digital products, drag legacy technology up to date, and make all your systems work together.',
+    },
+    // meta:description
+    keywords: {
+        // Used by default
+        home: 'Api development, custom, iot, bespoke, software development, mobile application development, user interface design, ux design, react native, systems integration, cloud infrastructure, technology, digital',
+    },
     pages: {
-        'ACCOUNT': 'Account Page',
-        'AUDIT_LOG': 'Audit Log Page',
-        'BLOG': 'Blog Page',
-        'WHAT_ARE_FEATURE_FLAGS': 'What are feature flags Page',
-        'RESET_PASSWORD': 'Reset Password Page',
-        'COMING_SOON': 'Coming Soon Page',
-        'CREATE_ENVIRONMENT': 'Create Environment Page',
-        'DOCUMENTATION': 'Documentation Page',
-        'ENVIRONMENT_SETTINGS': 'Environment Settings Page',
-        'FEATURES': 'Features Page',
-        'HOME': 'Home Page',
-        'INVITE': 'User Invited Page',
-        'NOT_FOUND': '404 Page',
-        'ORGANISATION_SETTINGS': 'Organisation Settings Page',
-        'POLICIES': 'Terms & Policies Page',
-        'OPEN_SOURCE': 'Open Source Page',
-        'PRICING': 'Pricing Page',
-        'PROJECT_SELECT': 'Project Select Page',
-        'PROJECT_SETTINGS': 'Project Settings Page',
-        'USER': 'User Page',
-        'USERS': 'Users Page',
+
     },
 };
 

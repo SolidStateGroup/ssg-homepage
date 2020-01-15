@@ -1,7 +1,7 @@
 /**
  * Created by kylejohnson on 25/07/2016.
  */
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 
 const InputGroup = class extends Component {
     static displayName = 'InputGroup'

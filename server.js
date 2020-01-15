@@ -4,7 +4,6 @@ const { join } = require('path');
 const cacheableResponse = require('cacheable-response');
 const express = require('express');
 const next = require('next');
-const sortBy = require('lodash/sortBy');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';

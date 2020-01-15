@@ -1,34 +1,15 @@
 @import "../variables";
 @import "../flexbox/mixins";
 
-.open-source-card {
-	&:hover, :focus {
-		text-decoration: none !important;
-	}
-}
-
 .panel {
 	width: 100%;
-	&--open-source {
-		transition: .2s;
-		.panel-content {
-			h2 {
-				color: $bt-brand-secondary;
-				//text-decoration: none;
-			}
-			.technology-name {
-				color: $panel-heading-color;
-			}
-		}
-		&:hover {
-			transform: translate(0,-.5rem);
-			cursor: pointer;
-		}
-	}
 	.panel-heading {
 		h1, h2, h3 {
 			color: $panel-heading-color;
 			margin: 0;
+		}
+		.icon {
+			font-size: 1.5em;
 		}
 		font-weight: 500;
 		font-size: 1em;
@@ -48,6 +29,10 @@
 	}
 
 	.panel-content {
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
 		background-color: $panel-bg;
 		padding: $input-padding-y $input-padding-x;
 
@@ -97,22 +82,8 @@
 			line-height: 18px;
 			color: $panel-icon-color;
 		}
-		&--disabled {
-			.icon {
-				color: lightgray;
-				font-size: 2em;
-			}
-		}
-		&--success {
-			border: 1px solid $bt-brand-primary;
-			.icon {
-				color: $bt-brand-primary;
-				font-size: 2em;
-			}
-		}
 	}
 
-	transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	box-shadow: rgba(75, 75, 75, 0.11) 0px 1px 6px, rgba(75, 75, 75, 0.11) 0px 1px 4px;
 	border-radius: 4px;

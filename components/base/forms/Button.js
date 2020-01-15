@@ -7,17 +7,17 @@ const Button = global.Button = class extends React.PureComponent {
     render() {
         const { children, ...rest } = this.props;
         return (
-          <button
-            ref="button"
-            type="button"
-            {...rest}
-            onMouseUp={this.onMouseUp}
-            className={cn({
-                'btn': true,
-            }, (this.props.className))}
-          >
-              {children}
-          </button>
+            <button
+              ref="button"
+              type="button"
+              {...rest}
+              onMouseUp={this.onMouseUp}
+              className={cn({
+                  'btn': true,
+              }, (this.props.className))}
+            >
+                {children}
+            </button>
         );
     }
 };
@@ -30,10 +30,10 @@ export const ButtonPrimary = global.ButtonPrimary = class extends React.PureComp
     render() {
         const { props } = this;
         return (
-          <Button
-            {...props}
-            className={cn(props.className, 'btn btn-primary')}
-          />
+            <Button
+              {...props}
+              className={cn(props.className, 'btn btn-primary')}
+            />
         );
     }
 };
@@ -44,10 +44,10 @@ export const ButtonTertiary = global.ButtonTertiary = class extends React.PureCo
     render() {
         const { props } = this;
         return (
-          <Button
-            {...props}
-            className={cn(props.className, 'btn btn-outline-primary')}
-          />
+            <Button
+              {...props}
+              className={cn(props.className, 'btn btn-outline-primary')}
+            />
         );
     }
 };

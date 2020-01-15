@@ -3,18 +3,25 @@
  */
 import { isMobile } from 'react-device-detect';
 import Button from './Button';
+
 const _isMobile = isMobile;
 
 const Tabs = class extends React.Component {
   static displayName = 'Tabs'
 
+  static propTypes = {
+      value: propTypes.any,
+      onChange: propTypes.func.isRequired,
+      children: propTypes.node,
+      className: propTypes.string,
+  }
 
   render() {
       return (
           <div className={`tabs ${this.props.className || ''}`}>
               <div className="tabs-nav" style={_isMobile ? { flexWrap: 'wrap' } : {}}>
                   {this.props.children.map((child, i) => {
-                      const isSelected = this.props.value == i;
+                      const isSelected = this.props.value === i;
                       return (
                           <Button
                             data-test={child.props['data-test']}
@@ -40,7 +47,7 @@ const Tabs = class extends React.Component {
               />
               <div className="tabs-content">
                   {this.props.children.map((child, i) => {
-                      const isSelected = this.props.value == i;
+                      const isSelected = this.props.value === i;
                       return (
                           <div key={`content${i}`} className={`tab-item${isSelected ? ' tab-active' : ''}`}>
                               {child}

@@ -2,65 +2,32 @@
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/variables";
 
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url('/static/fonts/Proxima-Nova-Regular.woff');
-  font-display:swap;
-}
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url('/static/fonts/Proxima-Nova-Semibold.woff');
-  font-weight:bold;
-  font-display:swap;
-}
-@font-face {
-  font-family: 'Proxima Nova Bold';
-  src: url('/static/fonts/Proxima-Nova-Semibold.woff');
-  font-display:swap;
-}
-//Fonts
-$font-family: "Proxima Nova", sans-serif;
-$font-family-headers: "Proxima Nova Bold", sans-serif;
+// Adding fonts
+//@font-face {
+//  font-family: 'Proxima Nova';
+//  src: url('/static/fonts/Proxima-Nova-Regular.woff');
+//  font-display:swap;
+//}
+//@font-face {
+//  font-family: 'Proxima Nova';
+//  src: url('/static/fonts/Proxima-Nova-Semibold.woff');
+//  font-weight:bold;
+//  font-display:swap;
+//}
+//@font-face {
+//  font-family: 'Proxima Nova Bold';
+//  src: url('/static/fonts/Proxima-Nova-Semibold.woff');
+//  font-display:swap;
+//}
 
 // COLORS
+$brand-primary: #3896DF;
+$brand-secondary: #D8315B;
+$link-color: #3896DF;
 
-$brand-primary: #2cd6ca;
-$bt-brand-primary: #2cd6ca;
-$bt-brand-secondary: #1D2D3F;
-$bt-brand-secondary-light: #23364C;
-$bt-dark-green: #14635d;
-$bt-navy-light: #384f68;
-$bt-brand-orange: #fb9d43;
-$bt-brand-red: #ff93aa;
-$bt-brand-purple: #a28af9;
-$body-text: rgba(0, 0, 0, 0.84);;
-$body-text-faint: #989ca1;
 
-$navbar-height: 5rem;
-
-$bt-primary-gradient: linear-gradient(#2cd6ca, #48A69D);
-
-$brand-secondary: rgb(255,152,0);
-$alert-danger-bg: rgb(248, 105, 121);
-$alert-danger-border: rgb(248, 105, 121);
-$alert-danger-text: rgb(255, 255, 255);
-
-$body-bg: #f9f9f9;
-$list-item-striped-background: #f3f6f6;
-$navbar-background: 'transparent';
-
-//Nav
-$navbar-light-color:                 #333 !default;
-$navbar-light-hover-color: #000;
-$navbar-light-active-color:          #000;
-$navbar-light-disabled-color:        #333;
-
-// BORDER RADIUS
-$default-border-radius: 8px;
-
-// INPUT
-$input-border-radius: 0px;
-$input-height: 40px;
+//Input component variables
+$alert-danger-border: #c70000;
 $input-line-height: 25px;
 $input-font-size: inherit;
 $input-font-weight: 200;
@@ -68,80 +35,37 @@ $input-border-color: rgb(224, 224, 224);
 $input-placeholder-color: rgb(224, 224, 224);
 $input-border-highlight-color: rgb(0, 188, 212);
 
-$pagination-color: #333;
-
-//BUTTONS
-$btn-border-radius: 10px;
-$btn-height: 44px;
-$btn-secondary-bg: rgb(240, 240, 240);
-$btn-primary-bg: #009de2;
-$btn-primary-color-hover: white;
-$btn-primary-bg-hover: #008fd0;
-$btn-primary-light-bg: #61d0de;
-$link-color: #fff;
-$link-hover-color: #f1f1f1;
-$link-color-secondary: rgb(90, 90 , 90);
-$btn-default-color: white;
-$hover-bg: rgb(240, 240, 240);
-$hover-color: inherits;
-
-//Panel
+//Panel component variables
 $panel-heading-height: 50px;
 $panel-bg: #fff;
 $panel-heading-bg: #f7f7f7;
-$panel-heading-color: #919aa6;
+$panel-heading-color: #333;
 $panel-heading-border: 1px solid #f1f1f1;
-
-//
 $panel-icon-color: #36a39c;
 $panel-icon-border-color: #ddd;
 $panel-icon-background-color: #fff;
-
-
-//Panel Dark
 $panel-alt-heading-bg: #36a39c;
 $panel-alt-heading-color: #fff;
 
-//TABS
-$tab-inactive-color: rgba(255, 255, 255, .75);
-$tab-active-color: #36a39c;
-$tab-line-color: #36a39c;
+//Tab component styles
+$tab-background: transparent;
+$tab-background-hover: transparent;
+$tab-background-active: transparent;
+$tab-active-background: transparent;
+$tab-inactive-color: lighten(black, 20);
+$tab-active-color: black;
+$tab-line-color: $brand-primary;
 
-//SCAFFOLDING
-$mobile-portrait: 320px;
-$mobile-landscape: 480px;
-$tablet-portrait: 768px;
-$tablet-landscape: 1024px;
-
-//GRID
-$input-padding-x: .75rem !default;
-$input-padding-y: 1rem !default;
-
-//MODALS
-$modal-backdrop-bg: rgba(0, 0, 0, 0.870588);
-$modal-header-border-width: 0;
-
-//TRANSITIONS
-$button-transition: background-color 400ms cubic-bezier(0.23, 1, 0.32, 1);
-//Hero
-$hero-bg:#22354a;
-$hero-bg-dark:darken(#22354a,5);
-
-//Aside
-$aside-bg:#22354a;
-$aside-bg-alt: #2cd6ca;
-$aside-bg-brand:#22354a;
-$aside-bg-project: #14635d;
-$aside-brand-color:#fff;
-$aside-link-bg:#283d56;
-$aside-link-bg-hover:#384f68;
-$aside-link-bg-active:#384f68;
-$aside-link-color:#fff;
-$aside-link-active:#fff;
-$aside-width:250px;
-
-//Toast
+//Toast component styles
 $toast-bg:rgba(0,0,0,.9);
 $toast-color:white;
 
-$bold: 400;
+//Scaffolding
+$breakpoints: (
+    mobile-small: 320px,
+    mobile: 375px,
+    handheld-device: 576px,
+    tablet: 768px,
+    tablet-large: 992px,
+    desktop: 1200px
+)

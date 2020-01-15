@@ -15,6 +15,7 @@ const Input = class extends React.Component {
         this.setState({
             isFocused: true,
         });
+        // eslint-disable-next-line no-unused-expressions
         this.props.onFocus && this.props.onFocus(e);
     }
 
@@ -26,6 +27,7 @@ const Input = class extends React.Component {
         if (Utils.keys.isEscape(e)) {
             this.input.blur();
         }
+        // eslint-disable-next-line no-unused-expressions
         this.props.onKeyDown && this.props.onKeyDown(e);
     }
 
@@ -40,6 +42,7 @@ const Input = class extends React.Component {
             shouldValidate: true,
             isFocused: false,
         });
+        // eslint-disable-next-line no-unused-expressions
         this.props.onBlur && this.props.onBlur(e);
     }
 
