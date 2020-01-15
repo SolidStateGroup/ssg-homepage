@@ -15,7 +15,7 @@ const ServicesPage = class extends React.Component {
       return (
           <Page title={Constants.titles.services} canonical="services">
               <Header/>
-            <h1>Services</h1>
+              <h1>Services</h1>
               <Footer/>
           </Page>
       );
