@@ -41,10 +41,6 @@ export default class BlogPost extends Component {
               <meta charSet="utf-8"/>
               <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
               <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
-              <meta
-                name="description"
-                content="Manage your Feature Flags, Feature Toggles and Remote Config in your Mobile, React, React Native, Java, Javascript (Node) and Python projects."
-              />
               {this.props.route && (
                   <link rel="canonical" href={`${Project.canonicalUrl}${this.props.route}`} />
               )}
