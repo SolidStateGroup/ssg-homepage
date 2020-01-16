@@ -7,7 +7,7 @@ import Footer from './Footer';
 import parseMarkdown from '../common/parse-markdown';
 import Project from '../common/project';
 
-export default class TheComponent extends Component {
+export default class BlogPost extends Component {
   static displayName = 'BlogPost';
 
   static propTypes = {

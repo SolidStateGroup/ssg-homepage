@@ -5,7 +5,8 @@ const moment = require('moment');
 const splitAt = index => x => [x.slice(0, index), x.slice(index)];
 
 module.exports = (source) => {
-    const metaLength = source.match(/---.*?---\n*/sg)[0].length;
+    const match = source.match(/---.*?---\n*/sg);
+    const metaLength = match && match[0].length;
     const split = splitAt(metaLength)(source);
     const meta = split[0].split('\n');
     const content = split[1];
