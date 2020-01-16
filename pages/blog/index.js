@@ -7,62 +7,7 @@ import blog from '../../static/blog.json';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Page from '../../components/Page';
-
-class BlogItem extends Component {
-  static displayName = 'BlogItem';
-
-  static propTypes = {
-      item: propTypes.shape({
-          description: propTypes.string,
-          title: propTypes.string,
-          dateFormatted: propTypes.string,
-          tags: propTypes.array,
-          url: propTypes.string,
-      }),
-  }
-
-  shouldComponentUpdate() {
-      return false;
-  }
-
-  render() {
-      const {
-          props: {
-              item: {
-                  description,
-                  title,
-                  dateFormatted,
-                  author,
-                  tags,
-                  url,
-              },
-          },
-      } = this;
-      return (
-          <Link prefetch={false} href={`/blog/${url}`}>
-              <div className="blog-item clickable">
-                  <div className="blog-item-content">
-                      <h2>
-                          {title}
-                      </h2>
-                      <p>
-                          {description}
-                      </p>
-                      <div className="date">
-                          {`Published: ${dateFormatted} By ${author}`}
-                      </div>
-                      <div className="tags mt-2">
-                          {tags.map(t => (
-                              <BlogTag key={t} tag={t}/>
-                          ))}
-                      </div>
-                  </div>
-              </div>
-          </Link>
-      );
-  }
-}
-
+import BlogItem from '../../components/BlogItem';
 
 const BlogPage = class extends Component {
   static displayName = 'BlogPage'

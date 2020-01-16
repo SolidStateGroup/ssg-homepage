@@ -10,10 +10,9 @@ const BlogPostPage = props => (
     />
 );
 
+BlogPostPage.displayName = 'BlogPostPage';
 BlogPostPage.propTypes = {
     router: propTypes.object,
 };
-
-BlogPostPage.displayName = 'BlogPostPage';
 
 export default BlogPostPage;
