@@ -14,6 +14,5 @@ BlogPostPage.displayName = 'BlogPostPage';
 BlogPostPage.propTypes = {
     router: propTypes.object,
 };
-
+console.log("Test")
 export default BlogPostPage;
-
