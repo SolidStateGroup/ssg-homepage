@@ -12,7 +12,7 @@ import BlogTag from './BlogTag';
 //   url: propTypes.string,
 // }
 const _propTypes = {
-    item: propTypes.object
+    item: propTypes.object,
 };
 
 
