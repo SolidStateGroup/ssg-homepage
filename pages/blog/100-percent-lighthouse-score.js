@@ -16,3 +16,4 @@ BlogPostPage.propTypes = {
 };
 
 export default BlogPostPage;
+
