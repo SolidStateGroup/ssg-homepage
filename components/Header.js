@@ -30,42 +30,44 @@ class Header extends PureComponent {
   render() {
       return (
           <div className={`navbar-container ${this.props.className || ''}`}>
-              <div className="container">
-                  <nav style={{ flex: 1 }} className={`navbar navbar-expand-lg ${this.state.menuOpen ? 'nav-open' : ''}`}>
-                      <Link
-                        href="/"
-                      >
-                          <a className="nav-link navbar-brand">
-                            Home
-                          </a>
-                      </Link>
-                      <div style={{ flex: 1 }} className="navbar" id="navbarSupportedContent">
-                          <ul className="navbar-nav mr-auto">
-                              <li className="nav-item d-sm-block">
-                                  <ActiveLink prefetch={false} href="/services"><a className="nav-link">Services</a></ActiveLink>
-                              </li>
-                              <li className="nav-item d-sm-block">
-                                  <ActiveLink prefetch={false} href="/work"><a className="nav-link">Work</a></ActiveLink>
-                              </li>
-                              <li className="nav-item d-sm-block">
-                                  <ActiveLink prefetch={false} href="/partners"><a className="nav-link">Partners</a></ActiveLink>
-                              </li>
-                              <li className="nav-item d-sm-block">
-                                  <ActiveLink prefetch={false} href="/jobs"><a className="nav-link">Jobs</a></ActiveLink>
-                              </li>
-                          </ul>
-                          <ul className="navbar-nav">
-
-                              <li className="nav-item d-sm-block">
-                                  <ActiveLink prefetch={false} href="/blog"><a className="nav-link">Blog</a></ActiveLink>
-                              </li>
-                              <li className="nav-item d-sm-block">
-                                  <ActiveLink prefetch={false} href="/contact"><a className="nav-link">Contact</a></ActiveLink>
-                              </li>
-                          </ul>
-                      </div>
-                  </nav>
-              </div>
+              <nav style={{ flex: 1 }} className={`navbar navbar-expand-lg ${this.state.menuOpen ? 'nav-open' : ''}`}>
+                  <Link href="/">
+                      <a className="nav-item__link">
+                        <img src="/static/images/ssg-logotype-white.png" className="brand" />
+                      </a>
+                  </Link>
+                  <div style={{ flex: 1 }} className="navbar" id="navbarSupportedContent">
+                      <ul className="navbar-nav mr-auto">
+                          <li className="nav-item">
+                              <ActiveLink prefetch={false} href="/work">
+                                <a className="nav-item__link">Work</a>
+                              </ActiveLink>
+                          </li>
+                          <li className="nav-item">
+                              <ActiveLink prefetch={false} href="/services">
+                                <a className="nav-item__link">Services</a>
+                              </ActiveLink>
+                          </li>
+                          <li className="nav-item">
+                              <ActiveLink prefetch={false} href="/partners">
+                                <a className="nav-item__link">Partners</a>
+                              </ActiveLink>
+                          </li>
+                          <li className="nav-item">
+                              <ActiveLink prefetch={false} href="/blog">
+                                <a className="nav-item__link">Blog</a>
+                              </ActiveLink>
+                          </li>
+                      </ul>
+                      <ul className="navbar-nav">
+                          <li className="nav-item">
+                              <ActiveLink prefetch={false} href="/contact">
+                                <a className="nav-item__link">Contact</a>
+                              </ActiveLink>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
           </div>
       );
   }

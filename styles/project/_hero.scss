@@ -1,38 +1,17 @@
 .hero{
-    background:#f3f3f3;
-    color:#000;
-
-    &--blue{
-        background:blue;
-        color:#fff;
-    }
-
-    &--red{
-        background:red;
-    }
+    background:$brandNavy;
+    height:100vh;
+    width:100vw;
+    color:#fff;
 
     &__title{
-    }
-
-    &__image{
-        opacity:0.5;
-    }
-
-    &__text{
-
-        &__intro{
-            color:grey;
-        }
-
-        &__body{
-            color:darkred;
-        }
+        font-size:3em;
     }
 }
 
 @media (max-width: #{map-get($breakpoints, mobile)}) {
     .hero{
-        background:black;
+        background:$brandNavy;
 
         &__image{
             border:1px solid red;

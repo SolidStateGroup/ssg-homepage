@@ -14,9 +14,16 @@ const HomePage = class extends React.Component {
     render = () => {
         return (
             <Page title={Constants.titles.home} canonical="">
-                <Header/>
-                <div className="hero">
-                  <h1>We design and build amazing digital products</h1>
+                <div className="hero d-flex flex-column mx-0 p-4">
+                  <Header/>
+                  <div className="hero__container flex-1 align-self-stretch flex-row">
+                    <div className="flex-column flex-1 p-5">
+                      <h1 className="hero__title">We design and build amazing digital products</h1>
+                    </div>
+                    <div className="flex-column flex-1">
+                      <p></p>
+                    </div>
+                  </div>
                 </div>
                 <Footer/>
             </Page>

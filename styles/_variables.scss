@@ -2,23 +2,24 @@
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/variables";
 
-// Adding fonts
-//@font-face {
-//  font-family: 'Proxima Nova';
-//  src: url('/static/fonts/Proxima-Nova-Regular.woff');
-//  font-display:swap;
-//}
-//@font-face {
-//  font-family: 'Proxima Nova';
-//  src: url('/static/fonts/Proxima-Nova-Semibold.woff');
-//  font-weight:bold;
-//  font-display:swap;
-//}
-//@font-face {
-//  font-family: 'Proxima Nova Bold';
-//  src: url('/static/fonts/Proxima-Nova-Semibold.woff');
-//  font-display:swap;
-//}
+ //Adding fonts
+@font-face {
+  font-family: 'Ilisarniq-Regular';
+  src: url('/static/fonts/Ilisarniq-Regular.otf');
+  font-display:swap;
+}
+@font-face {
+  font-family: 'Ilisarniq-Light';
+  src: url('/static/fonts/Ilisarniq-Light.otf');
+  font-weight:100;
+  font-display:swap;
+}
+@font-face {
+  font-family: 'Ilisarniq-Bold';
+  src: url('/static/fonts/Ilisarniq-Bold.otf');
+  font-weight:bold;
+  font-display:swap;
+}
 
 // COLORS
 $brand-primary: #0d65df;
