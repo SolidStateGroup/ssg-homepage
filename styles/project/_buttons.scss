@@ -1,20 +1,18 @@
-.btn-primary {
+.btn--primary {
     background-color: $brand-primary;
-    border-color: $brand-primary;
+    border:none;
+    border-radius: 25px;
+    padding:10px;
+    color:$white;
+    box-shadow: rgba($brand-primary, 0.5) 0 6px 20px;
+
     &:hover {
-        background-color: darken($brand-primary, 5);
+        box-shadow: rgba($brand-primary, 0.5) 0 6px 20px;
     }
 }
 
-.btn-secondary {
-    background-color: $brand-secondary;
-    border-color: $brand-secondary;
-    &:hover {
-        background-color: darken($brand-secondary, 5);
-    }
-}
-.btn-outline-primary {
-    border-color: $brand-primary;
+.btn--outline-primary {
+    border:none;
     color: $brand-primary;
     &:hover {
         background-color: darken($brand-primary, 5);

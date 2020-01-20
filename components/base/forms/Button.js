@@ -22,7 +22,6 @@ const Button = global.Button = class extends React.PureComponent {
               {...rest}
               onMouseUp={this.onMouseUp}
               className={cn({
-                  'btn': true,
               }, (this.props.className))}
             >
                 {children}
@@ -43,7 +42,7 @@ export const ButtonPrimary = global.ButtonPrimary = class extends React.PureComp
         return (
             <Button
               {...props}
-              className={cn(props.className, 'btn btn-primary')}
+              className={cn(props.className, 'btn--primary')}
             />
         );
     }
@@ -59,7 +58,7 @@ export const ButtonTertiary = global.ButtonTertiary = class extends React.PureCo
         return (
             <Button
               {...props}
-              className={cn(props.className, 'btn btn-outline-primary')}
+              className={cn(props.className, 'btn--outline-primary')}
             />
         );
     }
@@ -76,7 +75,7 @@ export const ButtonSecondary = global.ButtonTertiary = class extends React.PureC
         return (
             <Button
               {...props}
-              className={cn(props.className, 'btn btn-secondary')}
+              className={cn(props.className, 'btn--secondary')}
             />
         );
     }
