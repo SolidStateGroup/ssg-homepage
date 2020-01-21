@@ -2,6 +2,8 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
+import {ListItemUnderlined} from '../components/base/ListItem';
+import {ButtonPrimary, ButtonText} from '../components/base/forms/Button';
 
 const HomePage = class extends React.Component {
     static displayName = 'HomePage';
@@ -20,9 +22,7 @@ const HomePage = class extends React.Component {
                         <div className="flex-1 justify-content-start p-5">
                             <div>
                                 <h1 className="hero__title">We design and build amazing digital products</h1>
-                                <button type="button" className="btn--primary">
-                                    View latest projects
-                                </button>
+                                <ButtonPrimary>View latest projects</ButtonPrimary>
                             </div>
                         </div>
                         <div className="flex-1 align-items-center justify-content-center hero__gfx-container">
@@ -41,14 +41,35 @@ const HomePage = class extends React.Component {
                 <div className="section">
                     <div className="container">
                         <h2 className="section__title">Services</h2>
-                        <ul className="lined-list list-unstyled">
-                            <li className="lined-list__item list-unstyled-item col-lg-6"><a href="/" className="lined-list__item__link">Branding</a></li>
-                            <li className="lined-list__item list-unstyled-item col-lg-6"><a href="/" className="lined-list__item__link">Branding</a></li>
-                            <li className="lined-list__item list-unstyled-item col-lg-6"><a href="/" className="lined-list__item__link">Branding</a></li>
-                            <li className="lined-list__item list-unstyled-item col-lg-6"><a href="/" className="lined-list__item__link">Branding</a></li>
-                            <li className="lined-list__item list-unstyled-item col-lg-6"><a href="/" className="lined-list__item__link">Branding</a></li>
-                            <li className="lined-list__item list-unstyled-item col-lg-6"><a href="/" className="lined-list__item__link">Branding</a></li>
+                        <ul className="lined-list list-unstyled flex-row">
+                            <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'}  />
+                            <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'} />
+                            <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'} />
+                            <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'} />
+                            <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'} />
+                            <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'} />
+                            <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'} />
                         </ul>
+                        <ButtonText type={'button'}>
+                            Explore our services
+                        </ButtonText>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 className="section__title">Featured Projects</h2>
+                    <div className="project--featured project--t-and-s">
+                        <div className="hero__container flex-1 align-self-stretch row flex-row">
+                            <div className="flex-1 justify-content-start p-5">
+                                <div>
+                                    <h1 className="hero__title">We design and build amazing digital products</h1>
+                                    <ButtonSecondary>View latest projects</ButtonSecondary>
+                                </div>
+                            </div>
+                            <div className="flex-1 align-items-center justify-content-center hero__gfx-container">
+                                <img src="/static/images/projects/tands-dashboard.svg" alt="Tone and Sculpt" className="img-fluid"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <Footer/>

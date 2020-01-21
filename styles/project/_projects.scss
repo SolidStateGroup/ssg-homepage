@@ -1,0 +1,11 @@
+.project{
+    &--featured{
+        background:linear-gradient(lighten($brand-primary, 5),$brand-primary);
+        border-radius: 50px 0 0 50px;
+        color:$white;
+    }
+
+    &--t-and-s{
+        background:linear-gradient(#49B2D8,#71D2EA);
+    }
+}

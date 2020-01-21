@@ -1,6 +1,7 @@
 import React from 'react';
 import { getStory, withPaddedContainer } from './setup';
 import Button, { ButtonTertiary, ButtonPrimary, ButtonSecondary } from '../components/base/forms/Button';
+import ListItem, { ListItemUnderlined } from '../components/base/ListItem';
 import BlogItem from '../components/BlogItem';
 import BlogPost from '../components/BlogPost';
 import exampleMD from './example-blog-post';
@@ -36,3 +37,8 @@ getStory('Blog')
           route="Test Blog" source={exampleMD}
         />
     ));
+
+getStory('ListItems')
+  .addDecorator(withPaddedContainer)
+  .add('default', () => <ListItem listItemText={"a list item"} listItemLink={'/'} />)
+  .add('underlined', () => <ListItemUnderlined listItemText={"an underlined list item"} listItemLink={'/'} />)
