@@ -1,0 +1,30 @@
+.lined-list {
+    &__item {
+        color: $brandNavySecondary;
+        padding: $padding-base;
+        border-bottom: 1px solid $border-color-default;
+
+        &__link {
+            color: $brandNavySecondary;
+
+            &:hover {
+                color: $brandNavySecondary;
+                text-decoration: none;
+            }
+        }
+        &:hover {
+            border-bottom: 1px solid $brand-primary;
+            @extend .bold;
+
+            .lined-list__item__link{
+                @extend .bold;
+            }
+        }
+    }
+}
+
+.hero__list {
+    .text {
+        color: $white;
+    }
+}

@@ -39,3 +39,18 @@
 .link-style{
     text-decoration: underline;
 }
+
+.absolute{
+    &--top{
+        position:absolute;
+        top:0;
+    }
+    &--left{
+        position: absolute;
+        left:0;
+    }
+    &--right{
+        position: absolute;
+        right:0;
+    }
+}

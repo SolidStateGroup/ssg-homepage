@@ -1,12 +1,18 @@
 .hero{
     background:$brandNavy url("/static/images/vector-cubes-bg.svg") center center no-repeat;
-
+    overflow: visible;
     height:100vh;
     width:100vw;
     color:#fff;
 
     &__title{
         font-size:3em;
+    }
+
+    &__gfx-container{
+        background:url("/static/images/pulse-bg.svg") center center no-repeat;
+        background-size:contain;
+        height:100%;
     }
 }
 
