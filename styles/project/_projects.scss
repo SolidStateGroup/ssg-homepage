@@ -8,4 +8,12 @@
     &--t-and-s{
         background:linear-gradient(#49B2D8,#71D2EA);
     }
+
+    &--purely{
+        background:linear-gradient(#D02D55,lighten(#D02D55, 20));
+    }
+
+    &--ba{
+        background:linear-gradient(#2E5C99,lighten(#2E5C99, 20));
+    }
 }

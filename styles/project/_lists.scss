@@ -27,6 +27,18 @@
     }
 }
 
+.image-list{
+    &__item{
+
+    }
+}
+
+.list-image__container{
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero__list {
     .text {
         color: $white;

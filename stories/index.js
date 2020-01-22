@@ -1,7 +1,7 @@
 import React from 'react';
 import { getStory, withPaddedContainer } from './setup';
 import Button, { ButtonTertiary, ButtonPrimary, ButtonSecondary } from '../components/base/forms/Button';
-import ListItem, { ListItemUnderlined } from '../components/base/ListItem';
+import ListItem, { ListItemUnderlined } from '../components/ListItem';
 import BlogItem from '../components/BlogItem';
 import BlogPost from '../components/BlogPost';
 import exampleMD from './example-blog-post';

@@ -2,7 +2,8 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
-import {ListItemUnderlined} from '../components/base/ListItem';
+import FeaturedProjects from '../components/FeaturedProjects';
+import {ListItemUnderlined} from '../components/ListItem';
 import {ButtonPrimary, ButtonText} from '../components/base/forms/Button';
 
 const HomePage = class extends React.Component {
@@ -56,22 +57,24 @@ const HomePage = class extends React.Component {
                     </div>
                 </div>
 
-                <div>
+                <div className="section">
                     <h2 className="section__title">Featured Projects</h2>
-                    <div className="project--featured project--t-and-s">
-                        <div className="hero__container flex-1 align-self-stretch row flex-row">
-                            <div className="flex-1 justify-content-start p-5">
-                                <div>
-                                    <h1 className="hero__title">We design and build amazing digital products</h1>
-                                    <ButtonSecondary>View latest projects</ButtonSecondary>
-                                </div>
-                            </div>
-                            <div className="flex-1 align-items-center justify-content-center hero__gfx-container">
-                                <img src="/static/images/projects/tands-dashboard.svg" alt="Tone and Sculpt" className="img-fluid"/>
-                            </div>
-                        </div>
-                    </div>
+                    <FeaturedProjects/>
                 </div>
+
+                <div className="section">
+                    <ul className="list-inline image-list">
+                        <li className="list-inline-item image-list__item">
+                            <div className="list-image__container">
+                                <img src="/static/images/blob-small.svg" alt="Blob GFX" className="absolute"/>
+                                <img src="/static/images/svg-icons/research-icon.svg" alt="Research" className="absolute"/>
+                            </div>
+                            <h5>Research</h5>
+                            <p>Gather insights about your product and market</p>
+                        </li>
+                    </ul>
+                </div>
+
                 <Footer/>
             </Page>
         );
