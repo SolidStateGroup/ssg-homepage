@@ -21,7 +21,7 @@ const HomePage = class extends React.Component {
                     <Header/>
                     <div className="hero__container flex-1 align-self-stretch row flex-row">
                         <div className="flex-1 justify-content-start p-5">
-                            <div>
+                            <div className="offset-lg-3">
                                 <h1 className="hero__title">We design and build amazing digital products</h1>
                                 <ButtonPrimary>View latest projects</ButtonPrimary>
                             </div>
