@@ -51,7 +51,7 @@ const HomePage = class extends React.Component {
                     </div>
                 </div>
                 <div className="section">
-                    <div className="container">
+                    <div className="container-fluid col-lg-8 offset-md-2">
                         <h2 className="section__title">Services</h2>
                         <ul className="lined-list list-unstyled flex-row">
                             <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'}  />
@@ -69,11 +69,8 @@ const HomePage = class extends React.Component {
                 </div>
 
                 <div className="mt-5 mb-5 section--no-padding">
-                    <div className="container">
-                        <h2 className="section__title mb-5 mt-5">Featured Projects</h2>
-                    </div>
-                    <div className="ml-5">
-                        <FeaturedProjects/>
+                    <div className="row justify-content-end">
+                        <FeaturedProjects className="col-lg-10 "/>
                     </div>
                 </div>
 

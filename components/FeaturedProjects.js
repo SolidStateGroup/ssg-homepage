@@ -17,7 +17,8 @@ const FeaturedProjects = global.FeaturedProjects = class extends React.PureCompo
     render() {
         const { children, ...rest } = this.props;
         return (
-          <div className="featured-projects">
+          <div className={cn(this.props.className,"featured-projects")}>
+              <h2 className="section__title mb-5 mt-5">Featured Projects</h2>
               <div className="project--featured project--t-and-s">
                   <ProjectItem />
               </div>
