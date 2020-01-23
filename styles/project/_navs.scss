@@ -5,5 +5,30 @@
 .nav-item{
     &__link{
         color:#fff;
+        &--circle {
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border: 1px solid white;
+                border-radius: 4px;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            &:hover {
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 4px;
+                    margin-right: 10px;
+                    background-color: $brand-primary;
+                    border: 1px solid $brand-primary;
+                }
+            }
+        }
+ 
     }
 }
