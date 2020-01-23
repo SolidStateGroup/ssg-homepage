@@ -1,14 +1,14 @@
 *{
-    font-family: Ilisarniq-Regular, serif;
+    font-family: Ilisarniq-Regular, sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6{
     font-weight:bold!important;
-    font-family: Ilisarniq-Bold, serif;
+    font-family: Ilisarniq-Bold, sans-serif;
 }
 
 .bold{
-    font-family: 'Ilisarniq-Bold', serif!important;
+    font-family: 'Ilisarniq-Bold', sans-serif!important;
 }
 
 .text-small{
@@ -22,6 +22,14 @@ p{
 
 .large-para{
     font-size:1.25rem;
+}
+
+.text-grey {
+    color: $brand-dark-lavender;
+}
+
+.bold {
+    font-family: "Ilisarniq-Bold", sans-serif;
 }
 
 .bold-link{

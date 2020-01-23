@@ -21,7 +21,7 @@ const HomePage = class extends React.Component {
                     <Header/>
                     <div className="hero__container flex-1 align-self-stretch row flex-row">
                         <div className="flex-1 justify-content-start p-5">
-                            <div>
+                            <div className="offset-lg-3">
                                 <h1 className="hero__title">We design and build amazing digital products</h1>
                                 <ButtonPrimary>View latest projects</ButtonPrimary>
                             </div>
@@ -63,16 +63,53 @@ const HomePage = class extends React.Component {
                 </div>
 
                 <div className="section">
-                    <ul className="list-inline image-list">
-                        <li className="list-inline-item image-list__item">
-                            <div className="list-image__container">
-                                <img src="/static/images/blob-small.svg" alt="Blob GFX" className="absolute"/>
-                                <img src="/static/images/svg-icons/research-icon.svg" alt="Research" className="absolute"/>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col text-center">
+                                <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Blob GFX"/>
+                                <h5>Research</h5>
+                                <p>Gather insights about your product and market</p>
                             </div>
-                            <h5>Research</h5>
-                            <p>Gather insights about your product and market</p>
-                        </li>
-                    </ul>
+                            <div className="align-self-center mb5">
+                                <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                            </div>
+                            <div className="col text-center">
+                                <img src="/static/images/svg-icons/design-blob-icon.svg" className="mb-3" alt="Blob GFX"/>
+                                <h5>Design</h5>
+                                <p>Explore creative options to bring your vision to life</p>
+                            </div>
+                            <div className="align-self-center mb5">
+                                <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                            </div>
+                            <div className="col text-center">
+                                <img src="/static/images/svg-icons/development-blob-icon.svg" className="mb-3" alt="Blob GFX"/>
+                                <h5>Development</h5>
+                                <p>Rapid application development</p>
+                            </div>
+                            <div className="align-self-center mb5">
+                                <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                            </div>
+                            <div className="col text-center">
+                                <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Blob GFX"/>
+                                <h5>Release</h5>
+                                <p>Gather insights about your product and market</p>
+                            </div>
+                            <div className="align-self-center mb5">
+                                <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                            </div>
+                            <div className="col text-center">
+                                <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Blob GFX"/>
+                                <h5>Product Development</h5>
+                                <p>Gather insights about your product and market</p>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <img src="/static/images/svg-icons/arrow-gradient-left-turn.svg" className="img-fluid img__full-width pl-5 pr-5" alt="Blob GFX"/>
+                            <div className="text-center">
+                                <p className="mt-4 bold text-grey">We support you beyond MVP release and help you develop the product and achieve your business goals</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <Footer/>

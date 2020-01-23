@@ -40,22 +40,22 @@ class Header extends PureComponent {
                       <ul className="navbar-nav mr-auto">
                           <li className="nav-item">
                               <ActiveLink prefetch={false} href="/work">
-                                <a className="nav-item__link">Work</a>
+                                <a className="nav-item__link nav-item__link--circle">Work</a>
                               </ActiveLink>
                           </li>
                           <li className="nav-item">
                               <ActiveLink prefetch={false} href="/services">
-                                <a className="nav-item__link">Services</a>
+                                <a className="nav-item__link nav-item__link--circle">Services</a>
                               </ActiveLink>
                           </li>
                           <li className="nav-item">
                               <ActiveLink prefetch={false} href="/partners">
-                                <a className="nav-item__link">Partners</a>
+                                <a className="nav-item__link nav-item__link--circle">Partners</a>
                               </ActiveLink>
                           </li>
                           <li className="nav-item">
                               <ActiveLink prefetch={false} href="/blog">
-                                <a className="nav-item__link">Blog</a>
+                                <a className="nav-item__link nav-item__link--circle">Blog</a>
                               </ActiveLink>
                           </li>
                       </ul>
