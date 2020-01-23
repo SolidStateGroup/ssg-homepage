@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
+import BaLogo from '../components/ClientLogos/BaLogo';
 import FeaturedProjects from '../components/FeaturedProjects';
 import {ListItemUnderlined} from '../components/ListItem';
 import {ButtonPrimary, ButtonText} from '../components/base/forms/Button';
@@ -22,7 +23,7 @@ const HomePage = class extends React.Component {
                     <div className="hero__container flex-1 align-self-stretch row flex-row">
                         <div className="flex-1 justify-content-start p-5">
                             <div className="offset-lg-3">
-                                <h1 className="hero__title">We design and build amazing digital products</h1>
+                                <h1 className="hero__title mb-4">We design and build amazing digital products</h1>
                                 <ButtonPrimary>View latest projects</ButtonPrimary>
                             </div>
                         </div>
@@ -31,10 +32,20 @@ const HomePage = class extends React.Component {
                         </div>
                     </div>
                     <div className="hero__footer">
-                        <div className="flex-row hero__list">
-                            <div className="flex-row ml-auto">
-                                <p className="mb-0 mr-3 text">Trusted by</p>
-                                <img src="/static/images/clients/ba.svg" alt="British Airways"/>
+                        <div className="row">
+                            <div className="col-md-6">
+                                <div className="mouse">
+                                    <div className="scroller"/>
+                                </div>
+                                <div className="vertical-line"/>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="flex-row hero__list">
+                                    <div className="flex-row ml-auto">
+                                        <p className="mb-0 mr-3 text">Trusted by</p>
+                                        <BaLogo fill={'white'} />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -57,9 +68,13 @@ const HomePage = class extends React.Component {
                     </div>
                 </div>
 
-                <div className="section">
-                    <h2 className="section__title">Featured Projects</h2>
-                    <FeaturedProjects/>
+                <div className="mt-5 mb-5 section--no-padding">
+                    <div className="container">
+                        <h2 className="section__title mb-5 mt-5">Featured Projects</h2>
+                    </div>
+                    <div className="ml-5">
+                        <FeaturedProjects/>
+                    </div>
                 </div>
 
                 <div className="section">

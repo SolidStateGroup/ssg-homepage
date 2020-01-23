@@ -4,6 +4,7 @@ import Button, { ButtonTertiary, ButtonPrimary, ButtonSecondary, ButtonText } fr
 import ListItem, { ListItemUnderlined } from '../components/ListItem';
 import BlogItem from '../components/BlogItem';
 import BlogPost from '../components/BlogPost';
+import BaLogo from '../components/ClientLogos/BaLogo';
 import exampleMD from './example-blog-post';
 
 getStory('Typography')
@@ -58,3 +59,9 @@ getStory('ListItems')
     .addDecorator(withPaddedContainer)
     .add('default', () => <ListItem listItemText={'a list item'} listItemLink={'/'}/>)
     .add('underlined', () => <ListItemUnderlined listItemText={'an underlined list item'} listItemLink={'/'}/>);
+
+
+getStory('ClientLogos')
+    .addDecorator(withPaddedContainer)
+    .add('default', () => <BaLogo fill={'#201C26'}/>)
+

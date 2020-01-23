@@ -61,8 +61,9 @@ class Header extends PureComponent {
                       </ul>
                       <ul className="navbar-nav">
                           <li className="nav-item">
+                              <img src="/static/images/svg-icons/mail-icon.svg" className="mr-2" />
                               <ActiveLink prefetch={false} href="/contact">
-                                <a className="nav-item__link">Contact</a>
+                                <a className="nav-item__link">Contact us</a>
                               </ActiveLink>
                           </li>
                       </ul>
