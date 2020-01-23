@@ -1,0 +1,18 @@
+.footer{
+    background:$brandNavy;
+    color:$white;
+    padding:100px 50px;
+
+    &__icon{
+        height:50px;
+        width:50px;
+    }
+
+    &__title{
+
+    }
+
+    &__text{
+        color:$white;
+    }
+}
