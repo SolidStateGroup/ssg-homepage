@@ -19,7 +19,7 @@ const HomePage = class extends React.Component {
             <Page title={Constants.titles.home} canonical="">
                 <div className="hero d-flex flex-column mx-0 p-4">
                     <Header/>
-                    <div className="hero__container flex-1 align-self-stretch row flex-row">
+                    <div className="hero__container flex-1 align-self-stretch row flex-row text-md-left text-sm-center">
                         <div className="flex-1 justify-content-start p-5">
                             <div className="offset-lg-3">
                                 <h1 className="hero__title">We design and build amazing digital products</h1>
@@ -51,7 +51,7 @@ const HomePage = class extends React.Component {
                             <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'} />
                             <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'} />
                         </ul>
-                        <ButtonText type={'button'}>
+                        <ButtonText type={'button'} className="text-primary">
                             Explore our services
                         </ButtonText>
                     </div>
