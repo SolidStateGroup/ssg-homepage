@@ -1,8 +1,10 @@
 .project{
     &--featured{
         background:linear-gradient(lighten($brand-primary, 5),$brand-primary);
-        border-radius: 50px 0 0 50px;
+        //border-radius: 50px 0 0 50px;
         color:$white;
+        box-shadow: -5px 5px 100px 0 rgba(0,0,0,0.22);
+        border-radius: 100px 0 0 100px;
     }
 
     &--t-and-s{
