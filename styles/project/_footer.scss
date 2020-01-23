@@ -1,5 +1,8 @@
-.footer{
+.footer-container{
     background:$brandNavy;
+}
+
+.footer{
     color:$white;
     padding:100px 50px;
 
@@ -15,4 +18,8 @@
     &__text{
         color:$white;
     }
+}
+
+.footer-legal{
+    color:$white;
 }
