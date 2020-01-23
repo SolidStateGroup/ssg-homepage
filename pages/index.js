@@ -3,6 +3,10 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
 import BaLogo from '../components/ClientLogos/BaLogo';
+import UnileverLogo from '../components/ClientLogos/UnileverLogo';
+import VisaLogo from '../components/ClientLogos/VisaLogo';
+import NHSLogo from '../components/ClientLogos/NHSLogo';
+import DisneyLogo from '../components/ClientLogos/DisneyLogo';
 import FeaturedProjects from '../components/FeaturedProjects';
 import {ListItemUnderlined} from '../components/ListItem';
 import {ButtonPrimary, ButtonText} from '../components/base/forms/Button';
@@ -33,17 +37,31 @@ const HomePage = class extends React.Component {
                     </div>
                     <div className="hero__footer">
                         <div className="row">
-                            <div className="col-md-6 hidden-sm-down">
+                            <div className="col hidden-sm-down">
                                 <div className="mouse">
                                     <div className="scroller"/>
                                 </div>
                                 <div className="vertical-line"/>
                             </div>
-                            <div className="col-md-6">
-                                <div className="flex-row hero__list">
+                            <div className="col-md-7">
+                                <div className="hero__list">
                                     <div className="flex-row ml-auto">
                                         <p className="mb-0 mr-3 text">Trusted by</p>
-                                        <BaLogo fill={'white'} />
+                                        <div className="col">
+                                            <BaLogo fill={'white'} />
+                                        </div>
+                                        <div className="col">
+                                            <VisaLogo fill={'white'} />
+                                        </div>
+                                        <div className="col">
+                                            <UnileverLogo fill={'white'} width={50} height={50} />
+                                        </div>
+                                        <div className="col">
+                                            <NHSLogo fill={'white'} />
+                                        </div>
+                                        <div className="col">
+                                            <DisneyLogo fill={'white'} />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
