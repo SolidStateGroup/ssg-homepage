@@ -5,6 +5,11 @@ import ListItem, { ListItemUnderlined } from '../components/ListItem';
 import BlogItem from '../components/BlogItem';
 import BlogPost from '../components/BlogPost';
 import BaLogo from '../components/ClientLogos/BaLogo';
+import HertzLogo from '../components/ClientLogos/HertzLogo';
+import UnileverLogo from '../components/ClientLogos/UnileverLogo';
+import NHSLogo from '../components/ClientLogos/NHSLogo';
+import VisaLogo from '../components/ClientLogos/VisaLogo';
+import DisneyLogo from '../components/ClientLogos/DisneyLogo';
 import exampleMD from './example-blog-post';
 
 getStory('Typography')
@@ -63,5 +68,28 @@ getStory('ListItems')
 
 getStory('ClientLogos')
     .addDecorator(withPaddedContainer)
-    .add('default', () => <BaLogo fill={'#201C26'}/>)
+    .add('default', () =>
+        <>
+            <div className="row">
+                <div className="col">
+                    <BaLogo fill={'#201C26'}/>
+                </div>
+                <div className="col">
+                    <HertzLogo fill={'#201C26'}/>
+                </div>
+                <div className="col">
+                    <UnileverLogo width={50} height={50} fill={'#201C26'}/>
+                </div>
+                <div className="col">
+                    <VisaLogo fill={'#201C26'}/>
+                </div>
+                <div className="col">
+                    <NHSLogo fill={'#201C26'}/>
+                </div>
+                <div className="col">
+                    <DisneyLogo fill={'#201C26'}/>
+                </div>
+            </div>
+        </>
+    )
 
