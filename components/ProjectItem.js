@@ -18,14 +18,23 @@ const ProjectItem = global.ProjectItem = class extends React.PureComponent {
         return (
           <div className={cn(this.props.className, 'project__item')}>
               <div className="flex-1 align-self-stretch row flex-row">
-                  <div className="flex-1 justify-content-start p-5">
+                  <div className="col justify-content-start p-5">
                       <div>
-                          <h2 className="project__title">We design and build amazing digital products</h2>
-                          <ButtonSecondary>View latest projects</ButtonSecondary>
+                          <p className="project__subtitle mb-0">iOS and Android Mobile App</p>
+                          <h2 className="project__title">Rebooting female fitness for Tone and Sculpt</h2>
+                          <ul className="text-list list-inline mb-4">
+                              <li className="text-list__item list-inline-item">Research</li>
+                              <li className="text-list__item list-inline-item">UX design</li>
+                              <li className="text-list__item list-inline-item">UI design</li>
+                              <li className="text-list__item list-inline-item">Mobile App Development</li>
+                              <li className="text-list__item list-inline-item">API Development</li>
+                          </ul>
+                          <ButtonSecondary className="hidden-sm-down">View project</ButtonSecondary>
                       </div>
                   </div>
-                  <div className="flex-1 align-items-center justify-content-center hero__gfx-container">
+                  <div className="col align-items-center justify-content-center hero__gfx-container text-center">
                       <img src="/static/images/projects/tands-dashboard.svg" alt="Tone and Sculpt" className="img-fluid"/>
+                      <ButtonSecondary className="hidden-sm-up">View project</ButtonSecondary>
                   </div>
               </div>
           </div>

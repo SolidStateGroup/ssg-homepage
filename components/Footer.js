@@ -18,16 +18,16 @@ const Footer = class extends React.Component {
               <footer className={`${className} clearfix footer`}>
                   <div className="container">
                       <div className="row">
-                          <div className="col text-center">
+                          <div className="col text-center hidden-sm-down">
                               <img src="/static/images/svg-icons/partner-icon.svg" alt="something"/>
                           </div>
-                          <div className="col col-lg-6 px-5">
+                          <div className="col col-lg-6 px-md-5 px-0">
                               <h3 className="footer__title">Interested in working with us?</h3>
                               <p className="footer__text">Are you a large enterprise looking for a technology partner or a
                                   consultancy looking for experienced, highly skilled developers to supplement your
                                   team.</p>
                           </div>
-                          <div className="col">
+                          <div className="col px-md-2 px-0">
                               <dl>
                                   <dt>Call us on</dt>
                                   <dd>+44 (0)207 613 7222</dd>

@@ -18,4 +18,20 @@
     &--ba{
         background:linear-gradient(#2E5C99,lighten(#2E5C99, 20));
     }
+
+    &__title{
+        font-size:3rem;
+    }
+
+    &__subtitle{
+        color:$white;
+    }
+}
+
+
+@include media-breakpoint-down(sm) {
+    .featured-projects, .project--featured{
+        min-height:100vh;
+        border-radius: 0;
+    }
 }

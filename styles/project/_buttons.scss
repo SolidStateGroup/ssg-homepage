@@ -1,6 +1,7 @@
 .btn{
     &--primary {
         @include button-base();
+        border: none;
         background-color: $brand-primary;
         color: $white;
         box-shadow: rgba($brand-primary, 0.3) 0 6px 20px;
@@ -10,10 +11,9 @@
     }
 
     &--secondary{
+        @include button-base();
         background:transparent;
         border:2px white solid;
-        border-radius: 25px;
-        padding:10px;
         color:$white
     }
 

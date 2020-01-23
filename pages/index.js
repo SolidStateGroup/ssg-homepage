@@ -20,20 +20,20 @@ const HomePage = class extends React.Component {
             <Page title={Constants.titles.home} canonical="">
                 <div className="hero d-flex flex-column mx-0 p-4">
                     <Header/>
-                    <div className="hero__container flex-1 align-self-stretch row flex-row text-md-left text-sm-center">
+                    <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
                         <div className="flex-1 justify-content-start p-5">
                             <div className="offset-lg-3">
                                 <h1 className="hero__title mb-4">We design and build amazing digital products</h1>
                                 <ButtonPrimary>View latest projects</ButtonPrimary>
                             </div>
                         </div>
-                        <div className="flex-1 align-items-center justify-content-center hero__gfx-container">
+                        <div className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down">
                             <img src="/static/images/hero-gfx.svg" alt="Blob Graphic" className="img-fluid"/>
                         </div>
                     </div>
                     <div className="hero__footer">
                         <div className="row">
-                            <div className="col-md-6">
+                            <div className="col-md-6 hidden-sm-down">
                                 <div className="mouse">
                                     <div className="scroller"/>
                                 </div>
@@ -78,45 +78,45 @@ const HomePage = class extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col text-center">
-                                <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Blob GFX"/>
+                                <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Research"/>
                                 <h5>Research</h5>
                                 <p>Gather insights about your product and market</p>
                             </div>
-                            <div className="align-self-center mb5">
+                            <div className="align-self-center mb5 hidden-sm-down">
                                 <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                             </div>
                             <div className="col text-center">
-                                <img src="/static/images/svg-icons/design-blob-icon.svg" className="mb-3" alt="Blob GFX"/>
+                                <img src="/static/images/svg-icons/design-blob-icon.svg" className="mb-3" alt="Design"/>
                                 <h5>Design</h5>
                                 <p>Explore creative options to bring your vision to life</p>
                             </div>
-                            <div className="align-self-center mb5">
+                            <div className="align-self-center mb5 hidden-sm-down">
                                 <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                             </div>
                             <div className="col text-center">
-                                <img src="/static/images/svg-icons/development-blob-icon.svg" className="mb-3" alt="Blob GFX"/>
+                                <img src="/static/images/svg-icons/development-blob-icon.svg" className="mb-3" alt="Development"/>
                                 <h5>Development</h5>
                                 <p>Rapid application development</p>
                             </div>
-                            <div className="align-self-center mb5">
+                            <div className="align-self-center mb5 hidden-sm-down">
                                 <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                             </div>
                             <div className="col text-center">
-                                <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Blob GFX"/>
+                                <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Release"/>
                                 <h5>Release</h5>
                                 <p>Gather insights about your product and market</p>
                             </div>
-                            <div className="align-self-center mb5">
+                            <div className="align-self-center mb5 hidden-sm-down">
                                 <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                             </div>
                             <div className="col text-center">
-                                <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Blob GFX"/>
+                                <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Product Development"/>
                                 <h5>Product Development</h5>
                                 <p>Gather insights about your product and market</p>
                             </div>
                         </div>
                         <div className="col">
-                            <img src="/static/images/svg-icons/arrow-gradient-left-turn.svg" className="img-fluid img__full-width pl-5 pr-5" alt="Blob GFX"/>
+                            <img src="/static/images/svg-icons/arrow-gradient-left-turn.svg" className="img-fluid img__full-width pl-5 pr-5 hidden-sm-down" alt="Cycle GFX"/>
                             <div className="text-center">
                                 <p className="mt-4 bold text-grey">We support you beyond MVP release and help you develop the product and achieve your business goals</p>
                             </div>

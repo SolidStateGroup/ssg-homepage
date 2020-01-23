@@ -1,21 +1,9 @@
 @mixin button-base {
   text-transform: uppercase;
-  border: none;
   border-radius: 25px;
   padding: 10px;
   transition: all .5s ease-out;
-}
-
-@mixin nav-item__link--circle-base {
-
-}
-
-@mixin button-base {
-  text-transform: uppercase;
-  border: none;
-  border-radius: 25px;
-  padding: 10px;
-  transition: all .5s ease-out;
+  min-width:250px;
 }
 
 @mixin flexbox {
