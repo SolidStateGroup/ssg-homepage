@@ -1,0 +1,25 @@
+.footer-container{
+    background:$brandNavy;
+}
+
+.footer{
+    color:$white;
+    padding:100px 50px;
+
+    &__icon{
+        height:50px;
+        width:50px;
+    }
+
+    &__title{
+
+    }
+
+    &__text{
+        color:$white;
+    }
+}
+
+.footer-legal{
+    color:$white;
+}
