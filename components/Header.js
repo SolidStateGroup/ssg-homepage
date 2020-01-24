@@ -30,12 +30,13 @@ class Header extends PureComponent {
       const menuOpen = !this.state.menuOpen;
       if (menuOpen) {
           // fade in anim
-          gsap.to(".mobile-menu", {duration: .25, opacity: 1, ease: "power1"});
-          gsap.to(".mainmenu", {duration: .5, y: "5%", opacity: 1, ease: "power1.inOut"});
+          gsap.to(".mobile-menu", {duration: .25, opacity: 1, display: "block", ease: "power1"});
+          gsap.to(".mainmenu", {duration: .5, y: "5%", opacity: 1, display: "block", ease: "power1.inOut"});
+          gsap.from(".pulse-circle", {duration: .5, opacity: 0, y: -20, stagger: 0.25});
       } else {
           // fade out anim
           gsap.to(".mobile-menu", {duration: .5, opacity: 0, display: "none", ease: "power1"});
-          gsap.to(".mainmenu", {duration: .25, y: "0%", opacity: 0, ease: "power1.inOut"});
+          gsap.to(".mainmenu", {duration: .25, y: "0%", opacity: 0, display: "none", ease: "power1.inOut"});
 
       }
       this.setState({ menuOpen });
@@ -133,9 +134,9 @@ class Header extends PureComponent {
                                       fill="#FFF"
                                       fillRule="evenodd"
                                   >
-                                      <circle opacity={0.027} cx={182.25} cy={182.25} r={182.25} />
-                                      <circle opacity={0.052} cx={181.75} cy={182.75} r={136.75} />
-                                      <circle opacity={0.053} cx={182.25} cy={182.25} r={91.25} />
+                                      <circle className="pulse-circle" opacity={0.027} cx={182.25} cy={182.25} r={182.25} />
+                                      <circle className="pulse-circle" opacity={0.052} cx={181.75} cy={182.75} r={136.75} />
+                                      <circle className="pulse-circle" opacity={0.053} cx={182.25} cy={182.25} r={91.25} />
                                   </g>
                               </svg>
                           </div>

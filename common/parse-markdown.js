@@ -1,6 +1,6 @@
 const each = require('lodash/each');
 const map = require('lodash/map');
-const moment = require('moment');
+const moment = require('moment/min/moment.min');
 
 const splitAt = index => x => [x.slice(0, index), x.slice(index)];
 

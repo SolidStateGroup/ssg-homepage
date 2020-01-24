@@ -35,9 +35,9 @@ const HomePage = class extends React.Component {
                             <img src="/static/images/hero-gfx.svg" alt="Blob Graphic" className="img-fluid"/>
                         </div>
                     </div>
-                    <div className="hero__footer">
+                    <div className="hero__footer hidden-sm-down">
                         <div className="row">
-                            <div className="col hidden-sm-down">
+                            <div className="col">
                                 <div className="mouse">
                                     <div className="scroller"/>
                                 </div>
@@ -51,7 +51,7 @@ const HomePage = class extends React.Component {
                                             <BaLogo fill={'white'} />
                                         </div>
                                         <div className="col">
-                                            <VisaLogo fill={'white'} />
+                                            <DisneyLogo fill={'white'} />
                                         </div>
                                         <div className="col">
                                             <UnileverLogo fill={'white'} width={50} height={50} />
@@ -68,21 +68,21 @@ const HomePage = class extends React.Component {
                         </div>
                     </div>
                 </div>
+
                 <div className="section">
                     <div className="container-fluid col-lg-8 offset-md-2">
                         <h2 className="section__title">Services</h2>
-                        <ul className="lined-list list-unstyled flex-row">
+                        <ul className="lined-list list-unstyled flex-row pl-5 mt-3">
                             <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'}  />
-                            <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'} />
-                            <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'} />
-                            <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'} />
-                            <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'} />
-                            <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'} />
-                            <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'} />
+                            <ListItemUnderlined listItemText={'Strategy'} listItemLink={'/'} />
+                            <ListItemUnderlined listItemText={'UX & UI Design'} listItemLink={'/'} />
+                            <ListItemUnderlined listItemText={'Prototyping'} listItemLink={'/'} />
+                            <ListItemUnderlined listItemText={'Mobile app development'} listItemLink={'/'} />
+                            <ListItemUnderlined listItemText={'Responsive web apps'} listItemLink={'/'} />
+                            <ListItemUnderlined listItemText={'API Development'} listItemLink={'/'} />
+                            <ListItemUnderlined listItemText={'Systems integration'} listItemLink={'/'} />
                         </ul>
-                        <ButtonText type={'button'} className="text-primary">
-                            Explore our services
-                        </ButtonText>
+                        <ButtonText buttonText={'Explore our services'} type={'button'} className="text-primary pl-5"/>
                     </div>
                 </div>
 

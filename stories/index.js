@@ -32,7 +32,7 @@ getStory('Buttons')
     .add('primary', () => <ButtonPrimary>A Button</ButtonPrimary>)
     .add('secondary', () => <ButtonSecondary>A Button</ButtonSecondary>)
     .add('tertiary', () => <ButtonTertiary>A Button</ButtonTertiary>)
-    .add('text', () => <ButtonText>A Button</ButtonText>);
+    .add('text', () => <ButtonText buttonText={'Explore our services'}/>);
 
 
 getStory('Blog')

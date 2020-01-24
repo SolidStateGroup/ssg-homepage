@@ -51,9 +51,11 @@
     background-color: $brand-raisin-black;
     display: none;
     opacity: 0;
+    pointer-events: none;
     &.active {
         opacity: 1;
         display: block;
+        pointer-events: auto;
     }
         &__item-inner {
             flex: 1;
