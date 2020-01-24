@@ -2,6 +2,10 @@
     background:'transparent';
 }
 
+.navbar-nav {
+    flex-direction: row;
+}
+
 .nav-item{
     &__link{
         color:#fff;
