@@ -35,6 +35,8 @@ const ServicesPage = class extends React.Component {
               </div>
               <div className="container">
                   <ProjectItem ButtonComponent={ButtonPrimary} projectImage={'/static/images/projects/tands-summary-image.png'}/>
+                  <ProjectItem ButtonComponent={ButtonPrimary} projectImage={'/static/images/projects/pc-summary-image.png'}/>
+                  <ProjectItem ButtonComponent={ButtonPrimary} projectImage={'/static/images/projects/hailie-summary-image.png'}/>
               </div>
               <Footer/>
           </Page>
