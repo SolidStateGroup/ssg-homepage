@@ -37,3 +37,17 @@
     height: 150px;
     bottom:0;
 }
+
+.map-overlay{
+    position:absolute;
+    height:100%;
+    z-index: 3;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    color:$white;
+
+    &__title{
+        font-size:2.5rem;
+    }
+}

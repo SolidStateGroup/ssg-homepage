@@ -19,7 +19,7 @@ const Map = class extends PureComponent {
             container: 'the-map',
             style: 'mapbox://styles/amoff111/ck5id9r4n0xk01inw3zpmxx4v',
             center, // starting position [lng, lat]
-            zoom: 15, // starting zoom
+            zoom: 12, // starting zoom
         });
         map.scrollZoom.disable();
         new mapboxgl.Marker().setLngLat(center).addTo(map);
@@ -28,6 +28,12 @@ const Map = class extends PureComponent {
     render() {
         return (
             <div className="map-container" id="the-map">
+                <div className="map-overlay flex-column col-3 ml-5 pr-0">
+                    <h2 className="mb-5 map-overlay__title">Come see us in the middle of London's Silicon Roundabout</h2>
+                    <p className="mb-0 text-light">Where to find us</p>
+                    <h5>86-90 Paul Street</h5>
+                    <h5>London, EC2A 4NE</h5>
+                </div>
                 <div className="map-blender"/>
             </div>
         );

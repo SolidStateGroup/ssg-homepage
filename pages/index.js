@@ -92,7 +92,7 @@ const HomePage = class extends React.Component {
                     </div>
                 </div>
 
-                <div className="section">
+                <div className="section my-5">
                     <div className="container">
                         <div className="row">
                             <div className="col text-center">
