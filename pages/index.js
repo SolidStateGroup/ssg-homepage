@@ -32,7 +32,7 @@ const HomePage = class extends React.Component {
                             </div>
                         </div>
                         <div className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down">
-                            <img src="/static/images/hero-gfx.svg" alt="Blob Graphic" className="img-fluid"/>
+                            <img src="/static/images/hero-gfx.png" alt="Blob Graphic" className="img-fluid"/>
                         </div>
                     </div>
                     <div className="hero__footer hidden-sm-down">
