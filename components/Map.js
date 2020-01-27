@@ -17,16 +17,19 @@ const Map = class extends PureComponent {
     componentDidMount() {
         const map = new mapboxgl.Map({
             container: 'the-map',
-            style: 'mapbox://styles/mapbox/streets-v11',
+            style: 'mapbox://styles/amoff111/ck5id9r4n0xk01inw3zpmxx4v',
             center, // starting position [lng, lat]
             zoom: 15, // starting zoom
         });
+        map.scrollZoom.disable();
         new mapboxgl.Marker().setLngLat(center).addTo(map);
     }
 
     render() {
         return (
-            <div style={{ height: 400 }} id="the-map"/>
+            <div className="map-container" id="the-map">
+                <div className="map-blender"/>
+            </div>
         );
     }
 };
