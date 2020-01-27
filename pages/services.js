@@ -34,9 +34,9 @@ const ServicesPage = class extends React.Component {
                   </div>
               </div>
               <div className="container">
-                  <ProjectItem ButtonComponent={ButtonPrimary} projectImage={'/static/images/projects/tands-summary-image.png'}/>
-                  <ProjectItem ButtonComponent={ButtonPrimary} projectImage={'/static/images/projects/pc-summary-image.png'}/>
-                  <ProjectItem ButtonComponent={ButtonPrimary} projectImage={'/static/images/projects/hailie-summary-image.png'}/>
+                  <ProjectItem ButtonComponent={ButtonPrimary} projectImage={'/static/images/projects/tands-summary-image.png'} subTitle="iOS and Android Mobile App" title="Rebooting female fitness for Tone and Sculpt"/>
+                  <ProjectItem ButtonComponent={ButtonPrimary} projectImage={'/static/images/projects/pc-summary-image.png'} subTitle="Responsive Web Application" title="The future of film and media financing"/>
+                  <ProjectItem ButtonComponent={ButtonPrimary} projectImage={'/static/images/projects/hailie-summary-image.png'} subTitle="iOS and Android Mobile App" title="Reinventing treatment of respiritory issues"/>
               </div>
               <Footer/>
           </Page>
