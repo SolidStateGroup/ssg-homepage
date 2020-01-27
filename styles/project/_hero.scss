@@ -14,6 +14,10 @@
         background-size:contain;
         height:100%;
     }
+
+    &--half{
+        height:50vh;
+    }
 }
 
 @media (max-width: #{map-get($breakpoints, mobile)}) {
