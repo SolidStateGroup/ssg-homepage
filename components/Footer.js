@@ -1,6 +1,6 @@
 import propTypes from 'prop-types';
 import FooterLegal from '../components/FooterLegal';
-
+import Map from '../components/Map'
 const Footer = class extends React.Component {
     static displayName = 'Footer';
 
@@ -15,6 +15,7 @@ const Footer = class extends React.Component {
         const { className } = this.props;
         return (
           <div className="footer-container">
+              <Map/>
               <footer className={`${className} clearfix footer`}>
                   <div className="container">
                       <div className="row">
