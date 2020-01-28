@@ -10,11 +10,26 @@
 }
 
 .client-logo {
-   
-    &--small {
+    &--medium {
         max-width: 93px;
+    }
+    &--small {
+        max-width: 50px;
     }
     &--large {
         max-width: 150px;
+        min-width: 100px;
     }
 }
+
+
+//.@include media-breakpoint-down(sm) {
+//    .client-logo {
+//        &--small {
+//            max-width: 93px;
+//        }
+//        &--large {
+//            max-width: 150px;
+//        }
+//    }
+//}
