@@ -97,7 +97,7 @@ const HomePage = class extends React.Component {
 
                 <div className="section my-5">
                     <div className="container">
-                        <h2 className="section__title text-center mb-5">Our Services</h2>
+                        <h2 className="section__title text-center mb-5">Our Process</h2>
                         <div className="row">
                             <div className="col text-center">
                                 <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Research"/>

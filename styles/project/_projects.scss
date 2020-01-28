@@ -5,6 +5,14 @@
         color:$white;
         box-shadow: -5px 5px 100px 0 rgba(0,0,0,0.22);
         border-radius: 100px 0 0 100px;
+
+        .project__item{
+            max-height: none;
+        }
+
+        .project__subtitle{
+            color:$white;
+        }
     }
 
     &--t-and-s{
@@ -23,8 +31,8 @@
         font-size:3rem;
     }
 
-    &__subtitle{
-        color:$white;
+    &__item{
+        max-height: 550px;
     }
 }
 

@@ -1,0 +1,21 @@
+.panel{
+    padding:70px 0;
+    border-radius: 0;
+
+    &--primary{
+        background:$brand-primary;
+        color:$white;
+    }
+
+    &__title{
+
+    }
+
+    &__text{
+        color:$white;
+    }
+
+    &__list{
+
+    }
+}
