@@ -1,0 +1,13 @@
+.card {
+    background-color: $brand-raisin-black;
+    border-radius: 40px;
+    min-height: 318px;
+    justify-content: space-between;
+    .card-title {
+        color: white;
+        border-bottom: 1px solid $brandNavySecondary;
+    }
+    .card-text {
+        color: white;
+    }
+}

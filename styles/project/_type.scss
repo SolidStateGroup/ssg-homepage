@@ -7,12 +7,36 @@ h1,h2,h3,h4,h5,h6{
     font-family: Ilisarniq-Bold, sans-serif;
 }
 
+h2 > span {
+    font-weight:bold!important;
+    font-family: Ilisarniq-Bold, sans-serif;
+}
+
 .bold{
     font-family: 'Ilisarniq-Bold', sans-serif!important;
 }
 
 .text-small{
     font-size:0.75rem!important;
+}
+
+.title {
+    &--regular {
+        font-family: Ilisarniq-Regular, sans-serif;
+    }
+    &--line-after {
+        &:after {
+            content: "";
+            width: 30px;
+            height: 5px;
+            display: block;
+            position: relative;
+            top: 10px;
+            background: $brand-primary;
+            margin-bottom: 1.5em;
+            //left: calc(50% - 15px);
+        }
+    }
 }
 
 p{
@@ -26,6 +50,10 @@ p{
 
 .text-grey {
     color: $brand-dark-lavender;
+}
+
+.text-primary {
+    color: $brand-primary;
 }
 
 .bold {
