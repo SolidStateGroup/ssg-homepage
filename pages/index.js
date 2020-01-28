@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Page from '../components/Page';
 import BaLogo from '../components/ClientLogos/BaLogo';
 import UnileverLogo from '../components/ClientLogos/UnileverLogo';
-import VisaLogo from '../components/ClientLogos/VisaLogo';
+import HertzLogo from '../components/ClientLogos/HertzLogo';
 import NHSLogo from '../components/ClientLogos/NHSLogo';
 import DisneyLogo from '../components/ClientLogos/DisneyLogo';
 import FeaturedProjects from '../components/FeaturedProjects';
@@ -35,35 +35,34 @@ const HomePage = class extends React.Component {
                             <img src="/static/images/hero-gfx.png" alt="Blob Graphic" className="img-fluid"/>
                         </div>
                     </div>
-                    <div className="hero__footer hidden-sm-down">
+                    <div className="hero__footer">
                         <div className="row">
-                            <div className="col">
+                            <div className="col hidden-md-down">
                                 <div className="mouse">
                                     <div className="scroller"/>
                                 </div>
                                 <div className="vertical-line"/>
                             </div>
-                            <div className="col-md-7">
+                            <div className="col-lg-8 col-12 pl-0 pr-0">
                                 <div className="hero__list">
                                     <div className="flex-row ml-auto">
-                                        <div className="col-md-2 text-center">
-                                            <p className="mb-0 mr-3 text">Trusted by</p>
+                                        <div className="col-4 col-md-2">
+                                            <p className="mb-0 mr-3 text text-center mb-3 mb-sm-0">Trusted by</p>
                                         </div>
-                                        <div className="col-md-2 text-center">
-                                            <BaLogo className="client-logo--large" fill={'white'} />
-                                            {/*<img src="/static/images/clients/ba.svg" alt="Blob Graphic" className="img-fluid"/>*/}
+                                        <div className="col-4 col-md-2 text-center">
+                                            <BaLogo className="client-logo--large mb-3 mb-sm-0" fill={'white'} />
                                         </div>
-                                        <div className="col-md-2 text-center">
-                                            <DisneyLogo className="client-logo--small" fill={'white'} />
+                                        <div className="col-4 col-md-2 text-center">
+                                            <DisneyLogo className="client-logo--medium mb-3 mb-sm-0" fill={'white'} />
                                         </div>
-                                        <div className="col-md-2 text-center">
-                                            <UnileverLogo fill={'white'} />
+                                        <div className="col-4 col-md-2 text-center">
+                                            <UnileverLogo className="client-logo--small" fill={'white'} />
                                         </div>
-                                        <div className="col-md-2 text-center">
-                                            <NHSLogo fill={'white'} />
+                                        <div className="col-4 col-md-2 text-center">
+                                            <NHSLogo className="client-logo--medium" fill={'white'} />
                                         </div>
-                                        <div className="col-md-2">
-                                            <DisneyLogo fill={'white'} />
+                                        <div className="col-4 col-md-2 text-center">
+                                            <HertzLogo className="client-logo--medium" fill={'white'} />
                                         </div>
                                     </div>
                                 </div>
@@ -74,8 +73,8 @@ const HomePage = class extends React.Component {
 
                 <div className="section">
                     <div className="container-fluid col-lg-8 offset-md-2">
-                        <h2 className="section__title">Services</h2>
-                        <ul className="lined-list list-unstyled flex-row pl-5 mt-3">
+                        <h2 className="section__title section__title--dark">Services</h2>
+                        <ul className="lined-list list-unstyled flex-row pl-sm-5 pl-0 mt-3">
                             <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'}  />
                             <ListItemUnderlined listItemText={'Strategy'} listItemLink={'/'} />
                             <ListItemUnderlined listItemText={'UX & UI Design'} listItemLink={'/'} />
@@ -85,7 +84,7 @@ const HomePage = class extends React.Component {
                             <ListItemUnderlined listItemText={'API Development'} listItemLink={'/'} />
                             <ListItemUnderlined listItemText={'Systems integration'} listItemLink={'/'} />
                         </ul>
-                        <ButtonText buttonText={'Explore our services'} type={'button'} className="text-primary pl-5"/>
+                        <ButtonText buttonText={'Explore our services'} type={'button'} className="text-primary pl-sm-5 pl-0"/>
                     </div>
                 </div>
 
@@ -97,7 +96,7 @@ const HomePage = class extends React.Component {
 
                 <div className="section my-5">
                     <div className="container">
-                        <h2 className="section__title text-center mb-5">Our Services</h2>
+                        <h2 className="section__title section__title--dark text-center mb-5">Our process</h2>
                         <div className="row">
                             <div className="col text-center">
                                 <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Research"/>

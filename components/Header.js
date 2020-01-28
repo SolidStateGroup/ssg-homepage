@@ -37,7 +37,6 @@ class Header extends PureComponent {
           // fade out anim
           gsap.to(".mobile-menu", {duration: .5, opacity: 0, display: "none", ease: "power1"});
           gsap.to(".mainmenu", {duration: .25, y: "0%", opacity: 0, display: "none", ease: "power1.inOut"});
-
       }
       this.setState({ menuOpen });
     }
@@ -90,7 +89,7 @@ class Header extends PureComponent {
                               <li className="nav-item">
                                   <a onClick={this.toggle} href="#">
                                       {this.state.menuOpen ? (
-                                          <img src="/static/images/svg-icons/close-icon.svg" className="mobile-menu__icon" />
+                                          <img src="/static/images/svg-icons/close-icon.svg" className="mobile-menu__icon mobile-menu__icon--close" />
                                       ) : (
                                           <img src="/static/images/svg-icons/menu-icon.svg" className="mobile-menu__icon" />
                                       )}

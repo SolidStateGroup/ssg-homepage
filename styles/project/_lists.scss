@@ -42,3 +42,13 @@
         color: $white;
     }
 }
+
+@include media-breakpoint-down(sm) {
+
+    .hero__list {
+        .text {
+            font-size: 14px;
+        }
+    }
+
+}

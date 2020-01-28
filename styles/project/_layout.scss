@@ -6,6 +6,9 @@
 
     &__title{
         font-size:3em;
+        &--dark {
+            color: $brandNavy;
+        }
     }
     &--no-padding {
         padding: 0;
