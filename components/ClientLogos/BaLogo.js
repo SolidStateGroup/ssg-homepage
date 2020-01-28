@@ -1,8 +1,8 @@
 import React from "react";
 
-function BaLogo({width, height, fill}) {
+function BaLogo({width, height, fill, className}) {
     return (
-        <svg width={width || 150} height={height || 24} viewBox="0 0 150 24">
+        <svg width={width || "100%"} height={height || "auto"} viewBox="0 0 150 24" className={className}>
             <title>{"British Airways"}</title>
             <g fill={fill || "#FFF" } fillRule="nonzero">
                 <path d="M145.1 5.713c-1.718 1.736-5.443 3.227-7.275 3.925-2.504.956-3.615 1.294-5.016 1.757a345.907 345.907 0 01-4.756 1.499c6.57 1.993 11.199 2.594 11.199 2.594s2.157-.677 5.574-2.534c1.85-.956 2.76-1.6 3.412-2.215.24-.22.86-.876 1.015-1.716.01-.06.04-.221.04-.379 0 0 0-.112-.01-.208-.004-.112-.024-.187-.024-.187s-.036-.198-.084-.338c-.05-.14-.262-.57-.605-.85-.23-.19-.624-.66-2.057-1.172-.488-.172-1.276-.331-1.276-.331l-.136.155z" />

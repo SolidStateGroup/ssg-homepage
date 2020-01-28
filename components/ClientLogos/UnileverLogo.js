@@ -2,7 +2,7 @@ import React from "react"
 
 function UnileverLogo({width, height, fill}) {
     return (
-        <svg width={width || 36} height={height || 40} viewBox="0 0 36 40">
+        <svg width={width || "100%"} height={height || 40} viewBox="0 0 36 40">
             <title>{"Unilever"}</title>
             <defs>
                 <path id="prefix__a" d="M0 0h35.855v40H0z" />
