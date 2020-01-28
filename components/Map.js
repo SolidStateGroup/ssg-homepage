@@ -28,6 +28,7 @@ const Map = class extends PureComponent {
     render() {
         return (
             <div className="map-container" id="the-map">
+                <div className="map-mask"/>
                 <div className="map-overlay flex-column col-3 ml-5 pr-0">
                     <h2 className="mb-5 map-overlay__title">Come see us in the middle of London's Silicon Roundabout</h2>
                     <p className="mb-0 text-light">Where to find us</p>

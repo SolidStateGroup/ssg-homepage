@@ -14,8 +14,9 @@ const HomePage = class extends React.Component {
   render = () => {
       return (
           <Page title={Constants.titles.contact} canonical="contact">
-              <Header/>
-              <h1>Contact</h1>
+
+                <Header/>
+
               <Footer/>
           </Page>
       );

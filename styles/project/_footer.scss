@@ -30,6 +30,16 @@
     position: relative;
 }
 
+.map-mask{
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    width:440px;
+    z-index: 2;
+    background:url('/static/images/map-mask.svg') 0 0 no-repeat;
+}
+
 .map-blender{
     position:absolute;
     width:100%;

@@ -24,18 +24,16 @@ const Footer = class extends React.Component {
                           </div>
                           <div className="col col-lg-6 px-md-5 px-0">
                               <h3 className="footer__title">Interested in working with us?</h3>
-                              <p className="footer__text">Are you a large enterprise looking for a technology partner or a
-                                  consultancy looking for experienced, highly skilled developers to supplement your
-                                  team.</p>
+                              <p className="footer__text">We're a highly skilled team of strategists, designers and technical developers.  If you think we can help you, call us for a chat or send us a brief.</p>
                           </div>
                           <div className="col px-md-2 px-0">
                               <dl>
-                                  <dt>Call us on</dt>
-                                  <dd>+44 (0)207 613 7222</dd>
+                                  <dt className="light">Call us on</dt>
+                                  <dd className="bold">+44 (0)207 613 7222</dd>
                               </dl>
                               <dl>
-                                  <dt>Email us at</dt>
-                                  <dd>projects@solidstategroup.com</dd>
+                                  <dt className="light">Email us at</dt>
+                                  <dd className="bold">projects@solidstategroup.com</dd>
                               </dl>
                               <ButtonPrimary>Get in touch</ButtonPrimary>
                           </div>
