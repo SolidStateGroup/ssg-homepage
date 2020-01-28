@@ -7,7 +7,7 @@ import blog from '../../static/blog.json';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Page from '../../components/Page';
-import BlogItem from '../../components/BlogItem';
+import BlogItem, {BlogItemSummary} from '../../components/BlogItem';
 
 const BlogPage = class extends Component {
   static displayName = 'BlogPage'
@@ -41,7 +41,18 @@ const BlogPage = class extends Component {
       const filteredBy = this.props.router.query.tag;
       return (
           <Page title={Constants.titles.blog} canonical="blog">
-              <Header/>
+              <div className="hero hero--half d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
+                  <Header/>
+                  <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
+                      <div className="flex-1 justify-content-start p-5">
+                          <div className="offset-lg-3">
+                              <p className="text-light">Blog</p>
+                              <h1 className="hero__title mb-4">Thoughts and experiences from the digital world</h1>
+                          </div>
+                      </div>
+                      <div className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down"/>
+                  </div>
+              </div>
               <div className="blog">
                   <div className="container mt-5">
                       {!!filteredBy && (
@@ -57,6 +68,9 @@ const BlogPage = class extends Component {
                       )}
                       {blogItems.map(b => (
                           <BlogItem key={b.title} item={b}/>
+                      ))}
+                      {blogItems.map(b => (
+                        <BlogItemSummary key={b.title} item={b}/>
                       ))}
                   </div>
               </div>
