@@ -17,6 +17,8 @@ const projects = [
         projectImage: '/static/images/projects/hailie-summary-image.png',
         subTitle: 'iOS and Android Mobile Applications',
         title: 'Reinventing treatment of respiritory issues',
+        clientBrand: '/static/images/clients/colour/hailie.svg',
+        clientName: 'Hailie',
         tags: ['design'],
 
     },
@@ -25,6 +27,8 @@ const projects = [
         projectImage: '/static/images/projects/ba-summary-image.png',
         subTitle: 'Responsive Web Applicatiom',
         title: 'Ingetration with 1960s tech',
+        clientBrand: '/static/images/clients/colour/ba.svg',
+        clientName: 'British Airways',
         tags: ['API Development'],
 
     },
@@ -112,7 +116,7 @@ const PartnersPage = class extends React.Component {
             <div className="container">
                 {projects.map((p) => (
                   <ProjectItem ButtonComponent={p.ButtonComponent} projectImage={p.projectImage} subTitle={p.subTitle}
-                               title={p.title} className='mb-5'/>
+                               title={p.title} clientBrand={p.clientBrand} clientName={p.clientName} className='mb-5'/>
 
                 ))}
             </div>

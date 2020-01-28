@@ -28,13 +28,15 @@ const ProjectItem = global.ProjectItem = class extends React.PureComponent {
                         <div>
                             <p className="project__subtitle mb-0">{this.props.subTitle || 'Solid State Group'}</p>
                             <h2 className="project__title">{this.props.title}</h2>
-                            <ul className="text-list list-inline mb-4">
+                            {this.props.clientBrand ? (<div className="mb-4 mt-3"><img src={this.props.clientBrand}
+                                                                 alt={this.props.clientName}/></div>) : (<ul className="text-list list-inline mb-4">
                                 <li className="text-list__item list-inline-item">Research</li>
                                 <li className="text-list__item list-inline-item">UX design</li>
                                 <li className="text-list__item list-inline-item">UI design</li>
                                 <li className="text-list__item list-inline-item">Mobile App Development</li>
                                 <li className="text-list__item list-inline-item">API Development</li>
-                            </ul>
+                            </ul>)}
+
                             <ButtonComponent className="hidden-sm-down">View project</ButtonComponent>
                         </div>
                     </div>
