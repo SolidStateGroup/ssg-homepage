@@ -46,20 +46,23 @@ const HomePage = class extends React.Component {
                             <div className="col-md-7">
                                 <div className="hero__list">
                                     <div className="flex-row ml-auto">
-                                        <p className="mb-0 mr-3 text">Trusted by</p>
-                                        <div className="col">
-                                            <BaLogo fill={'white'} />
+                                        <div className="col-md-2 text-center">
+                                            <p className="mb-0 mr-3 text">Trusted by</p>
                                         </div>
-                                        <div className="col">
-                                            <DisneyLogo fill={'white'} />
+                                        <div className="col-md-2 text-center">
+                                            <BaLogo className="client-logo--large" fill={'white'} />
+                                            {/*<img src="/static/images/clients/ba.svg" alt="Blob Graphic" className="img-fluid"/>*/}
                                         </div>
-                                        <div className="col">
-                                            <UnileverLogo fill={'white'} width={50} height={50} />
+                                        <div className="col-md-2 text-center">
+                                            <DisneyLogo className="client-logo--small" fill={'white'} />
                                         </div>
-                                        <div className="col">
+                                        <div className="col-md-2 text-center">
+                                            <UnileverLogo fill={'white'} />
+                                        </div>
+                                        <div className="col-md-2 text-center">
                                             <NHSLogo fill={'white'} />
                                         </div>
-                                        <div className="col">
+                                        <div className="col-md-2">
                                             <DisneyLogo fill={'white'} />
                                         </div>
                                     </div>
