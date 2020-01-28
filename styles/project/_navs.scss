@@ -99,13 +99,25 @@
     top: 25%;
 }
 
+.content-nav{
+    &__item{
+        color:$white;
+        padding:10px 20px;
+        cursor:pointer;
+
+        &--active{
+            border-bottom:5px solid $brand-primary;
+        }
+    }
+}
+
 @include media-breakpoint-down(sm) {
     .brand {
         display: none;
     }
     .desktop-menu {
         display: none;
-        
+
         &__item {
             display: none;
         }
