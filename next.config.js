@@ -1,6 +1,8 @@
 const withSass = require('@zeit/next-sass');
 const withCSS = require('@zeit/next-css');
 const withOffline = require('next-offline');
+const withImages = require('next-images');
+
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
     enabled: process.env.BUNDLE_ANALYZE === 'true',
 });
@@ -59,11 +61,13 @@ const nextConfig = {
     },
 };
 
-module.exports = withOffline(
-    withSourceMaps(
-        withBundleAnalyzer(
-            withSass(
-                withCSS(nextConfig),
+module.exports = withImages(
+    withOffline(
+        withSourceMaps(
+            withBundleAnalyzer(
+                withSass(
+                    withCSS(nextConfig),
+                ),
             ),
         ),
     ),
