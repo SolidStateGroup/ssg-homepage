@@ -1,12 +1,6 @@
 import React, { PureComponent } from 'react';
-import 'mapbox-gl/dist/mapbox-gl.css';
-import Project from '../common/project';
+import { importCssPromise, importScriptPromise } from '../project/import-promise';
 
-let mapboxgl;
-if (typeof window !== 'undefined') {
-    mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
-    mapboxgl.accessToken = Project.mapbox;
-}
 
 const center = [-0.08365, 51.52562];
 
@@ -15,15 +9,22 @@ const Map = class extends PureComponent {
     static displayName = 'Map';
 
     componentDidMount() {
-        const map = new mapboxgl.Map({
-            container: 'the-map',
-            style: 'mapbox://styles/amoff111/ck5id9r4n0xk01inw3zpmxx4v',
-            center, // starting position [lng, lat]
-            zoom: 12, // starting zoom
+        Promise.all([
+            importScriptPromise('https://cdn.jsdelivr.net/npm/mapbox-gl@1.7.0/dist/mapbox-gl.js'),
+            importCssPromise('https://cdn.jsdelivr.net/npm/mapbox-gl@1.7.0/dist/mapbox-gl.css'),
+        ]).then(() => {
+            mapboxgl.accessToken = Project.mapbox;
+            const map = new mapboxgl.Map({
+                container: 'the-map',
+                style: 'mapbox://styles/amoff111/ck5id9r4n0xk01inw3zpmxx4v',
+                center, // starting position [lng, lat]
+                zoom: 12, // starting zoom
+            });
+            map.scrollZoom.disable();
+            new mapboxgl.Marker().setLngLat(center).addTo(map);
         });
-        map.scrollZoom.disable();
-        new mapboxgl.Marker().setLngLat(center).addTo(map);
     }
+
 
     render() {
         return (
