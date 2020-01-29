@@ -1,6 +1,7 @@
 import React from 'react';
 import cn from 'classnames';
 import propTypes from 'prop-types';
+import Link from 'next/link';
 import { ButtonSecondary } from './base/forms/Button';
 
 const _propTypes = {
@@ -28,22 +29,36 @@ const ProjectItem = global.ProjectItem = class extends React.PureComponent {
                         <div>
                             <p className="project__subtitle mb-0">{this.props.subTitle || 'Solid State Group'}</p>
                             <h2 className="project__title">{this.props.title}</h2>
-                            {this.props.clientBrand ? (<div className="mb-4 mt-3"><img src={this.props.clientBrand}
-                                                                 alt={this.props.clientName}/></div>) : (<ul className="text-list list-inline mb-4">
-                                <li className="text-list__item list-inline-item">Research</li>
-                                <li className="text-list__item list-inline-item">UX design</li>
-                                <li className="text-list__item list-inline-item">UI design</li>
-                                <li className="text-list__item list-inline-item">Mobile App Development</li>
-                                <li className="text-list__item list-inline-item">API Development</li>
-                            </ul>)}
+                            {this.props.clientBrand ? (
+                                <div className="mb-4 mt-3"><img
+                                  src={this.props.clientBrand}
+                                  alt={this.props.clientName}
+                                />
+                                </div>
+                            ) : (
+                                <ul className="text-list list-inline mb-4">
+                                    <li className="text-list__item list-inline-item">Research</li>
+                                    <li className="text-list__item list-inline-item">UX design</li>
+                                    <li className="text-list__item list-inline-item">UI design</li>
+                                    <li className="text-list__item list-inline-item">Mobile App Development</li>
+                                    <li className="text-list__item list-inline-item">API Development</li>
+                                </ul>
+                            )}
 
-                            <ButtonComponent className="hidden-sm-down">View project</ButtonComponent>
+
+                            <Link prefetch={false} href={this.props.href}>
+                                <ButtonComponent className="hidden-sm-down">View project</ButtonComponent>
+                            </Link>
                         </div>
                     </div>
                     <div className="col align-items-center justify-content-center hero__gfx-container text-center">
-                        <img src={this.props.projectImage || '/static/images/projects/tands-dashboard.svg'}
-                             alt="Tone and Sculpt" className="img-fluid"/>
-                        <ButtonComponent className="hidden-sm-up">View project</ButtonComponent>
+                        <img
+                          src={this.props.projectImage || '/static/images/projects/tands-dashboard.svg'}
+                          alt="Tone and Sculpt" className="img-fluid"
+                        />
+                        <Link prefetch={false} href={this.props.href}>
+                            <ButtonComponent className="hidden-sm-up">View project</ButtonComponent>
+                        </Link>
                     </div>
                 </div>
             </div>
