@@ -10,7 +10,10 @@ import UnileverLogo from '../components/ClientLogos/UnileverLogo';
 import NHSLogo from '../components/ClientLogos/NHSLogo';
 import VisaLogo from '../components/ClientLogos/VisaLogo';
 import DisneyLogo from '../components/ClientLogos/DisneyLogo';
+import ProjectItem from '../components/ProjectItem';
 import exampleMD from './example-blog-post';
+import ServiceItem from '../components/ServiceItem';
+import Card from '../components/Card';
 
 getStory('Typography')
     .addDecorator(withPaddedContainer)
@@ -65,6 +68,17 @@ getStory('ListItems')
     .add('default', () => <ListItem listItemText={'a list item'} listItemLink={'/'}/>)
     .add('underlined', () => <ListItemUnderlined listItemText={'an underlined list item'} listItemLink={'/'}/>);
 
+getStory('Cards')
+    .addDecorator(withPaddedContainer)
+    .add('default', () =>  <Card cardTitle={'Open Source'}/>);
+
+getStory('Services')
+    .addDecorator(withPaddedContainer)
+    .add('default', () =>      <ServiceItem
+        serviceListItem={<React.Fragment><ListItemUnderlined listItemText={'Tone & Sculpt'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Purely Capital'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Wazoku Idea App'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Unilever'} listItemLink={'/'}/></React.Fragment>}
+        subTitle={'UX Design'}
+        serviceImage={'/static/images/services/mobile-app-development.jpg'}
+        serviceDescription={'From our London office, we\'ve been working with startups and corporations for over 15 years, building cross-platform, enterprise-grade, entrepreneurial websites and apps for digital transformation projects.'}/>);
 
 getStory('ClientLogos')
     .addDecorator(withPaddedContainer)
