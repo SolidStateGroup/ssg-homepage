@@ -23,11 +23,12 @@ const ServicesPage = class extends React.Component {
     render = () => {
         return (
           <Page title={Constants.titles.services} canonical="services">
-              <div className="hero hero--half d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
+              <div className="hero hero--three-quarters d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                   <Header/>
                   <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
                       <div className="flex-1 justify-content-start p-5">
                           <div className="offset-lg-3">
+                              <h5 className="title--light mb-0">Our Services</h5>
                               <h1 className="hero__title mb-4">We build successful digital businesses</h1>
                               <p className="text-light">When we moved into our Old Street office, there were only a handful of tech startups in the neighbourhood. Fifteen years later, we’re still going strong, working with startups and corporations alike, swiftly creating and transforming systems that are built to last.</p>
                           </div>
@@ -42,23 +43,24 @@ const ServicesPage = class extends React.Component {
                       <p className="text-light">We work with a wide range of tools, with a focus on open source technologies.</p>
                   </div>
                   <div className="container">
-                      <div className="row mt-5 mb-5">
+                      <div className="flex-row mt-5 mb-5">
                           <div className="col-md-2 col-6 text-center">
-                              <img src="/static/images/tech/react.svg" alt="react" className="img-fluid"/>
+                              <img src="/static/images/tech-icons/react.svg" alt="react" className="img-fluid"/>
                           </div>
                           <div className="col-md-2 col-6 text-center">
-                              <img src="/static/images/tech/react.svg" alt="react" className="img-fluid"/>
+                              <img src="/static/images/tech-icons/node.svg" alt="node js" className="img-fluid"/>
                           </div>
                           <div className="col-md-2 col-6 text-center">
-                              <img src="/static/images/tech/react.svg" alt="react" className="img-fluid"/>
+                              <img src="/static/images/tech-icons/docker.svg" alt="docker" className="img-fluid"/>
                           </div>
                           <div className="col-md-2 col-6 text-center">
-                              <img src="/static/images/tech/react.svg" alt="react" className="img-fluid"/>
-                          </div>
-                          <div className="col-md-2 col-6 text-center">                              <img src="/static/images/tech/react.svg" alt="react" className="img-fluid"/>
+                              <img src="/static/images/tech-icons/java.svg" alt="java" className="img-fluid"/>
                           </div>
                           <div className="col-md-2 col-6 text-center">
-                              <img src="/static/images/tech/react.svg" alt="react" className="img-fluid"/>
+                              <img src="/static/images/tech-icons/postgres.svg" alt="postgres sql" className="img-fluid"/>
+                          </div>
+                          <div className="col-md-2 col-6 text-center">
+                              <img src="/static/images/tech-icons/aws.svg" alt="amazon web services" className="img-fluid"/>
                           </div>
                       </div>
                   </div>
@@ -66,9 +68,17 @@ const ServicesPage = class extends React.Component {
               <div className="section--no-padding">
                   <h2 className="section__title section__title--dark text-center mt-5">Our Services</h2>
                   <div className="container-fluid align-self-center">
-                      <ServiceItem subTitle={'UX Design'} serviceDescription={'From our London office, we\'ve been working with startups and corporations for over 15 years, building cross-platform, enterprise-grade, entrepreneurial websites and apps for digital transformation projects.'}/>
-                      <ServiceItem serviceImage={'/static/images/services/web-development.jpg'} className="flex-row-reverse" subTitle={'Web Application Development'} serviceDescription={'From our London office, we\'ve been working with startups and corporations for over 15 years, building cross-platform, enterprise-grade, entrepreneurial websites and apps for digital transformation projects.'}/>
-                      <ServiceItem serviceImage={'/static/images/services/mobile-app-development.jpg'} subTitle={'Mobile app development'} serviceDescription={'A React Native app is a real mobile app. Unlike web app wrappers, React Native uses native platform libraries, creating a completely native experience for your users.'}/>
+                      <ServiceItem
+                          serviceListItem={<React.Fragment><ListItemUnderlined listItemText={'Tone & Sculpt'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Purely Capital'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Wazoku Idea App'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Unilever'} listItemLink={'/'}/></React.Fragment>}
+                          subTitle={'UX Design'}
+                          serviceDescription={'From our London office, we\'ve been working with startups and corporations for over 15 years, building cross-platform, enterprise-grade, entrepreneurial websites and apps for digital transformation projects.'}/>
+                      <ServiceItem serviceImage={'/static/images/services/web-development.jpg'}
+                                   className="flex-row-reverse" subTitle={'Web Application Development'}
+                                   serviceListItem={<React.Fragment><ListItemUnderlined listItemText={'Purely Capital'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Racing Post'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Ladbrokes Coral'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Publicate'} listItemLink={'/'}/></React.Fragment>}
+                                   serviceDescription={'From our London office, we\'ve been working with startups and corporations for over 15 years, building cross-platform, enterprise-grade, entrepreneurial websites and apps for digital transformation projects.'}/>
+                      <ServiceItem serviceImage={'/static/images/services/mobile-app-development.jpg'}
+                                   subTitle={'Mobile app development'}
+                                   serviceDescription={'A React Native app is a real mobile app. Unlike web app wrappers, React Native uses native platform libraries, creating a completely native experience for your users.'}/>
                   </div>
               </div>
 

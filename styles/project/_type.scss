@@ -24,6 +24,9 @@ h2 > span {
     &--regular {
         font-family: Ilisarniq-Regular, sans-serif;
     }
+    &--light {
+        font-family: Ilisarniq-Light, sans-serif;
+    }
     &--line-after {
         &:after {
             content: "";

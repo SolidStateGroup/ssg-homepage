@@ -28,13 +28,16 @@ const ServiceItem = global.ServiceItem = class extends React.PureComponent {
                 <div className="col-md-5 offset-md-1 pr-5">
                     <h3 className="title--line-after">{this.props.subTitle || 'Web Application Development'}</h3>
                     <p>{this.props.serviceDescription || 'We work with you to iterate on the various creative deliverables until you achieve your vision.'}</p>
-                    <h6 className="mt-4 text-grey mb0">Examples</h6>
-                    <ul className="lined-list list-unstyled flex-row">
-                        <ListItemUnderlined listItemText={'Systems integration'} listItemLink={'/'}/>
-                        <ListItemUnderlined listItemText={'Systems integration'} listItemLink={'/'}/>
-                        <ListItemUnderlined listItemText={'Systems integration'} listItemLink={'/'}/>
-                        <ListItemUnderlined listItemText={'Systems integration'} listItemLink={'/'}/>
-                    </ul>
+                    {this.props.serviceListItem ? (
+                        <div>
+                            <h6 className="mt-4 text-grey mb0">Examples</h6>
+                            <ul className="lined-list list-unstyled flex-row">
+                                {this.props.serviceListItem}
+                            </ul>
+                        </div>
+                    ) : (
+                       null
+                    )}
                 </div>
                 <div className="col-md-6 pr-0 pl-0">
                     <img src={this.props.serviceImage || '/static/images/services/ux-design.jpg'}
