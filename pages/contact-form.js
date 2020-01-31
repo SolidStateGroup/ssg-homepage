@@ -41,28 +41,28 @@ const ContactFormPage = class extends React.Component {
                                     <p className="text-light mt-5">1. What can we help you with?</p>
                                     <div className="row">
                                         <div className="col-3">
-                                            <HexagonButton onClick={this.toggle}
-                                                           HexagonButtonActive={`${this.state.buttonPressed ? true : ''}`}
+                                            <ButtonHexagon onClick={this.toggle}
+                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
                                                            buttonText={'Strategy'}
                                                            class={`hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
                                         </div>
 
                                         <div className="col-3">
-                                            <HexagonButton onClick={this.toggle}
-                                                           HexagonButtonActive={`${this.state.buttonPressed ? true : ''}`}
+                                            <ButtonHexagon onClick={this.toggle}
+                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
                                                            buttonText={'Design'}
                                                            class={`hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
                                         </div>
                                         <div className="col-3">
-                                            <HexagonButton onClick={this.toggle}
-                                                           HexagonButtonActive={`${this.state.buttonPressed ? true : ''}`}
+                                            <ButtonHexagon onClick={this.toggle}
+                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
                                                            buttonText={'Mobile App Development'}
                                                            class={`hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
                                         </div>
 
                                         <div className="col-3">
-                                            <HexagonButton onClick={this.toggle}
-                                                           HexagonButtonActive={`${this.state.buttonPressed ? true : ''}`}
+                                            <ButtonHexagon onClick={this.toggle}
+                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
                                                            buttonText={'Web Development'}
                                                            class={`hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
                                         </div>
@@ -85,13 +85,16 @@ const ContactFormPage = class extends React.Component {
 
                                     <section className="pb-5">
                                         <p className="text-light mt-5">3. Contact Details</p>
-                                        <Input InputLabel={'Email address *'} placeholder="name@example.com"
+                                        <Input InputLabel={'Email address *'} forLabel="Email address" placeholder="name@example.com"
+                                               formID={'email address'}
                                                inputClassName="form-control form__input mb-3"/>
 
-                                        <Input InputLabel={'Email address *'} placeholder="name@example.com"
+                                        <Input InputLabel={'Email address *'} forLabel="Email address" placeholder="name@example.com"
+                                               formID={'email address'}
                                                inputClassName="form-control form__input mb-3"/>
 
-                                        <Input InputLabel={'Email address *'} placeholder="name@example.com"
+                                        <Input InputLabel={'Email address *'} forLabel="Email address" placeholder="name@example.com"
+                                               formID={'email address'}
                                                inputClassName="form-control form__input mb-3"/>
 
                                         <ButtonPrimary className="mt-3">Submit</ButtonPrimary>

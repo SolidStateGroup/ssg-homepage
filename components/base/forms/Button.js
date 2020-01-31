@@ -19,6 +19,7 @@ const Button = global.Button = class extends React.PureComponent {
             <button
               ref="button"
               type="button"
+              name="button"
               {...rest}
               onMouseUp={this.onMouseUp}
               className={cn({
@@ -110,8 +111,8 @@ export const ButtonText = global.ButtonText = class extends React.PureComponent 
     }
 };
 
-export const HexagonButton = global.HexagonButton = class extends React.PureComponent {
-    static displayName = 'HexagonButton';
+export const ButtonHexagon = global.ButtonHexagon = class extends React.PureComponent {
+    static displayName = 'ButtonHexagon';
 
     static propTypes = _propTypes;
 
@@ -124,7 +125,7 @@ export const HexagonButton = global.HexagonButton = class extends React.PureComp
                     className={cn(props.className, 'hexagon')}
                 >
 
-                    {this.props.HexagonButtonActive ? (
+                    {this.props.ButtonHexagonActive ? (
                         <svg width={width || '100%'} height={height || 'auto%'} viewBox="0 0 137 119" {...props}>
                             <title>{"design"}</title>
                             <g fill="none" fillRule="evenodd">

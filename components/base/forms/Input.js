@@ -65,7 +65,7 @@ const Input = class extends React.Component {
             >
 
                 {this.props.InputLabel ? (
-                    <label class="form__label" for="exampleFormControlInput">{this.props.InputLabel}</label>
+                    <label class="form__label" for={this.props.forLabel}>{this.props.InputLabel}</label>
                 ) : (
                     null
                 )}
@@ -78,6 +78,7 @@ const Input = class extends React.Component {
                     onBlur={this.onBlur}
                     value={this.props.value}
                     className={inputClassName}
+                    id={this.props.formID}
                 />
             </div>
         );

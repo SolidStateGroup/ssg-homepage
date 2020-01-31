@@ -35,7 +35,14 @@ getStory('Buttons')
     .add('primary', () => <ButtonPrimary>A Button</ButtonPrimary>)
     .add('secondary', () => <ButtonSecondary>A Button</ButtonSecondary>)
     .add('tertiary', () => <ButtonTertiary>A Button</ButtonTertiary>)
-    .add('text', () => <ButtonText buttonText={'Explore our services'}/>);
+    .add('text', () => <ButtonText buttonText={'Explore our services'}/>)
+    .add('hexagon', () => <React.Fragment><div class="col-md-3"><ButtonHexagon buttonText={'Strategy'}/></div></React.Fragment>);
+
+getStory('Forms')
+    .addDecorator(withPaddedContainer)
+    .add('input', () =>      <React.Fragment><div class="hero p-5"> <Input InputLabel={'Email address *'} forLabel="Email address" placeholder="name@example.com"
+                                       formID={'email address'}
+                                       inputClassName="form-control form__input mb-3"/></div></React.Fragment>);
 
 
 getStory('Blog')
