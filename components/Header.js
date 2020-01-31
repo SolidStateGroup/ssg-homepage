@@ -48,7 +48,7 @@ class Header extends PureComponent {
                     <nav style={{ flex: 1 }} className={`navbar navbar-expand-lg ${this.state.menuOpen ? 'nav-open' : ''}`}>
                         <Link href="/">
                             <a className="nav-item__link">
-                                <img src="/static/images/ssg-logotype-white.png" className="brand" alt="SSG"/>
+                                <img src="/static/images/ssg-logotype-white.svg" className="brand" alt="SSG"/>
                             </a>
                         </Link>
                         <Link href="/">

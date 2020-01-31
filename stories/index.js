@@ -70,7 +70,8 @@ getStory('ListItems')
 
 getStory('Cards')
     .addDecorator(withPaddedContainer)
-    .add('default', () =>  <Card cardTitle={'Open Source'}/>);
+    .add('default', () => <Card cardTechnology={'JavaScript'} cardTechnologyStars={'120'} cardTechnologyForked={'14'}
+                                techColourClass={'card__technology--yellow'} cardTitle={'rio'}/>);
 
 getStory('Services')
     .addDecorator(withPaddedContainer)

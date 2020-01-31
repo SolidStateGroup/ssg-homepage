@@ -23,7 +23,7 @@ const FeaturedProjects = global.FeaturedProjects = class extends React.PureCompo
                   <h2 className="section__title section__title--dark mb-5 mt-5">Featured Projects</h2>
               </div>
               <div className="project--featured project--t-and-s">
-                  <ProjectItem ButtonComponent={ButtonSecondary} projectImage={'/static/images/projects/tands-dashboard.svg'} subTitle="iOS and Android Mobile App" title="Rebooting female fitness for Tone and Sculpt"/>
+                  <ProjectItem ButtonComponent={ButtonSecondary} projectImage={'/static/images/projects/tands-dashboard.png'} subTitle="iOS and Android Mobile App" title="Rebooting female fitness for Tone and Sculpt"/>
               </div>
               <div className="project--featured project--purely hidden">
                   <ProjectItem />

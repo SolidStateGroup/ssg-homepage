@@ -34,7 +34,9 @@ const ServicesPage = class extends React.Component {
                           </div>
                       </div>
                       <div
-                          className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down"/>
+                          className="flex-1 align-items-center justify-content-center hero__blob-container hidden-sm-down">
+                          <img src="/static/images/hero-blob.svg" alt="hero-blob" className="img-fluid"/>
+                      </div>
                   </div>
               </div>
               <div className="section section--dark">
@@ -53,7 +55,7 @@ const ServicesPage = class extends React.Component {
                           <div className="col-md-2 col-6 text-center">
                               <img src="/static/images/tech-icons/docker.svg" alt="docker" className="img-fluid"/>
                           </div>
-                          <div className="col-md-2 col-6 text-center">
+                          <div className="col-md-2 col-6 text-center mb-md-0 mb-4 mt-4">
                               <img src="/static/images/tech-icons/java.svg" alt="java" className="img-fluid"/>
                           </div>
                           <div className="col-md-2 col-6 text-center">
@@ -93,16 +95,17 @@ const ServicesPage = class extends React.Component {
                               <p className="text-white">Helping and even investing in startups</p>
                           </div>
                           <div className="col-md-6">
-                              <h4 className="text-white">We start small</h4>
-                              <p className="text-white">Helping and even investing in startups</p>
+                              <h4 className="text-white">We work fast</h4>
+                              <p className="text-white">Rapid prototyping with agile methodology
+                              </p>
                           </div>
                           <div className="col-md-6">
-                              <h4 className="text-white">We start small</h4>
-                              <p className="text-white">Helping and even investing in startups</p>
+                              <h4 className="text-white">We think big</h4>
+                              <p className="text-white">Driving innovation for corporate clients</p>
                           </div>
                           <div className="col-md-6">
-                              <h4 className="text-white">We start small</h4>
-                              <p className="text-white">Helping and even investing in startups</p>
+                              <h4 className="text-white">We stay true</h4>
+                              <p className="text-white">Delivering projects transparently, end to end</p>
                           </div>
                       </div>
                   </div>
@@ -110,17 +113,17 @@ const ServicesPage = class extends React.Component {
 
               <div className="section">
                   <div className="container">
-                      <h2 className="section__title--dark">We absolutely <span className="text-primary">love</span> open source</h2>
+                      <h2 className="section__title--dark">We <span className="text-primary">love</span> open source</h2>
                       <p>We work with a wide range of tools, with a focus on open source technologies.</p>
                       <div className="row pt-5">
-                          <div className="col-md-4">
-                              <Card cardTitle={'Open Source'}/>
+                          <div className="col-md-4 mb-md-0 mb-4">
+                              <Card cardTechnology={'JavaScript'} cardTechnologyStars={'120'} cardTechnologyForked={'14'} techColourClass={'card__technology--yellow'} cardTitle={'rio'}/>
+                          </div>
+                          <div className="col-md-4 mb-md-0 mb-4">
+                              <Card cardTechnology={'JavaScript'} cardTechnologyStars={'0'} cardTechnologyForked={'1'} techColourClass={'card__technology--yellow'} cardTitle={'bullet-train-aio'} cardText={'Bullet Train All In One Project'}/>
                           </div>
                           <div className="col-md-4">
-                              <Card cardTitle={'Open Source'}/>
-                          </div>
-                          <div className="col-md-4">
-                              <Card cardTitle={'Open Source'}/>
+                              <Card cardTechnology={'Java'} cardTechnologyStars={'6'} cardTechnologyForked={'1'} techColourClass={'card__technology--brown'} cardTitle={'patientview'} cardText={'PatientView'}/>
                           </div>
                       </div>
                   </div>

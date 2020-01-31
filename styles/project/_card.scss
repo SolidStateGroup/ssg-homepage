@@ -10,4 +10,46 @@
     .card-text {
         color: white;
     }
+    &__footer {
+        font-size: 14px;
+        img {
+            width: 14px;
+        }
+    }
+    &__technology {
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            border-radius: 4.5px;
+            background-color: #f1e05a;
+            margin-right: .5em;
+        }
+        &--red {
+            &:before {
+                background-color: #e34c26;
+            }
+        }
+        &--blue {
+            &:before {
+                background-color: #438eff;
+            }
+        }
+        &--brown {
+            &:before {
+                background-color: #b07219;
+            }
+        }
+        &--dark-green {
+            &:before {
+                background-color: #384d54;
+            }
+        }
+        &--yellow {
+            &:before {
+                background-color: #f1e05a;
+            }
+        }
+    }
 }

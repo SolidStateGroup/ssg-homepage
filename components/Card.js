@@ -27,15 +27,17 @@ const Card = global.Card = class extends React.PureComponent {
                     <p className="card-text">
                         {this.props.cardText || 'An open source library allowing you to create an internet connected LED wall.'}</p>
                 </div>
-                <div className="row pl-4 pr-4">
-                    <div className="col-md-4">
-                        <p className="text-white">C#</p>
+                <div className="row pl-4 pr-4 card__footer">
+                    <div className="col-md-12">
+                        <p className={cn('text-white card__technology', this.props.techColourClass)}>{this.props.cardTechnology || 'JavaScript'}</p>
                     </div>
-                    <div className="col-md-4">
-                        <p className="text-white">119</p>
+                    <div className="col-md-6">
+                        <img src="/static/images/svg-icons/star-thin-icon.svg" />
+                        <p className="d-inline-block text-white ml-2">{this.props.cardTechnologyStars || '120'}</p>
                     </div>
-                    <div className="col-md-4">
-                        <p className="text-white">14</p>
+                    <div className="col-md-6">
+                        <img src="/static/images/svg-icons/git-branch-icon.svg" />
+                        <p className="d-inline-block text-white ml-2">{this.props.cardTechnologyForked || '20'}</p>
                     </div>
                 </div>
             </div>
