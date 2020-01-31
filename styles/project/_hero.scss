@@ -6,6 +6,10 @@
 
     &__title{
         font-size:3em;
+        &--hidden {
+            opacity: 0;
+            display: none;
+        }
     }
 
     &__gfx-container{

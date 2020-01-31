@@ -10,6 +10,7 @@ import DisneyLogo from '../components/ClientLogos/DisneyLogo';
 import FeaturedProjects from '../components/FeaturedProjects';
 import {ListItemUnderlined} from '../components/ListItem';
 import {ButtonPrimary, ButtonText} from '../components/base/forms/Button';
+import { gsap } from 'gsap';
 
 const HomePage = class extends React.Component {
     static displayName = 'HomePage';
@@ -17,6 +18,18 @@ const HomePage = class extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {};
+        // reference to the DOM node
+        this.myElement = null;
+        // reference to the animation
+        this.myTween = null;
+    }
+
+    componentDidMount(){
+        // use the node ref to create the animation
+        this.myTween =  gsap.to(this.myElement, { duration: 1, display: 'block', opacity: 1,  y: 0, ease: 'power1' });
+
+        //gsap.to('.brand', { duration: 2, opacity: 1, display: 'block', y: 0, ease: 'power1',});
+        //gsap.to('.nav-item', { duration: .15, opacity: 1, display: 'block', ease: 'power2', stagger: 0.25 });
     }
 
     render = () => {
@@ -26,9 +39,9 @@ const HomePage = class extends React.Component {
                     <Header/>
                     <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
                         <div className="flex-1 justify-content-start p-5">
-                            <div className="offset-lg-3">
+                            <div className="offset-lg-3 hidden translatey-offset-down" ref={div => this.myElement = div}>
                                 <h1 className="hero__title mb-4">We design and build amazing digital products</h1>
-                                <ButtonPrimary>View latest projects</ButtonPrimary>
+                                <ButtonPrimary className="">View latest projects</ButtonPrimary>
                             </div>
                         </div>
                         <div className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down">
