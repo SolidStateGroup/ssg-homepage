@@ -1,5 +1,6 @@
 import propTypes from 'prop-types';
 import FooterLegal from '../components/FooterLegal';
+import Link from 'next/link';
 import Map from '../components/Map'
 const Footer = class extends React.Component {
     static displayName = 'Footer';
@@ -35,7 +36,9 @@ const Footer = class extends React.Component {
                                   <dt className="light">Email us at</dt>
                                   <dd className="bold">projects@solidstategroup.com</dd>
                               </dl>
-                              <ButtonPrimary>Get in touch</ButtonPrimary>
+                              <Link prefetch={false} href="/contact-form">
+                                  <ButtonPrimary>Send us a brief</ButtonPrimary>
+                              </Link>
                           </div>
                       </div>
                   </div>

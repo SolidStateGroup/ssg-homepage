@@ -1,0 +1,23 @@
+.form {
+  //&__item {
+  //  position: relative;
+  //  display: flex;
+  //  flex-direction: column;
+  //}
+  &__label {
+    color: $brand-tropical-violet;
+    display: block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 0 0 0.5rem;
+  }
+  &__input {
+    border-radius: 5px;
+    height: 3rem;
+    padding: 1rem;
+    width: 100%;
+    border: 0;
+    font-weight: bold;
+    color: $brand-primary;
+  }
+}

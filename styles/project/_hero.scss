@@ -1,7 +1,6 @@
 .hero{
     background:$brandNavy url("/static/images/vector-cubes-bg.svg") center center no-repeat;
     overflow: visible;
-    height:100vh;
     width:100%;
     color:#fff;
 
@@ -17,9 +16,12 @@
     &__blob-container{
         background:url("/static/images/dot-texture.svg") center right no-repeat;
         background-size:188px;
+        position: relative;
         height:100%;
     }
-
+    &--full {
+        height:100vh;
+    }
 
 
     &--half{

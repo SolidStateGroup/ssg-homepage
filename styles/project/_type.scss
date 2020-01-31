@@ -76,3 +76,11 @@ p{
 .text-primary{
     color:$brand-primary!important;
 }
+
+a {
+    color: $brand-primary;
+    transition: all .25s;
+    &:hover {
+        color: lighten($brand-primary, 10);
+    }
+}

@@ -22,7 +22,7 @@ const HomePage = class extends React.Component {
     render = () => {
         return (
             <Page title={Constants.titles.home} canonical="">
-                <div className="hero d-flex flex-column mx-0 p-4">
+                <div className="hero hero--full d-flex flex-column mx-0 p-4">
                     <Header/>
                     <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
                         <div className="flex-1 justify-content-start p-5">

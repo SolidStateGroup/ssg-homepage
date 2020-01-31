@@ -61,15 +61,23 @@ const Input = class extends React.Component {
 
         return (
             <div
-              className={className}
+                className={className}
             >
+
+                {this.props.InputLabel ? (
+                    <label class="form__label" for="exampleFormControlInput">{this.props.InputLabel}</label>
+                ) : (
+                    null
+                )}
+
+
                 <input
-                  ref={c => this.input = c}
-                  {...rest} onFocus={this.onFocus}
-                  onKeyDown={this.onKeyDown}
-                  onBlur={this.onBlur}
-                  value={this.props.value}
-                  className={inputClassName}
+                    ref={c => this.input = c}
+                    {...rest} onFocus={this.onFocus}
+                    onKeyDown={this.onKeyDown}
+                    onBlur={this.onBlur}
+                    value={this.props.value}
+                    className={inputClassName}
                 />
             </div>
         );
