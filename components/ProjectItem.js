@@ -24,6 +24,11 @@ const ProjectItem = global.ProjectItem = class extends React.PureComponent {
         const { children, ButtonComponent, ...rest } = this.props;
         return (
             <div className={cn(this.props.className, ' project__item')}>
+                {this.props.projectNumber ? (
+                    <h1 className="project__number">{this.props.projectNumber}</h1>
+                ) : (
+                   null
+                )}
                 <div className="flex-1 align-self-stretch row flex-row">
                     <div className="col justify-content-start p-5">
                         <div>
@@ -51,7 +56,7 @@ const ProjectItem = global.ProjectItem = class extends React.PureComponent {
                             </Link>
                         </div>
                     </div>
-                    <div className="col align-items-center justify-content-center hero__gfx-container text-center">
+                    <div className="col align-items-center justify-content-center text-center">
                         <img
                           src={this.props.projectImage || '/static/images/projects/tands-dashboard.svg'}
                           alt="Tone and Sculpt" className="img-fluid"

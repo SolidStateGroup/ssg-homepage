@@ -26,7 +26,7 @@ const HomePage = class extends React.Component {
 
     componentDidMount(){
         // use the node ref to create the animation
-        this.myTween =  gsap.to(this.myElement, { duration: 1, display: 'block', opacity: 1,  y: 0, ease: 'power1' });
+        // this.myTween =  gsap.to(this.myElement, { duration: 1, display: 'block', opacity: 1,  y: 0, ease: 'power1' });
 
         //gsap.to('.brand', { duration: 2, opacity: 1, display: 'block', y: 0, ease: 'power1',});
         //gsap.to('.nav-item', { duration: .15, opacity: 1, display: 'block', ease: 'power2', stagger: 0.25 });
@@ -39,7 +39,7 @@ const HomePage = class extends React.Component {
                     <Header/>
                     <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
                         <div className="flex-1 justify-content-start p-5">
-                            <div className="offset-lg-3 hidden translatey-offset-down" ref={div => this.myElement = div}>
+                            <div className="offset-lg-3 translatey-offset-down" ref={div => this.myElement = div}>
                                 <h1 className="hero__title mb-4">We design and build amazing digital products</h1>
                                 <ButtonPrimary className="">View latest projects</ButtonPrimary>
                             </div>

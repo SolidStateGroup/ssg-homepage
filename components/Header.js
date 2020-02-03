@@ -89,7 +89,7 @@ class Header extends PureComponent {
                                 <li className="nav-item">
                                     <a onClick={this.toggle} href="#">
                                         {this.state.menuOpen ? (
-                                            <img alt="Close Menu" src={require('../static/images/svg-icons/menu-icon.svg')} className="mobile-menu__icon mobile-menu__icon--close" />
+                                            <img alt="Close Menu" src={require('../static/images/svg-icons/close-icon.svg')} className="mobile-menu__icon mobile-menu__icon--close" />
                                         ) : (
                                             <img alt="Menu" src={require('../static/images/svg-icons/menu-icon.svg')} className="mobile-menu__icon" />
                                         )}

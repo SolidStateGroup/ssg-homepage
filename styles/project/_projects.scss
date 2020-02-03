@@ -1,40 +1,81 @@
 .project{
     &--featured{
-        background:linear-gradient(lighten($brand-primary, 5),$brand-primary);
-        //border-radius: 50px 0 0 50px;
         color:$white;
         box-shadow: -5px 5px 100px 0 rgba(0,0,0,0.22);
         border-radius: 100px 0 0 100px;
-
+        position: relative;
+        min-height: 650px;
+        transition: all .5s ease-out;
+        //opacity: 0;
         .project__item{
-            max-height: none;
+        
         }
 
         .project__subtitle{
             color:$white;
         }
+        &.active {
+            //opacity: 1;
+        }
     }
 
     &--t-and-s{
-        background:linear-gradient(#49B2D8,#71D2EA);
+        background-color: #5CC2E1;
     }
 
     &--purely{
-        background:linear-gradient(#D02D55,lighten(#D02D55, 20));
+        background-color: #25153C;
     }
 
     &--ba{
-        background:linear-gradient(#2E5C99,lighten(#2E5C99, 20));
+        background-color: #2E5C99;
+    }
+    &--hailie {
+        background-color: #FF715A;
     }
 
     &__title{
         font-size:3rem;
+        //opacity: 0;
+        //transform: translateX(-20px);
     }
 
     &__item{
-        max-height: 550px;
+    }
+    &__item-featured{
+        display: flex;
+        min-height: 650px;
+   
+    }
+    &__number {
+        opacity: 0.15;
+        font-family: Ilisarniq-Bold, 'sans-serif';
+        font-size: 500px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: right;
+        position: absolute;
+        top: -.25em;
+        right: -.05em;
+        
     }
 }
+
+.project-pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    position: absolute;
+    left: 4em;
+    bottom: 4em;
+    &__item {
+        button {
+            background-color: transparent;
+        }
+    }
+}
+
+
 
 
 @include media-breakpoint-down(sm) {
@@ -42,4 +83,16 @@
         min-height:100vh;
         border-radius: 0;
     }
+    
+    
+    .project-pagination {
+        position: relative;
+        justify-content: center;
+        bottom: 9em;
+        left: 0;
+    }
+    
+    
+    
+    
 }

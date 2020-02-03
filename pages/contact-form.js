@@ -75,7 +75,7 @@ const ContactFormPage = class extends React.Component {
                                         <p className="text-light mt-5">2. Project Information</p>
 
                                         <div className="form-group">
-                                            <label class="form__label" for="projectInfoTextarea">Tell us a little bit
+                                            <label className="form__label" for="projectInfoTextarea">Tell us a little bit
                                                 about
                                                 your project or how we can help...</label>
                                             <textarea className="form-control" id="projectInfoTextarea" rows="3"/>
