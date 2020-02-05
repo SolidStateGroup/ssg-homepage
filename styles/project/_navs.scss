@@ -4,17 +4,15 @@
 
 .navbar-nav {
     flex-direction: row;
-    //.nav-item {
-    //    opacity: 0;
-    //    display: none;
-    //}
 }
 
 .nav-item{
-    &__link{
-        color:#fff;
+    &__link {
+        color: #fff;
+        
         &--circle {
             transition: all .25s ease-out;
+            
             &::before {
                 content: '';
                 display: inline-block;
@@ -26,7 +24,20 @@
                 margin-left: 10px;
                 transition: all .25s ease-out;
             }
+            
             &:hover {
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 4px;
+                    margin-right: 10px;
+                    background-color: $brand-primary;
+                    border: 1px solid $brand-primary;
+                }
+            }
+            &.active {
                 &::before {
                     content: '';
                     display: inline-block;

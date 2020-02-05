@@ -64,16 +64,12 @@ const FeaturedProjects = global.FeaturedProjects = class extends React.PureCompo
     static propTypes = _propTypes;
 
     toggle = (index) => {
-
-        this.setState({index});
-
+        this.setState({index, prevIndex:this.state.index});
         const buttonPressed = !this.state.buttonPressed;
         if (buttonPressed) {
             // fade in anim
-            // gsap.to('.project__title', { duration: .5, x: 20, opacity: 1,  ease: 'power3',});
         } else {
             // fade out anim
-            // gsap.from('.project__title', { duration: .5, x: -20, ease: 'power3',});
         }
         this.setState({buttonPressed});
     }
@@ -88,46 +84,59 @@ const FeaturedProjects = global.FeaturedProjects = class extends React.PureCompo
     render() {
         const { children, ...rest } = this.props;
 
-        const item = projects[this.state.index]
+        const activeItem = projects[this.state.index];
+        const prevItem = !isNaN(this.state.prevIndex) &&  projects[this.state.prevIndex];
+        const items = [activeItem];
+        if (prevItem) {
+            items.push(prevItem);
+        }
 
         return (
-          <div className={cn(this.props.className,"featured-projects")}>
-              <div className="container-fluid">
-                  <h2 className="section__title section__title--dark mb-5 mt-5">Featured Projects</h2>
-              </div>
-              <div className={cn('project--featured', item.className, {active: this.state.index})}>
-                  <ProjectItem projectNumber={item.projectNumber} className="project__item-featured" ButtonComponent={item.Button} projectImage={item.projectImage}
-                               subTitle={item.subTitle} title={item.title}/>
-              </div>
+            <div className={cn(this.props.className,"featured-projects")}>
+                <div className="container-fluid">
+                    <h2 className="section__title section__title--dark mb-5 mt-5">Featured Projects</h2>
+                </div>
 
-              <nav aria-label="Project page navigation">
-                  <ul className="project-pagination">
-                      {projects.map((p,i)=>(
-                          <li className={cn("project-pagination__item", {active: i === this.state.index})}>
-                              <button onClick={()=>this.toggle(i)} className="btn--transparent">
+                {
+                    [items.map((item)=>(
+                        <div className={cn('project--featured', item.className, {active:activeItem === item})}>
+                            <ProjectItem
+                                key={item.title}
+                                projectNumber={item.projectNumber} className={cn("project__item-featured")} ButtonComponent={item.Button} projectImage={item.projectImage}
+                                subTitle={item.subTitle} title={item.title}/>
+                        </div>
 
-                                  <svg width={16} height={16} viewBox="0 0 16 16">
-                                      <title>{"Oval Copy 4"}</title>
-                                      <circle
-                                          cx={7}
-                                          cy={109}
-                                          r={7}
-                                          transform="rotate(90 58 59)"
-                                          stroke="#FFF"
-                                          strokeWidth={2}
-                                          fill="none"
-                                          fillRule="evenodd"
-                                      />
-                                  </svg>
+                    ))]
+                }
 
-                                      {/*<img src='/static/images/svg-icons/pagination-icon.svg' />*/}
+                <nav aria-label="Project page navigation">
+                    <ul className="project-pagination">
+                        {projects.map((p,i)=>(
+                            <li className={cn("project-pagination__item", {active: i === this.state.index})}>
+                                <button onClick={()=>this.toggle(i)} className="btn--transparent">
 
-                              </button>
-                          </li>
-                      ))}
-                  </ul>
-              </nav>
-          </div>
+                                    <svg className="pagination-circle-icon" width={16} height={16} viewBox="0 0 16 16">
+                                        <title>{"Oval Copy 4"}</title>
+                                        <circle
+                                            cx={7}
+                                            cy={109}
+                                            r={7}
+                                            transform="rotate(90 58 59)"
+                                            stroke="#FFF"
+                                            strokeWidth={2}
+                                            fill="none"
+                                            fillRule="evenodd"
+                                        />
+                                    </svg>
+
+                                    {/*<img src='/static/images/svg-icons/pagination-icon.svg' />*/}
+
+                                </button>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+            </div>
         );
     }
 };

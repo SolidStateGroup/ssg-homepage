@@ -27,7 +27,6 @@ const HomePage = class extends React.Component {
     componentDidMount(){
         // use the node ref to create the animation
         // this.myTween =  gsap.to(this.myElement, { duration: 1, display: 'block', opacity: 1,  y: 0, ease: 'power1' });
-
         //gsap.to('.brand', { duration: 2, opacity: 1, display: 'block', y: 0, ease: 'power1',});
         //gsap.to('.nav-item', { duration: .15, opacity: 1, display: 'block', ease: 'power2', stagger: 0.25 });
     }

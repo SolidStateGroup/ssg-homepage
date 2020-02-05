@@ -3,22 +3,27 @@
         color:$white;
         box-shadow: -5px 5px 100px 0 rgba(0,0,0,0.22);
         border-radius: 100px 0 0 100px;
-        position: relative;
         min-height: 650px;
         transition: all .5s ease-out;
-        //opacity: 0;
-        .project__item{
-        
-        }
-
+        opacity: 0;
+        pointer-events: none;
+        position: relative;
+        display: none;
         .project__subtitle{
             color:$white;
         }
+        .project__title {
+            opacity: 0;
+        }
         &.active {
-            //opacity: 1;
+            pointer-events: auto;
+            opacity: 1;
+            display: block;
+            .project__title {
+                opacity: 1;
+            }
         }
     }
-
     &--t-and-s{
         background-color: #5CC2E1;
     }
@@ -36,8 +41,6 @@
 
     &__title{
         font-size:3rem;
-        //opacity: 0;
-        //transform: translateX(-20px);
     }
 
     &__item{
@@ -65,34 +68,33 @@
     display: flex;
     padding-left: 0;
     list-style: none;
-    position: absolute;
     left: 4em;
     bottom: 4em;
+    //background-color: red;
+    position: absolute;
     &__item {
         button {
             background-color: transparent;
         }
+        &.active {
+            .pagination-circle-icon {
+                circle {
+                    fill: white;
+                }
+            }
+        }
     }
 }
-
-
-
 
 @include media-breakpoint-down(sm) {
     .featured-projects, .project--featured{
         min-height:100vh;
         border-radius: 0;
     }
-    
-    
     .project-pagination {
         position: relative;
         justify-content: center;
         bottom: 9em;
         left: 0;
     }
-    
-    
-    
-    
 }
