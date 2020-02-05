@@ -3,12 +3,11 @@
         color:$white;
         box-shadow: -5px 5px 100px 0 rgba(0,0,0,0.22);
         border-radius: 100px 0 0 100px;
-        min-height: 650px;
+        min-height: 670px;
         transition: all .5s ease-out;
         opacity: 0;
         pointer-events: none;
-        position: relative;
-        display: none;
+        position: absolute;
         .project__subtitle{
             color:$white;
         }
@@ -21,6 +20,7 @@
             display: block;
             .project__title {
                 opacity: 1;
+                animation: fadein 1s;
             }
         }
     }
@@ -64,13 +64,24 @@
     }
 }
 
+.featured-projects-container {
+    height: 600px;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
 .project-pagination {
     display: flex;
     padding-left: 0;
     list-style: none;
     left: 4em;
-    bottom: 4em;
-    //background-color: red;
+    bottom: 0;
     position: absolute;
     &__item {
         button {

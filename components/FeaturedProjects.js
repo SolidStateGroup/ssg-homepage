@@ -59,6 +59,7 @@ const projects = [
 ];
 
 const FeaturedProjects = global.FeaturedProjects = class extends React.PureComponent {
+
     static displayName = 'FeaturedProjects';
 
     static propTypes = _propTypes;
@@ -66,8 +67,10 @@ const FeaturedProjects = global.FeaturedProjects = class extends React.PureCompo
     toggle = (index) => {
         this.setState({index, prevIndex:this.state.index});
         const buttonPressed = !this.state.buttonPressed;
+
         if (buttonPressed) {
             // fade in anim
+
         } else {
             // fade out anim
         }
@@ -96,25 +99,25 @@ const FeaturedProjects = global.FeaturedProjects = class extends React.PureCompo
                 <div className="container-fluid">
                     <h2 className="section__title section__title--dark mb-5 mt-5">Featured Projects</h2>
                 </div>
+                <div className="featured-projects-container position-relative">
+                    {
+                        [items.map((item)=>(
+                            <div className={cn('project--featured', item.className, {active:activeItem === item})}>
+                                <ProjectItem
+                                    key={item.title}
+                                    projectNumber={item.projectNumber} className={cn("project__item-featured")} ButtonComponent={item.Button} projectImage={item.projectImage}
+                                    subTitle={item.subTitle} title={item.title}/>
+                            </div>
 
-                {
-                    [items.map((item)=>(
-                        <div className={cn('project--featured', item.className, {active:activeItem === item})}>
-                            <ProjectItem
-                                key={item.title}
-                                projectNumber={item.projectNumber} className={cn("project__item-featured")} ButtonComponent={item.Button} projectImage={item.projectImage}
-                                subTitle={item.subTitle} title={item.title}/>
-                        </div>
-
-                    ))]
-                }
+                        ))]
+                    }
+                </div>
 
                 <nav aria-label="Project page navigation">
                     <ul className="project-pagination">
                         {projects.map((p,i)=>(
                             <li className={cn("project-pagination__item", {active: i === this.state.index})}>
                                 <button onClick={()=>this.toggle(i)} className="btn--transparent">
-
                                     <svg className="pagination-circle-icon" width={16} height={16} viewBox="0 0 16 16">
                                         <title>{"Oval Copy 4"}</title>
                                         <circle
@@ -128,9 +131,6 @@ const FeaturedProjects = global.FeaturedProjects = class extends React.PureCompo
                                             fillRule="evenodd"
                                         />
                                     </svg>
-
-                                    {/*<img src='/static/images/svg-icons/pagination-icon.svg' />*/}
-
                                 </button>
                             </li>
                         ))}

@@ -28,7 +28,6 @@ const HomePage = class extends React.Component {
         // use the node ref to create the animation
         // this.myTween =  gsap.to(this.myElement, { duration: 1, display: 'block', opacity: 1,  y: 0, ease: 'power1' });
         //gsap.to('.brand', { duration: 2, opacity: 1, display: 'block', y: 0, ease: 'power1',});
-        //gsap.to('.nav-item', { duration: .15, opacity: 1, display: 'block', ease: 'power2', stagger: 0.25 });
     }
 
     render = () => {
@@ -102,7 +101,7 @@ const HomePage = class extends React.Component {
 
                 <div className="mt-5 mb-5 section--no-padding">
                     <div className="row justify-content-end">
-                        <FeaturedProjects className="col-lg-10 "/>
+                        <FeaturedProjects className="col-lg-10 pl-0 pr-0"/>
                     </div>
                 </div>
 
