@@ -34,6 +34,16 @@
         background:none;
         border:none;
         text-decoration: underline;
+        svg {
+            transition: transform .25s ease-out;
+            transform: translateX(0px);
+        }
+        &:hover {
+                svg {
+                    transform: translateX(5px);
+                }
+        
+        }
     }
     &--transparent {
         background-color: transparent;

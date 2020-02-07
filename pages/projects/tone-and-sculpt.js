@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import Page from '../../components/Page';
 import Header from "../../components/Header";
+import ProjectHeroPulse from "../../components/animation/ProjectHeroPulse";
+import ProjectHero from "../../components/ProjectHero";
 
 // Automatically sets relevant head tags for seo, see _app for the remainder tags
 const TheComponent = class extends Component {
@@ -14,11 +16,25 @@ const TheComponent = class extends Component {
     render() {
         return (
             <Page title="Tone and Sculpt" canonical="projects/tone-and-sculpt">
-                <div className="hero hero--half d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
-                    <Header/>
-                </div>
-                <div>
-                    Hi there!
+
+                <ProjectHero className="hero--tone-and-sculpt"/>
+
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6 d-flex">
+                            <div className="flex-row">
+                                <div className="col-md-6 align-self-end">
+                                    <img src="/static/images/services/ux-niall.jpg" alt="UX Design Whiteboard" className="img-fluid"/>
+                                </div>
+                                <div className="col-md-6">
+                                    <img src="/static/images/services/ux-andy.jpg" alt="UX Design Whiteboard" className="img-fluid"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+    2
+                        </div>
+                    </div>
                 </div>
             </Page>
         );

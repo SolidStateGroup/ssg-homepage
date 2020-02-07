@@ -185,7 +185,6 @@ class Header extends PureComponent {
 
             </React.Fragment>
 
-
         );
     }
 }

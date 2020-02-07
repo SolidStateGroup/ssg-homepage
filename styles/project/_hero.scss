@@ -34,6 +34,9 @@
     &--three-quarters{
         height:75vh;
     }
+    &--tone-and-sculpt {
+        background-image: linear-gradient(45deg, #49B2D8 0%, #71D2EA 100%);
+    }
     &__list {
         //svg {
         //    max-width: 93px;
@@ -47,6 +50,17 @@
 
         &__image{
             border:1px solid red;
+        }
+        &--three-quarters{
+            height: auto;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .hero{
+        &--three-quarters{
+            height: auto;
         }
     }
 }

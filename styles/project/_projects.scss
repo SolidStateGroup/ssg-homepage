@@ -97,6 +97,16 @@
     }
 }
 
+
+.project-hero {
+    &--animation-container {
+        position: absolute;
+        left: -6em;
+    }
+}
+
+
+
 @include media-breakpoint-down(sm) {
     .featured-projects, .project--featured{
         min-height:100vh;

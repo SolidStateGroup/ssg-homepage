@@ -1,5 +1,8 @@
 .navbar-container{
     background:$brandNavy;
+    &--transparent {
+        background: transparent;
+    }
 }
 
 .navbar-nav {

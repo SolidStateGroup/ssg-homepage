@@ -10,6 +10,7 @@ import DisneyLogo from '../components/ClientLogos/DisneyLogo';
 import FeaturedProjects from '../components/FeaturedProjects';
 import {ListItemUnderlined} from '../components/ListItem';
 import {ButtonPrimary, ButtonText} from '../components/base/forms/Button';
+import Link from 'next/link';
 import { gsap } from 'gsap';
 
 const HomePage = class extends React.Component {
@@ -39,7 +40,9 @@ const HomePage = class extends React.Component {
                         <div className="flex-1 justify-content-start p-5">
                             <div className="offset-lg-3 translatey-offset-down" ref={div => this.myElement = div}>
                                 <h1 className="hero__title mb-4">We design and build amazing digital products</h1>
-                                <ButtonPrimary className="">View latest projects</ButtonPrimary>
+                                <Link prefetch={false} href="/work">
+                                    <ButtonPrimary>View latest projects</ButtonPrimary>
+                                </Link>
                             </div>
                         </div>
                         <div className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down">

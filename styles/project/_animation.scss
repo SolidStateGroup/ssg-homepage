@@ -38,6 +38,16 @@
     position: absolute;
 }
 
+.pulse-circle {
+   
+    &__large {
+        //opacity: 0;
+        &--first {
+        
+        }
+    }
+}
+
 .translatey-offset-down {
     transform: translateY(20px);
 }
