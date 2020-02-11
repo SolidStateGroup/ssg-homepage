@@ -4,6 +4,8 @@ import Page from '../../components/Page';
 import Header from "../../components/Header";
 import ProjectHeroPulse from "../../components/animation/ProjectHeroPulse";
 import ProjectHero from "../../components/ProjectHero";
+import ProjectDetailSectionItem from "../../components/ProjectDetailSectionItem";
+import {WideListItem} from '../../components/ListItem';
 
 // Automatically sets relevant head tags for seo, see _app for the remainder tags
 const TheComponent = class extends Component {
@@ -19,23 +21,21 @@ const TheComponent = class extends Component {
 
                 <ProjectHero className="hero--tone-and-sculpt"/>
 
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6 d-flex">
-                            <div className="flex-row">
-                                <div className="col-md-6 align-self-end">
-                                    <img src="/static/images/services/ux-niall.jpg" alt="UX Design Whiteboard" className="img-fluid"/>
-                                </div>
-                                <div className="col-md-6">
-                                    <img src="/static/images/services/ux-andy.jpg" alt="UX Design Whiteboard" className="img-fluid"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-    2
-                        </div>
-                    </div>
-                </div>
+                <ProjectDetailSectionItem title={'Prototyping'}
+                                          description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
+                                          ProjectServiceListItem={
+                                              <React.Fragment>
+                                                  <WideListItem
+                                                      listItemText={'User Interviews'}/>
+                                                  <WideListItem
+                                                      listItemText={'User Interviews'}/>
+                                                  <WideListItem
+                                                      listItemText={'User Interviews'}/>
+                                                  <WideListItem
+                                                      listItemText={'User Interviews'}/>
+                                              </React.Fragment>}
+                />
+
             </Page>
         );
     }

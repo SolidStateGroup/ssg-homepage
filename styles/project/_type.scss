@@ -37,7 +37,15 @@ h2 > span {
             top: 10px;
             background: $brand-primary;
             margin-bottom: 1.5em;
-            //left: calc(50% - 15px);
+        }
+    }
+    &--project-section {
+        &--small {
+            color: $brand-dark-lavender;
+            opacity: 0.6;
+            text-transform: uppercase;
+            font-family: Ilisarniq-Regular, sans-serif;
+            font-size: .85rem;
         }
     }
 }

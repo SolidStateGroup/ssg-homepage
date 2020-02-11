@@ -71,12 +71,34 @@ const ServicesPage = class extends React.Component {
                   <h2 className="section__title section__title--dark text-center mt-5">Our Services</h2>
                   <div className="container-fluid align-self-center">
                       <ServiceItem
-                          serviceListItem={<React.Fragment><ListItemUnderlined listItemText={'Tone & Sculpt'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Purely Capital'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Wazoku Idea App'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Unilever'} listItemLink={'/'}/></React.Fragment>}
+                          serviceListItem={
+                              <React.Fragment>
+                                  <ListItemUnderlined listItemText={'Tone & Sculpt'}
+                                                      listItemLink={'/'}/>
+                                  <ListItemUnderlined
+                                      listItemText={'Purely Capital'} listItemLink={'/'}/>
+                                  <ListItemUnderlined
+                                      listItemText={'Wazoku Idea App'} listItemLink={'/'}/>
+                                  <ListItemUnderlined
+                                      listItemText={'Unilever'} listItemLink={'/'}/>
+                              </React.Fragment>
+                          }
                           subTitle={'UX Design'}
                           serviceDescription={'From our London office, we\'ve been working with startups and corporations for over 15 years, building cross-platform, enterprise-grade, entrepreneurial websites and apps for digital transformation projects.'}/>
                       <ServiceItem serviceImage={'/static/images/services/web-development.jpg'}
                                    className="flex-row-reverse" subTitle={'Web Application Development'}
-                                   serviceListItem={<React.Fragment><ListItemUnderlined listItemText={'Purely Capital'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Racing Post'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Ladbrokes Coral'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Publicate'} listItemLink={'/'}/></React.Fragment>}
+                                   serviceListItem={
+                                       <React.Fragment>
+                                           <ListItemUnderlined listItemText={'Purely Capital'}
+                                                               listItemLink={'/'}/>
+                                           <ListItemUnderlined
+                                               listItemText={'Racing Post'} listItemLink={'/'}/>
+                                           <ListItemUnderlined
+                                               listItemText={'Ladbrokes Coral'} listItemLink={'/'}/>
+                                           <ListItemUnderlined
+                                               listItemText={'Publicate'} listItemLink={'/'}/>
+                                       </React.Fragment>
+                                   }
                                    serviceDescription={'From our London office, we\'ve been working with startups and corporations for over 15 years, building cross-platform, enterprise-grade, entrepreneurial websites and apps for digital transformation projects.'}/>
                       <ServiceItem serviceImage={'/static/images/services/mobile-app-development.jpg'}
                                    subTitle={'Mobile app development'}

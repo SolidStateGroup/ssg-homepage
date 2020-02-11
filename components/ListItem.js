@@ -43,3 +43,21 @@ export const ListItemUnderlined = global.ListItemUnderlined = class extends Reac
         );
     }
 };
+
+export const WideListItem = global.ListItemUnderlined = class extends React.PureComponent {
+    static displayName = 'ListItemUnderlined';
+
+    static propTypes = _propTypes;
+
+    render() {
+        const { children, props } = this;
+        return (
+
+            <li className={cn(props.className, 'wide-list__item list-unstyled-item')}>
+                <a className="wide-list__item__link">
+                    {this.props.listItemText}
+                </a>
+            </li>
+        );
+    }
+};
