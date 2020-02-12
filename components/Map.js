@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { importCssPromise, importScriptPromise } from '../project/import-promise';
+import withScrollHelper from './withScrollHelper';
 
 
 const center = [-0.08365, 51.52562];
@@ -42,4 +43,4 @@ const Map = class extends PureComponent {
     }
 };
 
-export default Map;
+export default withScrollHelper(Map);
