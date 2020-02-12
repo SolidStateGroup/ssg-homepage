@@ -62,7 +62,18 @@
         right: -.05em;
         
     }
+    &__section-item {
+    
+    }
 }
+
+.project-hero {
+    &__image {
+        z-index: 1;
+        position: relative;
+    }
+}
+
 
 .featured-projects-container {
     height: 600px;

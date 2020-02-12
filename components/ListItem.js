@@ -61,3 +61,19 @@ export const WideListItem = global.ListItemUnderlined = class extends React.Pure
         );
     }
 };
+
+export const TextListItem = global.TextListItem = class extends React.PureComponent {
+    static displayName = 'TextListItem';
+
+    static propTypes = _propTypes;
+
+    render() {
+        const { children, props } = this;
+        return (
+
+            <li className={cn(props.className, 'text-list__item list-inline-item')}>
+                {this.props.listItemText}
+            </li>
+        );
+    }
+};
