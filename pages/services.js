@@ -2,12 +2,12 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
-import { ButtonPrimary } from '../components/base/forms/Button';
-import BaLogo from '../components/ClientLogos/BaLogo';
-import DisneyLogo from '../components/ClientLogos/DisneyLogo';
-import UnileverLogo from '../components/ClientLogos/UnileverLogo';
-import NHSLogo from '../components/ClientLogos/NHSLogo';
-import ProjectItem from '../components/ProjectItem';
+import ReactLogo from '../components/TechIcons/ReactLogo';
+import NodeLogo from '../components/TechIcons/NodeLogo';
+import DockerLogo from '../components/TechIcons/DockerLogo';
+import JavaLogo from '../components/TechIcons/JavaLogo';
+import PostgresLogo from '../components/TechIcons/PostgresLogo';
+import AWSLogo from '../components/TechIcons/AWSLogo';
 import {ListItemUnderlined} from '../components/ListItem';
 import ServiceItem from '../components/ServiceItem';
 import Card from '../components/Card';
@@ -47,22 +47,22 @@ const ServicesPage = class extends React.Component {
                   <div className="container">
                       <div className="flex-row mt-5 mb-5">
                           <div className="col-md-2 col-6 text-center">
-                              <img src="/static/images/tech-icons/react.svg" alt="react" className="img-fluid"/>
+                              <ReactLogo className="client-logo--large"/>
                           </div>
                           <div className="col-md-2 col-6 text-center">
-                              <img src="/static/images/tech-icons/node.svg" alt="node js" className="img-fluid"/>
+                              <NodeLogo className="client-logo--medium"/>
                           </div>
                           <div className="col-md-2 col-6 text-center">
-                              <img src="/static/images/tech-icons/docker.svg" alt="docker" className="img-fluid"/>
+                              <DockerLogo className="client-logo--medium"/>
                           </div>
-                          <div className="col-md-2 col-6 text-center mb-md-0 mb-4 mt-4">
-                              <img src="/static/images/tech-icons/java.svg" alt="java" className="img-fluid"/>
-                          </div>
-                          <div className="col-md-2 col-6 text-center">
-                              <img src="/static/images/tech-icons/postgres.svg" alt="postgres sql" className="img-fluid"/>
+                          <div className="col-md-2 col-6 text-center mb-md-0 mb-4">
+                              <JavaLogo className="client-logo--small"/>
                           </div>
                           <div className="col-md-2 col-6 text-center">
-                              <img src="/static/images/tech-icons/aws.svg" alt="amazon web services" className="img-fluid"/>
+                              <PostgresLogo className="client-logo--large"/>
+                          </div>
+                          <div className="col-md-2 col-6 text-center">
+                              <AWSLogo className="client-logo--medium"/>
                           </div>
                       </div>
                   </div>

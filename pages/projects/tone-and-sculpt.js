@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import Page from '../../components/Page';
 import ProjectHero from "../../components/ProjectHero";
-import ProjectDetailSectionItem from "../../components/ProjectDetailSectionItem";
+import ProjectDetailSectionItem, {ProjectTechSection} from "../../components/ProjectDetailSectionItem";
 import {WideListItem, TextListItem} from '../../components/ListItem';
 
 // Automatically sets relevant head tags for seo, see _app for the remainder tags
@@ -37,9 +37,13 @@ const TheComponent = class extends Component {
                         </React.Fragment>
                     }
                     className="hero--tone-and-sculpt"
-                    projectImage={'/static/images/projects/purely-capital/pc-summary-mac.png'}/>
+                    />
+
 
                     <div className="container">
+
+                        <ProjectTextSection />
+
                         <ProjectDetailSectionItem
                             title={'UX Research'}
                             imageOne={'/static/images/services/ux-niall.jpg'}
@@ -75,6 +79,23 @@ const TheComponent = class extends Component {
                                         listItemText={'Interaction Design'}/>
                                 </React.Fragment>}
                         />
+
+                        <ProjectTechSection
+                            ProjectServiceListItem={
+                                <React.Fragment>
+                                    <WideListItem
+                                        listItemText={'Mobile Development'}/>
+                                    <WideListItem
+                                        listItemText={'Backend Development'}/>
+                                    <WideListItem
+                                        listItemText={'API Migration'}/>
+                                    <WideListItem
+                                        listItemText={'Relaunch'}/>
+                                </React.Fragment>}
+
+                        />
+
+                        <ProjectTextSection />
 
 
                     </div>

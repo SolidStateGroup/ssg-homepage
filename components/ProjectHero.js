@@ -26,7 +26,7 @@ const ProjectHero = global.ProjectHero = class extends React.PureComponent {
                     <div className="d-flex flex-1">
                         <div className="container align-self-center">
                             <div className="flex-row">
-                                <div className="col-md-4">
+                                <div className="col-md-4 offset-md-1">
                                     <h5 className="title--light mb-0">{this.props.projectType || 'iOS and Android Mobile App'}</h5>
                                     <h1 className="hero__title mb-4">{this.props.projectTitle || 'Rebooting female fitness for Tone and Sculpt'}</h1>
 
@@ -40,7 +40,7 @@ const ProjectHero = global.ProjectHero = class extends React.PureComponent {
                                         {this.props.ProjectTechListItem}
                                     </ul>
                                 </div>
-                                <div className="offset-md-2 col-md-6 text-center">
+                                <div className="offset-md-2 col-md-5 text-center">
                                     <img src={this.props.projectImage || '/static/images/projects/tands-dashboard.png'}
                                          alt="Project Hero Image" className="img-fluid project-hero__image"/>
                                     <ProjectHeroPulse/>
