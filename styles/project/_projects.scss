@@ -48,7 +48,7 @@
     &__item-featured{
         display: flex;
         min-height: 650px;
-   
+
     }
     &__number {
         opacity: 0.15;
@@ -60,10 +60,15 @@
         position: absolute;
         top: -.25em;
         right: -.05em;
-        
+
     }
+
+    &__image{
+
+    }
+
     &__section-item {
-    
+
     }
 }
 
@@ -73,7 +78,6 @@
         position: relative;
     }
 }
-
 
 .featured-projects-container {
     height: 600px;
@@ -128,5 +132,13 @@
         justify-content: center;
         bottom: 9em;
         left: 0;
+    }
+
+    .project__title{
+        font-size:1.85rem;
+    }
+
+    .featured-projects-container {
+        height: 100vh;
     }
 }

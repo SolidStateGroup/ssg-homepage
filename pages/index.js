@@ -103,7 +103,7 @@ const HomePage = class extends React.Component {
                 </div>
 
                 <div className="mt-5 mb-5 section--no-padding">
-                    <div className="row justify-content-end">
+                    <div className="flex-row justify-content-end">
                         <FeaturedProjects className="col-lg-10 pl-0 pr-0"/>
                     </div>
                 </div>
@@ -111,7 +111,7 @@ const HomePage = class extends React.Component {
                 <div className="section my-5">
                     <div className="container">
                         <h2 className="section__title section__title--dark text-center mb-5">Our process</h2>
-                        <div className="row">
+                        <div className="flex-row">
                             <div className="col text-center">
                                 <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Research"/>
                                 <h5>Research</h5>
