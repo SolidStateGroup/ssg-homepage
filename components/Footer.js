@@ -16,7 +16,7 @@ const Footer = class extends React.Component {
         const { className } = this.props;
         return (
           <div className="footer-container d-flex flex-column mr-0 ml-0">
-              <Map/>
+              <Map forceScroll={this.props.initialiseMap}/>
               <footer className={`${className} clearfix footer flex-fill`}>
                   <div className="container">
                       <div className="row">
