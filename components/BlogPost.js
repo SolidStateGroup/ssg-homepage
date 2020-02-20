@@ -4,6 +4,7 @@ import propTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 import Head from 'next/head';
 import Footer from './Footer';
+import Header from './Header';
 import parseMarkdown from '../common/parse-markdown';
 import Project from '../common/project';
 
@@ -77,28 +78,33 @@ export default class BlogPost extends Component {
       } = parseMarkdown(this.props.source);
       return (
         <>
-            <div className="container blog pt-5 pb-5">
+            <Header/>
+            <div className="blog pb-5">
                 {this.renderSEOTags()}
-                <h1>
-                    {title}
-                </h1>
-                <div className="author mb-5 mt-3">
-                    <Row>
-                        <img alt={author} className="avatar" src={avatar}/>
-                        <div className="ml-2">
-                            <div className="author">
-                                {author}
-                            </div>
-                            <div className="date">
-                                {dateFormatted}
-                            </div>
-                        </div>
-                    </Row>
+                <div className="hero hero--half mx-0 pt-4 pr-4 pb-0 pl-4">
+                    <h1 className="hero__title mb-4">{title}</h1>
                 </div>
-                <ReactMarkdown
-                  escapeHtml={false}
-                  source={content}
-                />
+                <div className="container">
+                    <div className="blog__author mb-3 mt-3">
+                        <Row>
+                            <img alt={author} className="blog__avatar" src={avatar}/>
+                            <div className="ml-2">
+                                <div className="blog__author">
+                                    {author}
+                                </div>
+                                <div className="blog__date">
+                                    {dateFormatted}
+                                </div>
+                            </div>
+                        </Row>
+                    </div>
+                    <div className="blog__content">
+                        <ReactMarkdown
+                          escapeHtml={false}
+                          source={content}
+                        />
+                    </div>
+                </div>
             </div>
             <div className="container pb-3">
                 {!this.state.loading && Project.isso && (

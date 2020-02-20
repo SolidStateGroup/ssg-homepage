@@ -17,7 +17,7 @@ const HomePage = class extends React.Component {
 
                 <Header/>
 
-              <Footer/>
+              <Footer className="contact-page"/>
           </Page>
       );
   };

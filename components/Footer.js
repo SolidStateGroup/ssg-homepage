@@ -15,9 +15,9 @@ const Footer = class extends React.Component {
     render() {
         const { className } = this.props;
         return (
-          <div className="footer-container">
+          <div className="footer-container d-flex flex-column mr-0 ml-0">
               <Map/>
-              <footer className={`${className} clearfix footer`}>
+              <footer className={`${className} clearfix footer flex-fill`}>
                   <div className="container">
                       <div className="row">
                           <div className="col text-center hidden-sm-down">

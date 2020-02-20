@@ -40,13 +40,14 @@ const BlogItem = class extends Component {
         } = this;
         return (
             <Link prefetch={false} href={`/blog/${url}`}>
-                <div className="blog-item clickable">
+                <div className="blog-item blog-item--featured py-3 py-sm-0 clickable">
+                    <div className="blog-item__tag hidden-sm-up">Lastest post</div>
                     <div className="flex-row align-items-start align-items-stretch">
-                        <div className="col">
+                        <div className="col-12 col-sm-5">
                           <img src="/static/images/blog/tech.jpeg" alt={title}/>
                         </div>
-                        <div className="col blog-item-content">
-                            <h2>{title}</h2>
+                        <div className="col-12 col-sm-7 blog-item-content">
+                            <h2 className="mt-3 mt-sm-0">{title}</h2>
                             <p>{description}</p>
                             <div className="date">
                               {`${dateFormatted} By ${author}`}
@@ -91,7 +92,7 @@ export const BlogItemSummary = global.BlogItemSummary = class extends Component 
         } = this;
         return (
           <Link prefetch={false} href={`/blog/${url}`}>
-              <div className="blog-item clickable col-4">
+              <div className="blog-item clickable col-12 col-sm-4">
                   <div className="flex-row align-items-start align-items-stretch">
                           <img src="/static/images/blog/tech.jpeg" alt={title}/>
                       <div className="blog-item__content">
