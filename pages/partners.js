@@ -48,7 +48,7 @@ const PartnersPage = class extends React.Component {
             <div className="hero hero--three-quarters d-flex flex-column mx-0 p-4">
                 <Header/>
                 <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
-                    <div className="flex-1 justify-content-start p-5">
+                    <div className="flex-1 justify-content-start pt-5 pb-5 pl-0 pr-0 pt-sm-5">
                         <div className="offset-lg-3">
                             <h1 className="hero__title mb-4">We partner with the best consultancies on projects for the biggest brands</h1>
                             <ButtonPrimary>Work with us</ButtonPrimary>
@@ -72,7 +72,7 @@ const PartnersPage = class extends React.Component {
 
             <div className="panel panel--primary">
                 <div className="container">
-                    <div className="row">
+                    <div className="flex-row">
                         <div className="col text-center hidden-sm-down">
                             <img src="/static/images/svg-icons/partner-icon.svg" alt="something"/>
                         </div>
@@ -116,7 +116,8 @@ const PartnersPage = class extends React.Component {
             <div className="container">
                 {projects.map((p) => (
                   <ProjectItem ButtonComponent={p.ButtonComponent} projectImage={p.projectImage} subTitle={p.subTitle}
-                               title={p.title} clientBrand={p.clientBrand} clientName={p.clientName} className='mb-5'/>
+                               title={p.title} clientBrand={p.clientBrand} clientName={p.clientName} className="mb-5"
+                  />
 
                 ))}
             </div>
