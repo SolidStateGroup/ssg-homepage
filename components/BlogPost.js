@@ -82,7 +82,16 @@ export default class BlogPost extends Component {
             <div className="blog pb-5">
                 {this.renderSEOTags()}
                 <div className="hero hero--half mx-0 pt-4 pr-4 pb-0 pl-4">
-                    <h1 className="hero__title mb-4">{title}</h1>
+                    <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
+                        <div className="flex-1 justify-content-start p-5">
+                            <div className="offset-lg-3">
+                                <h1 className="hero__title mb-4">{title}</h1>
+                            </div>
+                        </div>
+                        <div
+                          className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down"
+                        />
+                    </div>
                 </div>
                 <div className="container">
                     <div className="blog__author mb-3 mt-3">
