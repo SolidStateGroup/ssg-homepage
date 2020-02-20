@@ -15,12 +15,13 @@ const projects = [
     {
         className: "project--t-and-s",
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/tands-dashboard.png',
+        projectImage: '/static/images/projects/tone-and-sculpt/phone.png',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
         title: 'Rebooting female fitness for Tone and Sculpt',
         tags: ['DESIGN'],
-        projectNumber: ['01']
+        projectNumber: ['01'],
+        projectImageClass: 'img-fluid--short'
 
     },
     {
@@ -31,7 +32,8 @@ const projects = [
         href: '/projects/purely-capital',
         title: 'The future of film and media financing',
         tags: ['DESIGN'],
-        projectNumber: ['02']
+        projectNumber: ['02'],
+        projectImageClass: ''
 
     },
     {
@@ -42,8 +44,8 @@ const projects = [
         subTitle: 'Real-time operational dashboard',
         title: 'The real-time machine: integrating with 1960s tech',
         tags: ['Cloud Infrastructure', 'Systems Integration', 'API Development'],
-        projectNumber: ['03']
-
+        projectNumber: ['03'],
+        projectImageClass: ''
     },
     {
         className: "project--hailie",
@@ -53,8 +55,8 @@ const projects = [
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
         tags: ['Cloud Infrastructure', 'Systems Integration', 'API Development'],
-        projectNumber: ['04']
-
+        projectNumber: ['04'],
+        projectImageClass: ''
     },
 ];
 
@@ -106,14 +108,14 @@ const FeaturedProjects = global.FeaturedProjects = class extends React.PureCompo
                                 <ProjectItem
                                     key={item.title}
                                     projectNumber={item.projectNumber} className={cn("project__item-featured")} ButtonComponent={item.Button} projectImage={item.projectImage}
-                                    subTitle={item.subTitle} title={item.title}/>
+                                    subTitle={item.subTitle} title={item.title} projectImageClass={item.projectImageClass}/>
                             </div>
 
                         ))]
                     }
                 </div>
 
-                <nav aria-label="Project page navigation">
+                <nav aria-label="Project page navigation" className="project-pagination-container">
                     <ul className="project-pagination">
                         {projects.map((p,i)=>(
                             <li className={cn("project-pagination__item", {active: i === this.state.index})}>

@@ -27,7 +27,6 @@
         height:100vh;
     }
 
-
     &--half{
         height:50vh;
     }
@@ -37,30 +36,27 @@
     &--tone-and-sculpt {
         background-image: linear-gradient(45deg, #49B2D8 0%, #71D2EA 100%);
     }
-    &__list {
-        //svg {
-        //    max-width: 93px;
-        //}
-    }
-}
-
-@media (max-width: #{map-get($breakpoints, mobile)}) {
-    .hero{
-        background:$brandNavy;
-
-        &__image{
-            border:1px solid red;
-        }
-        &--three-quarters{
-            height: auto;
-        }
-    }
 }
 
 @include media-breakpoint-down(md) {
     .hero{
+        position: relative;
+        overflow:hidden;
+
         &--three-quarters{
             height: auto;
+        }
+
+        &__footer{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow-x: scroll;
+            width: 100%;
+
+            &__links{
+                width:450px;
+            }
         }
     }
 }

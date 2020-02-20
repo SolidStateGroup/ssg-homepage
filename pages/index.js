@@ -49,7 +49,7 @@ const HomePage = class extends React.Component {
                             <img src="/static/images/hero-gfx.png" alt="Blob Graphic" className="img-fluid"/>
                         </div>
                     </div>
-                    <div className="hero__footer">
+                    <div className="hero__footer hidden-sm-down">
                         <div className="row">
                             <div className="col hidden-md-down">
                                 <div className="mouse">
