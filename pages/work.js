@@ -69,8 +69,8 @@ const WorkPage = class extends React.Component {
                         className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down"
                       />
                   </div>
-                  <div className="hero__footer hidden-sm-down">
-                      <ul className="list-inline content-nav mb-0">
+                  <div className="hero__footer">
+                      <ul className="list-inline hero__footer__links content-nav mb-0">
                           <li
                             onClick={() => this.setState({ tab: 'ALL' })}
                             className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'ALL' })}

@@ -15,12 +15,6 @@
     position: relative;
 }
 
-//.brand {
-//    opacity: 0;
-//    display: none;
-//    transform: translateY(5px);
-//}
-
 .client-logo {
     &--medium {
         max-width: 93px;
@@ -34,14 +28,12 @@
     }
 }
 
+.img-fluid{
+    &--short{
+        height:400px;
+    }
+}
 
-//.@include media-breakpoint-down(sm) {
-//    .client-logo {
-//        &--small {
-//            max-width: 93px;
-//        }
-//        &--large {
-//            max-width: 150px;
-//        }
-//    }
-//}
+@include media-breakpoint-down(md) {
+
+}

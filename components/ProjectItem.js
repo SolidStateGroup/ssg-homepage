@@ -52,18 +52,15 @@ const ProjectItem = global.ProjectItem = class extends React.PureComponent {
 
 
                             <Link prefetch={false} href={this.props.href}>
-                                <ButtonComponent className="hidden-sm-down">View project</ButtonComponent>
+                                <ButtonComponent className="project__cta">View project</ButtonComponent>
                             </Link>
                         </div>
                     </div>
                     <div className="col align-items-center justify-content-center text-center project__image-container">
                         <img
-                          src={this.props.projectImage || '/static/images/projects/tands-dashboard.svg'}
-                          alt="Tone and Sculpt" className="project__image img-fluid"
+                          src={this.props.projectImage || '/static/images/projects/tone-and-sculpt/phone.png'}
+                          alt="Tone and Sculpt" className={"project__image img-fluid " + this.props.projectImageClass}
                         />
-                        <Link prefetch={false} href={this.props.href}>
-                            <ButtonComponent className="hidden-sm-up">View project</ButtonComponent>
-                        </Link>
                     </div>
                 </div>
             </div>

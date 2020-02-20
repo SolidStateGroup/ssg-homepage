@@ -8,6 +8,7 @@
         opacity: 0;
         pointer-events: none;
         position: absolute;
+
         .project__subtitle{
             color:$white;
         }
@@ -43,13 +44,6 @@
         font-size:3rem;
     }
 
-    &__item{
-    }
-    &__item-featured{
-        display: flex;
-        min-height: 650px;
-
-    }
     &__number {
         opacity: 0.15;
         font-family: Ilisarniq-Bold, 'sans-serif';
@@ -60,14 +54,6 @@
         position: absolute;
         top: -.25em;
         right: -.05em;
-
-    }
-
-    &__image{
-
-    }
-
-    &__section-item {
 
     }
 }
@@ -89,15 +75,17 @@
     to   { opacity: 1; }
 }
 
-
+.project-pagination-container{
+    left: 4em;
+    bottom: 0;
+    position: absolute;
+}
 
 .project-pagination {
     display: flex;
     padding-left: 0;
     list-style: none;
-    left: 4em;
-    bottom: 0;
-    position: absolute;
+
     &__item {
         button {
             background-color: transparent;
@@ -127,10 +115,16 @@
         min-height:100vh;
         border-radius: 0;
     }
+
+    .project-pagination-container{
+        left:0;
+        width:100%;
+    }
+
     .project-pagination {
         position: relative;
         justify-content: center;
-        bottom: 9em;
+        bottom: 0;
         left: 0;
     }
 
@@ -140,5 +134,9 @@
 
     .featured-projects-container {
         height: 100vh;
+    }
+
+    .project__cta{
+        margin-top:20px;
     }
 }
