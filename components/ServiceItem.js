@@ -30,7 +30,7 @@ const ServiceItem = global.ServiceItem = class extends React.PureComponent {
                     <p>{this.props.serviceDescription || 'We work with you to iterate on the various creative deliverables until you achieve your vision.'}</p>
                     {this.props.serviceListItem ? (
                         <div>
-                            <h6 className="mt-4 text-grey mb0">Examples</h6>
+                            <h6 className="mt-4 text-grey mb0">{this.props.listTitle || 'Examples'}</h6>
                             <ul className="lined-list list-unstyled flex-row">
                                 {this.props.serviceListItem}
                             </ul>

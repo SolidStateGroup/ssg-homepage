@@ -79,6 +79,19 @@ p{
     font-weight:bold!important;
 }
 
+blockquote{
+    position: relative;
+    &:before{
+        content:'"';
+        position: absolute;
+        top:0;
+        left:0;
+        font-size:6em;
+        line-height:30px;
+        color:$brand-primary;
+    }
+}
+
 //TODO: workout where these base styles are coming from
 
 .text-primary{
