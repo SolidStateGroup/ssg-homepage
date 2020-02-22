@@ -24,3 +24,9 @@
 
     }
 }
+
+@include media-breakpoint-down(md) {
+    .panel{
+        padding:20px 0;
+    }
+}

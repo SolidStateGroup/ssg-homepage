@@ -4,7 +4,7 @@ export default (WrappedComponent) => {
 
         constructor(props) {
             super(props);
-            this.state = {};
+            this.state = {reached: props.forceScroll? true : false};
         }
 
         componentDidMount() {

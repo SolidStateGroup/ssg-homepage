@@ -1,55 +1,64 @@
 .blog {
     min-height: calc(100vh - 448px);
-    pre {
-        border-radius: 10px;
-        background: #212121;
-        color: #fff;
-        padding: 10px;
-        font-size: 14px;
-    }
-    img {
-        max-width: 100%;
-    }
-    a {
-        font-weight: bold;
-        color: $body-color;
-    }
-    .avatar {
-        width: 48px;
-        height: 48px;
-        border-radius: 24px;
-    }
-    .author {
-        font-size: 14px;
-        line-height: 20px;
-        .date {
-            color: #666;
-        }
-    }
     font-size: 21px;
     line-height: 1.58;
     text-rendering:optimizelegibility;
     word-break:break-word;
     -webkit-font-smoothing:antialiased;
     color: rgba(0, 0, 0, 0.84);
-    h1, h2, h3, p,a  {
-        color: rgba(0, 0, 0, 0.84);
-    }
-    h1, h2 {
-        margin-block-end: 16px;
-    }
-    h2 {
-        margin-block-start: 40px;
-    }
-    h3 {
-        margin-block-start: 30px;
-        margin-block-end: 12px;
-    }
-    a {
+
+    &__link{
         font-weight: bold;
-        text-decoration: underline;
-        &:hover {
-            color: rgba(0, 0, 0, 0.84);
+        color: $body-color;
+    }
+
+    &__author{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__date{
+        color: #666;
+    }
+
+    &__avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 24px;
+        margin-bottom:0;
+    }
+
+    &__content{
+        //BEM BETRAYAL
+        img{
+            max-width: 100%;
+            margin-bottom:20px;
+        }
+
+        pre {
+            border-radius: 10px;
+            background: #212121;
+            color: #fff;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        h1, h2 {
+            margin-block-end: 16px;
+        }
+        h2 {
+            margin-block-start: 40px;
+        }
+        h3 {
+            margin-block-start: 30px;
+            margin-block-end: 12px;
+        }
+        a {
+            font-weight: bold;
+            text-decoration: underline;
+            &:hover {
+                color: rgba(0, 0, 0, 0.84);
+            }
         }
     }
 }
@@ -57,6 +66,10 @@
 .blog-item {
     margin-bottom: 3em;
     font-size: 21px;
+
+    img{
+        max-width: 100%;
+    }
 
     h1, h2, h3, p,a  {
         color: rgba(0, 0, 0, 0.84);
@@ -82,5 +95,26 @@
 
     &:hover {
         text-decoration: underline;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .blog-item{
+        &__tag{
+            font-size: 12px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: white;
+            background: #1AC0C6;
+            font-weight: bold;
+            padding: 5px 10px;
+            z-index: 1;
+        }
+
+        &--featured{
+            position: relative;
+            background:#f9f9f9;
+        }
     }
 }

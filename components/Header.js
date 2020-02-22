@@ -151,11 +151,11 @@ class Header extends PureComponent {
                             <div className="mobile-menu__item-inner d-flex">
                                 <div className="mainmenu">
                                     <div className="align-self-center">
-                                        <a href="#" className="mainmenu__item">Work</a>
-                                        <a href="#" className="mainmenu__item">Services</a>
-                                        <a href="#" className="mainmenu__item">Partners</a>
-                                        <a href="#" className="mainmenu__item">Blog</a>
-                                        <a href="#" className="mainmenu__item">Contact</a>
+                                        <a href="/work" className="mainmenu__item" >Work</a>
+                                        <a href="/services" className="mainmenu__item">Services</a>
+                                        <a href="/partners" className="mainmenu__item">Partners</a>
+                                        <a href="/blog" className="mainmenu__item">Blog</a>
+                                        <a href="/contact" className="mainmenu__item">Contact</a>
                                     </div>
                                 </div>
 
