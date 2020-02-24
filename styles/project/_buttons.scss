@@ -42,7 +42,7 @@
                 svg {
                     transform: translateX(5px);
                 }
-        
+
         }
     }
     &--transparent {
@@ -57,4 +57,12 @@
 .hexagon {
     background-color: transparent;
     border: none;
+}
+
+button{
+    outline:none;
+
+    &:hover, &:active, &:focus{
+        outline:none;
+    }
 }

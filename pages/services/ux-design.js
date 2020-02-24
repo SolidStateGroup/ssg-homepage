@@ -1,18 +1,18 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Page from '../components/Page';
-import ReactLogo from '../components/TechIcons/ReactLogo';
-import NodeLogo from '../components/TechIcons/NodeLogo';
-import DockerLogo from '../components/TechIcons/DockerLogo';
-import JavaLogo from '../components/TechIcons/JavaLogo';
-import PostgresLogo from '../components/TechIcons/PostgresLogo';
-import AWSLogo from '../components/TechIcons/AWSLogo';
-import { ListItemUnderlined } from '../components/ListItem';
-import ServiceItem from '../components/ServiceItem';
-import Card from '../components/Card';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Page from '../../components/Page';
+import ReactLogo from '../../components/TechIcons/ReactLogo';
+import NodeLogo from '../../components/TechIcons/NodeLogo';
+import DockerLogo from '../../components/TechIcons/DockerLogo';
+import JavaLogo from '../../components/TechIcons/JavaLogo';
+import PostgresLogo from '../../components/TechIcons/PostgresLogo';
+import AWSLogo from '../../components/TechIcons/AWSLogo';
+import { ListItemUnderlined } from '../../components/ListItem';
+import ServiceItem from '../../components/ServiceItem';
+import Card from '../../components/Card';
 import Link from 'next/link';
-import { ButtonPrimary } from '../components/base/forms/Button';
+import { ButtonPrimary } from '../../components/base/forms/Button';
 
 const ServicesPage = class extends React.Component {
     static displayName = 'ServicesPage';
@@ -55,7 +55,8 @@ const ServicesPage = class extends React.Component {
                                  }
                                  subTitle={'UX Design'}
                                  listTitle={'WHAT WE DO'}
-                                 serviceDescription={'From our London office, we\'ve been working with startups and corporations for over 15 years, building cross-platform, enterprise-grade, entrepreneurial websites and apps for digital transformation projects.'}/>
+                                 serviceDescription={'Building products that solve problems for your users is hard.  We apply years of experience and formalised techniques to provide data that drives the design process.  ' +
+                                 'User experience has never been more important for digital products.'}/>
 
                     <ServiceItem
                         serviceListItem={
