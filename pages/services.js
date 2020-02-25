@@ -26,21 +26,25 @@ const ServicesPage = class extends React.Component {
               <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                   <Header/>
                   <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
-                      <div className="flex-1 justify-content-start p-5">
-                          <div className="offset-lg-3">
-                              <h5 className="title--light mb-0">Our Services</h5>
-                              <h1 className="hero__title mb-4">We build successful digital businesses</h1>
-                              <p className="text-light">When we moved into our Old Street office, there were only a handful of tech startups in the neighbourhood. Fifteen years later, we’re still going strong, working with startups and corporations alike, swiftly creating and transforming systems that are built to last.</p>
+                      <div className="container">
+                          <div className="row">
+                          <div className="col-md-6 justify-content-start pt-5">
+
+                                  <h5 className="title--light mb-0">Our Services</h5>
+                                  <h1 className="hero__title mb-4">We build successful digital businesses</h1>
+                                  <p className="text-light">When we moved into our Old Street office, there were only a handful of tech startups in the neighbourhood. Fifteen years later, we’re still going strong, working with startups and corporations alike, swiftly creating and transforming systems that are built to last.</p>
+
                           </div>
-                      </div>
-                      <div
-                          className="flex-1 align-items-center justify-content-center hero__blob-container hidden-sm-down">
-                          <img src="/static/images/hero-blob.svg" alt="hero-blob" className="img-fluid"/>
+                          <div
+                              className="flex-1 align-items-center justify-content-center hero__blob-container hidden-sm-down">
+                              <img src="/static/images/hero-blob.svg" alt="hero-blob" className="img-fluid"/>
+                          </div>
+                          </div>
                       </div>
                   </div>
               </div>
               <div className="section section--dark">
-                  <div className="offset-md-1 col-md-6">
+                  <div className="container pr-5">
                       <h2 className="section__title--light">We <span className="text-primary">design, develop, test,</span> and <span className="text-primary">deliver</span> your projects quickly and reliably</h2>
                       <p className="text-light">We work with a wide range of tools, with a focus on open source technologies.</p>
                   </div>
@@ -74,7 +78,7 @@ const ServicesPage = class extends React.Component {
                           serviceListItem={
                               <React.Fragment>
                                   <ListItemUnderlined listItemText={'Tone & Sculpt'}
-                                                      listItemLink={'/'}/>
+                                                      listItemLink={'/projects/tone-and-sculpt'}/>
                                   <ListItemUnderlined
                                       listItemText={'Purely Capital'} listItemLink={'/'}/>
                                   <ListItemUnderlined
@@ -137,23 +141,19 @@ const ServicesPage = class extends React.Component {
                   <div className="container">
                       <h2 className="section__title--dark">We <span className="text-primary">love</span> open source</h2>
                       <p>We work with a wide range of tools, with a focus on open source technologies.</p>
-                      <div className="row pt-5">
-                          <div className="col-md-4 mb-md-0 mb-4">
-                              <Card cardTechnology={'JavaScript'} cardTechnologyStars={'120'} cardTechnologyForked={'14'} techColourClass={'card__technology--yellow'} cardTitle={'rio'}/>
+                      <div className="flex-row pt-5">
+                          <div className="justify-content-center col-md-4 mb-md-0 mb-4">
+                              <Card cardLink="https://github.com/SolidStateGroup/rio" cardTechnology={'JavaScript'} cardTechnologyStars={'120'} cardTechnologyForked={'14'} techColourClass={'card__technology--yellow'} cardTitle={'rio'}/>
                           </div>
-                          <div className="col-md-4 mb-md-0 mb-4">
-                              <Card cardTechnology={'JavaScript'} cardTechnologyStars={'0'} cardTechnologyForked={'1'} techColourClass={'card__technology--yellow'} cardTitle={'bullet-train-aio'} cardText={'Bullet Train All In One Project'}/>
+                          <div className="justify-content-center col-md-4 mb-md-0 mb-4">
+                              <Card cardLink="https://github.com/SolidStateGroup/bullet-train-aio" cardTechnology={'JavaScript'} cardTechnologyStars={'0'} cardTechnologyForked={'1'} techColourClass={'card__technology--yellow'} cardTitle={'bullet-train-aio'} cardText={'Bullet Train All In One Project'}/>
                           </div>
-                          <div className="col-md-4">
-                              <Card cardTechnology={'Java'} cardTechnologyStars={'6'} cardTechnologyForked={'1'} techColourClass={'card__technology--brown'} cardTitle={'patientview'} cardText={'PatientView'}/>
+                          <div className="justify-content-center col-md-4">
+                              <Card cardLink="https://github.com/SolidStateGroup/patientview" cardTechnology={'Java'} cardTechnologyStars={'6'} cardTechnologyForked={'1'} techColourClass={'card__technology--brown'} cardTitle={'patientview'} cardText={'PatientView shows patients\' latest test results plus information about their diagnosis and treatment.'}/>
                           </div>
                       </div>
                   </div>
               </div>
-
-
-
-
 
               <Footer/>
           </Page>

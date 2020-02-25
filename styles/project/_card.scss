@@ -3,12 +3,19 @@
     border-radius: 40px;
     min-height: 318px;
     justify-content: space-between;
+    transition: all .25s ease-out;
+    &:hover {
+        box-shadow: 0 6px 20px 0 rgba(21,20,19,0.30);
+        transform: scale(1.03);
+        background-color: darken($brand-raisin-black, 4);
+    }
     .card-title {
         color: white;
         border-bottom: 1px solid $brandNavySecondary;
     }
     .card-text {
         color: white;
+        max-width: 15em;
     }
     &__footer {
         font-size: 14px;
@@ -51,5 +58,11 @@
                 background-color: #f1e05a;
             }
         }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .card {
+        margin: 0 2em;
     }
 }

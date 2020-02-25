@@ -91,7 +91,7 @@ const HomePage = class extends React.Component {
                         <ul className="lined-list list-unstyled flex-row pl-sm-5 pl-0 mt-3">
                             <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'}  />
                             <ListItemUnderlined listItemText={'Strategy'} listItemLink={'/'} />
-                            <ListItemUnderlined listItemText={'UX & UI Design'} listItemLink={'/'} />
+                            <ListItemUnderlined listItemText={'UX & UI Design'} listItemLink={'/services/ux-design'} />
                             <ListItemUnderlined listItemText={'Prototyping'} listItemLink={'/'} />
                             <ListItemUnderlined listItemText={'Mobile app development'} listItemLink={'/'} />
                             <ListItemUnderlined listItemText={'Responsive web apps'} listItemLink={'/'} />

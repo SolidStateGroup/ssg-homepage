@@ -107,6 +107,7 @@ const FeaturedProjects = global.FeaturedProjects = class extends React.PureCompo
                             <div className={cn('project--featured', item.className, {active:activeItem === item})}>
                                 <ProjectItem
                                     key={item.title}
+                                    href={item.href}
                                     projectNumber={item.projectNumber} className={cn("project__item-featured")} ButtonComponent={item.Button} projectImage={item.projectImage}
                                     subTitle={item.subTitle} title={item.title} projectImageClass={item.projectImageClass}/>
                             </div>
