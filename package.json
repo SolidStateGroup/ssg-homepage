@@ -67,6 +67,7 @@
     "react-device-detect": "^1.9.9",
     "react-dom": "^16.8.4",
     "react-markdown": "^4.2.2",
+    "scrollmagic": "https://github.com/SolidStateGroup/ScrollMagic#gsap-v3",
     "webpack": "4.38.0"
   },
   "devDependencies": {

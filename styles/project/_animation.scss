@@ -51,3 +51,9 @@
 .translatey-offset-down {
     transform: translateY(20px);
 }
+
+
+#myElement {
+    opacity: 0;
+    transform: translateX(-20) !important;
+}

@@ -8,7 +8,8 @@
         opacity: 0;
         pointer-events: none;
         position: absolute;
-
+        align-items: center;
+        background-color: red;
         .project__subtitle{
             color:$white;
         }
@@ -18,7 +19,7 @@
         &.active {
             pointer-events: auto;
             opacity: 1;
-            display: block;
+            display: flex;
             .project__title {
                 opacity: 1;
                 animation: fadein 1s;

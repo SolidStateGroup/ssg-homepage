@@ -5,6 +5,13 @@ import '../styles/styles.scss';
 import '../project/polyfill';
 
 class MyApp extends App {
+  constructor(props) {
+    super(props);
+    if (typeof window !== 'undefined') {
+      window.ScrollMagic = require('ScrollMagic');
+      require('scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap');
+    }
+  }
     render() {
         const { Component } = this.props;
         return (

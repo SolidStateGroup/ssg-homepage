@@ -1,5 +1,7 @@
 /* eslint-disable */
 import propTypes from 'prop-types';
+import gsap from 'gsap';
+global.gsap = gsap;
 global.propTypes = propTypes;
 
 // Analytics

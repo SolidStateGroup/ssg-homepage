@@ -8,10 +8,11 @@ import HertzLogo from '../components/ClientLogos/HertzLogo';
 import NHSLogo from '../components/ClientLogos/NHSLogo';
 import DisneyLogo from '../components/ClientLogos/DisneyLogo';
 import FeaturedProjects from '../components/FeaturedProjects';
+// import ScrollMagic from "scrollmagic";
+// import "scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap";
 import {ListItemUnderlined} from '../components/ListItem';
 import {ButtonPrimary, ButtonText} from '../components/base/forms/Button';
 import Link from 'next/link';
-import { gsap } from 'gsap';
 
 const HomePage = class extends React.Component {
     static displayName = 'HomePage';
@@ -19,16 +20,21 @@ const HomePage = class extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {};
-        // reference to the DOM node
-        this.myElement = null;
-        // reference to the animation
-        this.myTween = null;
     }
 
-    componentDidMount(){
-        // use the node ref to create the animation
-        // this.myTween =  gsap.to(this.myElement, { duration: 1, display: 'block', opacity: 1,  y: 0, ease: 'power1' });
-        //gsap.to('.brand', { duration: 2, opacity: 1, display: 'block', y: 0, ease: 'power1',});
+    componentDidMount = async () => {
+        this.controller = new ScrollMagic.Controller();
+        new ScrollMagic.Scene({
+            triggerElement: "#scrollStarts",
+            offset: -300, // start this scene after scrolling for -300px
+            reverse:false
+        })
+            .setTween("#myElement", 0.5, {
+                opacity: 1,
+                translateX: 20
+            })
+            // .setPin("#myElement") // pins the element for the the scene's duration
+            .addTo(this.controller); // assign the scene to the controller
     }
 
     render = () => {
@@ -85,8 +91,8 @@ const HomePage = class extends React.Component {
                     </div>
                 </div>
 
-                <div className="section">
-                    <div className="container-fluid col-lg-8 offset-md-2">
+                <div className="section" id="scrollStarts" >
+                    <div className="container-fluid col-lg-8 pl-0 offset-md-2" id="myElement">
                         <h2 className="section__title section__title--dark">Services</h2>
                         <ul className="lined-list list-unstyled flex-row pl-sm-5 pl-0 mt-3">
                             <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'}  />
