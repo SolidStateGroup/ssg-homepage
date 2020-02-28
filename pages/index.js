@@ -8,8 +8,6 @@ import HertzLogo from '../components/ClientLogos/HertzLogo';
 import NHSLogo from '../components/ClientLogos/NHSLogo';
 import DisneyLogo from '../components/ClientLogos/DisneyLogo';
 import FeaturedProjects from '../components/FeaturedProjects';
-// import ScrollMagic from "scrollmagic";
-// import "scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap";
 import {ListItemUnderlined} from '../components/ListItem';
 import {ButtonPrimary, ButtonText} from '../components/base/forms/Button';
 import Link from 'next/link';

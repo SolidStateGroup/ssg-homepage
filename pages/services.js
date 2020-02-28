@@ -88,6 +88,7 @@ const ServicesPage = class extends React.Component {
                               </React.Fragment>
                           }
                           subTitle={'UX Design'}
+                          serviceLink={'/services/ux-design'}
                           serviceDescription={'From our London office, we\'ve been working with startups and corporations for over 15 years, building cross-platform, enterprise-grade, entrepreneurial websites and apps for digital transformation projects.'}/>
                       <ServiceItem serviceImage={'/static/images/services/web-development.jpg'}
                                    className="flex-row-reverse" subTitle={'Web Application Development'}

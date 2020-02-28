@@ -82,10 +82,10 @@ p{
 blockquote{
     position: relative;
     &:before{
-        content:'"';
+        content: url("/static/images/svg-icons/quote-mark.svg");
         position: absolute;
-        top:0;
-        left:0;
+        top: -.75em;
+        left: -.5em;
         font-size:6em;
         line-height:30px;
         color:$brand-primary;

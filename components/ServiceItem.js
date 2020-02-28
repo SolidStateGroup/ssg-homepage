@@ -2,6 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 import propTypes from 'prop-types';
 import { ButtonSecondary } from './base/forms/Button';
+import Link from 'next/link';
 
 const _propTypes = {
     className: propTypes.string,
@@ -38,6 +39,9 @@ const ServiceItem = global.ServiceItem = class extends React.PureComponent {
                     ) : (
                        null
                     )}
+                    <Link prefetch={false} href={this.props.serviceLink}>
+                        <ButtonText buttonText={'View more'} type={'button'} className="text-primary pt-sm-3 pl-0"/>
+                    </Link>
                 </div>
                 <div className="col-md-6 pr-0 pl-0">
                     <img src={this.props.serviceImage || '/static/images/services/ux-design.jpg'}
