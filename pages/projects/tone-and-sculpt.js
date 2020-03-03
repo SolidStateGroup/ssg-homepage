@@ -5,6 +5,11 @@ import ProjectHero from '../../components/ProjectHero';
 import ProjectDetailSectionItem, { ProjectTechSection } from '../../components/ProjectDetailSectionItem';
 import { WideListItem, TextListItem } from '../../components/ListItem';
 import ClientQuote from '../../components/ClientQuote';
+import ProjectStatItem from '../../components/ProjectStatItem';
+import Footer from '../../components/Footer';
+import {ButtonText, ButtonPrimary} from '../../components/base/forms/Button';
+
+
 
 // Automatically sets relevant head tags for seo, see _app for the remainder tags
 const TheComponent = class extends Component {
@@ -16,99 +21,128 @@ const TheComponent = class extends Component {
 
     render() {
         return (
-            <Page title="Tone and Sculpt" canonical="projects/tone-and-sculpt">
-
-                <ProjectHero
-                    ProjectServiceListItem={
-                        <React.Fragment>
-                            <TextListItem listItemText={'Research,'}/>
-                            <TextListItem listItemText={'UX design,'}/>
-                            <TextListItem listItemText={'UI design,'}/>
-                            <TextListItem listItemText={'Mobile App Development,'}/>
-                            <TextListItem listItemText={'API Development'}/>
-                        </React.Fragment>
-                    }
-                    ProjectTechListItem={
-                        <React.Fragment>
-                            <TextListItem listItemText={'React Native,'}/>
-                            <TextListItem listItemText={'AWS,'}/>
-                            <TextListItem listItemText={'PostgreSQL,'}/>
-                            <TextListItem listItemText={'Django 2,'}/>
-                            <TextListItem listItemText={'Python'}/>
-                        </React.Fragment>
-                    }
-                    className="hero--tone-and-sculpt"
-                />
-
-
-                <div className="container">
-
-                    <ProjectTextSection/>
-
-                    <ProjectDetailSectionItem
-                        title={'UX Research'}
-                        imageOne={'/static/images/services/ux-niall.jpg'}
-                        imageTwo={'/static/images/services/ux-andy.jpg'}
-                        description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
+            <React.Fragment>
+                <Page title="Tone and Sculpt" canonical="projects/tone-and-sculpt">
+                    <ProjectHero
                         ProjectServiceListItem={
                             <React.Fragment>
-                                <WideListItem
-                                    listItemText={'User Interviews'}/>
-                                <WideListItem
-                                    listItemText={'UX Analysis'}/>
-                                <WideListItem
-                                    listItemText={'User Journey Maps'}/>
-                                <WideListItem
-                                    listItemText={'User Personas'}/>
-                            </React.Fragment>}
-                    />
-
-                    <ProjectDetailSectionItem
-                        className="flex-row-reverse"
-                        title={'Prototyping'}
-                        imageOne={'/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg'}
-                        description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
-                        ProjectServiceListItem={
+                                <TextListItem listItemText={'Research,'}/>
+                                <TextListItem listItemText={'UX design,'}/>
+                                <TextListItem listItemText={'UI design,'}/>
+                                <TextListItem listItemText={'Mobile App Development,'}/>
+                                <TextListItem listItemText={'API Development'}/>
+                            </React.Fragment>
+                        }
+                        ProjectTechListItem={
                             <React.Fragment>
-                                <WideListItem
-                                    listItemText={'Wireframing'}/>
-                                <WideListItem
-                                    listItemText={'Clickable Prototypes'}/>
-                                <WideListItem
-                                    listItemText={'Motion Prototypes'}/>
-                                <WideListItem
-                                    listItemText={'Interaction Design'}/>
-                            </React.Fragment>}
+                                <TextListItem listItemText={'React Native,'}/>
+                                <TextListItem listItemText={'AWS,'}/>
+                                <TextListItem listItemText={'PostgreSQL,'}/>
+                                <TextListItem listItemText={'Django 2,'}/>
+                                <TextListItem listItemText={'Python'}/>
+                            </React.Fragment>
+                        }
+                        className="hero--tone-and-sculpt"
                     />
 
-                    <ProjectTechSection
-                        ProjectServiceListItem={
-                            <React.Fragment>
-                                <WideListItem
-                                    listItemText={'Mobile Development'}/>
-                                <WideListItem
-                                    listItemText={'Backend Development'}/>
-                                <WideListItem
-                                    listItemText={'API Migration'}/>
-                                <WideListItem
-                                    listItemText={'Relaunch'}/>
-                            </React.Fragment>}
+                    <div className="container">
 
-                    />
+                        <ProjectTextSection/>
+
+                        <ProjectDetailSectionItem
+                            title={'UX Research'}
+                            imageOne={'/static/images/services/ux-niall.jpg'}
+                            imageTwo={'/static/images/services/ux-andy.jpg'}
+                            description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
+                            ProjectServiceListItem={
+                                <React.Fragment>
+                                    <WideListItem
+                                        listItemText={'User Interviews'}/>
+                                    <WideListItem
+                                        listItemText={'UX Analysis'}/>
+                                    <WideListItem
+                                        listItemText={'User Journey Maps'}/>
+                                    <WideListItem
+                                        listItemText={'User Personas'}/>
+                                </React.Fragment>}
+                        />
+
+                        <ProjectDetailSectionItem
+                            className="flex-row-reverse"
+                            title={'Prototyping'}
+                            imageOne={'/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg'}
+                            description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
+                            ProjectServiceListItem={
+                                <React.Fragment>
+                                    <WideListItem
+                                        listItemText={'Wireframing'}/>
+                                    <WideListItem
+                                        listItemText={'Clickable Prototypes'}/>
+                                    <WideListItem
+                                        listItemText={'Motion Prototypes'}/>
+                                    <WideListItem
+                                        listItemText={'Interaction Design'}/>
+                                </React.Fragment>}
+                        />
+
+                        <ProjectTechSection
+                            ProjectServiceListItem={
+                                <React.Fragment>
+                                    <WideListItem
+                                        listItemText={'Mobile Development'}/>
+                                    <WideListItem
+                                        listItemText={'Backend Development'}/>
+                                    <WideListItem
+                                        listItemText={'API Migration'}/>
+                                    <WideListItem
+                                        listItemText={'Relaunch'}/>
+                                </React.Fragment>}
+
+                        />
 
 
-                </div>
+                    </div>
 
-                <div className="d-flex justify-content-center">
-                    <img src="/static/images/projects/tone-and-sculpt/t&s-phones.jpg" className="img-fluid img__quote-image" alt="tone and sculpt phones" />
-                </div>
+                    <div className="d-flex justify-content-center">
+                        <img src="/static/images/projects/tone-and-sculpt/t&s-phones.jpg"
+                             className="img-fluid img__quote-image" alt="tone and sculpt phones"/>
+                    </div>
 
-                <ClientQuote
-                    text={'Solid State Group are really easy to work with as they are open to feedback and provide regular updates to be able to take decisions on the fly. They came up with a brilliant idea at our hackathon and they\'ve taken on board the insights from our business to further refine the product later on.'}
-                    clientName={'Krissy Cela'} clientTitle={'Founder - Tone and Sculpt'}/>
+                    <ClientQuote
+                        text={'Solid State Group are really easy to work with as they are open to feedback and provide regular updates to be able to take decisions on the fly. They came up with a brilliant idea at our hackathon and they\'ve taken on board the insights from our business to further refine the product later on.'}
+                        clientName={'Krissy Cela'} clientTitle={'Founder - Tone and Sculpt'}/>
 
-
-            </Page>
+                    <div className="section container mt-5 mb-5">
+                        <div className="row">
+                            <div className="col-md-4">
+                                <ProjectStatItem heading={'20,000+'}
+                                                 text={'New users subscribed and paying for the app'}/>
+                            </div>
+                            <div className="col-md-4">
+                                <ProjectStatItem/>
+                            </div>
+                            <div className="col-md-4">
+                                <ProjectStatItem/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="section section--grey">
+                        <div className="container">
+                            <div className="flex-row mt-4 mb-4 project-bottom-nav justify-content-end">
+                                <div className="col-md-4">
+                                    <div className="flex-column">
+                                        <h2>Next Case Study</h2>
+                                        <img src="/static/images/clients/purely-capital-dark.png" className="img-fluid project-bottom-nav__image mt-3" alt="Client logo"/>
+                                        {/*<ButtonText className="text-primary d-block mt-4" buttonText={'View Project'}/>*/}
+                                        <ButtonPrimary className="d-block mt-4">View Project</ButtonPrimary>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Page>
+                <Footer/>
+            </React.Fragment>
         );
     }
 };

@@ -3,7 +3,6 @@
 .section{
     padding-top:50px;
     padding-bottom:50px;
-
     &__title{
         font-size:2.5em;
         &--dark {
@@ -18,6 +17,9 @@
     }
     &--dark {
         background-color: $brandNavy;
+    }
+    &--grey {
+        background-color: $brand-white-smoke;
     }
     &--large-padding {
         padding: 3em 0;

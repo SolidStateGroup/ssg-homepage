@@ -102,7 +102,9 @@ const HomePage = class extends React.Component {
                             <ListItemUnderlined listItemText={'API Development'} listItemLink={'/'} />
                             <ListItemUnderlined listItemText={'Systems integration'} listItemLink={'/'} />
                         </ul>
-                        <ButtonText buttonText={'Explore our services'} type={'button'} className="text-primary pl-sm-5 pl-0"/>
+                        <Link prefetch={false} href="/services">
+                            <ButtonText buttonText={'Explore our services'} type={'button'} className="text-primary pl-sm-5 pl-0"/>
+                        </Link>
                     </div>
                 </div>
 
