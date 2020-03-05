@@ -11,7 +11,7 @@
     "env": "node ./bin/env.js",
     "build": "next build ",
     "postinstall": "node ./bin/blog.js",
-    "storybook": "start-storybook",
+    "storybook": "start-storybook -s ./",
     "start": "cross-env NODE_ENV=production npm run build && cross-env NODE_ENV=production node server.js",
     "lint": "eslint .",
     "test:unit": "TEST=true jest ./.storybook/storybook.test.js"
