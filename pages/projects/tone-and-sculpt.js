@@ -7,6 +7,7 @@ import { WideListItem, TextListItem } from '../../components/ListItem';
 import ClientQuote from '../../components/ClientQuote';
 import ProjectStatItem from '../../components/ProjectStatItem';
 import Footer from '../../components/Footer';
+import ProjectNav from '../../components/ProjectNav';
 import {ButtonText, ButtonPrimary} from '../../components/base/forms/Button';
 
 
@@ -99,8 +100,6 @@ const TheComponent = class extends Component {
                                 </React.Fragment>}
 
                         />
-
-
                     </div>
 
                     <div className="d-flex justify-content-center">
@@ -127,18 +126,7 @@ const TheComponent = class extends Component {
                         </div>
                     </div>
                     <div className="section section--grey">
-                        <div className="container">
-                            <div className="flex-row mt-4 mb-4 project-bottom-nav justify-content-end">
-                                <div className="col-md-4">
-                                    <div className="flex-column">
-                                        <h2>Next Case Study</h2>
-                                        <img src="/static/images/clients/purely-capital-dark.png" className="img-fluid project-bottom-nav__image mt-3" alt="Client logo"/>
-                                        {/*<ButtonText className="text-primary d-block mt-4" buttonText={'View Project'}/>*/}
-                                        <ButtonPrimary className="d-block mt-4">View Project</ButtonPrimary>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <ProjectNav clientLogo={"/static/images/clients/purely-capital-dark.png"} projectLink={'/projects/purely-capital'}/>
                     </div>
                 </Page>
                 <Footer/>
