@@ -141,9 +141,15 @@ export const ProjectTextSection = global.ProjectTextSection = class extends Reac
                     <h6 className="title--project-section title--project-section--small text-grey mb0">{this.props.subTitle || '01 / Overview'}</h6>
                 </div>
                 <div className="col-md-6 offset-md-1">
-                    <h3>{this.props.title || 'Rebooting female fitness for Tone and Sculpt'}</h3>
+
+                    {this.props.title ? (
+                        <h3 className="mb-4">{this.props.title || null}</h3>
+                    ) : (
+                        null
+                    )}
+
                     <div className="flex-row">
-                        <p className="mt-4">{this.props.description || 'Lorem ipsum dolor sit amet, dictas similique incorrupte ut mei, vel eu nusquam noluisse. Etiam interpretaris ea sea, nec tibique omittantur no. Ei mucius inimicus dissentiunt vim, no quo noster adolescens, ne per efficiendi intellegam. Cum inani harum adversarium et, officiis euripidis incorrupte cu ius.'}</p>
+                        <p>{this.props.description || 'Lorem ipsum dolor sit amet, dictas similique incorrupte ut mei, vel eu nusquam noluisse. Etiam interpretaris ea sea, nec tibique omittantur no. Ei mucius inimicus dissentiunt vim, no quo noster adolescens, ne per efficiendi intellegam. Cum inani harum adversarium et, officiis euripidis incorrupte cu ius.'}</p>
                     </div>
                 </div>
             </div>

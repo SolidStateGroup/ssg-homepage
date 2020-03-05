@@ -8,9 +8,6 @@ import ClientQuote from '../../components/ClientQuote';
 import ProjectStatItem from '../../components/ProjectStatItem';
 import Footer from '../../components/Footer';
 import ProjectNav from '../../components/ProjectNav';
-import {ButtonText, ButtonPrimary} from '../../components/base/forms/Button';
-
-
 
 // Automatically sets relevant head tags for seo, see _app for the remainder tags
 const TheComponent = class extends Component {

@@ -21,9 +21,9 @@ const ProjectHero = global.ProjectHero = class extends React.PureComponent {
         return (
             <React.Fragment>
                 <div
-                    className={cn(this.props.className, ' hero hero--three-quarters project-hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4')}>
+                    className={cn(this.props.className, ' hero project-hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4')}>
                     <Header className="navbar-container--transparent"/>
-                    <div className="d-flex flex-1">
+                    <div className="d-flex flex-1 pt-5 pb-5">
                         <div className="container align-self-center">
                             <div className="flex-row">
                                 <div className="col-md-4 offset-md-1">
