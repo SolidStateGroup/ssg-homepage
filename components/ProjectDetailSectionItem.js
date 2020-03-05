@@ -2,12 +2,12 @@ import React from 'react';
 import cn from 'classnames';
 import propTypes from 'prop-types';
 import { ButtonSecondary } from './base/forms/Button';
-import ReactLogo from '../components/TechIcons/ReactLogo';
-import NodeLogo from '../components/TechIcons/NodeLogo';
-import DockerLogo from '../components/TechIcons/DockerLogo';
-import JavaLogo from '../components/TechIcons/JavaLogo';
-import PostgresLogo from '../components/TechIcons/PostgresLogo';
-import AWSLogo from '../components/TechIcons/AWSLogo';
+import ReactLogo from './TechIcons/ReactLogo';
+import NodeLogo from './TechIcons/NodeLogo';
+import DockerLogo from './TechIcons/DockerLogo';
+import JavaLogo from './TechIcons/JavaLogo';
+import PostgresLogo from './TechIcons/PostgresLogo';
+import AWSLogo from './TechIcons/AWSLogo';
 
 const _propTypes = {
     className: propTypes.string,
@@ -32,16 +32,20 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                 <div className="col-md-6 d-flex">
                     <div className="flex-row">
                         <div className="col align-self-end">
-                            <img src={this.props.imageOne || '/static/images/services/mobile-app-development.jpg'}
-                                 alt="UX Design Whiteboard"
-                                 className="img-fluid"/>
+                            <img
+                              src={this.props.imageOne || '/static/images/services/mobile-app-development.jpg'}
+                              alt="UX Design Whiteboard"
+                              className="img-fluid"
+                            />
                         </div>
 
                         {this.props.imageTwo ? (
                             <div className="col align-self-end">
-                                <img src={this.props.imageTwo || '/static/images/services/ux-andy.jpg'}
-                                     alt="UX Design Whiteboard"
-                                     className="img-fluid"/>
+                                <img
+                                  src={this.props.imageTwo || '/static/images/services/ux-andy.jpg'}
+                                  alt="UX Design Whiteboard"
+                                  className="img-fluid"
+                                />
                             </div>
                         ) : (
                             null
@@ -57,8 +61,9 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
 
                     {this.props.ProjectServiceListItem ? (
                         <div className="mt-5">
-                            <h6 className="title--project-section title--project-section--small text-grey mb0">What we
-                                did</h6>
+                            <h6 className="title--project-section title--project-section--small text-grey mb0">
+                                What we did
+                            </h6>
                             <ul className="wide-list list-unstyled flex-row">
                                 {this.props.ProjectServiceListItem}
                             </ul>
@@ -92,7 +97,8 @@ export const ProjectTechSection = global.ProjectTechSection = class extends Reac
                     {this.props.ProjectServiceListItem ? (
                         <div className="mt-5">
                             <h6 className="title--project-section title--project-section--small text-grey mb0">What we
-                                did</h6>
+                                did
+                            </h6>
                             <ul className="wide-list list-unstyled flex-row">
                                 {this.props.ProjectServiceListItem}
                             </ul>
@@ -104,22 +110,22 @@ export const ProjectTechSection = global.ProjectTechSection = class extends Reac
                 <div className="col-md-6 d-flex">
                     <div className="flex-row">
                         <div className="col-md-4 col-6 text-center">
-                            <ReactLogo fill={'#2C2733'} className="client-logo--large"/>
+                            <ReactLogo fill="#2C2733" className="client-logo--large"/>
                         </div>
                         <div className="col-md-4 col-6 text-center">
-                            <NodeLogo fill={'#2C2733'} className="client-logo--medium"/>
+                            <NodeLogo fill="#2C2733" className="client-logo--medium"/>
                         </div>
                         <div className="col-md-4 col-6 text-center">
-                            <DockerLogo fill={'#2C2733'} className="logo--medium"/>
+                            <DockerLogo fill="#2C2733" className="logo--medium"/>
                         </div>
                         <div className="col-md-4 col-6 text-center mb-md-0 mb-4">
-                            <JavaLogo fill={'#2C2733'} className="client-logo--small"/>
+                            <JavaLogo fill="#2C2733" className="client-logo--small"/>
                         </div>
                         <div className="col-md-4 col-6 text-center">
-                            <PostgresLogo fill={'#2C2733'} className="client-logo--large"/>
+                            <PostgresLogo fill="#2C2733" className="client-logo--large"/>
                         </div>
                         <div className="col-md-4 col-6 text-center">
-                            <AWSLogo fill={'#2C2733'} className="client-logo--medium"/>
+                            <AWSLogo fill="#2C2733" className="client-logo--medium"/>
                         </div>
                     </div>
                 </div>
@@ -156,5 +162,3 @@ export const ProjectTextSection = global.ProjectTextSection = class extends Reac
         );
     }
 };
-
-
