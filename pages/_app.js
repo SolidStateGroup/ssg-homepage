@@ -9,12 +9,12 @@ class MyApp extends App {
     constructor(props) {
         super(props);
         if (typeof window !== 'undefined') {
-            // window.ScrollMagic = require('ScrollMagic');
-            // require('../scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap');
-            require('../node_modules/gsap/MorphSVGPlugin');
-            // gsap.registerPlugin(MorphSVGPlugin);
+            window.ScrollMagic = require('scrollmagic');
+            require('scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap');
+            require('gsap/MorphSVGPlugin');
         }
     }
+
     render() {
         const { Component } = this.props;
         return (
