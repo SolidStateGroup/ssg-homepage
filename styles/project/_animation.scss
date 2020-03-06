@@ -33,7 +33,6 @@
     opacity: 0.75;
 }
 
-
 .pulse-container {
     position: absolute;
 }
@@ -53,7 +52,24 @@
 }
 
 
-#myElement {
-    opacity: 0;
-    transform: translateX(-20) !important;
+//#myElement {
+//    opacity: 0;
+//    transform: translateX(-20) !important;
+//}
+
+.blob {
+    &__container {
+        display: block;
+    }
+    &__image {
+        position: absolute;
+        max-width: 550px;
+    }
+    &__svg {
+        overflow: visible;
+        width: 100%;
+        align-self: center;
+    }
 }
+
+

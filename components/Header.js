@@ -30,7 +30,6 @@ class Header extends PureComponent {
         const menuOpen = !this.state.menuOpen;
         if (menuOpen) {
             // fade in anim
-            gsap.
             gsap.to('.mobile-menu', { duration: 0.25, opacity: 1, display: 'block', ease: 'power1' });
             gsap.to('.mainmenu', { duration: 0.5, y: '5%', opacity: 1, display: 'block', ease: 'power1.inOut' });
             gsap.from('.pulse-circle', { duration: 0.5, opacity: 0, y: -20, stagger: 0.25 });

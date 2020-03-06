@@ -10,6 +10,7 @@ import DisneyLogo from '../components/ClientLogos/DisneyLogo';
 import FeaturedProjects from '../components/FeaturedProjects';
 import {ListItemUnderlined} from '../components/ListItem';
 import {ButtonPrimary, ButtonText} from '../components/base/forms/Button';
+import ProjectBlobImage from '../components/ProjectBlobImage';
 import Link from 'next/link';
 
 const HomePage = class extends React.Component {
@@ -18,21 +19,29 @@ const HomePage = class extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {};
+        // reference to the DOM node
+        this.myElement = null;
+        // reference to the animation
+        this.myTween = null;
+
     }
 
     componentDidMount = async () => {
-        this.controller = new ScrollMagic.Controller();
-        new ScrollMagic.Scene({
-            triggerElement: "#scrollStarts",
-            offset: -300, // start this scene after scrolling for -300px
-            reverse:false
-        })
-            .setTween("#myElement", 0.5, {
-                opacity: 1,
-                translateX: 20
-            })
-            // .setPin("#myElement") // pins the element for the the scene's duration
-            .addTo(this.controller); // assign the scene to the controller
+
+        gsap.to('#path-1 path', {duration: 8, morphSVG: "#path-2 path", yoyo: true, repeat: -1});
+
+        // this.controller = new ScrollMagic.Controller();
+        // new ScrollMagic.Scene({
+        //     triggerElement: "#scrollStarts",
+        //     offset: -300, // start this scene after scrolling for -300px
+        //     reverse:false
+        // })
+        //     .setTween("#myElement", 0.5, {
+        //         opacity: 1,
+        //         translateX: 20
+        //     })
+        //     // .setPin("#myElement") // pins the element for the the scene's duration
+        //     .addTo(this.controller); // assign the scene to the controller
     }
 
     render = () => {
@@ -43,16 +52,18 @@ const HomePage = class extends React.Component {
                     <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
                         <div className="flex-1 justify-content-start p-5">
                             <div className="offset-lg-3 translatey-offset-down" ref={div => this.myElement = div}>
-                                <h1 className="hero__title mb-4">We design and build amazing digital products</h1>
+                                <h1 ref={div => this.myElement = div} className="hero__title mb-4">We design and build
+                                    amazing digital products</h1>
                                 <Link prefetch={false} href="/work">
                                     <ButtonPrimary>View latest projects</ButtonPrimary>
                                 </Link>
                             </div>
                         </div>
-                        <div className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down">
-                            <img src="/static/images/hero-gfx.png" alt="Blob Graphic" className="img-fluid"/>
+                        <div className="flex-1 flex-column align-items-center hidden-sm-down">
+                            <ProjectBlobImage blobColour="#69D9D3" image="/static/images/hero-devices.png" />
                         </div>
                     </div>
+
                     <div className="hero__footer hidden-sm-down">
                         <div className="row">
                             <div className="col hidden-md-down">

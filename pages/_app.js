@@ -3,15 +3,18 @@ import Head from 'next/head';
 import React from 'react';
 import '../styles/styles.scss';
 import '../project/polyfill';
+import { gsap } from 'gsap';
 
 class MyApp extends App {
-  constructor(props) {
-    super(props);
-    if (typeof window !== 'undefined') {
-      window.ScrollMagic = require('ScrollMagic');
-      require('scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap');
+    constructor(props) {
+        super(props);
+        if (typeof window !== 'undefined') {
+            // window.ScrollMagic = require('ScrollMagic');
+            // require('../scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap');
+            require('../node_modules/gsap/MorphSVGPlugin');
+            // gsap.registerPlugin(MorphSVGPlugin);
+        }
     }
-  }
     render() {
         const { Component } = this.props;
         return (
