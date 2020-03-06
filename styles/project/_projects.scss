@@ -56,6 +56,15 @@
         top: -.25em;
         right: -.05em;
     }
+    &__image {
+        &--short {
+            max-height: 400px;
+        }
+    }
+    &__item {
+        margin-bottom: 4em;
+        margin-top: 4em;
+    }
 }
 
 .project-hero {

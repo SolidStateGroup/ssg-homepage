@@ -14,11 +14,13 @@ import ProjectItem from '../components/ProjectItem';
 const projects = [
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/hailie-summary-image.png',
+        projectImage: '/static/images/projects/hailie/hailie-summary-iphone.png',
         subTitle: 'iOS and Android Mobile Applications',
         title: 'Reinventing treatment of respiritory issues',
         clientBrand: '/static/images/clients/colour/hailie.svg',
         clientName: 'Hailie',
+        href: '/projects/hailie',
+        blobColour: "#FF715A",
         tags: ['design'],
 
     },
@@ -116,7 +118,8 @@ const PartnersPage = class extends React.Component {
             <div className="container">
                 {projects.map((p) => (
                   <ProjectItem ButtonComponent={p.ButtonComponent} projectImage={p.projectImage} subTitle={p.subTitle}
-                               title={p.title} clientBrand={p.clientBrand} clientName={p.clientName} className="mb-5"
+                               title={p.title} clientBrand={p.clientBrand} clientName={p.clientName} projectImageClass={p.projectImageClass}
+                               blobColour={p.blobColour}
                   />
 
                 ))}

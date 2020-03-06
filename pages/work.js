@@ -10,28 +10,32 @@ import { ButtonPrimary } from '../components/base/forms/Button';
 const projects = [
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/tands-summary-image.png',
+        projectImage: '/static/images/projects/tone-and-sculpt/phone.png',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
         title: 'Rebooting female fitness for Tone and Sculpt',
+        projectImageClass: "project__image--short",
+        blobColour: "#5CC2E1",
         tags: ['DESIGN'],
 
     },
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/pc-summary-image.png',
+        projectImage: '/static/images/projects/purely-capital/pc-summary-mac.png',
         subTitle: 'Responsive Web Application',
         href: '/projects/purely-capital',
         title: 'The future of film and media financing',
+        blobColour: "#D02D55",
         tags: ['DESIGN'],
 
     },
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/hailie',
-        projectImage: '/static/images/projects/hailie-summary-image.png',
+        projectImage: '/static/images/projects/hailie/hailie-summary-iphone.png',
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
+        blobColour: "#FF715A",
         tags: ['DESIGN', 'MOBILE'],
 
     },
@@ -107,7 +111,9 @@ const WorkPage = class extends React.Component {
                         ButtonComponent={p.ButtonComponent}
                         projectImage={p.projectImage}
                         subTitle={p.subTitle}
-                        title={p.title} className="mb-5"
+                        projectImageClass={p.projectImageClass}
+                        blobColour={p.blobColour}
+                        title={p.title}
                       />
 
                   ))}

@@ -28,8 +28,6 @@ const HomePage = class extends React.Component {
 
     componentDidMount = async () => {
 
-        gsap.to('#path-1 path', {duration: 8, morphSVG: "#path-2 path", yoyo: true, repeat: -1});
-
         // this.controller = new ScrollMagic.Controller();
         // new ScrollMagic.Scene({
         //     triggerElement: "#scrollStarts",

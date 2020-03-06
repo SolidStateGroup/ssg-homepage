@@ -59,11 +59,13 @@
 
 .blob {
     &__container {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
     &__image {
         position: absolute;
-        max-width: 550px;
+        max-width: 500px;
+        align-self: center;
     }
     &__svg {
         overflow: visible;

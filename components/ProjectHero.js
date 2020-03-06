@@ -26,7 +26,7 @@ const ProjectHero = global.ProjectHero = class extends React.PureComponent {
                     <div className="d-flex flex-1 pt-5 pb-5">
                         <div className="container align-self-center">
                             <div className="flex-row">
-                                <div className="col-md-4 offset-md-1">
+                                <div className="col-md-5">
                                     <h5 className="title--light mb-0">{this.props.projectType || 'iOS and Android Mobile App'}</h5>
                                     <h1 className="hero__title mb-4">{this.props.projectTitle || 'Rebooting female fitness for Tone and Sculpt'}</h1>
 
