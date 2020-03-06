@@ -20,7 +20,7 @@ const TheComponent = class extends Component {
     render() {
         return (
             <React.Fragment>
-                <Page title="Tone and Sculpt" canonical="projects/tone-and-sculpt">
+                <Page title="Purely Capital" canonical="projects/tone-and-sculpt">
                     <ProjectHero
                         projectTitle={'The future of media financing'}
                         projectType={'Web Application'}
@@ -86,6 +86,9 @@ const TheComponent = class extends Component {
                                         listItemText={'Interaction Design'}/>
                                 </React.Fragment>}
                         />
+
+                        <ProjectTextSection subTitle={'Solution'} description={'To create an engaging, interactive experience to what is a considerably sterile subject matter. Large forms are always daunting for users and product designers so creating a unique and exciting initial experience was paramount for \'selling\' this product to new visitors.\n' +
+                        '\n'} />
 
                         <div className="section">
                             <img className="img-fluid" src="/static/images/projects/purely-capital/purely_phones.png" />
