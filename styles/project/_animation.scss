@@ -52,10 +52,10 @@
 }
 
 
-//#myElement {
-//    opacity: 0;
-//    transform: translateX(-20) !important;
-//}
+#sectionFadeInLeft, #projectsFadeInLeft {
+    opacity: 0;
+    transform: translateX(-20) !important;
+}
 
 .blob {
     &__container {
@@ -73,6 +73,25 @@
         align-self: center;
     }
 }
+
+.hero {
+    &__container {
+        &--animated {
+            opacity: 0;
+        }
+    }
+    &__list {
+        &--animated {
+            opacity: 0;
+        }
+    }
+}
+//
+//.project{
+//    &--featured{
+//          width: 0;
+//    }
+//}
 
 @include media-breakpoint-down(md) {
     .blob {

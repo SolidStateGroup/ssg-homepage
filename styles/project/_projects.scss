@@ -62,8 +62,7 @@
         }
     }
     &__item {
-        margin-bottom: 4em;
-        margin-top: 4em;
+        margin: 4em 0;
     }
 }
 
@@ -129,6 +128,29 @@
 
 
 @include media-breakpoint-down(sm) {
+    
+    .project {
+        &-pagination-container{
+            left:0;
+            width:100%;
+        }
+        &-pagination {
+            position: relative;
+            justify-content: center;
+            bottom: 0;
+            left: 0;
+        }
+        &__item {
+          margin: 0;
+        }
+        &__cta{
+            margin-top:20px;
+        }
+        &__title{
+            font-size:1.85rem;
+        }
+    }
+    
     .featured-projects, .project--featured{
         min-height:100vh;
         border-radius: 0;
@@ -136,28 +158,13 @@
             display: block;
         }
     }
-
-    .project-pagination-container{
-        left:0;
-        width:100%;
-    }
-
-    .project-pagination {
-        position: relative;
-        justify-content: center;
-        bottom: 0;
-        left: 0;
-    }
-
-    .project__title{
-        font-size:1.85rem;
-    }
-
+    
     .featured-projects-container {
         height: 100vh;
     }
+    
 
-    .project__cta{
-        margin-top:20px;
-    }
 }
+
+
+

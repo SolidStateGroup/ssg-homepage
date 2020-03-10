@@ -26,19 +26,21 @@ const HomePage = class extends React.Component {
     }
 
     componentDidMount = async () => {
+        gsap.to('.hero__container--animated', { duration: 1, translateY: -10, opacity: 1, ease: 'power1' });
+        gsap.to('.hero__list--animated', { delay: 0.25, duration: 0.25, opacity: 1, ease: 'power2', stagger: 0.15 });
 
-        // this.controller = new ScrollMagic.Controller();
-        // new ScrollMagic.Scene({
-        //     triggerElement: "#scrollStarts",
-        //     offset: -300, // start this scene after scrolling for -300px
-        //     reverse:false
-        // })
-        //     .setTween("#myElement", 0.5, {
-        //         opacity: 1,
-        //         translateX: 20
-        //     })
-        //     // .setPin("#myElement") // pins the element for the the scene's duration
-        //     .addTo(this.controller); // assign the scene to the controller
+        this.controller = new ScrollMagic.Controller();
+        new ScrollMagic.Scene({
+            triggerElement: '#servicesScrollStart',
+            offset: -300, // start this scene after scrolling for -300px
+            reverse: false,
+        })
+            .setTween('#sectionFadeInLeft', 0.5, {
+                opacity: 1,
+                translateX: 20,
+            })
+
+            .addTo(this.controller); // assign the scene to the controller
     }
 
     render = () => {
@@ -46,7 +48,7 @@ const HomePage = class extends React.Component {
             <Page title={Constants.titles.home} canonical="">
                 <div className="hero hero--full d-flex flex-column mx-0 p-4">
                     <Header/>
-                    <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
+                    <div className="hero__container hero__container--animated flex-1 align-self-stretch row flex-row text-center text-md-left">
                         <div className="flex-1 justify-content-start p-5">
                             <div className="offset-lg-3 translatey-offset-down" ref={div => this.myElement = div}>
                                 <h1 ref={div => this.myElement = div} className="hero__title mb-4">We design and build
@@ -72,23 +74,23 @@ const HomePage = class extends React.Component {
                             </div>
                             <div className="col-lg-8 col-12 pl-0 pr-0">
                                 <div className="hero__list">
-                                    <div className="flex-row ml-auto">
-                                        <div className="col-4 col-md-2">
+                                    <div className="flex-row ml-auto hero__list">
+                                        <div className="col-4 col-md-2 hero__list--animated">
                                             <p className="mb-0 mr-3 text text-center mb-3 mb-sm-0">Trusted by</p>
                                         </div>
-                                        <div className="col-4 col-md-2 text-center">
+                                        <div className="col-4 col-md-2 text-center hero__list--animated">
                                             <BaLogo className="client-logo--large mb-3 mb-sm-0" fill="white" />
                                         </div>
-                                        <div className="col-4 col-md-2 text-center">
+                                        <div className="col-4 col-md-2 text-center hero__list--animated">
                                             <DisneyLogo className="client-logo--medium mb-3 mb-sm-0" fill="white" />
                                         </div>
-                                        <div className="col-4 col-md-2 text-center">
+                                        <div className="col-4 col-md-2 text-center hero__list--animated">
                                             <UnileverLogo className="client-logo--small" fill="white" />
                                         </div>
-                                        <div className="col-4 col-md-2 text-center">
+                                        <div className="col-4 col-md-2 text-center hero__list--animated">
                                             <NHSLogo className="client-logo--medium" fill="white" />
                                         </div>
-                                        <div className="col-4 col-md-2 text-center">
+                                        <div className="col-4 col-md-2 text-center hero__list--animated">
                                             <HertzLogo className="client-logo--medium" fill="white" />
                                         </div>
                                     </div>
@@ -98,8 +100,8 @@ const HomePage = class extends React.Component {
                     </div>
                 </div>
 
-                <div className="section" id="scrollStarts" >
-                    <div className="container-fluid" id="myElement">
+                <div className="section" id="servicesScrollStart">
+                    <div className="container-fluid" id="sectionFadeInLeft">
                         <div className="col-lg-8 pl-0 offset-md-2">
                             <h2 className="section__title section__title--dark">Services</h2>
                             <ul className="lined-list list-unstyled flex-row pl-sm-5 pl-0 mt-3">
