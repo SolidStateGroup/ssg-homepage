@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
@@ -8,10 +9,9 @@ import HertzLogo from '../components/ClientLogos/HertzLogo';
 import NHSLogo from '../components/ClientLogos/NHSLogo';
 import DisneyLogo from '../components/ClientLogos/DisneyLogo';
 import FeaturedProjects from '../components/FeaturedProjects';
-import {ListItemUnderlined} from '../components/ListItem';
-import {ButtonPrimary, ButtonText} from '../components/base/forms/Button';
+import { ListItemUnderlined } from '../components/ListItem';
+import { ButtonPrimary, ButtonText } from '../components/base/forms/Button';
 import ProjectBlobImage from '../components/ProjectBlobImage';
-import Link from 'next/link';
 
 const HomePage = class extends React.Component {
     static displayName = 'HomePage';
@@ -23,7 +23,6 @@ const HomePage = class extends React.Component {
         this.myElement = null;
         // reference to the animation
         this.myTween = null;
-
     }
 
     componentDidMount = async () => {
@@ -51,7 +50,8 @@ const HomePage = class extends React.Component {
                         <div className="flex-1 justify-content-start p-5">
                             <div className="offset-lg-3 translatey-offset-down" ref={div => this.myElement = div}>
                                 <h1 ref={div => this.myElement = div} className="hero__title mb-4">We design and build
-                                    amazing digital products</h1>
+                                    amazing digital products
+                                </h1>
                                 <Link prefetch={false} href="/work">
                                     <ButtonPrimary>View latest projects</ButtonPrimary>
                                 </Link>
@@ -77,19 +77,19 @@ const HomePage = class extends React.Component {
                                             <p className="mb-0 mr-3 text text-center mb-3 mb-sm-0">Trusted by</p>
                                         </div>
                                         <div className="col-4 col-md-2 text-center">
-                                            <BaLogo className="client-logo--large mb-3 mb-sm-0" fill={'white'} />
+                                            <BaLogo className="client-logo--large mb-3 mb-sm-0" fill="white" />
                                         </div>
                                         <div className="col-4 col-md-2 text-center">
-                                            <DisneyLogo className="client-logo--medium mb-3 mb-sm-0" fill={'white'} />
+                                            <DisneyLogo className="client-logo--medium mb-3 mb-sm-0" fill="white" />
                                         </div>
                                         <div className="col-4 col-md-2 text-center">
-                                            <UnileverLogo className="client-logo--small" fill={'white'} />
+                                            <UnileverLogo className="client-logo--small" fill="white" />
                                         </div>
                                         <div className="col-4 col-md-2 text-center">
-                                            <NHSLogo className="client-logo--medium" fill={'white'} />
+                                            <NHSLogo className="client-logo--medium" fill="white" />
                                         </div>
                                         <div className="col-4 col-md-2 text-center">
-                                            <HertzLogo className="client-logo--medium" fill={'white'} />
+                                            <HertzLogo className="client-logo--medium" fill="white" />
                                         </div>
                                     </div>
                                 </div>
@@ -99,21 +99,23 @@ const HomePage = class extends React.Component {
                 </div>
 
                 <div className="section" id="scrollStarts" >
-                    <div className="container-fluid col-lg-8 pl-0 offset-md-2" id="myElement">
-                        <h2 className="section__title section__title--dark">Services</h2>
-                        <ul className="lined-list list-unstyled flex-row pl-sm-5 pl-0 mt-3">
-                            <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'}  />
-                            <ListItemUnderlined listItemText={'Strategy'} listItemLink={'/'} />
-                            <ListItemUnderlined listItemText={'UX & UI Design'} listItemLink={'/services/ux-design'} />
-                            <ListItemUnderlined listItemText={'Prototyping'} listItemLink={'/'} />
-                            <ListItemUnderlined listItemText={'Mobile app development'} listItemLink={'/'} />
-                            <ListItemUnderlined listItemText={'Responsive web apps'} listItemLink={'/'} />
-                            <ListItemUnderlined listItemText={'API Development'} listItemLink={'/'} />
-                            <ListItemUnderlined listItemText={'Systems integration'} listItemLink={'/'} />
-                        </ul>
-                        <Link prefetch={false} href="/services">
-                            <ButtonText buttonText={'Explore our services'} type={'button'} className="text-primary pl-sm-5 pl-0"/>
-                        </Link>
+                    <div className="container-fluid" id="myElement">
+                        <div className="col-lg-8 pl-0 offset-md-2">
+                            <h2 className="section__title section__title--dark">Services</h2>
+                            <ul className="lined-list list-unstyled flex-row pl-sm-5 pl-0 mt-3">
+                                <ListItemUnderlined listItemText="Branding" listItemLink="/" />
+                                <ListItemUnderlined listItemText="Strategy" listItemLink="/" />
+                                <ListItemUnderlined listItemText="UX & UI Design" listItemLink="/services/ux-design" />
+                                <ListItemUnderlined listItemText="Prototyping" listItemLink="/" />
+                                <ListItemUnderlined listItemText="Mobile app development" listItemLink="/" />
+                                <ListItemUnderlined listItemText="Responsive web apps" listItemLink="/" />
+                                <ListItemUnderlined listItemText="API Development" listItemLink="/" />
+                                <ListItemUnderlined listItemText="Systems integration" listItemLink="/" />
+                            </ul>
+                            <Link prefetch={false} href="/services">
+                                <ButtonText buttonText="Explore our services" type="button" className="text-primary pl-sm-5 pl-0"/>
+                            </Link>
+                        </div>
                     </div>
                 </div>
 

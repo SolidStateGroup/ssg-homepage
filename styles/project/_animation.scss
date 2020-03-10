@@ -64,7 +64,7 @@
     }
     &__image {
         position: absolute;
-        max-width: 500px;
+        max-width: 600px;
         align-self: center;
     }
     &__svg {
@@ -74,4 +74,18 @@
     }
 }
 
+@include media-breakpoint-down(md) {
+    .blob {
+        &__image {
+            max-width: 350px;
+        }
+    }
+}
 
+@include media-breakpoint-up(md) {
+    .blob {
+        &__image {
+            //position: absolute;
+        }
+    }
+}

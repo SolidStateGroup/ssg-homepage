@@ -34,7 +34,7 @@ const ProjectItem = global.ProjectItem = class extends React.PureComponent {
                     null
                 )}
                 <div className="flex-1 align-self-stretch flex-row">
-                    <div className="col justify-content-start p-5">
+                    <div className="col-md-6 justify-content-start p-5">
                         <div>
                             <p className="project__subtitle mb-0">{this.props.subTitle || 'Solid State Group'}</p>
                             <h2 className="project__title ">{this.props.title}</h2>
@@ -58,7 +58,7 @@ const ProjectItem = global.ProjectItem = class extends React.PureComponent {
                             </Link>
                         </div>
                     </div>
-                    <div className="col align-items-center justify-content-center text-center project__image-container">
+                    <div className="col-md-6 align-items-center justify-content-center text-center project__image-container">
                         <div className="blob__container">
                             <img src={this.props.projectImage || "/static/images/projects/tone-and-sculpt/phone.png"}
                                  alt="Blob Graphic"

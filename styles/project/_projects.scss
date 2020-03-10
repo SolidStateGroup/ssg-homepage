@@ -19,7 +19,7 @@
         &.active {
             pointer-events: auto;
             opacity: 1;
-            display: flex;
+            display: block;
             .project__title {
                 opacity: 1;
                 animation: fadein 1s;
@@ -132,6 +132,9 @@
     .featured-projects, .project--featured{
         min-height:100vh;
         border-radius: 0;
+        &.active {
+            display: block;
+        }
     }
 
     .project-pagination-container{
