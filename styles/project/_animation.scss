@@ -51,12 +51,6 @@
     transform: translateY(20px);
 }
 
-
-#sectionFadeInLeft, #projectsFadeInLeft {
-    opacity: 0;
-    transform: translateX(-20) !important;
-}
-
 .blob {
     &__container {
         display: flex;
@@ -74,18 +68,6 @@
     }
 }
 
-.hero {
-    &__container {
-        &--animated {
-            opacity: 0;
-        }
-    }
-    &__list {
-        &--animated {
-            opacity: 0;
-        }
-    }
-}
 //
 //.project{
 //    &--featured{

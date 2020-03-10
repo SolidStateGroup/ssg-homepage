@@ -3,7 +3,6 @@ import { withRouter } from 'next/router';
 import Link from 'next/link';
 import propTypes from 'prop-types';
 import cn from 'classnames';
-import { gsap } from 'gsap';
 
 const ActiveLink = withRouter(({ router, children, ...props }) => (
     <Link {...props}>

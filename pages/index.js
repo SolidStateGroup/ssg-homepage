@@ -26,21 +26,48 @@ const HomePage = class extends React.Component {
     }
 
     componentDidMount = async () => {
-        gsap.to('.hero__container--animated', { duration: 1, translateY: -10, opacity: 1, ease: 'power1' });
-        gsap.to('.hero__list--animated', { delay: 0.25, duration: 0.25, opacity: 1, ease: 'power2', stagger: 0.15 });
+        gsap.timeline()
+            .from('.hero__container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
+            .from('.hero__title', { duration: 0.5, x: 10, opacity: 0, ease: 'power1' })
 
-        this.controller = new ScrollMagic.Controller();
-        new ScrollMagic.Scene({
-            triggerElement: '#servicesScrollStart',
-            offset: -300, // start this scene after scrolling for -300px
+        const controller = new ScrollMagic.Controller();
+
+        const tl = new gsap.timeline();
+        const tl2 = new gsap.timeline();
+        const tl3 = new gsap.timeline();
+
+        tl.from('#sectionOneAnimation', 0.5, { y: -10, opacity: 0, ease: 'power1' }, 1);
+        tl2.from('#sectionTwoAnimation', 0.5, { y: 20, opacity: 0, ease: 'power1' }, 1);
+        tl3.from('#sectionThreeAnimation', 1, { y: 80, opacity: 0, ease: 'power1' }, 1);
+
+        const scene1 = new ScrollMagic.Scene({
+            triggerElement: '#sectionOneTrigger',
+            offset: -300,
             reverse: false,
         })
-            .setTween('#sectionFadeInLeft', 0.5, {
-                opacity: 1,
-                translateX: 20,
-            })
+            .setTween(tl);
 
-            .addTo(this.controller); // assign the scene to the controller
+        const scene2 = new ScrollMagic.Scene({
+            triggerElement: '#sectionTwoTrigger',
+            offset: -300,
+            reverse: false,
+        })
+
+            .setTween(tl2);
+
+        const scene3 = new ScrollMagic.Scene({
+            triggerElement: '#sectionThreeTrigger',
+            offset: -300,
+            reverse: false,
+        })
+
+            .setTween(tl3);
+
+        controller.addScene([
+            scene1,
+            scene2,
+            scene3,
+        ]);
     }
 
     render = () => {
@@ -48,7 +75,7 @@ const HomePage = class extends React.Component {
             <Page title={Constants.titles.home} canonical="">
                 <div className="hero hero--full d-flex flex-column mx-0 p-4">
                     <Header/>
-                    <div className="hero__container hero__container--animated flex-1 align-self-stretch row flex-row text-center text-md-left">
+                    <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
                         <div className="flex-1 justify-content-start p-5">
                             <div className="offset-lg-3 translatey-offset-down" ref={div => this.myElement = div}>
                                 <h1 ref={div => this.myElement = div} className="hero__title mb-4">We design and build
@@ -100,8 +127,8 @@ const HomePage = class extends React.Component {
                     </div>
                 </div>
 
-                <div className="section" id="servicesScrollStart">
-                    <div className="container-fluid" id="sectionFadeInLeft">
+                <div className="section" id="sectionOneTrigger">
+                    <div className="container-fluid" id="sectionOneAnimation">
                         <div className="col-lg-8 pl-0 offset-md-2">
                             <h2 className="section__title section__title--dark">Services</h2>
                             <ul className="lined-list list-unstyled flex-row pl-sm-5 pl-0 mt-3">
@@ -121,14 +148,14 @@ const HomePage = class extends React.Component {
                     </div>
                 </div>
 
-                <div className="mt-5 mb-5 section--no-padding">
-                    <div className="flex-row justify-content-end">
+                <div className="mt-5 mb-5 section--no-padding" id="sectionTwoTrigger">
+                    <div className="flex-row justify-content-end" id="sectionTwoAnimation">
                         <FeaturedProjects className="col-lg-10 pl-0 pr-0"/>
                     </div>
                 </div>
 
-                <div className="section my-5">
-                    <div className="container">
+                <div className="section my-5" id="sectionThreeTrigger">
+                    <div className="container" id="sectionThreeAnimation">
                         <h2 className="section__title section__title--dark text-center mb-5">Our process</h2>
                         <div className="flex-row">
                             <div className="col text-center">

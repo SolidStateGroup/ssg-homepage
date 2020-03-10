@@ -1,7 +1,6 @@
 import React from 'react';
 import cn from 'classnames';
 import propTypes from 'prop-types';
-import { gsap } from 'gsap';
 import ProjectItem from './ProjectItem';
 import { ButtonPrimary } from './base/forms/Button';
 
