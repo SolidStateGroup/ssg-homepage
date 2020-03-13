@@ -28,14 +28,14 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
     render() {
         const { children, ButtonComponent, ...rest } = this.props;
         return (
-            <div className={cn(this.props.className, 'row project__section-item pt-5 pb-5')}>
-                <div className="col-md-6 d-flex">
+            <div className={cn(this.props.className, 'row project-section-item pt-5 pb-5')}>
+                <div className="col-md-6 d-flex justify-content-center">
                     <div className="flex-row">
                         <div className="col align-self-end">
                             <img
                               src={this.props.imageOne || '/static/images/services/mobile-app-development.jpg'}
                               alt="UX Design Whiteboard"
-                              className="img-fluid"
+                              className={cn(this.props.imageOneclassName, "img-fluid")}
                             />
                         </div>
 
@@ -55,7 +55,7 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                 </div>
                 <div className="col-md-5 offset-md-1 pr-5">
                     <h6 className="title--project-section title--project-section--small text-grey mb0">{this.props.subTitle || 'Design Discovery'}</h6>
-                    <h3>{this.props.title || 'UX Research'}</h3>
+                    <h3>{this.props.title || null}</h3>
                     <p className="mt-4">{this.props.description || 'We work with you to iterate on the various creative deliverables until you achieve your vision.'}</p>
 
 
@@ -155,7 +155,7 @@ export const ProjectTextSection = global.ProjectTextSection = class extends Reac
                     )}
 
                     <div className="flex-row">
-                        <p>{this.props.description || 'Lorem ipsum dolor sit amet, dictas similique incorrupte ut mei, vel eu nusquam noluisse. Etiam interpretaris ea sea, nec tibique omittantur no. Ei mucius inimicus dissentiunt vim, no quo noster adolescens, ne per efficiendi intellegam. Cum inani harum adversarium et, officiis euripidis incorrupte cu ius.'}</p>
+                        <p className="project-section-item__text">{this.props.description || 'Lorem ipsum dolor sit amet, dictas similique incorrupte ut mei, vel eu nusquam noluisse. Etiam interpretaris ea sea, nec tibique omittantur no. Ei mucius inimicus dissentiunt vim, no quo noster adolescens, ne per efficiendi intellegam. Cum inani harum adversarium et, officiis euripidis incorrupte cu ius.'}</p>
                     </div>
                 </div>
             </div>

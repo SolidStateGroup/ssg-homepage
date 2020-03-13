@@ -20,7 +20,7 @@ const TheComponent = class extends Component {
     render() {
         return (
             <React.Fragment>
-                <Page title="Purely Capital" canonical="projects/tone-and-sculpt">
+                <Page title="Purely Capital" canonical="projects/purely-capital">
                     <ProjectHero
                         projectTitle={'The future of media financing'}
                         projectType={'Web Application'}
@@ -91,7 +91,7 @@ const TheComponent = class extends Component {
                         '\n'} />
 
                         <div className="section">
-                            <img className="img-fluid" src="/static/images/projects/purely-capital/purely_phones.png" />
+                            <img className="img-fluid" src="/static/images/projects/purely-capital/purely-phones@2x.png" />
                         </div>
 
                         <ProjectTechSection

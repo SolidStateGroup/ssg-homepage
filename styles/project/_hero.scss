@@ -33,6 +33,9 @@
   &--purely-capital {
     background-color: #D02D55;
   }
+  &--hailie {
+    background-color: #FF715A;
+  }
 }
 
 @include media-breakpoint-down(md) {

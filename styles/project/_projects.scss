@@ -64,6 +64,11 @@
     &__item {
         margin: 4em 0;
     }
+    &-section-item {
+        &__text {
+            white-space: pre-wrap;
+        }
+    }
 }
 
 .project-hero {
@@ -78,7 +83,7 @@
         width: 187px;
     }
     &__item {
-    
+
     }
 }
 
@@ -128,7 +133,7 @@
 
 
 @include media-breakpoint-down(sm) {
-    
+
     .project {
         &-pagination-container{
             left:0;
@@ -150,7 +155,7 @@
             font-size:1.85rem;
         }
     }
-    
+
     .featured-projects, .project--featured{
         min-height:100vh;
         border-radius: 0;
@@ -158,11 +163,11 @@
             display: block;
         }
     }
-    
+
     .featured-projects-container {
         height: 100vh;
     }
-    
+
 
 }
 
