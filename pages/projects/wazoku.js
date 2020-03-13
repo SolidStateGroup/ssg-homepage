@@ -20,10 +20,10 @@ const TheComponent = class extends Component {
         return (
 
             <React.Fragment>
-                <Page title="Hailie" canonical="projects/hailie">
+                <Page title="Wazoku" canonical="projects/wazoku">
                     <ProjectHero
-                        projectTitle={'Reinventing treatment of respiritory issues'}
-                        projectType={'Mobile & Web Application'}
+                        projectTitle={'Ideas happen anywhere, anytime'}
+                        projectType={'Mobile Application'}
                         ProjectServiceListItem={
                             <React.Fragment>
                                 <TextListItem listItemText={'Web Application Development,'}/>
@@ -40,8 +40,8 @@ const TheComponent = class extends Component {
                                 <TextListItem listItemText={'Python'}/>
                             </React.Fragment>
                         }
-                        className="hero--hailie"
-                        projectImage={"/static/images/projects/hailie/hailie-summary-iphone.png"}
+                        className="hero--wazoku"
+                        projectImage={"/static/images/projects/wazoku/2.png"}
                     />
 
                     <div className="container">

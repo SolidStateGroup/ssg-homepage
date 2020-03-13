@@ -39,6 +39,15 @@ const projects = [
         tags: ['DESIGN', 'MOBILE'],
 
     },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/wazoku',
+        projectImage: '/static/images/projects/wazoku/2.png',
+        subTitle: 'iOS and Android Mobile App',
+        title: 'Ideas happen anywhere, anytime',
+        blobColour: "#173E5A",
+        tags: ['DESIGN', 'MOBILE'],
+    },
 ];
 
 const WorkPage = class extends React.Component {
