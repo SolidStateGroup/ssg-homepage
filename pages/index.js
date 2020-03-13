@@ -38,11 +38,11 @@ const HomePage = class extends React.Component {
 
         tl.from('#sectionOneAnimation', 0.5, { y: -10, opacity: 0, ease: 'power1' }, 1);
         tl2.from('#sectionTwoAnimation', 0.5, { y: 20, opacity: 0, ease: 'power1' }, 1);
-        tl3.from('#sectionThreeAnimation', 1, { y: 80, opacity: 0, ease: 'power1' }, 1);
+        tl3.from('#sectionThreeAnimation', 0.5, { y: 80, opacity: 0, ease: 'power1' }, 1);
 
         const scene1 = new ScrollMagic.Scene({
             triggerElement: '#sectionOneTrigger',
-            offset: -300,
+            offset: -325,
             reverse: false,
         })
             .setTween(tl);
@@ -77,7 +77,7 @@ const HomePage = class extends React.Component {
                     <Header/>
                     <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
                         <div className="flex-1 justify-content-start p-5">
-                            <div className="offset-lg-3 translatey-offset-down" ref={div => this.myElement = div}>
+                            <div className="offset-lg-1" ref={div => this.myElement = div}>
                                 <h1 ref={div => this.myElement = div} className="hero__title mb-4">We design and build
                                     amazing digital products
                                 </h1>
@@ -129,7 +129,7 @@ const HomePage = class extends React.Component {
 
                 <div className="section" id="sectionOneTrigger">
                     <div className="container-fluid" id="sectionOneAnimation">
-                        <div className="col-lg-8 pl-0 offset-md-2">
+                        <div className="col-md-8 pl-0 offset-md-2">
                             <h2 className="section__title section__title--dark">Services</h2>
                             <ul className="lined-list list-unstyled flex-row pl-sm-5 pl-0 mt-3">
                                 <ListItemUnderlined listItemText="Branding" listItemLink="/" />

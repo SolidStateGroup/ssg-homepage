@@ -50,8 +50,8 @@ const PartnersPage = class extends React.Component {
             <div className="hero hero--three-quarters d-flex flex-column mx-0 p-4">
                 <Header/>
                 <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
-                    <div className="flex-1 justify-content-start pt-5 pb-5 pl-0 pr-0 pt-sm-5">
-                        <div className="offset-lg-3">
+                    <div className="flex-1 justify-content-start pt-5 pb-5 pl-0 pr-0 pt-md-5">
+                        <div className="offset-lg-3 offset-md-1">
                             <h1 className="hero__title mb-4">We partner with the best consultancies on projects for the biggest brands</h1>
                             <ButtonPrimary>Work with us</ButtonPrimary>
                         </div>
@@ -60,7 +60,7 @@ const PartnersPage = class extends React.Component {
                         <img src="/static/images/clients/partners.svg" alt="Blob Graphic" className="img-fluid"/>
                     </div>
                 </div>
-                <div className="hero__footer hidden-sm-down">
+                <div className="hero__footer hidden-md-down">
                     <div className="row">
                         <div className="col">
                             <div className="mouse">
@@ -99,7 +99,7 @@ const PartnersPage = class extends React.Component {
             </div>
 
             <div className="section">
-                <div className="container-fluid col-lg-8 offset-md-2">
+                <div className="container-fluid col-md-10">
                     <h2 className="section__title">Services</h2>
                     <ul className="lined-list list-unstyled flex-row pl-5 mt-3">
                         <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'}  />

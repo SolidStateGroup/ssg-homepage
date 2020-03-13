@@ -32,3 +32,11 @@
 .contact-sidebar {
     z-index: 2;
 }
+
+@include media-breakpoint-down(md) {
+    .section {
+        &__title {
+            font-size: 1.7em;
+        }
+    }
+}

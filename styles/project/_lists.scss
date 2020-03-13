@@ -1,58 +1,67 @@
 .lined-list {
-    display: flex;
+  display: flex;
 
-    &__item {
+  &__item {
+    color: $brandNavySecondary;
+    padding: $padding-base 0;
+    border-bottom: 1px solid $border-color-default;
+    flex-basis: calc(50% - 15px);
+    margin-right: $margin-base;
+
+    &__link {
+      color: $brandNavySecondary;
+
+      &:hover {
         color: $brandNavySecondary;
-        padding: $padding-base 0;
-        border-bottom: 1px solid $border-color-default;
-        flex-basis: calc(50% - 15px);
-        margin-right:$margin-base;
-        &__link {
-            color: $brandNavySecondary;
-
-            &:hover {
-                color: $brandNavySecondary;
-                text-decoration: none;
-            }
-        }
-        &:hover {
-            border-bottom: 1px solid $brand-primary;
-            @extend .bold;
-
-            .lined-list__item__link{
-                @extend .bold;
-            }
-        }
+        text-decoration: none;
+      }
     }
+
+    &:hover {
+      border-bottom: 1px solid $brand-primary;
+      @extend .bold;
+
+      .lined-list__item__link {
+        @extend .bold;
+      }
+    }
+  }
 }
 
-.wide-list{
-    display: flex;
-    &__item {
-        color: $brandNavySecondary;
-        padding: $padding-base 0 0 0;
-        flex-basis: calc(50% - 15px);
-    }
+.wide-list {
+  display: flex;
+
+  &__item {
+    color: $brandNavySecondary;
+    padding: $padding-base 0 0 0;
+    flex-basis: calc(50% - 15px);
+  }
 }
 
-.list-image__container{
-    text-align:center;
-    justify-content: center;
-    align-items: center;
+.list-image__container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__list {
-    .text {
-        color: $white;
-    }
+  .text {
+    color: $white;
+  }
 }
 
 @include media-breakpoint-down(sm) {
 
-    .hero__list {
-        .text {
-            font-size: 14px;
-        }
+  .hero__list {
+    .text {
+      font-size: 14px;
     }
+  }
 
+}
+
+@include media-breakpoint-down(md) {
+  .hero__list {
+    padding: 1em;
+  }
 }
