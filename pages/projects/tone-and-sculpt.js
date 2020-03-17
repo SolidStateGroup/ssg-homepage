@@ -44,11 +44,9 @@ const TheComponent = class extends Component {
                     />
 
                     <div className="container">
-
-                        <ProjectTextSection/>
-
                         <ProjectDetailSectionItem
                             title={'UX Research'}
+                            subTitle={'01 / DESIGN DISCOVERY'}
                             imageOne={'/static/images/services/ux-niall.jpg'}
                             imageTwo={'/static/images/services/ux-andy.jpg'}
                             description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
@@ -64,10 +62,10 @@ const TheComponent = class extends Component {
                                         listItemText={'User Personas'}/>
                                 </React.Fragment>}
                         />
-
                         <ProjectDetailSectionItem
                             className="flex-row-reverse"
                             title={'Prototyping'}
+                            subTitle={'02 / DESIGN DISCOVERY'}
                             imageOne={'/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg'}
                             description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
                             ProjectServiceListItem={
@@ -82,7 +80,20 @@ const TheComponent = class extends Component {
                                         listItemText={'Interaction Design'}/>
                                 </React.Fragment>}
                         />
+                        <div className="text-center px-3">
+                            <h6 className="title--project-section title--project-section--small text-grey">03 / UI Design</h6>
+                            <h3>UI Components</h3>
+                            <img src="/static/images/projects/tone-and-sculpt/ui-components.png" alt={'Tone and Sculpt UI'} />
+                        </div>
+                    </div>
 
+                    <div className="panel panel--gradient-blue">
+                        <div className="container">
+                            <img src="/static/images/projects/tone-and-sculpt/3-screen.png" alt={'Tone and Sculpt App'} />
+                        </div>
+                    </div>
+
+                    <div className="container">
                         <ProjectTechSection
                             ProjectServiceListItem={
                                 <React.Fragment>
