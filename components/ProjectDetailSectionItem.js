@@ -31,6 +31,7 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
             <div className={cn(this.props.className, 'row project-section-item pt-5 pb-5')}>
                 <div className="col-md-6 d-flex justify-content-center">
                     <div className="flex-row">
+                        {this.props.imageOne ? (
                         <div className="col align-self-end">
                             <img
                               src={this.props.imageOne || '/static/images/services/mobile-app-development.jpg'}
@@ -38,7 +39,9 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                               className={cn(this.props.imageOneclassName, "img-fluid")}
                             />
                         </div>
-
+                        ) : (
+                            null
+                        )}
                         {this.props.imageTwo ? (
                             <div className="col align-self-end">
                                 <img
@@ -51,12 +54,24 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                             null
                         )}
 
+                        {this.props.video ? (
+                            <div className="col align-self-end">
+                                <video preload="none" autoPlay={true} muted={true} loop={true} width="100%">
+                                    <source
+                                        src={this.props.video || "https://storage.googleapis.com/ssg-website-images/case-studies/purely-capital/quote-confirmationv2.mov"}
+                                        type="video/mp4"/>
+                                </video>
+                            </div>
+                        ) : (
+                            null
+                        )}
                     </div>
                 </div>
+
                 <div className="col-md-5 offset-md-1 pr-5">
                     <h6 className="title--project-section title--project-section--small text-grey mb0">{this.props.subTitle || 'Design Discovery'}</h6>
                     <h3>{this.props.title || null}</h3>
-                    <p className="mt-4">{this.props.description || 'We work with you to iterate on the various creative deliverables until you achieve your vision.'}</p>
+                    <p className="mt-4 project-section-item__text">{this.props.description || 'We work with you to iterate on the various creative deliverables until you achieve your vision.'}</p>
 
 
                     {this.props.ProjectServiceListItem ? (

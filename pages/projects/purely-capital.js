@@ -53,6 +53,7 @@ const TheComponent = class extends Component {
                         '\n'} />
 
                         <ProjectDetailSectionItem
+                            subTitle={'Design Discovery'}
                             title={'UX Research'}
                             imageOne={'/static/images/projects/purely-capital/purely_wireframes.png'}
                             description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
@@ -70,6 +71,7 @@ const TheComponent = class extends Component {
                         />
 
                         <ProjectDetailSectionItem
+                            subTitle={'UX Process'}
                             className="flex-row-reverse"
                             title={'Prototyping'}
                             imageOne={'/static/images/projects/purely-capital/purely_desktop-1.png'}
@@ -80,18 +82,35 @@ const TheComponent = class extends Component {
                                         listItemText={'Wireframing'}/>
                                     <WideListItem
                                         listItemText={'Clickable Prototypes'}/>
-                                    <WideListItem
-                                        listItemText={'Motion Prototypes'}/>
-                                    <WideListItem
-                                        listItemText={'Interaction Design'}/>
                                 </React.Fragment>}
                         />
 
-                        <ProjectTextSection subTitle={'Solution'} description={'To create an engaging, interactive experience to what is a considerably sterile subject matter. Large forms are always daunting for users and product designers so creating a unique and exciting initial experience was paramount for \'selling\' this product to new visitors.\n' +
+                        <ProjectDetailSectionItem
+                            subTitle={'High Fidelity Design'}
+                            title={'Interaction Design'}
+                            video={'https://storage.googleapis.com/ssg-website-images/case-studies/purely-capital/quote-confirmationv2.mov'}
+                            description={'\n' +
+                            'We focussed on specific areas of the app and undertook detailed interaction design phases to make the product \'pop\' in all the right moments.'}
+                            ProjectServiceListItem={
+                                <React.Fragment>
+                                    <WideListItem
+                                        listItemText={'Motion Prototpyes'}/>
+                                    <WideListItem
+                                        listItemText={'UI Design'}/>
+                                    <WideListItem
+                                        listItemText={'High Fidelity Prototypes'}/>
+                                    <WideListItem
+                                        listItemText={'Frontend Development'}/>
+                                </React.Fragment>}
+                        />
+
+                        <ProjectTextSection subTitle={'Solution'} description={'We identified the first contact and the final quote as the areas that book ended the initial experience for the end user and ensured that we surprised and delighted the user, despite the rather labour intensive application process.' +
                         '\n'} />
 
                         <div className="section">
-                            <img className="img-fluid" src="/static/images/projects/purely-capital/purely-phones@2x.png" />
+                            <div className="container">
+                                <img className="img-fluid" src="/static/images/projects/purely-capital/purely-phones@1x.png" />
+                            </div>
                         </div>
 
                         <ProjectTechSection
