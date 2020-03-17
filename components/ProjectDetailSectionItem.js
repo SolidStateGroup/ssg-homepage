@@ -209,8 +209,8 @@ export const ProjectColourBlockSection = global.ProjectColourBlockSection = clas
     }
 };
 
-export const ProjectFullImageSection = global.ProjectTextSection = class extends React.PureComponent {
-    static displayName = 'ProjectTextSection';
+export const ProjectFullImageSection = global.ProjectFullImageSection = class extends React.PureComponent {
+    static displayName = 'ProjectFullImageSection';
 
     static propTypes = _propTypes;
 
@@ -221,7 +221,7 @@ export const ProjectFullImageSection = global.ProjectTextSection = class extends
                 <div className="text-center px-3">
                     <h6 className="title--project-section title--project-section--small text-grey">03 / UI Design</h6>
                     <h3>UI Components</h3>
-                    <img src="/static/images/projects/tone-and-sculpt/ui-components.png" alt={'Tone and Sculpt UI'} />
+                    <img src="/static/images/projects/tone-and-sculpt/ui-components.png" alt="Tone and Sculpt UI" />
                 </div>
             </div>
         );
