@@ -108,6 +108,7 @@ const TheComponent = class extends Component {
 
 
                         <ProjectTechSection
+                            className="flex-row-reverse"
                             description={'Using React Native we were able to communicate with the Bluetooth inhalers both with shared code across Android and iOS, reducing the differences between them.  \n' +
                             '\n' +
                             'Within 6 months we were on both the iOS App Store and Google Play Store in time for a medical trial.\n'}

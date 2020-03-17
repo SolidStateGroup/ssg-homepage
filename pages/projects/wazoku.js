@@ -4,7 +4,7 @@ import Page from '../../components/Page';
 import Header from '../../components/Header';
 import ProjectHero from "../../components/ProjectHero";
 import {TextListItem, WideListItem} from "../../components/ListItem";
-import ProjectDetailSectionItem, {ProjectTechSection} from "../../components/ProjectDetailSectionItem";
+import ProjectDetailSectionItem, {ProjectTechSection, ProjectColourBlockSection} from "../../components/ProjectDetailSectionItem";
 import ProjectNav from "../../components/ProjectNav";
 import Footer from "../../components/Footer";
 
@@ -46,64 +46,42 @@ const TheComponent = class extends Component {
 
                     <div className="container">
 
-                        <ProjectDetailSectionItem
-                            className="flex-row-reverse"
-                            subTitle={'Overview'}
-                            imageOne={'/static/images/projects/hailie/hailie-sensor.png'}
-                            description={'A mobile app for people living with asthma. The app helps users to manage their condition and empowers them to take control of their health day by day.'}
-                        />
-
                         <ProjectTextSection subTitle={'Overview'}
-                                            description={'Our client had backend infrastructure  and app developed over 4 years that couldn’t perform well at scale.\n' + '\n' +
-                                            'Building on our previous experience with Connected hardware, we built a mobile app and clinician dashboard which integrated with Adherium’s Bluetooth Smart Inhalers.\n' +
-                                            '\n' + 'Our quick turnaround had lead to us building and releasing the mobile and web portal to its first medical trial within 6 months. \n'}/>
-
+                                            description={'A mobile application for the capture and innovation of ideas using Wazoku’s existing API platform.'}/>
 
                         <ProjectTextSection subTitle={'Challenge'}
-                                            description={'Adherium’s current platform was built in a tech stack that didn’t perform well at scale. There were also major differences between the Native iOS and Android applications, each with differing releases and UI. Previous scalability and tech choices meant that the best course of action meant developing largely from scratch.\n' + '\n' + 'During the initial stages of development there was limited handover from an existing development team which meant that there was little to salvage.\n' + '\n' + 'Content had to be fully localised in order to accommodate one of their larger Spanish clients.\n' + '\n' + 'Proprietary BLE devices meant that we had to cater for complex scenarios and data flow.\n'}/>
-
+                                            description={'The app needed to be as secure as possible for their clients meaning all data needed to be encrypted and various measures taken to prevent visibility of data or screenshots being taken. Most challenging of all was the app needed to work fully offline with automatic synchronisation occurring in the background when the device came back online.'}/>
 
                         <ProjectDetailSectionItem
-                            className="flex-row-reverse"
                             subTitle={'Solution'}
-                            title={'Mobile App'}
-                            imageOne={'/static/images/projects/hailie/hailie-2.png'}
-                            description={'We developed a seamless onboarding experience, allowing users to easily pair their bluetooth inhaler sensors with the app.'}
+                            title={'React Native'}
+                            imageOne={'/static/images/projects/wazoku/wazoku-phones@1x.png'}
+                            description={'Using React Native we built an app that was able to fully capture all of Wazoku’s requirements. Data encryption was achieved across all data including their custom SQLite databases. An offline queue solution was built that interlinked offline actions in such a way that any actions that depended on another one succeeding would be skipped if that action had failed for any particular reason while also generating an appropriate in-app notification.\n' +
+                            '\n'}
                             ProjectServiceListItem={
                                 <React.Fragment>
+                                    <WideListItem
+                                        listItemText={'UX Design'}/>
+                                    <WideListItem
+                                        listItemText={'UI Design'}/>
                                     <WideListItem
                                         listItemText={'Mobile Development'}/>
                                     <WideListItem
                                         listItemText={'Backend Development'}/>
-                                    <WideListItem
-                                        listItemText={'API Migration'}/>
-                                    <WideListItem
-                                        listItemText={'Bluetooth Smart Inhaler Integration'}/>
                                 </React.Fragment>}
+
                         />
 
                         <ProjectDetailSectionItem
-                            subTitle={'Solution'}
-                            title={'Web Portal'}
-                            imageOne={'/static/images/projects/hailie/hailie-5.png'}
-                            description={'The web portal allows doctors to monitor their patients sensor usage, and prescribe medication and guidance where necessary.'}
-                            ProjectServiceListItem={
-                                <React.Fragment>
-                                    <WideListItem
-                                        listItemText={'Web Application Development'}/>
-                                    <WideListItem
-                                        listItemText={'Backend Development'}/>
-                                </React.Fragment>}
-
+                            subTitle={'Design'}
+                            title={'Fonts & Colours'}
+                            className="flex-row-reverse"
+                            imageOne={'/static/images/projects/wazoku/wazoku-font.png'}
+                            description={'Summary of the fonts and colours used in the User Interface design of the application'}
                         />
 
 
-                        <div className="col-md-12 pr-0 pl-0">
-                            <video width="100%" autoPlay="" muted="" loop="">
-                                <source src="https://storage.cloud.google.com/ssg-website-images/video/Hailie%204k.mov"
-                                        type="video/mp4" />
-                            </video>
-                        </div>
+                        <ProjectColourBlockSection />
 
                         <ProjectTechSection
                             description={'Using React Native we were able to communicate with the Bluetooth inhalers both with shared code across Android and iOS, reducing the differences between them.  \n' +
