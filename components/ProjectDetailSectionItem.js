@@ -221,7 +221,7 @@ export const ProjectFullImageSection = global.ProjectFullImageSection = class ex
                 <div className="text-center px-3">
                     <h6 className="title--project-section title--project-section--small text-grey">{props.subTitle}</h6>
                     <h3>{props.title}</h3>
-                    <img src={props.imageUrl} alt={props.imageAltText} />
+                    <img src={props.imageUrl} alt={props.imageAltText} className="img-fluid  py-5"/>
                 </div>
             </div>
         );
