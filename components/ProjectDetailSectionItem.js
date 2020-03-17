@@ -219,9 +219,9 @@ export const ProjectFullImageSection = global.ProjectFullImageSection = class ex
         return (
             <div>
                 <div className="text-center px-3">
-                    <h6 className="title--project-section title--project-section--small text-grey">03 / UI Design</h6>
-                    <h3>UI Components</h3>
-                    <img src="/static/images/projects/tone-and-sculpt/ui-components.png" alt="Tone and Sculpt UI" />
+                    <h6 className="title--project-section title--project-section--small text-grey">{props.subTitle}</h6>
+                    <h3>{props.title}</h3>
+                    <img src={props.imageUrl} alt={props.imageAltText} />
                 </div>
             </div>
         );

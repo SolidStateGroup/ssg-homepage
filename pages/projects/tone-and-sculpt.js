@@ -65,7 +65,7 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                             className="flex-row-reverse"
                             title={'Prototyping'}
-                            subTitle={'02 / DESIGN DISCOVERY'}
+                            subTitle={'02 / WIREFRAMES & PROTOTYPES'}
                             imageOne={'/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg'}
                             description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
                             ProjectServiceListItem={
@@ -80,11 +80,13 @@ const TheComponent = class extends Component {
                                         listItemText={'Interaction Design'}/>
                                 </React.Fragment>}
                         />
-                        <div className="text-center px-3">
-                            <h6 className="title--project-section title--project-section--small text-grey">03 / UI Design</h6>
-                            <h3>UI Components</h3>
-                            <img src="/static/images/projects/tone-and-sculpt/ui-components.png" alt={'Tone and Sculpt UI'} />
-                        </div>
+                        <ProjectFullImageSection
+                            className={'panel--gradient-blue'}
+                            title={'UI Components'}
+                            subTitle={'03 / UI Design'}
+                            imageUrl={'/static/images/projects/tone-and-sculpt/ui-components.png'}
+                            imageAltText={'Tone and Sculpt UI'}
+                        />
                     </div>
 
                     <div className="panel panel--gradient-blue">
