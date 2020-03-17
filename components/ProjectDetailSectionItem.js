@@ -192,24 +192,6 @@ export const ProjectFullImageSection = global.ProjectTextSection = class extends
                     <h3>UI Components</h3>
                     <img src="/static/images/projects/tone-and-sculpt/ui-components.png" alt={'Tone and Sculpt UI'} />
                 </div>
-
-                <div className={cn(this.props.className, 'row project__section-item pt-5 pb-5')}>
-                    <div className="col-md-4 offset-md-1">
-                        <h6 className="title--project-section title--project-section--small text-grey mb0">{this.props.subTitle || '01 / Overview'}</h6>
-                    </div>
-                    <div className="col-md-6 offset-md-1">
-
-                        {this.props.title ? (
-                            <h3 className="mb-4">{this.props.title || null}</h3>
-                        ) : (
-                            null
-                        )}
-
-                        <div className="flex-row">
-                            <p className="project-section-item__text">{this.props.description || 'Lorem ipsum dolor sit amet, dictas similique incorrupte ut mei, vel eu nusquam noluisse. Etiam interpretaris ea sea, nec tibique omittantur no. Ei mucius inimicus dissentiunt vim, no quo noster adolescens, ne per efficiendi intellegam. Cum inani harum adversarium et, officiis euripidis incorrupte cu ius.'}</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         );
     }
