@@ -12,6 +12,11 @@
         color:$white;
     }
 
+    &--gradient-blue{
+        background:linear-gradient( to top, #77D6EC, #42ADD5);
+        box-shadow: none;
+    }
+
     &__title{
 
     }
