@@ -48,6 +48,15 @@ const projects = [
         blobColour: "#173E5A",
         tags: ['DESIGN', 'MOBILE'],
     },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/british-airways',
+        projectImage: '/static/images/projects/ba/ba-summary-ipad.png',
+        subTitle: 'Real-time operational dashboard',
+        title: 'The real-time machine: integrating with 1960s tech',
+        blobColour: "#3658B0",
+        tags: ['API'],
+    },
 ];
 
 const WorkPage = class extends React.Component {
