@@ -226,3 +226,4 @@ export const ProjectFullImageSection = global.ProjectTextSection = class extends
             </div>
         );
     }
+};
