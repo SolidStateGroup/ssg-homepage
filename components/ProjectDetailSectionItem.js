@@ -29,7 +29,7 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
         const { children, ButtonComponent, ...rest } = this.props;
         return (
             <div className={cn(this.props.className, 'row project-section-item pt-5 pb-5')}>
-                <div className="col-md-6 d-flex justify-content-center">
+                <div className="col-md-6 d-flex justify-content-center align-self-center">
                     <div className="flex-row">
                         {this.props.imageOne ? (
                         <div className="col align-self-end">
@@ -71,7 +71,7 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                 <div className="col-md-5 offset-md-1 pr-5">
                     <h6 className="title--project-section title--project-section--small text-grey mb0">{this.props.subTitle || 'Design Discovery'}</h6>
                     <h3>{this.props.title || null}</h3>
-                    <p className="mt-4 project-section-item__text">{this.props.description || 'We work with you to iterate on the various creative deliverables until you achieve your vision.'}</p>
+                    <p className="mt-4 project-section-item__text">{this.props.description || null }</p>
 
 
                     {this.props.ProjectServiceListItem ? (
@@ -174,6 +174,37 @@ export const ProjectTextSection = global.ProjectTextSection = class extends Reac
                     </div>
                 </div>
             </div>
+        );
+    }
+};
+
+export const ProjectColourBlockSection = global.ProjectColourBlockSection = class extends React.PureComponent {
+    static displayName = 'ProjectColourBlockSection';
+
+    static propTypes = _propTypes;
+
+    render() {
+        const { props } = this;
+        return (
+            <React.Fragment>
+
+                <div className={cn(this.props.className, 'row project__section-item pt-5 pb-5')}>
+                    <div className="offset-md-1 col-md-5">
+                        <h3 className="mb-3">Primary Colours</h3>
+                        <img src={this.props.imageOne || '/static/images/projects/wazoku/wazoku-colours.png'} className="img-fluid"/>
+                    </div>
+                </div>
+                <div className="row py-4">
+                    <div className="offset-sm-7 col-md-5">
+                        <h3 className="mb-3">Secondary Colours</h3>
+                        <img src={this.props.imageTwo ||'/static/images/projects/wazoku/wazoku-secondary-colours.png'} className="img-fluid" />
+                    </div>
+                </div>
+
+
+
+            </React.Fragment>
+
         );
     }
 };
