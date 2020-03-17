@@ -57,6 +57,15 @@ const projects = [
         blobColour: "#3658B0",
         tags: ['API'],
     },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/wfa',
+        projectImage: '/static/images/projects/wfa/wfa-1.png',
+        subTitle: 'Web Application',
+        title: 'Visualising data for effective marketing communications',
+        blobColour: "#ff003c",
+        tags: ['API'],
+    },
 ];
 
 const WorkPage = class extends React.Component {

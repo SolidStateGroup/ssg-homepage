@@ -45,6 +45,9 @@
   &--ba {
     background-color: #3658B0;
   }
+  &--wfa {
+    background-color: #ff003c;
+  }
 }
 
 @include media-breakpoint-down(md) {
