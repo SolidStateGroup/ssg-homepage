@@ -53,6 +53,9 @@
     &--publicate {
         background-color: #fe7101;
     }
+    &--electronx {
+        background-color: #5BABBB;
+    }
 }
 
 @include media-breakpoint-down(md) {

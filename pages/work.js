@@ -85,6 +85,15 @@ const projects = [
         blobColour: "#fe7101",
         tags: ['DESIGN', 'BRANDING', 'WEB'],
     },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/electronx',
+        projectImage: '/static/images/projects/electronx/Macbook_color@1x.png',
+        subTitle: 'Responsive Website',
+        title: 'Tapping into the future of the electricity market',
+        blobColour: "#5BABBB",
+        tags: ['DESIGN', 'WEB'],
+    },
 ];
 
 const WorkPage = class extends React.Component {
