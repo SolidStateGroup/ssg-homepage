@@ -85,6 +85,33 @@ const projects = [
         blobColour: "#fe7101",
         tags: ['DESIGN', 'BRANDING', 'WEB'],
     },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/electronx',
+        projectImage: '/static/images/projects/electronx/Macbook_color@1x.png',
+        subTitle: 'Responsive Website',
+        title: 'Tapping into the future of the electricity market',
+        blobColour: "#5BABBB",
+        tags: ['DESIGN', 'WEB'],
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/unilever',
+        projectImage: '/static/images/projects/unilever/unilever-1@1x.png',
+        subTitle: 'Automated ecommerce via connected scales',
+        title: 'Shopping that buys itself',
+        blobColour: "#007DBB",
+        tags: ['DESIGN', 'MOBILE', 'IOT'],
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/hertz',
+        projectImage: '/static/images/projects/hertz/hertz-1@1x.png',
+        subTitle: 'Connected Car mobile application',
+        title: 'Feels on wheels',
+        blobColour: "#FFD60D",
+        tags: ['DESIGN', 'MOBILE', 'IOT'],
+    },
 ];
 
 const WorkPage = class extends React.Component {
