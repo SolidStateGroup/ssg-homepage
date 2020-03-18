@@ -53,6 +53,10 @@
     &--publicate {
         background-color: #fe7101;
     }
+
+    &--meownow {
+        background-color: #FE7F2C;
+    }
 }
 
 @include media-breakpoint-down(md) {
