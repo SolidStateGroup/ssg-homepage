@@ -1,7 +1,7 @@
 import React from 'react';
 import cn from 'classnames';
 import propTypes from 'prop-types';
-import { ButtonSecondary } from './base/forms/Button';
+import {ButtonSecondary} from './base/forms/Button';
 import ReactLogo from './TechIcons/ReactLogo';
 import NodeLogo from './TechIcons/NodeLogo';
 import DockerLogo from './TechIcons/DockerLogo';
@@ -26,28 +26,28 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
     };
 
     render() {
-        const { children, ButtonComponent, ...rest } = this.props;
+        const {children, ButtonComponent, ...rest} = this.props;
         return (
             <div className={cn(this.props.className, 'row project-section-item pt-5 pb-5')}>
                 <div className="col-md-6 d-flex justify-content-center align-self-center">
                     <div className="flex-row">
                         {this.props.imageOne ? (
-                        <div className="col align-self-end">
-                            <img
-                              src={this.props.imageOne || '/static/images/services/mobile-app-development.jpg'}
-                              alt="UX Design Whiteboard"
-                              className={cn(this.props.imageOneclassName, "img-fluid")}
-                            />
-                        </div>
+                            <div className="col align-self-end">
+                                <img
+                                    src={this.props.imageOne || '/static/images/services/mobile-app-development.jpg'}
+                                    alt="UX Design Whiteboard"
+                                    className={cn(this.props.imageOneclassName, "img-fluid")}
+                                />
+                            </div>
                         ) : (
                             null
                         )}
                         {this.props.imageTwo ? (
                             <div className="col align-self-end">
                                 <img
-                                  src={this.props.imageTwo || '/static/images/services/ux-andy.jpg'}
-                                  alt="UX Design Whiteboard"
-                                  className="img-fluid"
+                                    src={this.props.imageTwo || '/static/images/services/ux-andy.jpg'}
+                                    alt="UX Design Whiteboard"
+                                    className="img-fluid"
                                 />
                             </div>
                         ) : (
@@ -71,7 +71,7 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                 <div className="col-md-5 offset-md-1 pr-5">
                     <h6 className="title--project-section title--project-section--small text-grey mb0">{this.props.subTitle || 'Design Discovery'}</h6>
                     <h3>{this.props.title || null}</h3>
-                    <p className="mt-4 project-section-item__text">{this.props.description || null }</p>
+                    <p className="mt-4 project-section-item__text">{this.props.description || null}</p>
 
 
                     {this.props.ProjectServiceListItem ? (
@@ -100,7 +100,7 @@ export const ProjectTechSection = global.ProjectTechSection = class extends Reac
     static propTypes = _propTypes;
 
     render() {
-        const { props } = this;
+        const {props} = this;
         return (
             <div className={cn(this.props.className, 'row project__section-item pt-5 pb-5')}>
                 <div className="col-md-5 offset-md-1 pr-5">
@@ -155,7 +155,7 @@ export const ProjectTextSection = global.ProjectTextSection = class extends Reac
     static propTypes = _propTypes;
 
     render() {
-        const { props } = this;
+        const {props} = this;
         return (
             <div className={cn(this.props.className, 'row project__section-item pt-5 pb-5')}>
                 <div className="col-md-4 offset-md-1">
@@ -184,23 +184,24 @@ export const ProjectColourBlockSection = global.ProjectColourBlockSection = clas
     static propTypes = _propTypes;
 
     render() {
-        const { props } = this;
+        const {props} = this;
         return (
             <React.Fragment>
 
                 <div className={cn(this.props.className, 'row project__section-item pt-5 pb-5')}>
                     <div className="offset-md-1 col-md-5">
                         <h3 className="mb-3">Primary Colours</h3>
-                        <img src={this.props.imageOne || '/static/images/projects/wazoku/wazoku-colours.png'} className="img-fluid"/>
+                        <img src={this.props.imageOne || '/static/images/projects/wazoku/wazoku-colours.png'}
+                             className="img-fluid"/>
                     </div>
                 </div>
                 <div className="row py-4">
                     <div className="offset-sm-7 col-md-5">
                         <h3 className="mb-3">Secondary Colours</h3>
-                        <img src={this.props.imageTwo ||'/static/images/projects/wazoku/wazoku-secondary-colours.png'} className="img-fluid" />
+                        <img src={this.props.imageTwo || '/static/images/projects/wazoku/wazoku-secondary-colours.png'}
+                             className="img-fluid"/>
                     </div>
                 </div>
-
 
 
             </React.Fragment>
@@ -215,7 +216,7 @@ export const ProjectFullImageSection = global.ProjectFullImageSection = class ex
     static propTypes = _propTypes;
 
     render() {
-        const { props } = this;
+        const {props} = this;
         return (
             <div className={cn(this.props.className, 'p-3')}>
                 <div className="text-center">
@@ -224,6 +225,45 @@ export const ProjectFullImageSection = global.ProjectFullImageSection = class ex
                     <img src={props.imageUrl} alt={props.imageAltText} className="img-fluid  py-5"/>
                 </div>
             </div>
+        );
+    }
+};
+
+export const ProjectFullVideoSection = global.ProjectFullVideoSection = class extends React.PureComponent {
+    static displayName = 'ProjectFullVideoSection';
+    static propTypes = _propTypes;
+
+    render() {
+        const {props} = this;
+        return (
+            <React.Fragment>
+                {this.props.videoLink ? (
+                    <div className="col-md-12 pr-0 pl-0">
+                        <video width="100%" autoPlay={true} muted={true} loop={true}>
+                            <source
+                                src={this.props.videoLink || "https://storage.cloud.google.com/ssg-website-images/video/Hailie%204k.mov"}
+                                type="video/mp4"/>
+                        </video>
+                    </div>
+
+                ) : (
+                    null
+                )}
+
+                {this.props.youtubeLink ? (
+                    <div className="embed-responsive embed-responsive-16by9 mb-5">
+                        <iframe className="embed-responsive-item"
+                                src={this.props.youtubeLink || "https://www.youtube.com/embed/ePI_25LuTLc"}
+                                allowFullScreen=""/>
+                    </div>
+
+                ) : (
+                    null
+                )}
+
+            </React.Fragment>
+
+
         );
     }
 };

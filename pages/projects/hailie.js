@@ -91,13 +91,7 @@ const TheComponent = class extends Component {
 
                         />
 
-
-                        <div className="col-md-12 pr-0 pl-0">
-                            <video width="100%" autoPlay={true} muted={true} loop={true}>
-                                <source src="https://storage.cloud.google.com/ssg-website-images/video/Hailie%204k.mov"
-                                        type="video/mp4" />
-                            </video>
-                        </div>
+                       <ProjectFullVideoSection videoLink={'https://storage.cloud.google.com/ssg-website-images/video/Hailie%204k.mov'} />
 
                         <ProjectDetailSectionItem
                             className="flex-row-reverse"
@@ -105,7 +99,6 @@ const TheComponent = class extends Component {
                             title={'Fluid onboarding'}
                             imageOne={'/static/images/projects/hailie/hailie-phones-2@1x.png'}
                             description={'We developed a seamless onboarding experience, allowing users to easily pair their bluetooth inhaler sensors with the app.'}/>
-
 
                         <ProjectTechSection
                             className="flex-row-reverse"

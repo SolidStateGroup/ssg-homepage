@@ -94,6 +94,15 @@ const projects = [
         blobColour: "#5BABBB",
         tags: ['DESIGN', 'WEB'],
     },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/unilever',
+        projectImage: '/static/images/projects/unilever/unilever-1@1x.png',
+        subTitle: 'Automated ecommerce via connected scales',
+        title: 'Shopping that buys itself',
+        blobColour: "#007DBB",
+        tags: ['DESIGN', 'MOBILE', 'IOT'],
+    },
 ];
 
 const WorkPage = class extends React.Component {
