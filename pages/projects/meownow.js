@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import Page from '../../components/Page';
 import ProjectHero from '../../components/ProjectHero';
-import ProjectDetailSectionItem, { ProjectTechSection } from '../../components/ProjectDetailSectionItem';
-import { WideListItem, TextListItem } from '../../components/ListItem';
+import { TextListItem } from '../../components/ListItem';
 import ClientQuote from '../../components/ClientQuote';
-import ProjectStatItem from '../../components/ProjectStatItem';
 import Footer from '../../components/Footer';
 import ProjectNav from '../../components/ProjectNav';
 
