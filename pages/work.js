@@ -69,7 +69,7 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/publicate',
-        projectImage: '/static/images/projects/wfa/wfa-1.png',
+        projectImage: '/static/images/projects/publicate/publicate-summary-ipad@1x.png',
         subTitle: 'Tablet & Web Application',
         title: 'Straightening out corporate documentation',
         blobColour: "#fe7101",
