@@ -52,8 +52,8 @@ const TheComponent = class extends Component {
                         />
                         <ProjectFullImageSection
                             className={'panel--gradient-blue'}
-                            title={'Responsive UI'}
-                            subTitle={'03 / UI Design'}
+                            title={'Orientation Sensitive UI'}
+                            subTitle={'01 / UI Design'}
                             imageUrl={'/static/images/projects/publicate/ipad-p.png'}
                             imageAltText={'Responsive UI'}
                         />

@@ -73,7 +73,17 @@ const projects = [
         subTitle: 'Tablet & Web Application',
         title: 'Straightening out corporate documentation',
         blobColour: "#fe7101",
-        tags: ['API, MOBILE, DESIGN'],
+        tags: ['API', 'MOBILE', 'DESIGN'],
+    },
+
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/meownow',
+        projectImage: '/static/images/projects/wfa/wfa-1.png',
+        subTitle: 'Responsive Website',
+        title: 'Subscription service for your feline friends',
+        blobColour: "#fe7101",
+        tags: ['DESIGN', 'BRANDING', 'WEB'],
     },
 ];
 
