@@ -103,6 +103,15 @@ const projects = [
         blobColour: "#007DBB",
         tags: ['DESIGN', 'MOBILE', 'IOT'],
     },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/hertz',
+        projectImage: '/static/images/projects/hertz/hertz-1@1x.png',
+        subTitle: 'Connected Car mobile application',
+        title: 'Feels on wheels',
+        blobColour: "#FFD60D",
+        tags: ['DESIGN', 'MOBILE', 'IOT'],
+    },
 ];
 
 const WorkPage = class extends React.Component {

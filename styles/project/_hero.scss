@@ -59,6 +59,10 @@
     &--unilever {
         background-color: #007DBB;
     }
+    &--hertz {
+        background-color: #FFD60D;
+        color: $brand-raisin-black;
+    }
 }
 
 @include media-breakpoint-down(md) {

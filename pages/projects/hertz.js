@@ -24,10 +24,10 @@ const TheComponent = class extends Component {
     render() {
         return (
             <React.Fragment>
-                <Page title="Unilever" canonical="projects/unilever">
+                <Page title="Hertz" canonical="projects/hertz">
                     <ProjectHero
-                        projectTitle={'Shopping that buys itself'}
-                        projectType={'Automated ecommerce via connected scales'}
+                        projectTitle={'Feels on wheels'}
+                        projectType={'Connected Car mobile application'}
                         ProjectServiceListItem={
                             <React.Fragment>
                                 <TextListItem listItemText={'UX design,'}/>
@@ -43,42 +43,48 @@ const TheComponent = class extends Component {
                                 <TextListItem listItemText={'Greensock Animation Platform'}/>
                             </React.Fragment>
                         }
-                        className="hero--unilever"
-                        projectImage={"/static/images/projects/unilever/unilever-1@1x.png"}
+                        className="hero--hertz"
+                        projectImage={"/static/images/projects/hertz/hertz-1@1x.png"}
                     />
 
                     <div className="container">
+
                         <ProjectTextSection
                             subTitle="00 / Overview"
-                            description={'When Unilever put out the call for ideas to make ecommerce more efficient and sustainable, Solid State’s thinking stood out – in a highly competitive environment.\n' +
+                            description={'Hertz wanted to figure out how they could make their customers’ lives better using Ford’s new AppLink technology. After asking hundreds of customers what they found most annoying about car rental, Hertz turned to SSG to create the solution.\n' +
                             '\n' +
-                            'We developed a connected weighing scale for consumers to use at home, which would automatically order replacement products from a supermarket partner when stocks were getting low.'}
+                            'We already had experience of working with AppLink after taking part in a Ford hackathon in Berlin, so we were all set. After a number of brainstorming sessions, the concept for the Connected Car mobile app was born. We designed and developed the app itself in under six weeks, at which point it was exhibited at Mobile World Congress 2017 – to glowing praise.'}
                         />
+                        <ProjectTextSection
+                            subTitle="01 / Challenge"
+                            description={'Hertz interviewed 200 customers across 12 sites over a period of months, gaining a vivid insight into the most common pain-points for people renting a car.\n' +
+                            '\n' +
+                            'Our challenge was to try and soothe those pains as well as to demonstrate Ford’s AppLink technology in a useful and innovative solution.'}
+                        />
+
                     </div>
 
                     <ProjectFullImageSection
-                        title={'Connected Scale'}
-                        subTitle={'01 / Connected Scale'}
-                        imageUrl={'/static/images/projects/unilever/scale.png'}
-                        imageAltText={'Responsive UI'}
+                        imageUrl={'/static/images/projects/hertz/hertz-full-width-image-1.jpg'}
                     />
 
                     <div className="container">
 
                         <ProjectTextSection
-                            subTitle="01 / Challenge"
-                            description={'Unilever was looking for big ideas to improve ecommerce systems, and staged a hackathon with 250+ people competing to develop the best solutions.\n' +
+                            subTitle="02 / Solution"
+                            description={'Many customers said they feel uncertain when driving a rental car for the first time.\n' +
                             '\n' +
-                            'The Solid State team decided to streamline ecommerce by building a weighing scale to sit underneath any Unilever product in the home, automatically re-ordering that product when it sensed the weight drop below a certain level.\n' +
-                            '\n' +
-                            'In just 48 hours, we needed to build a working hardware prototype and integrate it with a supermarket’s online ecommerce system.'}
+                            'So we developed an iOS mobile app which uses AppLink to pull in the car’s data, displaying reassuring diagnostic information to give the driver peace of mind, so they can be absolutely sure that the car is in full working order.'}
                         />
+
+                    </div>
+
+                    <div className="container">
 
                         <ProjectDetailSectionItem
                             subTitle={'02 / Prototyping'}
-                            title={'UX Wireframes'}
-                            className="flex-row-reverse"
-                            imageOne={'/static/images/projects/unilever/unilever-wireframes.png'}
+                            title={'UI Design'}
+                            imageOne={'/static/images/projects/hertz/hertz-phones@1x.png'}
                             description={'Summary of the fonts and colours used in the User Interface design of the application'}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -92,37 +98,8 @@ const TheComponent = class extends Component {
                                         listItemText={'API Development'}/>
                                 </React.Fragment>}
                         />
-                        <ProjectFullImageSection
-                            title={'Mobile APP UI Design'}
-                            subTitle={'03 / Design'}
-                            imageUrl={'/static/images/projects/unilever/unilever-replensih-onboarding.png'}
-                            imageAltText={'Mobile app onboarding'}
-                        />
-                        <ProjectDetailSectionItem
-                            subTitle={'04 / Prototyping'}
-                            title={'Rapid Prototyping / Hardware Fabrication'}
-                            description={'Summary of the fonts and colours used in the User Interface design of the application'}
-                            imageOne={'/static/images/projects/unilever/Button UX 6b.png'}
-                            imageOneclassName="img__shadow"
-                            ProjectServiceListItem={
-                                <React.Fragment>
-                                    <WideListItem
-                                        listItemText={'UX Design'}/>
-                                    <WideListItem
-                                        listItemText={'UI Design'}/>
-                                    <WideListItem
-                                        listItemText={'Mobile Development'}/>
-                                    <WideListItem
-                                        listItemText={'API Development'}/>
-                                </React.Fragment>}
-                        />
-                        <ProjectDetailSectionItem
-                            subTitle={'05 / Development'}
-                            className="flex-row-reverse"
-                            title={'Mobile Development & Bluetooth integration'}
-                            description={'Summary of the fonts and colours used in the User Interface design of the application'}
-                            imageOne={'/static/images/projects/unilever/unilever-onboarding.png'}
-                        />
+
+
                     </div>
 
                     <div className="container">
@@ -148,15 +125,7 @@ const TheComponent = class extends Component {
                                             '\n' +
                                             'In a single weekend, we proved that rapid prototyping can produce brilliant, practical solutions for even the biggest corporations.'}/>
 
-                        <ProjectFullVideoSection youtubeLink={'https://www.youtube.com/embed/ePI_25LuTLc'}/>
-
                     </div>
-
-                    <ClientQuote
-                        text={'Solid State Group are really easy to work with as they are open to feedback and provide regular updates to be able to take decisions on the fly. They came up with a brilliant idea at our hackathon and they\'ve taken on board the insights from our business to further refine the product later on.'}
-                        clientName={'Joe Comiskey'}
-                        image={'/static/images/projects/unilever/unilever-1@1x.png'}
-                        clientTitle={'Head of eCommerce Capability, Innovation and Strategy, UK Unilever'}/>
 
                     <div className="section section--grey">
                         <ProjectNav clientLogo={"/static/images/clients/purely-capital-dark.png"}
