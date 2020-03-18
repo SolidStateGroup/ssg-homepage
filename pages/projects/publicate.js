@@ -50,20 +50,15 @@ const TheComponent = class extends Component {
                             title="The brief"
                             description={'The Publicate House team approached us to redesign and rebuild their app, which helps companies manage and distribute company documentation across their organisation and individual teams.  We would also be redesigning and building the app\'s document viewer which facilitated the use of the companies external interactive presentations.   \n\nThe new app needed to be responsive to mobile and tablet devices in both orientations, and could be branded and themed by each of Publicates corporate clients on the client side. The long term plan was also to release on both iOS and Android stores so it was a easy to choose React Native as our framework for the project.'}
                         />
-                        <ProjectFullImageSection
-                            className={'panel--gradient-blue'}
-                            title={'Orientation Sensitive UI'}
-                            subTitle={'01 / UI Design'}
-                            imageUrl={'/static/images/projects/publicate/ipad-p.png'}
-                            imageAltText={'Responsive UI'}
-                        />
                     </div>
 
-                    <div className="panel panel--gradient-publicate">
-                        <div className="container">
-                            <img src="/static/images/projects/publicate/document-viewer-ipad.png" alt={'Publicate UI'} className="img-fluid"/>
-                        </div>
-                    </div>
+                    <ProjectFullImageSection
+                        className={'panel--navy'}
+                        title={'Orientation Sensitive UI'}
+                        subTitle={'01 / UI Design'}
+                        imageUrl={'/static/images/projects/publicate/publicate-ipads@1x.png'}
+                        imageAltText={'Responsive UI'}
+                    />
 
                     <div className="container">
                         <ProjectTechSection
@@ -81,6 +76,13 @@ const TheComponent = class extends Component {
 
                         />
                     </div>
+
+                    <div className="panel panel--gradient-publicate">
+                        <div className="container text-center">
+                            <img src="/static/images/projects/publicate/publicate-ipad-swot@1x.png" alt={'Publicate UI'} className="img-fluid"/>
+                        </div>
+                    </div>
+
                     <div className="section section--grey">
                         <ProjectNav clientLogo={"/static/images/clients/purely-capital-dark.png"} projectLink={'/projects/purely-capital'}/>
                     </div>
