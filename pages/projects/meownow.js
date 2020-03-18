@@ -4,6 +4,7 @@ import Page from '../../components/Page';
 import ProjectHero from '../../components/ProjectHero';
 import { TextListItem } from '../../components/ListItem';
 import ClientQuote from '../../components/ClientQuote';
+import ProjectDetailSectionItem, { ProjectTechSection, ProjectTextSection } from '../../components/ProjectDetailSectionItem';
 import Footer from '../../components/Footer';
 import ProjectNav from '../../components/ProjectNav';
 
@@ -41,7 +42,7 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--publicate"
-                        projectImage={"/static/images/projects/wfa/wfa-1.png"}
+                        projectImage={"/static/images/projects/meownow/meownow-1@1x.png"}
                     />
 
                     <div className="container">
@@ -53,7 +54,6 @@ const TheComponent = class extends Component {
                             'The creative brief was to design a new brand identity, product packaging and product website for a cat food subscription business. The brand must feel real, high quality and generate enough confidence for website visitors to commit to buying the products and sign up for a weekly, monthly or annual subscription.'}
                         />
                         <ProjectFullImageSection
-                            className={'panel--gradient-blue'}
                             title={'Mobile UI'}
                             subTitle={'01 / Ad Creative'}
                             imageUrl={'/static/images/projects/meownow/tails_mobile.png'}
@@ -73,7 +73,6 @@ const TheComponent = class extends Component {
                     </div>
 
                     <ProjectFullImageSection
-                        className={'panel--gradient-blue'}
                         subTitle={'03 / Ad Creative'}
                         title={'Display Ads'}
                         imageUrl={'/static/images/projects/meownow/tails_cat-ads.jpg'}
@@ -81,13 +80,14 @@ const TheComponent = class extends Component {
                     />
 
                     <div className="p-5 flex-row">
-                        <div className="container">
+                        <div className="container text-center">
                             <img src="/static/images/projects/meownow/meownow-facebook-1.png" alt="Meownow Ad" className="pr-2"/>
                             <img src="/static/images/projects/meownow/meownow-facebook-2.png" alt="Meownow Ad 2" className="pl-2"/>
                         </div>
                     </div>
 
                     <ClientQuote
+                        image={'/static/images/projects/meownow/meownow-1@1x.png'}
                         text={'The work you all did was great - and beyond the test being successful, the energy it created internally just seeing something that felt so real... it\'s been awesome thanks so much - really enjoyed working with you all.'}
                         clientName={'Laura Cannon'} clientTitle={'New Market & Strategies'}/>
 

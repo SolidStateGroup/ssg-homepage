@@ -79,7 +79,7 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/meownow',
-        projectImage: '/static/images/projects/wfa/wfa-1.png',
+        projectImage: '/static/images/projects/meownow/meownow-1@1x.png',
         subTitle: 'Responsive Website',
         title: 'Subscription service for your feline friends',
         blobColour: "#fe7101",
