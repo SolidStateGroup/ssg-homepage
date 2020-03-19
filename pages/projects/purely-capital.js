@@ -114,6 +114,22 @@ const TheComponent = class extends Component {
                         </div>
 
                         <ProjectTechSection
+                            techLogoItems={
+                                <React.Fragment>
+                                    <div className="col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/react.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/java.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/GraphQL-dark.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-6 text-center mb-md-0 mb-4">
+                                        <img src='/static/images/tech-icons/dark/Webpack.svg' className='img-responsive'/>
+                                    </div>
+                                </React.Fragment>
+                            }
                             ProjectServiceListItem={
                                 <React.Fragment>
                                     <WideListItem
