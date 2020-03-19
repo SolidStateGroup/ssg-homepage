@@ -123,25 +123,34 @@ export const ProjectTechSection = global.ProjectTechSection = class extends Reac
                     )}
                 </div>
                 <div className="col-md-6 d-flex">
-                    <div className="flex-row">
-                        <div className="col-md-4 col-6 text-center">
-                            <ReactLogo fill="#2C2733" className="client-logo--large"/>
-                        </div>
-                        <div className="col-md-4 col-6 text-center">
-                            <NodeLogo fill="#2C2733" className="client-logo--medium"/>
-                        </div>
-                        <div className="col-md-4 col-6 text-center">
-                            <DockerLogo fill="#2C2733" className="logo--medium"/>
-                        </div>
-                        <div className="col-md-4 col-6 text-center mb-md-0 mb-4">
-                            <JavaLogo fill="#2C2733" className="client-logo--small"/>
-                        </div>
-                        <div className="col-md-4 col-6 text-center">
-                            <PostgresLogo fill="#2C2733" className="client-logo--large"/>
-                        </div>
-                        <div className="col-md-4 col-6 text-center">
-                            <AWSLogo fill="#2C2733" className="client-logo--medium"/>
-                        </div>
+                    <div className="flex-row mt-3">
+                        {this.props.techLogoItems ? (
+                            <React.Fragment>
+                                {this.props.techLogoItems}
+                            </React.Fragment>
+                        ) : (
+                            <React.Fragment>
+                                <div className="col-md-4 col-6 text-center">
+                                    <img src='/static/images/tech-icons/dark/react.svg' className='img-responsive'/>
+                                </div>
+                                <div className="col-md-4 col-6 text-center">
+                                    <img src='/static/images/tech-icons/dark/node.svg' className='img-responsive'/>
+                                </div>
+                                <div className="col-md-4 col-6 text-center">
+                                    <img src='/static/images/tech-icons/dark/docker.svg' className='img-responsive'/>
+                                </div>
+                                <div className="col-md-4 col-6 text-center mb-md-0 mb-4">
+                                    <img src='/static/images/tech-icons/dark/java.svg' className='img-responsive'/>
+                                </div>
+                                <div className="col-md-4 col-6 text-center">
+                                    <img src='/static/images/tech-icons/dark/postgres.svg' className='img-responsive'/>
+                                </div>
+                                <div className="col-md-4 col-6 text-center">
+                                    <img src='/static/images/tech-icons/dark/aws.svg' className='img-responsive'/>
+                                </div>
+                            </React.Fragment>
+                        )}
+
                     </div>
                 </div>
             </div>

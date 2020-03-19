@@ -81,7 +81,6 @@ const TheComponent = class extends Component {
                                 </React.Fragment>}
                         />
                         <ProjectFullImageSection
-                            className={'panel--gradient-blue'}
                             title={'UI Components'}
                             subTitle={'03 / UI Design'}
                             imageUrl={'/static/images/projects/tone-and-sculpt/ui-components.png'}
@@ -97,6 +96,28 @@ const TheComponent = class extends Component {
 
                     <div className="container">
                         <ProjectTechSection
+                            techLogoItems={
+                                <React.Fragment>
+                                    <div className="col-md-4 col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/react.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-md-4 col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/node.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-md-4 col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/docker.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-md-4 col-6 text-center mb-md-0 mb-4">
+                                        <img src='/static/images/tech-icons/dark/java.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-md-4 col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/postgres.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-md-4 col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/aws.svg' className='img-responsive'/>
+                                    </div>
+                                </React.Fragment>
+                            }
                             ProjectServiceListItem={
                                 <React.Fragment>
                                     <WideListItem
