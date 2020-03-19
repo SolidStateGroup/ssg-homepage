@@ -121,6 +121,15 @@ const projects = [
         blobColour: "#483c3c",
         tags: ['DESIGN', 'MOBILE', 'AUGMENTED REALITY'],
     },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/change-please',
+        projectImage: '/static/images/projects/change-please/Rotato Snapshot@1x.png',
+        subTitle: 'The lean, mean, face detecting, debt tracking machine',
+        title: 'Changing the [face] of debt tracking',
+        blobColour: "#908DF7",
+        tags: ['DESIGN', 'MOBILE'],
+    },
 ];
 
 const WorkPage = class extends React.Component {

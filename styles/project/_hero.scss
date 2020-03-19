@@ -69,6 +69,9 @@
     &--glenfiddich {
         background-color: #483c3c;
     }
+    &--change-please {
+        background-image: linear-gradient(-133deg, #48BAF2 0%, #908DF7 87%);
+    }
 }
 
 @include media-breakpoint-down(md) {

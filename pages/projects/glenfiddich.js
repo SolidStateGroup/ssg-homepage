@@ -76,12 +76,10 @@ const TheComponent = class extends Component {
                                             'Like with our Christmas card AR app, we used Unity, the game engine, to power the app, and Vuforia as the platform.'}
                         />
 
-                        <ProjectTechSection
-                            className={'flex-row-reverse'}
-                            description={'Using React Native we were able to communicate with the Bluetooth inhalers both with shared code across Android and iOS, reducing the differences between them.  \n' +
-                            '\n' +
-                            'Within 6 months we were on both the iOS App Store and Google Play Store in time for a medical trial.\n'}
-                        />
+                        <ProjectTextSection subTitle={'03 / Highlights'}
+                                           description={'The biggest highlight of this proposition was that we built it entirely from scratch in the space of two days.\n' +
+                                           '\n' +
+                                           'What’s more we were able to garner the interest of the marketing director for Monkey Shoulder, a relatively young and vibrant brand in the William Grant &Sons family.'} />
 
                     </div>
 
