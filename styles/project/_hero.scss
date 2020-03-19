@@ -66,6 +66,9 @@
     &--meownow {
         background-color: #FE7F2C;
     }
+    &--glenfiddich {
+        background-color: #483c3c;
+    }
 }
 
 @include media-breakpoint-down(md) {

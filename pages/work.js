@@ -82,7 +82,7 @@ const projects = [
         projectImage: '/static/images/projects/meownow/meownow-1@1x.png',
         subTitle: 'Responsive Website',
         title: 'Subscription service for your feline friends',
-        blobColour: "#fe7101",
+        blobColour: "#f7f7f7",
         tags: ['DESIGN', 'BRANDING', 'WEB'],
     },
     {
@@ -111,6 +111,15 @@ const projects = [
         title: 'Feels on wheels',
         blobColour: "#FFD60D",
         tags: ['DESIGN', 'MOBILE', 'IOT'],
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/glenfiddich',
+        projectImage: '/static/images/projects/glenfiddich/glenfiddich-1@1x.png',
+        subTitle: 'Multiplayer AR racing game for mobile',
+        title: 'Glenfiddich Stag Racing - When Whisky Meets Hackathons',
+        blobColour: "#483c3c",
+        tags: ['DESIGN', 'MOBILE', 'AUGMENTED REALITY'],
     },
 ];
 

@@ -82,10 +82,12 @@ const TheComponent = class extends Component {
                     <div className="container">
 
                         <ProjectDetailSectionItem
-                            subTitle={'02 / Prototyping'}
-                            title={'UI Design'}
+                            subTitle={'03 / Mobile App Design'}
+                            title={'iOS mobile app'}
                             imageOne={'/static/images/projects/hertz/hertz-phones@1x.png'}
-                            description={'Summary of the fonts and colours used in the User Interface design of the application'}
+                            description={'Another common peeve is having to fill up the car with petrol just before returning it. So, on the last day of the rental, the app asks if the customer would like to buy fuel from Hertz at a discount – saving them the hassle of having to find a petrol station on their way back. If they prefer to fill up on the way, the app guides them to the petrol station nearest to the Hertz office.\n' +
+                            '\n' +
+                            'Of course, nobody wants to be fiddling with their phone while driving. So we made sure that our app integrated seamlessly with AppLink to display all this information on both the iOS device and on the touchscreen built into the Ford vehicle.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
                                     <WideListItem
@@ -99,6 +101,10 @@ const TheComponent = class extends Component {
                                 </React.Fragment>}
                         />
 
+                        <ProjectTextSection
+                            subTitle="04 / Highlights"
+                            description={'Ford and Hertz liked the application so much that they exhibited it at Mobile World Congress to demonstrate the potential of AppLink and feedback was positive.'}
+                        />
 
                     </div>
 
@@ -106,24 +112,8 @@ const TheComponent = class extends Component {
                         <ProjectTechSection
                             subTitle={'05 / Development'}
                             className="flex-row-reverse"
-                            ProjectServiceListItem={
-                                <React.Fragment>
-                                    <WideListItem
-                                        listItemText={'UX Design'}/>
-                                    <WideListItem
-                                        listItemText={'UI Design'}/>
-                                    <WideListItem
-                                        listItemText={'Mobile Development'}/>
-                                    <WideListItem
-                                        listItemText={'API Development'}/>
-                                </React.Fragment>}
-
+                            description={'In just six weeks, we had created an app that integrated with a brand new proprietary technology – and helped make renting a car that little bit less painful.'}
                         />
-
-                        <ProjectTextSection subTitle={'06 / Highlights'}
-                                            description={'Unilever liked the idea so much that they funded further development and user testing of the solution after the hackathon.\n' +
-                                            '\n' +
-                                            'In a single weekend, we proved that rapid prototyping can produce brilliant, practical solutions for even the biggest corporations.'}/>
 
                     </div>
 
