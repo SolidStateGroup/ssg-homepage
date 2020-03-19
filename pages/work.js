@@ -16,7 +16,7 @@ const projects = [
         title: 'Rebooting female fitness for Tone and Sculpt',
         projectImageClass: "project__image--short",
         blobColour: "#5CC2E1",
-        tags: ['DESIGN'],
+        tags: ['DESIGN', "MOBILE", "API"],
 
     },
     {
@@ -26,7 +26,7 @@ const projects = [
         href: '/projects/purely-capital',
         title: 'The future of film and media financing',
         blobColour: "#D02D55",
-        tags: ['DESIGN'],
+        tags: ['DESIGN', "WEB"],
 
     },
     {
@@ -36,7 +36,7 @@ const projects = [
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
         blobColour: "#FF715A",
-        tags: ['DESIGN', 'MOBILE'],
+        tags: ['DESIGN', 'MOBILE', "IOT"],
 
     },
     {
@@ -46,7 +46,7 @@ const projects = [
         subTitle: 'iOS and Android Mobile App',
         title: 'Ideas happen anywhere, anytime',
         blobColour: "#173E5A",
-        tags: ['DESIGN', 'MOBILE'],
+        tags: ['DESIGN', 'MOBILE', "API"],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -55,7 +55,7 @@ const projects = [
         subTitle: 'Real-time operational dashboard',
         title: 'The real-time machine: integrating with 1960s tech',
         blobColour: "#3658B0",
-        tags: ['API'],
+        tags: ['API', "WEB"],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -64,7 +64,7 @@ const projects = [
         subTitle: 'Web Application',
         title: 'Visualising data for effective marketing communications',
         blobColour: "#ff003c",
-        tags: ['API'],
+        tags: ['API', "WEB"],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -73,7 +73,7 @@ const projects = [
         subTitle: 'Tablet & Web Application',
         title: 'Straightening out corporate documentation',
         blobColour: "#fe7101",
-        tags: ['API', 'MOBILE', 'DESIGN'],
+        tags: ['API', 'MOBILE', 'DESIGN', "WEB"],
     },
 
     {
@@ -128,7 +128,7 @@ const projects = [
         subTitle: 'The lean, mean, face detecting, debt tracking machine',
         title: 'Changing the [face] of debt tracking',
         blobColour: "#908DF7",
-        tags: ['DESIGN', 'MOBILE'],
+        tags: ['DESIGN', 'MOBILE', 'AUGMENTED REALITY'],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -137,7 +137,7 @@ const projects = [
         subTitle: 'Instant payment integration with NFC Ring',
         title: 'Cakewalk on the catwalk',
         blobColour: "#1a1e5a",
-        tags: ['DESIGN', 'MOBILE'],
+        tags: ['DESIGN', 'MOBILE', "IOT"],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -146,7 +146,25 @@ const projects = [
         subTitle: 'Developing with React and React Native',
         title: 'Making fantasy football a reality',
         blobColour: "#D8315B",
-        tags: ['DESIGN', 'MOBILE'],
+        tags: ['DESIGN', 'MOBILE', "WEB", "API"],
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/chorus',
+        projectImage: '/static/images/projects/chorus/chorus-1@1x.png',
+        subTitle: 'Find the relevant conversations for your small business on Twitter',
+        title: 'Social marketing, made easy',
+        blobColour: "#46cd86",
+        tags: ['DESIGN', 'MOBILE', "API"],
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/imperial-hotels',
+        projectImage: '/static/images/projects/imperial/imperial-1@1x.png',
+        subTitle: 'Mobile app for managing bookings, accessing hotel facilities and controlling the premium WiFi service.',
+        title: 'React Native mobile application with in depth integrations',
+        blobColour: "#f6921e",
+        tags: ['DESIGN', 'MOBILE', "API"],
     },
 
 
@@ -210,6 +228,19 @@ const WorkPage = class extends React.Component {
                           >
                               API Dev
                           </li>
+                          <li
+                              onClick={() => this.setState({ tab: 'IOT' })}
+                              className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'IOT' })}
+                          >
+                              IOT
+                          </li>
+                          <li
+                              onClick={() => this.setState({ tab: 'AUGMENTED REALITY' })}
+                              className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'AUGMENTED REALITY' })}
+                          >
+                              Augmented Reality
+                          </li>
+
                       </ul>
                   </div>
               </div>
