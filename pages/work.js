@@ -139,6 +139,15 @@ const projects = [
         blobColour: "#1a1e5a",
         tags: ['DESIGN', 'MOBILE'],
     },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/dugout',
+        projectImage: '/static/images/projects/dugout/dugout-1@1x.png',
+        subTitle: 'Developing with React and React Native',
+        title: 'Making fantasy football a reality',
+        blobColour: "#D8315B",
+        tags: ['DESIGN', 'MOBILE'],
+    },
 
 
 ];
