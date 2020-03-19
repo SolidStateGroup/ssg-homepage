@@ -130,6 +130,17 @@ const projects = [
         blobColour: "#908DF7",
         tags: ['DESIGN', 'MOBILE'],
     },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/visa',
+        projectImage: '/static/images/projects/visa/visa-1@1x.png',
+        subTitle: 'Instant payment integration with NFC Ring',
+        title: 'Cakewalk on the catwalk',
+        blobColour: "#1a1e5a",
+        tags: ['DESIGN', 'MOBILE'],
+    },
+
+
 ];
 
 const WorkPage = class extends React.Component {

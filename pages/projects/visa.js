@@ -6,7 +6,7 @@ import ProjectHero from "../../components/ProjectHero";
 import {TextListItem, WideListItem} from "../../components/ListItem";
 import ProjectDetailSectionItem, {
     ProjectTechSection,
-    ProjectColourBlockSection
+    ProjectColourBlockSection, ProjectFullVideoSection
 } from "../../components/ProjectDetailSectionItem";
 import ProjectNav from "../../components/ProjectNav";
 import Footer from "../../components/Footer";
@@ -23,14 +23,12 @@ const TheComponent = class extends Component {
         return (
 
             <React.Fragment>
-                <Page title="Change Please" canonical="projects/change-please">
+                <Page title="Visa" canonical="projects/visa">
                     <ProjectHero
-                        projectTitle={'Changing the [face] of debt tracking'}
-                        projectType={'The lean, mean, face detecting, debt tracking machine'}
+                        projectTitle={'Cakewalk on the catwalk'}
+                        projectType={'Instant payment integration with NFC Ring'}
                         ProjectServiceListItem={
                             <React.Fragment>
-                                <TextListItem listItemText={'UX design,'}/>
-                                <TextListItem listItemText={'UI design,'}/>
                                 <TextListItem listItemText={'Mobile Development'}/>
                                 <TextListItem listItemText={'Frontend & Backend Development'}/>
                             </React.Fragment>
@@ -44,40 +42,53 @@ const TheComponent = class extends Component {
                                 <TextListItem listItemText={'Python'}/>
                             </React.Fragment>
                         }
-                        className="hero--change-please"
-                        projectImage={"/static/images/projects/change-please/Rotato Snapshot@1x.png"}
+                        className="hero--visa"
+                        projectImage={"/static/images/projects/visa/visa-1@1x.png"}
                     />
 
                     <div className="container">
 
                         <ProjectTextSection subTitle={'00 / Overview'}
-                                            description={'So you\'re out for dinner and you end up paying... again, you promise yourself that you\'ll remember, but you never do. ChangePlease! has got your back. Open the app, scan your group of friends with your camera and create a debt with the relevant people in seconds.\n' +
+                                            description={'Visa Europe Collab wanted to work with renowned designer Henry Holland to create a stir at London Fashion Week.\n' +
                                             '\n' +
-                                            'ChangePlease! was created to test the best of breed in face detection, as well as challenge the well trodden paths of debt tracking and finance apps.'}/>
+                                            'We built a user-friendly system that allowed House of Holland’s VIP guests to buy any of the designer items on show by touching them with a ring on their finger.\n' +
+                                            '\n' +
+                                            'Technology has never been more wearable.'}/>
+
+                        <ProjectTextSection subTitle={'01 / Challenge'}
+                                            description={'For users, we needed to create a mobile interface for the payment system; and for Henry Holland, we had to devise a way to tag individual items and outfits.\n' +
+                                            '\n' +
+                                            'Not only that: it needed to be robust enough to work first time in a high-profile live environment, and we only had six weeks until launch. And, of course, it had to look stylish.'}
+                        />
+
                     </div>
 
 
                     <ProjectFullImageSection
                         className={'panel--navy pt-5 pb-5'}
-                        title={'Mobile APP UI Design'}
-                        subTitle={'01 / Design'}
-                        imageUrl={'/static/images/projects/change-please/cp-2@1x.png'}
+                        title={'NFC Ring device'}
+                        imageUrl={'/static/images/projects/visa/hoh-rings.png'}
                         imageAltText={'Mobile AR'}
                     />
 
                     <div className="container">
-                        <ProjectTextSection subTitle={'01 / Challenge'}
-                                            description={'ChangePlease! posed a real challenge for the whole Solid State Group team. In saturated markets, pretenders to the throne need to be beautiful and workflows need to be intuitive and repeatable. Ensuring that FacePay was seemlessly introduced and dismissed in the payment workflows also needed to feel valuable and quick, otherwise it was worthless. Even when we nailed the design, integrating with facial recognition API\'s was a huge technical challenge to overcome.'}
+                        <ProjectTextSection subTitle={'02 / Solution'}
+                                            description={'We built a mobile app supporting a cloud-based payment system. We then linked NFC tags on each outfit to a virtualised terminal and Visa’s payment network via Bluetooth, using a stylised version of a standard NFC Ring device.\n' +
+                                            '\n' +
+                                            'This solution allowed guests to tap their unique ring against the tag on any outfit, instantly purchasing it, so they could pick up their goods on the way out of the show.'}
                         />
 
-                        <ProjectTextSection subTitle={'02 / Highlights'}
-                                            description={'We\'re really please with the UI and UX design. The app works beautifully and even the feature with a slight learning curve are easily learned and more importantly remembered for the next use.\n' +
+
+                        <ProjectFullVideoSection youtubeLink={'https://www.youtube.com/embed/pagljreqIfo'}/>
+
+                        <ProjectTextSection subTitle={'03 / Highlights'}
+                                            description={'The guests were visibly impressed by the integration of technology and fashion, which worked perfectly on the night. Many guests made transactions during the event, proving that there’s an appetite for innovative payment solutions.\n' +
                                             '\n' +
-                                            'The facial recognition works really well and detects multiple users super-quick, even in crowds of people.'}
+                                            'And like all the best fashion, our solution was stylish, seamless and bespoke.\n' +
+                                            '\n'}
                         />
 
                         <ProjectTechSection
-                            className="flex-row-reverse"
                             description={'Using React Native we were able to communicate with the Bluetooth inhalers both with shared code across Android and iOS, reducing the differences between them.  \n' +
                             '\n' +
                             'Within 6 months we were on both the iOS App Store and Google Play Store in time for a medical trial.\n'}
