@@ -81,7 +81,7 @@ class Header extends PureComponent {
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item desktop-menu__item">
                                     <img alt="Email" src={require('../static/images/svg-icons/mail-icon.svg')} className="mr-2" />
-                                    <ActiveLink prefetch={false} href="/contact">
+                                    <ActiveLink prefetch={false} href="/contact-form">
                                         <a className="nav-item__link">Contact us</a>
                                     </ActiveLink>
                                 </li>
