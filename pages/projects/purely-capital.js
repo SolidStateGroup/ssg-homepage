@@ -56,26 +56,24 @@ const TheComponent = class extends Component {
                             subTitle={'Design Discovery'}
                             title={'UX Research'}
                             imageOne={'/static/images/projects/purely-capital/purely_wireframes.png'}
-                            description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
+                            description={'We created a prototype that was built with Sketch and Invision. This let users move through the core workflows and indentified any pain points in the web app. '}
                             ProjectServiceListItem={
                                 <React.Fragment>
                                     <WideListItem
-                                        listItemText={'User Interviews'}/>
-                                    <WideListItem
                                         listItemText={'UX Analysis'}/>
                                     <WideListItem
-                                        listItemText={'User Journey Maps'}/>
+                                        listItemText={'UX Journey Maps'}/>
                                     <WideListItem
-                                        listItemText={'User Personas'}/>
+                                        listItemText={'UX Research'}/>
                                 </React.Fragment>}
                         />
 
                         <ProjectDetailSectionItem
                             subTitle={'UX Process'}
                             className="flex-row-reverse"
-                            title={'Prototyping'}
+                            title={'UI Design'}
                             imageOne={'/static/images/projects/purely-capital/purely_desktop-1.png'}
-                            description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
+                            description={'We built on our wireframes with a high fidelity design language for the application process, as well as the dashboard interface.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
                                     <WideListItem

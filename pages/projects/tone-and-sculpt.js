@@ -88,11 +88,11 @@ const TheComponent = class extends Component {
                         />
                     </div>
 
-                    <div className="panel panel--gradient-blue">
-                        <div className="container">
-                            <img src="/static/images/projects/tone-and-sculpt/3-screen.png" alt={'Tone and Sculpt App'} />
-                        </div>
-                    </div>
+                    <ProjectFullImageSection
+                        className="panel panel--gradient-blue"
+                        imageUrl={'/static/images/projects/tone-and-sculpt/3-screen.png'}
+                        imageAltText={'Tone and Sculpt UI'}
+                    />
 
                     <div className="container">
                         <ProjectTechSection

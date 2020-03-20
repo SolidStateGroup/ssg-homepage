@@ -1,7 +1,7 @@
 import React from 'react';
 import cn from 'classnames';
 import propTypes from 'prop-types';
-import { ButtonSecondary } from './base/forms/Button';
+import {ButtonSecondary} from './base/forms/Button';
 import Link from 'next/link';
 
 const _propTypes = {
@@ -21,7 +21,7 @@ const ServiceItem = global.ServiceItem = class extends React.PureComponent {
     };
 
     render() {
-        const { children, ButtonComponent, ...rest } = this.props;
+        const {children, ButtonComponent, ...rest} = this.props;
         return (
 
             <div
@@ -37,15 +37,23 @@ const ServiceItem = global.ServiceItem = class extends React.PureComponent {
                             </ul>
                         </div>
                     ) : (
-                       null
+                        null
                     )}
-                    <Link prefetch={false} href={this.props.serviceLink}>
-                        <ButtonText buttonText={'View more'} type={'button'} className="text-primary pt-sm-3 pl-0"/>
-                    </Link>
+
+                    {this.props.serviceLink ? (
+
+                        <Link prefetch={false} href={this.props.serviceLink}>
+                            <ButtonText buttonText={'View more'} type={'button'} className="text-primary pt-sm-3 pl-0"/>
+                        </Link>
+                    ) : (
+                        null
+                    )}
+
                 </div>
                 <div className="col-md-6 pr-0 pl-0">
                     <img src={this.props.serviceImage || '/static/images/services/ux-design.jpg'}
-                         className="img-fluid img__large img__shadow mt-md-0 mt-5"/>
+                         className={cn(this.props.imageClassName, ' img-fluid mt-md-0 mt-5')}
+                    />
                 </div>
             </div>
         );

@@ -15,6 +15,7 @@ const Constants = global.Constants = {
         partners: 'Partners | Solid State Group',
         jobs: 'Jobs | Solid State Group',
         services: 'Services | Solid State Group',
+        mobileAppDevelopment: 'Mobile App Development | Solid State Group',
         contact: 'Contact | Solid State Group',
     },
     // meta:description
