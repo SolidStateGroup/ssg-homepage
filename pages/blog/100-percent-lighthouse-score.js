@@ -1,3 +1,4 @@
+
 import propTypes from 'prop-types';
 import md from '../../static/pages-blog-markdown/100-percent-lighthouse-score.md';
 import BlogPost from '../../components/BlogPost';
