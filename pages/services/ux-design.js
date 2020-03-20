@@ -33,8 +33,8 @@ const projects = [
 ];
 
 
-const ServicesPage = class extends React.Component {
-    static displayName = 'ServicesPage';
+const DesignPage = class extends React.Component {
+    static displayName = 'DesignPage';
 
     constructor(props, context) {
         super(props, context);
@@ -86,13 +86,13 @@ const ServicesPage = class extends React.Component {
                         serviceImage={'/static/images/services/ui-components@1x.png'}
                         serviceListItem={
                             <React.Fragment>
-                                <ListItemUnderlined listItemText={'User interface design'}
+                                <WideListItem listItemText={'User interface design'}
                                                     listItemLink={'/'}/>
-                                <ListItemUnderlined
+                                <WideListItem
                                     listItemText={'Branding'} listItemLink={'/'}/>
-                                <ListItemUnderlined
+                                <WideListItem
                                     listItemText={'Mobile first'} listItemLink={'/'}/>
-                                <ListItemUnderlined
+                                <WideListItem
                                     listItemText={'High fidelity prototypes'} listItemLink={'/'}/>
                             </React.Fragment>
                         }
@@ -142,4 +142,4 @@ const ServicesPage = class extends React.Component {
     };
 };
 
-export default ServicesPage;
+export default DesignPage;

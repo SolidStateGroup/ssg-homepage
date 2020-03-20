@@ -101,21 +101,35 @@ const ServicesPage = class extends React.Component {
                                      className="flex-row-reverse"
                                      subTitle={'Mobile app development'}
                                      serviceLink={'/services/mobile-app-development'}
-                                     serviceDescription={'A React Native app is a real mobile app. Unlike web app wrappers, React Native uses native platform libraries, creating a completely native experience for your users.'}/>
+                                     serviceDescription={'A React Native app is a real mobile app. Unlike web app wrappers, React Native uses native platform libraries, creating a completely native experience for your users.'}
+                                     serviceListItem={
+                                         <React.Fragment>
+                                             <ListItemUnderlined
+                                                 listItemText={'Tone & Sculpt'} listItemLink={'/projects/tone-and-sculpt'}/>
+                                             <ListItemUnderlined listItemText={'Hailie'}
+                                                                 listItemLink={'/projects/hailie'}/>
+                                             <ListItemUnderlined
+                                                 listItemText={'Wazoku'} listItemLink={'/projects/wazoku'}/>
+                                             <ListItemUnderlined
+                                                 listItemText={'Glenfiddich'} listItemLink={'/projects/glenfiddich'}/>
+                                         </React.Fragment>
+                                     }
+                        />
 
                         <ServiceItem serviceImage={'/static/images/services/web-development.jpg'}
                                      imageClassName={'img__shadow '}
                                      subTitle={'Responsive Web Apps'}
+                                     serviceLink={'/services/responsive-web-apps'}
                                      serviceListItem={
                                          <React.Fragment>
+                                             <ListItemUnderlined
+                                                 listItemText={'British Airways'} listItemLink={'/projects/british-airways'}/>
                                              <ListItemUnderlined listItemText={'Purely Capital'}
-                                                                 listItemLink={'/'}/>
+                                                                 listItemLink={'/projects/purely-capital'}/>
                                              <ListItemUnderlined
-                                                 listItemText={'Racing Post'} listItemLink={'/'}/>
+                                                 listItemText={'Publicate'} listItemLink={'/projects/publicate'}/>
                                              <ListItemUnderlined
-                                                 listItemText={'Ladbrokes Coral'} listItemLink={'/'}/>
-                                             <ListItemUnderlined
-                                                 listItemText={'Publicate'} listItemLink={'/'}/>
+                                                 listItemText={'Dugout FC'} listItemLink={'/projects/dugout'}/>
                                          </React.Fragment>
                                      }
                                      serviceDescription={'From our London office, we\'ve been working with startups and corporations for over 15 years, building cross-platform, enterprise-grade, entrepreneurial websites and apps for digital transformation projects.'}/>

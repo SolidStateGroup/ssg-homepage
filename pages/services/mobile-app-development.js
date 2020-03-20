@@ -33,8 +33,8 @@ const projects = [
     },
 ];
 
-const ServicesPage = class extends React.Component {
-    static displayName = 'ServicesPage';
+const MobileAppsPage = class extends React.Component {
+    static displayName = 'MobileAppsPage';
 
     constructor(props, context) {
         super(props, context);
@@ -129,4 +129,4 @@ const ServicesPage = class extends React.Component {
     };
 };
 
-export default ServicesPage;
+export default MobileAppsPage;
