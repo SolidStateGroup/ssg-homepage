@@ -105,7 +105,8 @@ const ServicesPage = class extends React.Component {
                                      serviceListItem={
                                          <React.Fragment>
                                              <ListItemUnderlined
-                                                 listItemText={'Tone & Sculpt'} listItemLink={'/projects/tone-and-sculpt'}/>
+                                                 listItemText={'Tone & Sculpt'}
+                                                 listItemLink={'/projects/tone-and-sculpt'}/>
                                              <ListItemUnderlined listItemText={'Hailie'}
                                                                  listItemLink={'/projects/hailie'}/>
                                              <ListItemUnderlined
@@ -123,7 +124,8 @@ const ServicesPage = class extends React.Component {
                                      serviceListItem={
                                          <React.Fragment>
                                              <ListItemUnderlined
-                                                 listItemText={'British Airways'} listItemLink={'/projects/british-airways'}/>
+                                                 listItemText={'British Airways'}
+                                                 listItemLink={'/projects/british-airways'}/>
                                              <ListItemUnderlined listItemText={'Purely Capital'}
                                                                  listItemLink={'/projects/purely-capital'}/>
                                              <ListItemUnderlined
@@ -133,6 +135,50 @@ const ServicesPage = class extends React.Component {
                                          </React.Fragment>
                                      }
                                      serviceDescription={'From our London office, we\'ve been working with startups and corporations for over 15 years, building cross-platform, enterprise-grade, entrepreneurial websites and apps for digital transformation projects.'}/>
+
+                        <ServiceItem serviceImage={'/static/images/services/hertz@2x.jpg'}
+                                     imageClassName={'img__shadow '}
+                                     className="flex-row-reverse"
+                                     subTitle={'Systems integration'}
+                                     serviceLink={'/services/systems-integration'}
+                                     serviceDescription={'We specialise in building secure, bespoke APIs and scalable integrations with legacy systems.'}
+                                     serviceListItem={
+                                         <React.Fragment>
+                                             <ListItemUnderlined listItemText={'Hailie'}
+                                                                 listItemLink={'/projects/hailie'}/>
+                                             <ListItemUnderlined
+                                                 listItemText={'Hertz'}
+                                                 listItemLink={'/projects/hertz'}/>
+                                             <ListItemUnderlined
+                                                 listItemText={'Unilever'}
+                                                 listItemLink={'/projects/Unilever'}/>
+                                             <ListItemUnderlined
+                                                 listItemText={'Visa'} listItemLink={'/projects/visa'}/>
+                                         </React.Fragment>
+                                     }
+                        />
+
+                        <ServiceItem serviceImage={'/static/images/services/api-dev@1x.jpg'}
+                                     imageClassName={'img__shadow '}
+                                     subTitle={'API Development'}
+                                     serviceLink={'/services/api-development'}
+                                     serviceDescription={'We specialise in building secure, bespoke APIs and scalable integrations with legacy systems.'}
+                                     serviceListItem={
+                                         <React.Fragment>
+                                             <ListItemUnderlined listItemText={'Hailie'}
+                                                                 listItemLink={'/projects/hailie'}/>
+                                             <ListItemUnderlined
+                                                 listItemText={'Hertz'}
+                                                 listItemLink={'/projects/hertz'}/>
+                                             <ListItemUnderlined
+                                                 listItemText={'Unilever'}
+                                                 listItemLink={'/projects/Unilever'}/>
+                                             <ListItemUnderlined
+                                                 listItemText={'Visa'} listItemLink={'/projects/visa'}/>
+                                         </React.Fragment>
+                                     }
+                        />
+
                     </div>
                 </div>
 

@@ -134,12 +134,12 @@ const HomePage = class extends React.Component {
                             <ul className="lined-list list-unstyled flex-row pl-sm-5 pl-0 mt-3">
                                 <ListItemUnderlined listItemText="UX & UI Design" listItemLink="/services/ux-design" />
                                 <ListItemUnderlined listItemText="Mobile app development" listItemLink="/services/mobile-app-development" />
-                                <ListItemUnderlined listItemText="Responsive web apps" />
+                                <ListItemUnderlined listItemText="Responsive web apps" listItemLink="/services/responsive-web-apps" />
                                 <ListItemUnderlined listItemText="Branding" listItemLink="/" />
                                 <ListItemUnderlined listItemText="Strategy" listItemLink="/" />
                                 <ListItemUnderlined listItemText="Prototyping" listItemLink="/" />
                                 <ListItemUnderlined listItemText="API Development" listItemLink="/" />
-                                <ListItemUnderlined listItemText="Systems integration" listItemLink="/" />
+                                <ListItemUnderlined listItemText="Systems integration" listItemLink="/services/systems-integration" />
                             </ul>
                             <Link prefetch={false} href="/services">
                                 <ButtonText buttonText="Explore our services" type="button" className="text-primary pl-sm-5 pl-0"/>
