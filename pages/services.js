@@ -172,9 +172,30 @@ const ServicesPage = class extends React.Component {
                                                  listItemLink={'/projects/hertz'}/>
                                              <ListItemUnderlined
                                                  listItemText={'Unilever'}
-                                                 listItemLink={'/projects/Unilever'}/>
+                                                 listItemLink={'/projects/unilever'}/>
                                              <ListItemUnderlined
                                                  listItemText={'Visa'} listItemLink={'/projects/visa'}/>
+                                         </React.Fragment>
+                                     }
+                        />
+
+                        <ServiceItem serviceImage={'/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg'}
+                                     className="flex-row-reverse"
+                                     imageClassName={'img__shadow '}
+                                     subTitle={'Strategy'}
+                                     serviceLink={'/services/strategy'}
+                                     serviceDescription={'Before we build anything, we help to identify the current biggest assumptions in your product or business, we can then help build tests to validate each assumption and finally frame any conclusions into actionable output.'}
+                                     serviceListItem={
+                                         <React.Fragment>
+                                             <ListItemUnderlined
+                                                 listItemText={'Tone & Sculpt'}
+                                                 listItemLink={'/projects/tone-and-sculpt'}/>
+                                             <ListItemUnderlined
+                                                 listItemText={'Meow Now'}
+                                                 listItemLink={'/projects/meownow'}/>
+                                             <ListItemUnderlined
+                                                 listItemText={'Dugout FC'}
+                                                 listItemLink={'/projects/dugout'}/>
                                          </React.Fragment>
                                      }
                         />
