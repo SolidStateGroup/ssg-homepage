@@ -200,6 +200,25 @@ const ServicesPage = class extends React.Component {
                                      }
                         />
 
+                        <ServiceItem serviceImage={'/static/images/projects/meownow/meownow_brand_board.png'}
+                                     imageClassName={'img__shadow '}
+                                     subTitle={'Branding'}
+                                     serviceLink={'/services/branding'}
+                                     serviceDescription={'We work with small and large businesses to deliver high quality brand guidelines and identities.'}
+                                     serviceListItem={
+                                         <React.Fragment>
+                                             <ListItemUnderlined listItemText={'Meow Now'}
+                                                                 listItemLink={'/projects/meownow'}/>
+                                             <ListItemUnderlined
+                                                 listItemText={'Change Please'}
+                                                 listItemLink={'/projects/change-please'}/>
+                                             <ListItemUnderlined
+                                                 listItemText={'Unilever'}
+                                                 listItemLink={'/projects/unilever'}/>
+                                         </React.Fragment>
+                                     }
+                        />
+
                     </div>
                 </div>
 
