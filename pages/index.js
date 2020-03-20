@@ -137,7 +137,7 @@ const HomePage = class extends React.Component {
                                 <ListItemUnderlined listItemText="Responsive web apps" listItemLink="/services/responsive-web-apps" />
                                 <ListItemUnderlined listItemText="Branding" listItemLink="/services/branding" />
                                 <ListItemUnderlined listItemText="Strategy" listItemLink="/services/strategy" />
-                                <ListItemUnderlined listItemText="Prototyping" listItemLink="/services/" />
+                                <ListItemUnderlined listItemText="Prototyping" listItemLink="/services/ux-design" />
                                 <ListItemUnderlined listItemText="API Development" listItemLink="/services/api-development" />
                                 <ListItemUnderlined listItemText="Systems integration" listItemLink="/services/systems-integration" />
                             </ul>

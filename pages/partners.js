@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
@@ -17,7 +18,7 @@ const projects = [
         projectImage: '/static/images/projects/hailie/hailie-summary-iphone.png',
         subTitle: 'iOS and Android Mobile Applications',
         title: 'Reinventing treatment of respiritory issues',
-        clientBrand: '/static/images/clients/colour/hailie.svg',
+        // clientBrand: '/static/images/clients/colour/hailie.svg',
         clientName: 'Hailie',
         href: '/projects/hailie',
         blobColour: "#FF715A",
@@ -26,13 +27,66 @@ const projects = [
     },
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/ba-summary-image.png',
-        subTitle: 'Responsive Web Applicatiom',
-        title: 'Ingetration with 1960s tech',
-        clientBrand: '/static/images/clients/colour/ba.svg',
-        clientName: 'British Airways',
-        tags: ['API Development'],
-
+        href: '/projects/british-airways',
+        projectImage: '/static/images/projects/ba/ba-summary-ipad.png',
+        subTitle: 'Real-time operational dashboard',
+        title: 'The real-time machine: integrating with 1960s tech',
+        blobColour: "#3658B0",
+        tags: ['API', "WEB"],
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/visa',
+        projectImage: '/static/images/projects/visa/visa-1@1x.png',
+        subTitle: 'Instant payment integration with NFC Ring',
+        title: 'Cakewalk on the catwalk',
+        blobColour: "#1a1e5a",
+        tags: ['DESIGN', 'MOBILE', "IOT"],
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/unilever',
+        projectImage: '/static/images/projects/unilever/unilever-1@1x.png',
+        subTitle: 'Automated ecommerce via connected scales',
+        title: 'Shopping that buys itself',
+        blobColour: "#007DBB",
+        tags: ['DESIGN', 'MOBILE', 'IOT'],
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/hertz',
+        projectImage: '/static/images/projects/hertz/hertz-1@1x.png',
+        subTitle: 'Connected Car mobile application',
+        title: 'Feels on wheels',
+        blobColour: "#FFD60D",
+        tags: ['DESIGN', 'MOBILE', 'IOT'],
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/wfa',
+        projectImage: '/static/images/projects/wfa/wfa-1.png',
+        subTitle: 'Web Application',
+        title: 'Visualising data for effective marketing communications',
+        blobColour: "#ff003c",
+        tags: ['API', "WEB"],
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/publicate',
+        projectImage: '/static/images/projects/publicate/publicate-summary-ipad@1x.png',
+        subTitle: 'Tablet & Web Application',
+        title: 'Straightening out corporate documentation',
+        blobColour: "#fe7101",
+        tags: ['API', 'MOBILE', 'DESIGN', "WEB"],
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/wazoku',
+        projectImage: '/static/images/projects/wazoku/2.png',
+        subTitle: 'iOS and Android Mobile App',
+        title: 'Ideas happen anywhere, anytime',
+        blobColour: "#173E5A",
+        tags: ['DESIGN', 'MOBILE', "API"],
     },
 ];
 
@@ -100,18 +154,20 @@ const PartnersPage = class extends React.Component {
 
             <div className="section">
                 <div className="container-fluid col-md-10">
-                    <h2 className="section__title">Services</h2>
-                    <ul className="lined-list list-unstyled flex-row pl-5 mt-3">
-                        <ListItemUnderlined listItemText={'Branding'} listItemLink={'/'}  />
-                        <ListItemUnderlined listItemText={'Mobile app development'} listItemLink={'/'} />
-                        <ListItemUnderlined listItemText={'Strategy'} listItemLink={'/'} />
-                        <ListItemUnderlined listItemText={'Responsive web apps'} listItemLink={'/'} />
-                        <ListItemUnderlined listItemText={'UX & UI Design'} listItemLink={'/'} />
-                        <ListItemUnderlined listItemText={'API Development'} listItemLink={'/'} />
-                        <ListItemUnderlined listItemText={'Prototyping'} listItemLink={'/'} />
-                        <ListItemUnderlined listItemText={'Systems integration'} listItemLink={'/'} />
+                    <h2 className="section__title section__title--dark">Services</h2>
+                    <ul className="lined-list list-unstyled flex-row pl-sm-5 pl-0 mt-3">
+                        <ListItemUnderlined listItemText="UX & UI Design" listItemLink="/services/ux-design" />
+                        <ListItemUnderlined listItemText="Mobile app development" listItemLink="/services/mobile-app-development" />
+                        <ListItemUnderlined listItemText="Responsive web apps" listItemLink="/services/responsive-web-apps" />
+                        <ListItemUnderlined listItemText="Branding" listItemLink="/services/branding" />
+                        <ListItemUnderlined listItemText="Strategy" listItemLink="/services/strategy" />
+                        <ListItemUnderlined listItemText="Prototyping" listItemLink="/services/ux-design" />
+                        <ListItemUnderlined listItemText="API Development" listItemLink="/services/api-development" />
+                        <ListItemUnderlined listItemText="Systems integration" listItemLink="/services/systems-integration" />
                     </ul>
-                    <ButtonText buttonText={'Explore our services'} type={'button'} className="text-primary pl-5"/>
+                    <Link prefetch={false} href="/services">
+                        <ButtonText buttonText="Explore our services" type="button" className="text-primary pl-sm-5 pl-0"/>
+                    </Link>
                 </div>
             </div>
 
@@ -121,7 +177,6 @@ const PartnersPage = class extends React.Component {
                                title={p.title} clientBrand={p.clientBrand} clientName={p.clientName} projectImageClass={p.projectImageClass}
                                blobColour={p.blobColour}
                   />
-
                 ))}
             </div>
 
