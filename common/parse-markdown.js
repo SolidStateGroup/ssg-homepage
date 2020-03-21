@@ -1,6 +1,6 @@
 const each = require('lodash/each');
 const map = require('lodash/map');
-const moment = require('moment');
+const moment = require('moment/min/moment.min');
 
 const splitAt = index => x => [x.slice(0, index), x.slice(index)];
 
@@ -34,6 +34,8 @@ module.exports = (source) => {
         }
         if (item.includes('tags: ')) {
             res.tags = map(item.replace('tags: ', '').split(','), i => i.trim().toLowerCase()).sort();
+        } else {
+            res.tags = [];
         }
     });
     return res;
