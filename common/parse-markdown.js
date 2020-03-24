@@ -34,6 +34,8 @@ module.exports = (source) => {
         }
         if (item.includes('tags: ')) {
             res.tags = map(item.replace('tags: ', '').split(','), i => i.trim().toLowerCase()).sort();
+        } else {
+            res.tags = [];
         }
     });
     return res;
