@@ -83,6 +83,9 @@
         height: 275px;
         background: url(/static/images/blog/tech.jpeg) no-repeat center center;
         background-size: cover;
+        &--small {
+            height: 197px;
+        }
     }
 
     h1, h2, h3, p, a {

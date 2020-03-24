@@ -96,7 +96,7 @@ export const BlogItemSummary = global.BlogItemSummary = class extends Component 
             <Link prefetch={false} href={`/blog/${url}`}>
                 <div className="blog-item clickable col-12 col-sm-4">
                     <div className="flex-row align-items-start align-items-stretch">
-                        <div className="blog-item__image" style={{backgroundImage: `url(${image})`}}/>
+                        <div className="blog-item__image blog-item__image--small" style={{backgroundImage: `url(${image})`}}/>
                         <div className="blog-item__content">
                             <h4 className="mt-3">{title}</h4>
                             <div className="date">
