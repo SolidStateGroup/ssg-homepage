@@ -1,14 +1,13 @@
 ---
 title: Our Tools - 2019 Edition
-leader: Here's what we are using to build Bullet Train, our Feature Flag platform. With some careful VPS purchases, most of this stuff can be run completely free of charge! 
-date: 2019/06/19 17:46:25
+published: true
+description: Here's what we are using to build Bullet Train, our Feature Flag platform. With some careful VPS purchases, most of this stuff can be run completely free of charge!
+tags: webdev, showdev, react, javascript
 author: Ben Rometsch
-readTime: 5 Min Read
-image: https://storage.googleapis.com/ssg-website-images/tools-2019/tools-2019.jpg
-homepageImage: https://storage.googleapis.com/ssg-website-images/tools-2019/tools-2019.jpg
-tags:
-- What Is...
+avatar: /static/images/blog/ben.png
+date: 19-june-2019
 ---
+
 Here's what we are using to build [Bullet Train, our Feature Flag platform](https://bullet-train.io). With some careful VPS purchases, most of this stuff can be run completely free of charge! 
 
 ## GitLab All The Things

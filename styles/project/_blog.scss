@@ -2,22 +2,26 @@
     min-height: calc(100vh - 448px);
     font-size: 21px;
     line-height: 1.58;
-    text-rendering:optimizelegibility;
-    word-break:break-word;
-    -webkit-font-smoothing:antialiased;
+    text-rendering: optimizelegibility;
+    word-break: break-word;
+    -webkit-font-smoothing: antialiased;
     color: rgba(0, 0, 0, 0.84);
+    &__title {
+        font-size: 2em;
+        font-family: 'Ilisarniq-Black', sans-serif!important;
+    }
 
-    &__link{
+    &__link {
         font-weight: bold;
         color: $body-color;
     }
 
-    &__author{
+    &__author {
         font-size: 14px;
         line-height: 20px;
     }
 
-    &__date{
+    &__date {
         color: #666;
     }
 
@@ -25,14 +29,14 @@
         width: 48px;
         height: 48px;
         border-radius: 24px;
-        margin-bottom:0;
+        margin-bottom: 0;
     }
 
-    &__content{
+    &__content {
         //BEM BETRAYAL
-        img{
+        img {
             max-width: 100%;
-            margin-bottom:20px;
+            margin-bottom: 20px;
         }
 
         pre {
@@ -46,16 +50,20 @@
         h1, h2 {
             margin-block-end: 16px;
         }
+
         h2 {
             margin-block-start: 40px;
         }
+
         h3 {
             margin-block-start: 30px;
             margin-block-end: 12px;
         }
+
         a {
             font-weight: bold;
             text-decoration: underline;
+
             &:hover {
                 color: rgba(0, 0, 0, 0.84);
             }
@@ -67,11 +75,11 @@
     margin-bottom: 3em;
     font-size: 21px;
 
-    img{
+    img {
         max-width: 100%;
     }
 
-    h1, h2, h3, p,a  {
+    h1, h2, h3, p, a {
         color: rgba(0, 0, 0, 0.84);
         margin-block-start: 0;
         margin-block-end: 0;
@@ -89,7 +97,7 @@
     margin-bottom: 10px;
     display: inline-block;
     border-radius: 5px;
-    font-size:16px;
+    font-size: 16px;
     background-color: #F7F7F7;
     color: #786F84;
 
@@ -99,8 +107,8 @@
 }
 
 @include media-breakpoint-down(md) {
-    .blog-item{
-        &__tag{
+    .blog-item {
+        &__tag {
             font-size: 12px;
             position: absolute;
             top: 0;
@@ -112,9 +120,9 @@
             z-index: 1;
         }
 
-        &--featured{
+        &--featured {
             position: relative;
-            background:#f9f9f9;
+            background: #f9f9f9;
         }
     }
 }

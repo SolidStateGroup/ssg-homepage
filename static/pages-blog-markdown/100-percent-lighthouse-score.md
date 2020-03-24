@@ -6,6 +6,7 @@ tags: webdev, showdev, react, javascript
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
 date: 26-aug-2019
+image: https://storage.googleapis.com/ssg-website-images/tools-2019/tools-2019.jpg
 ---
 
 <img alt="100% lighthouse score" src="https://camo.githubusercontent.com/60e01c505310b31551ee45c7f8a144bc4c69cfcb/687474703a2f2f672e7265636f726469742e636f2f545938776369547351482e676966"/>
