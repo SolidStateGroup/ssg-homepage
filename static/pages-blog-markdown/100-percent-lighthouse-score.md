@@ -5,6 +5,7 @@ description: Jumping down a satisfying rabbit hole with NextJS
 tags: webdev, showdev, react, javascript
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
+image: /static/images/blog/kyle.png
 date: 26-aug-2019
 ---
 

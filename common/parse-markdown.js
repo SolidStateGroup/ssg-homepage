@@ -26,6 +26,9 @@ module.exports = (source) => {
         if (item.includes('avatar: ')) {
             res.avatar = item.replace('avatar: ', '');
         }
+        if (item.includes('image: ')) {
+            res.image = item.replace('image: ', '');
+        }
         if (item.includes('date: ')) {
             const m = moment(item.replace('date: ', ''), 'DD-MMM-YYYY');
             res.dateFormatted = m.format('MMM DD YYYY');

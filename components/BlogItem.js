@@ -33,6 +33,7 @@ const BlogItem = class extends Component {
                     title,
                     dateFormatted,
                     author,
+                    image,
                     tags,
                     url,
                 },
@@ -44,7 +45,7 @@ const BlogItem = class extends Component {
                     <div className="blog-item__tag hidden-sm-up">Lastest post</div>
                     <div className="flex-row align-items-start align-items-stretch">
                         <div className="col-12 col-sm-5">
-                          <img src="/static/images/blog/tech.jpeg" alt={title}/>
+                          <img src={image||"/static/images/blog/tech.jpeg"} alt={title}/>
                         </div>
                         <div className="col-12 col-sm-7 blog-item-content">
                             <h2 className="mt-3 mt-sm-0">{title}</h2>
