@@ -36,5 +36,6 @@ module.exports = (source) => {
             res.tags = map(item.replace('tags: ', '').split(','), i => i.trim().toLowerCase()).sort();
         }
     });
+    res.tags = res.tags || [];
     return res;
 };
