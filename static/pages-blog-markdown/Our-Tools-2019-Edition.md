@@ -5,6 +5,7 @@ description: Here's what we are using to build Bullet Train, our Feature Flag pl
 tags: webdev, showdev, react, javascript
 author: Ben Rometsch
 avatar: /static/images/blog/ben.png
+image: https://storage.googleapis.com/ssg-website-images/tools-2019/tools-2019.jpg
 date: 19-june-2019
 ---
 

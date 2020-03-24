@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import propTypes from 'prop-types';
 import Link from 'next/link';
 import BlogTag from './BlogTag';
@@ -45,20 +45,20 @@ const BlogItem = class extends Component {
                     <div className="blog-item__tag hidden-sm-up">Lastest post</div>
                     <div className="flex-row align-items-start align-items-stretch">
                         <div className="col-12 col-sm-5">
-                          <img src={image||"/static/images/blog/tech.jpeg"} alt={title}/>
+                            <div className="blog-item__image" style={{backgroundImage: `url(${image})`}}/>
                         </div>
                         <div className="col-12 col-sm-7 blog-item-content">
                             <h2 className="mt-3 mt-sm-0">{title}</h2>
                             <p>{description}</p>
                             <div className="date">
-                              {`${dateFormatted} By ${author}`}
+                                {`${dateFormatted} By ${author}`}
                             </div>
                             <div className="tags mt-2">
-                              {tags.map(t => (
-                                <BlogTag key={t} tag={t}/>
-                              ))}
+                                {tags.map(t => (
+                                    <BlogTag key={t} tag={t}/>
+                                ))}
                             </div>
-                            <ButtonText className="text-primary align-self-baseline mt-4" buttonText="Read Post" />
+                            <ButtonText className="text-primary align-self-baseline mt-4 pl-0" buttonText="Read Post"/>
                         </div>
                     </div>
                 </div>
@@ -88,29 +88,30 @@ export const BlogItemSummary = global.BlogItemSummary = class extends Component 
                     author,
                     tags,
                     url,
+                    image
                 },
             },
         } = this;
         return (
-          <Link prefetch={false} href={`/blog/${url}`}>
-              <div className="blog-item clickable col-12 col-sm-4">
-                  <div className="flex-row align-items-start align-items-stretch">
-                          <img src="/static/images/blog/tech.jpeg" alt={title}/>
-                      <div className="blog-item__content">
-                          <h4 className="mt-3">{title}</h4>
-                          <div className="date">
-                              {`${dateFormatted} By ${author}`}
-                          </div>
-                          <div className="tags mt-2">
-                              {tags.map(t => (
-                                <BlogTag key={t} tag={t}/>
-                              ))}
-                          </div>
-                          <ButtonText className="text-primary align-self-baseline mt-4" buttonText="Read Post" />
-                      </div>
-                  </div>
-              </div>
-          </Link>
+            <Link prefetch={false} href={`/blog/${url}`}>
+                <div className="blog-item clickable col-12 col-sm-4">
+                    <div className="flex-row align-items-start align-items-stretch">
+                        <div className="blog-item__image" style={{backgroundImage: `url(${image})`}}/>
+                        <div className="blog-item__content">
+                            <h4 className="mt-3">{title}</h4>
+                            <div className="date">
+                                {`${dateFormatted} By ${author}`}
+                            </div>
+                            <div className="tags mt-2">
+                                {tags.map(t => (
+                                    <BlogTag key={t} tag={t}/>
+                                ))}
+                            </div>
+                            <ButtonText className="text-primary align-self-baseline mt-4 pl-0" buttonText="Read Post"/>
+                        </div>
+                    </div>
+                </div>
+            </Link>
         );
     }
 };
