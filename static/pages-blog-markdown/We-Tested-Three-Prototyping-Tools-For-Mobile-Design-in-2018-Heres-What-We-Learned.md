@@ -19,35 +19,23 @@ Lets prototype!
 
 ![Principle protoype](https://storage.googleapis.com/ssg-website-images/3%20tools%20we've%20used%20to%20deliver%20high%20fidelity%20prototypes%20in%202018/lo-fi.jpg)
 
-<p class="text-center image-caption">We started with an ultra low fidelity prototype - pen and paper.</p>
-
 Before we jump into digital tools we like to establish basic workflows on paper first. This helps us to confirm some simplified IA for the pages, how they work together and the content that lives on said pages.
 
 We then lay out our UI in a screen design tool, in this case [Sketch](https://www.sketchapp.com/), before importing our files into our prototyping tool of choice. 
 
 ![Sketch UI](https://storage.googleapis.com/ssg-website-images/prototyping-tools-2018/sketch-ui.png)
 
-
-<p class="text-center image-caption">Static screen design in Sketch</p>
-
 # Prototyping Tool-off
 
 We spent a few of hours in each tool with the aim of delivering the same high fidelity motion prototype. We used the onboarding flow for a recent internal project 'You Laugh You Lose' as the test case for this process. 
-
 
 ## Principle 
 
 ![Principle Prototype](https://storage.googleapis.com/ssg-website-images/prototyping-tools-2018/ylyl-principle-bg.gif)
 
-
-<p class="text-center image-caption">The prototype created in Principle</p>
-
 We've used [Principle](http://principleformac.com/) for a while at [Solid State Group](https://www.solidstategroup.com/), primarily for designing micro interactions and navigation patterns for web and mobile apps. 
 
 **Pros**
-
-
-
 *   Sketch import works really well
 *   Principle supports the embedding of video, when static background images just simply don't demonstrate the final visual
 *   Principle has a built-in awareness of scroll position.  A lot of our recent projects had interactions based around the current position in the workflow narrative or scroll, so it was incredibly valuable having this available out of the box
@@ -55,9 +43,6 @@ We've used [Principle](http://principleformac.com/) for a while at [Solid State 
 *   We were able to achieve the desired visuals most rapidly using Principle
 
 **Cons**
-
-
-
 *   We were disappointed with the lack of a built-in share feature and subsequently exported the output and shared on our own comms channels
 *   Allows you to mirror to your phone, but not that useful if wanting to present to people who are not in the room
 *   Lack of feedback mechanisms made iterating on ideas a longer process
@@ -66,11 +51,7 @@ We've used [Principle](http://principleformac.com/) for a while at [Solid State 
 
 
 ## Invision Studio
-
-
 <img src="https://storage.googleapis.com/ssg-website-images/prototyping-tools-2018/ylyl-studio.gif" class="smaller-img" alt="Invision Studio Prototype"/>
-
-<p class="text-center image-caption">The Invision Studio Prototype</p>
 
 Although still in "Early Access", we got our hands on [Invision Studio](https://www.invisionapp.com/studio) earlier on in the year and were keen to see what all the fuss was about. As long time users of other Invision products such as the [Craft](https://www.invisionapp.com/craft) plugin for Sketch and Photoshop, and their web platform, I really wanted to like Studio. Unfortunately the amount of bugs I encountered and sub-standard performance of the prototype window (when using more than a few layers) left me wondering if I'd risk using it for client deliverables in its current state.
 
@@ -99,9 +80,6 @@ Although still in "Early Access", we got our hands on [Invision Studio](https://
 ## FramerX
 
 ![Framer X Prototype](https://storage.googleapis.com/ssg-website-images/prototyping-tools-2018/ylyl-framerx.gif)
-
-
-<p class="text-center image-caption">FramerX prototype, complete with Lottie Animations and a hand model</p>
 
 'The Future Of Design is Here' exclaims the new framer website, with an update to its previous product that now allows you to design with [React.js](https://reactjs.org/). As React is our main frontend framework at Solid State Group, the concept was very interesting.  Cue the anti-climax, the components you build in FramerX are not necessarily supposed to be used in production (so the benefit of building prototypes in React are questionable).
 

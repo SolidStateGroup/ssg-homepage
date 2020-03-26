@@ -1,7 +1,7 @@
 .blog {
     min-height: calc(100vh - 448px);
-    font-size: 21px;
-    line-height: 1.58;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
     text-rendering: optimizelegibility;
     word-break: break-word;
     -webkit-font-smoothing: antialiased;
@@ -34,8 +34,28 @@
 
     &__content {
         //BEM BETRAYAL
+
+        ol li, ul li {
+            font-size: 1.1rem;
+            line-height: 1.9rem;
+            color: #22354a;
+            opacity: 0.85;
+        }
+
+
+
+        min-height: calc(100vh - 448px);
+        font-size: 1.1rem;
+        line-height: 1.9rem;
+        text-rendering: optimizelegibility;
+        word-break: break-word;
+        -webkit-font-smoothing: antialiased;
+        color: rgba(0, 0, 0, 0.84);
+
+
         img {
             max-width: 100%;
+            min-width: 100%;
             margin-bottom: 20px;
         }
 
@@ -53,11 +73,13 @@
 
         h2 {
             margin-block-start: 40px;
-        }
+            margin: 2.5rem 0 1.7rem;
+    }
 
-        h3 {
+        h3, h4 {
             margin-block-start: 30px;
             margin-block-end: 12px;
+            margin: 2.5rem 0 1.7rem;
         }
 
         a {
@@ -67,6 +89,13 @@
             &:hover {
                 color: rgba(0, 0, 0, 0.84);
             }
+        }
+        blockquote {
+            p {
+                font-style: italic;
+                opacity: .75;
+            }
+            margin: 2em 0;
         }
     }
 }

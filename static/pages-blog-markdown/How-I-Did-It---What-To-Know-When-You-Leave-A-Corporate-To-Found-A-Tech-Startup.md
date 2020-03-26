@@ -83,19 +83,6 @@ What surprised me was just how different the route each founder had taken to bec
 
 Her advice for those outsourcing production was "when looking to hire a team, look at the collaboration between design and dev in the team, ask where do those two sit together, what tools do they use. If they only use github and never talk to each other that won’t work. My team is international, in Rio, in Delhi, in London, but practical stuff was never an issue because they communicated."
 
-{% raw %}
-<section class="mb-5 mt-5 text-center">
-<hr/>
-        <div class="pt-4 pb-5">
-            <p class="section__text pb-3">Think we can help with your project?</p>
-            <button type="button" data-toggle="modal" data-target="#contactModal" class="button button--pink" onclick="ga('send', 'event', 'blogCTA', 'click', 'how-leave-corp');">
-                Get in touch
-            </button>
-        </div>
-        <hr/>
-    </section>
-{% endraw %}
-
 ### The Challenge Of Doing The Right Thing
 
 The problem with pioneering into the dark side of the map is that you don’t know if there’s monsters up ahead. Perhaps that siren call from an investor is not what it first appears, or that little hill you decided to climb has turned into a sand dune slipping away beneath your impotent feet. 
@@ -127,19 +114,6 @@ If you need to tip the scales, remember, there are now seven businesses which on
 Parents book activities for their children with [Happity](https://www.happity.co.uk/) to create the good memories, startups access legal advice with clarity and affordability to grow in security with [The Law Boutique](https://www.thelawboutique.co.uk/), men and women are taking control of their health with trusted practitioners with [Isoshealth](https://isoshealth.com/), insurance premiums can lower now [AltViz’s](https://www.altviz.co/) machine learning can reduce loss caused by poor QA, thousands of female entrepreneurs are finding community and strength with [Blooming Founders](http://bloomingfounders.com/press/), corporates and startups are working well together thanks to [Touchpaper](https://touchpaper.org/), and [Adarga](https://www.adarga.ai/#1) is leading the advances in AI and Machine Learning.
 
 Best of luck guys, rooting for your future successes.
-
-{% raw %}
-<section class="mb-5 mt-5 text-center">
-<hr/>
-        <div class="pt-4 pb-5">
-            <p class="section__text pb-3">Think we can help with your project?</p>
-            <button type="button" data-toggle="modal" data-target="#contactModal" class="button button--pink" onclick="ga('send', 'event', 'blogCTA', 'click', 'how-leave-corp');">
-                Get in touch
-            </button>
-        </div>
-        <hr/>
-    </section>
-{% endraw %}
 
 *We've interviewed more of London's fantastic entrepreneurs who left a corporate career to found high growth businesses. Visit our [blog](https://www.solidstategroup.com/blog) to see other stories from ex-bankers, consultants, accountants and more.*
 
