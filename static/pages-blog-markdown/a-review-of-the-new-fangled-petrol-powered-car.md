@@ -1,0 +1,38 @@
+---
+title: A review of the new-fangled "petrol powered" car.
+leader: Having established a petrol station foothold in Manchester for its internal combustion cars, Porsche has brought its formula south, opening several petrol stations in and around the London area that would, in theory, allow a speedy petrol-burning road trip between London and Manchester.
+author: Ben Rometsch
+date: 2014/7/13 20:46:25
+image: https://www.solidstategroup.com/images/Shell_Sign_by_night.jpg
+tags:
+- The World
+- User Interface Design
+- Internet of Things
+---
+
+---
+title: A review of the new-fangled "petrol powered" car.
+published: true
+description: Having established a petrol station foothold in Manchester for its internal combustion cars, Porsche has brought its formula south, opening several petrol stations in and around the London area that would, in theory, allow a speedy petrol-burning road trip between London and Manchester.
+author: Ben Rometsch
+avatar: /static/images/blog/ben.png
+image: https://www.solidstategroup.com/images/Shell_Sign_by_night.jpg
+date: 13-jul-2014
+---
+
+<p>For background, please check out this TNW article.</p>
+<p>Having established a petrol station foothold in Manchester for its internal combustion cars, Porsche has brought its formula south, opening several petrol stations in and around the London area that would, in theory, allow a speedy petrol-burning road trip between London and Manchester.</p>
+<p>But as I discovered on a recent test drive of the company’s high-performance Panamera S, theory can be trumped by reality especially when traffic piles up on the M1.</p>
+<p>Porsche, the sports car manufacturer with ties all the way back to war torn Germany, offered a high-performance Panemera S sedan for a trip along the newly petrolified stretch of the M1. It seemed an ideal bookend to our encouraging test drive last September on the speed-unrestricted German Autobahn.</p>
+<p>The new “Petrol Stations” placed strategically around the M25 and the M1 allow you to fill up in a matter of minutes, but they do come with some drawbacks.</p>
+<p>The car is a technological wonder, but has some serious problems. Forget about carrying your golf clubs ahead of the cabin. The entire front bay of the car is taken up by a staggering array of mechanical devices. Slave cylinders, a gearbox, several fluid containers, fans and fan belts, an enormous radiator and the piece de resistance, a 4.8 litre piston engine that has been under R+D for over 80 years, that is made up of hundreds and hundreds of components that have been machined down to a tolerance that most instruments are unable to measure. The amount of mechanical technology on the car is mind boggling. Put the key in the ignition and before you start the engine you can hear petrol and water pumps firing up.</p>
+<p>The compromises continue in the cabin. A huge centre console runs through the car, transmitting mechanical drive to the rear wheels. Not only is this physically intrusive, but it does nothing to improve on the efficiency of the car. In fact, the combustion engine and drive train lose an incredible amount of energy in the process of burning up the new fangled petrol that drives the car. Most estimates look at around 82% of the energy consumed by the car being lost as waste heat, but the inefficiencies do not end there. The gearbox and drive shafts lose further energy as they do their job.</p>
+<p>The net result? A combined fuel economy of just 22.6 MPG. For those of you having problems getting your head around the mathematics of all this, I’ll put it bluntly. If you want to drive from London to Manchester, it’s going to cost you about £50. One way. That’s right, I said 50 pounds, not 50 pence.</p>
+<p>All this being said, I have to admit that firing the engine up fills you with a wonderful sense of power. It spits, gurgles and, when pressed, roars into life, sounding not unlike an old World War 2 fighter plane. Once you start driving, the constant noise is quite hard to get used to. As I drove out of London I quite enjoyed the mechanical delights of the car, but the problems really started when I hit the M1. Serious delays meant that I was stuck in a long traffic Jam just outside Watford. I assumed that the engine would cut off and save the precious fuel that I had just paid for but it didn’t! In fact, all I did was sit in the car, feeling very stupid, as my money burnt away and the instruments showing engine temperature and oil pressure rose higher and higher. In front of me I could see the heat haze as the engine bay got hotter and hotter.</p>
+<p>When the engine temperature reached 60% I started to get seriously worried. I spoke to the Porsche representative and asked them what I should do. They said this was completely normal, and that at a certain point fans would switch on to blow air over the radiators. It all seemed very antiquated. True to their word, I heard the fans start up and watched in bewilderment as my hard earned cash carried on being, quite literally, burnt around me.</p>
+<p>The craziest thing? As I sat there, not moving, the fuel tank read out (showing me how much petrol I had remaining) was going down! It almost beggared belief!</p>
+<p>So there I was, bellowing gasses at all the electric-heads behind me. I started to think about all the other downsides of the car. All that heat dissipation racks up some serious costs. Exhaust systems need to be replaced every 20,000 miles. Whenever you brake, forget about all that potential energy that you could harvest. Huge (and hugely expensive) brake disks and pads soak up the energy and just burn it up as heat just like the engine. Oil needs replacing, along with oil filters and spark plugs. And all this after 80 years of research and development.</p>
+<p>All those problems that electric cars suffered decades ago when people worried about “Range Anxiety” was turned into simple anxiety. Anxiety about the rising cost of petrol, anxiety about the geo-political problems around the fuel, anxiety about the thousands of parts that might fail, anxiety about the people stuck behind me as my fumes flowed straight into their cabins, anxiety about toxins in the petrol and most importantly anxiety about the effects that millions of cars would have on the CO2 levels in the atmosphere.</p>
+<p>Rolling into Manchester, I had dozens of people staring at the car, asking me about it, quizzing me on how much it costs to run, and what I would do with all those 20 minute fill-up savings I would accrue using these new petrol stations. By that point I had made up my mind. This car is madness, and it would need someone far richer and far madder than me to see any sense in it.</p>
+
+{% endraw %}
