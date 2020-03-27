@@ -122,7 +122,7 @@ export const ButtonHexagon = global.ButtonHexagon = class extends React.PureComp
             <React.Fragment>
                 <Button
                     {...props}
-                    className={cn(props.className, 'hexagon')}
+                    className={cn(props.className, 'btn--hexagon')}
                 >
 
                     {this.props.ButtonHexagonActive ? (
@@ -164,7 +164,7 @@ export const ButtonHexagon = global.ButtonHexagon = class extends React.PureComp
                         </svg>
                     )}
                 </Button>
-                <h5 className="text-center">{this.props.buttonText}</h5>
+                <h5 className="text-center btn--hexagon__title">{this.props.buttonText}</h5>
             </React.Fragment>
         );
     }

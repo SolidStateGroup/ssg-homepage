@@ -26,11 +26,12 @@ const HomePage = class extends React.Component {
     }
 
     componentDidMount = async () => {
+
         gsap.timeline()
             .from('.hero__container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
             .from('.hero__title', { duration: 0.5, x: 10, opacity: 0, ease: 'power1' })
 
-        const controller = new ScrollMagic.Controller();
+        const controller = new ScrollMagic.Controller({addIndicators: true});
 
         const tl = new gsap.timeline();
         const tl2 = new gsap.timeline();

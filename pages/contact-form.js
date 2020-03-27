@@ -40,27 +40,27 @@ const ContactFormPage = class extends React.Component {
                                 <section>
                                     <p className="text-light mt-5">1. What can we help you with?</p>
                                     <div className="row">
-                                        <div className="col-md-3 col-6">
+                                        <div className="col-lg-3 col-6">
                                             <ButtonHexagon onClick={this.toggle}
                                                            ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
                                                            buttonText={'Strategy'}
                                                            class={`hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
                                         </div>
 
-                                        <div className="col-md-3 col-6">
+                                        <div className="col-lg-3 col-6">
                                             <ButtonHexagon onClick={this.toggle}
                                                            ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
                                                            buttonText={'Design'}
                                                            class={`hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
                                         </div>
-                                        <div className="col-md-3 col-6">
+                                        <div className="col-lg-3 col-6">
                                             <ButtonHexagon onClick={this.toggle}
                                                            ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
                                                            buttonText={'Mobile App Development'}
                                                            class={`hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
                                         </div>
 
-                                        <div className="col-md-3 col-6">
+                                        <div className="col-lg-3 col-6">
                                             <ButtonHexagon onClick={this.toggle}
                                                            ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
                                                            buttonText={'Web Development'}

@@ -52,11 +52,10 @@
             outline: none;
         }
     }
-}
-
-.hexagon {
-    background-color: transparent;
-    border: none;
+    &--hexagon {
+        background-color: transparent;
+        border: none;
+    }
 }
 
 button{
@@ -64,5 +63,15 @@ button{
 
     &:hover, &:active, &:focus{
         outline:none;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .btn {
+        &--hexagon {
+            &__title {
+                margin-bottom: 2em;
+            }
+        }
     }
 }
