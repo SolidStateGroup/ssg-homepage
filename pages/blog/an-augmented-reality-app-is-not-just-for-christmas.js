@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../static/pages-blog-markdown/An-Augmented-Reality-App-Is-Not-Just-For-Christmas.md';
+import md from '../../static/pages-blog-markdown/an-augmented-reality-app-is-not-just-for-christmas.md';
 import BlogPost from '../../components/BlogPost';
 
 
