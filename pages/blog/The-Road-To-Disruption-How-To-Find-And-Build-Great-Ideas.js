@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../static/pages-blog-markdown/The-Road-To-Disruption---How-To-Find-And-Build-Great-Ideas.md';
+import md from '../../static/pages-blog-markdown/The-Road-To-Disruption-How-To-Find-And-Build-Great-Ideas.md';
 import BlogPost from '../../components/BlogPost';
 
 

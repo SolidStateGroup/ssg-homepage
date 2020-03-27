@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../static/pages-blog-markdown/React-Native-For-Scale-Ups-Use-Cases-and-Future-Proofing.md';
+import md from '../../static/pages-blog-markdown/they-went-to-SXSW-and-I-alI-got-was-this-lousy-blog.md';
 import BlogPost from '../../components/BlogPost';
 
 
