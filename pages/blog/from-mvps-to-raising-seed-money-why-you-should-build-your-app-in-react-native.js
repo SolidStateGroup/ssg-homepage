@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../static/pages-blog-markdown/Can-I-Wear-Shorts.md';
+import md from '../../static/pages-blog-markdown/from-mvps-to-raising-seed-money-why-you-should-build-your-app-in-react-native.md';
 import BlogPost from '../../components/BlogPost';
 
 

@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../static/pages-blog-markdown/Healthcare-Tech-Trends-for-2018.md';
+import md from '../../static/pages-blog-markdown/building-a-pixel-wall-in-virtual-reality-with-react-vr-and-rio-our-first-impressions.md';
 import BlogPost from '../../components/BlogPost';
 
 
