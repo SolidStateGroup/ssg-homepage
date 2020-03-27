@@ -44,10 +44,10 @@ const BlogItem = class extends Component {
                 <div className="blog-item blog-item--featured py-3 py-sm-0 clickable">
                     <div className="blog-item__tag hidden-sm-up">Latest post</div>
                     <div className="flex-row align-items-start align-items-stretch">
-                        <div className="col-12 col-sm-5">
+                        <div className="col-12 col-md-5">
                             <div className="blog-item__image" style={{backgroundImage: `url(${image})`}}/>
                         </div>
-                        <div className="col-12 col-sm-7 blog-item-content">
+                        <div className="col-12 col-md-7 blog-item-content">
                             <h2 className="blog-item__h2">{title}</h2>
                             <p className="blog-item__p">{description}</p>
                             <div className="date">
@@ -58,7 +58,7 @@ const BlogItem = class extends Component {
                                     <BlogTag key={t} tag={t}/>
                                 ))}
                             </div>
-                            <ButtonText className="text-primary align-self-baseline mt-3 pl-0" buttonText="Read Post"/>
+                            <ButtonText className="blog-item__btn text-primary align-self-baseline mt-3 pl-0" buttonText="Read Post"/>
                         </div>
                     </div>
                 </div>

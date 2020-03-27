@@ -118,10 +118,12 @@ export default class BlogPost extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="container pb-3">
-                    {!this.state.loading && Project.isso && (
-                        <section id="isso-thread"/>
-                    )}
+                <div className="section section--grey">
+                    <div className="col-md-6 offset-md-3">
+                        {!this.state.loading && Project.isso && (
+                            <section id="isso-thread"/>
+                        )}
+                    </div>
                 </div>
                 <Footer className="homepage"/>
             </>
