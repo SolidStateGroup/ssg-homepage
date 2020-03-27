@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../static/pages-blog-markdown/How-I-Did-It---What-To-Know-When-You-Leave-A-Corporate-To-Found-A-Tech-Startup.md';
+import md from '../../static/pages-blog-markdown/How-I-Did-It-I-Left-Accountancy-To-Found-My-Own-Startup.md';
 import BlogPost from '../../components/BlogPost';
 
 
