@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../static/pages-blog-markdown/5 things most startups forget when building their first app.md';
+import md from '../../static/pages-blog-markdown/10-must-read-long-reads-this-holiday.md';
 import BlogPost from '../../components/BlogPost';
 
 

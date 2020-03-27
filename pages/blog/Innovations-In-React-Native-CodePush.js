@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../static/pages-blog-markdown/10 must read long reads this holiday.md';
+import md from '../../static/pages-blog-markdown/Innovations-In-React-Native-CodePush.md';
 import BlogPost from '../../components/BlogPost';
 
 

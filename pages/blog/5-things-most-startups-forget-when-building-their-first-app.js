@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../static/pages-blog-markdown/What- CES-2018-Highlights-Tell-Us-About-The-Macro-Trends-For-Tech.md';
+import md from '../../static/pages-blog-markdown/5-things-most-startups-forget-when-building-their-first-app.md';
 import BlogPost from '../../components/BlogPost';
 
 

@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../static/pages-blog-markdown/Innovations-In-React-Native-=-CodePush.md';
+import md from '../../static/pages-blog-markdown/What-CES-2018-Highlights-Tell-Us-About-The-Macro-Trends-For-Tech.md';
 import BlogPost from '../../components/BlogPost';
 
 
