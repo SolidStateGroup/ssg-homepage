@@ -1,4 +1,4 @@
-
+''
 import propTypes from 'prop-types';
 import md from '../../static/pages-blog-markdown/How-I-Did-It---I-left-commercial-law-to-found-my-legal-startup.md';
 import BlogPost from '../../components/BlogPost';
