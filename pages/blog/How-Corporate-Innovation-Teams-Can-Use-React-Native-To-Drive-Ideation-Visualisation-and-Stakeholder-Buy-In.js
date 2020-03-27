@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../static/pages-blog-markdown/What- CES-2018-Highlights-Tell-Us-About-The-Macro-Trends-For-Tech.md';
+import md from '../../static/pages-blog-markdown/How-Corporate-Innovation-Teams-Can-Use-React-Native-To-Drive-Ideation-Visualisation-and-Stakeholder-Buy-In.md';
 import BlogPost from '../../components/BlogPost';
 
 

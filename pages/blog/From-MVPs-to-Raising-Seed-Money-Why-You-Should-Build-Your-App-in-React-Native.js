@@ -1,6 +1,6 @@
-''
+
 import propTypes from 'prop-types';
-import md from '../../static/pages-blog-markdown/How-I-Did-It---I-left-commercial-law-to-found-my-legal-startup.md';
+import md from '../../static/pages-blog-markdown/From-MVPs-to-Raising-Seed-Money-Why-You-Should-Build-Your-App-in-React-Native.md';
 import BlogPost from '../../components/BlogPost';
 
 

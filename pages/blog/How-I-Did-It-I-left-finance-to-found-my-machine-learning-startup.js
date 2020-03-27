@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../static/pages-blog-markdown/How-Corporate-Innovation-Teams-Can-Use-React-Native-To-Drive-Ideation,-Visualisation,-and-Stakeholder-Buy-In.md';
+import md from '../../static/pages-blog-markdown/How-I-Did-It-I-left-finance-to-found-my-machine-learning-startup.md';
 import BlogPost from '../../components/BlogPost';
 
 
