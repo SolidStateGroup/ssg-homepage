@@ -18,8 +18,10 @@ const Button = global.Button = class extends React.PureComponent {
         return (
             <button
               ref="button"
-              type="button"
+              type={this.props.type || "button"}
               name="button"
+              value={this.props.value || null}
+              id={this.props.id || null}
               {...rest}
               onMouseUp={this.onMouseUp}
               className={cn({

@@ -37,68 +37,69 @@ const ContactFormPage = class extends React.Component {
                                 <div className="col-md-8 pl-0">
                                     <h1 className="hero__title mb-4">Tell us about your project</h1>
                                 </div>
-                                <section>
-                                    <p className="text-light mt-5">1. What can we help you with?</p>
-                                    <div className="row">
-                                        <div className="col-lg-3 col-6">
-                                            <ButtonHexagon onClick={this.toggle}
-                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
-                                                           buttonText={'Strategy'}
-                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
-                                        </div>
 
-                                        <div className="col-lg-3 col-6">
-                                            <ButtonHexagon onClick={this.toggle}
-                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
-                                                           buttonText={'Design'}
-                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
-                                        </div>
-                                        <div className="col-lg-3 col-6">
-                                            <ButtonHexagon onClick={this.toggle}
-                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
-                                                           buttonText={'Mobile App Development'}
-                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
-                                        </div>
+                                {/*<section>*/}
+                                {/*    <p className="text-light mt-5">1. What can we help you with?</p>*/}
+                                {/*    <div className="row">*/}
+                                {/*        <div className="col-lg-3 col-6">*/}
+                                {/*            <ButtonHexagon onClick={this.toggle}*/}
+                                {/*                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}*/}
+                                {/*                           buttonText={'Strategy'}*/}
+                                {/*                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>*/}
+                                {/*        </div>*/}
 
-                                        <div className="col-lg-3 col-6">
-                                            <ButtonHexagon onClick={this.toggle}
-                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
-                                                           buttonText={'Web Development'}
-                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
-                                        </div>
+                                {/*        <div className="col-lg-3 col-6">*/}
+                                {/*            <ButtonHexagon onClick={this.toggle}*/}
+                                {/*                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}*/}
+                                {/*                           buttonText={'Design'}*/}
+                                {/*                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>*/}
+                                {/*        </div>*/}
+                                {/*        <div className="col-lg-3 col-6">*/}
+                                {/*            <ButtonHexagon onClick={this.toggle}*/}
+                                {/*                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}*/}
+                                {/*                           buttonText={'Mobile App Development'}*/}
+                                {/*                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>*/}
+                                {/*        </div>*/}
 
-                                    </div>
-                                </section>
+                                {/*        <div className="col-lg-3 col-6">*/}
+                                {/*            <ButtonHexagon onClick={this.toggle}*/}
+                                {/*                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}*/}
+                                {/*                           buttonText={'Web Development'}*/}
+                                {/*                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>*/}
+                                {/*        </div>*/}
 
-                                <div className="col-lg-8">
-                                    <section>
-                                        <p className="text-light mt-5">2. Project Information</p>
+                                {/*    </div>*/}
+                                {/*</section>*/}
+
+                                <div className="col-lg-8 pl-0 pb-5">
+                                    <form action="https://post.formlyapp.com/solidstategroup-website?redirect=/thanks"
+                                          method="POST">
+
+                                        <p className="text-light mt-5">1. Project Information</p>
 
                                         <div className="form-group">
-                                            <label className="form__label" for="projectInfoTextarea">Tell us a little bit
-                                                about
-                                                your project or how we can help...</label>
-                                            <textarea className="form-control" id="projectInfoTextarea" rows="3"/>
+                                            <textarea className="form-control form__input" name="textarea" id="Textarea"
+                                                      placeholder="Tell us a little bit about your project or how we can help..."
+                                                      rows="3" required/>
                                         </div>
-                                    </section>
 
-
-                                    <section className="pb-5">
-                                        <p className="text-light mt-5">3. Contact Details</p>
-                                        <Input InputLabel={'Email address *'} forLabel="Email address" placeholder="name@example.com"
-                                               formID={'email address'}
+                                        <p className="text-light mt-5">2. Contact Details</p>
+                                        <Input InputLabel={'Name'} forLabel="Name" placeholder="Name"
+                                               type="name" name="personname"
                                                inputClassName="form-control form__input mb-3"/>
 
-                                        <Input InputLabel={'Email address *'} forLabel="Email address" placeholder="name@example.com"
-                                               formID={'email address'}
+                                        <Input type="email" name="replyto" InputLabel={'Email address *'} forLabel="Email address"
+                                               placeholder="name@example.com"
+                                               id="exampleInputEmail1"
                                                inputClassName="form-control form__input mb-3"/>
 
-                                        <Input InputLabel={'Email address *'} forLabel="Email address" placeholder="name@example.com"
-                                               formID={'email address'}
-                                               inputClassName="form-control form__input mb-3"/>
+                                        <div className="d-flex justify-content-center">
+                                            <div data-callback="onCaptcha"
+                                                 data-sitekey="6LcK0WQUAAAAAMrEyxUFXuV2BFc4B0Dozfh1rq1Q"/>
+                                        </div>
 
-                                        <ButtonPrimary className="mt-3">Submit</ButtonPrimary>
-                                    </section>
+                                        <ButtonPrimary type="submit" value="Send" id="submit" className="mt-3">Submit</ButtonPrimary>
+                                    </form>
                                 </div>
                             </div>
 

@@ -79,6 +79,8 @@ const Input = class extends React.Component {
                     value={this.props.value}
                     className={inputClassName}
                     id={this.props.formID}
+                    type={this.props.type}
+                    name={this.props.name}
                 />
             </div>
         );
