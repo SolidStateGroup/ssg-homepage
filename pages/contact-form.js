@@ -44,27 +44,27 @@ const ContactFormPage = class extends React.Component {
                                             <ButtonHexagon onClick={this.toggle}
                                                            ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
                                                            buttonText={'Strategy'}
-                                                           class={`hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
+                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
                                         </div>
 
                                         <div className="col-lg-3 col-6">
                                             <ButtonHexagon onClick={this.toggle}
                                                            ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
                                                            buttonText={'Design'}
-                                                           class={`hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
+                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
                                         </div>
                                         <div className="col-lg-3 col-6">
                                             <ButtonHexagon onClick={this.toggle}
                                                            ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
                                                            buttonText={'Mobile App Development'}
-                                                           class={`hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
+                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
                                         </div>
 
                                         <div className="col-lg-3 col-6">
                                             <ButtonHexagon onClick={this.toggle}
                                                            ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
                                                            buttonText={'Web Development'}
-                                                           class={`hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
+                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
                                         </div>
 
                                     </div>

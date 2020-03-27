@@ -75,3 +75,11 @@
         height:calc(100vh - 56px);
     }
 }
+
+@media (max-height: 700px) {
+    .map-overlay{
+        &__title{
+            font-size: 1.5rem;
+        }
+    }
+}

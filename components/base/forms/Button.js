@@ -117,7 +117,7 @@ export const ButtonHexagon = global.ButtonHexagon = class extends React.PureComp
     static propTypes = _propTypes;
 
     render() {
-        const { props, width, height, fill } = this;
+        const { props, width, height, fill, stroke } = this;
         return (
             <React.Fragment>
                 <Button
