@@ -3,7 +3,6 @@ title: How We Built It - The Secure Healthcare App
 published: true
 description: This week saw the release of the app we built for PatientView, giving NHS patients control of their medical records, and empowering them to manage their healthcare.
 author: Sara Jones
-tags: corporates v startups, mobile applications, systems integration
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/How%20we%20built%20patientview%20app/patientview%20header.jpg
 date: 17-03-2018

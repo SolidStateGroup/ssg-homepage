@@ -3,7 +3,6 @@ title: Can I Wear Shorts?
 published: true
 description: SSG's latest release has landed - you'll never be caught short again with our new Voice Skill for Alexa and Google. Here's how, and why, we did it...
 author: Sara Jones
-tags: corporates v startups, mobile applications, systems integration
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Can%20I%20Wear%20Shorts/rainbow.jpg
 date: 18-jul-2017

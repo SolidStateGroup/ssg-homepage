@@ -2,7 +2,6 @@
 title: They went to SXSW and I alI got was this lousy blog
 published: true
 description: So here I am sitting at my desk a week after THE WHOLE COMPANY (apart from me) went to SXSW.
-tags: corporates v startups
 author: Aziz Morsly
 avatar: /static/images/blog/aziz.jpg
 image: https://storage.googleapis.com/ssg-website-images/sxsw-2017/ssg-sxsw-2017.jpg

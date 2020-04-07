@@ -3,7 +3,6 @@ title: Healthcare Tech Trends for 2018
 published: true
 description: Healthcare Tech is ripe fruit for 2018. In the first of our series, we're looking at trends & startups around Data Collection, from nanobots to IoT.
 author: Sara Jones
-tags: corporates v startups, mobile applications, systems integration
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Healthcare%20Data%20Collection%20Blog/Healthcare%20Tech%20Trends%202018%20header.jpg
 date: 30-nov-2017

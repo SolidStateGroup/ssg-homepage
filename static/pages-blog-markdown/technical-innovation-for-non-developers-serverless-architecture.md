@@ -3,7 +3,6 @@ title: Technical Innovation For Non-Developers - Serverless Architecture
 published: true
 description: Serverless computing - what is it, what's new, and how can a layman understand it, then use it?
 author: Sara Jones
-tags: corporates v startups, cloud infrastructure, systems integration
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/innovations%20in%20technology%20-%20serverless%20architecture/cloud%20infrastructure%20header.jpg
 date: 7-mar-2018

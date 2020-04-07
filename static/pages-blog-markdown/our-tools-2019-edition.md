@@ -2,7 +2,6 @@
 title: Our Tools - 2019 Edition
 published: true
 description: Here's what we are using to build Bullet Train, our Feature Flag platform. With some careful VPS purchases, most of this stuff can be run completely free of charge!
-tags: webdev, showdev, react, javascript
 author: Ben Rometsch
 avatar: /static/images/blog/ben.png
 image: https://storage.googleapis.com/ssg-website-images/tools-2019/tools-2019.jpg

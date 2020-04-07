@@ -2,7 +2,6 @@
 title: Startups Who Built Apps In React Native
 published: true
 description:  From new concepts to intricate integrations with existing apps, here's how high growth businesses have used React Native in 2017
-tags: mobile applications, user interface design
 author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/5%20Startups%20Using%20React%20Native/jenga-boy.jpg

@@ -3,7 +3,6 @@ title: How I Did It - What To Know When You Leave A Corporate To Found A Tech St
 published: true
 description: We interviewed 7 of London’s entrepreneurs across a wide range of industries to find out the first steps they took to leave a corporate career and build a startup. We've distilled the best bits, the absolute key takeaways any founder needs to know for when their startup is at its most raw and vulnerable - the beginning.
 author: Sara Jones
-tags: corporates v startups
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/how%20i%20did%20it%20key%20takeaways/How%20i%20did%20it%20key%20takeaways%20header.jpg
 date: 03-nov-2018

@@ -4,7 +4,6 @@ description: A few things you can do to help work better together in your develo
 date: 30-may-2019
 author: Kyle Johnson
 published: true
-tags: design, react, javascript
 avatar: /static/images/blog/kyle.png
 image: https://res.cloudinary.com/practicaldev/image/fetch/s--Nz0ggTil--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.ibb.co/QnSn2xD/traffic.jpg
 ---

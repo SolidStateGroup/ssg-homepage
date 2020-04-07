@@ -3,7 +3,6 @@ title: 5 Things To Look For In React Native Developers
 published: true
 description:  You want to build an app in React Native. How do you hire a great React Native team to execute your vision?
 author: Sara Jones
-tags: corporates v startups, mobile applications, web applications
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/How%20to%20hire%20react%20native%20developers/cheetah.jpg
 date: 20-oct-2017

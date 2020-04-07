@@ -3,7 +3,6 @@ title: What CES 2018 Highlights Tell Us About The Macro Trends For Tech
 published: true
 description: CES 2018 showed us the future. The macro trends show us what to start developing right now, from medtech to emotional robots.
 author: Sara Jones
-tags: corporates v startups, mobile applications
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/CES%20Highlights%202018/Samsung%20Wall.jpg
 date: 17-jan-2018

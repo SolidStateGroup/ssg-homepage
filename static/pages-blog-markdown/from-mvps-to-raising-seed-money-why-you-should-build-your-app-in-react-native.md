@@ -5,7 +5,6 @@ date: 27-feb-2018
 avatar: /static/images/blog/sara.jpg
 author: Sara Jones
 published: true
-tags: mobile applications, ui design
 image: https://storage.googleapis.com/ssg-website-images/How%20To%20Work%20With%20Agencies%20Part%20One/how%20to%20work%20with%20agencies%20header.jpg
 ---
 

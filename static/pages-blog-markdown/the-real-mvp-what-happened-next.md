@@ -2,7 +2,6 @@
 title: The Real MVP - What Happened Next
 published: true
 description: A few weeks ago we challenged ourselves to build and test an MVP in 48 hours. We soon discovered we needed better MV "D"...
-tags: corporates v startups
 author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Can%20I%20Wear%20Shorts/startup-photos.jpg

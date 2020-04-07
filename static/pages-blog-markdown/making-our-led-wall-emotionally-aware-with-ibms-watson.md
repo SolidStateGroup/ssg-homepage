@@ -2,7 +2,6 @@
 title: Making our LED Wall emotionally aware with IBM’s Watson
 published: true
 description: It’s friday afternoon and things are starting to wind down as the weekend approaches. We decided to add a cool new integration to our MASSIVE LED wall.
-tags: mobile applications, user interface design
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
 image: https://storage.googleapis.com/ssg-website-images/watson/watson-cover-new.jpg

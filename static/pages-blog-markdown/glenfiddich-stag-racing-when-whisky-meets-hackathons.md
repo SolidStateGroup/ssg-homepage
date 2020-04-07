@@ -4,7 +4,6 @@ description: The company behind such brands as Glenfiddich and Hendricks held a 
 date: 02-may-2018
 author: Sara Jones
 published: true
-tags: mobile applications, the lab
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Hackadram%202018%20blog/Glenfiddich%20Stag%20Racing.jpg
 ---

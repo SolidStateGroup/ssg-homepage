@@ -2,8 +2,7 @@
 title: What Happens When You Make SSG Do An Ecommerce Hackathon - With Demos
 published: true
 description: We stretched our creative muscle, ate some fried chicken, and made some epic demos for our ecommerce product.
-author: Niall Quinn
-tags: mobile applications, user interface design
+author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/SSG%20App%20Jam/appjam-team-working.jpg
 date: 15-aug-2017

@@ -2,7 +2,6 @@
 title: React Native For Digital Transformers
 published: true
 description:  A guide to React Native, with game changers for Digital Transformation, industry trends and use cases for 2018.
-tags: mobile applications, user interface design
 author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Digital%20Transformation%20blog/Singapore%20Light%20Trees.jpg

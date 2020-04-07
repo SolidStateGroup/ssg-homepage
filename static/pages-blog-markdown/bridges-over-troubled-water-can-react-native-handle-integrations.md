@@ -3,7 +3,6 @@ title: Bridges Over Troubled Water - can React Native handle integrations?
 published: true
 description: How do we create a seamless native user experience on a hotel app, while integrating three different third parties at the same time?
 author: Sara Jones
-tags: corporates v startups, mobile applications, systems integration
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/imperial/Imperial-hotels-facebook-cover-photo.jpg
 date: 29-jun-2017

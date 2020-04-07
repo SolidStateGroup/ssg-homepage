@@ -3,7 +3,6 @@ title: It’s cross platform and massively reduces app dev costs, but WTF is Rea
 published: true
 description: We helped a startup cut down from 3 development agencies to 1 whilst mirroring features across Web, iOS and Android, releasing all 3 simultaneously. All because of a little thing called React Native.
 author: Sara Jones
-tags: mobile applications, systems integration
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/react-native-blog.png
 date: 02-aug-2017

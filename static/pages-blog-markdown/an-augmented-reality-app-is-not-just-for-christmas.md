@@ -5,7 +5,6 @@ date: 24-jan-2018
 avatar: /static/images/blog/sara.jpg
 author: Sara Jones
 published: true
-tags: design, mobile, ar
 image: https://storage.googleapis.com/ssg-website-images/AR%20Card%20blog/christmas-1911637_1920.jpg
 ---
 

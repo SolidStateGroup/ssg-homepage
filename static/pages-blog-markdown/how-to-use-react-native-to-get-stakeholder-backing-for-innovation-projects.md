@@ -3,7 +3,6 @@ title: How To Use React Native To Get Stakeholder Backing For Innovation Project
 published: true
 description: Great ideas spring from hackathons and ideation sessions, but shaping them into demos fit for pitching to budget holders is the real test. Here's how to use React Native to on-board stakeholders and impress them.
 author: Sara Jones
-tags: corporates v startups
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/how%20to%20use%20react%20native%20to%20impress%20stakeholders/impress%20investors%20header.jpg
 date: 28-02-2018

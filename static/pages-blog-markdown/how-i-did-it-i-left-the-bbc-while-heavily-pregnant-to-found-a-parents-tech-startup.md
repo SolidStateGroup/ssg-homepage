@@ -3,7 +3,6 @@ title: How I Did It - I Left The BBC While Heavily Pregnant To Found A Parents T
 published: true
 description: Sara Tateno joined a pre-accelerator at Google Campus just ten days after giving birth. She started a full time coding course 6 months later. Now her startup Happity serves thousands of parents, and her wee one is still barely out of nappies. Here's how she did it.
 author: Sara Jones
-tags: corporates v startups
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/How%20I%20Did%20It%20Sara%20Tateno/Sara%20Tateno%20header.jpg
 date: 17-oct-2018

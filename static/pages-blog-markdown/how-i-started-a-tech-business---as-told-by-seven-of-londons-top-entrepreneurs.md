@@ -3,7 +3,6 @@ title: How I Started A Tech Business - As Told By Seven Of London's Top Entrepre
 published: true
 description: We've shone a light on seven entrepreneurs who've made the journey from corporate to startup so that others fighting to start their own business can capitalise on hard-won experience and practical tips. You can browse their war stories by advice, ex-profession, hard skills, personal challenges, and startup industry.
 author: Sara Jones
-tags: corporates v startups
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/how%20we%20did%20it%20index%20blog/how%20i%20started%20a%20tech%20business%20header%20(1).jpg
 date: 18-10-2018

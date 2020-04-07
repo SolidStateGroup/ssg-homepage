@@ -3,7 +3,6 @@ title: React Native for Scale-ups - Use Cases and Future-Proofing
 published: true
 description: We've put together some use cases and tips to help scale-ups decide whether React Native is the right tool for stable app builds and re-writes.
 author: Sara Jones
-tags: corporates v startups, mobile applications, react native
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/how%20to%20use%20react%20native%20for%20scale%20ups/react%20native%20for%20scale%20ups%20header.jpg
 date: 27-02-2018

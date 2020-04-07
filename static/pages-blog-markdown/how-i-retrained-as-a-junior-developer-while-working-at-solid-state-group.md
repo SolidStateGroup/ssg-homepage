@@ -3,7 +3,6 @@ title: How I Retrained As A Junior Developer While Working At Solid State Group
 published: true
 description: Matt tells us how and why he retrained as a junior developer, and shares his advice for other non-techies considering changing their career too.
 author: Sara Jones
-tags: corporates v startups
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/How%20I%20became%20a%20junior%20developer/how%20i%20became%20a%20junior%20developer%20header.jpg
 date: 8-oct-2018

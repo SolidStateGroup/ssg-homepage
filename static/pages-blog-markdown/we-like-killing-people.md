@@ -3,7 +3,6 @@ title: We Like Killing People
 published: true
 description: We are utterly addicted to PlayerUnknown’s Battleground, so we made our own multiplayer competitive survival shootout mobile game, even though we're not actually game devs.
 author: Sara Jones
-tags: mobile applications, user interface design
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Battle%20Royale%20Blog/pubg%20header.jpg
 date: 14-aug-2017

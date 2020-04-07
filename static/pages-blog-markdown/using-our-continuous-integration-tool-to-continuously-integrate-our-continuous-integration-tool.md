@@ -3,7 +3,6 @@ title: Using our continuous integration tool to continuously integrate our conti
 published: true
 description: A good example of how to use Bullet Train to manage and release features remotely
 author: Sara Jones
-tags: corporates v startups
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/bullet-train/bullet-train.png
 date: 10-nov-2018

@@ -3,7 +3,6 @@ title: The Sustainable Change Roadmap By PPL
 published: true
 description: A guest blog by our friends at PPL Consulting who share their roadmap for working with the public sector. Their ethical approach applies to any sector, so it's a must-read for anyone struggling to create a collaborative and meaningful change in their organisation.
 author: Sara Jones
-tags: corporates v startups
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/ppl%20sustainable%20roadmap/ppl%20change%20roadmap%20header.jpg
 date: 15-nov-2018

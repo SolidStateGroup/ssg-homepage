@@ -3,7 +3,6 @@ title: Are Chatbots Coming To Kill Apps and Google Search?
 published: true
 description: What are chatbots and why is everyone saying they're going to destroy the digital world as we know it? How do I make sure I'm on the winning side?
 author: Sara Jones
-tags: corporates v startups, mobile applications, systems integration
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/chatbots-coming-to-kill-apps/nuclear-weapons-test-67557_1920.jpg
 date: 13-jun-2017

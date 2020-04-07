@@ -3,7 +3,6 @@ title: How I Did It - I Left Accountancy To Found My Own Startup
 published: true
 description: As one third of 3beards, Joe Scarboro is a true native of the London tech scene. But it wasn't always so. Here's how he jumped into the startup world, what he learned from successfully exiting his first business, and what every corporate professional should know before they launch their own rocket ship.
 author: Sara Jones
-tags: corporates v startups
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/how%20i%20did%20it%20joe%20scarboro/how%20i%20did%20it%20joe%20scarboro%20header.jpg
 date: 30-aug-2018

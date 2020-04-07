@@ -2,7 +2,6 @@
 title: We built a giant pixel wall for fun, but what we learnt went a lot further.
 published: true
 description: Every tech company has side projects and Solid State is no different. It keeps devs motivated and flexes the bits of the brain sometimes not quite reached by day to day coding.
-tags: mobile applications, iot, user interface design
 author: Niall Quinn
 avatar: /static/images/blog/niall.jpg
 image: https://storage.googleapis.com/ssg-website-images/rio/rio-cover.jpg

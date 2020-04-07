@@ -3,7 +3,6 @@ title: Introducing SSG Labs
 published: true
 description: SSG Labs is our brand new home for all our digital hacks and experiments, from VR to Videogames.
 author: Sara Jones
-tags: corporates v startups, mobile applications, systems integration
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/rio/rio-cover.jpg
 date: 30-nov-2017

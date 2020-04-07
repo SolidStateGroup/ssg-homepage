@@ -3,7 +3,6 @@ title: How I Did It - I Left Finance To Found My Own Machine Learning Startup
 published: true
 description: Richie Barter always knew he treasured a challenge over stability, so he took a year off, explored entrepreneurship, and now his startup builds machine learning solutions for enterprise. All this while getting an Msc in CompSci from Oxford. Here's how he did it.
 author: Sara Jones
-tags: corporates v startups
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/how%20i%20did%20it%20richie%20barter/richie%20barter%20header%20image.jpg
 date: 13-sep-2018

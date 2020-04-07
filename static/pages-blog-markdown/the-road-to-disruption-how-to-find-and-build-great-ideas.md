@@ -3,7 +3,6 @@ title: The Road To Disruption - How To Find And Build Great Ideas
 published: true
 description: How does a mature organisation generate hundreds of disruptive ideas, validate them, and prototype? Join us on 26th June for a fantastic event which will leave you filled with stories, lessons, and concrete actions.
 author: Sara Jones
-tags: corporates v startups
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/The%20Road%20To%20Disruption/the%20road%20to%20disruption%20header%202.jpg
 date: 5-jun-2018

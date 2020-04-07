@@ -1,7 +1,6 @@
 ---
 title: How Corporate Innovation Teams Can Use React Native To Drive Ideation, Visualisation, and Stakeholder Buy-In
 published: true
-tags: mobile applications, user interface design, corporates v startups
 description: Our guide to React Native for Innovation Managers, Entrepreneurs-in-Residence, CIOs, and Entrepreneurs.
 author: Sara Jones
 avatar: /static/images/blog/sara.jpg

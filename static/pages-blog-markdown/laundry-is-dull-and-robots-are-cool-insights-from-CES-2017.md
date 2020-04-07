@@ -1,9 +1,7 @@
 ---
 title:  Laundry Is Dull and Robots Are Cool - Insights From CES 2017
 published: true
-description: From IoT sex pants, to audio through your skull, last week’s Consumer Electronics Show did not hold back on the weird and wonderful new tech - but is any of it useful?
-        Overall there were no massive ground breaking advances, but there were some pretty amazing iterations on last years tech. These are my highlights.author: Sara Jones
-tags: mobile applications, systems integration
+description: From IoT sex pants, to audio through your skull, last week’s Consumer Electronics Show did not hold back on the weird and wonderful new tech - but is any of it useful? Overall there were no massive ground breaking advances, but there were some pretty amazing iterations on last years tech. These are my highlights.author: Sara Jones
 author: Matthew Evans
 avatar: /static/images/blog/matt.jpg
 image: https://storage.googleapis.com/ssg-website-images/ces-2017.jpg

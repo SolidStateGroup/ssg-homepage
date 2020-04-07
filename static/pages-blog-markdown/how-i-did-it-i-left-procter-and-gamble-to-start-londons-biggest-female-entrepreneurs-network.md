@@ -3,7 +3,6 @@ title: How I Did It - I Left Procter And Gamble to Start London's Biggest Female
 published: true
 description: Blooming Founders supports thousands of women in London as they start and scale high growth ventures. The blooming-est founder is Lu Li, who started the community to realise her passion for innovation and collaboration. Here's how she did it.
 author: Sara Jones
-tags: corporates v startups
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/How%20I%20Did%20It%20-%20Lu%20Li/lu%20li%20header.jpg
 date: 17-oct-2018

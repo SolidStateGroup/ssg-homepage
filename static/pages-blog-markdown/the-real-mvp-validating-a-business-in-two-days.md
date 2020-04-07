@@ -2,7 +2,6 @@
 title: The Real MVP - Validating a Business In Two Days
 published: true
 description: How quickly can you validate a business?
-tags: corporates v startups
 author: Ben Rometsch
 avatar: /static/images/blog/ben.png
 image: https://storage.googleapis.com/ssg-website-images/micro-startup-validation/wireframe.jpg

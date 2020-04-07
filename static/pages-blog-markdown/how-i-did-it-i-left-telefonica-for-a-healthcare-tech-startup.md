@@ -3,7 +3,6 @@ title: How I Did It - I Left Telefonica For A Healthcare Tech Startup
 published: true
 description: Kim Guest smashed the glass ceiling at the likes of Telefonica, spending decades raising children and working hard. And yet, she's just getting started. Her business is going from strength to strength with the likes of Paula Radcliffe on her board, but this journey has been nothing but average. She's dealt with the hardest challenge for a startup - the passing of a co-founder. Here's how she did it.
 author: Sara Jones
-tags: corporates v startups
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/How%20I%20did%20it%20Kim%20Guest/kim%20gues%20how%20i%20did%20it%20header.jpg
 date: 30-sep-2018

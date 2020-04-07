@@ -1,17 +1,5 @@
 ---
 title: A review of the new-fangled "petrol powered" car.
-leader: Having established a petrol station foothold in Manchester for its internal combustion cars, Porsche has brought its formula south, opening several petrol stations in and around the London area that would, in theory, allow a speedy petrol-burning road trip between London and Manchester.
-author: Ben Rometsch
-date: 2014/7/13 20:46:25
-image: https://www.solidstategroup.com/images/Shell_Sign_by_night.jpg
-tags:
-- The World
-- User Interface Design
-- Internet of Things
----
-
----
-title: A review of the new-fangled "petrol powered" car.
 published: true
 description: Having established a petrol station foothold in Manchester for its internal combustion cars, Porsche has brought its formula south, opening several petrol stations in and around the London area that would, in theory, allow a speedy petrol-burning road trip between London and Manchester.
 author: Ben Rometsch
@@ -34,5 +22,3 @@ date: 13-jul-2014
 <p>So there I was, bellowing gasses at all the electric-heads behind me. I started to think about all the other downsides of the car. All that heat dissipation racks up some serious costs. Exhaust systems need to be replaced every 20,000 miles. Whenever you brake, forget about all that potential energy that you could harvest. Huge (and hugely expensive) brake disks and pads soak up the energy and just burn it up as heat just like the engine. Oil needs replacing, along with oil filters and spark plugs. And all this after 80 years of research and development.</p>
 <p>All those problems that electric cars suffered decades ago when people worried about “Range Anxiety” was turned into simple anxiety. Anxiety about the rising cost of petrol, anxiety about the geo-political problems around the fuel, anxiety about the thousands of parts that might fail, anxiety about the people stuck behind me as my fumes flowed straight into their cabins, anxiety about toxins in the petrol and most importantly anxiety about the effects that millions of cars would have on the CO2 levels in the atmosphere.</p>
 <p>Rolling into Manchester, I had dozens of people staring at the car, asking me about it, quizzing me on how much it costs to run, and what I would do with all those 20 minute fill-up savings I would accrue using these new petrol stations. By that point I had made up my mind. This car is madness, and it would need someone far richer and far madder than me to see any sense in it.</p>
-
-{% endraw %}

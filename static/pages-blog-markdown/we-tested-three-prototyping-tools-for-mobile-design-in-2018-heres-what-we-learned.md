@@ -3,7 +3,6 @@ title: We Tested Three Prototyping Tools For Mobile Design in 2018 - Here's What
 published: true
 description: With increasing frequency, clients are seeing the value of animation in their products, and as a consequence, we’ve found ourselves looking for the best tools to showcase concepts before diving into development.
 author: Niall Quinn
-tags: mobile applications, user interface design
 avatar: /static/images/blog/niall.jpg
 image: https://storage.googleapis.com/ssg-website-images/prototyping-tools-2018/header-dark.jpg
 date: 26-nov-2018

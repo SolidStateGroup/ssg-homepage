@@ -3,7 +3,6 @@ title: 5 things most startups forget when building their first app
 published: true
 description: At Solid State we've been building apps for startups and corporates for years. With a big focus on rapid development I've seen all the mistakes, and made a few myself.  This is my quick guide to bypass some of the horror.
 author: Ben Rometsch
-tags: corporates v startups, mobile applications, web applications
 avatar: /static/images/blog/ben.png
 image: https://storage.googleapis.com/ssg-website-images/pexels-photo-237911.jpeg
 date: 19-jan-2017

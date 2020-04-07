@@ -3,7 +3,6 @@ title: How To Work With Tech Agencies As A Startup Founder - Part One
 published: true
 description: A comprehensive guide for startups to understand how to choose an agency, reduce costs, and work collaboratively to achieve the same goal - that of a hugely successful high-growth startup.
 author: Sara Jones
-tags: corporates v startups
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/How%20To%20Work%20With%20Agencies%20Part%20One/how%20to%20work%20with%20agencies%20header.jpg
 date: 28-02-2018

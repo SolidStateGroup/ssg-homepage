@@ -3,7 +3,6 @@ title: Building a pixel wall in virtual reality with React VR and RIO! Our first
 published: true
 description: We got such a great reception from our project RIO and were so excited to see it posted by the likes of Adafruit, Motherboard and Raspberry Pi we decided to simulate our 3d wall in the office in virtual reality.
 author: Kyle Johnson
-tags: corporates v startups, mobile applications, systems integration
 avatar: /static/images/blog/kyle.png
 image: https://storage.googleapis.com/ssg-website-images/react-vr/react-vr-cover.png
 date: 04-may-2017

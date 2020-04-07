@@ -3,7 +3,6 @@ title: Digital Transformation - By The Developers
 published: true
 description: 50% of Digital Transformation Projects fail due to technology barriers. Here's the advice from the developers actually building the systems you need.
 author: Sara Jones
-tags: corporates v startups, cloud infrastructure, systems integration
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/digital%20transformation%20article/bridge%20to%20nowhere%20faded.jpg
 date: 20-sep-2017
