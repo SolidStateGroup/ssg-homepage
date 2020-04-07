@@ -176,10 +176,23 @@ export const ProjectTextSection = global.ProjectTextSection = class extends Reac
                     ) : (
                         null
                     )}
+                    {this.props.description ? (
+                        <div className="flex-row">
+                            <p className="project-section-item__text">{this.props.description || null}</p>
+                        </div>
+                    ) : (
+                        null
+                    )}
 
-                    <div className="flex-row">
-                        <p className="project-section-item__text">{this.props.description || 'Lorem ipsum dolor sit amet, dictas similique incorrupte ut mei, vel eu nusquam noluisse. Etiam interpretaris ea sea, nec tibique omittantur no. Ei mucius inimicus dissentiunt vim, no quo noster adolescens, ne per efficiendi intellegam. Cum inani harum adversarium et, officiis euripidis incorrupte cu ius.'}</p>
-                    </div>
+                    {this.props.bulletedList ? (
+
+                        <ul className="project-section-item__list">
+                            {this.props.bulletedList || null}
+                        </ul>
+
+                    ) : (
+                        null
+                    )}
                 </div>
             </div>
         );

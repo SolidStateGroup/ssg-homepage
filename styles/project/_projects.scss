@@ -68,6 +68,12 @@
         &__text {
             white-space: pre-wrap;
         }
+        &__list {
+           li {
+               color: #22354a;
+               opacity: 0.85;
+           }
+        }
     }
 }
 

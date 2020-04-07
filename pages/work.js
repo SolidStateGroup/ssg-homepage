@@ -59,6 +59,15 @@ const projects = [
     },
     {
         ButtonComponent: ButtonPrimary,
+        href: '/projects/patientview',
+        projectImage: '/static/images/projects/patientview/patientview-ipad@1x.png',
+        subTitle: 'Secure online platform for clinicians and patients',
+        title: 'The doctor will see you now – wherever, whenever',
+        blobColour: "#368de8",
+        tags: ['API', "WEB"],
+    },
+    {
+        ButtonComponent: ButtonPrimary,
         href: '/projects/wfa',
         projectImage: '/static/images/projects/wfa/wfa-1.png',
         subTitle: 'Web Application',

@@ -84,6 +84,9 @@
     &--imperial {
         background-color: #f6921e;
     }
+    &--patientview {
+        background-color: #368de8;
+    }
 }
 
 @include media-breakpoint-down(md) {
