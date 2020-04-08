@@ -45,14 +45,19 @@ const ProjectItem = global.ProjectItem = class extends React.PureComponent {
                                 />
                                 </div>
                             ) : (
-                                <ul className="text-list list-inline mb-4 d-none d-sm-block">
-                                    <li className="text-list__item list-inline-item">Research</li>
-                                    <li className="text-list__item list-inline-item">UX design</li>
-                                    <li className="text-list__item list-inline-item">UI design</li>
-                                    <li className="text-list__item list-inline-item">Mobile App Development</li>
-                                    <li className="text-list__item list-inline-item">API Development</li>
-                                </ul>
+                               null
                             )}
+
+                            {this.props.projectType ? (
+
+                            <p className="project__type">
+                                {this.props.projectType || null}
+                            </p>
+
+                            ) : (
+                                null
+                            )}
+
                             <Link prefetch={false} href={this.props.href}>
                                 <ButtonComponent className="project__cta">View project</ButtonComponent>
                             </Link>

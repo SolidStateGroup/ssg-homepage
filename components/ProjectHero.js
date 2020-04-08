@@ -30,6 +30,12 @@ const ProjectHero = global.ProjectHero = class extends React.PureComponent {
                                     <h5 className="title--light mb-0">{this.props.projectType || 'iOS and Android Mobile App'}</h5>
                                     <h1 className="hero__title mb-4">{this.props.projectTitle || 'Rebooting female fitness for Tone and Sculpt'}</h1>
 
+
+                                    <h6 className="text-uppercase title--light opacity--70 mt-5">Client</h6>
+                                    <ul className="text-list list-inline mb-4">
+                                        {this.props.ProjectClientName}
+                                    </ul>
+
                                     <h6 className="text-uppercase title--light opacity--70 mt-5">Services</h6>
                                     <ul className="text-list list-inline mb-4">
                                         {this.props.ProjectServiceListItem}

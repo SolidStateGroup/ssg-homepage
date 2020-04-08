@@ -26,6 +26,12 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Dugout FC" canonical="projects/dugout">
                     <ProjectHero
+                        ProjectClientName={
+                            <React.Fragment>
+                                <TextListItem listItemText={'Dugout FC'}/>
+                            </React.Fragment>
+
+                        }
                         projectTitle={'Making fantasy football a reality'}
                         projectType={'Developing with React and React Native'}
                         ProjectServiceListItem={

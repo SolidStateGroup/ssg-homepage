@@ -24,6 +24,15 @@
     100% { transform: translateY(15px); opacity: 0;}
 }
 
+@-webkit-keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
 .vertical-line {
     border-left: 2px solid #fff;
     height: 16px;
@@ -38,11 +47,11 @@
 }
 
 .pulse-circle {
-   
+
     &__large {
         //opacity: 0;
         &--first {
-        
+
         }
     }
 }

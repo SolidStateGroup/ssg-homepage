@@ -26,6 +26,12 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Imperial Hotels" canonical="projects/imperial-hotels">
                     <ProjectHero
+                        ProjectClientName={
+                            <React.Fragment>
+                                <TextListItem listItemText={'Imperial Hotels'}/>
+                            </React.Fragment>
+
+                        }
                         projectTitle={'React Native mobile application with in depth integrations'}
                         projectType={'Mobile app for managing bookings, accessing hotel facilities and controlling the premium WiFi service.'}
                         ProjectServiceListItem={

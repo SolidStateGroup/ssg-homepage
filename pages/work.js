@@ -17,7 +17,7 @@ const projects = [
         projectImageClass: "project__image--short",
         blobColour: "#5CC2E1",
         tags: ['DESIGN', "MOBILE", "API"],
-
+        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -27,6 +27,7 @@ const projects = [
         title: 'The future of film and media financing',
         blobColour: "#D02D55",
         tags: ['DESIGN', "WEB"],
+        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Web App Development, ', 'API Development ']
 
     },
     {
@@ -37,6 +38,7 @@ const projects = [
         title: 'Reinventing treatment of respiritory issues',
         blobColour: "#FF715A",
         tags: ['DESIGN', 'MOBILE', "IOT"],
+        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
 
     },
     {
@@ -47,6 +49,7 @@ const projects = [
         title: 'Ideas happen anywhere, anytime',
         blobColour: "#173E5A",
         tags: ['DESIGN', 'MOBILE', "API"],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -56,6 +59,7 @@ const projects = [
         title: 'The real-time machine: integrating with 1960s tech',
         blobColour: "#3658B0",
         tags: ['API', "WEB"],
+        projectType: ['Web App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -65,6 +69,7 @@ const projects = [
         title: 'The doctor will see you now – wherever, whenever',
         blobColour: "#368de8",
         tags: ['API', "WEB"],
+        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -74,6 +79,7 @@ const projects = [
         title: 'Visualising data for effective marketing communications',
         blobColour: "#ff003c",
         tags: ['API', "WEB"],
+        projectType: ['UI design, ', 'Web App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -83,6 +89,7 @@ const projects = [
         title: 'Straightening out corporate documentation',
         blobColour: "#fe7101",
         tags: ['API', 'MOBILE', 'DESIGN', "WEB"],
+        projectType: ['UX Design, ', 'UI design, ', 'Web App Development, ', 'API Development ']
     },
 
     {
@@ -93,6 +100,7 @@ const projects = [
         title: 'Subscription service for your feline friends',
         blobColour: "#f7f7f7",
         tags: ['DESIGN', 'BRANDING', 'WEB'],
+        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Web Development, ']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -102,6 +110,7 @@ const projects = [
         title: 'Tapping into the future of the electricity market',
         blobColour: "#5BABBB",
         tags: ['DESIGN', 'WEB'],
+        projectType: ['UX Design, ', 'UI design, ', 'Web Development, ']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -111,6 +120,7 @@ const projects = [
         title: 'Shopping that buys itself',
         blobColour: "#007DBB",
         tags: ['DESIGN', 'MOBILE', 'IOT'],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -120,6 +130,7 @@ const projects = [
         title: 'Feels on wheels',
         blobColour: "#FFD60D",
         tags: ['DESIGN', 'MOBILE', 'IOT'],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -129,6 +140,7 @@ const projects = [
         title: 'Glenfiddich Stag Racing - When Whisky Meets Hackathons',
         blobColour: "#483c3c",
         tags: ['DESIGN', 'MOBILE', 'AUGMENTED REALITY'],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -138,6 +150,7 @@ const projects = [
         title: 'Changing the [face] of debt tracking',
         blobColour: "#908DF7",
         tags: ['DESIGN', 'MOBILE', 'AUGMENTED REALITY'],
+        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Mobile App Development']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -147,6 +160,7 @@ const projects = [
         title: 'Cakewalk on the catwalk',
         blobColour: "#1a1e5a",
         tags: ['DESIGN', 'MOBILE', "IOT"],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -156,6 +170,7 @@ const projects = [
         title: 'Making fantasy football a reality',
         blobColour: "#D8315B",
         tags: ['DESIGN', 'MOBILE', "WEB", "API"],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development, ', "Web App Development "]
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -164,7 +179,8 @@ const projects = [
         subTitle: 'Find the relevant conversations for your small business on Twitter',
         title: 'Social marketing, made easy',
         blobColour: "#46cd86",
-        tags: ['DESIGN', 'MOBILE', "API"],
+        tags: ['DESIGN', 'MOBILE', "API", "BRANDING"],
+        projectType: ['UX design, ', 'UI design, ', 'Branding, ', 'Mobile App Development, ', 'API Development ',]
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -174,6 +190,7 @@ const projects = [
         title: 'React Native mobile application with in depth integrations',
         blobColour: "#f6921e",
         tags: ['DESIGN', 'MOBILE', "API"],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ',]
     },
 
 
@@ -265,6 +282,7 @@ const WorkPage = class extends React.Component {
                         projectImageClass={p.projectImageClass}
                         blobColour={p.blobColour}
                         title={p.title}
+                        projectType={p.projectType}
                       />
 
                   ))}

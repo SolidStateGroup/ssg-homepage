@@ -44,6 +44,9 @@
     &__title{
         font-size:3rem;
     }
+    &__type {
+        font-size: .85rem;
+    }
 
     &__number {
         opacity: 0.15;
@@ -63,6 +66,7 @@
     }
     &__item {
         margin: 4em 0;
+        animation: fadeIn ease .5s;
     }
     &-section-item {
         &__text {
@@ -176,6 +180,4 @@
 
 
 }
-
-
 

@@ -15,15 +15,13 @@ import ProjectItem from '../components/ProjectItem';
 const projects = [
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/hailie/hailie-summary-iphone.png',
-        subTitle: 'iOS and Android Mobile Applications',
-        title: 'Reinventing treatment of respiritory issues',
-        // clientBrand: '/static/images/clients/colour/hailie.svg',
-        clientName: 'Hailie',
         href: '/projects/hailie',
+        projectImage: '/static/images/projects/hailie/hailie-phone@1x.png',
+        subTitle: 'iOS and Android Mobile App',
+        title: 'Reinventing treatment of respiritory issues',
         blobColour: "#FF715A",
-        tags: ['design'],
-
+        tags: ['DESIGN', 'MOBILE', "IOT"],
+        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -33,6 +31,7 @@ const projects = [
         title: 'The real-time machine: integrating with 1960s tech',
         blobColour: "#3658B0",
         tags: ['API', "WEB"],
+        projectType: ['Web App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -42,6 +41,7 @@ const projects = [
         title: 'Cakewalk on the catwalk',
         blobColour: "#1a1e5a",
         tags: ['DESIGN', 'MOBILE', "IOT"],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -51,6 +51,7 @@ const projects = [
         title: 'Shopping that buys itself',
         blobColour: "#007DBB",
         tags: ['DESIGN', 'MOBILE', 'IOT'],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -60,6 +61,7 @@ const projects = [
         title: 'Feels on wheels',
         blobColour: "#FFD60D",
         tags: ['DESIGN', 'MOBILE', 'IOT'],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -69,6 +71,7 @@ const projects = [
         title: 'Visualising data for effective marketing communications',
         blobColour: "#ff003c",
         tags: ['API', "WEB"],
+        projectType: ['UI design, ', 'Web App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -78,6 +81,7 @@ const projects = [
         title: 'Straightening out corporate documentation',
         blobColour: "#fe7101",
         tags: ['API', 'MOBILE', 'DESIGN', "WEB"],
+        projectType: ['UX Design, ', 'UI design, ', 'Web App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -87,7 +91,9 @@ const projects = [
         title: 'Ideas happen anywhere, anytime',
         blobColour: "#173E5A",
         tags: ['DESIGN', 'MOBILE', "API"],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
     },
+
 ];
 
 const PartnersPage = class extends React.Component {
@@ -173,10 +179,12 @@ const PartnersPage = class extends React.Component {
 
             <div className="container">
                 {projects.map((p) => (
-                  <ProjectItem ButtonComponent={p.ButtonComponent} projectImage={p.projectImage} subTitle={p.subTitle}
-                               title={p.title} clientBrand={p.clientBrand} clientName={p.clientName} projectImageClass={p.projectImageClass}
-                               blobColour={p.blobColour}
-                  />
+                    <ProjectItem ButtonComponent={p.ButtonComponent} projectImage={p.projectImage} subTitle={p.subTitle}
+                                 title={p.title} clientBrand={p.clientBrand} clientName={p.clientName}
+                                 projectImageClass={p.projectImageClass}
+                                 blobColour={p.blobColour}
+                                 projectType={p.projectType}
+                    />
                 ))}
             </div>
 
