@@ -33,41 +33,9 @@ const ContactFormPage = class extends React.Component {
                     <div className="container mt-5">
                         <div className="row">
                             <div className="col-md-8">
-                                <h5 className="title--light mb-0">Project Planner</h5>
                                 <div className="col-md-8 pl-0">
-                                    <h1 className="hero__title mb-4">Tell us about your project</h1>
-                                </div>
-
-                                <div className="col-lg-8 pl-0 pb-5">
-                                    <form action="https://post.formlyapp.com/tester?redirect=/thanks" method="POST">
-
-                                        <p className="text-light mt-5">1. Project Information</p>
-
-                                        <div className="form-group">
-                                            <textarea className="form-control form__input" name="textarea" id="Textarea"
-                                                      placeholder="Tell us a little bit about your project or how we can help..."
-                                                      rows="3" required/>
-                                        </div>
-
-                                        <p className="text-light mt-5">2. Contact Details</p>
-                                        <Input InputLabel={'Name'} forLabel="Name" placeholder="Name"
-                                               type="name" name="personname"
-                                               inputClassName="form-control form__input mb-3"/>
-
-                                        <Input type="email" name="replyto" InputLabel={'Email address *'}
-                                               forLabel="Email address"
-                                               placeholder="name@example.com"
-                                               id="exampleInputEmail1"
-                                               inputClassName="form-control form__input mb-3"/>
-
-                                        <div className="d-flex justify-content-center">
-                                            <div data-callback="onCaptcha"
-                                                 data-sitekey="6LcK0WQUAAAAAMrEyxUFXuV2BFc4B0Dozfh1rq1Q"/>
-                                        </div>
-
-                                        <ButtonPrimary type="submit" value="Send" id="submit"
-                                                       className="mt-3">Submit</ButtonPrimary>
-                                    </form>
+                                    <h1 className="hero__title mb-4">Thanks for your email!</h1>
+                                    <p className="text-white">We'll be in touch shortly.</p>
                                 </div>
                             </div>
 
@@ -85,14 +53,12 @@ const ContactFormPage = class extends React.Component {
                                                 &nbsp;matthew@solidstategroup.com</a></p>
                                     </div>
 
-
                                     <img src="/static/images/hero-blob.svg" alt="hero-blob"
                                          className="img-fluid position-absolute hidden-sm-down"/>
                                 </div>
                             </div>
                         </div>
                     </div>
-
 
                 </div>
                 <Footer/>

@@ -29,7 +29,6 @@ const TheComponent = class extends Component {
                             <React.Fragment>
                                 <TextListItem listItemText={'Visa'}/>
                             </React.Fragment>
-
                         }
                         projectTitle={'Cakewalk on the catwalk'}
                         projectType={'Instant payment integration with NFC Ring'}
