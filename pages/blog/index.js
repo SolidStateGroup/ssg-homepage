@@ -68,12 +68,12 @@ const BlogPage = class extends Component {
                           </div>
                         )}
                         <div className="row">
-                        {blogItems.map(b => b.featured && (
+                        {blogItems.map(b => b.featured && !filteredBy && (
                             <React.Fragment>
                                 <BlogItem key={b.title} item={b}/>
                             </React.Fragment>
                         ))}
-                        {blogItems.map(b => !b.featured && (
+                        {blogItems.map(b => (!b.featured||!!filteredBy) && (
                             <React.Fragment>
                                 <BlogItemSummary key={b.title} item={b}/>
                             </React.Fragment>
