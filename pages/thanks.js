@@ -6,8 +6,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
 
-const ContactFormPage = class extends React.Component {
-    static displayName = 'ContactFormPage';
+const ContactFormThanksPage = class extends React.Component {
+    static displayName = 'ContactFormThanksPage';
 
     constructor(props, context) {
         super(props, context);
@@ -26,7 +26,7 @@ const ContactFormPage = class extends React.Component {
 
     render = () => {
         return (
-            <Page title={Constants.titles.contactForm} canonical="contact-form">
+            <Page title={Constants.titles.contactFormThanksPage} canonical="contact-form">
                 <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                     <Header/>
 
@@ -68,4 +68,4 @@ const ContactFormPage = class extends React.Component {
     };
 };
 
-export default ContactFormPage;
+export default ContactFormThanksPage;

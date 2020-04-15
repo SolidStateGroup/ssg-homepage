@@ -38,7 +38,41 @@ const ContactFormPage = class extends React.Component {
                                     <h1 className="hero__title mb-4">Tell us about your project</h1>
                                 </div>
 
+                                <section>
+                                    <p className="text-light mt-5">1. What can we help you with?</p>
+                                    <div className="row">
+                                        <div className="col-lg-3 col-6">
+                                            <ButtonHexagon onClick={this.toggle}
+                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
+                                                           buttonText={'Strategy'}
+                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
+                                        </div>
+
+                                        <div className="col-lg-3 col-6">
+                                            <ButtonHexagon onClick={this.toggle}
+                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
+                                                           buttonText={'Design'}
+                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
+                                        </div>
+                                        <div className="col-lg-3 col-6">
+                                            <ButtonHexagon onClick={this.toggle}
+                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
+                                                           buttonText={'Mobile App Development'}
+                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
+                                        </div>
+
+                                        <div className="col-lg-3 col-6">
+                                            <ButtonHexagon onClick={this.toggle}
+                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
+                                                           buttonText={'Web Development'}
+                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
+                                        </div>
+
+                                    </div>
+                                </section>
+
                                 <div className="col-lg-8 pl-0 pb-5">
+
                                     <form action="https://post.formlyapp.com/tester?redirect=/thanks" method="POST">
 
                                         <p className="text-light mt-5">1. Project Information</p>
