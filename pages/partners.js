@@ -184,6 +184,7 @@ const PartnersPage = class extends React.Component {
                                  projectImageClass={p.projectImageClass}
                                  blobColour={p.blobColour}
                                  projectType={p.projectType}
+                                 href={p.href}
                     />
                 ))}
             </div>
