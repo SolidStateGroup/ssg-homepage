@@ -29,6 +29,9 @@ module.exports = (source) => {
         if (item.includes('image: ')) {
             res.image = item.replace('image: ', '');
         }
+        if (item.includes('featured: ')) {
+            res.featured = item.includes("true");
+        }
         if (item.includes('date: ')) {
             const m = moment(item.replace('date: ', ''), 'DD-MMM-YYYY');
             res.dateFormatted = m.format('MMM DD YYYY');
@@ -36,9 +39,8 @@ module.exports = (source) => {
             res.sort = -m.valueOf();
         }
         if (item.includes('tags: ')) {
+            console.log("Tags")
             res.tags = map(item.replace('tags: ', '').split(','), i => i.trim().toLowerCase()).sort();
-        } else {
-            res.tags = [];
         }
     });
     res.tags = res.tags || [];

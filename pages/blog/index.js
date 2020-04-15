@@ -56,24 +56,24 @@ const BlogPage = class extends Component {
                 </div>
                 <div className="blog">
                     <div className="container mt-5">
-                        <div className="row">
                         {!!filteredBy && (
-                            <div className="mb-3 text-center">
-                                Filtering by <BlogTag tag={filteredBy}/>
-                                {' '}
-                                <Link href="/blog">
-                                    <a href="/blog">
-                                        View all
-                                    </a>
-                                </Link>
-                            </div>
+                          <div className="mb-3 text-center">
+                              Filtering by <BlogTag tag={filteredBy}/>
+                              {' '}
+                              <Link scroll={false} href="/blog">
+                                  <a href="/blog">
+                                      View all
+                                  </a>
+                              </Link>
+                          </div>
                         )}
-                        {blogItems.map(b => (
+                        <div className="row">
+                        {blogItems.map(b => b.featured && (
                             <React.Fragment>
                                 <BlogItem key={b.title} item={b}/>
                             </React.Fragment>
                         ))}
-                        {blogItems.map(b => (
+                        {blogItems.map(b => !b.featured && (
                             <React.Fragment>
                                 <BlogItemSummary key={b.title} item={b}/>
                             </React.Fragment>
