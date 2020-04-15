@@ -3,21 +3,18 @@ const sortBy = require('lodash/sortBy');
 const uniq = require('lodash/uniq');
 
 const testFolder = join(__dirname, '../static/pages-blog-markdown');
-const jsFolder = join(__dirname, '../pages/blog');
 const blogOutput = join(__dirname, '../static/blog.json');
 const fs = require('fs');
 const path = require('path');
 const parseMarkdown = require('../common/parse-markdown');
 
-const files = fs.readdirSync(testFolder);
-const existingJSFiles = fs.readdirSync(jsFolder);
 let res = [];
 let allTags = [];
 
 const writeJSTemplate = md => `
 import propTypes from 'prop-types';
-import md from '../../static/pages-blog-markdown/${md}';
-import BlogPost from '../../components/BlogPost';
+import md from '../../../../static/pages-blog-markdown/${md}';
+import BlogPost from '../../../../components/BlogPost';
 
 
 const BlogPostPage = props => (
@@ -35,24 +32,42 @@ BlogPostPage.propTypes = {
 export default BlogPostPage;
 `;
 
-files.forEach((file) => {
-    const md = fs.readFileSync(`${testFolder}/${file}`, 'utf8');
-    const data = parseMarkdown(md);
-    const targetJSFile = file.replace('.md', '.js');
-    allTags = allTags.concat(data.tags);
-    // eslint-disable-next-line no-console
-    console.log('Processing', file);
-    if (existingJSFiles.indexOf(targetJSFile) === -1) {
-        // eslint-disable-next-line no-console
-        console.log('File exists', targetJSFile);
-        fs.writeFileSync(path.join(jsFolder, targetJSFile), writeJSTemplate(file));
-    }
-    res.push({
-        ...data,
-        url: file.replace('.md', ''),
-        content: null,
+const readFolder = (folder)=>{
+    const files = fs.readdirSync(folder);
+
+    files.forEach((file) => {
+        if (!file.includes(".")) {
+            readFolder(folder+"/"+file)
+        } else {
+            const md = fs.readFileSync(`${folder}/${file}`, 'utf8');
+            const data = parseMarkdown(md);
+            const jsFolder = join(__dirname, '../pages/blog', folder.replace(testFolder,""));
+            if (!fs.existsSync(jsFolder)){
+                fs.mkdirSync(jsFolder, { recursive: true });
+            }
+            const targetJSFile = file.replace('.md', '.js');
+            const existingJSFiles = fs.readdirSync(jsFolder);
+
+            allTags = allTags.concat(data.tags);
+            // eslint-disable-next-line no-console
+            console.log('Processing', file);
+            let root = (folder.replace(testFolder,"") + "/").substring(1);
+
+            if (existingJSFiles.indexOf(targetJSFile) === -1) {
+                // eslint-disable-next-line no-console
+                console.log('File exists', targetJSFile);
+                fs.writeFileSync(path.join(jsFolder, targetJSFile), writeJSTemplate(root+file));
+            }
+            res.push({
+                ...data,
+                url:  root + file.replace('.md', ''),
+                content: null,
+            });
+        }
+
     });
-});
+}
+readFolder(testFolder)
 res = sortBy(res, 'sort');
 res[0].allTags = uniq(allTags);
 fs.writeFileSync(blogOutput, JSON.stringify(res));
