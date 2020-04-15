@@ -75,7 +75,7 @@ const BlogPage = class extends Component {
                         ))}
 
                         <InfiniteScroll
-                          pageSize={2}
+                          pageSize={4}
                           renderItem={(b)=> {
                               return <React.Fragment key={b.title}>
                                   <BlogItemSummary key={b.title} item={b}/>

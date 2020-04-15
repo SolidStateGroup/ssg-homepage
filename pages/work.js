@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import Page from '../components/Page';
 import ProjectItem from '../components/ProjectItem';
 import { ButtonPrimary } from '../components/base/forms/Button';
+import InfiniteScroll from '../components/InfiniteScroll';
 
 const projects = [
     {
@@ -272,20 +273,24 @@ const WorkPage = class extends React.Component {
               </div>
 
               <div className="container">
-                  {this.filterProjects().map(p => (
-                      <ProjectItem
-                        key={p.title}
-                        href={p.href}
-                        ButtonComponent={p.ButtonComponent}
-                        projectImage={p.projectImage}
-                        subTitle={p.subTitle}
-                        projectImageClass={p.projectImageClass}
-                        blobColour={p.blobColour}
-                        title={p.title}
-                        projectType={p.projectType}
-                      />
-
-                  ))}
+                  <InfiniteScroll
+                      items={this.filterProjects()}
+                      chunkSize={1}
+                      pageSize={4}
+                      renderItem={(p)=>(
+                        <ProjectItem
+                          key={p.title}
+                          href={p.href}
+                          ButtonComponent={p.ButtonComponent}
+                          projectImage={p.projectImage}
+                          subTitle={p.subTitle}
+                          projectImageClass={p.projectImageClass}
+                          blobColour={p.blobColour}
+                          title={p.title}
+                          projectType={p.projectType}
+                        />
+                      )}
+                  />
               </div>
               <Footer/>
           </Page>
