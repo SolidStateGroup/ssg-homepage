@@ -66,6 +66,7 @@
     "react": "^16.13.0",
     "react-device-detect": "^1.11.14",
     "react-dom": "^16.13.0",
+    "react-infinite-scroll-component": "^5.0.4",
     "react-markdown": "^4.3.1",
     "scrollmagic": "git+https://github.com/SolidStateGroup/ScrollMagic.git#gsap-v3",
     "webpack": "4.38.0"

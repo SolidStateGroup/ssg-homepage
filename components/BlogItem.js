@@ -103,7 +103,7 @@ export const BlogItemSummary = global.BlogItemSummary = class extends Component 
                                 {`${dateFormatted} By ${author}`}
                             </div>
                             <div className="tags mt-2">
-                                {tags.map(t => (
+                                {tags && tags.map(t => (
                                     <BlogTag key={t} tag={t}/>
                                 ))}
                             </div>

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Link from 'next/link';
-import filter from 'lodash/filter';
 import propTypes from 'prop-types';
 import BlogTag from '../../components/BlogTag';
 import blog from '../../static/blog.json';
@@ -8,7 +7,8 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Page from '../../components/Page';
 import BlogItem, {BlogItemSummary} from '../../components/BlogItem';
-
+import InfiniteScroll from '../../components/InfiniteScroll';
+import filter from 'lodash/filter';
 const BlogPage = class extends Component {
     static displayName = 'BlogPage'
 
@@ -73,11 +73,17 @@ const BlogPage = class extends Component {
                                 <BlogItem key={b.title} item={b}/>
                             </React.Fragment>
                         ))}
-                        {blogItems.map(b => (!b.featured||!!filteredBy) && (
-                            <React.Fragment>
-                                <BlogItemSummary key={b.title} item={b}/>
-                            </React.Fragment>
-                        ))}
+
+                        <InfiniteScroll
+                          pageSize={2}
+                          renderItem={(b)=> {
+                              return <React.Fragment>
+                                  <BlogItemSummary key={b.title} item={b}/>
+                              </React.Fragment>
+                          }}
+                          chunkSize={3}
+                          items={filter(blogItems, (b)=>(!b.featured||!!filteredBy))}/>
+
                         </div>
                     </div>
                 </div>

@@ -11,18 +11,22 @@ const ContactFormPage = class extends React.Component {
 
     constructor(props, context) {
         super(props, context);
-        this.state = {};
+        this.state = {
+            discipline:{}
+        };
     }
 
     toggle = (name) => {
-        const discipline = !this.state.discipline;
-        if (discipline === name) {
+        console.log("toggle")
+        const discipline = {...this.state.discipline};
+        if (discipline[name]) {
             // fade in anim
-            this.setState({discipline: null});
+            delete discipline[name];
         } else {
-            // fade out anim
-            this.setState({discipline: name});
+        //     fade out anim
+            discipline[name] = true;
         }
+        this.setState({discipline})
     }
 
     render = () => {
@@ -44,27 +48,27 @@ const ContactFormPage = class extends React.Component {
                                     <div className="row">
                                         <div className="col-lg-3 col-6">
                                             <ButtonHexagon onClick={()=>this.toggle("STRATEGY")}
-                                                           ButtonHexagonActive={`${this.state.discipline === "STRATEGY" ? true : ''}`}
+                                                           ButtonHexagonActive={`${this.state.discipline["STRATEGY"] ? true : ''}`}
                                                            buttonText={'Strategy'}
                                                            class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}/>
                                         </div>
 
                                         <div className="col-lg-3 col-6">
                                             <ButtonHexagon onClick={()=>this.toggle("DESIGN")}
-                                                           ButtonHexagonActive={`${this.state.discipline === "DESIGN" ? true : ''}`}
+                                                           ButtonHexagonActive={`${this.state.discipline["DESIGN"] ? true : ''}`}
                                                            buttonText={'Design'}
                                                            class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}/>
                                         </div>
                                         <div className="col-lg-3 col-6">
                                             <ButtonHexagon onClick={()=>this.toggle("MOBILE")}
-                                                           ButtonHexagonActive={`${this.state.discipline === "MOBILE" ? true : ''}`}
+                                                           ButtonHexagonActive={`${this.state.discipline["MOBILE"] ? true : ''}`}
                                                            buttonText={'Mobile App Development'}
                                                            class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}/>
                                         </div>
 
                                         <div className="col-lg-3 col-6">
                                             <ButtonHexagon onClick={()=>this.toggle("WEB")}
-                                                           ButtonHexagonActive={`${this.state.discipline === "WEB" ? true : ''}`}
+                                                           ButtonHexagonActive={`${this.state.discipline["WEB"] ? true : ''}`}
                                                            buttonText={'Web Development'}
                                                            class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}/>
                                         </div>
@@ -78,7 +82,7 @@ const ContactFormPage = class extends React.Component {
 
                                         <p className="text-light mt-5">1. Project Information</p>
 
-                                        <input type="hidden" name="Discipline" value={this.state.discipline}/>
+                                        <input type="hidden" name="Discipline" value={Object.keys(this.state.discipline).join(", ")}/>
                                         <div className="form-group">
                                             <textarea className="form-control form__input" name="textarea" id="Textarea"
                                                       placeholder="Tell us a little bit about your project or how we can help..."
@@ -97,8 +101,9 @@ const ContactFormPage = class extends React.Component {
                                                inputClassName="form-control form__input mb-3"/>
 
                                         <div className="d-flex justify-content-center">
-                                            <div data-callback="onCaptcha"
-                                                 data-sitekey="6LcK0WQUAAAAAMrEyxUFXuV2BFc4B0Dozfh1rq1Q"/>
+                                            {/*<div data-callback="onCaptcha"*/}
+                                            {/*     data-sitekey="6LcK0WQUAAAAAMrEyxUFXuV2BFc4B0Dozfh1rq1Q"/>*/}
+                                            <div className="g-recaptcha" data-sitekey="6LdBxekUAAAAAL1yc56O0MSe02JLEGsADRiBqNMv"></div>
                                         </div>
 
                                         <ButtonPrimary type="submit" value="Send" id="submit"
