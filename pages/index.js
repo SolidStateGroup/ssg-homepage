@@ -31,7 +31,7 @@ const HomePage = class extends React.Component {
             .from('.hero__container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
             .from('.hero__title', { duration: 0.5, x: 10, opacity: 0, ease: 'power1' })
 
-        const controller = new ScrollMagic.Controller({addIndicators: true});
+        const controller = new ScrollMagic.Controller();
 
         const tl = new gsap.timeline();
         const tl2 = new gsap.timeline();
@@ -48,6 +48,7 @@ const HomePage = class extends React.Component {
         })
             .setTween(tl);
 
+
         const scene2 = new ScrollMagic.Scene({
             triggerElement: '#sectionTwoTrigger',
             offset: -300,
@@ -63,6 +64,10 @@ const HomePage = class extends React.Component {
         })
 
             .setTween(tl3);
+
+        scene1.addIndicators({name: "scene 1", colorEnd: "#FFFFFF"});
+        scene2.addIndicators({name: "scene 2", colorEnd: "#FFFFFF"});
+        scene3.addIndicators({name: "scene 3", colorEnd: "#FFFFFF"});
 
         controller.addScene([
             scene1,
