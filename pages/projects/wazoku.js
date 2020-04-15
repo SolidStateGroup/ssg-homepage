@@ -94,11 +94,7 @@ const TheComponent = class extends Component {
                             'Within 6 months we were on both the iOS App Store and Google Play Store in time for a medical trial.\n'}
                         />
                     </div>
-
-                    <div className="section section--grey">
-                        <ProjectNav clientLogo={"/static/images/clients/purely-capital-dark.png"}
-                                    projectLink={'/projects/purely-capital'}/>
-                    </div>
+                     <ProjectNav/>
                 </Page>
                 <Footer/>
             </React.Fragment>

@@ -137,11 +137,7 @@ const TheComponent = class extends Component {
                         clientName={'Andrew Mofatt'}
                         image={'/static/images/projects/dugout/dugout-1@1x.png'}
                         clientTitle={'Founder, Dugout FC'}/>
-
-                    <div className="section section--grey">
-                        <ProjectNav clientLogo={"/static/images/clients/purely-capital-dark.png"}
-                                    projectLink={'/projects/purely-capital'}/>
-                    </div>
+                    <ProjectNav/>
                 </Page>
                 <Footer/>
             </React.Fragment>

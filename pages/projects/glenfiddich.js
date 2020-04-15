@@ -88,11 +88,7 @@ const TheComponent = class extends Component {
                                            'What’s more we were able to garner the interest of the marketing director for Monkey Shoulder, a relatively young and vibrant brand in the William Grant &Sons family.'} />
 
                     </div>
-
-                    <div className="section section--grey">
-                        <ProjectNav clientLogo={"/static/images/clients/purely-capital-dark.png"}
-                                    projectLink={'/projects/purely-capital'}/>
-                    </div>
+                  <ProjectNav/>
                 </Page>
                 <Footer/>
             </React.Fragment>

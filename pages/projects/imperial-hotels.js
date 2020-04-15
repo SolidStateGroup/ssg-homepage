@@ -114,11 +114,7 @@ const TheComponent = class extends Component {
                             description={'Developed bespoke bridging software in Java and Swift to access low level device functionality. Contributed to the React Native community. Helped Imperial Hotels track more information about their ‘guest’ users who haven’t made the bookings themselves and therefore haven’t provided any details previously'}
                         />
                     </div>
-
-                    <div className="section section--grey">
-                        <ProjectNav clientLogo={"/static/images/clients/purely-capital-dark.png"}
-                                    projectLink={'/projects/purely-capital'}/>
-                    </div>
+                    <ProjectNav/>
                 </Page>
                 <Footer/>
             </React.Fragment>

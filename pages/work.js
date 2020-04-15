@@ -8,10 +8,11 @@ import ProjectItem from '../components/ProjectItem';
 import { ButtonPrimary } from '../components/base/forms/Button';
 import InfiniteScroll from '../components/InfiniteScroll';
 
-const projects = [
+export const projects = [
     {
         ButtonComponent: ButtonPrimary,
         projectImage: '/static/images/projects/tone-and-sculpt/phone.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
         title: 'Rebooting female fitness for Tone and Sculpt',
@@ -23,6 +24,7 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         projectImage: '/static/images/projects/purely-capital/pc-summary-mac.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Responsive Web Application',
         href: '/projects/purely-capital',
         title: 'The future of film and media financing',
@@ -35,6 +37,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/hailie',
         projectImage: '/static/images/projects/hailie/hailie-phone@1x.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
         blobColour: "#FF715A",
@@ -46,6 +49,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/wazoku',
         projectImage: '/static/images/projects/wazoku/2.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'iOS and Android Mobile App',
         title: 'Ideas happen anywhere, anytime',
         blobColour: "#173E5A",
@@ -56,6 +60,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/british-airways',
         projectImage: '/static/images/projects/ba/ba-summary-ipad.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Real-time operational dashboard',
         title: 'The real-time machine: integrating with 1960s tech',
         blobColour: "#3658B0",
@@ -66,6 +71,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/patientview',
         projectImage: '/static/images/projects/patientview/patientview-ipad@1x.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Secure online platform for clinicians and patients',
         title: 'The doctor will see you now – wherever, whenever',
         blobColour: "#368de8",
@@ -76,6 +82,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/wfa',
         projectImage: '/static/images/projects/wfa/wfa-1.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Web Application',
         title: 'Visualising data for effective marketing communications',
         blobColour: "#ff003c",
@@ -86,6 +93,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/publicate',
         projectImage: '/static/images/projects/publicate/publicate-summary-ipad@1x.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Tablet & Web Application',
         title: 'Straightening out corporate documentation',
         blobColour: "#fe7101",
@@ -97,6 +105,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/meownow',
         projectImage: '/static/images/projects/meownow/meownow-1@1x.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Responsive Website',
         title: 'Subscription service for your feline friends',
         blobColour: "#f7f7f7",
@@ -107,6 +116,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/electronx',
         projectImage: '/static/images/projects/electronx/Macbook_color@1x.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Responsive Website',
         title: 'Tapping into the future of the electricity market',
         blobColour: "#5BABBB",
@@ -117,6 +127,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/unilever',
         projectImage: '/static/images/projects/unilever/unilever-1@1x.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Automated ecommerce via connected scales',
         title: 'Shopping that buys itself',
         blobColour: "#007DBB",
@@ -127,6 +138,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/hertz',
         projectImage: '/static/images/projects/hertz/hertz-1@1x.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Connected Car mobile application',
         title: 'Feels on wheels',
         blobColour: "#FFD60D",
@@ -137,6 +149,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/glenfiddich',
         projectImage: '/static/images/projects/glenfiddich/glenfiddich-1@1x.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Multiplayer AR racing game for mobile',
         title: 'Glenfiddich Stag Racing - When Whisky Meets Hackathons',
         blobColour: "#483c3c",
@@ -147,6 +160,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/change-please',
         projectImage: '/static/images/projects/change-please/Rotato Snapshot@1x.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'The lean, mean, face detecting, debt tracking machine',
         title: 'Changing the [face] of debt tracking',
         blobColour: "#908DF7",
@@ -157,6 +171,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/visa',
         projectImage: '/static/images/projects/visa/visa-1@1x.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Instant payment integration with NFC Ring',
         title: 'Cakewalk on the catwalk',
         blobColour: "#1a1e5a",
@@ -167,6 +182,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/dugout',
         projectImage: '/static/images/projects/dugout/dugout-1@1x.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Developing with React and React Native',
         title: 'Making fantasy football a reality',
         blobColour: "#D8315B",
@@ -177,6 +193,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/chorus',
         projectImage: '/static/images/projects/chorus/chorus-1@1x.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Find the relevant conversations for your small business on Twitter',
         title: 'Social marketing, made easy',
         blobColour: "#46cd86",
@@ -187,14 +204,13 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/imperial-hotels',
         projectImage: '/static/images/projects/imperial/imperial-1@1x.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Mobile app for managing bookings, accessing hotel facilities and controlling the premium WiFi service.',
         title: 'React Native mobile application with in depth integrations',
         blobColour: "#f6921e",
         tags: ['DESIGN', 'MOBILE', "API"],
         projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ',]
     },
-
-
 ];
 
 const WorkPage = class extends React.Component {

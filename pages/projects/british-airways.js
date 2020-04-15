@@ -88,11 +88,7 @@ const TheComponent = class extends Component {
                             '\n' +
                             'The system was built on fully-redundant infrastructure, providing high availability 24x7x365.'} />
                     </div>
-
-                    <div className="section section--grey">
-                        <ProjectNav clientLogo={"/static/images/clients/purely-capital-dark.png"}
-                                    projectLink={'/projects/purely-capital'}/>
-                    </div>
+                  <ProjectNav/>
                 </Page>
                 <Footer/>
             </React.Fragment>

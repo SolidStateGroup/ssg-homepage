@@ -88,10 +88,6 @@ const TheComponent = class extends Component {
                             <img src="/static/images/projects/publicate/publicate-ipad-swot@1x.png" alt={'Publicate UI'} className="img-fluid"/>
                         </div>
                     </div>
-
-                    <div className="section section--grey">
-                        <ProjectNav clientLogo={"/static/images/clients/purely-capital-dark.png"} projectLink={'/projects/purely-capital'}/>
-                    </div>
                 </Page>
                 <Footer/>
             </React.Fragment>

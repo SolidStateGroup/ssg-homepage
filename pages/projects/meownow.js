@@ -102,10 +102,7 @@ const TheComponent = class extends Component {
                         image={'/static/images/projects/meownow/meownow-1@1x.png'}
                         text={'The work you all did was great - and beyond the test being successful, the energy it created internally just seeing something that felt so real... it\'s been awesome thanks so much - really enjoyed working with you all.'}
                         clientName={'Laura Cannon'} clientTitle={'New Market & Strategies'}/>
-
-                    <div className="section section--grey">
-                        <ProjectNav clientLogo={"/static/images/clients/purely-capital-dark.png"} projectLink={'/projects/purely-capital'}/>
-                    </div>
+                    <ProjectNav/>
                 </Page>
                 <Footer/>
             </React.Fragment>

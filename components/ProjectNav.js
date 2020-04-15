@@ -3,7 +3,10 @@ import cn from 'classnames';
 import propTypes from 'prop-types';
 import Link from 'next/link';
 import { ButtonSecondary } from './base/forms/Button';
-
+import Page from './Page';
+import {withRouter} from 'next/router';
+import {projects} from '../pages/work';
+import findIndex from 'lodash/findIndex'
 const _propTypes = {
     className: propTypes.string,
     children: propTypes.node,
@@ -21,15 +24,19 @@ const ProjectNav = global.ProjectNav = class extends React.PureComponent {
     };
 
     render() {
-        const { children, ButtonComponent, ...rest } = this.props;
+        const { children, router:{route}, ButtonComponent, ...rest } = this.props;
+        const index = findIndex(projects,{href:route})
+        const nextProject = projects[index+1] || projects[0];
+        const {clientImage, href} = nextProject;
         return (
-            <div className="container">
+          <div className="section section--grey">
+          <div className="container">
                 <div className="flex-row mt-4 mb-4 project-bottom-nav justify-content-end">
                     <div className="project-bottom-nav__item">
                         <h2 className="text-weight-black section__title--dark">Next Case Study</h2>
-                        <img src={this.props.clientLogo || "/static/images/clients/purely-capital-dark.png"} className="img-fluid project-bottom-nav__image mt-3" alt="Client logo"/>
+                        <img src={clientImage} className="img-fluid project-bottom-nav__image mt-3" alt="Client logo"/>
                         {/*<ButtonText className="text-primary d-block mt-4" buttonText={'View Project'}/>*/}
-                        <Link prefetch={false} href={this.props.projectLink || "#"}>
+                        <Link prefetch={false} href={href || "#"}>
                             <ButtonPrimary className="d-block mt-4">View Project
                                 <svg
                                     className="ml-2" width={15} height={12}
@@ -46,7 +53,8 @@ const ProjectNav = global.ProjectNav = class extends React.PureComponent {
                     </div>
                 </div>
             </div>
+          </div>
         );
     }
 };
-export default ProjectNav;
+export default withRouter(ProjectNav);
