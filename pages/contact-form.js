@@ -14,14 +14,15 @@ const ContactFormPage = class extends React.Component {
         this.state = {};
     }
 
-    toggle = () => {
-        const buttonPressed = !this.state.buttonPressed;
-        if (buttonPressed) {
+    toggle = (name) => {
+        const discipline = !this.state.discipline;
+        if (discipline === name) {
             // fade in anim
+            this.setState({discipline: null});
         } else {
             // fade out anim
+            this.setState({discipline: name});
         }
-        this.setState({buttonPressed});
     }
 
     render = () => {
@@ -42,30 +43,30 @@ const ContactFormPage = class extends React.Component {
                                     <p className="text-light mt-5">1. What can we help you with?</p>
                                     <div className="row">
                                         <div className="col-lg-3 col-6">
-                                            <ButtonHexagon onClick={this.toggle}
-                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
+                                            <ButtonHexagon onClick={()=>this.toggle("STRATEGY")}
+                                                           ButtonHexagonActive={`${this.state.discipline === "STRATEGY" ? true : ''}`}
                                                            buttonText={'Strategy'}
-                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
+                                                           class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}/>
                                         </div>
 
                                         <div className="col-lg-3 col-6">
-                                            <ButtonHexagon onClick={this.toggle}
-                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
+                                            <ButtonHexagon onClick={()=>this.toggle("DESIGN")}
+                                                           ButtonHexagonActive={`${this.state.discipline === "DESIGN" ? true : ''}`}
                                                            buttonText={'Design'}
-                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
+                                                           class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}/>
                                         </div>
                                         <div className="col-lg-3 col-6">
-                                            <ButtonHexagon onClick={this.toggle}
-                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
+                                            <ButtonHexagon onClick={()=>this.toggle("MOBILE")}
+                                                           ButtonHexagonActive={`${this.state.discipline === "MOBILE" ? true : ''}`}
                                                            buttonText={'Mobile App Development'}
-                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
+                                                           class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}/>
                                         </div>
 
                                         <div className="col-lg-3 col-6">
-                                            <ButtonHexagon onClick={this.toggle}
-                                                           ButtonHexagonActive={`${this.state.buttonPressed ? true : ''}`}
+                                            <ButtonHexagon onClick={()=>this.toggle("WEB")}
+                                                           ButtonHexagonActive={`${this.state.discipline === "WEB" ? true : ''}`}
                                                            buttonText={'Web Development'}
-                                                           class={`btn--hexagon ${this.state.buttonPressed ? 'active' : ''}`}/>
+                                                           class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}/>
                                         </div>
 
                                     </div>
@@ -77,6 +78,7 @@ const ContactFormPage = class extends React.Component {
 
                                         <p className="text-light mt-5">1. Project Information</p>
 
+                                        <input type="hidden" name="Discipline" value={this.state.discipline}/>
                                         <div className="form-group">
                                             <textarea className="form-control form__input" name="textarea" id="Textarea"
                                                       placeholder="Tell us a little bit about your project or how we can help..."
