@@ -178,8 +178,10 @@ const PartnersPage = class extends React.Component {
             </div>
 
             <div className="container">
-                {projects.map((p) => (
-                    <ProjectItem ButtonComponent={p.ButtonComponent} projectImage={p.projectImage} subTitle={p.subTitle}
+                {projects.map((p,i) => (
+                    <ProjectItem
+                      key={i}
+                      ButtonComponent={p.ButtonComponent} projectImage={p.projectImage} subTitle={p.subTitle}
                                  title={p.title} clientBrand={p.clientBrand} clientName={p.clientName}
                                  projectImageClass={p.projectImageClass}
                                  blobColour={p.blobColour}

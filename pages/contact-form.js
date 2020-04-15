@@ -17,7 +17,6 @@ const ContactFormPage = class extends React.Component {
     }
 
     toggle = (name) => {
-        console.log("toggle")
         const discipline = {...this.state.discipline};
         if (discipline[name]) {
             // fade in anim

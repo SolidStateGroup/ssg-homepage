@@ -69,7 +69,7 @@ const BlogPage = class extends Component {
                         )}
                         <div className="row">
                         {blogItems.map(b => b.featured && !filteredBy && (
-                            <React.Fragment>
+                            <React.Fragment key={b.title}>
                                 <BlogItem key={b.title} item={b}/>
                             </React.Fragment>
                         ))}
@@ -77,7 +77,7 @@ const BlogPage = class extends Component {
                         <InfiniteScroll
                           pageSize={2}
                           renderItem={(b)=> {
-                              return <React.Fragment>
+                              return <React.Fragment key={b.title}>
                                   <BlogItemSummary key={b.title} item={b}/>
                               </React.Fragment>
                           }}

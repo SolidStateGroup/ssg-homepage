@@ -38,9 +38,9 @@ export default class TheComponent extends PureComponent {
         next={()=>this.setState({page: this.state.page +1})}
         hasMore={this.hasMore()}
       >
-        {items.map((item)=> {
+        {items.map((item, i)=> {
           return (
-            <div className="row">
+            <div key={i} style={{marginLeft:0,marginRight:0}} className="row">
               {
                 item.map((item)=>{
                   return this.props.renderItem(item);

@@ -90,13 +90,13 @@ export const ButtonText = global.ButtonText = class extends React.PureComponent 
     static propTypes = _propTypes;
 
     render() {
-        const { props } = this;
+        const { buttonText, className, ...rest } = this.props;
         return (
             <Button
-              {...props}
-              className={cn(props.className, 'btn--text')}
+              {...rest}
+              className={cn(className, 'btn--text')}
             >
-                {this.props.buttonText}
+                {buttonText}
                 <svg
                   className="ml-2" width={15} height={12}
                   viewBox="0 0 15 12"
