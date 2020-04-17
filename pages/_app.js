@@ -11,7 +11,7 @@ class MyApp extends App {
         if (typeof window !== 'undefined') {
             window.ScrollMagic = require('scrollmagic');
             require('scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap');
-            require('../project/indicators');
+            // require('../project/indicators');
             require('gsap/MorphSVGPlugin');
         }
     }
