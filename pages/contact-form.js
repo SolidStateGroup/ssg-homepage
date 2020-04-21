@@ -16,6 +16,12 @@ const ContactFormPage = class extends React.Component {
         };
     }
 
+    componentDidMount() {
+        grecaptcha.render(document.getElementById("recaptcha"),{
+            sitekey: "6LdBxekUAAAAAL1yc56O0MSe02JLEGsADRiBqNMv"
+        })
+    }
+
     toggle = (name) => {
         const discipline = {...this.state.discipline};
         if (discipline[name]) {
@@ -100,9 +106,7 @@ const ContactFormPage = class extends React.Component {
                                                inputClassName="form-control form__input mb-3"/>
 
                                         <div className="d-flex justify-content-center">
-                                            {/*<div data-callback="onCaptcha"*/}
-                                            {/*     data-sitekey="6LcK0WQUAAAAAMrEyxUFXuV2BFc4B0Dozfh1rq1Q"/>*/}
-                                            <div className="g-recaptcha" data-sitekey="6LdBxekUAAAAAL1yc56O0MSe02JLEGsADRiBqNMv"></div>
+                                            <div id="recaptcha"></div>
                                         </div>
 
                                         <ButtonPrimary type="submit" value="Send" id="submit"
