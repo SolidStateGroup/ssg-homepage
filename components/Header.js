@@ -163,18 +163,23 @@ class Header extends PureComponent {
                                 <div className="container">
                                     <div className="row">
                                         <div className="col">
-                                            <img alt="GitHub" src={require('../static/images/svg-icons/github-image.svg')}/>
+                                            <a href="https://www.facebook.com/solidstategroup" target="_blank">
+                                                <img alt="Facebook" src={require('../static/images/platforms/facebook.svg')}/>
+                                            </a>
                                         </div>
                                         <div className="col">
-                                            <img alt="GitHub" src={require('../static/images/svg-icons/github-image.svg')}/>
+                                            <a href="https://twitter.com/solidstategroup" target="_blank">
+                                                <img alt="Twitter" src={require('../static/images/platforms/twitter.svg')}/>
+                                            </a>
                                         </div>
                                         <div className="col">
-                                            <img alt="GitHub" src={require('../static/images/svg-icons/github-image.svg')}/>
+                                            <a href="https://github.com/SolidStateGroup" target="_blank">
+                                                <img alt="GitHub" src={require('../static/images/svg-icons/github-image.svg')}/>
+                                            </a>
                                         </div>
                                     </div>
-                                    <p className="text-center text-white mt-3 mb-3">
-                                      Email us at
-                                      projects@solidstategroup.com
+                                    <p className="text-center text-white pt-3 pb-3">
+                                      Email us at <a href="mailto:projects@solidstategroup.com">projects@solidstategroup.com</a>
                                     </p>
                                 </div>
                             </div>

@@ -23,12 +23,25 @@ const FooterLegal = class extends React.Component {
                       </div>
                       <div className="flex-column">
                           <ul className="list-inline">
-                              <li className="list-inline-item"><img src="/static/images/platforms/behance.svg"
-                                                                    alt="Behance"/></li>
-                              <li className="list-inline-item"><img src="/static/images/platforms/dribbble.svg"
-                                                                    alt="Dribbble"/></li>
-                              <li className="list-inline-item"><img src="/static/images/platforms/github.svg"
-                                                                    alt="GitHub"/></li>
+                              <a href="https://www.facebook.com/solidstategroup" target="_blank">
+                                  <li className="list-inline-item mr-3">
+                                      <img src="/static/images/platforms/facebook.svg"
+                                                                        alt="Facebook"/>
+                                  </li>
+                              </a>
+
+                              <a href="https://twitter.com/solidstategroup" target="_blank">
+                                  <li className="list-inline-item mr-3">
+                                      <img src="/static/images/platforms/twitter.svg"
+                                                                        alt="Twitter"/>
+                                  </li>
+                              </a>
+                              <a href="https://github.com/SolidStateGroup" target="_blank">
+                                  <li className="list-inline-item">
+                                      <img src="/static/images/platforms/github.svg"
+                                                                        alt="GitHub"/>
+                                  </li>
+                              </a>
                           </ul>
                       </div>
                   </div>

@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="442px" height="725px" viewBox="0 0 442 725" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
-    <title>Rectangle</title>
-    <desc>Created with Sketch.</desc>
-    <g id="UI-Design-(Teal)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Contact-us-Teal" transform="translate(0.000000, -87.000000)" fill="#2C2733">
-            <g id="map-section" transform="translate(-1.000000, 87.000000)">
-                <path d="M1,0 L359.343668,0 C293.888221,93.3950857 261.160498,181.505477 261.160498,264.331174 C261.160498,358.84219 321.625115,512.398465 442.55435,725 L1,725 L1,0 Z" id="Rectangle"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg height="725" viewBox="0 0 442 725" width="442" xmlns="http://www.w3.org/2000/svg"><path d="m1 0h358.343668c-65.455447 93.3950857-98.18317 181.505477-98.18317 264.331174 0 94.511016 60.464617 248.067291 181.393852 460.668826h-441.55435z" fill="#2c2733" fill-rule="evenodd" transform="translate(-1)"/></svg>

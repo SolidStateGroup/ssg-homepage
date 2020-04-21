@@ -12,10 +12,10 @@
 .nav-item{
     &__link {
         color: #fff;
-        
+
         &--circle {
             transition: all .25s ease-out;
-            
+
             &::before {
                 content: '';
                 display: inline-block;
@@ -27,7 +27,7 @@
                 margin-left: 10px;
                 transition: all .25s ease-out;
             }
-            
+
             &:hover {
                 &::before {
                     content: '';
@@ -90,7 +90,7 @@
             justify-content: center;
         }
     &__bottom {
-        height: 10%;
+        height: 12%;
     }
     &__icon {
         z-index: 201;

@@ -16,7 +16,6 @@ export const projects = [
         subTitle: 'Web Application',
         href: '/projects/electron-trader',
         title: 'Tapping into the future of the electricity market',
-        projectImageClass: "project__image--short",
         blobColour: "#5EABBA",
         tags: ['DESIGN'],
         projectType: ['UX design, ', 'UI design']

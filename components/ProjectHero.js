@@ -47,7 +47,7 @@ const ProjectHero = global.ProjectHero = class extends React.PureComponent {
                                     </ul>
                                 </div>
                                 <div className="offset-md-1 col-md-5 text-center">
-                                    <img src={this.props.projectImage || '/static/images/projects/tands-dashboard.png'}
+                                    <img src={this.props.projectImage || '/static/images/projects/tone-and-sculpt/tands-dashboard.png'}
                                          alt="Project Hero Image" className="img-fluid project-hero__image"/>
                                     <ProjectHeroPulse/>
                                 </div>

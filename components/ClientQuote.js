@@ -19,7 +19,7 @@ const ClientQuote = global.ClientQuote = class extends React.PureComponent {
             <div className="panel panel--navy">
                 <div className="flex-row">
                     <div className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down">
-                        <img src={this.props.image || "/static/images/projects/tands-summary-image.png"} alt="Design" className="img-fluid"/>
+                        <img src={this.props.image || "/static/images/projects/tone-and-sculpt/tands-summary-image.png"} alt="Design" className="img-fluid"/>
                     </div>
                     <div className="flex-1 justify-content-start p-5">
                         <div>
