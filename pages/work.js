@@ -11,6 +11,18 @@ import InfiniteScroll from '../components/InfiniteScroll';
 export const projects = [
     {
         ButtonComponent: ButtonPrimary,
+        projectImage: '/static/images/projects/electron-trader/electron-trader-1@1x.png',
+        clientImage: '/static/images/clients/purely-capital-dark.png',
+        subTitle: 'Web Application',
+        href: '/projects/electron-trader',
+        title: 'Tapping into the future of the electricity market',
+        projectImageClass: "project__image--short",
+        blobColour: "#5EABBA",
+        tags: ['DESIGN'],
+        projectType: ['UX design, ', 'UI design']
+    },
+    {
+        ButtonComponent: ButtonPrimary,
         projectImage: '/static/images/projects/tone-and-sculpt/phone.png',
         clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'iOS and Android Mobile App',
