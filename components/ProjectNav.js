@@ -35,7 +35,6 @@ const ProjectNav = global.ProjectNav = class extends React.PureComponent {
                     <div className="project-bottom-nav__item">
                         <h2 className="text-weight-black section__title--dark">Next Case Study</h2>
                         <img src={clientImage} className="img-fluid project-bottom-nav__image mt-3" alt="Client logo"/>
-                        {/*<ButtonText className="text-primary d-block mt-4" buttonText={'View Project'}/>*/}
                         <Link prefetch={false} href={href || "#"}>
                             <ButtonPrimary className="d-block mt-4">View Project
                                 <svg

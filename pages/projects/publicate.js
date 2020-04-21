@@ -88,6 +88,7 @@ const TheComponent = class extends Component {
                             <img src="/static/images/projects/publicate/publicate-ipad-swot@1x.png" alt={'Publicate UI'} className="img-fluid"/>
                         </div>
                     </div>
+                    <ProjectNav/>
                 </Page>
                 <Footer/>
             </React.Fragment>
