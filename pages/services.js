@@ -136,7 +136,7 @@ const ServicesPage = class extends React.Component {
                                      }
                                      serviceDescription={'From our London office, we\'ve been working with startups and corporations for over 15 years, building cross-platform, enterprise-grade, entrepreneurial websites and apps for digital transformation projects.'}/>
 
-                        <ServiceItem serviceImage={'/static/images/services/hertz@2x.jpg'}
+                        <ServiceItem serviceImage={'/static/images/services/hertz@1x.jpg'}
                                      imageClassName={'img__shadow '}
                                      className="flex-row-reverse"
                                      subTitle={'Systems integration'}

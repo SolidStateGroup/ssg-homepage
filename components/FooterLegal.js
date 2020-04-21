@@ -23,20 +23,20 @@ const FooterLegal = class extends React.Component {
                       </div>
                       <div className="flex-column">
                           <ul className="list-inline">
-                              <a href="https://www.facebook.com/solidstategroup" target="_blank">
+                              <a href="https://www.facebook.com/solidstategroup" target="_blank" rel="noreferrer">
                                   <li className="list-inline-item mr-3">
                                       <img src="/static/images/platforms/facebook.svg"
                                                                         alt="Facebook"/>
                                   </li>
                               </a>
 
-                              <a href="https://twitter.com/solidstategroup" target="_blank">
+                              <a href="https://twitter.com/solidstategroup" target="_blank" rel="noreferrer">
                                   <li className="list-inline-item mr-3">
                                       <img src="/static/images/platforms/twitter.svg"
                                                                         alt="Twitter"/>
                                   </li>
                               </a>
-                              <a href="https://github.com/SolidStateGroup" target="_blank">
+                              <a href="https://github.com/SolidStateGroup" target="_blank" rel="noreferrer">
                                   <li className="list-inline-item">
                                       <img src="/static/images/platforms/github.svg"
                                                                         alt="GitHub"/>

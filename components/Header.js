@@ -107,7 +107,6 @@ class Header extends PureComponent {
                                           width="105.8%"
                                           height="105.8%"
                                           filterUnits="objectBoundingBox"
-                                          id="prefix__a"
                                         >
                                             <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
                                             <feGaussianBlur
@@ -127,7 +126,7 @@ class Header extends PureComponent {
                                         </filter>
                                     </defs>
                                     <g
-                                      filter="url(#prefix__a)"
+
                                       transform="translate(3 3)"
                                       fill="#FFF"
                                       fillRule="evenodd"
@@ -163,17 +162,17 @@ class Header extends PureComponent {
                                 <div className="container">
                                     <div className="row">
                                         <div className="col">
-                                            <a href="https://www.facebook.com/solidstategroup" target="_blank">
+                                            <a href="https://www.facebook.com/solidstategroup" target="_blank" rel="noreferrer">
                                                 <img alt="Facebook" src={require('../static/images/platforms/facebook.svg')}/>
                                             </a>
                                         </div>
                                         <div className="col">
-                                            <a href="https://twitter.com/solidstategroup" target="_blank">
+                                            <a href="https://twitter.com/solidstategroup" target="_blank" rel="noreferrer">
                                                 <img alt="Twitter" src={require('../static/images/platforms/twitter.svg')}/>
                                             </a>
                                         </div>
                                         <div className="col">
-                                            <a href="https://github.com/SolidStateGroup" target="_blank">
+                                            <a href="https://github.com/SolidStateGroup" target="_blank" rel="noreferrer">
                                                 <img alt="GitHub" src={require('../static/images/svg-icons/github-image.svg')}/>
                                             </a>
                                         </div>

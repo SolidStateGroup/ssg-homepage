@@ -58,7 +58,7 @@ const TheComponent = class extends Component {
                             subTitle={'Solution'}
                             imageOneclassName="img__shadow"
                             title={'UI Components'}
-                            imageOne={'/static/images/projects/electron-trader/UI Components - Light@1x.png'}
+                            imageOne={'/static/images/projects/electron-trader/UI-Components---Light@1x.jpg'}
                             description={'We developed a seamless onboarding experience, allowing users to easily pair their bluetooth inhaler sensors with the app.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -78,7 +78,7 @@ const TheComponent = class extends Component {
                         <ProjectFullImageSection
                             title={'Dashboard UI'}
                             subTitle={'01 / Dashboard'}
-                            imageUrl={'/static/images/projects/electron-trader/Electron Trader Dashboard Dark v3@1x.png'}
+                            imageUrl={'/static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@1x.jpg'}
                             imageAltText={'Dashboard UI'}
                         />
                         <ProjectTextSection

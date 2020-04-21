@@ -45,7 +45,7 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--glenfiddich"
-                        projectImage={"/static/images/projects/glenfiddich/glenfiddich-1@2x.png"}
+                        projectImage={"/static/images/projects/glenfiddich/glenfiddich-1@1x.png"}
                     />
 
                     <div className="container">

@@ -108,7 +108,7 @@ const TheComponent = class extends Component {
                             subTitle={'04 / Prototyping'}
                             title={'Rapid Prototyping / Hardware Fabrication'}
                             description={'Summary of the fonts and colours used in the User Interface design of the application'}
-                            imageOne={'/static/images/projects/unilever/Button UX 6b.png'}
+                            imageOne={'/static/images/projects/unilever/Button-UX-6b.jpg'}
                             imageOneclassName="img__shadow"
                             ProjectServiceListItem={
                                 <React.Fragment>

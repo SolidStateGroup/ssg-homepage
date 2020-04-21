@@ -49,7 +49,7 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--electronx"
-                        projectImage={"/static/images/projects/electronx/Macbook_color@2x.png"}
+                        projectImage={"/static/images/projects/electronx/Macbook_color@1x.png"}
                     />
 
                     <div className="container">
