@@ -105,7 +105,7 @@ const ContactFormPage = class extends React.Component {
                                                id="exampleInputEmail1"
                                                inputClassName="form-control form__input mb-3"/>
 
-                                        <div className="d-flex justify-content-center">
+                                        <div className="mt-4 mb-3">
                                             <div id="recaptcha"></div>
                                         </div>
 
