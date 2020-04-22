@@ -28,8 +28,8 @@ const HomePage = class extends React.Component {
     componentDidMount = async () => {
 
         gsap.timeline()
-            .from('.hero__container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
-            .from('.hero__title', { duration: 0.5, x: 10, opacity: 0, ease: 'power1' })
+            // .from('.hero__container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
+            // .from('.hero__title', { duration: 0.5, x: 10, opacity: 0, ease: 'power1' })
 
         const controller = new ScrollMagic.Controller();
 
@@ -37,14 +37,13 @@ const HomePage = class extends React.Component {
         const tl2 = new gsap.timeline();
         const tl3 = new gsap.timeline();
 
-        tl.from('#sectionOneAnimation', 0.5, { y: -10, opacity: 0, ease: 'power1' }, 1);
-        tl2.from('#sectionTwoAnimation', 0.5, { y: 20, opacity: 0, ease: 'power1' }, 1);
-        tl3.from('#sectionThreeAnimation', 0.5, { y: 80, opacity: 0, ease: 'power1' }, 1);
+        tl.from('#sectionOneAnimation', 0.25, { y: 100, opacity: 0, ease: 'sine' }, 1);
+        tl2.from('#sectionTwoAnimation', 0.25, {  opacity: 0, ease: 'power1' }, 1);
+        tl3.from('#sectionThreeAnimation', 0.25, { opacity: 0, ease: 'power1' }, 1);
 
         const scene1 = new ScrollMagic.Scene({
             triggerElement: '#sectionOneTrigger',
-            offset: -325,
-            reverse: false,
+            // offset: -425,
         })
             .setTween(tl);
 
@@ -52,7 +51,6 @@ const HomePage = class extends React.Component {
         const scene2 = new ScrollMagic.Scene({
             triggerElement: '#sectionTwoTrigger',
             offset: -300,
-            reverse: false,
         })
 
             .setTween(tl2);
@@ -60,14 +58,13 @@ const HomePage = class extends React.Component {
         const scene3 = new ScrollMagic.Scene({
             triggerElement: '#sectionThreeTrigger',
             offset: -300,
-            reverse: false,
         })
 
             .setTween(tl3);
 
-        scene1.addIndicators({name: "scene 1", colorEnd: "#FFFFFF"});
-        scene2.addIndicators({name: "scene 2", colorEnd: "#FFFFFF"});
-        scene3.addIndicators({name: "scene 3", colorEnd: "#FFFFFF"});
+        scene1.addIndicators({name: "scene 1", colorEnd: "red"});
+        scene2.addIndicators({name: "scene 2", colorEnd: "purple"});
+        scene3.addIndicators({name: "scene 3", colorEnd: "yellow"});
 
         controller.addScene([
             scene1,
@@ -83,8 +80,8 @@ const HomePage = class extends React.Component {
                     <Header/>
                     <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
                         <div className="flex-1 justify-content-start p-5">
-                            <div className="offset-lg-1" ref={div => this.myElement = div}>
-                                <h1 ref={div => this.myElement = div} className="hero__title mb-4">We design and build
+                            <div className="offset-lg-1">
+                                <h1 className="hero__title mb-4">We design and build
                                     amazing digital products
                                 </h1>
                                 <Link prefetch={false} href="/work">
