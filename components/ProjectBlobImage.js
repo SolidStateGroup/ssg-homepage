@@ -33,7 +33,8 @@ const ProjectBlobImage = global.ProjectBlobImage = class extends React.PureCompo
         const { children, ButtonComponent, ...rest } = this.props;
         return (
             <div className={cn(this.props.className, ' blob__container')}>
-                <img src={this.props.image || "/static/images/hero-devices.png"} alt="Blob Graphic"
+                <img srcSet={this.props.image || "/static/images/hero-devices@2x.png, /static/images/hero-devices@1x.png "}
+                     alt="Hero Image"
                      className="img-fluid blob__image"/>
                 <svg className="blob__svg" id="path-1" width={508} height={478} viewBox="0 0 508 478">
                     <path
