@@ -12,6 +12,7 @@ export const projects = [
     {
         ButtonComponent: ButtonPrimary,
         projectImage: '/static/images/projects/electron-trader/electron-trader-1@1x.png',
+        srcSet: '/static/images/projects/electron-trader/electron-trader-1@1x.png 1x, /static/images/projects/electron-trader/electron-trader-1@2x.png 2x,',
         clientImage: '/static/images/clients/electron.png',
         subTitle: 'Web Application',
         href: '/projects/electron-trader',
@@ -22,7 +23,8 @@ export const projects = [
     },
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/tone-and-sculpt/phone.png',
+        projectImage: '/static/images/projects/tone-and-sculpt/tands-dashboard.png',
+        srcSet: '/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
         clientImage: '/static/images/clients/tone-and-sculpt.svg',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
@@ -35,6 +37,7 @@ export const projects = [
     {
         ButtonComponent: ButtonPrimary,
         projectImage: '/static/images/projects/purely-capital/pc-summary-mac.png',
+        srcSet: '/static/images/projects/purely-capital/pc-summary-mac.png 1x, /static/images/projects/purely-capital/pc-summary-mac@2x.png 2x,',
         clientImage: '/static/images/clients/purely-capital-dark.png',
         subTitle: 'Responsive Web Application',
         href: '/projects/purely-capital',
@@ -48,6 +51,7 @@ export const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/hailie',
         projectImage: '/static/images/projects/hailie/hailie-phone@1x.png',
+        srcSet: '/static/images/projects/hailie/hailie-phone@1x.png 1x, /static/images/projects/hailie/hailie-phone@2x.png 2x,',
         clientImage: '/static/images/clients/hailie.svg',
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
@@ -71,6 +75,7 @@ export const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/british-airways',
         projectImage: '/static/images/projects/ba/ba-summary-ipad.png',
+        srcSet: '/static/images/projects/ba/ba-summary-ipad.png 1x, /static/images/projects/ba/ba-summary-ipad@2x.png 2x,',
         clientImage: '/static/images/clients/british-airways.svg',
         subTitle: 'Real-time operational dashboard',
         title: 'The real-time machine: integrating with 1960s tech',
@@ -310,6 +315,7 @@ const WorkPage = class extends React.Component {
                           href={p.href}
                           ButtonComponent={p.ButtonComponent}
                           projectImage={p.projectImage}
+                          srcSet={p.srcSet}
                           subTitle={p.subTitle}
                           projectImageClass={p.projectImageClass}
                           blobColour={p.blobColour}
