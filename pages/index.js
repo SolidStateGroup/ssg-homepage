@@ -37,7 +37,7 @@ const HomePage = class extends React.Component {
         const tl2 = new gsap.timeline();
         const tl3 = new gsap.timeline();
 
-        tl.from('#sectionOneAnimation', 0.25, { y: 100, opacity: 0, ease: 'sine' }, 1);
+        tl.from('#sectionOneAnimation', 0.15, { y: 100, opacity: 0, ease: 'sine' }, 1);
         tl2.from('#sectionTwoAnimation', 0.25, {  opacity: 0, ease: 'power1' }, 1);
         tl3.from('#sectionThreeAnimation', 0.25, { opacity: 0, ease: 'power1' }, 1);
 

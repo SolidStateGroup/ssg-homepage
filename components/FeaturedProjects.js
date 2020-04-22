@@ -14,19 +14,21 @@ const projects = [
     {
         className: 'project--t-and-s',
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/tone-and-sculpt/phone.png',
+        projectImage: '/static/images/projects/tone-and-sculpt/tands-dashboard.png',
+        srcSet: '/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
         title: 'Rebooting female fitness for Tone and Sculpt',
         tags: ['DESIGN'],
         projectNumber: ['01'],
-        projectImageClass: 'img-fluid--short position-relative',
+        projectImageClass: 'position-relative',
 
     },
     {
         className: 'project--purely',
         ButtonComponent: ButtonPrimary,
         projectImage: '/static/images/projects/purely-capital/pc-summary-mac.png',
+        srcSet: '/static/images/projects/purely-capital/pc-summary-mac.png 1x, /static/images/projects/purely-capital/pc-summary-mac@2x.png 2x,',
         subTitle: 'Responsive Web Application',
         href: '/projects/purely-capital',
         title: 'The future of film and media financing',
@@ -40,6 +42,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/hailie',
         projectImage: '/static/images/projects/ba/ba-summary-ipad.png',
+        srcSet: '/static/images/projects/ba/ba-summary-ipad.png 1x, /static/images/projects/ba/ba-summary-ipad@2x.png 2x,',
         subTitle: 'Real-time operational dashboard',
         title: 'The real-time machine: integrating with 1960s tech',
         tags: ['Cloud Infrastructure', 'Systems Integration', 'API Development'],
@@ -51,6 +54,7 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/hailie',
         projectImage: '/static/images/projects/hailie/hailie-phone@1x.png',
+        srcSet: '/static/images/projects/hailie/hailie-phone@1x.png 1x, /static/images/projects/hailie/hailie-phone@2x.png 2x,',
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
         tags: ['Cloud Infrastructure', 'Systems Integration', 'API Development'],
@@ -106,6 +110,7 @@ const FeaturedProjects = global.FeaturedProjects = class extends React.PureCompo
                                 <ProjectItem
                                   key={item.title}
                                   href={item.href}
+                                  srcSet={item.srcSet}
                                   projectNumber={item.projectNumber} className={cn('project__item-featured')} ButtonComponent={item.Button}
                                   projectImage={item.projectImage}
                                   subTitle={item.subTitle} title={item.title} projectImageClass={item.projectImageClass}

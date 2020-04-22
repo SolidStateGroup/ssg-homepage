@@ -59,13 +59,14 @@ const ProjectItem = global.ProjectItem = class extends React.PureComponent {
                             )}
 
                             <Link prefetch={false} href={this.props.href}>
-                                <ButtonComponent className="project__cta">View project</ButtonComponent>
+                                <ButtonComponent className="project__cta mt-3">View project</ButtonComponent>
                             </Link>
                         </div>
                     </div>
                     <div className="col-md-6 align-items-center justify-content-center text-center project__image-container">
                         <div className="blob__container">
                             <img src={this.props.projectImage || "/static/images/projects/tone-and-sculpt/phone.png"}
+                                 srcSet={this.props.srcSet || null}
                                  alt="Blob Graphic"
                                  className={cn(this.props.projectImageClass, 'project__image img-fluid blob__image')}/>
                             {this.props.blobColour ? (
