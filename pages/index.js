@@ -93,7 +93,7 @@ const HomePage = class extends React.Component {
                             </div>
                         </div>
                         <div className="flex-1 flex-column align-items-center hidden-sm-down">
-                            <ProjectBlobImage blobColour="#69D9D3" image="/static/images/hero-devices@2x.png, /static/images/hero-devices@1x.png" />
+                            <ProjectBlobImage blobColour="#69D9D3" src="/static/images/hero-devices@1x.png" srcSet="/static/images/hero-devices@2x.png 2x, /static/images/hero-devices@1x.png 1x" />
                         </div>
                     </div>
 
