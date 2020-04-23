@@ -40,7 +40,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--electron-dashboard"
-                        projectImage={"/static/images/projects/electron-trader/electron-trader-1@1x.png"}
+                        projectImage={'/static/images/projects/electron-trader/electron-trader-1@1x.png'}
+                        srcSet={'/static/images/projects/electron-trader/electron-trader-1@1x.png 1x, /static/images/projects/electron-trader/electron-trader-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -59,6 +60,7 @@ const TheComponent = class extends Component {
                             imageOneclassName="img__shadow"
                             title={'UI Components'}
                             imageOne={'/static/images/projects/electron-trader/UI-Components---Light@1x.jpg'}
+                            srcSetImageOne={'/static/images/projects/electron-trader/UI-Components---Light@1x.jpg 1x, /static/images/projects/electron-trader/UI-Components---Light@2x.jpg 2x'}
                             description={'We developed a seamless onboarding experience, allowing users to easily pair their bluetooth inhaler sensors with the app.'}
                             ProjectServiceListItem={
                                 <React.Fragment>

@@ -35,6 +35,7 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                             <div className="col align-self-end">
                                 <img
                                     src={this.props.imageOne || '/static/images/services/mobile-app-development.jpg'}
+                                    srcSet={this.props.srcSetImageOne}
                                     alt="UX Design Whiteboard"
                                     className={cn(this.props.imageOneclassName, "img-fluid")}
                                 />
