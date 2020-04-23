@@ -6,6 +6,7 @@ avatar: /static/images/blog/sara.jpg
 author: Sara Jones
 published: true
 image: https://storage.googleapis.com/ssg-website-images/How%20To%20Work%20With%20Agencies%20Part%20One/how%20to%20work%20with%20agencies%20header.jpg
+tags: corporates v startups
 ---
 
 You’re a startup founder, you know React Native is used to build mobile apps, but you’ve no idea if it can build *your* app, and how would you even know it was any good? This blog’s going to solve that.

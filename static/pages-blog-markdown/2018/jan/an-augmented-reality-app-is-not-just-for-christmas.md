@@ -6,6 +6,7 @@ avatar: /static/images/blog/sara.jpg
 author: Sara Jones
 published: true
 image: https://storage.googleapis.com/ssg-website-images/AR%20Card%20blog/christmas-1911637_1920.jpg
+tags: mobile dev
 ---
 
 An augmented reality app is not just for Christmas.

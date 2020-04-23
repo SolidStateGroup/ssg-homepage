@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/how%20to%20use%20react%20native%20to%20impress%20stakeholders/impress%20investors%20header.jpg
 date: 28-02-2018
+tags: corporates v startups
 ---
 
 Hackathons have a lovely atmosphere about them where anything goes and everyone is really positive about even the strangest suggestion. Budget-keepers who’d usually shut down requests for extra tea bags are suddenly enthusing about a junior associate’s mad idea to blockchain the NHS in two weeks. But rather like those parties where someone suggests a two week holiday to a Spanish villa and then everyone sobers up and starts to back out with lame excuses, so as at hackathons and team away days, the initial excitement can start to wear thin as stakeholders face up to their day-to-day responsibilities.

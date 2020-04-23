@@ -6,6 +6,7 @@ author: Ben Rometsch
 avatar: /static/images/blog/ben.png
 image: https://storage.googleapis.com/ssg-website-images/tools-2019/tools-2019.jpg
 date: 19-june-2019
+tags: tools
 ---
 
 Here's what we are using to build [Bullet Train, our Feature Flag platform](https://bullet-train.io). With some careful VPS purchases, most of this stuff can be run completely free of charge! 

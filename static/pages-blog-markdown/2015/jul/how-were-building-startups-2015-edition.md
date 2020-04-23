@@ -6,6 +6,7 @@ author: Ben Rometsch
 avatar: /static/images/blog/ben.png
 image: https://www.solidstategroup.com/images/particle-button-blog-hero.jpg
 date: 13-jul-2015
+tags: corporates v startups
 ---
 
 <p>It’s 2015 and it seems that the pace of innovation around languages, tooling, hosting and all that jazz continues to accelerate. I thought it would be a good time to take stock of what we’re using and how we are building stuff.</p>

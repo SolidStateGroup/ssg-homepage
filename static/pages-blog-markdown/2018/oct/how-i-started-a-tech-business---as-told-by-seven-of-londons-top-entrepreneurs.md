@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/how%20we%20did%20it%20index%20blog/how%20i%20started%20a%20tech%20business%20header%20(1).jpg
 date: 18-10-2018
+tags: corporates v startups
 ---
 
 We support startups. We wanted to shine a light on London’s ecosystem to show the tenacity, passion and journeys shown by a cross section. We interviewed 7 entrepreneurs, as diverse as can be in age, background, gender, career and startup industry, but with one thing in common, they all left a successful corporate career to found startups.

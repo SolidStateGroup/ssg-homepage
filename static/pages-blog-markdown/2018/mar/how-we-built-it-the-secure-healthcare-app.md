@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/How%20we%20built%20patientview%20app/patientview%20header.jpg
 date: 17-mar-2018
+tags: mobile dev
 ---
 
 PatientView gives patients access to their own medical records, so they can manage, monitor and message their health whenever they want. It’s a fantastic open source project already used by hundreds of hospitals and health centres in the UK, and it has existed online at [https://www.patientview.org](https://www.patientview.org) for a good few years now.

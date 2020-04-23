@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/How%20to%20hire%20react%20native%20developers/cheetah.jpg
 date: 20-oct-2017
+tags: corporates v startups, react
 ---
 You want to build an app. You want to build it in React Native because it’s the streamlined, agile way to do it. You now want to hire the talent.
 

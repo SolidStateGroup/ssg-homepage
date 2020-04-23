@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/innovations%20in%20technology%20-%20serverless%20architecture/cloud%20infrastructure%20header.jpg
 date: 07-mar-2018
+tags: webdev
 ---
 
 Each month we’re highlighting an innovation in technology so that non-devs can keep up to date with the ever-quickening rate of change - and understand how they can actually take advantage of these new tools to profit their business.

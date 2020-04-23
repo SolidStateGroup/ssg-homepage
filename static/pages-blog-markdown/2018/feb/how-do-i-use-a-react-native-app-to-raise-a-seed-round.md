@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/How%20to%20use%20react%20native%20to%20raise%20a%20seed%20round/react%20native%20for%20seed%20round%20header.jpg
 date: 28-feb-2018
+tags: corporates v startups
 ---
 This blog is for you if you've got an MVP, tested your startup hypothesis, and now want to gun for some proper funding. You've espied that SEIS tax relief and now you're going after the angels. You need a beta app to knock their socks off. 
 

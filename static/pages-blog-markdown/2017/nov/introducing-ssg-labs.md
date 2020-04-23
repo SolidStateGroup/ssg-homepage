@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/rio/rio-cover.jpg
 date: 30-nov-2017
+tags: hackathon
 ---
 SSG Labs is our new home for our digital experiments and hacks, the projects we do to stretch ourselves, test new tech, burst some hype bubbles and have fun.
 

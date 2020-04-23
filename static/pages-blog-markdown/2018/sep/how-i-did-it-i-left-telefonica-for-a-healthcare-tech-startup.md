@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/How%20I%20did%20it%20Kim%20Guest/kim%20gues%20how%20i%20did%20it%20header.jpg
 date: 30-sep-2018
+tags: corporates v startups
 ---
 
 *In our How I Did It Series, we profile entrepreneurs whom we admire at Solid State Group, especially those who’ve made the leap from corporate life to founding their own businesses, or go above and beyond to support London’s tech industry.*

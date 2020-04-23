@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/react-native-blog.png
 date: 02-aug-2017
+tags: react, mobile dev
 ---
 
 We helped a startup cut down from 3 development agencies to 1 whilst mirroring features across Web, iOS and Android, releasing all 3 simultaneously. All because of a little thing called React Native.

@@ -6,7 +6,7 @@ author: Niall Quinn
 avatar: /static/images/blog/niall.jpg
 image: https://storage.googleapis.com/ssg-website-images/prototyping-tools-2018/header-dark.jpg
 date: 26-nov-2018
-tags: design, prototyping, react
+tags: design, prototyping, react, tools
 ---
 
 With increasing frequency, clients are seeing the value of animation in their products, and as a consequence, we've found ourselves looking for the best tools to showcase concepts before diving into development. 

@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/imperial/Imperial-hotels-facebook-cover-photo.jpg
 date: 29-jun-2017
+tags: react
 ---
 
 Imperial Hotels came to us with an app development request, and we could see that this project was going to be like a Kim Kardashian instagram selfie, i.e. a seemingly simple concept casually executed, but in reality the result of tons of inputs from many different technologies, iterations, edits and third parties. We needed to project elegance and simplicity, while building complexity and flexibility.

@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Healthcare%20tech%20trends%20part%203/stethoscope%20header.jpg
 date: 16-feb-2018
+tags: corporates v startups
 ---
 
 Netflix. Dollar Shave Club. Warby Parker. Airbnb. Amazon.

@@ -6,6 +6,7 @@ author: Joshua Eichler-Summers
 avatar: /static/images/blog/josh.jpg
 image: https://storage.googleapis.com/ssg-website-images/chat.jpeg
 date: 12-02-2016
+tags: corporates v startups
 ---
 
 <p>When an idea hits you it’s easy to become obsessed with it - leaping into prototypes, raising money, and moving forward as fast as possible  - all the things you’re ‘meant to do’. But what if it’s the wrong idea. At Solid State we’ve become obsessed with validating an idea first, before we get carried away, and it’s paying serious dividends.</p>

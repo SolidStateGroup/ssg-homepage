@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/how%20to%20use%20react%20native%20to%20drive%20ideation/react%20native%20to%20drive%20ideation%20header.jpg
 date: 25-feb-2018
+tags: corporates v startups
 ---
 
 90% of digital transformation projects fail, but corporates are quickly learning from the startup ecosystem how they can digitally disrupt themselves, grow their business, and avoid costly failures. 

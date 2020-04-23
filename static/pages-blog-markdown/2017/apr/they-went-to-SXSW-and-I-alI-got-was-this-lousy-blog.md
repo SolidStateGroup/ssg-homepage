@@ -6,6 +6,7 @@ author: Aziz Morsly
 avatar: /static/images/blog/aziz.jpg
 image: https://storage.googleapis.com/ssg-website-images/sxsw-2017/ssg-sxsw-2017.jpg
 date: 08-apr-2017
+tags: corporates v startups
 ---
 
 So here I’m sitting at my desk a week after THE WHOLE COMPANY (apart from me) went to [SXSW](https://www.sxsw.com/).

@@ -6,6 +6,7 @@ author: Ben Rometsch
 avatar: /static/images/blog/ben.png
 image: https://storage.googleapis.com/ssg-website-images/micro-startup-validation/wireframe.jpg
 date: 02-jun-2017
+tags: corporates v startups
 ---
 
 The concept of the Minimum Viable Product established itself pretty much overnight, and became part of the lexicon of all budding entrepreneurs. People read Eric Ries's manifesto, it struck a chord, and for good reason. It was a great guide to help people figure out what to spend time on, and just as importantly what not to.

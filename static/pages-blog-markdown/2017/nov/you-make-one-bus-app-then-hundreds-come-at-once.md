@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/You%20Make%20One%20Bus%20App...%20Then%20Hundreds%20Come%20At%20Once/london-bus.jpg
 date: 09-nov-2017
+tags: mobile dev, hackathon
 ---
 London buses aren’t known for their speed, but when we were asked to produce a series of micro-apps to show upcoming bus data for an individual route, we needed to hit the accelerator.
 

@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Can%20I%20Wear%20Shorts/rainbow.jpg
 date: 18-jul-2017
+tags: hackathon
 ---
 
 Modern society is racing towards the promised heaven on earth: the ability to live like Iron Man without resorting to selling nuclear weaponry or shouldering the responsibility of fighting scary armoured space whales.

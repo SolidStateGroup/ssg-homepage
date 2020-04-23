@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/CES%20Highlights%202018/Samsung%20Wall.jpg
 date: 17-jan-2018
+tags: corporates v startups
 ---
 
 The world’s mightiest electronics companies swarmed into Las Vegas last week to show off their concepts and show ponies at CES. The desert of Nevada promptly dropped buckets of rain all over them, and the pinnacles of human achievement blinked into darkness and uselessness like a chocolate teapot on the moon.

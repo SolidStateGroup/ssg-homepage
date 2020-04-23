@@ -6,6 +6,7 @@ author: Niall Quinn
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Gaming%20blog/The_International_4_Grand_Finals.jpg
 date: 09-nov-2017
+tags: corporates v startups
 ---
 
 What has billions of dollars and millions of eyes?

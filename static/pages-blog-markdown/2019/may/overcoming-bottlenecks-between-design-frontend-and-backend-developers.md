@@ -6,6 +6,7 @@ author: Kyle Johnson
 published: true
 avatar: /static/images/blog/kyle.png
 image: https://res.cloudinary.com/practicaldev/image/fetch/s--Nz0ggTil--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.ibb.co/QnSn2xD/traffic.jpg
+tags: webdev, design
 ---
 
 During my job as a frontend developer for Solid State Group, I've seen several scenarios which block work for specific areas of the development team. Be it design, markup/style implementation, technical frontend or backend, at one point or another they reach a point where they are relying on someone to complete some work before they can get on with their task.

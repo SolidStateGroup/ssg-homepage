@@ -6,6 +6,7 @@ author: Sara Jones
 published: true
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Hackadram%202018%20blog/Glenfiddich%20Stag%20Racing.jpg
+tags: mobile dev, hackathon
 ---
 
 Last week Solid State Group had a grand day out. We shipped out to Stratford to attend a hackathon like no other. Called Hackadram, it was created by William Grant And Sons, who own brands like Glenfiddich, Hendrick’s, Drambuie, The Balvenie, Monkey Shoulder, Tullamore D.E.W, and Sailor Jerry’s. 

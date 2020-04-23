@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/digital%20transformation%20article/bridge%20to%20nowhere%20faded.jpg
 date: 20-sep-2017
+tags: webdev
 ---
 In 2017, [90% of digital transformation projects fail](http://www.digitaljournal.com/tech-and-science/technology/9-out-of-10-digital-transformation-projects-will-fail/article/499314).
 

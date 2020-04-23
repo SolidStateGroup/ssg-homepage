@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Healthcare%20Tech%20Trends%202/chain-690088_1920%20(1).jpg
 date: 26-jan-2018
+tags: corporates v startups
 ---
 
 In the second of our series on healthcare tech, it's all about the data.

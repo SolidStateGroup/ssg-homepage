@@ -6,6 +6,7 @@ author: Ben Rometsch
 avatar: /static/images/blog/ben.png
 image: https://storage.googleapis.com/ssg-website-images/harbour-boat-sea-plane-80404.jpg
 date: 13-jul-2016
+tags: webdev
 ---
 
 <p>I've been trying to explain what Docker actually is to clients, partners and small children (I’m available for birthday parties. Other entertainment: a food-fight about micro-services). The answer like most things is both simple and complex, and so here we are. Reading this.</p>

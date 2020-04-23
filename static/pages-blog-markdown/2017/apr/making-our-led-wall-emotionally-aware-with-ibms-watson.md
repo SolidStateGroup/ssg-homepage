@@ -6,6 +6,7 @@ author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
 image: https://storage.googleapis.com/ssg-website-images/watson/watson-cover-new.jpg
 date: 07-apr-2017
+tags: hackathon
 ---
 
 It’s friday afternoon and things are starting to wind down as the weekend approaches. We decided to add a cool new integration to our [MASSIVE LED wall](https://solidstategroup.com/2017/03/03/2017/we-built-a-giant-pixel-wall-for-fun-but-what-we-learnt-went-a-lot-further/). Jumping on the AI and NLP bandwagon we decided to make our LED wall emotionally aware with [IBM’s Watson API](https://www.ibm.com/watson/developercloud/tone-analyzer.html).

@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/How%20To%20Work%20With%20Agencies%20Part%20One/how%20to%20work%20with%20agencies%20header.jpg
 date: 28-02-2018
+tags: corporates v startups
 ---
 
 At Solid State Group we work with founders every day to build their first tech products. We ourselves spin out our own startups including Bullet Train, so we know what it’s like on both sides of the aisle.

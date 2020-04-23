@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/How%20I%20became%20a%20junior%20developer/how%20i%20became%20a%20junior%20developer%20header.jpg
 date: 08-oct-2018
+tags: corporates v startups
 ---
 
 *Matt initially joined us as a project manager, but realised his true vocation lay in building technology, not managing trello boards. So he retrained as a developer while working with us at Solid State Group. Here’s why he decided to change careers, his advice for other aspiring developers, and how SSG supported his transition.*

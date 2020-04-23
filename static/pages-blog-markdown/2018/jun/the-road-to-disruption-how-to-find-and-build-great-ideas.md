@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/The%20Road%20To%20Disruption/the%20road%20to%20disruption%20header%202.jpg
 date: 05-jun-2018
+tags: hackathon
 ---
 
 The massive horror show of Snapchat's redesign is being blamed on one guy: the CEO Evan Spiegel.

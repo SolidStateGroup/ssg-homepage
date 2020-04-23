@@ -6,6 +6,7 @@ author: Mark Jennings
 avatar: /static/images/blog/mark.jpg
 image: https://storage.googleapis.com/ssg-website-images/library.jpg
 date: 13-12-2016
+tags: corporates v startups
 ---
 
 

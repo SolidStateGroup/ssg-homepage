@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/5%20Startups%20Using%20React%20Native/jenga-boy.jpg
 date: 25-oct-2017
+tags: corporates v startups, react
 ---
 
 When the likes of Walmart and Uber start using React Native for their apps, you pay attention. No longer does React Native serve only basic apps, no, this javascript framework is being used for everything from integrating old code with new, to re-writing hugely popular apps from scratch with 95% code shared between Android and iOS.

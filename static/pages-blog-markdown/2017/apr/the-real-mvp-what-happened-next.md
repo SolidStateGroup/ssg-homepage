@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Can%20I%20Wear%20Shorts/startup-photos.jpg
 date: 08-apr-2017
+tags: corporates v startups, hackathon
 ---
 
 A few weeks ago we decided to challenge ourselves to take the MVP model to the extreme: [we were going to validate a whole business in just 48 hours](https://solidstategroup.com/2017/06/02/2017/The-Real-MVP-Validating-a-Business-In-Two-Days/). That’s build the MVP, test it, market it and analyse it, in two days. Our experiment wanted to see what innovation would spawn from the petri dish of time pressure, while proving that people are straying too far from the pure and simple light of the Minimum Viable Product.

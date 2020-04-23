@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/how%20i%20did%20it%20richie%20barter/richie%20barter%20header%20image.jpg
 date: 13-sep-2018
+tags: corporates v startups
 ---
 
 *In our How I Did It Series, we profile entrepreneurs whom we admire at Solid State Group, especially those who’ve made the leap from corporate life to founding their own businesses, or go above and beyond to support London’s tech industry.*

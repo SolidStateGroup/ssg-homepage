@@ -6,6 +6,7 @@ author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
 image: https://storage.googleapis.com/ssg-website-images/react-vr/react-vr-cover.png
 date: 04-may-2017
+tags: hackathon
 ---
 
 ![react-vr](https://storage.googleapis.com/ssg-website-images/react-vr/react-vr.gif)

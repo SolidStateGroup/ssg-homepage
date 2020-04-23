@@ -6,6 +6,7 @@ author: Ben Rometsch
 avatar: /static/images/blog/ben.png
 image: https://storage.googleapis.com/ssg-website-images/pexels-photo-237911.jpeg
 date: 19-jan-2017
+tags: corporates v startups
 ---
 
 At [Solid State](https://solidstategroup.com/) we've been building apps for startups and corporates for years. With a big focus on rapid development I've seen all the mistakes, and made a few myself.  This is my quick guide to bypass some of the horror.

@@ -6,6 +6,7 @@ author: Niall Quinn
 avatar: /static/images/blog/niall.jpg
 image: https://storage.googleapis.com/ssg-website-images/rio/rio-cover.jpg
 date: 03-mar-2017
+tags: hackathon
 ---
 
 Every tech company has side projects and Solid State is no different. It keeps devs motivated and flexes the bits of the brain sometimes not quite reached by day to day coding. Sometimes these side projects become products, sometimes we crack open a beer and ask "what the hell were we thinking", but always we learn something - about the process, and perhaps ourselves.

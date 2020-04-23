@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/ppl%20sustainable%20roadmap/ppl%20change%20roadmap%20header.jpg
 date: 15-nov-2018
+tags: corporates v startups
 ---
 
 We’re privileged to know many great women and men who are working to bring change to their industries, to empower employees to take charge of their ideas and raise the standards of the whole sector. I wanted to share some knowledge from some of those people and this time I’ve brought a piece of work from the boutique consultancy PPL Consulting.

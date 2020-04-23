@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Battle%20Royale%20Blog/pubg%20header.jpg
 date: 14-aug-2017
+tags: mobile dev, hackathon
 ---
 
 We are utterly addicted to PlayerUnknown’s Battleground, see their promotional image above. It’s a competitive survival shooter where a hundred players race around an ever-shrinking battle area, scavenging extra weapons and kit, while assassinating each other till only one survives. When you start you have nothing. When you die, you’re out.

@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Serverless%20architecture%20burgers%20blog/serverless%20architecture%20header.jpg
 date: 24-apr-2018
+tags: webdev
 ---
 
 This is an introduction to serverless architecture for entrepreneurs, innovators, consultants, anyone working on building a product which uses those magic light screens in our hands or on our desks.

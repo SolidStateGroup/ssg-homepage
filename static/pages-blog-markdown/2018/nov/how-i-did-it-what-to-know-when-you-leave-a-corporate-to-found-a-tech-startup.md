@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/how%20i%20did%20it%20key%20takeaways/How%20i%20did%20it%20key%20takeaways%20header.jpg
 date: 03-nov-2018
+tags: corporates v startups
 ---
 
 We interviewed 7 of London’s entrepreneurs across a wide range of industries to find out the first steps they took to leave a corporate career and build a startup. [The full interviews are all indexed right here](https://www.solidstategroup.com/2018/10/18/2018/How-I-Started-A-Tech-Business---As-Told-By-Seven-Of-London's-Top-Entrepreneurs/), but in this blog, I've distilled the best bits, the absolute key takeaways any founder needs to know for when their startup is at its most raw and vulnerable - the beginning.

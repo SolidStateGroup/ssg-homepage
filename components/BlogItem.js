@@ -58,7 +58,7 @@ const BlogItem = class extends Component {
                                     <BlogTag key={t} tag={t}/>
                                 ))}
                             </div>
-                            <ButtonText className="blog-item__btn text-primary align-self-baseline mt-3 pl-0" buttonText="Read Post"/>
+                            <ButtonText className="blog-item__btn text-primary align-self-baseline pl-0" buttonText="Read Post"/>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ export const BlogItemSummary = global.BlogItemSummary = class extends Component 
                                     <BlogTag key={t} tag={t}/>
                                 ))}
                             </div>
-                            <ButtonText className="text-primary align-self-baseline mt-4 pl-0" buttonText="Read Post"/>
+                            <ButtonText className="text-primary align-self-baseline pl-0 blog-item__btn" buttonText="Read Post"/>
                         </div>
                     </div>
                 </div>

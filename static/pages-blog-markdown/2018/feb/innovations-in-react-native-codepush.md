@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/React%20Native%20innovations%20codepush/build%20pebbles%20header.jpg
 date: 25-02-2018
+tags: react
 ---
 
 ### Innovations in React Native

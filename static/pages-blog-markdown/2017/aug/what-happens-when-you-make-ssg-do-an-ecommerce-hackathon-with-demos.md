@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/SSG%20App%20Jam/appjam-team-working.jpg
 date: 15-aug-2017
+tags: hackathon
 ---
 
 *"Sorry what are we doing?"*

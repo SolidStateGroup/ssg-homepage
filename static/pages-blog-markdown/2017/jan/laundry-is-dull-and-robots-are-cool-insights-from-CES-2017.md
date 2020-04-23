@@ -6,6 +6,7 @@ author: Matthew Evans
 avatar: /static/images/blog/matt.jpg
 image: https://storage.googleapis.com/ssg-website-images/ces-2017.jpg
 date: 17-jan-2017
+tags: hackathon
 ---
 
 From IoT sex pants, to audio through your skull, last week’s Consumer Electronics Show did not hold back on the weird and wonderful new tech - but is any of it useful?

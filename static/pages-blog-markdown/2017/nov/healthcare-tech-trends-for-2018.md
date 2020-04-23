@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Healthcare%20Data%20Collection%20Blog/Healthcare%20Tech%20Trends%202018%20header.jpg
 date: 30-nov-2017
+tags: corporates v startups
 ---
 
 In this blog we’ve got sci-fi nanobots, smart sensors for human organs, and consumer IoT products. Some of the most mind-blowing innovations are going to take flight in 2018 - the ground-breaking discoveries of scientists and healthcare startups will save lives and ultimately change the way we view our fleshy brain-vehicles.

@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/chatbots-coming-to-kill-apps/nuclear-weapons-test-67557_1920.jpg
 date: 13-jun-2017
+tags: corporates v startups
 ---
 
 Chatbots will kill 99% of apps.

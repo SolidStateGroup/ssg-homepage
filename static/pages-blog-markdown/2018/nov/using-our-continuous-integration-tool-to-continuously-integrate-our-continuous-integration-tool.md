@@ -6,6 +6,7 @@ author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/bullet-train/bullet-train.png
 date: 10-nov-2018
+tags: tools
 ---
 
 During the development of our feature flagging tool <a href="https://bullet-train.io"/>Bullet Train</a>, we got to the point where we were actually using <a href="https://bullet-train.io"/>Bullet Train</a> to develop <a href="https://bullet-train.io"/>Bullet Train</a> so that we could continuously integrate while we continuously integrate.

@@ -6,6 +6,7 @@ author: Ben Rometsch
 avatar: /static/images/blog/ben.png
 image: https://www.solidstategroup.com/images/Shell_Sign_by_night.jpg
 date: 13-jul-2014
+tags: corporates v startups
 ---
 
 <p>For background, please check out this TNW article.</p>
