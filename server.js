@@ -10,6 +10,7 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
+
 const IS_SSR_CACHE_ENABLED = !dev; // TODO move to config
 
 // TODO: move to config
