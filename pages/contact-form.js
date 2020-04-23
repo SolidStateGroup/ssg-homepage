@@ -12,18 +12,18 @@ const ContactFormPage = class extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            discipline:{}
+            discipline: {},
         };
     }
 
     componentDidMount() {
-        grecaptcha.render(document.getElementById("recaptcha"),{
-            sitekey: "6LdBxekUAAAAAL1yc56O0MSe02JLEGsADRiBqNMv"
-        })
+        grecaptcha.render(document.getElementById('recaptcha'), {
+            sitekey: '6LdBxekUAAAAAL1yc56O0MSe02JLEGsADRiBqNMv',
+        });
     }
 
     toggle = (name) => {
-        const discipline = {...this.state.discipline};
+        const discipline = { ...this.state.discipline };
         if (discipline[name]) {
             // fade in anim
             delete discipline[name];
@@ -31,7 +31,7 @@ const ContactFormPage = class extends React.Component {
         //     fade out anim
             discipline[name] = true;
         }
-        this.setState({discipline})
+        this.setState({ discipline });
     }
 
     render = () => {
@@ -52,30 +52,38 @@ const ContactFormPage = class extends React.Component {
                                     <p className="text-light mt-5">1. What can we help you with?</p>
                                     <div className="row">
                                         <div className="col-lg-3 col-6">
-                                            <ButtonHexagon onClick={()=>this.toggle("STRATEGY")}
-                                                           ButtonHexagonActive={`${this.state.discipline["STRATEGY"] ? true : ''}`}
-                                                           buttonText={'Strategy'}
-                                                           class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}/>
+                                            <ButtonHexagon
+                                              onClick={() => this.toggle('STRATEGY')}
+                                              ButtonHexagonActive={`${this.state.discipline.STRATEGY ? true : ''}`}
+                                              buttonText="Strategy"
+                                              class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}
+                                            />
                                         </div>
 
                                         <div className="col-lg-3 col-6">
-                                            <ButtonHexagon onClick={()=>this.toggle("DESIGN")}
-                                                           ButtonHexagonActive={`${this.state.discipline["DESIGN"] ? true : ''}`}
-                                                           buttonText={'Design'}
-                                                           class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}/>
+                                            <ButtonHexagon
+                                              onClick={() => this.toggle('DESIGN')}
+                                              ButtonHexagonActive={`${this.state.discipline.DESIGN ? true : ''}`}
+                                              buttonText="Design"
+                                              class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}
+                                            />
                                         </div>
                                         <div className="col-lg-3 col-6">
-                                            <ButtonHexagon onClick={()=>this.toggle("MOBILE")}
-                                                           ButtonHexagonActive={`${this.state.discipline["MOBILE"] ? true : ''}`}
-                                                           buttonText={'Mobile App Development'}
-                                                           class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}/>
+                                            <ButtonHexagon
+                                              onClick={() => this.toggle('MOBILE')}
+                                              ButtonHexagonActive={`${this.state.discipline.MOBILE ? true : ''}`}
+                                              buttonText="Mobile App Development"
+                                              class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}
+                                            />
                                         </div>
 
                                         <div className="col-lg-3 col-6">
-                                            <ButtonHexagon onClick={()=>this.toggle("WEB")}
-                                                           ButtonHexagonActive={`${this.state.discipline["WEB"] ? true : ''}`}
-                                                           buttonText={'Web Development'}
-                                                           class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}/>
+                                            <ButtonHexagon
+                                              onClick={() => this.toggle('WEB')}
+                                              ButtonHexagonActive={`${this.state.discipline.WEB ? true : ''}`}
+                                              buttonText="Web Development"
+                                              class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}
+                                            />
                                         </div>
 
                                     </div>
@@ -87,51 +95,66 @@ const ContactFormPage = class extends React.Component {
 
                                         <p className="text-light mt-5">1. Project Information</p>
 
-                                        <input type="hidden" name="Discipline" value={Object.keys(this.state.discipline).join(", ")}/>
+                                        <input type="hidden" name="Discipline" value={Object.keys(this.state.discipline).join(', ')}/>
                                         <div className="form-group">
-                                            <textarea className="form-control form__input" name="textarea" id="Textarea"
-                                                      placeholder="Tell us a little bit about your project or how we can help..."
-                                                      rows="3" required/>
+                                            <textarea
+                                              className="form-control form__input" name="textarea" id="Textarea"
+                                              placeholder="Tell us a little bit about your project or how we can help..."
+                                              rows="3" required
+                                            />
                                         </div>
 
                                         <p className="text-light mt-5">2. Contact Details</p>
-                                        <Input InputLabel={'Name'} forLabel="Name" placeholder="Name"
-                                               type="name" name="personname"
-                                               inputClassName="form-control form__input mb-3"/>
+                                        <Input
+                                          InputLabel="Name" forLabel="Name" placeholder="Name"
+                                          type="name" name="personname"
+                                          inputClassName="form-control form__input mb-3"
+                                        />
 
-                                        <Input type="email" name="replyto" InputLabel={'Email address *'}
-                                               forLabel="Email address"
-                                               placeholder="name@example.com"
-                                               id="exampleInputEmail1"
-                                               inputClassName="form-control form__input mb-3"/>
+                                        <Input
+                                          type="email" name="replyto" InputLabel="Email address *"
+                                          forLabel="Email address"
+                                          placeholder="name@example.com"
+                                          id="exampleInputEmail1"
+                                          inputClassName="form-control form__input mb-3"
+                                        />
 
                                         <div className="mt-4 mb-3">
-                                            <div id="recaptcha"></div>
+                                            <div id="recaptcha" />
                                         </div>
 
-                                        <ButtonPrimary type="submit" value="Send" id="submit"
-                                                       className="mt-3">Submit</ButtonPrimary>
+                                        <ButtonPrimary
+                                          type="submit" value="Send" id="submit"
+                                          className="mt-3"
+                                        >Submit
+                                        </ButtonPrimary>
                                     </form>
                                 </div>
                             </div>
 
                             <div className="col-md-4">
                                 <div
-                                    className="flex-1 hero__blob-container">
+                                  className="flex-1 hero__blob-container"
+                                >
                                     <div className="contact-sidebar">
                                         <p className="text-light">Rather have a chat?</p>
 
                                         <p className="text-light">Call <a className="bold">Matthew</a> on
-                                            <a href="tel:+44(0)2076137222" className="bold"> +44 (0)207 613 7222</a></p>
+                                            <a href="tel:+442076137220" className="bold"> +44 20 7613 7220</a>
+                                        </p>
 
                                         <p className="text-light">Email our new business team
                                             <a className="bold" href="mailto:matthew@solidstategroup.com">
-                                                &nbsp;matthew@solidstategroup.com</a></p>
+                                                &nbsp;matthew@solidstategroup.com
+                                            </a>
+                                        </p>
                                     </div>
 
 
-                                    <img src="/static/images/hero-blob.svg" alt="hero-blob"
-                                         className="img-fluid position-absolute hidden-sm-down"/>
+                                    <img
+                                      src="/static/images/hero-blob.svg" alt="hero-blob"
+                                      className="img-fluid position-absolute hidden-sm-down"
+                                    />
                                 </div>
                             </div>
                         </div>

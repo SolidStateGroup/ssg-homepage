@@ -158,7 +158,7 @@ const HomePage = class extends React.Component {
                 </div>
 
                 <div className="section my-5" id="sectionThreeTrigger">
-                    <div className="container mt-5" id="sectionThreeAnimation">
+                    <div className="container mt-md-5 mt-0" id="sectionThreeAnimation">
                         <div>
                             <h2 className="section__title section__title--dark mb-5">Our process</h2>
                         </div>
