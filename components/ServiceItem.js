@@ -52,6 +52,7 @@ const ServiceItem = global.ServiceItem = class extends React.PureComponent {
                 </div>
                 <div className="col-md-6 pr-0 pl-0 text-center">
                     <img src={this.props.serviceImage || '/static/images/services/ux-design.jpg'}
+                         srcSet={this.props.srcSet || null}
                          className={cn(this.props.imageClassName, ' img-fluid mt-md-0 mt-5')}
                     />
                 </div>
