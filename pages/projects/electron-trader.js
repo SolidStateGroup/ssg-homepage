@@ -81,6 +81,7 @@ const TheComponent = class extends Component {
                             title={'Dashboard UI'}
                             subTitle={'01 / Dashboard'}
                             imageUrl={'/static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@1x.jpg'}
+                            srcSet={'/static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@1x.jpg 1x, /static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@2x.jpg 2x'}
                             imageAltText={'Dashboard UI'}
                         />
                         <ProjectTextSection
