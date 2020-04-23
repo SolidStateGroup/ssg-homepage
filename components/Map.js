@@ -31,11 +31,13 @@ const Map = class extends PureComponent {
         return (
             <div className="map-container" id="the-map">
                 <div className="map-mask d-none d-sm-block"/>
-                <div className="map-overlay flex-column col-9 col-sm-3 ml-5 pr-0">
-                    <h2 className="mb-5 map-overlay__title">Come see us in the middle of London's Silicon Roundabout</h2>
-                    <p className="mb-0 text-light">Where to find us</p>
-                    <h5>86-90 Paul Street</h5>
-                    <h5>London, EC2A 4NE</h5>
+                <div className="map-overlay flex-column col-9 col-sm-3 ml-5 pr-0 pl-0">
+                    <div className="offset-md-6">
+                        <h2 className="mb-5 map-overlay__title">Come see us in the middle of London's Silicon Roundabout</h2>
+                        <p className="mb-0 text-light">Where to find us</p>
+                        <h5>86-90 Paul Street</h5>
+                        <h5>London, EC2A 4NE</h5>
+                    </div>
                 </div>
                 <div className="map-blender"/>
             </div>

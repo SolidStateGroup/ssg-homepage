@@ -1,1 +1,9 @@
-<svg height="725" viewBox="0 0 442 725" width="442" xmlns="http://www.w3.org/2000/svg"><path d="m1 0h358.343668c-65.455447 93.3950857-98.18317 181.505477-98.18317 264.331174 0 94.511016 60.464617 248.067291 181.393852 460.668826h-441.55435z" fill="#2c2733" fill-rule="evenodd" transform="translate(-1)"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="575px" height="725px" viewBox="0 0 575 725" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,0 L491.343668,0 C425.888221,93.3950857 393.160498,181.505477 393.160498,264.331174 C393.160498,358.84219 453.625115,512.398465 574.55435,725 L0,725 L0,0 Z" id="Path" fill="#2C2733"></path>
+    </g>
+</svg>

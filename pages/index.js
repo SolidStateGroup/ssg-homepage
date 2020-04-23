@@ -80,7 +80,7 @@ const HomePage = class extends React.Component {
                     <Header/>
                     <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
                         <div className="flex-1 justify-content-start p-5">
-                            <div className="offset-lg-1">
+                            <div className="offset-lg-3 pl-md-3 pl-0">
                                 <h1 className="hero__title mb-4">We design and build
                                     amazing digital products
                                 </h1>
@@ -131,18 +131,18 @@ const HomePage = class extends React.Component {
                 </div>
 
                 <div className="section" id="sectionOneTrigger">
-                    <div className="container-fluid" id="sectionOneAnimation">
+                    <div className="container-fluid pl-md-0 pl-3 pr-0" id="sectionOneAnimation">
                         <div className="col-md-8 pl-0 offset-md-2">
                             <h2 className="section__title section__title--dark">Services</h2>
                             <ul className="lined-list list-unstyled flex-row pl-sm-5 pl-0 mt-3">
                                 <ListItemUnderlined listItemText="UX & UI Design" listItemLink="/services/ux-design" />
-                                <ListItemUnderlined listItemText="Mobile app development" listItemLink="/services/mobile-app-development" />
-                                <ListItemUnderlined listItemText="Responsive web apps" listItemLink="/services/responsive-web-apps" />
+                                <ListItemUnderlined listItemText="Mobile App Development" listItemLink="/services/mobile-app-development" />
+                                <ListItemUnderlined listItemText="Responsive Web Apps" listItemLink="/services/responsive-web-apps" />
                                 <ListItemUnderlined listItemText="Branding" listItemLink="/services/branding" />
                                 <ListItemUnderlined listItemText="Strategy" listItemLink="/services/strategy" />
                                 <ListItemUnderlined listItemText="Prototyping" listItemLink="/services/ux-design" />
                                 <ListItemUnderlined listItemText="API Development" listItemLink="/services/api-development" />
-                                <ListItemUnderlined listItemText="Systems integration" listItemLink="/services/systems-integration" />
+                                <ListItemUnderlined listItemText="Systems Integration" listItemLink="/services/systems-integration" />
                             </ul>
                             <Link prefetch={false} href="/services">
                                 <ButtonText buttonText="Explore our services" type="button" className="text-primary pl-sm-5 pl-0"/>
@@ -158,8 +158,10 @@ const HomePage = class extends React.Component {
                 </div>
 
                 <div className="section my-5" id="sectionThreeTrigger">
-                    <div className="container" id="sectionThreeAnimation">
-                        <h2 className="section__title section__title--dark text-center mb-5">Our process</h2>
+                    <div className="container mt-5" id="sectionThreeAnimation">
+                        <div>
+                            <h2 className="section__title section__title--dark mb-5">Our process</h2>
+                        </div>
                         <div className="flex-row">
                             <div className="col text-center">
                                 <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Research"/>

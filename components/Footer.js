@@ -30,11 +30,11 @@ const Footer = class extends React.Component {
                           <div className="col px-md-2 px-0">
                               <dl>
                                   <dt className="light">Call us on</dt>
-                                  <dd className="bold">+44 (0)207 613 7222</dd>
+                                  <dd className="bold"><a href="tel:+442076137220">+44 20 7613 7220</a></dd>
                               </dl>
                               <dl>
                                   <dt className="light">Email us at</dt>
-                                  <dd className="bold">projects@solidstategroup.com</dd>
+                                  <dd className="bold"><a href="mailto:projects@solidstategroup.com">projects@solidstategroup.com</a></dd>
                               </dl>
                               <Link prefetch={false} href="/contact-form">
                                   <ButtonPrimary>Send us a brief</ButtonPrimary>

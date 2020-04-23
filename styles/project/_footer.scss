@@ -35,9 +35,13 @@
     position: absolute;
     top:0;
     left:0;
-    width:440px;
+    width: 574px;
     z-index: 2;
     background:url('/static/images/map-mask.svg') 0 0 no-repeat;
+}
+
+.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right {
+    display: none;
 }
 
 .map-blender{
@@ -45,8 +49,8 @@
     width:100%;
     background:linear-gradient( to top, $brandNavy 25%, rgba($brandNavy,0));
     z-index: 3;
-    height: 150px;
-    bottom:0;
+    height: 70px;
+    bottom: -2em;
 }
 
 .map-overlay{
