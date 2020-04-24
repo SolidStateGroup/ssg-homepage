@@ -7,6 +7,7 @@ import {TextListItem, WideListItem} from "../../components/ListItem";
 import ProjectDetailSectionItem, {ProjectTechSection, ProjectTextSection} from "../../components/ProjectDetailSectionItem";
 import ProjectNav from "../../components/ProjectNav";
 import Footer from "../../components/Footer";
+import ClientQuote from "../../components/ClientQuote";
 
 // Automatically sets relevant head tags for seo, see _app for the remainder tags
 const TheComponent = class extends Component {
@@ -90,6 +91,11 @@ const TheComponent = class extends Component {
                             '\n' +
                             'The system was built on fully-redundant infrastructure, providing high availability 24x7x365.'} />
                     </div>
+                    <ClientQuote
+                        image={'/static/images/projects/ba/ba-ipad.png'}
+                        srcSet={'/static/images/projects/ba/ba-ipad.png 1x, /static/images/projects/ba/ba-ipad@2x.png 2x'}
+                        text={'A huge thanks to you and everybody involved in developing the dashboard. It gets more useful with every iteration. We all now need to learn to use it to maximum advantage, so we all have a shared, accurate, knowledge of what\'s going on in the operation.'}
+                        clientName={'Managing Director'} clientTitle={'Operations at British Airways'}/>
                   <ProjectNav/>
                 </Page>
                 <Footer/>

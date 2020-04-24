@@ -14,29 +14,37 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/british-airways',
         projectImage: '/static/images/projects/ba/ba-summary-ipad.png',
+        srcSet: '/static/images/projects/ba/ba-summary-ipad.png 1x, /static/images/projects/ba/ba-summary-ipad@2x.png 2x,',
+        clientImage: '/static/images/clients/british-airways.svg',
         subTitle: 'Real-time operational dashboard',
         title: 'The real-time machine: integrating with 1960s tech',
         blobColour: "#3658B0",
         tags: ['API', "WEB"],
+        projectType: ['Web App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/hailie',
         projectImage: '/static/images/projects/hailie/hailie-phone@1x.png',
+        srcSet: '/static/images/projects/hailie/hailie-phone@1x.png 1x, /static/images/projects/hailie/hailie-phone@2x.png 2x,',
+        clientImage: '/static/images/clients/hailie.svg',
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
         blobColour: "#FF715A",
         tags: ['DESIGN', 'MOBILE', "IOT"],
-
+        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
     },
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/hertz',
         projectImage: '/static/images/projects/hertz/hertz-1@1x.png',
+        srcSet: '/static/images/projects/hertz/hertz-1@1x.png 1x, /static/images/projects/hertz/hertz-1@2x.png 2x,',
+        clientImage: '/static/images/clients/hertz-colour.png',
         subTitle: 'Connected Car mobile application',
         title: 'Feels on wheels',
         blobColour: "#FFD60D",
         tags: ['DESIGN', 'MOBILE', 'IOT'],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
     },
 ];
 
@@ -72,6 +80,7 @@ const APIPage = class extends React.Component {
 
                 <ClientQuote
                     image={'/static/images/projects/ba/ba-ipad.png'}
+                    srcSet={'/static/images/projects/ba/ba-ipad.png 1x, /static/images/projects/ba/ba-ipad@2x.png 2x'}
                     text={'A huge thanks to you and everybody involved in developing the dashboard. It gets more useful with every iteration. We all now need to learn to use it to maximum advantage, so we all have a shared, accurate, knowledge of what\'s going on in the operation.'}
                     clientName={'Managing Director'} clientTitle={'Operations at British Airways'}/>
 
@@ -83,6 +92,10 @@ const APIPage = class extends React.Component {
                                      title={p.title} clientBrand={p.clientBrand} clientName={p.clientName}
                                      projectImageClass={p.projectImageClass}
                                      blobColour={p.blobColour}
+                                     srcSet={p.srcSet}
+                                     projectType={p.projectType}
+                                     href={p.href}
+                                     clientImage={p.clientImage}
                         />
                     ))}
                 </div>

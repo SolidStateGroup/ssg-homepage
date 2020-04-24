@@ -17,81 +17,97 @@ const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/hailie',
         projectImage: '/static/images/projects/hailie/hailie-phone@1x.png',
+        srcSet: '/static/images/projects/hailie/hailie-phone@1x.png 1x, /static/images/projects/hailie/hailie-phone@2x.png 2x,',
+        clientImage: '/static/images/clients/hailie.svg',
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
-        blobColour: '#FF715A',
-        tags: ['DESIGN', 'MOBILE', 'IOT'],
-        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development'],
+        blobColour: "#FF715A",
+        tags: ['DESIGN', 'MOBILE', "IOT"],
+        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
     },
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/british-airways',
         projectImage: '/static/images/projects/ba/ba-summary-ipad.png',
+        srcSet: '/static/images/projects/ba/ba-summary-ipad.png 1x, /static/images/projects/ba/ba-summary-ipad@2x.png 2x,',
+        clientImage: '/static/images/clients/british-airways.svg',
         subTitle: 'Real-time operational dashboard',
         title: 'The real-time machine: integrating with 1960s tech',
-        blobColour: '#3658B0',
-        tags: ['API', 'WEB'],
-        projectType: ['Web App Development, ', 'API Development '],
-    },
-    {
-        ButtonComponent: ButtonPrimary,
-        href: '/projects/visa',
-        projectImage: '/static/images/projects/visa/visa-1@1x.png',
-        subTitle: 'Instant payment integration with NFC Ring',
-        title: 'Cakewalk on the catwalk',
-        blobColour: '#1a1e5a',
-        tags: ['DESIGN', 'MOBILE', 'IOT'],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development'],
+        blobColour: "#3658B0",
+        tags: ['API', "WEB"],
+        projectType: ['Web App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/unilever',
         projectImage: '/static/images/projects/unilever/unilever-1@1x.png',
+        srcSet: '/static/images/projects/unilever/unilever-1@1x.png 1x, /static/images/projects/unilever/unilever-1@2x.png 2x,',
+        clientImage: '/static/images/clients/unilever-colour.svg',
         subTitle: 'Automated ecommerce via connected scales',
         title: 'Shopping that buys itself',
-        blobColour: '#007DBB',
+        blobColour: "#007DBB",
         tags: ['DESIGN', 'MOBILE', 'IOT'],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/hertz',
         projectImage: '/static/images/projects/hertz/hertz-1@1x.png',
+        srcSet: '/static/images/projects/hertz/hertz-1@1x.png 1x, /static/images/projects/hertz/hertz-1@2x.png 2x,',
+        clientImage: '/static/images/clients/hertz-colour.png',
         subTitle: 'Connected Car mobile application',
         title: 'Feels on wheels',
-        blobColour: '#FFD60D',
+        blobColour: "#FFD60D",
         tags: ['DESIGN', 'MOBILE', 'IOT'],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/visa',
+        projectImage: '/static/images/projects/visa/visa-1@1x.png',
+        srcSet: '/static/images/projects/visa/visa-1@1x.png 1x, /static/images/projects/visa/visa-1@2x.png 2x,',
+        clientImage: '/static/images/clients/visa-colour.svg',
+        subTitle: 'Instant payment integration with NFC Ring',
+        title: 'Cakewalk on the catwalk',
+        blobColour: "#1a1e5a",
+        tags: ['DESIGN', 'MOBILE', "IOT"],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development']
     },
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/wfa',
         projectImage: '/static/images/projects/wfa/wfa-1.png',
+        srcSet: '/static/images/projects/wfa/wfa-1.png 1x, /static/images/projects/wfa/wfa-1@2x.png 2x,',
+        clientImage: '/static/images/clients/wfa.svg',
         subTitle: 'Web Application',
         title: 'Visualising data for effective marketing communications',
-        blobColour: '#ff003c',
-        tags: ['API', 'WEB'],
-        projectType: ['UI design, ', 'Web App Development, ', 'API Development '],
+        blobColour: "#ff003c",
+        tags: ['API', "WEB"],
+        projectType: ['UI design, ', 'Web App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/publicate',
         projectImage: '/static/images/projects/publicate/publicate-summary-ipad@1x.png',
+        srcSet: '/static/images/projects/publicate/publicate-summary-ipad@1x.png 1x, /static/images/projects/publicate/publicate-summary-ipad@2x.png 2x,',
+        clientImage: '/static/images/clients/publicate.png',
         subTitle: 'Tablet & Web Application',
         title: 'Straightening out corporate documentation',
-        blobColour: '#fe7101',
-        tags: ['API', 'MOBILE', 'DESIGN', 'WEB'],
-        projectType: ['UX Design, ', 'UI design, ', 'Web App Development, ', 'API Development '],
+        blobColour: "#fe7101",
+        tags: ['API', 'MOBILE', 'DESIGN', "WEB"],
+        projectType: ['UX Design, ', 'UI design, ', 'Web App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/wazoku',
         projectImage: '/static/images/projects/wazoku/2.png',
+        srcSet: '/static/images/projects/wazoku/2.png 1x, /static/images/projects/wazoku/2@2x.png 2x,',
+        clientImage: '/static/images/clients/wazoku.png',
         subTitle: 'iOS and Android Mobile App',
         title: 'Ideas happen anywhere, anytime',
-        blobColour: '#173E5A',
-        tags: ['DESIGN', 'MOBILE', 'API'],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        blobColour: "#173E5A",
+        tags: ['DESIGN', 'MOBILE', "API"],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
     },
 
 ];
@@ -188,6 +204,8 @@ const PartnersPage = class extends React.Component {
                         blobColour={p.blobColour}
                         projectType={p.projectType}
                         href={p.href}
+                        srcSet={p.srcSet}
+                        clientImage={p.clientImage}
                       />
                   ))}
               </div>

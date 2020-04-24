@@ -11,23 +11,28 @@ import ProjectItem from "../../components/ProjectItem";
 const projects = [
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/tone-and-sculpt/phone.png',
+        projectImage: '/static/images/projects/tone-and-sculpt/tands-dashboard.png',
+        srcSet: '/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
+        clientImage: '/static/images/clients/tone-and-sculpt.svg',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
         title: 'Rebooting female fitness for Tone and Sculpt',
         projectImageClass: "project__image--short",
         blobColour: "#5CC2E1",
         tags: ['DESIGN', "MOBILE", "API"],
-
+        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/meownow',
         projectImage: '/static/images/projects/meownow/meownow-1@1x.png',
+        srcSet: '/static/images/projects/meownow/meownow-1@1x.png 1x, /static/images/projects/meownow/meownow-1@2x.png 2x,',
+        clientImage: '/static/images/clients/meownow.svg',
         subTitle: 'Responsive Website',
         title: 'Subscription service for your feline friends',
         blobColour: "#f7f7f7",
         tags: ['DESIGN', 'BRANDING', 'WEB'],
+        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Web Development, ']
     },
 ];
 
@@ -75,6 +80,7 @@ const StrategyPage = class extends React.Component {
                 </div>
                 <ClientQuote
                     image={'/static/images/projects/meownow/meownow-1@1x.png'}
+                    srcSet={'/static/images/projects/meownow/meownow-1@1x.png 1x, /static/images/projects/meownow/meownow-1@2x.png 2x'}
                     text={'The work you all did was great - and beyond the test being successful, the energy it created internally just seeing something that felt so real... it\'s been awesome thanks so much - really enjoyed working with you all.'}
                     clientName={'Laura Cannon'} clientTitle={'New Market & Strategies'}/>
                 <div className="container">
@@ -85,6 +91,10 @@ const StrategyPage = class extends React.Component {
                                      title={p.title} clientBrand={p.clientBrand} clientName={p.clientName}
                                      projectImageClass={p.projectImageClass}
                                      blobColour={p.blobColour}
+                                     srcSet={p.srcSet}
+                                     projectType={p.projectType}
+                                     href={p.href}
+                                     clientImage={p.clientImage}
                         />
                     ))}
                 </div>

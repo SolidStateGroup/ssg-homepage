@@ -12,23 +12,28 @@ import Card from "../../components/Card";
 const projects = [
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/tone-and-sculpt/phone.png',
+        projectImage: '/static/images/projects/tone-and-sculpt/tands-dashboard.png',
+        srcSet: '/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
+        clientImage: '/static/images/clients/tone-and-sculpt.svg',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
         title: 'Rebooting female fitness for Tone and Sculpt',
         projectImageClass: "project__image--short",
         blobColour: "#5CC2E1",
         tags: ['DESIGN', "MOBILE", "API"],
-
+        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/hailie',
         projectImage: '/static/images/projects/hailie/hailie-phone@1x.png',
+        srcSet: '/static/images/projects/hailie/hailie-phone@1x.png 1x, /static/images/projects/hailie/hailie-phone@2x.png 2x,',
+        clientImage: '/static/images/clients/hailie.svg',
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
         blobColour: "#FF715A",
         tags: ['DESIGN', 'MOBILE', "IOT"],
+        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
 
     },
 ];
@@ -78,8 +83,10 @@ const MobileAppsPage = class extends React.Component {
 
                 <ClientQuote
                     text={'Solid State Group are really easy to work with as they are open to feedback and provide regular updates to be able to take decisions on the fly. They came up with a brilliant idea at our hackathon and they\'ve taken on board the insights from our business to further refine the product later on.'}
-                    clientName={'Krissy Cela'} clientTitle={'Founder - Tone and Sculpt'}/>
-
+                    clientName={'Joe Comiskey'}
+                    image={'/static/images/projects/unilever/unilever-1@1x.png'}
+                    srcSet={'/static/images/projects/unilever/unilever-1@1x.png 1x, /static/images/projects/unilever/unilever-1@2x.png 2x'}
+                    clientTitle={'Head of eCommerce Capability, Innovation and Strategy, UK Unilever'}/>
 
                 <div className="container">
                     <h3 className="section__title--dark text-center mb-5 mt-5">Built with React Native</h3>
@@ -89,6 +96,10 @@ const MobileAppsPage = class extends React.Component {
                                      title={p.title} clientBrand={p.clientBrand} clientName={p.clientName}
                                      projectImageClass={p.projectImageClass}
                                      blobColour={p.blobColour}
+                                     srcSet={p.srcSet}
+                                     projectType={p.projectType}
+                                     href={p.href}
+                                     clientImage={p.clientImage}
                         />
                     ))}
                 </div>

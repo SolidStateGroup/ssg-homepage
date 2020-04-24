@@ -43,7 +43,7 @@ const ServiceItem = global.ServiceItem = class extends React.PureComponent {
                     {this.props.serviceLink ? (
 
                         <Link prefetch={false} href={this.props.serviceLink}>
-                            <ButtonText buttonText={'View more'} type={'button'} className="text-primary pt-sm-3 pl-0"/>
+                            <ButtonText buttonText={'Learn more'} type={'button'} className="text-primary pt-sm-3 pl-0"/>
                         </Link>
                     ) : (
                         null
@@ -51,7 +51,7 @@ const ServiceItem = global.ServiceItem = class extends React.PureComponent {
 
                 </div>
                 <div className="col-md-6 pr-0 pl-0 text-center">
-                    <img src={this.props.serviceImage || '/static/images/services/ux-design.jpg'}
+                    <img src={this.props.serviceImage || null}
                          srcSet={this.props.srcSet || null}
                          className={cn(this.props.imageClassName, ' img-fluid mt-md-0 mt-5')}
                     />

@@ -11,23 +11,37 @@ import ProjectItem from "../../components/ProjectItem";
 const projects = [
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/tone-and-sculpt/phone.png',
+        projectImage: '/static/images/projects/electron-trader/electron-trader-1@1x.png',
+        srcSet: '/static/images/projects/electron-trader/electron-trader-1@1x.png 1x, /static/images/projects/electron-trader/electron-trader-1@2x.png 2x,',
+        subTitle: 'Web Application',
+        href: '/projects/electron-trader',
+        title: 'Tapping into the future of the electricity market',
+        blobColour: "#5EABBA",
+        tags: ['DESIGN'],
+        projectType: ['UX design, ', 'UI design']
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        projectImage: '/static/images/projects/tone-and-sculpt/tands-dashboard.png',
+        srcSet: '/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
         title: 'Rebooting female fitness for Tone and Sculpt',
         projectImageClass: "project__image--short",
         blobColour: "#5CC2E1",
         tags: ['DESIGN', "MOBILE", "API"],
-
+        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
     },
     {
         ButtonComponent: ButtonPrimary,
         projectImage: '/static/images/projects/purely-capital/pc-summary-mac.png',
+        srcSet: '/static/images/projects/purely-capital/pc-summary-mac.png 1x, /static/images/projects/purely-capital/pc-summary-mac@2x.png 2x,',
         subTitle: 'Responsive Web Application',
         href: '/projects/purely-capital',
         title: 'The future of film and media financing',
         blobColour: "#D02D55",
         tags: ['DESIGN', "WEB"],
+        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Web App Development, ', 'API Development ']
 
     },
 ];
@@ -63,7 +77,9 @@ const DesignPage = class extends React.Component {
                     </div>
                 </div>
                 <div className="container">
-                    <ServiceItem className={'flex-row-reverse'}
+                    <ServiceItem serviceImage={'/static/images/services/ux-design.jpg'}
+                                 srcSet={'/static/images/services/ux-design.jpg 1x, /static/images/services/ux-design@2x.png 2x'}
+                                 className={'flex-row-reverse'}
                                  imageClassName={'img__shadow '}
                                  serviceListItem={
                                      <React.Fragment>
@@ -83,11 +99,12 @@ const DesignPage = class extends React.Component {
                                  'User experience has never been more important for digital products.'}/>
 
                     <ServiceItem
+                        srcSet={'/static/images/services/ui-components@1x.png 1x, /static/images/services/ui-components@2x.png 2x'}
                         serviceImage={'/static/images/services/ui-components@1x.png'}
                         serviceListItem={
                             <React.Fragment>
                                 <WideListItem listItemText={'User interface design'}
-                                                    listItemLink={'/'}/>
+                                              listItemLink={'/'}/>
                                 <WideListItem
                                     listItemText={'Branding'} listItemLink={'/'}/>
                                 <WideListItem
@@ -121,6 +138,8 @@ const DesignPage = class extends React.Component {
                         '\n'}/>
                 </div>
                 <ClientQuote
+                    image={'/static/images/projects/tone-and-sculpt/phone.png'}
+                    srcSet="/static/images/projects/tone-and-sculpt/phone.png 1x, /static/images/projects/tone-and-sculpt/phone@2x.png 2x"
                     text={'Solid State Group are really easy to work with as they are open to feedback and provide regular updates to be able to take decisions on the fly. They came up with a brilliant idea at our hackathon and they\'ve taken on board the insights from our business to further refine the product later on.'}
                     clientName={'Krissy Cela'} clientTitle={'Founder - Tone and Sculpt'}/>
 
@@ -132,6 +151,9 @@ const DesignPage = class extends React.Component {
                                      title={p.title} clientBrand={p.clientBrand} clientName={p.clientName}
                                      projectImageClass={p.projectImageClass}
                                      blobColour={p.blobColour}
+                                     srcSet={p.srcSet}
+                                     projectType={p.projectType}
+                                     href={p.href}
                         />
                     ))}
                 </div>

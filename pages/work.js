@@ -45,7 +45,6 @@ export const projects = [
         blobColour: "#D02D55",
         tags: ['DESIGN', "WEB"],
         projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Web App Development, ', 'API Development ']
-
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -58,7 +57,6 @@ export const projects = [
         blobColour: "#FF715A",
         tags: ['DESIGN', 'MOBILE', "IOT"],
         projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
-
     },
     {
         ButtonComponent: ButtonPrimary,
