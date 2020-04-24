@@ -19,7 +19,7 @@ const FooterLegal = class extends React.Component {
                   <div className="flex-row">
                       <div className="flex-column mr-auto">
                           <p className="footer__text mr-auto">&copy; Solid State Group 2020. Company number 4510864. <a
-                            href="/" className="footer__text">Privacy Policy</a></p>
+                            href="/privacy-policy" className="footer__text">Privacy Policy</a></p>
                       </div>
                       <div className="flex-column">
                           <ul className="list-inline">
