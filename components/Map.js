@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
 import { importCssPromise, importScriptPromise } from '../project/import-promise';
 import withScrollHelper from './withScrollHelper';
+import cn from "classnames";
+import Button from "./base/forms/Button";
 
 
 const center = [-0.08365, 51.52562];
@@ -29,7 +31,7 @@ const Map = class extends PureComponent {
 
     render() {
         return (
-            <div className="map-container" id="the-map">
+            <div className={cn(this.props.className, 'map-container')} id="the-map">
                 <div className="map-mask d-none d-sm-block"/>
                 <div className="map-overlay flex-column col-9 col-sm-3 ml-5 pr-0 pl-0">
                     <div className="offset-md-6">

@@ -33,9 +33,9 @@ const HomePage = class extends React.Component {
         const tl2 = new gsap.timeline();
         const tl3 = new gsap.timeline();
 
-        tl.from('#sectionOneAnimation', 0.5, { opacity: 0, ease: 'power1' });
-        tl2.from('#sectionTwoAnimation', 0.5,{  opacity: 0, ease: 'power1' });
-        tl3.from('#sectionThreeAnimation', 0.5,{ opacity: 0, ease: 'power1' });
+        tl.from('#sectionOneAnimation', 0.5, {  y: 50, oopacity: 0, ease: 'power1' });
+        tl2.from('#sectionTwoAnimation', 1,{   y: 50, oopacity: 0, ease: 'power1' });
+        tl3.from('#sectionThreeAnimation', 1,{  x: -50, opacity: 0, ease: 'power1' });
 
         const scene1 = new ScrollMagic.Scene({
             triggerElement: '#sectionOneTrigger',
@@ -61,9 +61,9 @@ const HomePage = class extends React.Component {
 
             .setTween(tl3);
 
-        // scene1.addIndicators({name: "scene 1", colorEnd: "red"});
-        // scene2.addIndicators({name: "scene 2", colorEnd: "purple"});
-        // scene3.addIndicators({name: "scene 3", colorEnd: "yellow"});
+        scene1.addIndicators({name: "scene 1", colorEnd: "red"});
+        scene2.addIndicators({name: "scene 2", colorEnd: "purple"});
+        scene3.addIndicators({name: "scene 3", colorEnd: "yellow"});
 
         controller.addScene([
             scene1,

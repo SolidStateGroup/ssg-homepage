@@ -3,6 +3,7 @@ import cn from 'classnames';
 import propTypes from 'prop-types';
 import Header from '../components/Header';
 import ProjectHeroPulse from '../components/animation/ProjectHeroPulse';
+import Button from "./base/forms/Button";
 
 const _propTypes = {
     className: propTypes.string,
@@ -17,7 +18,7 @@ const ProjectHero = global.ProjectHero = class extends React.PureComponent {
     static propTypes = _propTypes;
 
     render() {
-        const { children } = this.props;
+        const {children} = this.props;
         return (
             <React.Fragment>
                 <div
@@ -41,15 +42,25 @@ const ProjectHero = global.ProjectHero = class extends React.PureComponent {
                                         {this.props.ProjectServiceListItem}
                                     </ul>
 
-                                    <h6 className="text-uppercase title--light opacity--70 mt-5">Technology</h6>
-                                    <ul className="text-list list-inline mb-4">
-                                        {this.props.ProjectTechListItem}
-                                    </ul>
+                                    {this.props.ProjectTechListItem ? (
+                                        <React.Fragment>
+                                            <h6 className="text-uppercase title--light opacity--70 mt-5">Technology</h6>
+
+                                            <ul className="text-list list-inline mb-4">
+                                                {this.props.ProjectTechListItem}
+                                            </ul>
+                                        </React.Fragment>
+                                    ) : (
+                                        null
+                                    )}
+
+
                                 </div>
                                 <div className="offset-md-1 col-md-5 text-center">
-                                    <img src={this.props.projectImage || '/static/images/projects/tone-and-sculpt/tands-dashboard.png'}
-                                         srcSet={this.props.srcSet || null}
-                                         alt="Project Hero Image" className="img-fluid project-hero__image"/>
+                                    <img
+                                        src={this.props.projectImage || '/static/images/projects/tone-and-sculpt/tands-dashboard.png'}
+                                        srcSet={this.props.srcSet || null}
+                                        alt="Project Hero Image" className="img-fluid project-hero__image"/>
                                     <ProjectHeroPulse/>
                                 </div>
                             </div>

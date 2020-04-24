@@ -37,7 +37,7 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                                     src={this.props.imageOne || '/static/images/services/mobile-app-development.jpg'}
                                     srcSet={this.props.srcSetImageOne}
                                     alt="UX Design Whiteboard"
-                                    className={cn(this.props.imageOneclassName, "img-fluid")}
+                                    className={cn(this.props.imageOneclassName, "img-fluid mb-md-0 mb-5")}
                                 />
                             </div>
                         ) : (
