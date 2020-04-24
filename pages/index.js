@@ -16,20 +16,16 @@ import ProjectBlobImage from '../components/ProjectBlobImage';
 const HomePage = class extends React.Component {
     static displayName = 'HomePage';
 
-    constructor(props, context) {
-        super(props, context);
-        this.state = {};
-        // reference to the DOM node
-        this.myElement = null;
-        // reference to the animation
-        this.myTween = null;
+
+    constructor(props) {
+        super(props);
     }
 
-    componentDidMount = async () => {
+    componentDidMount() {
 
         gsap.timeline()
-            // .from('.hero__container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
-            // .from('.hero__title', { duration: 0.5, x: 10, opacity: 0, ease: 'power1' })
+            .from('.hero__container', { duration: 0.25, delay: .25, y: 10, opacity: 0, ease: 'power1' })
+            .from('.hero__title', { duration: 0.25, x: 10, opacity: 0, ease: 'power1' })
 
         const controller = new ScrollMagic.Controller();
 
@@ -37,34 +33,37 @@ const HomePage = class extends React.Component {
         const tl2 = new gsap.timeline();
         const tl3 = new gsap.timeline();
 
-        // tl.from('#sectionOneAnimation', 0.15, { y: 100, opacity: 0, ease: 'sine' }, 1);
-        // tl2.from('#sectionTwoAnimation', 0.25, {  opacity: 0, ease: 'power1' }, 1);
-        // tl3.from('#sectionThreeAnimation', 0.25, { opacity: 0, ease: 'power1' }, 1);
+        tl.from('#sectionOneAnimation', 0.5, { opacity: 0, ease: 'power1' });
+        tl2.from('#sectionTwoAnimation', 0.5,{  opacity: 0, ease: 'power1' });
+        tl3.from('#sectionThreeAnimation', 0.5,{ opacity: 0, ease: 'power1' });
 
         const scene1 = new ScrollMagic.Scene({
             triggerElement: '#sectionOneTrigger',
-            // offset: -425,
+            reverse: null,
+            triggerHook: 'onEnter',
         })
             .setTween(tl);
 
 
         const scene2 = new ScrollMagic.Scene({
             triggerElement: '#sectionTwoTrigger',
-            offset: -300,
+            reverse: null,
+            triggerHook: 'onEnter',
         })
 
             .setTween(tl2);
 
         const scene3 = new ScrollMagic.Scene({
             triggerElement: '#sectionThreeTrigger',
-            offset: -300,
+            reverse: null,
+            triggerHook: 'onEnter',
         })
 
             .setTween(tl3);
 
-        scene1.addIndicators({name: "scene 1", colorEnd: "red"});
-        scene2.addIndicators({name: "scene 2", colorEnd: "purple"});
-        scene3.addIndicators({name: "scene 3", colorEnd: "yellow"});
+        // scene1.addIndicators({name: "scene 1", colorEnd: "red"});
+        // scene2.addIndicators({name: "scene 2", colorEnd: "purple"});
+        // scene3.addIndicators({name: "scene 3", colorEnd: "yellow"});
 
         controller.addScene([
             scene1,
