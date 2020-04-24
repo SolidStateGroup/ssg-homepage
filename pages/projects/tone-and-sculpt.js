@@ -47,6 +47,7 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--tone-and-sculpt"
+                        srcSet={'/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -54,7 +55,9 @@ const TheComponent = class extends Component {
                             title={'UX Research'}
                             subTitle={'01 / DESIGN DISCOVERY'}
                             imageOne={'/static/images/services/ux-niall.jpg'}
+                            srcSetImageOne={'/static/images/services/ux-niall.jpg 1x, /static/images/services/ux-niall@2x.jpg 2x'}
                             imageTwo={'/static/images/services/ux-andy.jpg'}
+                            srcSetImageTwo={'/static/images/services/ux-andy.jpg 1x, /static/images/services/ux-andy@2x.jpg 2x'}
                             description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -73,6 +76,7 @@ const TheComponent = class extends Component {
                             title={'Prototyping'}
                             subTitle={'02 / WIREFRAMES & PROTOTYPES'}
                             imageOne={'/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg'}
+                            srcSetImageOne={'/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg 1x, /static/images/projects/tone-and-sculpt/macbook-pro-on-table@2x.jpg  2x'}
                             description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -90,6 +94,7 @@ const TheComponent = class extends Component {
                             title={'UI Components'}
                             subTitle={'03 / UI Design'}
                             imageUrl={'/static/images/projects/tone-and-sculpt/ui-components.png'}
+                            srcSet={'/static/images/projects/tone-and-sculpt/ui-components.png 1x, /static/images/projects/tone-and-sculpt/ui-components@2x.png 2x'}
                             imageAltText={'Tone and Sculpt UI'}
                         />
                     </div>
@@ -97,6 +102,7 @@ const TheComponent = class extends Component {
                     <ProjectFullImageSection
                         className="panel panel--gradient-blue"
                         imageUrl={'/static/images/projects/tone-and-sculpt/3-screen.png'}
+                        srcSet={'/static/images/projects/tone-and-sculpt/3-screen.png 1x, /static/images/projects/tone-and-sculpt/3-screen@2x.png 2x'}
                         imageAltText={'Tone and Sculpt UI'}
                     />
 
@@ -141,10 +147,13 @@ const TheComponent = class extends Component {
 
                     <div className="d-flex justify-content-center">
                         <img src="/static/images/projects/tone-and-sculpt/t&s-phones.jpg"
+                             srcSet="/static/images/projects/tone-and-sculpt/t&s-phones.jpg 1x, /static/images/projects/tone-and-sculpt/t&s-phones@2x.jpg 2x"
                              className="img-fluid img__quote-image" alt="tone and sculpt phones"/>
                     </div>
 
                     <ClientQuote
+                        image={'/static/images/projects/tone-and-sculpt/phone.png'}
+                        srcSet="/static/images/projects/tone-and-sculpt/phone.png 1x, /static/images/projects/tone-and-sculpt/phone@2x.png 2x"
                         text={'Solid State Group are really easy to work with as they are open to feedback and provide regular updates to be able to take decisions on the fly. They came up with a brilliant idea at our hackathon and they\'ve taken on board the insights from our business to further refine the product later on.'}
                         clientName={'Krissy Cela'} clientTitle={'Founder - Tone and Sculpt'}/>
 

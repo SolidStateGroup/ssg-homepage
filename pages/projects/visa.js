@@ -49,6 +49,7 @@ const TheComponent = class extends Component {
                         }
                         className="hero--visa"
                         projectImage={"/static/images/projects/visa/visa-1@1x.png"}
+                        srcSet={'/static/images/projects/visa/visa-1@1x.png 1x, /static/images/projects/visa/visa-1@2x.png 2x'}
                     />
 
                     <div className="container">

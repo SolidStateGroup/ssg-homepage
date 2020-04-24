@@ -46,6 +46,7 @@ const TheComponent = class extends Component {
                         }
                         className="hero--ba"
                         projectImage={"/static/images/projects/ba/ba-summary-ipad.png"}
+                        srcSet={'/static/images/projects/ba/ba-summary-ipad.png 1x, /static/images/projects/ba/ba-summary-ipad@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -70,6 +71,7 @@ const TheComponent = class extends Component {
                             title={'Fully implemented system'}
                             className="flex-row-reverse"
                             imageOne={'/static/images/projects/ba/ba-ipad.png'}
+                            srcSetImageOne={'/static/images/projects/ba/ba-ipad.png 1x, /static/images/projects/ba/ba-ipad@2x.png 2x'}
                             description={'Using Open Source tools, we had a prototype back-end working with end-to-end data after four weeks, and a fully implemented system in three months. We also developed a web-based front end that was available on web, mobile and tablet.\n' +
                             '\n' +
                             'The project was run using agile methods, with fortnightly updates given to the client as part of our sprint cycle.'}

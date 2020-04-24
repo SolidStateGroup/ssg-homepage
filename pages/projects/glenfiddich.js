@@ -46,6 +46,7 @@ const TheComponent = class extends Component {
                         }
                         className="hero--glenfiddich"
                         projectImage={"/static/images/projects/glenfiddich/glenfiddich-1@1x.png"}
+                        srcSet={'/static/images/projects/glenfiddich/glenfiddich-1@1x.png 1x, /static/images/projects/glenfiddich/glenfiddich-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -64,6 +65,7 @@ const TheComponent = class extends Component {
                         title={'Mobile APP UI Design'}
                         subTitle={'01 / Design'}
                         imageUrl={'/static/images/projects/glenfiddich/glenfiddich-phones@1x.png'}
+                        srcSet={'/static/images/projects/glenfiddich/glenfiddich-phones@1x.png 1x, /static/images/projects/glenfiddich/glenfiddich-phones@2x.png 2x'}
                         imageAltText={'Mobile AR'}
                     />
 

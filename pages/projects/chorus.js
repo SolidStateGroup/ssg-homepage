@@ -51,6 +51,7 @@ const TheComponent = class extends Component {
                         }
                         className="hero--chorus"
                         projectImage={"/static/images/projects/chorus/chorus-1@1x.png"}
+                        srcSet={'/static/images/projects/chorus/chorus-1@1x.png 1x, /static/images/projects/chorus/chorus-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -69,6 +70,7 @@ const TheComponent = class extends Component {
                             title={'Challenge'}
                             className="flex-row-reverse"
                             imageOne={'/static/images/projects/chorus/chorus-2@1x.png'}
+                            srcSetImageOne={'/static/images/projects/chorus/chorus-2@1x.png 1x, /static/images/projects/chorus/chorus-2@2x.png 2x'}
                             description={'Twitter have incredibly strict rules around automation so we attempted to ensure that limits and rules were not broken in order to make the product scalable. We built our own rules into the automation settings aswell as the API to stay well clear of the limits that might cause problems to users.'}
                         />
 
@@ -76,6 +78,7 @@ const TheComponent = class extends Component {
                             subTitle={'02 / Highlights'}
                             title={'Highlights'}
                             imageOne={'/static/images/projects/chorus/chorus-3@1x.png'}
+                            srcSetImageOne={'/static/images/projects/chorus/chorus-3@1x.png 1x, /static/images/projects/chorus/chorus-3@2x.png 2x'}
                             description={'We started with a rudimentary version of the app and asked a group of people from different sectors to use it and feedback. We then took the feedback to build out the roadmap and subsequently the product itself, adding the requested features and improving the UX for areas that weren\'t well understood by the test group. The feedback on the idea was universally good and we got real validation on the idea from startups very soon after launch.'}
                         />
 

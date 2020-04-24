@@ -45,6 +45,7 @@ const TheComponent = class extends Component {
                         }
                         className="hero--wfa"
                         projectImage={"/static/images/projects/wfa/wfa-1.png"}
+                        srcSet={'/static/images/projects/wfa/wfa-1.png 1x, /static/images/projects/wfa/wfa-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -65,6 +66,7 @@ const TheComponent = class extends Component {
                         title={'Visualising dynamic charts'}
                         subTitle={'03 / UI Design'}
                         imageUrl={'/static/images/projects/wfa/wfa-2.png'}
+                        srcSet={'/static/images/projects/wfa/wfa-2.png 1x, /static/images/projects/wfa/wfa-2@2x.png 2x'}
                         imageAltText={'WFA Dashboard'}
                     />
 

@@ -48,6 +48,7 @@ const TheComponent = class extends Component {
                         }
                         className="hero--hailie"
                         projectImage={"/static/images/projects/hailie/hailie-phone@1x.png"}
+                        srcSet={'/static/images/projects/hailie/hailie-phone@1x.png 1x, /static/images/projects/hailie/hailie-phone@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -56,6 +57,7 @@ const TheComponent = class extends Component {
                             className="flex-row-reverse"
                             subTitle={'Overview'}
                             imageOne={'/static/images/projects/hailie/hailie-sensor.png'}
+                            srcSetImageOne={'/static/images/projects/hailie/hailie-sensor.png 1x, /static/images/projects/hailie/hailie-sensor@2x.png 2x'}
                             description={'Our client had backend infrastructure and app developed over 4 years that couldn’t perform well at scale.\n'+'\n'+
                             'Building on our previous experience with Connected hardware, we built a mobile app and clinician dashboard which integrated with Adherium’s Bluetooth Smart Inhalers.\n' +
                             '\n' + 'Our quick turnaround had lead to us building and releasing the mobile and web portal to its first medical trial within 6 months. \n'}/>
@@ -68,6 +70,7 @@ const TheComponent = class extends Component {
                             subTitle={'Solution'}
                             title={'Mobile App'}
                             imageOne={'/static/images/projects/hailie/hailie-phones-1@1x.png'}
+                            srcSetImageOne={'/static/images/projects/hailie/hailie-phones-1@1x.png 1x, /static/images/projects/hailie/hailie-phones-1@2x.png 2x'}
                             description={'We developed a seamless onboarding experience, allowing users to easily pair their bluetooth inhaler sensors with the app.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -86,6 +89,7 @@ const TheComponent = class extends Component {
                             subTitle={'Solution'}
                             title={'Web Portal'}
                             imageOne={'/static/images/projects/hailie/hailie-iMac@1x.png'}
+                            srcSetImageOne={'/static/images/projects/hailie/hailie-iMac@1x.png 1x, /static/images/projects/hailie/hailie-iMac@2x.png 2x'}
                             description={'The web portal allows doctors to monitor their patients sensor usage, and prescribe medication and guidance where necessary.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -104,6 +108,7 @@ const TheComponent = class extends Component {
                             subTitle={'Overview'}
                             title={'Fluid onboarding'}
                             imageOne={'/static/images/projects/hailie/hailie-phones-2@1x.png'}
+                            srcSetImageOne={'/static/images/projects/hailie/hailie-phones-2@1x.png 1x, /static/images/projects/hailie/hailie-phones-2@2x.png 2x'}
                             description={'We developed a seamless onboarding experience, allowing users to easily pair their bluetooth inhaler sensors with the app.'}/>
 
                         <ProjectTechSection

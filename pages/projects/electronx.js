@@ -5,7 +5,7 @@ import ProjectHero from '../../components/ProjectHero';
 import {TextListItem, WideListItem} from '../../components/ListItem';
 import ClientQuote from '../../components/ClientQuote';
 import ProjectDetailSectionItem, {
-    ProjectColourBlockSection,
+    ProjectColourBlockSection, ProjectFullImageSection,
     ProjectTechSection,
     ProjectTextSection
 } from '../../components/ProjectDetailSectionItem';
@@ -50,6 +50,7 @@ const TheComponent = class extends Component {
                         }
                         className="hero--electronx"
                         projectImage={"/static/images/projects/electronx/Macbook_color@1x.png"}
+                        srcSet={'/static/images/projects/electronx/Macbook_color@1x.png 1x, /static/images/projects/electronx/Macbook_color@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -67,6 +68,7 @@ const TheComponent = class extends Component {
                             title={'Landing Page UI'}
                             subTitle={'01 / Landing Page'}
                             imageUrl={'/static/images/projects/electronx/electronx_landing-page.png'}
+                            srcSet={'/static/images/projects/electronx/electronx_landing-page.png 1x, /static/images/projects/electronx/electronx_landing-page@2x.png 2x'}
                             imageAltText={'Responsive UI'}
                         />
                         <ProjectTextSection
@@ -78,6 +80,7 @@ const TheComponent = class extends Component {
                         className={'panel--navy'}
                         title={'Fully Responsive'}
                         imageUrl={'/static/images/projects/electronx/electronx_mobile.png'}
+                        srcSet={'/static/images/projects/electronx/electronx_mobile.png 1x, /static/images/projects/electronx/electronx_mobile.png 2x'}
                         imageAltText={'Responsive UI'}
                     />
 

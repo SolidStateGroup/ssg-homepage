@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import propTypes from 'prop-types';
 import Page from '../../components/Page';
 import ProjectHero from '../../components/ProjectHero';
-import ProjectDetailSectionItem, { ProjectTechSection } from '../../components/ProjectDetailSectionItem';
-import { WideListItem, TextListItem } from '../../components/ListItem';
+import ProjectDetailSectionItem, {ProjectTechSection} from '../../components/ProjectDetailSectionItem';
+import {WideListItem, TextListItem} from '../../components/ListItem';
 import ClientQuote from '../../components/ClientQuote';
 import ProjectStatItem from '../../components/ProjectStatItem';
 import Footer from '../../components/Footer';
@@ -51,17 +51,20 @@ const TheComponent = class extends Component {
                         }
                         className="hero--purely-capital"
                         projectImage={"/static/images/projects/purely-capital/pc-summary-mac.png"}
+                        srcSet={'/static/images/projects/purely-capital/pc-summary-mac.png 1x, /static/images/projects/purely-capital/pc-summary-mac@2x.png 2x'}
                     />
 
                     <div className="container">
 
-                        <ProjectTextSection subTitle={'Challenge'} description={'To create an engaging, interactive experience to what is a considerably sterile subject matter. Large forms are always daunting for users and product designers so creating a unique and exciting initial experience was paramount for \'selling\' this product to new visitors.\n' +
-                        '\n'} />
+                        <ProjectTextSection subTitle={'Challenge'}
+                                            description={'To create an engaging, interactive experience to what is a considerably sterile subject matter. Large forms are always daunting for users and product designers so creating a unique and exciting initial experience was paramount for \'selling\' this product to new visitors.\n' +
+                                            '\n'}/>
 
                         <ProjectDetailSectionItem
                             subTitle={'Design Discovery'}
                             title={'UX Research'}
                             imageOne={'/static/images/projects/purely-capital/purely_wireframes.png'}
+                            srcSetImageOne={'/static/images/projects/purely-capital/purely_wireframes.png 1x, /static/images/projects/purely-capital/purely_wireframes@2x.png 2x'}
                             description={'We created a prototype that was built with Sketch and Invision. This let users move through the core workflows and indentified any pain points in the web app. '}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -79,6 +82,7 @@ const TheComponent = class extends Component {
                             className="flex-row-reverse"
                             title={'UI Design'}
                             imageOne={'/static/images/projects/purely-capital/purely_desktop-1.png'}
+                            srcSetImageOne={'/static/images/projects/purely-capital/purely_desktop-1.png 1x, /static/images/projects/purely-capital/purely_desktop-1@2x.png 2x'}
                             description={'We built on our wireframes with a high fidelity design language for the application process, as well as the dashboard interface.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -108,12 +112,15 @@ const TheComponent = class extends Component {
                                 </React.Fragment>}
                         />
 
-                        <ProjectTextSection subTitle={'Solution'} description={'We identified the first contact and the final quote as the areas that book ended the initial experience for the end user and ensured that we surprised and delighted the user, despite the rather labour intensive application process.' +
-                        '\n'} />
+                        <ProjectTextSection subTitle={'Solution'}
+                                            description={'We identified the first contact and the final quote as the areas that book ended the initial experience for the end user and ensured that we surprised and delighted the user, despite the rather labour intensive application process.' +
+                                            '\n'}/>
 
                         <div className="section">
                             <div className="container">
-                                <img className="img-fluid" src="/static/images/projects/purely-capital/purely-phones@1x.png" />
+                                <img className="img-fluid"
+                                     src="/static/images/projects/purely-capital/purely-phones@1x.png"
+                                     srcSet="/static/images/projects/purely-capital/purely-phones@1x.png 1x, /static/images/projects/purely-capital/purely-phones@2x.png 2x"/>
                             </div>
                         </div>
 
@@ -127,10 +134,12 @@ const TheComponent = class extends Component {
                                         <img src='/static/images/tech-icons/dark/java.svg' className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/GraphQL-dark.svg' className='img-responsive'/>
+                                        <img src='/static/images/tech-icons/dark/GraphQL-dark.svg'
+                                             className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center mb-md-0 mb-4">
-                                        <img src='/static/images/tech-icons/dark/Webpack.svg' className='img-responsive'/>
+                                        <img src='/static/images/tech-icons/dark/Webpack.svg'
+                                             className='img-responsive'/>
                                     </div>
                                 </React.Fragment>
                             }

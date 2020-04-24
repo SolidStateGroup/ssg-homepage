@@ -51,6 +51,7 @@ const TheComponent = class extends Component {
                         }
                         className="hero--hertz"
                         projectImage={"/static/images/projects/hertz/hertz-1@1x.png"}
+                        srcSet={'/static/images/projects/hertz/hertz-1@1x.png 1x, /static/images/projects/hertz/hertz-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -91,6 +92,7 @@ const TheComponent = class extends Component {
                             subTitle={'03 / Mobile App Design'}
                             title={'iOS mobile app'}
                             imageOne={'/static/images/projects/hertz/hertz-phones@1x.png'}
+                            srcSetImageOne={'/static/images/projects/hertz/hertz-phones@1x.png 1x, /static/images/projects/hertz/hertz-phones@2x.png 2x'}
                             description={'Another common peeve is having to fill up the car with petrol just before returning it. So, on the last day of the rental, the app asks if the customer would like to buy fuel from Hertz at a discount – saving them the hassle of having to find a petrol station on their way back. If they prefer to fill up on the way, the app guides them to the petrol station nearest to the Hertz office.\n' +
                             '\n' +
                             'Of course, nobody wants to be fiddling with their phone while driving. So we made sure that our app integrated seamlessly with AppLink to display all this information on both the iOS device and on the touchscreen built into the Ford vehicle.'}

@@ -51,6 +51,7 @@ const TheComponent = class extends Component {
                         }
                         className="hero--unilever"
                         projectImage={"/static/images/projects/unilever/unilever-1@1x.png"}
+                        srcSet={'/static/images/projects/unilever/unilever-1@1x.png 1x, /static/images/projects/unilever/unilever-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -85,6 +86,7 @@ const TheComponent = class extends Component {
                             title={'UX Wireframes'}
                             className="flex-row-reverse"
                             imageOne={'/static/images/projects/unilever/unilever-wireframes.png'}
+                            srcSetImageOne={'/static/images/projects/unilever/unilever-wireframes.png 1x, /static/images/projects/unilever/unilever-wireframes@2x.png 2x'}
                             description={'Summary of the fonts and colours used in the User Interface design of the application'}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -162,6 +164,7 @@ const TheComponent = class extends Component {
                         text={'Solid State Group are really easy to work with as they are open to feedback and provide regular updates to be able to take decisions on the fly. They came up with a brilliant idea at our hackathon and they\'ve taken on board the insights from our business to further refine the product later on.'}
                         clientName={'Joe Comiskey'}
                         image={'/static/images/projects/unilever/unilever-1@1x.png'}
+                        srcSet={'/static/images/projects/unilever/unilever-1@1x.png 1x, /static/images/projects/unilever/unilever-1@2x.png 2x'}
                         clientTitle={'Head of eCommerce Capability, Innovation and Strategy, UK Unilever'}/>
                     <ProjectNav/>
                 </Page>

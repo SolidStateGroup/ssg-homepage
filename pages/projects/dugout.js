@@ -51,6 +51,7 @@ const TheComponent = class extends Component {
                         }
                         className="hero--dugout"
                         projectImage={"/static/images/projects/dugout/dugout-1@1x.png"}
+                        srcSet={'/static/images/projects/dugout/dugout-1@1x.png 1x, /static/images/projects/dugout/dugout-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -74,6 +75,7 @@ const TheComponent = class extends Component {
                             title={'Challenge'}
                             className="flex-row-reverse"
                             imageOne={'/static/images/projects/dugout/dugout-2@1x.png'}
+                            srcSetImageOne={'/static/images/projects/dugout/dugout-2@1x.png 1x, /static/images/projects/dugout/dugout-2@2x.png 2x'}
                             description={'Dugout FC wanted to create the ultimate cross-platform fantasy football experience: a second-screen app for their users to enjoy while watching the English Premier League on TV.\n' +
                             '\n' +
                             'It had to be an engaging, social experience that users would log into every day and stick with for the whole season.\n' +
@@ -86,6 +88,7 @@ const TheComponent = class extends Component {
                             subTitle={'02 / Solution'}
                             title={'Solution'}
                             imageOne={'/static/images/projects/dugout/dugout-3@1x.png'}
+                            srcSetImageOne={'/static/images/projects/dugout/dugout-3@1x.png 1x, /static/images/projects/dugout/dugout-3@2x.png 2x'}
                             description={'We focused on the web app initially, racing to complete it in time for the client’s vital pre-season marketing window in July.\n' +
                             '\n' +
                             'Then we followed up with mobile apps for iOS and Android, building both simultaneously.\n' +
@@ -136,6 +139,7 @@ const TheComponent = class extends Component {
                         text={'“The guys at SSG were incredibly invested in the product and the build. Our product sees the majority of its traffic at the weekend when everyone is usually enjoying their free time, but the team spent their personal time ensuring the game was where it needed to be every weekend.”'}
                         clientName={'Andrew Mofatt'}
                         image={'/static/images/projects/dugout/dugout-1@1x.png'}
+                        srcSet={'/static/images/projects/dugout/dugout-1@1x.png 1x, /static/images/projects/dugout/dugout-1@2x.png 2x'}
                         clientTitle={'Founder, Dugout FC'}/>
                     <ProjectNav/>
                 </Page>

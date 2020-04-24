@@ -38,7 +38,7 @@ export const projects = [
         ButtonComponent: ButtonPrimary,
         projectImage: '/static/images/projects/purely-capital/pc-summary-mac.png',
         srcSet: '/static/images/projects/purely-capital/pc-summary-mac.png 1x, /static/images/projects/purely-capital/pc-summary-mac@2x.png 2x,',
-        clientImage: '/static/images/clients/purely-capital-dark.png',
+        clientImage: '/static/images/clients/purely-capital-dark@2x.png',
         subTitle: 'Responsive Web Application',
         href: '/projects/purely-capital',
         title: 'The future of film and media financing',

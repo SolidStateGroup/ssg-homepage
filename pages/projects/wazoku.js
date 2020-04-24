@@ -47,6 +47,7 @@ const TheComponent = class extends Component {
                         }
                         className="hero--wazoku"
                         projectImage={"/static/images/projects/wazoku/2.png"}
+                        srcSet={'/static/images/projects/wazoku/2.png 1x, /static/images/projects/wazoku/2@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -61,6 +62,7 @@ const TheComponent = class extends Component {
                             subTitle={'Solution'}
                             title={'React Native'}
                             imageOne={'/static/images/projects/wazoku/wazoku-phones@1x.png'}
+                            srcSetImageOne={'/static/images/projects/wazoku/wazoku-phones@1x.png 1x, /static/images/projects/wazoku/wazoku-phones@2x.png 2x'}
                             description={'Using React Native we built an app that was able to fully capture all of Wazoku’s requirements. Data encryption was achieved across all data including their custom SQLite databases. An offline queue solution was built that interlinked offline actions in such a way that any actions that depended on another one succeeding would be skipped if that action had failed for any particular reason while also generating an appropriate in-app notification.\n' +
                             '\n'}
                             ProjectServiceListItem={

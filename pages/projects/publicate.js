@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import Page from '../../components/Page';
 import ProjectHero from '../../components/ProjectHero';
-import ProjectDetailSectionItem, { ProjectTechSection } from '../../components/ProjectDetailSectionItem';
+import ProjectDetailSectionItem, {
+    ProjectFullImageSection,
+    ProjectTechSection
+} from '../../components/ProjectDetailSectionItem';
 import { WideListItem, TextListItem } from '../../components/ListItem';
 import ClientQuote from '../../components/ClientQuote';
 import ProjectStatItem from '../../components/ProjectStatItem';
@@ -48,6 +51,7 @@ const TheComponent = class extends Component {
                         }
                         className="hero--publicate"
                         projectImage={"/static/images/projects/publicate/publicate-summary-ipad@1x.png"}
+                        srcSet={'/static/images/projects/publicate/publicate-summary-ipad@1x.png 1x, /static/images/projects/publicate/publicate-summary-ipad@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -63,6 +67,7 @@ const TheComponent = class extends Component {
                         title={'Orientation Sensitive UI'}
                         subTitle={'01 / UI Design'}
                         imageUrl={'/static/images/projects/publicate/publicate-ipads@1x.png'}
+                        srcSet={'/static/images/projects/publicate/publicate-ipads@1x.png 1x, /static/images/projects/publicate/publicate-ipads@2x.png 2x'}
                         imageAltText={'Responsive UI'}
                     />
 
@@ -85,7 +90,7 @@ const TheComponent = class extends Component {
 
                     <div className="panel panel--gradient-publicate">
                         <div className="container text-center">
-                            <img src="/static/images/projects/publicate/publicate-ipad-swot@1x.png" alt={'Publicate UI'} className="img-fluid"/>
+                            <img src="/static/images/projects/publicate/publicate-ipad-swot@1x.png" srcSet={'/static/images/projects/publicate/publicate-ipad-swot@1x.png 1x, /static/images/projects/publicate/publicate-ipad-swot@2x.png 2x'} alt={'Publicate UI'} className="img-fluid"/>
                         </div>
                     </div>
                     <ProjectNav/>

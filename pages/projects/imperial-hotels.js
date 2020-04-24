@@ -51,6 +51,7 @@ const TheComponent = class extends Component {
                         }
                         className="hero--imperial"
                         projectImage={"/static/images/projects/imperial/imperial-1@1x.png"}
+                        srcSet={'/static/images/projects/imperial/imperial-1@1x.png 1x, /static/images/projects/imperial/imperial-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -71,6 +72,7 @@ const TheComponent = class extends Component {
                             title={'Challenge'}
                             className="flex-row-reverse"
                             imageOne={'/static/images/projects/imperial/imperial-2@1x.png'}
+                            srcSetImageOne={'/static/images/projects/imperial/imperial-2@1x.png 1x, /static/images/projects/imperial/imperial-2@2x.png 2x'}
                             description={'The biggest challenge was accessing and controlling the WiFi settings of mobile devices using React Native. This was done via a combination of accessing the local network hardware through the device’s network interface and also accessing multiple integrations to verify the device’s user and their booking details to prevent unauthorised access to the WiFi.\n' +
                             '\n' +
                             'A common misconception with React Native is comparing it to WebView based technologies such as PhoneGap which can often have technical and performance based limitations. Although React Native does a lot of the work upfront to developing native mobile apps, it is flexible enough for developers to integrate any native functionality may be required.\n' +
@@ -83,6 +85,7 @@ const TheComponent = class extends Component {
                             subTitle={'02 / Solution'}
                             title={'Solution'}
                             imageOne={'/static/images/projects/imperial/imperial-1@1x.png'}
+                            srcSetImageOne={'/static/images/projects/imperial/imperial-1@1x.png 1x, /static/images/projects/imperial/imperial-1@2x.png 2x'}
                             description={'Solid State’s agile approach allowed us to get the core features of the application developed as early as possible so that we could begin testing. We focused on the difficult functionality of controlling access to the WiFi settings first and put that into testing while the rest of the features were worked on. This allowed us to iterate on this functionality, raising possible issues as early as possible.\n' +
                             '\n' +
                             'As part of the solution, we also needed to interact with 3rd party APIs to verify the device users’ booking details and grant them access to the wifi. This interaction needed to be possible without having authenticated WiFi access, meaning more complications in the process, however, the solution was fairly simple and required whitelisting the relevant URLs with the Hotels’ network providers.'}

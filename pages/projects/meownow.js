@@ -4,7 +4,11 @@ import Page from '../../components/Page';
 import ProjectHero from '../../components/ProjectHero';
 import { TextListItem } from '../../components/ListItem';
 import ClientQuote from '../../components/ClientQuote';
-import ProjectDetailSectionItem, { ProjectTechSection, ProjectTextSection } from '../../components/ProjectDetailSectionItem';
+import ProjectDetailSectionItem, {
+    ProjectFullImageSection,
+    ProjectTechSection,
+    ProjectTextSection
+} from '../../components/ProjectDetailSectionItem';
 import Footer from '../../components/Footer';
 import ProjectNav from '../../components/ProjectNav';
 
@@ -49,6 +53,7 @@ const TheComponent = class extends Component {
                         }
                         className="hero--meownow"
                         projectImage={"/static/images/projects/meownow/meownow-1@1x.png"}
+                        srcSet={'/static/images/projects/meownow/meownow-1@1x.png 1x, /static/images/projects/meownow/meownow-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -63,12 +68,14 @@ const TheComponent = class extends Component {
                             title={'Design Language'}
                             subTitle={'01 / Style guide'}
                             imageUrl={'/static/images/projects/meownow/meownow_brand_board.png'}
-                            imageAltText={'Responsive UI'}
+                            srcSet={'/static/images/projects/meownow/meownow_brand_board.png 1x, /static/images/projects/meownow/meownow_brand_board@2x.png 2x'}
+                            imageAltText={'Meownow Brand'}
                         />
                         <ProjectFullImageSection
                             title={'Mobile UI'}
                             subTitle={'02 / Responsive Website'}
                             imageUrl={'/static/images/projects/meownow/tails_mobile.png'}
+                            srcSet={'/static/images/projects/meownow/tails_mobile.png 1x, /static/images/projects/meownow/tails_mobile@2x.png 2x'}
                             imageAltText={'Responsive UI'}
                         />
                         <ProjectTextSection
@@ -80,7 +87,7 @@ const TheComponent = class extends Component {
 
                     <div className="panel panel--gradient-meownow pb-0 text-center mb-5">
                         <div className="container">
-                            <img src="/static/images/projects/meownow/tails_mobile_multiple.png" alt={'Publicate UI'} className="img-fluid"/>
+                            <img src="/static/images/projects/meownow/tails_mobile_multiple.png" srcSet={'/static/images/projects/meownow/tails_mobile_multiple.png 1x, /static/images/projects/meownow/tails_mobile_multiple@2x.png 2x'} alt={'Publicate UI'} className="img-fluid"/>
                         </div>
                     </div>
 
@@ -88,18 +95,20 @@ const TheComponent = class extends Component {
                         subTitle={'04 / Ad Creative'}
                         title={'Display Ads'}
                         imageUrl={'/static/images/projects/meownow/tails_cat-ads@1x.png'}
+                        srcSet={'/static/images/projects/meownow/tails_cat-ads@1x.png 1x, /static/images/projects/meownow/tails_cat-ads@2x.png 2x'}
                         imageAltText={'Responsive UI'}
                     />
 
                     <div className="p-5 flex-row">
                         <div className="container text-center">
-                            <img src="/static/images/projects/meownow/meownow-facebook-1@1x.png" alt="Meownow Ad" className="pr-2"/>
-                            <img src="/static/images/projects/meownow/meownow-facebook-2@1x.png" alt="Meownow Ad 2" className="pl-2"/>
+                            <img src="/static/images/projects/meownow/meownow-facebook-1@1x.png" srcSet={'/static/images/projects/meownow/meownow-facebook-1@1x.png 1x, /static/images/projects/meownow/meownow-facebook-1@2x.png 2x'} alt="Meownow Ad" className="pr-2"/>
+                            <img src="/static/images/projects/meownow/meownow-facebook-2@1x.png" srcSet={'/static/images/projects/meownow/meownow-facebook-2@1x.png 1x, /static/images/projects/meownow/meownow-facebook-2@2x.png 2x'} alt="Meownow Ad 2" className="pl-2"/>
                         </div>
                     </div>
 
                     <ClientQuote
                         image={'/static/images/projects/meownow/meownow-1@1x.png'}
+                        srcSet={'/static/images/projects/meownow/meownow-1@1x.png 1x, /static/images/projects/meownow/meownow-1@2x.png 2x'}
                         text={'The work you all did was great - and beyond the test being successful, the energy it created internally just seeing something that felt so real... it\'s been awesome thanks so much - really enjoyed working with you all.'}
                         clientName={'Laura Cannon'} clientTitle={'New Market & Strategies'}/>
                     <ProjectNav/>
