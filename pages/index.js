@@ -25,7 +25,6 @@ const HomePage = class extends React.Component {
 
         gsap.timeline()
             .from('.hero__container', { duration: 0.25, delay: .25, y: 10, opacity: 0, ease: 'power1' })
-            // .from('.hero__title', { duration: 0.25, x: 10, opacity: 0, ease: 'power1' })
 
         const controller = new ScrollMagic.Controller();
 
