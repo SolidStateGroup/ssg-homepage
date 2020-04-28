@@ -17,6 +17,14 @@ const ProjectHero = global.ProjectHero = class extends React.PureComponent {
 
     static propTypes = _propTypes;
 
+    componentDidMount() {
+        gsap.timeline()
+            .from('.project-hero .container', {duration: 0.5, y: 10, opacity: 0, ease: 'power1'})
+            // .from('.hero__title', {duration: 0.25, x: 10, opacity: 0, ease: 'power1'})
+            // .from('.project-hero__image', {duration: 0.25, x: 10, opacity: 0, ease: 'power1'})
+            // .from('.project-hero__list-wrapper', {duration: 0.25, y: 10, opacity: 0, ease: 'power1'})
+    }
+
     render() {
         const {children} = this.props;
         return (
@@ -31,29 +39,29 @@ const ProjectHero = global.ProjectHero = class extends React.PureComponent {
                                     <h5 className="title--light mb-0">{this.props.projectType || 'iOS and Android Mobile App'}</h5>
                                     <h1 className="hero__title mb-4">{this.props.projectTitle || 'Rebooting female fitness for Tone and Sculpt'}</h1>
 
+                                    <div className="project-hero__list-wrapper">
+                                        <h6 className="text-uppercase title--light opacity--70 mt-5">Client</h6>
+                                        <ul className="text-list list-inline mb-4">
+                                            {this.props.ProjectClientName}
+                                        </ul>
 
-                                    <h6 className="text-uppercase title--light opacity--70 mt-5">Client</h6>
-                                    <ul className="text-list list-inline mb-4">
-                                        {this.props.ProjectClientName}
-                                    </ul>
+                                        <h6 className="text-uppercase title--light opacity--70 mt-5">Services</h6>
+                                        <ul className="text-list list-inline mb-4">
+                                            {this.props.ProjectServiceListItem}
+                                        </ul>
 
-                                    <h6 className="text-uppercase title--light opacity--70 mt-5">Services</h6>
-                                    <ul className="text-list list-inline mb-4">
-                                        {this.props.ProjectServiceListItem}
-                                    </ul>
+                                        {this.props.ProjectTechListItem ? (
+                                            <React.Fragment>
+                                                <h6 className="text-uppercase title--light opacity--70 mt-5">Technology</h6>
 
-                                    {this.props.ProjectTechListItem ? (
-                                        <React.Fragment>
-                                            <h6 className="text-uppercase title--light opacity--70 mt-5">Technology</h6>
-
-                                            <ul className="text-list list-inline mb-4">
-                                                {this.props.ProjectTechListItem}
-                                            </ul>
-                                        </React.Fragment>
-                                    ) : (
-                                        null
-                                    )}
-
+                                                <ul className="text-list list-inline mb-4">
+                                                    {this.props.ProjectTechListItem}
+                                                </ul>
+                                            </React.Fragment>
+                                        ) : (
+                                            null
+                                        )}
+                                    </div>
 
                                 </div>
                                 <div className="offset-md-1 col-md-5 text-center">

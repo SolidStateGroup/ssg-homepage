@@ -20,6 +20,9 @@ const ContactFormPage = class extends React.Component {
         grecaptcha.render(document.getElementById('recaptcha'), {
             sitekey: '6LdBxekUAAAAAL1yc56O0MSe02JLEGsADRiBqNMv',
         });
+        gsap.timeline()
+            .from('.col-md-8', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
+            .from('.contact-sidebar', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
     }
 
     toggle = (name) => {

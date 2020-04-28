@@ -109,7 +109,6 @@ const projects = [
         tags: ['DESIGN', 'MOBILE', "API"],
         projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
     },
-
 ];
 
 const PartnersPage = class extends React.Component {
@@ -120,6 +119,13 @@ const PartnersPage = class extends React.Component {
       this.state = {};
   }
 
+    componentDidMount() {
+        gsap.timeline()
+            .from('.hero__container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
+            .from('.panel--primary .container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
+
+    }
+
   render = () => {
       return (
           <Page title={Constants.titles.home} canonical="">
@@ -129,7 +135,9 @@ const PartnersPage = class extends React.Component {
                       <div className="flex-1 justify-content-start pt-5 pb-5 pl-0 pr-0 pt-md-5">
                           <div className="offset-lg-3 offset-md-1">
                               <h1 className="hero__title mb-4">We partner with the best consultancies on projects for the biggest brands</h1>
-                              <ButtonPrimary>Work with us</ButtonPrimary>
+                              <a href="mailto:matthew@solidstategroup.com">
+                                  <ButtonPrimary>Work with us</ButtonPrimary>
+                              </a>
                           </div>
                       </div>
                       <div className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down">

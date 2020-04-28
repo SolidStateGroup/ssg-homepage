@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import propTypes from 'prop-types';
 import Page from '../../components/Page';
 import ProjectHero from '../../components/ProjectHero';
@@ -20,6 +20,76 @@ const TheComponent = class extends Component {
         children: propTypes.node,
     };
 
+    // componentDidMount() {
+    //
+    //     const controller = new ScrollMagic.Controller();
+    //
+    //     const tl = new gsap.timeline();
+    //     const tl2 = new gsap.timeline();
+    //     const tl3 = new gsap.timeline();
+    //     const tl4 = new gsap.timeline();
+    //
+    //
+    //     tl.from('.sectionOneAnimation .title--project-section--small, .sectionOneAnimation .project-section-item__text', .75, {
+    //         y: 50,
+    //         opacity: 0,
+    //         ease: 'power1',
+    //         stagger: .25
+    //     });
+    //     tl2.from('.sectionTwoAnimation .img__shadow, .sectionTwoAnimation .col-md-5', .75, {
+    //         y: 50,
+    //         opacity: 0,
+    //         ease: 'power1',
+    //         stagger: .25
+    //     });
+    //     tl3.from('.sectionThreeAnimation', 1, {y: 50, opacity: 0, ease: 'power1'});
+    //     tl4.from('.sectionFourAnimation', 1, {y: 50, opacity: 0, ease: 'power1'});
+    //
+    //     const scene1 = new ScrollMagic.Scene({
+    //         triggerElement: '#sectionOneTrigger',
+    //         reverse: null,
+    //         triggerHook: 'onEnter',
+    //     })
+    //         .setTween(tl);
+    //
+    //
+    //     const scene2 = new ScrollMagic.Scene({
+    //         triggerElement: '#sectionTwoTrigger',
+    //         reverse: null,
+    //         triggerHook: 'onEnter',
+    //     })
+    //
+    //         .setTween(tl2);
+    //
+    //     const scene3 = new ScrollMagic.Scene({
+    //         triggerElement: '#sectionThreeTrigger',
+    //         reverse: null,
+    //         triggerHook: 'onEnter',
+    //     })
+    //
+    //         .setTween(tl3);
+    //
+    //     const scene4 = new ScrollMagic.Scene({
+    //         triggerElement: '#sectionFourTrigger',
+    //         reverse: null,
+    //         triggerHook: 'onEnter',
+    //     })
+    //
+    //         .setTween(tl4);
+    //
+    //     // scene1.addIndicators({name: "scene 1"});
+    //     // scene2.addIndicators({name: "scene 2"});
+    //     // scene3.addIndicators({name: "scene 3"});
+    //     // scene4.addIndicators({name: "scene 4"});
+    //
+    //     controller.addScene([
+    //         scene1,
+    //         scene2,
+    //         scene3,
+    //         scene4,
+    //     ]);
+    // }
+
     render() {
         return (
             <React.Fragment>
@@ -35,8 +105,7 @@ const TheComponent = class extends Component {
                         ProjectServiceListItem={
                             <React.Fragment>
                                 <TextListItem listItemText={'UX design,'}/>
-                                <TextListItem listItemText={'UI design,'}/>
-                                <TextListItem listItemText={'Frontend & Backend Development'}/>
+                                <TextListItem listItemText={'UI design'}/>
                             </React.Fragment>
                         }
                         className="hero--electron-dashboard"
@@ -45,51 +114,58 @@ const TheComponent = class extends Component {
                     />
 
                     <div className="container">
-                        <ProjectTextSection
-                            subTitle="00 / Overview"
-                            description={'Electron approached us to design and develop a marketing website for ElectronX, a platform aiming to solve the challenge of integrating millions of new energy assets into the existing energy industry. Electron use blockchain technology to avoid the trade-offs inherent in centralized platforms so to maximize the true value that can be released by this dramatic shift to renewables.'}
-                        />
+                        <div id="sectionOneTrigger">
+                            <ProjectTextSection
+                                className="sectionOneAnimation"
+                                subTitle="00 / Overview"
+                                description={'There are around a dozen wind generators in the Orkneys, they generate more electricity as the wind speed increases. There are about 120 small “assets” – such as storage heaters in people’s homes, when switched on they consume energy. When the generators are generating too much and there is too little local consumption, the network tells some of the wind generators to turn off (a “constraint”), which costs them money. \n' +
+                                '\n' +
+                                'What the underlying platform does is to allow the generators to offer to pay the assets to turn on, which would in turn lead to the network removing the constraint (so the generators get paid). The state of the system is determined once a minute (an “epoch”), based on messages it receives from both the assets and generators.\n'}
+                            />
 
-                        <ProjectTextSection
-                            subTitle="01 / Challenge"
-                            description={'The website needed to showcase Electrons proposed new security token, and visualize the concept of tapping into the future of the electricity market. We wanted to ensure the concepts discussed such as hi tech, energy grids and electricity were conveyed through the websites look and feel.'}
-                        />
+                            <ProjectTextSection
+                                className="sectionTwoAnimation"
+                                subTitle="01 / Challenge"
+                                description={'Electron needed us to significantly upgrade the UI of their PoC platform. They needed design ideas that would make the UI standout as a slick, professional, interface. '}
+                            />
+                        </div>
 
-                        <ProjectDetailSectionItem
-                            subTitle={'Solution'}
-                            imageOneclassName="img__shadow"
-                            title={'UI Components'}
-                            imageOne={'/static/images/projects/electron-trader/UI-Components---Light@1x.jpg'}
-                            srcSetImageOne={'/static/images/projects/electron-trader/UI-Components---Light@1x.jpg 1x, /static/images/projects/electron-trader/UI-Components---Light@2x.jpg 2x'}
-                            description={'We developed a seamless onboarding experience, allowing users to easily pair their bluetooth inhaler sensors with the app.'}
-                            ProjectServiceListItem={
-                                <React.Fragment>
-                                    <WideListItem
-                                        listItemText={'Mobile Development'}/>
-                                    <WideListItem
-                                        listItemText={'Backend Development'}/>
-                                    <WideListItem
-                                        listItemText={'API Migration'}/>
-                                    <WideListItem
-                                        listItemText={'Bluetooth Smart Inhaler Integration'}/>
-                                </React.Fragment>}
-                        />
-
-
-
-                        <ProjectFullImageSection
-                            title={'Dashboard UI'}
-                            subTitle={'01 / Dashboard'}
-                            imageUrl={'/static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@1x.jpg'}
-                            srcSet={'/static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@1x.jpg 1x, /static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@2x.jpg 2x'}
-                            imageAltText={'Dashboard UI'}
-                        />
-                        <ProjectTextSection
-                            subTitle="02 / Solution"
-                            description={'Using the ElectronX brand guidelines as a starting point, we designed and implemented a fully responsive marketing page for the future Security Token Offering. We used WebGL & Three.js for the energy animations and Greensock (GSAP) for page transitions. The result was a high fidelity beautiful website showcasing The marketplace for interactive energy.'} />
+                        <div id="sectionTwoTrigger">
+                            <ProjectDetailSectionItem
+                                className="sectionTwoAnimation"
+                                imageOneclassName="img__shadow"
+                                title={'UI Components'}
+                                imageOne={'/static/images/projects/electron-trader/UI-Components---Light@1x.jpg'}
+                                srcSetImageOne={'/static/images/projects/electron-trader/UI-Components---Light@1x.jpg 1x, /static/images/projects/electron-trader/UI-Components---Light@2x.jpg 2x'}
+                                ProjectServiceListItem={
+                                    <React.Fragment>
+                                        <WideListItem
+                                            listItemText={'UX Design'}/>
+                                        <WideListItem
+                                            listItemText={'UI Style Guide'}/>
+                                        <WideListItem
+                                            listItemText={'UI Design'}/>
+                                        <WideListItem
+                                            listItemText={'Data Visualisation'}/>
+                                    </React.Fragment>}
+                            />
+                        </div>
+                        <div id="sectionThreeTrigger">
+                            <ProjectFullImageSection
+                                className="sectionThreeAnimation"
+                                title={'Dashboard UI'}
+                                subTitle={'UI Design'}
+                                imageUrl={'/static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@1x.jpg'}
+                                srcSet={'/static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@1x.jpg 1x, /static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@2x.jpg 2x'}
+                                imageAltText={'Dashboard UI'}
+                            />
+                        </div>
                     </div>
 
-                    <div className="container">
+                    <div className="container sectionFourAnimation" id="sectionFourTrigger">
+                        <ProjectTextSection
+                            subTitle="02 / Solution"
+                            description={'Using the Electron brand guidelines as a starting point, we designed and implemented a  slick and professional dashboard interface. This included bespoke component design and data visualization.'}/>
                         <ProjectDetailSectionItem
                             subTitle={'03 / Design'}
                             title={'Fonts & Colours'}
@@ -97,7 +173,9 @@ const TheComponent = class extends Component {
                             imageOne={'/static/images/projects/wazoku/wazoku-font.png'}
                             description={'Summary of the fonts and colours used in the User Interface design of the application'}
                         />
-                        <ProjectColourBlockSection imageOne={'/static/images/projects/electronx/electronx_primary-colours.png'} imageTwo={'/static/images/projects/electronx/electronx_secondary-colours.png'} />
+                        <ProjectColourBlockSection
+                            imageOne={'/static/images/projects/electronx/electronx_primary-colours.png'}
+                            imageTwo={'/static/images/projects/electronx/electronx_secondary-colours.png'}/>
                     </div>
 
                     <ProjectNav/>

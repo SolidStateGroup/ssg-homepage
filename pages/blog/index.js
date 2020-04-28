@@ -36,6 +36,12 @@ const BlogPage = class extends Component {
         });
     }
 
+    componentDidMount() {
+        gsap.timeline()
+            .from('.hero__container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
+            .from('.blog', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
+    }
+
     render() {
         const blogItems = this.getBlog();
         const filteredBy = this.props.router.query.tag;

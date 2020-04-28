@@ -17,6 +17,76 @@ const TheComponent = class extends Component {
         children: propTypes.node,
     };
 
+    // componentDidMount() {
+    //
+    //     const controller = new ScrollMagic.Controller();
+    //
+    //     const tl = new gsap.timeline();
+    //     const tl2 = new gsap.timeline();
+    //     const tl3 = new gsap.timeline();
+    //     const tl4 = new gsap.timeline();
+    //
+    //
+    //     tl.from('.sectionOneAnimation .col-md-6, .sectionOneAnimation .col-md-5', .75, {
+    //         y: 50,
+    //         opacity: 0,
+    //         ease: 'power1',
+    //         stagger: .25
+    //     });
+    //     tl2.from('.sectionTwoAnimation .text-center', .75, {
+    //         y: 50,
+    //         opacity: 0,
+    //         ease: 'power1',
+    //         stagger: .25
+    //     });
+    //     tl3.from('.sectionThreeAnimation', 1, {y: 50, opacity: 0, ease: 'power1'});
+    //     tl4.from('.sectionFourAnimation', 1, {y: 50, opacity: 0, ease: 'power1'});
+    //
+    //     const scene1 = new ScrollMagic.Scene({
+    //         triggerElement: '#sectionOneTrigger',
+    //         reverse: null,
+    //         triggerHook: 'onEnter',
+    //     })
+    //         .setTween(tl);
+    //
+    //
+    //     const scene2 = new ScrollMagic.Scene({
+    //         triggerElement: '#sectionTwoTrigger',
+    //         reverse: null,
+    //         triggerHook: 'onEnter',
+    //     })
+    //
+    //         .setTween(tl2);
+    //
+    //     const scene3 = new ScrollMagic.Scene({
+    //         triggerElement: '#sectionThreeTrigger',
+    //         reverse: null,
+    //         triggerHook: 'onEnter',
+    //     })
+    //
+    //         .setTween(tl3);
+    //
+    //     const scene4 = new ScrollMagic.Scene({
+    //         triggerElement: '#sectionFourTrigger',
+    //         reverse: null,
+    //         triggerHook: 'onEnter',
+    //     })
+    //
+    //         .setTween(tl4);
+    //
+    //     // scene1.addIndicators({name: "scene 1"});
+    //     // scene2.addIndicators({name: "scene 2"});
+    //     // scene3.addIndicators({name: "scene 3"});
+    //     // scene4.addIndicators({name: "scene 4"});
+    //
+    //     controller.addScene([
+    //         scene1,
+    //         scene2,
+    //         scene3,
+    //         scene4,
+    //     ]);
+    // }
+
     render() {
         return (
             <React.Fragment>
@@ -50,7 +120,7 @@ const TheComponent = class extends Component {
                         srcSet={'/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x'}
                     />
 
-                    <div className="container">
+                    <div className="container sectionOneAnimation" id="sectionOneTrigger">
                         <ProjectDetailSectionItem
                             title={'UX Research'}
                             subTitle={'01 / DESIGN DISCOVERY'}
@@ -90,13 +160,16 @@ const TheComponent = class extends Component {
                                         listItemText={'Interaction Design'}/>
                                 </React.Fragment>}
                         />
-                        <ProjectFullImageSection
-                            title={'UI Components'}
-                            subTitle={'03 / UI Design'}
-                            imageUrl={'/static/images/projects/tone-and-sculpt/ui-components.png'}
-                            srcSet={'/static/images/projects/tone-and-sculpt/ui-components.png 1x, /static/images/projects/tone-and-sculpt/ui-components@2x.png 2x'}
-                            imageAltText={'Tone and Sculpt UI'}
-                        />
+                        <div id="sectionTwoTrigger">
+                            <ProjectFullImageSection
+                                className="sectionTwoAnimation"
+                                title={'UI Components'}
+                                subTitle={'03 / UI Design'}
+                                imageUrl={'/static/images/projects/tone-and-sculpt/ui-components.png'}
+                                srcSet={'/static/images/projects/tone-and-sculpt/ui-components.png 1x, /static/images/projects/tone-and-sculpt/ui-components@2x.png 2x'}
+                                imageAltText={'Tone and Sculpt UI'}
+                            />
+                        </div>
                     </div>
 
                     <ProjectFullImageSection
