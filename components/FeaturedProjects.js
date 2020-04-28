@@ -101,7 +101,9 @@ const FeaturedProjects = global.FeaturedProjects = class extends React.PureCompo
         return (
             <div className={cn(this.props.className, 'featured-projects')}>
                 <div className="container-fluid pl-md-0 pl-3">
-                    <h2 className="section__title section__title--dark mb-5 mt-5">Featured Projects</h2>
+                    <div className="col-md-8 pl-0 offset-sm-0">
+                        <h2 className="section__title section__title--dark mb-5 mt-5">Featured Projects</h2>
+                    </div>
                 </div>
                 <div className="featured-projects-container position-relative">
                     {

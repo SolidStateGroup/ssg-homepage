@@ -41,8 +41,6 @@
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/print";
 
-
-
 // Responsive visibility utilities
 
 @each $bp in map-keys($grid-breakpoints) {

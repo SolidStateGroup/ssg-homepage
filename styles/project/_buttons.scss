@@ -66,6 +66,10 @@ button{
     }
 }
 
+.clickable {
+    cursor: pointer;
+}
+
 @include media-breakpoint-down(lg) {
     .btn {
         &--hexagon {

@@ -1,3 +1,20 @@
+//Adding fonts
+@font-face {
+    font-family: 'Ilisarniq-Regular';
+    src: url('/static/fonts/Ilisarniq-Regular.otf');
+    font-display:swap;
+}
+@font-face {
+    font-family: 'Ilisarniq-Light';
+    src: url('/static/fonts/Ilisarniq-Light.otf');
+    font-display:swap;
+}
+@font-face {
+    font-family: 'Ilisarniq-Bold';
+    src: url('/static/fonts/Ilisarniq-Bold.otf');
+    font-display:swap;
+}
+
 *{
     font-family: Ilisarniq-Regular, sans-serif;
 }

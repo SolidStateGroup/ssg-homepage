@@ -310,7 +310,7 @@ const ServicesPage = class extends React.Component {
 
                 <div className="section">
                     <div className="container">
-                        <h2 className="section__title--dark">We <span className="text-primary">love</span> open source
+                        <h2 className="section__title--dark">We are <span className="text-primary">active</span> in the open source community
                         </h2>
                         <p>We work with a wide range of tools, with a focus on open source technologies.</p>
                         <div className="flex-row pt-5">

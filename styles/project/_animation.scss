@@ -46,16 +46,6 @@
     position: absolute;
 }
 
-.pulse-circle {
-
-    &__large {
-        //opacity: 0;
-        &--first {
-
-        }
-    }
-}
-
 .translatey-offset-down {
     transform: translateY(20px);
 }
@@ -77,25 +67,12 @@
     }
 }
 
-//
-//.project{
-//    &--featured{
-//          width: 0;
-//    }
-//}
 
 @include media-breakpoint-down(md) {
     .blob {
         &__image {
             max-width: 350px;
-        }
-    }
-}
-
-@include media-breakpoint-up(md) {
-    .blob {
-        &__image {
-            //position: absolute;
+            max-height: 350px;
         }
     }
 }

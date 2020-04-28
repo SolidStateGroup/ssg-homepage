@@ -9,8 +9,8 @@ import HertzLogo from '../components/ClientLogos/HertzLogo';
 import NHSLogo from '../components/ClientLogos/NHSLogo';
 import DisneyLogo from '../components/ClientLogos/DisneyLogo';
 import FeaturedProjects from '../components/FeaturedProjects';
-import { ListItemUnderlined } from '../components/ListItem';
-import { ButtonPrimary, ButtonText } from '../components/base/forms/Button';
+import {ListItemUnderlined} from '../components/ListItem';
+import {ButtonPrimary, ButtonText} from '../components/base/forms/Button';
 import ProjectBlobImage from '../components/ProjectBlobImage';
 
 const HomePage = class extends React.Component {
@@ -24,7 +24,7 @@ const HomePage = class extends React.Component {
     componentDidMount() {
 
         gsap.timeline()
-            .from('.hero__container', { duration: 0.5, delay: .25, y: 10, opacity: 0, ease: 'power1' })
+            .from('.hero__container', {duration: 0.5, delay: .25, y: 10, opacity: 0, ease: 'power1'})
 
         const controller = new ScrollMagic.Controller();
 
@@ -32,9 +32,9 @@ const HomePage = class extends React.Component {
         const tl2 = new gsap.timeline();
         const tl3 = new gsap.timeline();
 
-        tl.from('#sectionOneAnimation', 1, {  y: 50, oopacity: 0, ease: 'power1' });
-        tl2.from('#sectionTwoAnimation', 1,{   y: 50, oopacity: 0, ease: 'power1' });
-        tl3.from('#sectionThreeAnimation', 1,{  y: 50, opacity: 0, ease: 'power1' });
+        tl.from('#sectionOneAnimation', 1, {y: 50, oopacity: 0, ease: 'power1'});
+        tl2.from('#sectionTwoAnimation', 1, {y: 50, oopacity: 0, ease: 'power1'});
+        tl3.from('#sectionThreeAnimation', 1, {y: 50, opacity: 0, ease: 'power1'});
 
         const scene1 = new ScrollMagic.Scene({
             triggerElement: '#sectionOneTrigger',
@@ -88,7 +88,8 @@ const HomePage = class extends React.Component {
                             </div>
                         </div>
                         <div className="flex-1 flex-column align-items-center hidden-sm-down">
-                            <ProjectBlobImage blobColour="#69D9D3" src="/static/images/hero-devices@1x.png" srcSet="/static/images/hero-devices@2x.png 2x, /static/images/hero-devices@1x.png 1x" />
+                            <ProjectBlobImage blobColour="#69D9D3" src="/static/images/hero-devices@1x.png"
+                                              srcSet="/static/images/hero-devices@2x.png 2x, /static/images/hero-devices@1x.png 1x"/>
                         </div>
                     </div>
 
@@ -107,19 +108,19 @@ const HomePage = class extends React.Component {
                                             <p className="mb-0 mr-3 text text-center mb-3 mb-sm-0">Trusted by</p>
                                         </div>
                                         <div className="col-4 col-md-2 text-center hero__list--animated">
-                                            <BaLogo className="client-logo--large mb-3 mb-sm-0" fill="white" />
+                                            <BaLogo className="client-logo--large mb-3 mb-sm-0" fill="white"/>
                                         </div>
                                         <div className="col-4 col-md-2 text-center hero__list--animated">
-                                            <DisneyLogo className="client-logo--medium mb-3 mb-sm-0" fill="white" />
+                                            <DisneyLogo className="client-logo--medium mb-3 mb-sm-0" fill="white"/>
                                         </div>
                                         <div className="col-4 col-md-2 text-center hero__list--animated">
-                                            <UnileverLogo className="client-logo--small" fill="white" />
+                                            <UnileverLogo className="client-logo--small" fill="white"/>
                                         </div>
                                         <div className="col-4 col-md-2 text-center hero__list--animated">
-                                            <NHSLogo className="client-logo--medium" fill="white" />
+                                            <NHSLogo className="client-logo--medium" fill="white"/>
                                         </div>
                                         <div className="col-4 col-md-2 text-center hero__list--animated">
-                                            <HertzLogo className="client-logo--medium" fill="white" />
+                                            <HertzLogo className="client-logo--medium" fill="white"/>
                                         </div>
                                     </div>
                                 </div>
@@ -133,17 +134,22 @@ const HomePage = class extends React.Component {
                         <div className="col-md-8 pl-0 offset-md-2">
                             <h2 className="section__title section__title--dark">Services</h2>
                             <ul className="lined-list list-unstyled flex-row pl-sm-5 pl-0 mt-3">
-                                <ListItemUnderlined listItemText="UX & UI Design" listItemLink="/services/ux-design" />
-                                <ListItemUnderlined listItemText="Mobile App Development" listItemLink="/services/mobile-app-development" />
-                                <ListItemUnderlined listItemText="Responsive Web Apps" listItemLink="/services/responsive-web-apps" />
-                                <ListItemUnderlined listItemText="Branding" listItemLink="/services/branding" />
-                                <ListItemUnderlined listItemText="Strategy" listItemLink="/services/strategy" />
-                                <ListItemUnderlined listItemText="Prototyping" listItemLink="/services/ux-design" />
-                                <ListItemUnderlined listItemText="API Development" listItemLink="/services/api-development" />
-                                <ListItemUnderlined listItemText="Systems Integration" listItemLink="/services/systems-integration" />
+                                <ListItemUnderlined listItemText="UX & UI Design" listItemLink="/services/ux-design"/>
+                                <ListItemUnderlined listItemText="Mobile App Development"
+                                                    listItemLink="/services/mobile-app-development"/>
+                                <ListItemUnderlined listItemText="Responsive Web Apps"
+                                                    listItemLink="/services/responsive-web-apps"/>
+                                <ListItemUnderlined listItemText="Branding" listItemLink="/services/branding"/>
+                                <ListItemUnderlined listItemText="Strategy" listItemLink="/services/strategy"/>
+                                <ListItemUnderlined listItemText="Prototyping" listItemLink="/services/ux-design"/>
+                                <ListItemUnderlined listItemText="API Development"
+                                                    listItemLink="/services/api-development"/>
+                                <ListItemUnderlined listItemText="Systems Integration"
+                                                    listItemLink="/services/systems-integration"/>
                             </ul>
                             <Link prefetch={false} href="/services">
-                                <ButtonText buttonText="Explore our services" type="button" className="text-primary pl-sm-5 pl-0"/>
+                                <ButtonText buttonText="Explore our services" type="button"
+                                            className="text-primary pl-sm-5 pl-0"/>
                             </Link>
                         </div>
                     </div>
@@ -156,53 +162,62 @@ const HomePage = class extends React.Component {
                 </div>
 
                 <div className="section my-5" id="sectionThreeTrigger">
-                    <div className="container mt-md-5 mt-0" id="sectionThreeAnimation">
-                        <div>
+                    <div className="container-fluid pl-md-0 pl-3 pr-0" id="sectionThreeAnimation">
+                        <div className="col-md-8 pl-0 offset-md-2 mt-5">
                             <h2 className="section__title section__title--dark mb-5">Our process</h2>
                         </div>
-                        <div className="flex-row">
-                            <div className="col text-center">
-                                <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Research"/>
-                                <h5>Research</h5>
-                                <p>Gather insights about your product and market</p>
+                        <div className="container">
+                            <div className="flex-row">
+                                <div className="col text-center">
+                                    <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3"
+                                         alt="Research"/>
+                                    <h5>Research</h5>
+                                    <p>Gather insights about your product and market</p>
+                                </div>
+                                <div className="align-self-center mb5 hidden-sm-down">
+                                    <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                                </div>
+                                <div className="col text-center">
+                                    <img src="/static/images/svg-icons/design-blob-icon.svg" className="mb-3"
+                                         alt="Design"/>
+                                    <h5>Design</h5>
+                                    <p>Explore creative options to bring your vision to life</p>
+                                </div>
+                                <div className="align-self-center mb5 hidden-sm-down">
+                                    <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                                </div>
+                                <div className="col text-center">
+                                    <img src="/static/images/svg-icons/development-blob-icon.svg" className="mb-3"
+                                         alt="Development"/>
+                                    <h5>Development</h5>
+                                    <p>Rapid application development</p>
+                                </div>
+                                <div className="align-self-center mb5 hidden-sm-down">
+                                    <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                                </div>
+                                <div className="col text-center">
+                                    <img src="/static/images/svg-icons/release-blob-icon.svg" className="mb-3"
+                                         alt="Release"/>
+                                    <h5>Release</h5>
+                                    <p>Gather insights about your product and market</p>
+                                </div>
+                                <div className="align-self-center mb5 hidden-sm-down">
+                                    <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                                </div>
+                                <div className="col text-center">
+                                    <img src="/static/images/svg-icons/product-blob-icon.svg" className="mb-3"
+                                         alt="Product Development"/>
+                                    <h5>Product Development</h5>
+                                    <p>Gather insights about your product and market</p>
+                                </div>
                             </div>
-                            <div className="align-self-center mb5 hidden-sm-down">
-                                <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
-                            </div>
-                            <div className="col text-center">
-                                <img src="/static/images/svg-icons/design-blob-icon.svg" className="mb-3" alt="Design"/>
-                                <h5>Design</h5>
-                                <p>Explore creative options to bring your vision to life</p>
-                            </div>
-                            <div className="align-self-center mb5 hidden-sm-down">
-                                <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
-                            </div>
-                            <div className="col text-center">
-                                <img src="/static/images/svg-icons/development-blob-icon.svg" className="mb-3" alt="Development"/>
-                                <h5>Development</h5>
-                                <p>Rapid application development</p>
-                            </div>
-                            <div className="align-self-center mb5 hidden-sm-down">
-                                <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
-                            </div>
-                            <div className="col text-center">
-                                <img src="/static/images/svg-icons/release-blob-icon.svg" className="mb-3" alt="Release"/>
-                                <h5>Release</h5>
-                                <p>Gather insights about your product and market</p>
-                            </div>
-                            <div className="align-self-center mb5 hidden-sm-down">
-                                <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
-                            </div>
-                            <div className="col text-center">
-                                <img src="/static/images/svg-icons/product-blob-icon.svg" className="mb-3" alt="Product Development"/>
-                                <h5>Product Development</h5>
-                                <p>Gather insights about your product and market</p>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <img src="/static/images/svg-icons/arrow-gradient-left-turn.svg" className="img-fluid img__full-width pl-5 pr-5 hidden-sm-down" alt="Cycle GFX"/>
-                            <div className="text-center">
-                                <p className="mt-4 bold text-grey">We support you beyond MVP release and help you develop the product and achieve your business goals</p>
+                            <div className="col">
+                                <img src="/static/images/svg-icons/arrow-gradient-left-turn.svg"
+                                     className="img-fluid img__full-width pl-5 pr-5 hidden-sm-down" alt="Cycle GFX"/>
+                                <div className="text-center">
+                                    <p className="mt-4 bold text-grey">We support you beyond MVP release and help you
+                                        develop the product and achieve your business goals</p>
+                                </div>
                             </div>
                         </div>
                     </div>
