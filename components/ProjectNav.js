@@ -33,7 +33,7 @@ const ProjectNav = global.ProjectNav = class extends React.PureComponent {
           <div className="container">
                 <div className="flex-row mt-4 mb-4 project-bottom-nav justify-content-end">
                     <div className="project-bottom-nav__item">
-                        <h2 className="text-weight-black section__title--dark">Next Case Study</h2>
+                        <h2 className="section__title--dark">Next Case Study</h2>
                         <img src={clientImage} className="img-fluid project-bottom-nav__image mt-3" alt="Client logo"/>
                         <Link prefetch={false} href={href || "#"}>
                             <ButtonPrimary className="d-block mt-4">View Project

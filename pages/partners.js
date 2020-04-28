@@ -154,17 +154,17 @@ const PartnersPage = class extends React.Component {
               <div className="panel panel--primary">
                   <div className="container">
                       <div className="flex-row">
-                          <div className="col text-center hidden-sm-down">
+                          <div className="col-md-2 text-center hidden-sm-down">
                               <img src="/static/images/svg-icons/partner-icon.svg" alt="something"/>
                           </div>
-                          <div className="col col-lg-6 px-md-5 px-0">
+                          <div className="col-md-6 px-md-5 px-0">
                               <h3 className="panel__title">Interested in working with us?</h3>
                               <p className="panel__text light">Are you a large enterprise looking for a technology partner or a
                                 consultancy looking for experienced, highly skilled developers to supplement your
                                 team.
                               </p>
                           </div>
-                          <div className="col px-md-2 px-0">
+                          <div className="col-md-4 px-md-2 px-0">
                               <dl className="panel__list">
                                   <dt className="light">Call <span className="bold">Matthew</span> on</dt>
                                   <dd className="bold"><a className="text-white" href="tel:+442076137220"> +44 20 7613 7220</a></dd>
