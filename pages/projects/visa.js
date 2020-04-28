@@ -95,6 +95,23 @@ const TheComponent = class extends Component {
                         />
 
                         <ProjectTechSection
+                            techLogoItems={
+                                <React.Fragment>
+                                    <div className="col-4 text-center">
+                                        <img src='/static/images/tech-icons/dark/node.svg' alt="node"
+                                             className='img-responsive'/>
+                                    </div>
+                                    <div className="col-4 text-center">
+                                        <img src='/static/images/tech-icons/dark/Express.svg' alt="express"
+                                             className='img-responsive'/>
+                                    </div>
+                                    <div className="col-4 text-center">
+                                        <img src='/static/images/tech-icons/dark/Jade.svg'
+                                             alt="jade"
+                                             className='img-responsive'/>
+                                    </div>
+                                </React.Fragment>
+                            }
                             description={'Using React Native we were able to communicate with the Bluetooth inhalers both with shared code across Android and iOS, reducing the differences between them.  \n' +
                             '\n' +
                             'Within 6 months we were on both the iOS App Store and Google Play Store in time for a medical trial.\n'}

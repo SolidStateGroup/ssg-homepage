@@ -4,12 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
 import { ButtonPrimary, ButtonText } from '../components/base/forms/Button';
-import BaLogo from '../components/ClientLogos/BaLogo';
-import DisneyLogo from '../components/ClientLogos/DisneyLogo';
-import UnileverLogo from '../components/ClientLogos/UnileverLogo';
-import NHSLogo from '../components/ClientLogos/NHSLogo';
 import { ListItemUnderlined } from '../components/ListItem';
-import FeaturedProjects from '../components/FeaturedProjects';
 import ProjectItem from '../components/ProjectItem';
 
 const projects = [

@@ -23,75 +23,8 @@ const ServicesPage = class extends React.Component {
     componentDidMount() {
 
         gsap.timeline()
-            .from('.hero__container .col-md-6', { duration: 0.25, delay: .25, y: 10, opacity: 0, ease: 'power1' })
-            .from('.section--dark .container', { duration: 0.25, y: 10, opacity: 0, ease: 'power1' })
-
-        const controller = new ScrollMagic.Controller();
-
-        const tl = new gsap.timeline();
-        const tl2 = new gsap.timeline();
-        const tl3 = new gsap.timeline();
-        const tl4 = new gsap.timeline();
-
-
-        tl.from('.sectionOneAnimation .title--project-section--small, .sectionOneAnimation .project-section-item__text', .75, {
-            y: 50,
-            opacity: 0,
-            ease: 'power1',
-            stagger: .25
-        });
-        tl2.from('.sectionTwoAnimation .img__shadow, .sectionTwoAnimation .col-md-5', .75, {
-            y: 50,
-            opacity: 0,
-            ease: 'power1',
-            stagger: .25
-        });
-        tl3.from('.sectionThreeAnimation', 1, {y: 50, opacity: 0, ease: 'power1'});
-        tl4.from('.sectionFourAnimation', 1, {y: 50, opacity: 0, ease: 'power1'});
-
-        const scene1 = new ScrollMagic.Scene({
-            triggerElement: '#sectionOneTrigger',
-            reverse: null,
-            triggerHook: 'onEnter',
-        })
-            .setTween(tl);
-
-
-        const scene2 = new ScrollMagic.Scene({
-            triggerElement: '#sectionTwoTrigger',
-            reverse: null,
-            triggerHook: 'onEnter',
-        })
-
-            .setTween(tl2);
-
-        const scene3 = new ScrollMagic.Scene({
-            triggerElement: '#sectionThreeTrigger',
-            reverse: null,
-            triggerHook: 'onEnter',
-        })
-
-            .setTween(tl3);
-
-        const scene4 = new ScrollMagic.Scene({
-            triggerElement: '#sectionFourTrigger',
-            reverse: null,
-            triggerHook: 'onEnter',
-        })
-
-            .setTween(tl4);
-
-        // scene1.addIndicators({name: "scene 1"});
-        // scene2.addIndicators({name: "scene 2"});
-        // scene3.addIndicators({name: "scene 3"});
-        // scene4.addIndicators({name: "scene 4"});
-
-        controller.addScene([
-            scene1,
-            scene2,
-            scene3,
-            scene4,
-        ]);
+            .from('.hero__container .col-md-6', { duration: 0.5, delay: .25, y: 10, opacity: 0, ease: 'power1' })
+            .from('.section--dark .container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
     }
 
     render = () => {
@@ -322,7 +255,7 @@ const ServicesPage = class extends React.Component {
 
                         <ServiceItem
                           serviceImage="/static/images/projects/meownow/meownow_brand_board.png"
-                          srcSet="/static/images/projects/meownow/meownow_brand_board.png 1x, meownow_brand_board@2x.png 2x,"
+                          srcSet="/static/images/projects/meownow/meownow_brand_board.png 1x, /static/images/projects/meownow/meownow_brand_board@2x.png 2x,"
                           imageClassName="img__shadow "
                           subTitle="Branding"
                           serviceLink="/services/branding"

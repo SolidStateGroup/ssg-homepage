@@ -86,6 +86,27 @@ const TheComponent = class extends Component {
                         />
 
                         <ProjectTechSection
+                            techLogoItems={
+                                <React.Fragment>
+                                    <div className="col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/angular.svg' alt="angular"
+                                             className='img-responsive'/>
+                                    </div>
+                                    <div className="col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/java.svg' alt="java"
+                                             className='img-responsive'/>
+                                    </div>
+                                    <div className="col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/rabbit_mq.svg'
+                                             alt="rabbit mq"
+                                             className='img-responsive'/>
+                                    </div>
+                                    <div className="col-6 text-center mb-md-0 mb-4">
+                                        <img alt="webpack" src='/static/images/tech-icons/dark/redis.svg'
+                                             className='img-responsive'/>
+                                    </div>
+                                </React.Fragment>
+                            }
                             className="flex-row-reverse"
                             description={'We went on to design and build a business-facing API, allowing other applications in the airline to use our now real-time data. As well as flight information, we pulled in passenger flow data too.\n' +
                             '\n' +

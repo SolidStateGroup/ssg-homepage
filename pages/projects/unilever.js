@@ -137,6 +137,23 @@ const TheComponent = class extends Component {
                         <ProjectTechSection
                             subTitle={'05 / Development'}
                             className="flex-row-reverse"
+                            techLogoItems={
+                                <React.Fragment>
+                                    <div className="col-4 text-center">
+                                        <img src='/static/images/tech-icons/dark/react.svg' alt="react"
+                                             className='img-responsive'/>
+                                    </div>
+                                    <div className="col-4 text-center">
+                                        <img src='/static/images/tech-icons/dark/Google_Cloud_Platform.svg' alt="GCP"
+                                             className='img-responsive'/>
+                                    </div>
+                                    <div className="col-4 text-center">
+                                        <img src='/static/images/tech-icons/dark/Raspberry_Pi.svg'
+                                             alt="docker"
+                                             className='img-responsive'/>
+                                    </div>
+                                </React.Fragment>
+                            }
                             ProjectServiceListItem={
                                 <React.Fragment>
                                     <WideListItem

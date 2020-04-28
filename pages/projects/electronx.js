@@ -95,23 +95,6 @@ const TheComponent = class extends Component {
                         <ProjectColourBlockSection imageOne={'/static/images/projects/electronx/electronx_primary-colours.png'} imageTwo={'/static/images/projects/electronx/electronx_secondary-colours.png'} />
                     </div>
 
-                    <div className="container">
-                        <ProjectTechSection
-                            subTitle={'04 / Development'}
-                            ProjectServiceListItem={
-                                <React.Fragment>
-                                    <WideListItem
-                                        listItemText={'UX Design'}/>
-                                    <WideListItem
-                                        listItemText={'UI Design'}/>
-                                    <WideListItem
-                                        listItemText={'Mobile Development'}/>
-                                    <WideListItem
-                                        listItemText={'API Development'}/>
-                                </React.Fragment>}
-
-                        />
-                    </div>
                     <ProjectNav/>
                 </Page>
                 <Footer/>

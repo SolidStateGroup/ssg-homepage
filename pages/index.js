@@ -24,7 +24,7 @@ const HomePage = class extends React.Component {
     componentDidMount() {
 
         gsap.timeline()
-            .from('.hero__container', { duration: 0.25, delay: .25, y: 10, opacity: 0, ease: 'power1' })
+            .from('.hero__container', { duration: 0.5, delay: .25, y: 10, opacity: 0, ease: 'power1' })
 
         const controller = new ScrollMagic.Controller();
 
@@ -32,7 +32,7 @@ const HomePage = class extends React.Component {
         const tl2 = new gsap.timeline();
         const tl3 = new gsap.timeline();
 
-        tl.from('#sectionOneAnimation', 0.5, {  y: 50, oopacity: 0, ease: 'power1' });
+        tl.from('#sectionOneAnimation', 1, {  y: 50, oopacity: 0, ease: 'power1' });
         tl2.from('#sectionTwoAnimation', 1,{   y: 50, oopacity: 0, ease: 'power1' });
         tl3.from('#sectionThreeAnimation', 1,{  y: 50, opacity: 0, ease: 'power1' });
 
@@ -186,7 +186,7 @@ const HomePage = class extends React.Component {
                                 <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                             </div>
                             <div className="col text-center">
-                                <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Release"/>
+                                <img src="/static/images/svg-icons/release-blob-icon.svg" className="mb-3" alt="Release"/>
                                 <h5>Release</h5>
                                 <p>Gather insights about your product and market</p>
                             </div>
@@ -194,7 +194,7 @@ const HomePage = class extends React.Component {
                                 <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                             </div>
                             <div className="col text-center">
-                                <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3" alt="Product Development"/>
+                                <img src="/static/images/svg-icons/product-blob-icon.svg" className="mb-3" alt="Product Development"/>
                                 <h5>Product Development</h5>
                                 <p>Gather insights about your product and market</p>
                             </div>

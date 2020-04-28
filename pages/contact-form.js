@@ -62,9 +62,8 @@ const ContactFormPage = class extends React.Component {
                                               class={`btn--hexagon ${this.state.discipline ? 'active' : ''}`}
                                             />
                                         </div>
-
                                         <div className="col-lg-3 col-6">
-                                            <ButtonHexagon
+                                            <ButtonHexagonDesign
                                               onClick={() => this.toggle('DESIGN')}
                                               ButtonHexagonActive={`${this.state.discipline.DESIGN ? true : ''}`}
                                               buttonText="Design"
@@ -72,7 +71,7 @@ const ContactFormPage = class extends React.Component {
                                             />
                                         </div>
                                         <div className="col-lg-3 col-6">
-                                            <ButtonHexagon
+                                            <ButtonHexagonMobile
                                               onClick={() => this.toggle('MOBILE')}
                                               ButtonHexagonActive={`${this.state.discipline.MOBILE ? true : ''}`}
                                               buttonText="Mobile App Development"
@@ -81,7 +80,7 @@ const ContactFormPage = class extends React.Component {
                                         </div>
 
                                         <div className="col-lg-3 col-6">
-                                            <ButtonHexagon
+                                            <ButtonHexagonWeb
                                               onClick={() => this.toggle('WEB')}
                                               ButtonHexagonActive={`${this.state.discipline.WEB ? true : ''}`}
                                               buttonText="Web Development"

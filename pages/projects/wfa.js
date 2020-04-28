@@ -72,6 +72,27 @@ const TheComponent = class extends Component {
 
                     <div className="container">
                         <ProjectTechSection
+                            techLogoItems={
+                                <React.Fragment>
+                                    <div className="col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/react.svg' alt="react"
+                                             className='img-responsive'/>
+                                    </div>
+                                    <div className="col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/java.svg' alt="java"
+                                             className='img-responsive'/>
+                                    </div>
+                                    <div className="col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/docker.svg'
+                                             alt="docker"
+                                             className='img-responsive'/>
+                                    </div>
+                                    <div className="col-6 text-center mb-md-0 mb-4">
+                                        <img alt="webpack" src='/static/images/tech-icons/dark/Webpack.svg'
+                                             className='img-responsive'/>
+                                    </div>
+                                </React.Fragment>
+                            }
                             description={'We integrated with Typeform and Recharts, a composable charting library built on React components.'}
                             ProjectServiceListItem={
                                 <React.Fragment>

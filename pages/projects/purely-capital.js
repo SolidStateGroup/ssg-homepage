@@ -128,17 +128,19 @@ const TheComponent = class extends Component {
                             techLogoItems={
                                 <React.Fragment>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/react.svg' className='img-responsive'/>
+                                        <img src='/static/images/tech-icons/dark/react.svg' alt="react" className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/java.svg' className='img-responsive'/>
+                                        <img src='/static/images/tech-icons/dark/java.svg' alt="java" className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
                                         <img src='/static/images/tech-icons/dark/GraphQL-dark.svg'
+                                             alt="graph ql"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center mb-md-0 mb-4">
                                         <img src='/static/images/tech-icons/dark/Webpack.svg'
+                                             alt="webpack"
                                              className='img-responsive'/>
                                     </div>
                                 </React.Fragment>

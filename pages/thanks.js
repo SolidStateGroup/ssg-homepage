@@ -14,16 +14,6 @@ const ContactFormThanksPage = class extends React.Component {
         this.state = {};
     }
 
-    toggle = () => {
-        const buttonPressed = !this.state.buttonPressed;
-        if (buttonPressed) {
-            // fade in anim
-        } else {
-            // fade out anim
-        }
-        this.setState({buttonPressed});
-    }
-
     render = () => {
         return (
             <Page title={Constants.titles.contactFormThanksPage} canonical="contact-form">

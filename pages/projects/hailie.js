@@ -4,7 +4,10 @@ import Page from '../../components/Page';
 import Header from '../../components/Header';
 import ProjectHero from "../../components/ProjectHero";
 import {TextListItem, WideListItem} from "../../components/ListItem";
-import ProjectDetailSectionItem, {ProjectTechSection, ProjectTextSection} from "../../components/ProjectDetailSectionItem";
+import ProjectDetailSectionItem, {
+    ProjectTechSection,
+    ProjectTextSection
+} from "../../components/ProjectDetailSectionItem";
 import ProjectNav from "../../components/ProjectNav";
 import Footer from "../../components/Footer";
 
@@ -58,7 +61,7 @@ const TheComponent = class extends Component {
                             subTitle={'Overview'}
                             imageOne={'/static/images/projects/hailie/hailie-sensor.png'}
                             srcSetImageOne={'/static/images/projects/hailie/hailie-sensor.png 1x, /static/images/projects/hailie/hailie-sensor@2x.png 2x'}
-                            description={'Our client had backend infrastructure and app developed over 4 years that couldn’t perform well at scale.\n'+'\n'+
+                            description={'Our client had backend infrastructure and app developed over 4 years that couldn’t perform well at scale.\n' + '\n' +
                             'Building on our previous experience with Connected hardware, we built a mobile app and clinician dashboard which integrated with Adherium’s Bluetooth Smart Inhalers.\n' +
                             '\n' + 'Our quick turnaround had lead to us building and releasing the mobile and web portal to its first medical trial within 6 months. \n'}/>
 
@@ -101,7 +104,8 @@ const TheComponent = class extends Component {
 
                         />
 
-                       <ProjectFullVideoSection videoLink={'https://storage.cloud.google.com/ssg-website-images/video/Hailie%204k.mov'} />
+                        <ProjectFullVideoSection
+                            videoLink={'https://storage.cloud.google.com/ssg-website-images/video/Hailie%204k.mov'}/>
 
                         <ProjectDetailSectionItem
                             className="flex-row-reverse"
@@ -112,13 +116,34 @@ const TheComponent = class extends Component {
                             description={'We developed a seamless onboarding experience, allowing users to easily pair their bluetooth inhaler sensors with the app.'}/>
 
                         <ProjectTechSection
+                            techLogoItems={
+                                <React.Fragment>
+                                    <div className="col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/react.svg' alt="react"
+                                             className='img-responsive'/>
+                                    </div>
+                                    <div className="col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/java.svg' alt="java"
+                                             className='img-responsive'/>
+                                    </div>
+                                    <div className="col-6 text-center">
+                                        <img src='/static/images/tech-icons/dark/docker.svg'
+                                             alt="docker"
+                                             className='img-responsive'/>
+                                    </div>
+                                    <div className="col-6 text-center mb-md-0 mb-4">
+                                        <img alt="webpack" src='/static/images/tech-icons/dark/Webpack.svg'
+                                             className='img-responsive'/>
+                                    </div>
+                                </React.Fragment>
+                            }
                             className="flex-row-reverse"
                             description={'Using React Native we were able to communicate with the Bluetooth inhalers both with shared code across Android and iOS, reducing the differences between them.  \n' +
                             '\n' +
                             'Within 6 months we were on both the iOS App Store and Google Play Store in time for a medical trial.\n'}
                         />
                     </div>
-                  <ProjectNav/>
+                    <ProjectNav/>
                 </Page>
                 <Footer/>
             </React.Fragment>

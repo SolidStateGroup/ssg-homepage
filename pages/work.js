@@ -253,7 +253,7 @@ const WorkPage = class extends React.Component {
 
     componentDidMount() {
         gsap.timeline()
-            .from('.hero__container', { duration: 0.25, y: 10, opacity: 0, ease: 'power1' })
+            .from('.hero__container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
             .from('.hero__footer .content-nav__item', { x: 10, opacity: 0, stagger:.15, ease: 'power1' })
     }
 
