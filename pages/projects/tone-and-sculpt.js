@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import Page from '../../components/Page';
 import ProjectHero from '../../components/ProjectHero';
-import ProjectDetailSectionItem, { ProjectTechSection } from '../../components/ProjectDetailSectionItem';
+import ProjectDetailSectionItem, {
+    ProjectTechSection,
+    ProjectTextSection
+} from '../../components/ProjectDetailSectionItem';
 import { WideListItem, TextListItem } from '../../components/ListItem';
 import ClientQuote from '../../components/ClientQuote';
 import ProjectStatItem from '../../components/ProjectStatItem';
@@ -51,6 +54,13 @@ const TheComponent = class extends Component {
                     />
 
                     <div className="container sectionOneAnimation" id="sectionOneTrigger">
+                        <ProjectTextSection
+                            className="sectionOneAnimation"
+                            subTitle="00 / Overview"
+                            description={'\n' +
+                            'Tone and Sculpt came to us with the objective of making their app the leading womens fitness app in 6 months. Their existing app had lots of users, but they were unhappy with the quality of the experience they were getting. \n' +
+                            '\n'}
+                        />
                         <ProjectDetailSectionItem
                             title={'UX Research'}
                             subTitle={'01 / DESIGN DISCOVERY'}
@@ -58,7 +68,7 @@ const TheComponent = class extends Component {
                             srcSetImageOne={'/static/images/services/ux-niall.jpg 1x, /static/images/services/ux-niall@2x.jpg 2x'}
                             imageTwo={'/static/images/services/ux-andy.jpg'}
                             srcSetImageTwo={'/static/images/services/ux-andy.jpg 1x, /static/images/services/ux-andy@2x.jpg 2x'}
-                            description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
+                            description={'After consolidating feedback from their users, our high level objectives were to drastically improve the user experience and interface, to provide a more personalised and bespoke experience for users and make the app a truly social platform. '}
                             ProjectServiceListItem={
                                 <React.Fragment>
                                     <WideListItem
@@ -77,7 +87,8 @@ const TheComponent = class extends Component {
                             subTitle={'02 / WIREFRAMES & PROTOTYPES'}
                             imageOne={'/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg'}
                             srcSetImageOne={'/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg 1x, /static/images/projects/tone-and-sculpt/macbook-pro-on-table@2x.jpg  2x'}
-                            description={'We work with you to iterate on the various creative deliverables until you achieve your vision.'}
+                            description={'We undertook a detailed design discovery phase which consisted of competitor analysis, \n' +
+                            'user research, user journey maps and more to help contextualize our design decisions going forward.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
                                     <WideListItem
@@ -89,6 +100,11 @@ const TheComponent = class extends Component {
                                     <WideListItem
                                         listItemText={'Interaction Design'}/>
                                 </React.Fragment>}
+                        />
+                        <ProjectTextSection
+                            className="sectionOneAnimation"
+                            subTitle="03 / UI Design"
+                            description={'After iterating on wireframes, we began the UI design phase which resulted in a clean and professional interface, with improved navigation patterns and features for the user.'}
                         />
                         <div id="sectionTwoTrigger">
                             <ProjectFullImageSection
@@ -110,6 +126,11 @@ const TheComponent = class extends Component {
                     />
 
                     <div className="container">
+                        <ProjectTextSection
+                            className="sectionOneAnimation"
+                            subTitle="04 / Solution"
+                            description={'We successfully designed and developed the new Tone and Sculpt app over a period of three months, just in time for their relaunch in January 2020.'}
+                        />
                         <ProjectTechSection
                             techLogoItems={
                                 <React.Fragment>
@@ -151,29 +172,29 @@ const TheComponent = class extends Component {
                     <div className="d-flex justify-content-center">
                         <img src="/static/images/projects/tone-and-sculpt/t&s-phones.jpg"
                              srcSet="/static/images/projects/tone-and-sculpt/t&s-phones.jpg 1x, /static/images/projects/tone-and-sculpt/t&s-phones@2x.jpg 2x"
-                             className="img-fluid img__quote-image" alt="tone and sculpt phones"/>
+                             className="img-fluid mb-5" alt="tone and sculpt phones"/>
                     </div>
 
-                    <ClientQuote
-                        image={'/static/images/projects/tone-and-sculpt/phone.png'}
-                        srcSet="/static/images/projects/tone-and-sculpt/phone.png 1x, /static/images/projects/tone-and-sculpt/phone@2x.png 2x"
-                        text={'Solid State Group are really easy to work with as they are open to feedback and provide regular updates to be able to take decisions on the fly. They came up with a brilliant idea at our hackathon and they\'ve taken on board the insights from our business to further refine the product later on.'}
-                        clientName={'Krissy Cela'} clientTitle={'Founder - Tone and Sculpt'}/>
+                    {/*<ClientQuote*/}
+                    {/*    image={'/static/images/projects/tone-and-sculpt/phone.png'}*/}
+                    {/*    srcSet="/static/images/projects/tone-and-sculpt/phone.png 1x, /static/images/projects/tone-and-sculpt/phone@2x.png 2x"*/}
+                    {/*    text={'Solid State Group are really easy to work with as they are open to feedback and provide regular updates to be able to take decisions on the fly. They came up with a brilliant idea at our hackathon and they\'ve taken on board the insights from our business to further refine the product later on.'}*/}
+                    {/*    clientName={'Krissy Cela'} clientTitle={'Founder - Tone and Sculpt'}/>*/}
 
-                    <div className="section container mt-5 mb-5">
-                        <div className="row">
-                            <div className="col-md-4">
-                                <ProjectStatItem heading={'20,000+'}
-                                                 text={'New users subscribed and paying for the app'}/>
-                            </div>
-                            <div className="col-md-4">
-                                <ProjectStatItem/>
-                            </div>
-                            <div className="col-md-4">
-                                <ProjectStatItem/>
-                            </div>
-                        </div>
-                    </div>
+                    {/*<div className="section container mt-5 mb-5">*/}
+                    {/*    <div className="row">*/}
+                    {/*        <div className="col-md-4">*/}
+                    {/*            <ProjectStatItem heading={'20,000+'}*/}
+                    {/*                             text={'New users subscribed and paying for the app'}/>*/}
+                    {/*        </div>*/}
+                    {/*        <div className="col-md-4">*/}
+                    {/*            <ProjectStatItem/>*/}
+                    {/*        </div>*/}
+                    {/*        <div className="col-md-4">*/}
+                    {/*            <ProjectStatItem/>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                     <ProjectNav/>
                 </Page>
                 <Footer/>

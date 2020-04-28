@@ -112,7 +112,7 @@ export const ProjectTechSection = global.ProjectTechSection = class extends Reac
                 <div className="col-md-5 offset-md-1 pr-5">
                     <h6 className="title--project-section title--project-section--small text-grey mb0">{this.props.subTitle || 'Development'}</h6>
                     <h3>{this.props.title || 'Technology Used'}</h3>
-                    <p className="mt-4">{this.props.description || 'We work with you to iterate on the various creative deliverables until you achieve your vision.'}</p>
+                    <p className="mt-4">{this.props.description || null}</p>
 
                     {this.props.ProjectServiceListItem ? (
                         <div className="mt-5">
