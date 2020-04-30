@@ -3,15 +3,15 @@
   "rewrites": [
     {
       "source": "^/service-worker.js$",
-      "destination": "/_next/static/service-worker.js",
+      "destination": "/_next/static/service-worker.js"
     },
     {
       "source": "^/favicon.ico$",
-      "destination": "/static/images/favicon.ico",
+      "destination": "/static/images/favicon.ico"
     },
     {
       "source": "^/sitemap.xml",
-      "destination": "/static/sitemap.xml",
+      "destination": "/static/sitemap.xml"
     }
   ],
   "redirects": [
