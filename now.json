@@ -1,9 +1,5 @@
 {
   "version": 2,
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/404" }
-  ],
   "rewrites": [
     {
       "source": "^/service-worker.js$",
@@ -16,10 +12,21 @@
     {
       "source": "^/sitemap.xml",
       "destination": "/static/sitemap.xml"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/404"
     }
   ],
   "redirects": [
-    { "source": "/our-work", "destination": "/work" }
+    {
+      "source": "/our-work",
+      "destination": "/work"
+    }
   ],
   "builds": [
     {
