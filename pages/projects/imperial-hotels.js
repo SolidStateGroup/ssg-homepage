@@ -111,7 +111,6 @@ const TheComponent = class extends Component {
 
                         />
 
-
                         <ProjectTextSection
                             subTitle="00 / Overview"
                             description={'Developed bespoke bridging software in Java and Swift to access low level device functionality. Contributed to the React Native community. Helped Imperial Hotels track more information about their ‘guest’ users who haven’t made the bookings themselves and therefore haven’t provided any details previously'}

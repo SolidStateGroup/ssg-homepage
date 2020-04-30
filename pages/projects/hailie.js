@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import propTypes from 'prop-types';
 import Page from '../../components/Page';
-import Header from '../../components/Header';
 import ProjectHero from "../../components/ProjectHero";
 import {TextListItem, WideListItem} from "../../components/ListItem";
 import ProjectDetailSectionItem, {
@@ -42,11 +41,10 @@ const TheComponent = class extends Component {
                         }
                         ProjectTechListItem={
                             <React.Fragment>
-                                <TextListItem listItemText={'React Native,'}/>
-                                <TextListItem listItemText={'AWS,'}/>
-                                <TextListItem listItemText={'PostgreSQL,'}/>
-                                <TextListItem listItemText={'Django 2,'}/>
-                                <TextListItem listItemText={'Python'}/>
+                                <TextListItem listItemText={'React,'}/>
+                                <TextListItem listItemText={'Java,'}/>
+                                <TextListItem listItemText={'Docker,'}/>
+                                <TextListItem listItemText={'Webpack'}/>
                             </React.Fragment>
                         }
                         className="hero--hailie"

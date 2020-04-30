@@ -42,11 +42,10 @@ const TheComponent = class extends Component {
                         }
                         ProjectTechListItem={
                             <React.Fragment>
-                                <TextListItem listItemText={'React Native,'}/>
-                                <TextListItem listItemText={'AWS,'}/>
-                                <TextListItem listItemText={'PostgreSQL,'}/>
-                                <TextListItem listItemText={'Django 2,'}/>
-                                <TextListItem listItemText={'Python'}/>
+                                <TextListItem listItemText={'React,'}/>
+                                <TextListItem listItemText={'Java,'}/>
+                                <TextListItem listItemText={'Graph QL,'}/>
+                                <TextListItem listItemText={'Webpack'}/>
                             </React.Fragment>
                         }
                         className="hero--purely-capital"

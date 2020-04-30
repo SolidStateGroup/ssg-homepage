@@ -6,8 +6,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
 
-const ContactFormThanksPage = class extends React.Component {
-    static displayName = 'ContactFormThanksPage';
+const ErrorPage = class extends React.Component {
+    static displayName = 'ErrorPage';
 
     constructor(props, context) {
         super(props, context);
@@ -24,8 +24,8 @@ const ContactFormThanksPage = class extends React.Component {
                         <div className="row">
                             <div className="col-md-8">
                                 <div className="col-md-8 pl-0">
-                                    <h1 className="hero__title mb-4">Thanks for your email!</h1>
-                                    <p className="text-white">We'll be in touch shortly.</p>
+                                    <h1 className="hero__title mb-4">404</h1>
+                                    <p className="text-white">Oops, we couldn't find the page you were looking for...</p>
                                 </div>
                             </div>
 
@@ -58,4 +58,4 @@ const ContactFormThanksPage = class extends React.Component {
     };
 };
 
-export default ContactFormThanksPage;
+export default ErrorPage;
