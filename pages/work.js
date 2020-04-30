@@ -84,18 +84,6 @@ export const projects = [
     },
     {
         ButtonComponent: ButtonPrimary,
-        href: '/projects/patientview',
-        projectImage: '/static/images/projects/patientview/patientview-ipad@1x.png',
-        srcSet: '/static/images/projects/patientview/patientview-ipad@1x.png 1x, /static/images/projects/patientview/patientview-ipad@2x.png 2x,',
-        clientImage: '/static/images/clients/patientview.png',
-        subTitle: 'Secure online platform for clinicians and patients',
-        title: 'The doctor will see you now – wherever, whenever',
-        blobColour: "#368de8",
-        tags: ['API', "WEB"],
-        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
-    },
-    {
-        ButtonComponent: ButtonPrimary,
         href: '/projects/wfa',
         projectImage: '/static/images/projects/wfa/wfa-1.png',
         srcSet: '/static/images/projects/wfa/wfa-1.png 1x, /static/images/projects/wfa/wfa-1@2x.png 2x,',
@@ -215,18 +203,7 @@ export const projects = [
         tags: ['DESIGN', 'MOBILE', "WEB", "API"],
         projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development, ', "Web App Development "]
     },
-    {
-        ButtonComponent: ButtonPrimary,
-        href: '/projects/chorus',
-        projectImage: '/static/images/projects/chorus/chorus-1@1x.png',
-        srcSet: '/static/images/projects/chorus/chorus-1@1x.png 1x, /static/images/projects/chorus/chorus-1@2x.png 2x,',
-        clientImage: '/static/images/clients/chorus.png',
-        subTitle: 'Find the relevant conversations for your small business on Twitter',
-        title: 'Social marketing, made easy',
-        blobColour: "#46cd86",
-        tags: ['DESIGN', 'MOBILE', "API", "BRANDING"],
-        projectType: ['UX design, ', 'UI design, ', 'Branding, ', 'Mobile App Development, ', 'API Development ',]
-    },
+
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/imperial-hotels',
@@ -238,6 +215,30 @@ export const projects = [
         blobColour: "#f6921e",
         tags: ['DESIGN', 'MOBILE', "API"],
         projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ',]
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/patientview',
+        projectImage: '/static/images/projects/patientview/patientview-ipad@1x.png',
+        srcSet: '/static/images/projects/patientview/patientview-ipad@1x.png 1x, /static/images/projects/patientview/patientview-ipad@2x.png 2x,',
+        clientImage: '/static/images/clients/patientview.png',
+        subTitle: 'Secure online platform for clinicians and patients',
+        title: 'The doctor will see you now – wherever, whenever',
+        blobColour: "#368de8",
+        tags: ['API', "WEB"],
+        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        href: '/projects/chorus',
+        projectImage: '/static/images/projects/chorus/chorus-1@1x.png',
+        srcSet: '/static/images/projects/chorus/chorus-1@1x.png 1x, /static/images/projects/chorus/chorus-1@2x.png 2x,',
+        clientImage: '/static/images/clients/chorus.png',
+        subTitle: 'Find the relevant conversations for your small business on Twitter',
+        title: 'Social marketing, made easy',
+        blobColour: "#46cd86",
+        tags: ['DESIGN', 'MOBILE', "API", "BRANDING"],
+        projectType: ['UX design, ', 'UI design, ', 'Branding, ', 'Mobile App Development, ', 'API Development ',]
     },
 ];
 

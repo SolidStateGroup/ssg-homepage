@@ -166,7 +166,7 @@ const HomePage = class extends React.Component {
                         <div className="col-md-8 pl-0 offset-md-2 mt-5">
                             <h2 className="section__title section__title--dark mb-5">Our process</h2>
                         </div>
-                        <div className="container">
+                        <div className="col-md-8 pl-0 offset-md-2">
                             <div className="flex-row">
                                 <div className="col text-center">
                                     <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3"
@@ -199,7 +199,7 @@ const HomePage = class extends React.Component {
                                     <img src="/static/images/svg-icons/release-blob-icon.svg" className="mb-3"
                                          alt="Release"/>
                                     <h5>Release</h5>
-                                    <p>Gather insights about your product and market</p>
+                                    <p>Release your product to market</p>
                                 </div>
                                 <div className="align-self-center mb5 hidden-sm-down">
                                     <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
@@ -208,15 +208,14 @@ const HomePage = class extends React.Component {
                                     <img src="/static/images/svg-icons/product-blob-icon.svg" className="mb-3"
                                          alt="Product Development"/>
                                     <h5>Product Development</h5>
-                                    <p>Gather insights about your product and market</p>
+                                    <p>Iterate on the product</p>
                                 </div>
                             </div>
                             <div className="col">
                                 <img src="/static/images/svg-icons/arrow-gradient-left-turn.svg"
                                      className="img-fluid img__full-width pl-5 pr-5 hidden-sm-down" alt="Cycle GFX"/>
                                 <div className="text-center">
-                                    <p className="mt-4 bold text-grey">We support you beyond MVP release and help you
-                                        develop the product and achieve your business goals</p>
+                                    <p className="mt-4 bold text-grey">We repeat this process to help you achieve your business goals</p>
                                 </div>
                             </div>
                         </div>
