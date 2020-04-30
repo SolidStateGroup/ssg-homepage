@@ -58,6 +58,16 @@
             text-decoration: none;
         }
     }
+    &--contact {
+        .contact-icon {
+            transition: all .25s ease-in;
+        }
+        &:hover {
+            .contact-icon {
+                fill: $brand-primary;
+            }
+        }
+    }
 }
 
 .mobile-menu {

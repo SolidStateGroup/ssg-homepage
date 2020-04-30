@@ -43,14 +43,6 @@ const TheComponent = class extends Component {
                                 <TextListItem listItemText={'Responsive website'}/>
                             </React.Fragment>
                         }
-                        ProjectTechListItem={
-                            <React.Fragment>
-                                <TextListItem listItemText={'React Native,'}/>
-                                <TextListItem listItemText={'Java,'}/>
-                                <TextListItem listItemText={'Webpack,'}/>
-                                <TextListItem listItemText={'Docker,'}/>
-                            </React.Fragment>
-                        }
                         className="hero--meownow"
                         projectImage={"/static/images/projects/meownow/meownow-1@1x.png"}
                         srcSet={'/static/images/projects/meownow/meownow-1@1x.png 1x, /static/images/projects/meownow/meownow-1@2x.png 2x'}

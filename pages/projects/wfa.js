@@ -40,7 +40,7 @@ const TheComponent = class extends Component {
                                 <TextListItem listItemText={'React,'}/>
                                 <TextListItem listItemText={'Java,'}/>
                                 <TextListItem listItemText={'Webpack,'}/>
-                                <TextListItem listItemText={'Docker,'}/>
+                                <TextListItem listItemText={'Docker'}/>
                             </React.Fragment>
                         }
                         className="hero--wfa"

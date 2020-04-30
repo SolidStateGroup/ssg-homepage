@@ -43,10 +43,10 @@ const TheComponent = class extends Component {
                         }
                         ProjectTechListItem={
                             <React.Fragment>
-                                <TextListItem listItemText={'Java,'}/>
-                                <TextListItem listItemText={'Webpack,'}/>
+                                <TextListItem listItemText={'React Native,'}/>
+                                <TextListItem listItemText={'AWS,'}/>
                                 <TextListItem listItemText={'Docker,'}/>
-                                <TextListItem listItemText={'Greensock Animation Platform'}/>
+                                <TextListItem listItemText={'Webpack'}/>
                             </React.Fragment>
                         }
                         className="hero--chorus"

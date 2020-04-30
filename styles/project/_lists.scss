@@ -1,6 +1,5 @@
 .lined-list {
   display: flex;
-
   &__item {
     color: $brandNavySecondary;
     padding: $padding-base 0;
@@ -10,7 +9,7 @@
 
     &__link {
       color: $brandNavySecondary;
-
+      transition: all .25s ease-in;
       &:hover {
         color: $brandNavySecondary;
         text-decoration: none;
@@ -19,10 +18,9 @@
 
     &:hover {
       border-bottom: 1px solid $brand-primary;
-      @extend .bold;
-
+      transition: all .25s ease-in;
       .lined-list__item__link {
-        @extend .bold;
+        padding-left: .5em;
       }
     }
   }

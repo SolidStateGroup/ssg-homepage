@@ -43,10 +43,10 @@ const TheComponent = class extends Component {
                         }
                         ProjectTechListItem={
                             <React.Fragment>
-                                <TextListItem listItemText={'React Native,'}/>
+                                <TextListItem listItemText={'React Native'}/>
                                 <TextListItem listItemText={'Java,'}/>
                                 <TextListItem listItemText={'Webpack,'}/>
-                                <TextListItem listItemText={'Docker,'}/>
+                                <TextListItem listItemText={'Docker'}/>
                             </React.Fragment>
                         }
                         className="hero--publicate"

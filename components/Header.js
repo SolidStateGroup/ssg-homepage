@@ -79,8 +79,17 @@ class Header extends PureComponent {
                                 </li>
                             </ul>
                             <ul className="navbar-nav ml-auto">
-                                <li className="nav-item desktop-menu__item">
-                                    <img alt="Email" src={require('../static/images/svg-icons/mail-icon.svg')} className="mr-2" />
+                                <li className="nav-item nav-item--contact desktop-menu__item">
+                                    <svg className="mr-2" width={23} height={17} viewBox="0 0 23 17">
+                                        <title>{"Group"}</title>
+                                        <path
+                                            className="contact-icon"
+                                            d="M20.045 0H2.074A2.074 2.074 0 000 2.074v12.441c0 1.145.929 2.074 2.074 2.074h17.97a2.074 2.074 0 002.074-2.074V2.074A2.074 2.074 0 0020.045 0zM2.074 1.382h17.97c.381 0 .692.311.692.692v1.788c-.946.8-2.298 1.9-6.506 5.24-.73.58-2.169 1.974-3.17 1.957-1.003.017-2.446-1.378-3.172-1.957-4.207-3.34-5.56-4.44-6.506-5.24V2.074c0-.38.311-.692.692-.692zm17.97 13.824H2.075a.693.693 0 01-.692-.69V5.658c.985.808 2.54 2.057 5.647 4.523.885.709 2.45 2.268 4.03 2.26 1.573.013 3.124-1.534 4.03-2.26 3.107-2.466 4.662-3.715 5.647-4.523v8.856c0 .38-.311.691-.691.691z"
+                                            fill="#FFF"
+                                            fillRule="nonzero"
+                                        />
+                                    </svg>
+
                                     <ActiveLink prefetch={false} href="/contact-form">
                                         <a className="nav-item__link">Contact us</a>
                                     </ActiveLink>

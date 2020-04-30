@@ -40,11 +40,9 @@ const TheComponent = class extends Component {
                         }
                         ProjectTechListItem={
                             <React.Fragment>
-                                <TextListItem listItemText={'React Native,'}/>
-                                <TextListItem listItemText={'AWS,'}/>
-                                <TextListItem listItemText={'PostgreSQL,'}/>
-                                <TextListItem listItemText={'Django 2,'}/>
-                                <TextListItem listItemText={'Python'}/>
+                                <TextListItem listItemText={'Node,'}/>
+                                <TextListItem listItemText={'Express,'}/>
+                                <TextListItem listItemText={'Jade'}/>
                             </React.Fragment>
                         }
                         className="hero--visa"
