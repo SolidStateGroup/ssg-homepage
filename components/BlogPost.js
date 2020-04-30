@@ -78,7 +78,7 @@ export default class BlogPost extends Component {
         } = parseMarkdown(this.props.source);
         return (
             <>
-                <Header/>
+                <Header className="p-4"/>
                 <div className="blog pb-5">
                     {this.renderSEOTags()}
                     <div className="hero mx-0 pt-4 pr-4 pb-0 pl-4">
