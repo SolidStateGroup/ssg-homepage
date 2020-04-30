@@ -12,11 +12,6 @@
     {
       "source": "^/sitemap.xml",
       "destination": "/static/sitemap.xml"
-    },
-    {
-      "src": "/(.*)",
-      "status": 404,
-      "dest": "/404"
     }
   ],
   "redirects": [
