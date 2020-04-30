@@ -14,9 +14,6 @@
       "destination": "/static/sitemap.xml"
     },
     {
-      "handle": "filesystem"
-    },
-    {
       "src": "/(.*)",
       "status": 404,
       "dest": "/404"
