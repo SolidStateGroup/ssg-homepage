@@ -38,6 +38,90 @@
     {
       "source": "/2018/11/26/2018/We-Tested-Three-Prototyping-Tools-For-Mobile-Design-in-2018-Here's-What-We-Learned/",
       "destination": "/blog/2018/nov/we-tested-three-prototyping-tools-for-mobile-design-in-2018-heres-what-we-learned"
+    },
+    {
+      "source": "/2018/11/15/2018/The-Sustainable-Change-Roadmap-By-PPL/",
+      "destination": "/blog/2018/nov/the-sustainable-change-roadmap-by-ppl"
+    },
+    {
+      "source": "/2018/11/03/2018/How-I-Did-It---What-To-Know-When-You-Leave-A-Corporate-To-Found-A-Tech-Startup/",
+      "destination": "/blog/2018/nov/how-i-did-it-what-to-know-when-you-leave-a-corporate-to-found-a-tech-startup"
+    },
+    {
+      "source": "/2018/10/17/2018/How-I-Did-It---I-Left-Procter-And-Gamble-To-Start-London's-Biggest-Female-Entrepreneurs-Network/",
+      "destination": "/blog/2018/oct/how-i-did-it-i-left-procter-and-gamble-to-start-londons-biggest-female-entrepreneurs-network"
+    },
+    {
+      "source": "/2018/10/17/2018/How-I-Did-It---I-Left-The-BBC-While-Heavily-Pregnant-To-Found-A-Parents-Tech-Startup/",
+      "destination": "/blog/2018/oct/how-i-did-it-i-left-the-bbc-while-heavily-pregnant-to-found-a-parents-tech-startup"
+    },
+    {
+      "source": "/2018/10/08/2018/How-I-Retrained-As-A-Junior-Developer-While-Working-At-Solid-State-Group/",
+      "destination": "/blog/2018/oct/how-i-retrained-as-a-junior-developer-while-working-at-solid-state-group"
+    },
+    {
+      "source": "/2018/09/30/2018/How-I-Did-It---I-left-commercial-law-to-found-my-legal-startup/",
+      "destination": "/blog/2018/sep/how-i-did-it-i-left-commercial-law-to-found-my-legal-startup"
+    },
+    {
+      "source": "/2018/09/30/2018/How-I-Did-It---I-Left-Telefonica-For-A-Healthcare-Tech-Startup/",
+      "destination": "/blog/2018/sep/how-i-did-it-i-left-telefonica-for-a-healthcare-tech-startup"
+    },
+    {
+      "source": "/2018/09/13/2018/How-I-Did-It---I-left-finance-to-found-my-machine-learning-startup/",
+      "destination": "/blog/2018/sep/how-i-did-it-i-left-finance-to-found-my-machine-learning-startup"
+    },
+    {
+      "source": "/2018/08/30/2018/How-I-Did-It--I-Left-Accountancy-To-Found-My-Own-Startup/",
+      "destination": "/blog/2018/aug/how-i-did-it-i-left-accountancy-to-found-my-own-startup"
+    },
+    {
+      "source": "/2018/06/05/2018/The-Road-To-Disruption---How-To-Find-And-Build-Great-Ideas/",
+      "destination": "/blog/2018/jun/the-road-to-disruption-how-to-find-and-build-great-ideas"
+    },
+    {
+      "source": "/2018/02/05/2018/Glenfiddich-Stag-Racing-When-Whisky-Meets-Hackathons/",
+      "destination": "/blog/2018/may/glenfiddich-stag-racing-when-whisky-meets-hackathons"
+    },
+    {
+      "source": "/2018/04/24/2018/Serverless-Architecture---Explained-Via-Burgers/",
+      "destination": "/blog/2018/apr/serverless-architecture-explained-via-burgers"
+    },
+    {
+      "source": "/2018/04/24/2018/Serverless-Architecture---Explained-Via-Burgers/",
+      "destination": "/blog/2018/apr/serverless-architecture-explained-via-burgers"
+    },
+    {
+      "source": "/2018/03/17/2018/How-We-Built-It---The-Secure-Healthcare-App/",
+      "destination": "/blog/2018/mar/how-we-built-it-the-secure-healthcare-app"
+    },
+    {
+      "source": "/2018/03/07/2018/Technical-Innovation-For-Non-Developers---Serverless-Architecture/",
+      "destination": "/blog/2018/mar/technical-innovation-for-non-developers-serverless-architecture"
+    },
+    {
+      "source": "/2018/02/28/2018/How-Do-I-Use-A-React-Native-App-To-Raise-A-Seed-Round/",
+      "destination": "/blog/2018/feb/how-do-i-use-a-react-native-app-to-raise-a-seed-round"
+    },
+    {
+      "source": "/2018/02/27/2018/From-MVPs-to-Raising-Seed-Money---Why-You-Should-Build-Your-App-in-React-Native/",
+      "destination": "/blog/2018/feb/from-mvps-to-raising-seed-money-why-you-should-build-your-app-in-react-native"
+    },
+    {
+      "source": "/2018/02/25/2018/How-Corporate-Innovation-Teams-Can-Use-React-Native-To-Drive-Ideation,-Visualisation,-and-Stakeholder-Buy-In/",
+      "destination": "/blog/2018/feb/how-corporate-innovation-teams-can-use-react-native-to-drive-ideation-visualisation-and-stakeholder-buy-in"
+    },
+    {
+      "source": "/2018/02/16/2018/Healthcare-Tech-Trends-for-2018-Part-3/",
+      "destination": "/blog/2018/feb/healthcare-tech-trends-for-2018-part-3"
+    },
+    {
+      "source": "/2018/02/28/2018/How-To-Use-React-Native-To-Get-Stakeholder-Backing-For-Innovation-Projects/",
+      "destination": "/blog/2018/feb/how-to-use-react-native-to-get-stakeholder-backing-for-innovation-projects"
+    },
+    {
+      "source": "/2018/02/27/2018/React-Native-For-Scale-Ups---Use-Cases-and-Future-Proofing/",
+      "destination": "/blog/2018/feb/react-native-for-scale-ups-use-cases-and-future-proofing"
     }
   ],
   "builds": [
