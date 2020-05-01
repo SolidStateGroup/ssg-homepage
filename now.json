@@ -18,6 +18,10 @@
     {
       "source": "/our-work",
       "destination": "/work"
+    },
+    {
+      "source": "/2019/08/19/2019/perfect-Google-Lighthouse-score-Next-Redux",
+      "destination": "/blog/2019/aug/100-percent-lighthouse-score"
     }
   ],
   "builds": [
