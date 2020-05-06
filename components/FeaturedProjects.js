@@ -22,7 +22,7 @@ const projects = [
         tags: ['DESIGN'],
         projectNumber: ['01'],
         projectImageClass: 'position-relative',
-
+        clientImage: '/static/images/clients/tone-and-sculpt-white.svg',
     },
     {
         className: 'project--purely',
@@ -35,7 +35,7 @@ const projects = [
         tags: ['DESIGN'],
         projectNumber: ['02'],
         projectImageClass: 'position-relative',
-
+        clientImage: '/static/images/clients/PC_logo@2x.png',
     },
     {
         className: 'project--ba',
@@ -48,6 +48,7 @@ const projects = [
         tags: ['Cloud Infrastructure', 'Systems Integration', 'API Development'],
         projectNumber: ['03'],
         projectImageClass: 'position-relative',
+        clientImage: '/static/images/clients/british-airways-white.svg',
     },
     {
         className: 'project--hailie',
@@ -60,6 +61,7 @@ const projects = [
         tags: ['Cloud Infrastructure', 'Systems Integration', 'API Development'],
         projectNumber: ['04'],
         projectImageClass: 'position-relative',
+        clientImage: '/static/images/clients/hailie-white.svg',
     },
 ];
 
@@ -113,6 +115,7 @@ const FeaturedProjects = global.FeaturedProjects = class extends React.PureCompo
                                   key={item.title}
                                   href={item.href}
                                   srcSet={item.srcSet}
+                                  clientImage={item.clientImage}
                                   projectNumber={item.projectNumber} className={cn('project__item-featured')} ButtonComponent={item.Button}
                                   projectImage={item.projectImage}
                                   subTitle={item.subTitle} title={item.title} projectImageClass={item.projectImageClass}
