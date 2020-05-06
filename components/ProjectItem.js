@@ -38,10 +38,11 @@ const ProjectItem = global.ProjectItem = class extends React.PureComponent {
                         <div>
                             <p className="project__subtitle mb-0">{this.props.subTitle || 'Solid State Group'}</p>
                             <h2 className="project__title ">{this.props.title}</h2>
-                            {this.props.clientBrand ? (
+                            {this.props.clientImage ? (
                                 <div className="mb-4 mt-3"><img
-                                    src={this.props.clientBrand}
+                                    src={this.props.clientImage}
                                     alt={this.props.clientName}
+                                    className="project__client-image img-fluid"
                                 />
                                 </div>
                             ) : (

@@ -340,6 +340,7 @@ const WorkPage = class extends React.Component {
                           blobColour={p.blobColour}
                           title={p.title}
                           projectType={p.projectType}
+                          clientImage={p.clientImage}
                         />
                       )}
                   />

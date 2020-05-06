@@ -14,6 +14,7 @@ const projects = [
         projectImage: '/static/images/projects/electron-trader/electron-trader-1@1x.png',
         srcSet: '/static/images/projects/electron-trader/electron-trader-1@1x.png 1x, /static/images/projects/electron-trader/electron-trader-1@2x.png 2x,',
         subTitle: 'Web Application',
+        clientImage: '/static/images/clients/electron.png',
         href: '/projects/electron-trader',
         title: 'Tapping into the future of the electricity market',
         blobColour: "#5EABBA",
@@ -26,6 +27,7 @@ const projects = [
         srcSet: '/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
+        clientImage: '/static/images/clients/tone-and-sculpt.svg',
         title: 'Rebooting female fitness for Tone and Sculpt',
         projectImageClass: "project__image--short",
         blobColour: "#5CC2E1",
@@ -37,6 +39,7 @@ const projects = [
         projectImage: '/static/images/projects/purely-capital/pc-summary-mac.png',
         srcSet: '/static/images/projects/purely-capital/pc-summary-mac.png 1x, /static/images/projects/purely-capital/pc-summary-mac@2x.png 2x,',
         subTitle: 'Responsive Web Application',
+        clientImage: '/static/images/clients/purely-capital-dark@2x.png',
         href: '/projects/purely-capital',
         title: 'The future of film and media financing',
         blobColour: "#D02D55",
@@ -154,6 +157,7 @@ const DesignPage = class extends React.Component {
                                      srcSet={p.srcSet}
                                      projectType={p.projectType}
                                      href={p.href}
+                                     clientImage={p.clientImage}
                         />
                     ))}
                 </div>
