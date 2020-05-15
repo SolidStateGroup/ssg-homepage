@@ -143,6 +143,13 @@
     }
 }
 
+@include media-breakpoint-down(md) {
+    .project {
+        &__title{
+            font-size:1.85rem;
+        }
+    }
+}
 
 
 @include media-breakpoint-down(sm) {
@@ -163,9 +170,6 @@
         }
         &__cta{
             margin-top:20px;
-        }
-        &__title{
-            font-size:1.85rem;
         }
     }
 

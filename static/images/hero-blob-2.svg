@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="616px" height="514px" viewBox="0 0 616 514" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>hero-blob</title>
+    <defs>
+        <filter x="-30.8%" y="-26.7%" width="161.5%" height="153.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-30.8%" y="-26.7%" width="161.5%" height="153.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="UI-Design-(Teal)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Services-Teal-v1" transform="translate(-857.000000, -98.000000)" fill-rule="nonzero">
+            <g id="hero-blob" transform="translate(870.000000, 111.914508)">
+                <g id="cube-copy" filter="url(#filter-1)" opacity="0.131905692" transform="translate(28.500000, 144.585492) rotate(32.000000) translate(-28.500000, -144.585492) translate(9.000000, 122.085492)">
+                    <polygon id="Path" fill="#C1C1C1" points="19.5 0 0 11.25 0 33.75 19.5 45 39 33.75 39 11.25"></polygon>
+                    <polygon id="Path" fill="#F2F2F2" points="20 45 20 0 39 11.25 39 33.75"></polygon>
+                    <polygon id="Path" fill="#F7F7F7" points="0 11.2527473 19.5 0 39 11.2527473 19.5 22"></polygon>
+                </g>
+                <g id="cube" opacity="0.131905692" transform="translate(238.000000, 454.085492)">
+                    <polygon id="Path" fill="#C1C1C1" points="19.5 0 0 11.25 0 33.75 19.5 45 39 33.75 39 11.25"></polygon>
+                    <polygon id="Path" fill="#F2F2F2" points="20 45 20 0 39 11.25 39 33.75"></polygon>
+                    <polygon id="Path" fill="#F7F7F7" points="0 11.2527473 19.5 0 39 11.2527473 19.5 22"></polygon>
+                </g>
+                <g id="cube-copy" filter="url(#filter-2)" opacity="0.131905692" transform="translate(476.500000, 29.500000) rotate(32.000000) translate(-476.500000, -29.500000) translate(457.000000, 7.000000)">
+                    <polygon id="Path" fill="#C1C1C1" points="19.5 0 0 11.25 0 33.75 19.5 45 39 33.75 39 11.25"></polygon>
+                    <polygon id="Path" fill="#F2F2F2" points="20 45 20 0 39 11.25 39 33.75"></polygon>
+                    <polygon id="Path" fill="#F7F7F7" points="0 11.2527473 19.5 0 39 11.2527473 19.5 22"></polygon>
+                </g>
+                <path d="M454.01744,104.124938 C494.890394,122.346341 536.933718,150.670699 540.714917,185.94084 C544.496115,221.120775 509.925159,263.156288 480.845943,292.83372 C451.676698,322.420948 427.909166,339.650096 404.231662,364.997691 C380.554158,390.345285 356.966682,423.901531 329.958122,428.501985 C302.949563,433.192643 272.609947,408.837303 250.642985,382.948478 C228.676023,356.969449 215.081715,329.456935 198.246379,298.155813 C181.411044,266.854691 161.514738,231.674756 160.074282,192.345392 C158.723854,152.925823 175.829275,109.266621 207.879432,88.0684549 C239.839561,66.9604936 286.56437,68.223363 329.868094,73.0042261 C373.171818,77.7850891 413.054458,85.9035358 454.01744,104.124938 Z" id="Path" fill="#201C26"></path>
+            </g>
+        </g>
+    </g>
+</svg>

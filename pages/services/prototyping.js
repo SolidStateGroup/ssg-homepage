@@ -50,8 +50,8 @@ const projects = [
 ];
 
 
-const DesignPage = class extends React.Component {
-    static displayName = 'DesignPage';
+const PrototypingPage = class extends React.Component {
+    static displayName = 'PrototypingPage';
 
     constructor(props, context) {
         super(props, context);
@@ -67,10 +67,10 @@ const DesignPage = class extends React.Component {
                         <div className="flex-1 p-5">
                             <div className="container">
                                 <h5 className="title--light mb-0">Our Services</h5>
-                                <h1 className="hero__title mb-4">UX & UI Design</h1>
+                                <h1 className="hero__title mb-4">Prototyping</h1>
                                 <div className="col-lg-6 offset-lg-3">
                                     <p className="text-light">
-                                    We approach our design projects with passion and expertise born out of a desire to understand our customers and deliver value quickly. Great design solves problems, it's not just about aesthetics.
+                                        Once we understand your users, we can then start prototyping the right product for them and for your business. We initially sketch out basic pages and knit together the associated user journeys. We endeavour to answer questions and solve issues as we build towards a complete set of wireframes; Systematically removing any assumptions with evidence based design decisions.
                                     </p>
                                 </div>
                             </div>
@@ -154,12 +154,6 @@ const DesignPage = class extends React.Component {
                         + '\n'}
                     />
                 </div>
-                <ClientQuote
-                  image="/static/images/projects/tone-and-sculpt/phone.png"
-                  srcSet="/static/images/projects/tone-and-sculpt/phone.png 1x, /static/images/projects/tone-and-sculpt/phone@2x.png 2x"
-                  text={'Solid State Group are really easy to work with as they are open to feedback and provide regular updates to be able to take decisions on the fly. They came up with a brilliant idea at our hackathon and they\'ve taken on board the insights from our business to further refine the product later on.'}
-                  clientName="Krissy Cela" clientTitle="Founder - Tone and Sculpt"
-                />
 
                 <div className="container">
                     <h3 className="section__title--dark text-center mb-5 mt-5">Design case studies</h3>
@@ -184,4 +178,4 @@ const DesignPage = class extends React.Component {
     };
 };
 
-export default DesignPage;
+export default PrototypingPage;

@@ -9,8 +9,8 @@ import HertzLogo from '../components/ClientLogos/HertzLogo';
 import NHSLogo from '../components/ClientLogos/NHSLogo';
 import DisneyLogo from '../components/ClientLogos/DisneyLogo';
 import FeaturedProjects from '../components/FeaturedProjects';
-import {ListItemUnderlined} from '../components/ListItem';
-import {ButtonPrimary, ButtonText} from '../components/base/forms/Button';
+import { ListItemUnderlined } from '../components/ListItem';
+import { ButtonPrimary, ButtonText } from '../components/base/forms/Button';
 import ProjectBlobImage from '../components/ProjectBlobImage';
 
 const HomePage = class extends React.Component {
@@ -22,9 +22,8 @@ const HomePage = class extends React.Component {
     }
 
     componentDidMount() {
-
         gsap.timeline()
-            .from('.hero__container', {duration: 0.5, delay: .25, y: 10, opacity: 0, ease: 'power1'})
+            .from('.hero__container', { duration: 0.5, delay: 0.25, y: 10, opacity: 0, ease: 'power1' });
 
         const controller = new ScrollMagic.Controller();
 
@@ -32,9 +31,9 @@ const HomePage = class extends React.Component {
         const tl2 = new gsap.timeline();
         const tl3 = new gsap.timeline();
 
-        tl.from('#sectionOneAnimation', 1, {y: 50, oopacity: 0, ease: 'power1'});
-        tl2.from('#sectionTwoAnimation', 1, {y: 50, oopacity: 0, ease: 'power1'});
-        tl3.from('#sectionThreeAnimation', 1, {y: 50, opacity: 0, ease: 'power1'});
+        tl.from('#sectionOneAnimation', 1, { y: 50, oopacity: 0, ease: 'power1' });
+        tl2.from('#sectionTwoAnimation', 1, { y: 50, oopacity: 0, ease: 'power1' });
+        tl3.from('#sectionThreeAnimation', 1, { y: 50, opacity: 0, ease: 'power1' });
 
         const scene1 = new ScrollMagic.Scene({
             triggerElement: '#sectionOneTrigger',
@@ -75,7 +74,7 @@ const HomePage = class extends React.Component {
         return (
             <Page title={Constants.titles.home} canonical="">
                 <div className="hero hero--full d-flex flex-column mx-0 p-4">
-                    <Header/>
+                    <Header className="navbar-container--transparent"/>
                     <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
                         <div className="flex-1 justify-content-start p-5">
                             <div className="offset-lg-3 pl-md-3 pl-0">
@@ -88,8 +87,10 @@ const HomePage = class extends React.Component {
                             </div>
                         </div>
                         <div className="flex-1 flex-column align-items-center hidden-sm-down">
-                            <ProjectBlobImage blobColour="#69D9D3" src="/static/images/hero-devices@1x.png"
-                                              srcSet="/static/images/hero-devices@2x.png 2x, /static/images/hero-devices@1x.png 1x"/>
+                            <ProjectBlobImage
+                              blobColour="#69D9D3" src="/static/images/hero-devices@1x.png"
+                              srcSet="/static/images/hero-devices@2x.png 2x, /static/images/hero-devices@1x.png 1x"
+                            />
                         </div>
                     </div>
 
@@ -135,21 +136,31 @@ const HomePage = class extends React.Component {
                             <h2 className="section__title section__title--dark">Services</h2>
                             <ul className="lined-list list-unstyled flex-row pl-sm-5 pl-0 mt-3">
                                 <ListItemUnderlined listItemText="UX & UI Design" listItemLink="/services/ux-design"/>
-                                <ListItemUnderlined listItemText="Mobile App Development"
-                                                    listItemLink="/services/mobile-app-development"/>
-                                <ListItemUnderlined listItemText="Responsive Web Apps"
-                                                    listItemLink="/services/responsive-web-apps"/>
+                                <ListItemUnderlined
+                                  listItemText="Mobile App Development"
+                                  listItemLink="/services/mobile-app-development"
+                                />
+                                <ListItemUnderlined
+                                  listItemText="Responsive Web Apps"
+                                  listItemLink="/services/responsive-web-apps"
+                                />
                                 <ListItemUnderlined listItemText="Branding" listItemLink="/services/branding"/>
                                 <ListItemUnderlined listItemText="Strategy" listItemLink="/services/strategy"/>
-                                <ListItemUnderlined listItemText="Prototyping" listItemLink="/services/ux-design"/>
-                                <ListItemUnderlined listItemText="API Development"
-                                                    listItemLink="/services/api-development"/>
-                                <ListItemUnderlined listItemText="Systems Integration"
-                                                    listItemLink="/services/systems-integration"/>
+                                <ListItemUnderlined listItemText="Prototyping" listItemLink="/services/prototyping"/>
+                                <ListItemUnderlined
+                                  listItemText="API Development"
+                                  listItemLink="/services/api-development"
+                                />
+                                <ListItemUnderlined
+                                  listItemText="Systems Integration"
+                                  listItemLink="/services/systems-integration"
+                                />
                             </ul>
                             <Link prefetch={false} href="/services">
-                                <ButtonText buttonText="Explore our services" type="button"
-                                            className="text-primary pl-sm-5 pl-0"/>
+                                <ButtonText
+                                  buttonText="Explore our services" type="button"
+                                  className="text-primary pl-sm-5 pl-0"
+                                />
                             </Link>
                         </div>
                     </div>
@@ -169,53 +180,65 @@ const HomePage = class extends React.Component {
                         <div className="col-md-8 pl-0 offset-md-2">
                             <div className="flex-row">
                                 <div className="col text-center">
-                                    <img src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3"
-                                         alt="Research"/>
+                                    <img
+                                      src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3"
+                                      alt="Research"
+                                    />
                                     <h5>Research</h5>
-                                    <p>Gather insights about your product and market</p>
+                                    <p>Define business objectives and gather insights on product and market fit</p>
                                 </div>
                                 <div className="align-self-center mb5 hidden-sm-down">
                                     <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                                 </div>
                                 <div className="col text-center">
-                                    <img src="/static/images/svg-icons/design-blob-icon.svg" className="mb-3"
-                                         alt="Design"/>
+                                    <img
+                                      src="/static/images/svg-icons/design-blob-icon.svg" className="mb-3"
+                                      alt="Design"
+                                    />
                                     <h5>Design</h5>
-                                    <p>Explore creative options to bring your vision to life</p>
+                                    <p>Define the product in stories, generate estimates, create UX/UI and design prototypes</p>
                                 </div>
                                 <div className="align-self-center mb5 hidden-sm-down">
                                     <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                                 </div>
                                 <div className="col text-center">
-                                    <img src="/static/images/svg-icons/development-blob-icon.svg" className="mb-3"
-                                         alt="Development"/>
+                                    <img
+                                      src="/static/images/svg-icons/development-blob-icon.svg" className="mb-3"
+                                      alt="Development"
+                                    />
                                     <h5>Development</h5>
-                                    <p>Rapid application development</p>
+                                    <p>Develop infrastructure, APIs, websites and mobile applications through multiple sprints</p>
                                 </div>
                                 <div className="align-self-center mb5 hidden-sm-down">
                                     <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                                 </div>
                                 <div className="col text-center">
-                                    <img src="/static/images/svg-icons/release-blob-icon.svg" className="mb-3"
-                                         alt="Release"/>
+                                    <img
+                                      src="/static/images/svg-icons/release-blob-icon.svg" className="mb-3"
+                                      alt="Release"
+                                    />
                                     <h5>Release</h5>
-                                    <p>Release your product to market</p>
+                                    <p>Test all assets, integrate analytics, deploy to client, client tests and release to production</p>
                                 </div>
                                 <div className="align-self-center mb5 hidden-sm-down">
                                     <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                                 </div>
                                 <div className="col text-center">
-                                    <img src="/static/images/svg-icons/product-blob-icon.svg" className="mb-3"
-                                         alt="Product Development"/>
+                                    <img
+                                      src="/static/images/svg-icons/product-blob-icon.svg" className="mb-3"
+                                      alt="Product Development"
+                                    />
                                     <h5>Product Development</h5>
-                                    <p>Iterate on the product</p>
+                                    <p>Analyse customer interactions & plan subsequent releases</p>
                                 </div>
                             </div>
                             <div className="col">
-                                <img src="/static/images/svg-icons/arrow-gradient-left-turn.svg"
-                                     className="img-fluid img__full-width pl-5 pr-5 hidden-sm-down" alt="Cycle GFX"/>
+                                <img
+                                  src="/static/images/svg-icons/arrow-gradient-left-turn.svg"
+                                  className="img-fluid img__full-width pl-5 pr-5 hidden-sm-down" alt="Cycle GFX"
+                                />
                                 <div className="text-center">
-                                    <p className="mt-4 bold text-grey">We repeat this process to help you achieve your business goals</p>
+                                    <p className="mt-4 bold text-grey">By listening to your customers feedback and repeating this process, support you beyond initial release and help you develop the product to achieve your business goals</p>
                                 </div>
                             </div>
                         </div>

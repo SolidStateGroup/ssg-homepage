@@ -23,10 +23,9 @@ const ServiceItem = global.ServiceItem = class extends React.PureComponent {
     render() {
         const {children, ButtonComponent, ...rest} = this.props;
         return (
-
             <div
                 className={cn(this.props.className, ' row flex-row d-flex align-items-center section--large-padding mb-5')}>
-                <div className="col-md-5 offset-md-1 pr-5">
+                <div className="col-lg-5 offset-lg-1 col-sm-12 pr-5">
                     <h3 className="title--line-after">{this.props.subTitle || 'Web Application Development'}</h3>
                     <p>{this.props.serviceDescription || 'We work with you to iterate on the various creative deliverables until you achieve your vision.'}</p>
                     {this.props.serviceListItem ? (
@@ -50,7 +49,7 @@ const ServiceItem = global.ServiceItem = class extends React.PureComponent {
                     )}
 
                 </div>
-                <div className="col-md-6 pr-0 pl-0 text-center">
+                <div className="col-lg-6 col-sm-12 pr-0 pl-0 text-center">
                     <img src={this.props.serviceImage || null}
                          srcSet={this.props.srcSet || null}
                          className={cn(this.props.imageClassName, ' img-fluid mt-md-0 mt-5')}
