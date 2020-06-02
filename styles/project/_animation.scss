@@ -71,8 +71,15 @@
 @include media-breakpoint-down(md) {
     .blob {
         &__image {
-            max-width: 350px;
-            max-height: 350px;
+            max-width: 260px;
+            max-height: 260px;
+        }
+        &__container {
+            height: 300px;
+            margin-bottom: 6em;
+        }
+        &__svg {
+            max-height: 300px;
         }
     }
 }

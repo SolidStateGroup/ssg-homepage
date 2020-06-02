@@ -323,7 +323,7 @@ const WorkPage = class extends React.Component {
                   </div>
               </div>
 
-              <div className="container">
+              <div className="container mt-md-0 mt-5">
                   <InfiniteScroll
                       items={this.filterProjects()}
                       chunkSize={1}
