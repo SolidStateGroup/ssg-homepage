@@ -58,7 +58,7 @@ const WebAppsPage = class extends React.Component {
 
     render = () => {
         return (
-            <Page title={Constants.titles.mobileAppDevelopment} canonical="Mobile App Development">
+            <Page title={Constants.titles.webAppDevelopment} canonical="Mobile App Development">
                 <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                     <Header/>
                     <div className="hero__container flex-1 align-self-stretch row flex-row text-center">
