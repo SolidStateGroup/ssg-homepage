@@ -111,7 +111,7 @@ const ServicesPage = class extends React.Component {
                               </React.Fragment>
 )}
                           subTitle="UX & UI Design"
-                          serviceLink="/services/ux-design"
+                          serviceLink="/services/design"
                           serviceDescription={'We approach our design projects with passion and expertise born out of a desire to understand customers and deliver value quickly. Great design solves problems, it\'s not just about aesthetics.'}
                         />
 
