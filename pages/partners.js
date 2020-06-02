@@ -182,12 +182,12 @@ const PartnersPage = class extends React.Component {
                   <div className="container-fluid col-md-10">
                       <h2 className="section__title section__title--dark">Services</h2>
                       <ul className="lined-list list-unstyled flex-row pl-sm-5 pl-0 mt-3">
-                          <ListItemUnderlined listItemText="UX & UI Design" listItemLink="/services/ux-design" />
+                          <ListItemUnderlined listItemText="UX & UI Design" listItemLink="/services/design" />
                           <ListItemUnderlined listItemText="Mobile App Development" listItemLink="/services/mobile-app-development" />
                           <ListItemUnderlined listItemText="Responsive Web Apps" listItemLink="/services/responsive-web-apps" />
                           <ListItemUnderlined listItemText="Branding" listItemLink="/services/branding" />
                           <ListItemUnderlined listItemText="Strategy" listItemLink="/services/strategy" />
-                          <ListItemUnderlined listItemText="Prototyping" listItemLink="/services/ux-design" />
+                          <ListItemUnderlined listItemText="Prototyping" listItemLink="/services/design" />
                           <ListItemUnderlined listItemText="API Development" listItemLink="/services/api-development" />
                           <ListItemUnderlined listItemText="Systems Integration" listItemLink="/services/systems-integration" />
                       </ul>

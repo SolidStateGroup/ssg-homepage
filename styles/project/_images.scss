@@ -12,6 +12,9 @@
         position: relative;
         top: 3em;
     }
+    &__short {
+        max-height: 450px;
+    }
 }
 
 .brand-mark {
