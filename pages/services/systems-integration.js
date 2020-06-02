@@ -67,16 +67,39 @@ const SystemsPage = class extends React.Component {
                                 <h5 className="title--light mb-0">Our Services</h5>
                                 <h1 className="hero__title mb-4">Systems Integration</h1>
                                 <div className="col-lg-6 offset-lg-3">
-                                    <p className="text-light">From our London office, we've been working with
-                                        corporations and startups for over 15 years, building secure, bespoke APIs and
-                                        scalable integrations with legacy systems. We approach projects with an
-                                        experienced team equipped with rapid application development tools to develop,
-                                        test, and deliver bespoke software quickly.</p>
+                                    <p className="text-light">We build robust and reliable software that scales. Our systems integration solutions are designed to perform well at scale, bringing together component subsystems into one business-critical system.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+                <div className="container">
+                    <ServiceItem
+                        serviceImage={'/static/images/services/iMac3@1x.jpg'}
+                        srcSet={'/static/images/services/iMac3@1x.jpg 1x, /static/images/services/iMac3@2x.jpg 2x'}
+                        subTitle={'Software that scales'}
+                        serviceDescription={'Recent examples include connected hardware for a bespoke clinicians dashboard, vehicle data integrations and a connected car mobile application.'}
+                        serviceListItem={
+                            <React.Fragment>
+                                <React.Fragment>
+                                    <WideListItem
+                                        listItemText={'API Development'}/>
+                                    <WideListItem
+                                        listItemText={'Bespoke Software Development'}/>
+                                    <WideListItem
+                                        listItemText={'Cloud Infrastructure'}/>
+                                    <WideListItem
+                                        listItemText={'Web & mobile App Development'}/>
+                                </React.Fragment>
+                            </React.Fragment>
+                        }
+                        listTitle={'WHAT WE DO'}
+                    />
+
+                </div>
+
 
                 <ClientQuote
                     image={'/static/images/projects/ba/ba-ipad.png'}

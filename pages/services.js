@@ -89,7 +89,7 @@ const ServicesPage = class extends React.Component {
                 </div>
                 <div className="section--no-padding">
                     <h2 className="section__title section__title--dark text-center mt-5">Our Services</h2>
-                    <div className="container-fluid align-self-center">
+                    <div className="container align-self-center">
 
                         <ServiceItem
                             serviceImage="/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg"
