@@ -110,7 +110,7 @@ const FeaturedProjects = global.FeaturedProjects = class extends React.PureCompo
                 <div className="featured-projects-container position-relative">
                     {
                         [items.map(item => (
-                            <div className={cn('project--featured', item.className, { active: activeItem === item })}>
+                            <div className={cn('project--featured pl-5', item.className, { active: activeItem === item })}>
                                 <ProjectItem
                                   key={item.title}
                                   href={item.href}
