@@ -90,7 +90,7 @@ const MobileAppsPage = class extends React.Component {
                     serviceImage={'/static/images/services/react-native.png'}
                     className={'flex-row-reverse'}
                     imageClassName={'img__shadow '}
-                    subTitle={'Buy one get one free on apps'}
+                    subTitle={'One codebase two platforms'}
                     serviceDescription={'React allows us to build mobile apps for iOS and Android at the same time with a shared application logic. There\'s an added benefit of shared application code for web applications as well.'}/>
 
                   <ServiceItem
