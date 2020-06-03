@@ -67,15 +67,41 @@ const CloudInfraPage = class extends React.Component {
                                 <h5 className="title--light mb-0">Our Services</h5>
                                 <h1 className="hero__title mb-4">Cloud Infrastructure</h1>
                                 <div className="col-lg-6 offset-lg-3">
-                                    <p className="text-light">From our London office, we've been working with
-                                        corporations and startups for over 15 years, building secure, bespoke APIs and
-                                        scalable integrations with legacy systems. We approach projects with an
-                                        experienced team equipped with rapid application development tools to develop,
-                                        test, and deliver bespoke software quickly.</p>
+                                    <p className="text-light">We utilise secure cloud environments for startups, scale ups and enterprise clients.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className="container">
+
+                    <ServiceItem
+                        serviceImage="/static/images/services/api-dev@1x.jpg"
+                        srcSet="/static/images/services/api-dev@1x.jpg 1x, /static/images/services/api-dev@2x.jpg 2x,"
+                        subTitle="Improving your IT infrastructure"
+                        serviceDescription="Recent projects include developing a secure cloud environment for a fintech startup and implementing a secure system for encrypted patient results for a clinician dashboard."
+                        serviceListItem={(
+                            <React.Fragment>
+                                <React.Fragment>
+                                    <WideListItem
+                                        listItemText="API Development"
+                                    />
+                                    <WideListItem
+                                        listItemText="Bespoke Software Development"
+                                    />
+                                    <WideListItem
+                                        listItemText="Cloud Infrastructure"
+                                    />
+                                    <WideListItem
+                                        listItemText="Web & mobile App Development"
+                                    />
+                                </React.Fragment>
+                            </React.Fragment>
+                        )}
+                        listTitle="WHAT WE DO"
+                    />
+
                 </div>
 
                 <ClientQuote
@@ -85,7 +111,7 @@ const CloudInfraPage = class extends React.Component {
                     clientName={'Managing Director'} clientTitle={'Operations at British Airways'}/>
 
                 <div className="container">
-                    <h3 className="section__title--dark text-center mb-5 mt-5">Systems integration case studies</h3>
+                    <h3 className="section__title--dark text-center mb-5 mt-5">Cloud infrastructure case studies</h3>
                     {projects.map((p) => (
                         <ProjectItem ButtonComponent={p.ButtonComponent} projectImage={p.projectImage}
                                      subTitle={p.subTitle}

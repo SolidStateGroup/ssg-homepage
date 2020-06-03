@@ -21,10 +21,9 @@ const ServicesPage = class extends React.Component {
     }
 
     componentDidMount() {
-
         gsap.timeline()
-            .from('.hero__container .col-md-6', { duration: 0.5, delay: .25, y: 10, opacity: 0, ease: 'power1' })
-            .from('.section--dark .container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
+            .from('.hero__container .col-md-6', { duration: 0.5, delay: 0.25, y: 10, opacity: 0, ease: 'power1' })
+            .from('.section--dark .container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' });
     }
 
     render = () => {
@@ -92,28 +91,28 @@ const ServicesPage = class extends React.Component {
                     <div className="container align-self-center">
 
                         <ServiceItem
-                            serviceImage="/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg"
-                            srcSet="/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg 1x, /static/images/projects/tone-and-sculpt/macbook-pro-on-table@2x.jpg 2x,"
-                            className="flex-row-reverse"
-                            imageClassName="img__shadow "
-                            subTitle="Strategy"
-                            serviceLink="/services/strategy"
-                            serviceDescription="Before we build anything, we help to identify the current biggest assumptions in your product or business, we can then help build tests to validate each assumption and finally frame any conclusions into actionable output."
-                            serviceListItem={(
-                                <React.Fragment>
-                                    <ListItemUnderlined
-                                        listItemText="Tone & Sculpt"
-                                        listItemLink="/projects/tone-and-sculpt"
-                                    />
-                                    <ListItemUnderlined
-                                        listItemText="Meow Now"
-                                        listItemLink="/projects/meownow"
-                                    />
-                                    <ListItemUnderlined
-                                        listItemText="Dugout FC"
-                                        listItemLink="/projects/dugout"
-                                    />
-                                </React.Fragment>
+                          serviceImage="/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg"
+                          srcSet="/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg 1x, /static/images/projects/tone-and-sculpt/macbook-pro-on-table@2x.jpg 2x,"
+                          className="flex-row-reverse"
+                          imageClassName="img__shadow "
+                          subTitle="Strategy"
+                          serviceLink="/services/strategy"
+                          serviceDescription="Before we build anything, we help to identify the current biggest assumptions in your product or business, we can then help build tests to validate each assumption and finally frame any conclusions into actionable output."
+                          serviceListItem={(
+                              <React.Fragment>
+                                  <ListItemUnderlined
+                                    listItemText="Tone & Sculpt"
+                                    listItemLink="/projects/tone-and-sculpt"
+                                  />
+                                  <ListItemUnderlined
+                                    listItemText="Meow Now"
+                                    listItemLink="/projects/meownow"
+                                  />
+                                  <ListItemUnderlined
+                                    listItemText="Dugout FC"
+                                    listItemLink="/projects/dugout"
+                                  />
+                              </React.Fragment>
                             )}
                         />
 
@@ -255,6 +254,7 @@ const ServicesPage = class extends React.Component {
                         />
 
                         <ServiceItem
+                          className="flex-row-reverse"
                           serviceImage="/static/images/projects/meownow/meownow_brand_board.png"
                           srcSet="/static/images/projects/meownow/meownow_brand_board.png 1x, /static/images/projects/meownow/meownow_brand_board@2x.png 2x,"
                           imageClassName="img__shadow "

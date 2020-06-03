@@ -66,10 +66,7 @@ const CustomSoftwarePage = class extends React.Component {
                                 <h5 className="title--light mb-0">Our Services</h5>
                                 <h1 className="hero__title mb-4">Custom Software Development</h1>
                                 <div className="col-lg-6 offset-lg-3">
-                                    <p className="text-light">When we moved into our Old Street office, there were only
-                                        a handful of tech startups in the neighbourhood. Fourteen years later, we’re
-                                        still going strong, working with startups and corporations alike, swiftly
-                                        creating and transforming systems that are built to last.</p>
+                                    <p className="text-light">We build robust and reliable software that scales. We approach projects with a tight-knit team equipped with rapid application development tools to develop, test, and deliver your projects quickly and reliably.</p>
                                 </div>
                             </div>
                         </div>
@@ -77,25 +74,37 @@ const CustomSoftwarePage = class extends React.Component {
                 </div>
                 <div className="container">
                     <ServiceItem
-                        serviceImage={'/static/images/services/iMac3@1x.jpg'}
-                        srcSet={'/static/images/services/iMac3@1x.jpg 1x, /static/images/services/iMac3@2x.jpg 2x'}
-                        subTitle={'Rapid application development'}
-                        serviceDescription={'We build robust and reliable software that scales. We approach projects with a tight-knit team equipped with rapid application development tools to develop, test, and deliver your projects quickly and reliably.'}
-                        serviceListItem={
+                        subTitle="We build robust and reliable software that scales"
+                        serviceImage="/static/images/services/iMac3@1x.jpg"
+                        srcSet="/static/images/services/iMac3@1x.jpg 1x, /static/images/services/iMac3@2x.jpg 2x"
+                        serviceDescription="We work with you to identify what your product needs to be and how best to serve your target demographic. We choose the best technologies for your project using years of experience working on startup builds, scale-ups and large enterprise projects."
+                        serviceListItem={(
                             <React.Fragment>
                                 <React.Fragment>
                                     <WideListItem
-                                        listItemText={'API Development'}/>
+                                        listItemText="API Development"
+                                    />
                                     <WideListItem
-                                        listItemText={'Bespoke Software Development'}/>
+                                        listItemText="Bespoke Software Development"
+                                    />
                                     <WideListItem
-                                        listItemText={'Cloud Infrastructure'}/>
+                                        listItemText="Cloud Infrastructure"
+                                    />
                                     <WideListItem
-                                        listItemText={'Web & mobile App Development'}/>
+                                        listItemText="Web & mobile App Development"
+                                    />
                                 </React.Fragment>
                             </React.Fragment>
-                        }
-                        listTitle={'WHAT WE DO'}
+                        )}
+                        listTitle="WHAT WE DO"
+                    />
+
+                    <ServiceItem
+                        className="flex-row-reverse"
+                        subTitle="Development roadmap"
+                        serviceImage="/static/images/services/web-development.jpg"
+                        srcSet="/static/images/services/web-development.jpg 1x, /static/images/services/web-development@2x.jpg 2x,"
+                        serviceDescription={'Once we have a complete set of requirements, we\'ll define a development roadmap to get you to market, as quickly as possible, with a quality product.'}
                     />
 
                 </div>
@@ -108,7 +117,7 @@ const CustomSoftwarePage = class extends React.Component {
 
 
                 <div className="container">
-                    <h3 className="section__title--dark text-center mb-5 mt-5">Responsive web app case studies</h3>
+                    <h3 className="section__title--dark text-center mb-5 mt-5">Custom software development case studies</h3>
                     {projects.map((p) => (
                         <ProjectItem ButtonComponent={p.ButtonComponent} projectImage={p.projectImage}
                                      subTitle={p.subTitle}

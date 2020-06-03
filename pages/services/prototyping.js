@@ -156,7 +156,7 @@ const PrototypingPage = class extends React.Component {
                 </div>
 
                 <div className="container">
-                    <h3 className="section__title--dark text-center mb-5 mt-5">Design case studies</h3>
+                    <h3 className="section__title--dark text-center mb-5 mt-5">Prototyping case studies</h3>
                     {projects.map(p => (
                         <ProjectItem
                           ButtonComponent={p.ButtonComponent} projectImage={p.projectImage}
