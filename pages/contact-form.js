@@ -18,7 +18,7 @@ const ContactFormPage = class extends React.Component {
 
     componentDidMount() {
         grecaptcha.render(document.getElementById('recaptcha'), {
-            sitekey: '6LdBxekUAAAAAL1yc56O0MSe02JLEGsADRiBqNMv',
+            sitekey: '6Lci2f8UAAAAAHTSYRQC-2NVL9iX1Ibt9hfmeo3-',
         });
         gsap.timeline()
             .from('.col-md-8', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
@@ -93,7 +93,7 @@ const ContactFormPage = class extends React.Component {
 
                                 <div className="col-lg-8 pl-0 pb-5">
 
-                                    <form action="https://post.formlyapp.com/tester?redirect=/thanks" method="POST">
+                                    <form action="https://post.formlyapp.com/ssg?redirect=/thanks" method="POST">
 
                                         <p className="text-light mt-5">1. Project Information</p>
 
