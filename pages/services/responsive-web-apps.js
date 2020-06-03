@@ -67,7 +67,7 @@ const WebAppsPage = class extends React.Component {
                                 <h5 className="title--light mb-0">Our Services</h5>
                                 <h1 className="hero__title mb-4">Responsive Web Applications</h1>
                                 <div className="col-lg-6 offset-lg-3">
-                                    <p className="text-light">We build products that work on every device.  Your users access your products on their mobile phones, tablets and desktop computers so its important that your digital properties work well in every instance.</p>
+                                    <p className="text-light">We build products that work on every device.  Your users access your products on their mobile phones, tablets and desktop computers so it's important that your digital properties work well in every instance.</p>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@ const WebAppsPage = class extends React.Component {
                         srcSet={'/static/images/services/iMac3@1x.jpg 1x, /static/images/services/iMac3@2x.jpg 2x'}
                         subTitle={'Responsive application development'}
                         className={'flex-row-reverse'}
-                        serviceDescription={'We utilise the best in class frameworks to ensure we build products that work for all users, on all devices.  With years of experience in our development team, we have adopted the best approaches for ground up builds aswell as projects bringing legacy products to handheld devices.'}
+                        serviceDescription={'We utilise the best in class frameworks to ensure we build products that work for all users, on all devices.  With years of experience in our development team, we have adopted the best approaches for ground up builds as well as projects bringing legacy products to handheld devices.'}
                     />
 
                 </div>
