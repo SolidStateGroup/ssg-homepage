@@ -67,10 +67,7 @@ const WebAppsPage = class extends React.Component {
                                 <h5 className="title--light mb-0">Our Services</h5>
                                 <h1 className="hero__title mb-4">Responsive Web Applications</h1>
                                 <div className="col-lg-6 offset-lg-3">
-                                    <p className="text-light">When we moved into our Old Street office, there were only
-                                        a handful of tech startups in the neighbourhood. Fourteen years later, we’re
-                                        still going strong, working with startups and corporations alike, swiftly
-                                        creating and transforming systems that are built to last.</p>
+                                    <p className="text-light">We build products that work on every device.  Your users access your products on their mobile phones, tablets and desktop computers so its important that your digital properties work well in every instance.</p>
                                 </div>
                             </div>
                         </div>
@@ -78,25 +75,17 @@ const WebAppsPage = class extends React.Component {
                 </div>
                 <div className="container">
                     <ServiceItem
+                      serviceImage={'/static/images/services/responsive-apps.png'}
+                      srcSet={'/static/images/services/responsive-apps.png 1x, /static/images/services/responsive-apps@2x.png 2x'}
+                      subTitle={'Responsive designs'}
+                      serviceDescription={'We design your products with multiple devices in mind to reduce technical debt.  Depending on your requirements, it might be appropriate to adopt a strategy which prioritises the primary platform for your product.'}
+                    />
+                    <ServiceItem
                         serviceImage={'/static/images/services/iMac3@1x.jpg'}
                         srcSet={'/static/images/services/iMac3@1x.jpg 1x, /static/images/services/iMac3@2x.jpg 2x'}
-                        subTitle={'Rapid application development'}
-                        serviceDescription={'We build robust and reliable software that scales. We approach projects with a tight-knit team equipped with rapid application development tools to develop, test, and deliver your projects quickly and reliably.'}
-                        serviceListItem={
-                            <React.Fragment>
-                                <React.Fragment>
-                                    <WideListItem
-                                        listItemText={'API Development'}/>
-                                    <WideListItem
-                                        listItemText={'Bespoke Software Development'}/>
-                                    <WideListItem
-                                        listItemText={'Cloud Infrastructure'}/>
-                                    <WideListItem
-                                        listItemText={'Web & mobile App Development'}/>
-                                </React.Fragment>
-                            </React.Fragment>
-                        }
-                        listTitle={'WHAT WE DO'}
+                        subTitle={'Responsive application development'}
+                        className={'flex-row-reverse'}
+                        serviceDescription={'We utilise the best in class frameworks to ensure we build products that work for all users, on all devices.  With years of experience in our development team, we have adopted the best approaches for ground up builds aswell as projects bringing legacy products to handheld devices.'}
                     />
 
                 </div>
