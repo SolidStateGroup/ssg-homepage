@@ -16,7 +16,7 @@ const ErrorPage = class extends React.Component {
 
     render = () => {
         return (
-            <Page title={Constants.titles.contactFormThanksPage} canonical="contact-form">
+            <Page title={Constants.titles.contactFormThanksPage} canonical="404">
                 <div className="hero hero--full d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                     <Header/>
 

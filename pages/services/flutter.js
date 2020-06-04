@@ -60,7 +60,7 @@ const FlutterPage = class extends React.Component {
 
     render = () => {
         return (
-          <Page title={Constants.titles.flutter} canonical="Flutter">
+          <Page title={Constants.titles.flutter} canonical="flutter">
               <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                   <Header/>
                   <div className="hero__container flex-1 align-self-stretch row flex-row text-center">

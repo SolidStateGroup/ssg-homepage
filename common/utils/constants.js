@@ -20,6 +20,16 @@ const Constants = global.Constants = {
         reactNative: 'React Native | Solid State Group',
         flutter: 'Flutter | Solid State Group',
         contact: 'Contact | Solid State Group',
+        apiDevelopment: 'API Development | Solid State Group',
+        bespokeSoftwareDevelopment: 'Bespoke Software Development | Solid State Group',
+        strategy: 'Strategy | Solid State Group',
+        branding: 'Branding | Solid State Group',
+        cloudInfrastructure: 'Cloud Infrastructure | Solid State Group',
+        customSoftwareDevelopment: 'Custom Software Development | Solid State Group',
+        design: 'Design | Solid State Group',
+        prototyping: 'Prototyping | Solid State Group',
+        responsiveWebApps: 'Responsive Web Apps | Solid State Group',
+        systemsIntegration: 'Systems Integration | Solid State Group',
     },
     // meta:description
     descriptions: {
