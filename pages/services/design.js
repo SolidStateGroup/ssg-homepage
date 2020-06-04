@@ -132,9 +132,8 @@ const DesignPage = class extends React.Component {
                     />
 
                     <ServiceItem
-                      serviceImage="https://www.solidstategroup.com/images/services/onboarding-compressed-new.gif"
+                      video="https://storage.googleapis.com/ssg-website-images/case-studies/purely-capital/quote-confirmationv2.mov"
                       className="flex-row-reverse"
-                      imageClassName="img__shadow "
                       serviceListItem={(
                           <React.Fragment>
                               <WideListItem
