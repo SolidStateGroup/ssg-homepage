@@ -81,24 +81,11 @@ const FlutterPage = class extends React.Component {
                     className={'flex-row'}
                     imageClassName={'img__shadow '}
                     subTitle={'Tried and trusted'}
-                    serviceDescription={'It is used to develop applications for Android, iOS, Windows, Mac, Linux, Google Fuchsia and the web. The first version of Flutter was known as codename "Sky" and ran on the Android operating system.'}/>
-
-                  <ServiceItem
-                    serviceImage={'/static/images/services/react-native.png'}
-                    className={'flex-row-reverse'}
-                    imageClassName={'img__shadow '}
-                    subTitle={'One codebase two platforms'}
-                    serviceDescription={'React allows us to build mobile apps for iOS and Android at the same time with a shared application logic. There\'s an added benefit of shared application code for web applications as well.'}/>
-
-                  <ServiceItem
-                    serviceImage={'/static/images/projects/tone-and-sculpt/t&s-phones.jpg'}
-                    subTitle={'Ship fast, for less'}
-                    serviceDescription={'React Native allows us to build incredibly efficiently, so you can get to market in record time and the shared codebase could reduce the cost of your product build by 40%!\n' +
-                    '\n'}/>
+                    serviceDescription={'It is used to develop applications for Android, iOS, Windows, Mac, Linux, Google Fuchsia and the web.'}/>
               </div>
 
               <div className="container">
-                  <h3 className="section__title--dark text-center mb-5 mt-5">Recent React Native projects</h3>
+                  <h3 className="section__title--dark text-center mb-5 mt-5">Recent Mobile Development projects</h3>
                   {projects.map((p) => (
                     <ProjectItem ButtonComponent={p.ButtonComponent} projectImage={p.projectImage}
                                  subTitle={p.subTitle}
