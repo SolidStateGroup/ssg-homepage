@@ -56,7 +56,7 @@ const StrategyPage = class extends React.Component {
                                 <h5 className="title--light mb-0">Our Services</h5>
                                 <h1 className="hero__title mb-4">Strategy</h1>
                                 <div className="col-lg-6 offset-lg-3">
-                                    <p className="text-light">Before we build anything, we help to identify the current biggest assumptions in your product or business, we can then help build tests to validate each assumption and finally frame any conclusions into actionable output.</p>
+                                    <p className="text-light">Our management team has over 50 years combined experience in creating technical solutions to solve business problems. Whether it’s digital transformation, business process re-engineering, or a new product or service, our background in management consulting allows us to fully scope business requirements and translate them into technical solutions.</p>
                                 </div>
                             </div>
                         </div>
@@ -65,18 +65,20 @@ const StrategyPage = class extends React.Component {
                 <div className="container">
 
                     <ServiceItem
+                        serviceImage={'/static/images/services/web-development.jpg'}
+                        subTitle={'Team construction'}
+                        serviceDescription={'Alongside the correct technical solution, it’s also crucial to construct a functional project team to execute the project. We assess the strengths in the client team and plug any gaps with members of ours, from business analysts to product managers, delivery managers, data analysts and testers. We can also help hire and train additional members of your team when it comes time to expand your workforce.'}/>
+
+                    <ServiceItem
+                        className={'flex-row-reverse'}
                         serviceImage={'/static/images/services/ssg-idea-validation-trans.png'}
                         subTitle={'Business validation'}
-                        listTitle={'WHAT WE DO'}
-                        serviceDescription={'Our business validation services range from ad campaigns, low fidelity prototypes, increasing in fidelity all the way up to rapid application builds.' +
-                        '\n'}/>
+                        serviceDescription={'If you’re launching a new product or service, generating real data based on a lightweight prototype can help validate the product and market fit before spending significant capital. Our business validation services range from ad campaigns, low fidelity prototypes, increasing in fidelity all the way up to rapid application builds.'}/>
 
                     <ServiceItem
                         serviceImage={'/static/images/projects/meownow/tails_cat-ads@1x.png'}
-                        className={'flex-row-reverse'}
                         subTitle={'Test & Learn'}
-                        listTitle={'WHAT WE DO'}
-                        serviceDescription={'Our test and learn services have helped startups and large enterprises to test the apetite for new products or propositions, the acceptance for pricing models and price points and the implementation of new features for existing products.'}/>
+                        serviceDescription={'Our test and learn services have helped startups and large enterprises to test the appetite for new products or propositions, the acceptance for pricing models and price points and the implementation of new features for existing products.'}/>
                 </div>
                 <ClientQuote
                     image={'/static/images/projects/meownow/meownow-1@1x.png'}
