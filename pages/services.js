@@ -97,7 +97,7 @@ const ServicesPage = class extends React.Component {
                           imageClassName="img__shadow "
                           subTitle="Strategy"
                           serviceLink="/services/strategy"
-                          serviceDescription="Before we build anything, we help to identify the current biggest assumptions in your product or business, we can then help build tests to validate each assumption and finally frame any conclusions into actionable output."
+                          serviceDescription="Our management team has over 50 years combined experience in creating technical solutions to solve business problems. Whether it’s digital transformation, business process re-engineering, or a new product or service, our background in management consulting allows us to fully scope business requirements and translate them into technical solutions."
                           serviceListItem={(
                               <React.Fragment>
                                   <ListItemUnderlined
@@ -148,7 +148,10 @@ const ServicesPage = class extends React.Component {
                           className="flex-row-reverse"
                           subTitle="Mobile App Development"
                           serviceLink="/services/mobile-app-development"
-                          serviceDescription="A React Native app is a real mobile app. Unlike web app wrappers, React Native uses native platform libraries, creating a completely native experience for your users."
+                          serviceDescription="We use React Native to build amazing mobile apps. Why?
+                                        React Native is a real mobile app. Unlike web app wrappers, React Native uses
+                                        native platform libraries, creating a completely native experience for your
+                                        users."
                           serviceListItem={(
                               <React.Fragment>
                                   <ListItemUnderlined
@@ -193,7 +196,7 @@ const ServicesPage = class extends React.Component {
                                   />
                               </React.Fragment>
 )}
-                          serviceDescription={'From our London office, we\'ve been working with startups and corporations for over 15 years, building cross-platform, enterprise-grade, entrepreneurial websites and apps for digital transformation projects.'}
+                          serviceDescription={'We build products that work on every device. Your users access your products on their mobile phones, tablets and desktop computers so it\'s important that your digital properties work well in every instance.'}
                         />
 
                         <ServiceItem
@@ -203,7 +206,7 @@ const ServicesPage = class extends React.Component {
                           className="flex-row-reverse"
                           subTitle="Systems Integration"
                           serviceLink="/services/systems-integration"
-                          serviceDescription="We specialise in building secure, bespoke APIs and scalable integrations with legacy systems."
+                          serviceDescription="Our systems integration solutions are designed to perform well at scale, bringing together component subsystems into one business-critical system."
                           serviceListItem={(
                               <React.Fragment>
                                   <ListItemUnderlined
@@ -231,7 +234,11 @@ const ServicesPage = class extends React.Component {
                           imageClassName="img__shadow "
                           subTitle="API Development"
                           serviceLink="/services/api-development"
-                          serviceDescription="We specialise in building secure, bespoke APIs and scalable integrations with legacy systems."
+                          serviceDescription="From our London office, we've been working with
+                                        corporations and startups for over 15 years, building secure, bespoke APIs and
+                                        scalable integrations with legacy systems. We approach projects with an
+                                        experienced team equipped with rapid application development tools to develop,
+                                        test, and deliver bespoke software quickly."
                           serviceListItem={(
                               <React.Fragment>
                                   <ListItemUnderlined
