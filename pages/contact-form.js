@@ -95,10 +95,11 @@ const ContactFormPage = class extends React.Component {
 
                                     <form action="https://post.formlyapp.com/ssg?redirect=/thanks" method="POST">
 
-                                        <p className="text-light mt-5">1. Project Information</p>
+                                        <p className="text-light mt-5">2. Project Information</p>
 
                                         <input type="hidden" name="Discipline" value={Object.keys(this.state.discipline).join(', ')}/>
                                         <div className="form-group">
+                                            <label className="form__label" htmlFor="textarea">Project description</label>
                                             <textarea
                                               className="form-control form__input" name="textarea" id="Textarea"
                                               placeholder="Tell us a little bit about your project or how we can help..."
@@ -106,7 +107,7 @@ const ContactFormPage = class extends React.Component {
                                             />
                                         </div>
 
-                                        <p className="text-light mt-5">2. Contact Details</p>
+                                        <p className="text-light mt-5">3. Contact Details</p>
                                         <Input
                                           InputLabel="Name" forLabel="Name" placeholder="Name"
                                           type="name" name="personname"

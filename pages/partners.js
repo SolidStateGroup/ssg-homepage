@@ -82,18 +82,6 @@ const projects = [
     },
     {
         ButtonComponent: ButtonPrimary,
-        href: '/projects/publicate',
-        projectImage: '/static/images/projects/publicate/publicate-summary-ipad@1x.png',
-        srcSet: '/static/images/projects/publicate/publicate-summary-ipad@1x.png 1x, /static/images/projects/publicate/publicate-summary-ipad@2x.png 2x,',
-        clientImage: '/static/images/clients/publicate.png',
-        subTitle: 'Tablet & Web Application',
-        title: 'Straightening out corporate documentation',
-        blobColour: "#fe7101",
-        tags: ['API', 'MOBILE', 'DESIGN', "WEB"],
-        projectType: ['UX Design, ', 'UI design, ', 'Web App Development, ', 'API Development ']
-    },
-    {
-        ButtonComponent: ButtonPrimary,
         href: '/projects/wazoku',
         projectImage: '/static/images/projects/wazoku/2.png',
         srcSet: '/static/images/projects/wazoku/2.png 1x, /static/images/projects/wazoku/2@2x.png 2x,',
@@ -130,9 +118,9 @@ const PartnersPage = class extends React.Component {
                       <div className="flex-1 justify-content-start pt-5 pb-5 pl-0 pr-0 pt-md-5">
                           <div className="offset-lg-3 offset-md-1">
                               <h1 className="hero__title mb-4">We partner with the best consultancies on projects for the biggest brands</h1>
-                              <a href="mailto:matthew@solidstategroup.com">
+                              <Link prefetch={false} href="/contact-form">
                                   <ButtonPrimary>Work with us</ButtonPrimary>
-                              </a>
+                              </Link>
                           </div>
                       </div>
                       <div className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down">
