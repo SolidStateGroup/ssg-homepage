@@ -30,6 +30,7 @@ const Constants = global.Constants = {
         prototyping: 'Prototyping | Solid State Group',
         responsiveWebApps: 'Responsive Web Apps | Solid State Group',
         systemsIntegration: 'Systems Integration | Solid State Group',
+        contactFormThanksPage: 'Thanks | Solid State Group',
     },
     // meta:description
     descriptions: {
