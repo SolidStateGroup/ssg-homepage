@@ -1,7 +1,7 @@
 ---
 title: Innovations in React Native - CodePush
 published: true
-description: The final part of our healthcare tech deep-dive covers direct-to-consumer startups to examine the underlying megatrends to adopt for your business.
+description: In each blog of this series, we’ll explore an innovation in React Native, the framework for building cross platform mobile apps.
 author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/React%20Native%20innovations%20codepush/build%20pebbles%20header.jpg

@@ -19,10 +19,7 @@
       "source": "/our-work",
       "destination": "/work"
     },
-    {
-      "source": "/our-work/?utm_source=twitter",
-      "destination": "/work"
-    },
+
     {
       "source": "/jobs/software-engineer",
       "destination": "/"
@@ -87,14 +84,31 @@
       "source": "/2018/01/17/2018/Wha-%20CES-2018-Highlights-Tell-Us-About-The-Macro-Trends-For-Tech/",
       "destination": "/blog/2018/jan/what-ces-2018-highlights-tell-us-about-the-macro-trends-for-tech"
     },
+    {
+      "source": "/2017/11/30/2017/Healthcare-Tech-Trends-for-2018/",
+      "destination": "/blog/2017/nov/healthcare-tech-trends-for-2018"
+    },
+
 
 
 
 
 
     {
-      "source": "/2017/11/30/2017/Healthcare-Tech-Trends-for-2018/",
-      "destination": "/blog/2017/nov/healthcare-tech-trends-for-2018"
+      "source": "/2017/10/25/2017/Startups-Who-Built-Apps-With-React-Native/",
+      "destination": "/blog/2017/oct/startups-who-built-apps-with-react-native"
+    },
+    {
+      "source": "/2017/10/20/2017/5-Things-To-Look-For-In-React-Native-Developers/",
+      "destination": "/blog/2017/oct/5-things-to-look-for-in-react-native-developers"
+    },
+    {
+      "source": "/2017/09/20/2017/90-percent-of-digital-transformation-projects-fail/",
+      "destination": "/blog/2017/sep/90-percent-of-digital-transformation-projects-fail"
+    },
+    {
+      "source": "/2017/09/11/2017/What-The-Gaming-Industry-Can-Teach-Corporates-About-Strategy-Security-and-Digital-Transformation/",
+      "destination": "/blog/2017/nov/what-the-gaming-industry-can-teach-corporates-about-strategy-security-and-digital-transformation"
     },
 
 
