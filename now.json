@@ -20,6 +20,14 @@
       "destination": "/work"
     },
     {
+      "source": "/our-work/?utm_source=twitter",
+      "destination": "/work"
+    },
+    {
+      "source": "/jobs/software-engineer",
+      "destination": "/"
+    },
+    {
       "source": "/2019/08/19/2019/perfect-Google-Lighthouse-score-Next-Redux",
       "destination": "/blog/2019/aug/100-percent-lighthouse-score"
     },
@@ -47,6 +55,58 @@
       "source": "/2018/11/03/2018/How-I-Did-It---What-To-Know-When-You-Leave-A-Corporate-To-Found-A-Tech-Startup/",
       "destination": "/blog/2018/nov/how-i-did-it-what-to-know-when-you-leave-a-corporate-to-found-a-tech-startup"
     },
+    {
+      "source": "/2018/10/18/2018/How-I-Started-A-Tech-Business---As-Told-By-Seven-Of-London's-Top-Entrepreneurs/",
+      "destination": "/blog/2018/oct/how-i-started-a-tech-business---as-told-by-seven-of-londons-top-entrepreneurs"
+    },
+    {
+      "source": "/2018/10/09/2018/Using-our-continuous-integration-tool-to-continuously-integrate-our-continuous-integration-tool/",
+      "destination": "/blog/2018/nov/using-our-continuous-integration-tool-to-continuously-integrate-our-continuous-integration-tool"
+    },
+
+
+
+
+
+    {
+      "source": "/2018/02/25/2018/Innovations-In-React-Native-=-CodePush/",
+      "destination": "/blog/2018/feb/innovations-in-react-native-codepush"
+    },
+
+    {
+      "source": "/2018/01/26/2018/Healthcare-Tech-Trends-For-2018-Part-2/",
+      "destination": "/blog/2018/jan/healthcare-tech-trends-for-2018-part-2"
+    },
+
+    {
+      "source": "/2018/01/24/2018/An-Augmented-Reality-App-Is-Not-Just-For-Christmas/",
+      "destination": "/blog/2018/jan/an-augmented-reality-app-is-not-just-for-christmas"
+    },
+
+    {
+      "source": "/2018/01/17/2018/Wha-%20CES-2018-Highlights-Tell-Us-About-The-Macro-Trends-For-Tech/",
+      "destination": "/blog/2018/jan/what-ces-2018-highlights-tell-us-about-the-macro-trends-for-tech"
+    },
+
+
+
+
+
+    {
+      "source": "/2017/11/30/2017/Healthcare-Tech-Trends-for-2018/",
+      "destination": "/blog/2017/nov/healthcare-tech-trends-for-2018"
+    },
+
+
+
+
+
+
+
+
+
+
+
     {
       "source": "/2018/10/17/2018/How-I-Did-It---I-Left-Procter-And-Gamble-To-Start-London's-Biggest-Female-Entrepreneurs-Network/",
       "destination": "/blog/2018/oct/how-i-did-it-i-left-procter-and-gamble-to-start-londons-biggest-female-entrepreneurs-network"
