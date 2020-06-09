@@ -14,6 +14,10 @@
       "destination": "/static/sitemap.xml"
     }
   ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/404" }
+  ],
   "redirects": [
     {
       "source": "/our-work",
