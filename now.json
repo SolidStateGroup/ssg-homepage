@@ -60,11 +60,6 @@
       "source": "/2018/10/09/2018/Using-our-continuous-integration-tool-to-continuously-integrate-our-continuous-integration-tool/",
       "destination": "/blog/2018/nov/using-our-continuous-integration-tool-to-continuously-integrate-our-continuous-integration-tool"
     },
-
-
-
-
-
     {
       "source": "/2018/02/25/2018/Innovations-In-React-Native-=-CodePush/",
       "destination": "/blog/2018/feb/innovations-in-react-native-codepush"
@@ -89,11 +84,6 @@
       "destination": "/blog/2017/nov/healthcare-tech-trends-for-2018"
     },
 
-
-
-
-
-
     {
       "source": "/2017/10/25/2017/Startups-Who-Built-Apps-With-React-Native/",
       "destination": "/blog/2017/oct/startups-who-built-apps-with-react-native"
@@ -111,16 +101,90 @@
       "destination": "/blog/2017/nov/what-the-gaming-industry-can-teach-corporates-about-strategy-security-and-digital-transformation"
     },
 
+    {
+      "source": "/2017/08/15/2017/What-Happens-When-You-Make-SSG-Do-An-Ecommerce-Hackathon-With-Demos/",
+      "destination": "/blog/2017/aug/what-happens-when-you-make-ssg-do-an-ecommerce-hackathon-with-demos"
+    },
+
+    {
+      "source": "/2017/08/14/2017/We-Like-Killing-People/",
+      "destination": "/blog/2017/aug/we-like-killing-people"
+    },
+
+    {
+      "source": "/2017/08/04/2017/The-Real-MVP-What-Happened-Next/",
+      "destination": "/blog/2017/apr/the-real-mvp-what-happened-next"
+    },
+
+    {
+      "source": "/2017/08/24/2017/Introducing-SSG-Labs/",
+      "destination": "/blog/2017/nov/introducing-ssg-labs"
+    },
+
+    {
+      "source": "/2017/07/18/2017/Can-I-Wear-Shorts/",
+      "destination": "/blog/2017/jul/can-I-wear-shorts"
+    },
+    {
+      "source": "/2017/06/29/2017/Bridges-Over-Troubled-Water-can-React-Native-handle-integrations/",
+      "destination": "/blog/2017/jun/bridges-over-troubled-water-can-react-native-handle-integrations"
+    },
+    {
+      "source": "/2017/06/15/2017/You-Make-One-Bus-App-Then-Hundreds-Come-At-Once/",
+      "destination": "/blog/2017/nov/you-make-one-bus-app-then-hundreds-come-at-once"
+    },
+    {
+      "source": "/2017/06/13/2017/Chatbots-Are-Coming-To-Kill-Apps-and-Google-Search/",
+      "destination": "/blog/2017/jun/chatbots-are-coming-to-kill-apps-and-google-search"
+    },
+    {
+      "source": "/2017/06/02/2017/The-Real-MVP-Validating-a-Business-In-Two-Days/",
+      "destination": "/blog/2017/jun/the-real-mvp-validating-a-business-in-two-days"
+    },
+
+    {
+      "source": "/2017/04/07/2017/Making-our-LED-Wall-emotionally-aware-with-IBMs-Watson/",
+      "destination": "/blog/2017/apr/making-our-led-wall-emotionally-aware-with-ibms-watson"
+    },
+
+    {
+      "source": "/2017/04/05/2017/Building-a-pixel-wall-in-virtual-reality-with-React-VR-and-RIO!-Our-first-impressions/",
+      "destination": "/blog/2017/may/building-a-pixel-wall-in-virtual-reality-with-react-vr-and-rio-our-first-impressions"
+    },
 
 
+    {
+      "source": "/2017/03/23/2017/they-went-to-SXSW-and-I-alI-got-was-this-lousy%20blog/",
+      "destination": "/blog/2017/apr/they-went-to-SXSW-and-I-alI-got-was-this-lousy-blog"
+    },
 
+    {
+      "source": "/2017/03/23/2017/they-went-to-SXSW-and-I-alI-got-was-this-lousy%20blog/",
+      "destination": "/blog/2017/apr/they-went-to-SXSW-and-I-alI-got-was-this-lousy-blog"
+    },
 
+    {
+      "source": "/2017/02/08/2017/Its-cross-platform-and-massively-reduces-app-dev-costs-but-WTF-is-React-Native/",
+      "destination": "/blog/2017/aug/Its-cross-platform-and-massively-reduces-app-dev-costs-but-WTF-is-React-Native"
+    },
 
+    {
+      "source": "/2017/01/19/2017/5%20things%20most%20startups%20forget%20when%20building%20their%20first%20app/",
+      "destination": "/blog/2017/jan/5-things-most-startups-forget-when-building-their-first-app"
+    },
 
-
-
-
-
+    {
+      "source": "/2017/01/17/2017/laundry-is-dull-and-robots-are-cool-insights-from-CES-2017/",
+      "destination": "/blog/2017/jan/laundry-is-dull-and-robots-are-cool-insights-from-CES-2017"
+    },
+    {
+      "source": "/2016/12/13/2016/10%20must%20read%20long%20reads%20this%20holiday/",
+      "destination": "/blog/2016/dec/10-must-read-long-reads-this-holiday"
+    },
+    {
+      "source": "/2016/12/02/2016/failing-faster-part-1/",
+      "destination": "/blog/2016/feb/failing-faster-part-1"
+    },
     {
       "source": "/2018/10/17/2018/How-I-Did-It---I-Left-Procter-And-Gamble-To-Start-London's-Biggest-Female-Entrepreneurs-Network/",
       "destination": "/blog/2018/oct/how-i-did-it-i-left-procter-and-gamble-to-start-londons-biggest-female-entrepreneurs-network"
