@@ -38,6 +38,18 @@
     }
 }
 
+.document{
+    background:linear-gradient(to bottom right, #2C2733,#3f3a46);
+    border-radius:8px;
+    padding:20px;
+    color:#fff;
+
+    &--primary{
+        background:linear-gradient(to bottom right, #1ad9df,#1AC0C6);
+        box-shadow: rgba($brand-primary, 0.3) 0 6px 20px;
+    }
+}
+
 @include media-breakpoint-down(md) {
     .panel{
         padding:20px 0;
