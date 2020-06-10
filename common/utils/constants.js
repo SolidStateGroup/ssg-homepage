@@ -44,7 +44,12 @@ const Constants = global.Constants = {
         home: 'Api development, custom, iot, bespoke, software development, mobile application development, user interface design, ux design, react native, systems integration, cloud infrastructure, technology, digital',
     },
     pages: {
-
+        home: 'Homepage',
+        blog: 'Blog',
+        work: 'Work',
+        services: 'Services',
+        partners: 'Partners',
+        contact: 'Contact',
     },
 };
 

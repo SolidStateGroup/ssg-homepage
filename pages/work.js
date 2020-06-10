@@ -17,9 +17,9 @@ export const projects = [
         subTitle: 'Web Application',
         href: '/projects/electron-trader',
         title: 'Tapping into the future of the electricity market',
-        blobColour: "#5EABBA",
+        blobColour: '#5EABBA',
         tags: ['DESIGN'],
-        projectType: ['UX design, ', 'UI design']
+        projectType: ['UX design, ', 'UI design'],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -29,10 +29,10 @@ export const projects = [
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
         title: 'Rebooting female fitness for Tone and Sculpt',
-        projectImageClass: "project__image--short",
-        blobColour: "#5CC2E1",
-        tags: ['DESIGN', "MOBILE", "API"],
-        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
+        projectImageClass: 'project__image--short',
+        blobColour: '#5CC2E1',
+        tags: ['DESIGN', 'MOBILE', 'API'],
+        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -42,9 +42,9 @@ export const projects = [
         subTitle: 'Responsive Web Application',
         href: '/projects/purely-capital',
         title: 'The future of film and media financing',
-        blobColour: "#D02D55",
-        tags: ['DESIGN', "WEB"],
-        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Web App Development, ', 'API Development ']
+        blobColour: '#D02D55',
+        tags: ['DESIGN', 'WEB'],
+        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Web App Development, ', 'API Development '],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -54,9 +54,9 @@ export const projects = [
         clientImage: '/static/images/clients/hailie.svg',
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
-        blobColour: "#FF715A",
-        tags: ['DESIGN', 'MOBILE', "IOT"],
-        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
+        blobColour: '#FF715A',
+        tags: ['DESIGN', 'MOBILE', 'IOT'],
+        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development'],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -66,9 +66,9 @@ export const projects = [
         clientImage: '/static/images/clients/wazoku.png',
         subTitle: 'iOS and Android Mobile App',
         title: 'Ideas happen anywhere, anytime',
-        blobColour: "#173E5A",
-        tags: ['DESIGN', 'MOBILE', "API"],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
+        blobColour: '#173E5A',
+        tags: ['DESIGN', 'MOBILE', 'API'],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -78,9 +78,9 @@ export const projects = [
         clientImage: '/static/images/clients/british-airways.svg',
         subTitle: 'Real-time operational dashboard',
         title: 'The real-time machine: integrating with 1960s tech',
-        blobColour: "#3658B0",
-        tags: ['API', "WEB"],
-        projectType: ['Web App Development, ', 'API Development ']
+        blobColour: '#3658B0',
+        tags: ['API', 'WEB'],
+        projectType: ['Web App Development, ', 'API Development '],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -90,9 +90,9 @@ export const projects = [
         clientImage: '/static/images/clients/wfa.svg',
         subTitle: 'Web Application',
         title: 'Visualising data for effective marketing communications',
-        blobColour: "#ff003c",
-        tags: ['API', "WEB"],
-        projectType: ['UI design, ', 'Web App Development, ', 'API Development ']
+        blobColour: '#ff003c',
+        tags: ['API', 'WEB'],
+        projectType: ['UI design, ', 'Web App Development, ', 'API Development '],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -102,9 +102,9 @@ export const projects = [
         clientImage: '/static/images/clients/publicate.png',
         subTitle: 'Tablet & Web Application',
         title: 'Straightening out corporate documentation',
-        blobColour: "#fe7101",
-        tags: ['API', 'MOBILE', 'DESIGN', "WEB"],
-        projectType: ['UX Design, ', 'UI design, ', 'Web App Development, ', 'API Development ']
+        blobColour: '#fe7101',
+        tags: ['API', 'MOBILE', 'DESIGN', 'WEB'],
+        projectType: ['UX Design, ', 'UI design, ', 'Web App Development, ', 'API Development '],
     },
 
     {
@@ -115,9 +115,9 @@ export const projects = [
         clientImage: '/static/images/clients/meownow.svg',
         subTitle: 'Responsive Website',
         title: 'Subscription service for your feline friends',
-        blobColour: "#f7f7f7",
+        blobColour: '#f7f7f7',
         tags: ['DESIGN', 'BRANDING', 'WEB'],
-        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Web Development, ']
+        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Web Development, '],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -127,9 +127,9 @@ export const projects = [
         clientImage: '/static/images/clients/electron.png',
         subTitle: 'Responsive Website',
         title: 'Tapping into the future of the electricity market',
-        blobColour: "#5BABBB",
+        blobColour: '#5BABBB',
         tags: ['DESIGN', 'WEB'],
-        projectType: ['UX Design, ', 'UI design, ', 'Web Development, ']
+        projectType: ['UX Design, ', 'UI design, ', 'Web Development, '],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -139,9 +139,9 @@ export const projects = [
         clientImage: '/static/images/clients/unilever-colour.svg',
         subTitle: 'Automated ecommerce via connected scales',
         title: 'Shopping that buys itself',
-        blobColour: "#007DBB",
+        blobColour: '#007DBB',
         tags: ['DESIGN', 'MOBILE', 'IOT'],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -151,9 +151,9 @@ export const projects = [
         clientImage: '/static/images/clients/hertz-colour.png',
         subTitle: 'Connected Car mobile application',
         title: 'Feels on wheels',
-        blobColour: "#FFD60D",
+        blobColour: '#FFD60D',
         tags: ['DESIGN', 'MOBILE', 'IOT'],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -163,9 +163,9 @@ export const projects = [
         clientImage: '/static/images/clients/glenfiddich.svg',
         subTitle: 'Multiplayer AR racing game for mobile',
         title: 'Glenfiddich Stag Racing - When Whisky Meets Hackathons',
-        blobColour: "#483c3c",
+        blobColour: '#483c3c',
         tags: ['DESIGN', 'MOBILE', 'AUGMENTED REALITY'],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ']
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, '],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -175,9 +175,9 @@ export const projects = [
         clientImage: '/static/images/clients/change-please.svg',
         subTitle: 'The lean, mean, face detecting, debt tracking machine',
         title: 'Changing the [face] of debt tracking',
-        blobColour: "#908DF7",
+        blobColour: '#908DF7',
         tags: ['DESIGN', 'MOBILE', 'AUGMENTED REALITY'],
-        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Mobile App Development']
+        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Mobile App Development'],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -187,9 +187,9 @@ export const projects = [
         clientImage: '/static/images/clients/visa-colour.svg',
         subTitle: 'Instant payment integration with NFC Ring',
         title: 'Cakewalk on the catwalk',
-        blobColour: "#1a1e5a",
-        tags: ['DESIGN', 'MOBILE', "IOT"],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development']
+        blobColour: '#1a1e5a',
+        tags: ['DESIGN', 'MOBILE', 'IOT'],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development'],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -199,9 +199,9 @@ export const projects = [
         clientImage: '/static/images/clients/dugout.svg',
         subTitle: 'Developing with React and React Native',
         title: 'Making fantasy football a reality',
-        blobColour: "#D8315B",
-        tags: ['DESIGN', 'MOBILE', "WEB", "API"],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development, ', "Web App Development "]
+        blobColour: '#D8315B',
+        tags: ['DESIGN', 'MOBILE', 'WEB', 'API'],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development, ', 'Web App Development '],
     },
 
     {
@@ -212,9 +212,9 @@ export const projects = [
         clientImage: '/static/images/clients/imperial.png',
         subTitle: 'Mobile app for managing bookings, accessing hotel facilities and controlling the premium WiFi service.',
         title: 'React Native mobile application with in depth integrations',
-        blobColour: "#f6921e",
-        tags: ['DESIGN', 'MOBILE', "API"],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ',]
+        blobColour: '#f6921e',
+        tags: ['DESIGN', 'MOBILE', 'API'],
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -224,9 +224,9 @@ export const projects = [
         clientImage: '/static/images/clients/patientview.png',
         subTitle: 'Secure online platform for clinicians and patients',
         title: 'The doctor will see you now – wherever, whenever',
-        blobColour: "#368de8",
-        tags: ['API', "WEB"],
-        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
+        blobColour: '#368de8',
+        tags: ['API', 'WEB'],
+        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development'],
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -236,34 +236,35 @@ export const projects = [
         clientImage: '/static/images/clients/chorus.png',
         subTitle: 'Find the relevant conversations for your small business on Twitter',
         title: 'Social marketing, made easy',
-        blobColour: "#46cd86",
-        tags: ['DESIGN', 'MOBILE', "API", "BRANDING"],
-        projectType: ['UX design, ', 'UI design, ', 'Branding, ', 'Mobile App Development, ', 'API Development ',]
+        blobColour: '#46cd86',
+        tags: ['DESIGN', 'MOBILE', 'API', 'BRANDING'],
+        projectType: ['UX design, ', 'UI design, ', 'Branding, ', 'Mobile App Development, ', 'API Development '],
     },
 ];
 
 const WorkPage = class extends React.Component {
-  static displayName = 'WorkPage';
+    static displayName = 'WorkPage';
 
-  constructor(props, context) {
-      super(props, context);
-      this.state = {
-          tab: 'ALL',
-      };
-  }
+    constructor(props, context) {
+        super(props, context);
+        this.state = {
+            tab: 'ALL',
+        };
+    }
 
     componentDidMount() {
+        API.trackPage(Constants.pages.work);
         gsap.timeline()
-            .from('.hero__container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
-            .from('.hero__footer .content-nav__item', { x: 10, opacity: 0, stagger:.15, ease: 'power1' })
+          .from('.hero__container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
+          .from('.hero__footer .content-nav__item', { x: 10, opacity: 0, stagger: .15, ease: 'power1' });
     }
 
     filterProjects = () => {
         return this.state.tab === 'ALL' ? projects : filter(projects, p => p.tags.includes(this.state.tab));
-    }
+    };
 
-  render = () => {
-      return (
+    render = () => {
+        return (
           <Page title={Constants.titles.services} canonical="work">
               <div className="hero hero--half d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                   <Header/>
@@ -272,7 +273,7 @@ const WorkPage = class extends React.Component {
                           <div className="offset-lg-3">
                               <h1 className="hero__title mb-4">Our Work</h1>
                               <p className="text-light">Take a look at the latest and greatest projects
-                                we’ve built here at Solid State Group.
+                                  we’ve built here at Solid State Group.
                               </p>
                           </div>
                       </div>
@@ -307,14 +308,14 @@ const WorkPage = class extends React.Component {
                               API Dev
                           </li>
                           <li
-                              onClick={() => this.setState({ tab: 'IOT' })}
-                              className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'IOT' })}
+                            onClick={() => this.setState({ tab: 'IOT' })}
+                            className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'IOT' })}
                           >
                               IOT
                           </li>
                           <li
-                              onClick={() => this.setState({ tab: 'AUGMENTED REALITY' })}
-                              className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'AUGMENTED REALITY' })}
+                            onClick={() => this.setState({ tab: 'AUGMENTED REALITY' })}
+                            className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'AUGMENTED REALITY' })}
                           >
                               Augmented Reality
                           </li>
@@ -325,31 +326,31 @@ const WorkPage = class extends React.Component {
 
               <div className="container mt-md-0 mt-5">
                   <InfiniteScroll
-                      items={this.filterProjects()}
-                      chunkSize={1}
-                      pageSize={4}
-                      renderItem={(p)=>(
-                        <ProjectItem
-                          key={p.title}
-                          href={p.href}
-                          ButtonComponent={p.ButtonComponent}
-                          projectImage={p.projectImage}
-                          srcSet={p.srcSet}
-                          subTitle={p.subTitle}
-                          projectImageClass={p.projectImageClass}
-                          blobColour={p.blobColour}
-                          title={p.title}
-                          projectType={p.projectType}
-                          clientImage={p.clientImage}
-                        />
-                      )}
+                    items={this.filterProjects()}
+                    chunkSize={1}
+                    pageSize={4}
+                    renderItem={(p) => (
+                      <ProjectItem
+                        key={p.title}
+                        href={p.href}
+                        ButtonComponent={p.ButtonComponent}
+                        projectImage={p.projectImage}
+                        srcSet={p.srcSet}
+                        subTitle={p.subTitle}
+                        projectImageClass={p.projectImageClass}
+                        blobColour={p.blobColour}
+                        title={p.title}
+                        projectType={p.projectType}
+                        clientImage={p.clientImage}
+                      />
+                    )}
                   />
               </div>
               <Footer/>
           </Page>
 
-      );
-  };
+        );
+    };
 };
 
 export default WorkPage;

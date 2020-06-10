@@ -21,6 +21,7 @@ const ServicesPage = class extends React.Component {
     }
 
     componentDidMount() {
+        API.trackPage(Constants.pages.services);
         gsap.timeline()
             .from('.hero__container .col-md-6', { duration: 0.5, delay: 0.25, y: 10, opacity: 0, ease: 'power1' })
             .from('.section--dark .container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' });
