@@ -29,6 +29,7 @@ class MyApp extends App {
                           name="description"
                           content={Constants.descriptions.home}
                         />
+                        <meta property="og:image" content="/static/images/homepage.png" />
                         <meta
                           name="keywords"
                           content={Constants.keywords.home}
@@ -49,7 +50,7 @@ class MyApp extends App {
                           rel="icon" type="image/png" sizes="192x192"
                           href="/static/images/favicon-192x192.png"
                         />
-                        <script src='https://www.google.com/recaptcha/api.js'></script>
+                        <script src="https://www.google.com/recaptcha/api.js" />
                         <meta name="theme-color" content="#2a93d6"/>
                         {/* Used to prevent a CSS flicker on chrome */}
                         <script type="text/javascript" src="/static/chromefix.js" />

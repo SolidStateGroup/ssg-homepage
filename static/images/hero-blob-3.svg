@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="616px" height="514px" viewBox="0 0 616 514" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>hero-blob-3</title>
+    <defs>
+        <filter x="-30.8%" y="-26.7%" width="161.5%" height="153.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-30.8%" y="-26.7%" width="161.5%" height="153.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="UI-Design-(Teal)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.131905692">
+        <g id="Services-Teal-v1" transform="translate(-857.000000, -98.000000)" fill-rule="nonzero">
+            <g id="hero-blob-3" transform="translate(870.000000, 111.914508)">
+                <g id="cube-copy" filter="url(#filter-1)" transform="translate(28.500000, 144.585492) rotate(32.000000) translate(-28.500000, -144.585492) translate(9.000000, 122.085492)">
+                    <polygon id="Path" fill="#C1C1C1" points="19.5 0 0 11.25 0 33.75 19.5 45 39 33.75 39 11.25"></polygon>
+                    <polygon id="Path" fill="#F2F2F2" points="20 45 20 0 39 11.25 39 33.75"></polygon>
+                    <polygon id="Path" fill="#F7F7F7" points="0 11.2527473 19.5 0 39 11.2527473 19.5 22"></polygon>
+                </g>
+                <g id="cube" transform="translate(238.000000, 454.085492)">
+                    <polygon id="Path" fill="#C1C1C1" points="19.5 0 0 11.25 0 33.75 19.5 45 39 33.75 39 11.25"></polygon>
+                    <polygon id="Path" fill="#F2F2F2" points="20 45 20 0 39 11.25 39 33.75"></polygon>
+                    <polygon id="Path" fill="#F7F7F7" points="0 11.2527473 19.5 0 39 11.2527473 19.5 22"></polygon>
+                </g>
+                <g id="cube-copy" filter="url(#filter-2)" transform="translate(476.500000, 29.500000) rotate(32.000000) translate(-476.500000, -29.500000) translate(457.000000, 7.000000)">
+                    <polygon id="Path" fill="#C1C1C1" points="19.5 0 0 11.25 0 33.75 19.5 45 39 33.75 39 11.25"></polygon>
+                    <polygon id="Path" fill="#F2F2F2" points="20 45 20 0 39 11.25 39 33.75"></polygon>
+                    <polygon id="Path" fill="#F7F7F7" points="0 11.2527473 19.5 0 39 11.2527473 19.5 22"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

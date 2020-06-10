@@ -95,7 +95,7 @@ const TheComponent = class extends Component {
                     <div className="container sectionFourAnimation" id="sectionFourTrigger">
                         <ProjectTextSection
                             subTitle="02 / Solution"
-                            description={'Using the Electron brand guidelines as a starting point, we designed and implemented a  slick and professional dashboard interface. This included bespoke component design and data visualization.'}/>
+                            description={'Using the Electron brand guidelines as a starting point, we designed and implemented a slick and professional dashboard interface. This included bespoke component design and data visualization.'}/>
                         <ProjectDetailSectionItem
                             subTitle={'03 / Design'}
                             title={'Fonts & Colours'}

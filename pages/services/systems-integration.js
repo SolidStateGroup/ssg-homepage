@@ -58,7 +58,7 @@ const SystemsPage = class extends React.Component {
 
     render = () => {
         return (
-            <Page title={Constants.titles.mobileAppDevelopment} canonical="Mobile App Development">
+            <Page title={Constants.titles.systemsIntegration} canonical="systems-integration">
                 <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                     <Header/>
                     <div className="hero__container flex-1 align-self-stretch row flex-row text-center">
@@ -67,7 +67,7 @@ const SystemsPage = class extends React.Component {
                                 <h5 className="title--light mb-0">Our Services</h5>
                                 <h1 className="hero__title mb-4">Systems Integration</h1>
                                 <div className="col-lg-6 offset-lg-3">
-                                    <p className="text-light">We build robust and reliable software that scales. Our systems integration solutions are designed to perform well at scale, bringing together component subsystems into one business-critical system.</p>
+                                    <p className="text-light">Our systems integration solutions are designed to perform well at scale, bringing together component subsystems into one business-critical system.</p>
                                 </div>
                             </div>
                         </div>
@@ -77,9 +77,10 @@ const SystemsPage = class extends React.Component {
 
                 <div className="container">
                     <ServiceItem
-                        serviceImage={'/static/images/services/iMac3@1x.jpg'}
-                        srcSet={'/static/images/services/iMac3@1x.jpg 1x, /static/images/services/iMac3@2x.jpg 2x'}
-                        subTitle={'Software that scales'}
+                        serviceImage="/static/images/services/hertz@1x.jpg"
+                        srcSet="/static/images/services/hertz@1x.jpg 1x, /static/images/services/hertz@2x.jpg 2x,"
+
+                        subTitle={'We build robust and reliable software that scales'}
                         serviceDescription={'Recent examples include connected hardware for a bespoke clinicians dashboard, vehicle data integrations and a connected car mobile application.'}
                         serviceListItem={
                             <React.Fragment>

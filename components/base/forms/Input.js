@@ -65,7 +65,7 @@ const Input = class extends React.Component {
             >
 
                 {this.props.InputLabel ? (
-                    <label class="form__label" for={this.props.forLabel}>{this.props.InputLabel}</label>
+                    <label className="form__label" htmlFor={this.props.forLabel}>{this.props.InputLabel}</label>
                 ) : (
                     null
                 )}

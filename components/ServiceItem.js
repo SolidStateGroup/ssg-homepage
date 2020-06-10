@@ -54,6 +54,15 @@ const ServiceItem = global.ServiceItem = class extends React.PureComponent {
                          srcSet={this.props.srcSet || null}
                          className={cn(this.props.imageClassName, ' img-fluid mt-md-0 mt-5')}
                     />
+                    {this.props.video ? (
+                        <video preload="none" autoPlay={true} muted={true} loop={true} width="100%">
+                            <source
+                                src={this.props.video || "https://storage.googleapis.com/ssg-website-images/case-studies/purely-capital/quote-confirmationv2.mov"}
+                                type="video/mp4"/>
+                        </video>
+                    ) : (
+                        null
+                    )}
                 </div>
             </div>
         );

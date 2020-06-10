@@ -58,7 +58,7 @@ const WebAppsPage = class extends React.Component {
 
     render = () => {
         return (
-            <Page title={Constants.titles.webAppDevelopment} canonical="Mobile App Development">
+            <Page title={Constants.titles.responsiveWebApps} canonical="responsive-web-apps">
                 <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                     <Header/>
                     <div className="hero__container flex-1 align-self-stretch row flex-row text-center">
@@ -67,7 +67,7 @@ const WebAppsPage = class extends React.Component {
                                 <h5 className="title--light mb-0">Our Services</h5>
                                 <h1 className="hero__title mb-4">Responsive Web Applications</h1>
                                 <div className="col-lg-6 offset-lg-3">
-                                    <p className="text-light">We build products that work on every device.  Your users access your products on their mobile phones, tablets and desktop computers so it's important that your digital properties work well in every instance.</p>
+                                    <p className="text-light">We build products that work on every device. Your users access your products on their mobile phones, tablets and desktop computers so it's important that your digital properties work well in every instance.</p>
                                 </div>
                             </div>
                         </div>
