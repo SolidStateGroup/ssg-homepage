@@ -17,6 +17,7 @@ const ContactFormPage = class extends React.Component {
     }
 
     componentDidMount() {
+        API.trackPage(Constants.pages.contact);
         grecaptcha.render(document.getElementById('recaptcha'), {
             sitekey: '6Lci2f8UAAAAAHTSYRQC-2NVL9iX1Ibt9hfmeo3-',
         });

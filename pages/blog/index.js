@@ -24,7 +24,7 @@ const BlogPage = class extends Component {
     }
 
     componentWillMount() {
-        API.trackPage(Constants.pages.BLOG);
+        API.trackPage(Constants.pages.blog);
     }
 
     getBlog = () => {
