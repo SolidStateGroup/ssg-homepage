@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "now-build": "npm run build",
+    "now-build": "npm run env && npm run build",
     "analyze": "cross-env BUNDLE_ANALYZE=true next build ",
     "watch:blog": "nodemon --watch 'static/pages-blog-markdown/*' -e md --exec 'node' ./bin/blog.js",
     "dev": "npm run watch:blog & node ./bin/blog.js && node server.js",
