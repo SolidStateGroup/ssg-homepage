@@ -22,6 +22,7 @@ const HomePage = class extends React.Component {
     }
 
     componentDidMount() {
+        API.trackPage(Constants.pages.home);
         gsap.timeline()
             .from('.hero__container', { duration: 0.5, delay: 0.25, y: 10, opacity: 0, ease: 'power1' });
 
