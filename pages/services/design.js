@@ -162,7 +162,6 @@ const DesignPage = class extends React.Component {
                 />
 
                 {/*Resources section*/}
-
                 <div className="section section--grey">
                     <h2 className="section__title--dark text-center">Resources</h2>
                     <div className="offset-md-4 col-md-4 mt-4">
