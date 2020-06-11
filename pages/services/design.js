@@ -162,18 +162,18 @@ const DesignPage = class extends React.Component {
                 />
 
                 {/*Resources section*/}
-                <div className="section section--grey">
-                    <h2 className="section__title--dark text-center">Resources</h2>
-                    <div className="offset-md-4 col-md-4 mt-4">
-                        <p className="text-center">Download our resources and samples to get a better idea of our process and styleguide.
-                        </p>
-                    </div>
-                    <div className="flex-row justify-content-center mt-5 mb-5">
-                        <ButtonDownload href="/static/downloads/SSG-design-process.pdf">SSG-Styleguide__FINAL-12345678.sketch</ButtonDownload>
-                        <ButtonDownload href="/static/downloads/SSG-design-process.pdf">ssg-process-deck.pdf</ButtonDownload>
-                        <ButtonDownload href="/static/downloads/SSG-design-process.pdf">pres.pdf</ButtonDownload>
-                    </div>
-                </div>
+                {/*<div className="section section--grey">*/}
+                {/*    <h2 className="section__title--dark text-center">Resources</h2>*/}
+                {/*    <div className="offset-md-4 col-md-4 mt-4">*/}
+                {/*        <p className="text-center">Download our resources and samples to get a better idea of our process and styleguide.*/}
+                {/*        </p>*/}
+                {/*    </div>*/}
+                {/*    <div className="flex-row justify-content-center mt-5 mb-5">*/}
+                {/*        <ButtonDownload href="/static/downloads/SSG-design-process.pdf">SSG-Styleguide__FINAL-12345678.sketch</ButtonDownload>*/}
+                {/*        <ButtonDownload href="/static/downloads/SSG-design-process.pdf">ssg-process-deck.pdf</ButtonDownload>*/}
+                {/*        <ButtonDownload href="/static/downloads/SSG-design-process.pdf">pres.pdf</ButtonDownload>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
 
                 <div className="container">
                     <h3 className="section__title--dark text-center mb-5 mt-5">Design case studies</h3>
