@@ -36,6 +36,7 @@ getStory('Buttons')
     .add('secondary', () => <ButtonSecondary>A Button</ButtonSecondary>)
     .add('tertiary', () => <ButtonTertiary>A Button</ButtonTertiary>)
     .add('text', () => <ButtonText buttonText={'Explore our services'}/>)
+    .add('download', () =>  <ButtonDownload href="/static/downloads/SSG-design-process.pdf">SSG-Styleguide__FINAL-12345678.sketch</ButtonDownload>)
     .add('hexagon', () => <React.Fragment><div class="col-md-3"><ButtonHexagon buttonText={'Strategy'}/></div></React.Fragment>);
 
 getStory('Forms')

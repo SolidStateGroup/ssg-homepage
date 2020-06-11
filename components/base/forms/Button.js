@@ -18,7 +18,7 @@ const Button = global.Button = class extends React.PureComponent {
         return (
             <button
               ref="button"
-              type={this.props.type || "button"}
+              type={this.props.type || 'button'}
               name="button"
               value={this.props.value || null}
               id={this.props.id || null}
@@ -113,6 +113,35 @@ export const ButtonText = global.ButtonText = class extends React.PureComponent 
     }
 };
 
+export const ButtonDownload = global.ButtonDownload = class extends React.PureComponent {
+    static displayName = 'ButtonDownload';
+
+    static propTypes = _propTypes;
+
+    render() {
+        const { props } = this;
+        return (
+            <a
+              {...props}
+              href={props.href || "#"}
+              download
+              className={cn(props.className, 'btn--download')}
+            >{this.props.children}
+                <div className="btn--download--circle">
+                    <svg width={23} height={23} viewBox="0 0 23 23">
+                        <title>download</title>
+                        <path
+                          d="M19.48 18.619a.865.865 0 01-.861.862.865.865 0 01-.862-.862c0-.474.388-.862.862-.862s.862.388.862.862zm-3.62-.862a.865.865 0 00-.861.862c0 .474.387.862.862.862a.865.865 0 00.862-.862.865.865 0 00-.862-.862zm6.207-2.069v4.483c0 1.047-.85 1.896-1.896 1.896H1.896A1.896 1.896 0 010 20.17v-4.483c0-1.047.85-1.896 1.896-1.896H6.18L3.75 11.36c-1.086-1.086-.315-2.944 1.22-2.944h2.27V1.724C7.24.771 8.013 0 8.966 0h4.137c.953 0 1.724.771 1.724 1.724v6.693h2.272c1.534 0 2.301 1.858 1.22 2.944l-2.432 2.43h4.285c1.047 0 1.896.85 1.896 1.897zm-11.28.763a.346.346 0 00.488 0l6.064-6.064a.346.346 0 00-.246-.59h-3.646V1.723a.346.346 0 00-.345-.345H8.965a.346.346 0 00-.345.345v8.072H4.97a.347.347 0 00-.246.591l6.064 6.064zm9.9-.763a.519.519 0 00-.516-.517h-5.664l-2.254 2.254a1.727 1.727 0 01-2.44 0L7.56 15.171H1.896a.519.519 0 00-.517.517v4.483c0 .284.233.517.517.517h18.275a.519.519 0 00.517-.517v-4.483z"
+                          fill="#FFF"
+                          fillRule="nonzero"
+                        />
+                    </svg>
+                </div>
+            </a>
+        );
+    }
+};
+
 export const ButtonHexagon = global.ButtonHexagon = class extends React.PureComponent {
     static displayName = 'ButtonHexagon';
 
@@ -123,19 +152,19 @@ export const ButtonHexagon = global.ButtonHexagon = class extends React.PureComp
         return (
             <React.Fragment>
                 <Button
-                    {...props}
-                    className={cn(props.className, 'btn--hexagon')}
+                  {...props}
+                  className={cn(props.className, 'btn--hexagon')}
                 >
 
                     {this.props.ButtonHexagonActive ? (
                         <svg width={width || '100%'} height={height || 'auto'} viewBox="0 0 137 119">
-                            <title>{"design"}</title>
+                            <title>design</title>
                             <g fill="none" fillRule="evenodd">
                                 <path
-                                    fill="#1AC0C6"
-                                    stroke="#1AC0C6"
-                                    strokeWidth={2}
-                                    d="M102.75.177L137 59.5l-34.25 59.323h-68.5L0 59.5 34.25.177z"
+                                  fill="#1AC0C6"
+                                  stroke="#1AC0C6"
+                                  strokeWidth={2}
+                                  d="M102.75.177L137 59.5l-34.25 59.323h-68.5L0 59.5 34.25.177z"
                                 />
                                 <g fill="#fff" fillRule="nonzero">
                                     <path d="M62.202 52.316c-6.025 0-10.927 4.902-10.927 10.926 0 6.025 4.902 10.927 10.927 10.927 6.024 0 10.926-4.902 10.926-10.927 0-6.024-4.902-10.926-10.926-10.926zm0 19.866c-4.93 0-8.94-4.01-8.94-8.94s4.01-8.94 8.94-8.94c4.928 0 8.94 4.01 8.94 8.94s-4.012 8.94-8.94 8.94z" />
@@ -147,11 +176,11 @@ export const ButtonHexagon = global.ButtonHexagon = class extends React.PureComp
                         </svg>
                     ) : (
                         <svg width={width || '100%'} height={height || 'auto'} viewBox="0 0 137 119">
-                            <title>{"design"}</title>
+                            <title>design</title>
                             <g fill="none" fillRule="evenodd">
                                 <path
-                                    fill="#fff"
-                                    d="M102.75.177L137 59.5l-34.25 59.323h-68.5L0 59.5 34.25.177z"
+                                  fill="#fff"
+                                  d="M102.75.177L137 59.5l-34.25 59.323h-68.5L0 59.5 34.25.177z"
                                 />
                                 <g fillRule="nonzero" fill="#2C2733">
                                     <path d="M62.202 52.316c-6.025 0-10.927 4.902-10.927 10.926 0 6.025 4.902 10.927 10.927 10.927 6.024 0 10.926-4.902 10.926-10.927 0-6.024-4.902-10.926-10.926-10.926zm0 19.866c-4.93 0-8.94-4.01-8.94-8.94s4.01-8.94 8.94-8.94c4.928 0 8.94 4.01 8.94 8.94s-4.012 8.94-8.94 8.94z" />
@@ -180,19 +209,19 @@ export const ButtonHexagonDesign = global.ButtonHexagonDesign = class extends Re
         return (
             <React.Fragment>
                 <Button
-                    {...props}
-                    className={cn(props.className, 'btn--hexagon')}
+                  {...props}
+                  className={cn(props.className, 'btn--hexagon')}
                 >
 
                     {this.props.ButtonHexagonActive ? (
                         <svg width={width || '100%'} height={height || 'auto'} viewBox="0 0 137 119">
-                            <title>{"dev"}</title>
+                            <title>dev</title>
                             <g fill="none" fillRule="evenodd">
                                 <path
-                                    stroke="#1AC0C6"
-                                    strokeWidth={2}
-                                    fill="#1AC0C6"
-                                    d="M102.75.177L137 59.5l-34.25 59.323h-68.5L0 59.5 34.25.177z"
+                                  stroke="#1AC0C6"
+                                  strokeWidth={2}
+                                  fill="#1AC0C6"
+                                  d="M102.75.177L137 59.5l-34.25 59.323h-68.5L0 59.5 34.25.177z"
                                 />
                                 <g fill="#fff" fillRule="nonzero">
                                     <path d="M57.529 34.37c-6.597 0-12.154 4.533-13.72 10.647a14.143 14.143 0 00-.441 3.513c0 7.808 6.352 14.16 14.16 14.16 7.809 0 14.161-6.352 14.161-14.16s-6.352-14.16-14.16-14.16zm-1.132 20.109a1.16 1.16 0 100 2.32h9.595a11.804 11.804 0 01-8.463 3.57c-6.529 0-11.84-5.31-11.84-11.84 0-.693.06-1.372.176-2.033h5.054c.271 0 .422.161.487.257.066.097.16.296.062.548l-.081.206a2.909 2.909 0 002.71 3.975h4.39a1.16 1.16 0 100-2.321h-4.39a.576.576 0 01-.488-.258.576.576 0 01-.061-.547l.08-.206a2.909 2.909 0 00-2.71-3.976H46.52c1.74-4.379 6.018-7.483 11.01-7.483 3.839 0 7.257 1.837 9.421 4.678h-6.867a1.16 1.16 0 100 2.322h8.25a11.77 11.77 0 011.035 4.839c0 2.167-.586 4.2-1.607 5.949H56.397zM89.647 73.015a1.17 1.17 0 00-.82-.34 1.17 1.17 0 00-.822.34c-.215.217-.34.515-.34.82 0 .306.125.605.34.822.216.216.516.34.821.34.305 0 .605-.124.82-.34a1.164 1.164 0 000-1.642z" />
@@ -203,11 +232,11 @@ export const ButtonHexagonDesign = global.ButtonHexagonDesign = class extends Re
                         </svg>
                     ) : (
                         <svg width={width || '100%'} height={height || 'auto'} viewBox="0 0 137 119">
-                            <title>{"dev"}</title>
+                            <title>dev</title>
                             <g fill="none" fillRule="evenodd">
                                 <path
-                                    fill="#fff"
-                                    d="M102.75.177L137 59.5l-34.25 59.323h-68.5L0 59.5 34.25.177z"
+                                  fill="#fff"
+                                  d="M102.75.177L137 59.5l-34.25 59.323h-68.5L0 59.5 34.25.177z"
                                 />
                                 <g fillRule="nonzero" fill="#2C2733">
                                     <path d="M57.529 34.37c-6.597 0-12.154 4.533-13.72 10.647a14.143 14.143 0 00-.441 3.513c0 7.808 6.352 14.16 14.16 14.16 7.809 0 14.161-6.352 14.161-14.16s-6.352-14.16-14.16-14.16zm-1.132 20.109a1.16 1.16 0 100 2.32h9.595a11.804 11.804 0 01-8.463 3.57c-6.529 0-11.84-5.31-11.84-11.84 0-.693.06-1.372.176-2.033h5.054c.271 0 .422.161.487.257.066.097.16.296.062.548l-.081.206a2.909 2.909 0 002.71 3.975h4.39a1.16 1.16 0 100-2.321h-4.39a.576.576 0 01-.488-.258.576.576 0 01-.061-.547l.08-.206a2.909 2.909 0 00-2.71-3.976H46.52c1.74-4.379 6.018-7.483 11.01-7.483 3.839 0 7.257 1.837 9.421 4.678h-6.867a1.16 1.16 0 100 2.322h8.25a11.77 11.77 0 011.035 4.839c0 2.167-.586 4.2-1.607 5.949H56.397zM89.647 73.015a1.17 1.17 0 00-.82-.34 1.17 1.17 0 00-.822.34c-.215.217-.34.515-.34.82 0 .306.125.605.34.822.216.216.516.34.821.34.305 0 .605-.124.82-.34a1.164 1.164 0 000-1.642z" />
@@ -234,19 +263,19 @@ export const ButtonHexagonMobile = global.ButtonHexagonMobile = class extends Re
         return (
             <React.Fragment>
                 <Button
-                    {...props}
-                    className={cn(props.className, 'btn--hexagon')}
+                  {...props}
+                  className={cn(props.className, 'btn--hexagon')}
                 >
 
                     {this.props.ButtonHexagonActive ? (
                         <svg width={width || '100%'} height={height || 'auto'} viewBox="0 0 137 119">
-                            <title>{"design"}</title>
+                            <title>design</title>
                             <g fill="none" fillRule="evenodd">
                                 <path
-                                    stroke="#1AC0C6"
-                                    strokeWidth={2}
-                                    fill="#1AC0C6"
-                                    d="M101.75 1.91L135 59.5l-33.25 57.59h-66.5L2 59.5 35.25 1.91z"
+                                  stroke="#1AC0C6"
+                                  strokeWidth={2}
+                                  fill="#1AC0C6"
+                                  d="M101.75 1.91L135 59.5l-33.25 57.59h-66.5L2 59.5 35.25 1.91z"
                                 />
                                 <g fill="#fff" fillRule="nonzero">
                                     <path d="M84.967 75.905h-1.996v3.991H65.01v1.996H82.97v2.994a2.994 2.994 0 01-2.994 2.994H58.023a3.005 3.005 0 01-2.595-1.497l-1.728.998a5.01 5.01 0 004.323 2.495h21.954a4.996 4.996 0 004.99-4.99v-8.981z" />
@@ -262,8 +291,8 @@ export const ButtonHexagonMobile = global.ButtonHexagonMobile = class extends Re
                         <svg width={width || '100%'} height={height || 'auto'} viewBox="0 0 133 117">
                             <g fill="none" fillRule="evenodd">
                                 <path
-                                    fill={fill || '#fff'}
-                                    d="M99.75.91L133 58.5l-33.25 57.59h-66.5L0 58.5 33.25.91z"
+                                  fill={fill || '#fff'}
+                                  d="M99.75.91L133 58.5l-33.25 57.59h-66.5L0 58.5 33.25.91z"
                                 />
                                 <g fillRule="nonzero" fill="#2C2733">
                                     <path d="M82.967 74.905h-1.996v3.991H63.01v1.996H80.97v2.994a2.994 2.994 0 01-2.994 2.994H56.023a3.005 3.005 0 01-2.595-1.497l-1.728.998a5.01 5.01 0 004.323 2.495h21.954a4.996 4.996 0 004.99-4.99v-8.981z" />
@@ -293,19 +322,19 @@ export const ButtonHexagonWeb = global.ButtonHexagonWeb = class extends React.Pu
         return (
             <React.Fragment>
                 <Button
-                    {...props}
-                    className={cn(props.className, 'btn--hexagon')}
+                  {...props}
+                  className={cn(props.className, 'btn--hexagon')}
                 >
 
                     {this.props.ButtonHexagonActive ? (
                         <svg width={width || '100%'} height={height || 'auto'} viewBox="0 0 137 119">
-                            <title>{"dev"}</title>
+                            <title>dev</title>
                             <g fill="none" fillRule="evenodd">
                                 <path
-                                    stroke="#1AC0C6"
-                                    strokeWidth={2}
-                                    fill="#1AC0C6"
-                                    d="M102.75.177L137 59.5l-34.25 59.323h-68.5L0 59.5 34.25.177z"
+                                  stroke="#1AC0C6"
+                                  strokeWidth={2}
+                                  fill="#1AC0C6"
+                                  d="M102.75.177L137 59.5l-34.25 59.323h-68.5L0 59.5 34.25.177z"
                                 />
                                 <g fill="#fff" fillRule="nonzero">
                                     <path d="M86.1 28.1h-38a5.006 5.006 0 00-5 5v27a5.006 5.006 0 005 5h13.674l-1.428 5H57.1v2h20v-2h-3.246l-1.428-5H86.1a5.006 5.006 0 005-5v-27a5.006 5.006 0 00-5-5zm-23.674 42l1.428-5h6.492l1.428 5h-9.348zm26.674-10a3 3 0 01-3 3h-38a3 3 0 01-3-3v-2h44v2zm0-4h-44v-23a3 3 0 013-3h38a3 3 0 013 3v23zM75.1 74.1h-28a1 1 0 00-1 1v12a1 1 0 001 1h28a1 1 0 001-1v-12a1 1 0 00-1-1zm-1 12h-26v-10h26v10z" />
@@ -316,11 +345,11 @@ export const ButtonHexagonWeb = global.ButtonHexagonWeb = class extends React.Pu
                         </svg>
                     ) : (
                         <svg width={width || '100%'} height={height || 'auto'} viewBox="0 0 137 119">
-                            <title>{"dev"}</title>
+                            <title>dev</title>
                             <g fill="none" fillRule="evenodd">
                                 <path
-                                    fill="#fff"
-                                    d="M102.75.177L137 59.5l-34.25 59.323h-68.5L0 59.5 34.25.177z"
+                                  fill="#fff"
+                                  d="M102.75.177L137 59.5l-34.25 59.323h-68.5L0 59.5 34.25.177z"
                                 />
                                 <g fillRule="nonzero" fill="#2C2733">
                                     <path d="M86.1 28.1h-38a5.006 5.006 0 00-5 5v27a5.006 5.006 0 005 5h13.674l-1.428 5H57.1v2h20v-2h-3.246l-1.428-5H86.1a5.006 5.006 0 005-5v-27a5.006 5.006 0 00-5-5zm-23.674 42l1.428-5h6.492l1.428 5h-9.348zm26.674-10a3 3 0 01-3 3h-38a3 3 0 01-3-3v-2h44v2zm0-4h-44v-23a3 3 0 013-3h38a3 3 0 013 3v23zM75.1 74.1h-28a1 1 0 00-1 1v12a1 1 0 001 1h28a1 1 0 001-1v-12a1 1 0 00-1-1zm-1 12h-26v-10h26v10z" />
@@ -336,10 +365,3 @@ export const ButtonHexagonWeb = global.ButtonHexagonWeb = class extends React.Pu
         );
     }
 };
-
-
-
-
-
-
-
