@@ -1,13 +1,12 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2018/oct/using-our-continuous-integration-tool-to-continuously-integrate-our-continuous-integration-tool.md';
 import BlogPost from '../../../../components/BlogPost';
 
 
 const BlogPostPage = props => (
     <BlogPost
       route={props.router.route}
-      source={md}
+      source="/static/pages-blog-markdown/2018/nov/using-our-continuous-integration-tool-to-continuously-integrate-our-continuous-integration-tool.md"
     />
 );
 
