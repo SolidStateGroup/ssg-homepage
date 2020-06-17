@@ -3,6 +3,7 @@ import { withRouter } from 'next/router';
 import Link from 'next/link';
 import propTypes from 'prop-types';
 import cn from 'classnames';
+import { ButtonPrimary } from './base/forms/Button';
 
 const ActiveLink = withRouter(({ router, children, ...props }) => (
     <Link {...props}>
@@ -79,7 +80,7 @@ class Header extends PureComponent {
                                 </li>
                             </ul>
                             <ul className="navbar-nav ml-auto">
-                                <li className="nav-item nav-item--contact desktop-menu__item">
+                                <li className="nav-item nav-item--contact desktop-menu__item" onClick={() => API.trackEvent({ category: 'Buttons', event: 'view', label: 'desktop_header_contact' })}>
                                     <svg className="mr-2" width={23} height={17} viewBox="0 0 23 17">
                                         <title>{"Group"}</title>
                                         <path
@@ -162,7 +163,7 @@ class Header extends PureComponent {
                                         <a href="/services" className="mainmenu__item">Services</a>
                                         <a href="/partners" className="mainmenu__item">Partners</a>
                                         <a href="/blog" className="mainmenu__item">Blog</a>
-                                        <a href="/contact" className="mainmenu__item">Contact</a>
+                                        <a href="/contact" className="mainmenu__item" onClick={() => API.trackEvent({ category: 'Buttons', event: 'view', label: 'mobile_header_contact' })}>Contact</a>
                                     </div>
                                 </div>
 

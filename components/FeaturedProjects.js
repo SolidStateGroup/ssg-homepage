@@ -23,6 +23,7 @@ const projects = [
         projectNumber: ['01'],
         projectImageClass: 'position-relative',
         clientImage: '/static/images/clients/tone-and-sculpt-white.svg',
+        gaDataLabel: 'featured_projects-ts',
     },
     {
         className: 'project--purely',
@@ -36,6 +37,7 @@ const projects = [
         projectNumber: ['02'],
         projectImageClass: 'position-relative',
         clientImage: '/static/images/clients/PC_logo@2x.png',
+        gaDataLabel: 'featured_projects-purely',
     },
     {
         className: 'project--ba',
@@ -49,6 +51,7 @@ const projects = [
         projectNumber: ['03'],
         projectImageClass: 'position-relative',
         clientImage: '/static/images/clients/british-airways-white.svg',
+        gaDataLabel: 'featured_projects-ba',
     },
     {
         className: 'project--hailie',
@@ -62,6 +65,7 @@ const projects = [
         projectNumber: ['04'],
         projectImageClass: 'position-relative',
         clientImage: '/static/images/clients/hailie-white.svg',
+        gaDataLabel: 'featured_projects-hailie',
     },
 ];
 
@@ -119,6 +123,7 @@ const FeaturedProjects = global.FeaturedProjects = class extends React.PureCompo
                                   projectNumber={item.projectNumber} className={cn('project__item-featured')} ButtonComponent={item.Button}
                                   projectImage={item.projectImage}
                                   subTitle={item.subTitle} title={item.title} projectImageClass={item.projectImageClass}
+                                  gaDataLabel={item.gaDataLabel}
                                 />
                             </div>
 

@@ -41,7 +41,7 @@ const ServiceItem = global.ServiceItem = class extends React.PureComponent {
 
                     {this.props.serviceLink ? (
 
-                        <Link prefetch={false} href={this.props.serviceLink}>
+                        <Link prefetch={false} href={this.props.serviceLink} onClick={() => API.trackEvent({ category: 'Service', event: 'view', label: this.props.gaServiceLabel })}>
                             <ButtonText buttonText={'Learn more'} type={'button'} className="text-primary pt-sm-3 pl-0"/>
                         </Link>
                     ) : (

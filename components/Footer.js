@@ -2,6 +2,8 @@ import propTypes from 'prop-types';
 import FooterLegal from '../components/FooterLegal';
 import Link from 'next/link';
 import Map from '../components/Map'
+import { ButtonPrimary } from './base/forms/Button';
+import React from 'react';
 
 const Footer = class extends React.Component {
     static displayName = 'Footer';
@@ -55,15 +57,15 @@ const Footer = class extends React.Component {
                             <div className="col px-md-2 px-0">
                                 <dl>
                                     <dt className="light">Call us on</dt>
-                                    <dd className="bold"><a href="tel:+442076137220">+44 20 7613 7220</a></dd>
+                                    <dd className="bold"><a href="tel:+442076137220" onClick={() => API.trackEvent({ category: 'Contact', event: 'view', label: 'tel_footer' })}>+44 20 7613 7220</a></dd>
                                 </dl>
                                 <dl>
                                     <dt className="light">Email us at</dt>
                                     <dd className="bold"><a
-                                        href="mailto:projects@solidstategroup.com">projects@solidstategroup.com</a></dd>
+                                        href="mailto:projects@solidstategroup.com" onClick={() => API.trackEvent({ category: 'Contact', event: 'view', label: 'mailto_footer' })}>projects@solidstategroup.com</a></dd>
                                 </dl>
                                 <Link prefetch={false} href="/contact-form">
-                                    <ButtonPrimary>Send us a brief</ButtonPrimary>
+                                    <ButtonPrimary onClick={() => API.trackEvent({ category: 'Contact', event: 'view', label: this.props.gaFooterLabel })}>Send us a brief</ButtonPrimary>
                                 </Link>
                             </div>
                         </div>

@@ -83,7 +83,7 @@ const HomePage = class extends React.Component {
                                     amazing digital products
                                 </h1>
                                 <Link prefetch={false} href="/work">
-                                    <ButtonPrimary>View latest projects</ButtonPrimary>
+                                    <ButtonPrimary onClick={() => API.trackEvent({ category: 'Buttons', event: 'view', label: 'home_hero_work' })}>View latest projects</ButtonPrimary>
                                 </Link>
                             </div>
                         </div>
@@ -159,6 +159,7 @@ const HomePage = class extends React.Component {
                             </ul>
                             <Link prefetch={false} href="/services">
                                 <ButtonText
+                                  onClick={() => API.trackEvent({ category: 'Buttons', event: 'view', label: 'home_services' })}
                                   buttonText="Explore our services" type="button"
                                   className="text-primary pl-sm-5 pl-0"
                                 />
@@ -246,7 +247,7 @@ const HomePage = class extends React.Component {
                     </div>
                 </div>
 
-                <Footer/>
+                <Footer gaFooterLabel="home_footer_contact"/>
             </Page>
         );
     };
