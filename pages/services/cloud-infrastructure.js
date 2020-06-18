@@ -80,7 +80,7 @@ const CloudInfraPage = class extends React.Component {
                         serviceImage="/static/images/services/api-dev@1x.jpg"
                         srcSet="/static/images/services/api-dev@1x.jpg 1x, /static/images/services/api-dev@2x.jpg 2x,"
                         subTitle="Improving your IT infrastructure"
-                        serviceDescription="Recent projects include developing a secure cloud environment for a fintech startup and implementing a secure system for encrypted patient results for a clinician dashboard."
+                        serviceDescription="Recent projects include developing a secure cloud environment for a fintech startup and implementing a secure system for encrypted patient results for a clinician dashboard.  We've been working with Amazon Web Services / Google Cloud Platform for nearly a decade and are accredited with technology partner status."
                         serviceListItem={(
                             <React.Fragment>
                                 <React.Fragment>
@@ -101,6 +101,15 @@ const CloudInfraPage = class extends React.Component {
                         )}
                         listTitle="WHAT WE DO"
                     />
+
+                    <div className="tech-partner flex-row pt-2 pb-5 justify-content-center">
+                        <div className="flex-column col-lg-4">
+                            <img src="/static/images/platforms/aws-partner.svg" alt="AWS Technology Partner" className="img-fluid"/>
+                        </div>
+                        <div className="flex-column col-lg-4">
+                            <img src="/static/images/platforms/google-cp.png" alt="GCP Technology Partner" className="img-fluid"/>
+                        </div>
+                    </div>
 
                 </div>
 
