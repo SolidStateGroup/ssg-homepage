@@ -20,6 +20,7 @@ const projects = [
         blobColour: '#3658B0',
         tags: ['API', 'WEB'],
         projectType: ['Web App Development, ', 'API Development '],
+        gaDataLabel: 'services-bespoke-ba',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -32,6 +33,7 @@ const projects = [
         blobColour: '#D02D55',
         tags: ['DESIGN', 'WEB'],
         projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Web App Development, ', 'API Development '],
+        gaDataLabel: 'services-bespoke-purely',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -44,6 +46,7 @@ const projects = [
         blobColour: '#ff003c',
         tags: ['API', 'WEB'],
         projectType: ['UI design, ', 'Web App Development, ', 'API Development '],
+        gaDataLabel: 'services-bespoke-wfa',
     },
 ];
 
@@ -130,11 +133,12 @@ const BespokeSoftwarePage = class extends React.Component {
                           projectType={p.projectType}
                           href={p.href}
                           clientImage={p.clientImage}
+                          gaDataLabel={p.gaDataLabel}
                         />
                     ))}
                 </div>
 
-                <Footer/>
+                <Footer gaFooterLabel="services_bespoke_footer_contact"/>
             </Page>
         );
     };

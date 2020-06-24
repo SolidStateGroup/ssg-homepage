@@ -21,7 +21,8 @@ const projects = [
         projectImageClass: "project__image--short",
         blobColour: "#5CC2E1",
         tags: ['DESIGN', "MOBILE", "API"],
-        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
+        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        gaDataLabel: 'services-react-native-tands',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -33,7 +34,8 @@ const projects = [
         title: 'Reinventing treatment of respiritory issues',
         blobColour: "#FF715A",
         tags: ['DESIGN', 'MOBILE', "IOT"],
-        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
+        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development'],
+        gaDataLabel: 'services-react-native-hailie',
 
     },
     {
@@ -46,7 +48,8 @@ const projects = [
         title: 'Changing the [face] of debt tracking',
         blobColour: "#908DF7",
         tags: ['DESIGN', 'MOBILE', 'AUGMENTED REALITY'],
-        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Mobile App Development']
+        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Mobile App Development'],
+        gaDataLabel: 'services-react-native-changeplease',
     },
 ];
 
@@ -112,10 +115,11 @@ const MobileAppsPage = class extends React.Component {
                                  projectType={p.projectType}
                                  href={p.href}
                                  clientImage={p.clientImage}
+                                 gaDataLabel={p.gaDataLabel}
                     />
                   ))}
               </div>
-              <Footer/>
+              <Footer gaFooterLabel="services_react-native_footer_contact"/>
           </Page>
         );
     };

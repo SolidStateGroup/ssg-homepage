@@ -20,7 +20,8 @@ const projects = [
         title: 'The real-time machine: integrating with 1960s tech',
         blobColour: "#3658B0",
         tags: ['API', "WEB"],
-        projectType: ['Web App Development, ', 'API Development ']
+        projectType: ['Web App Development, ', 'API Development '],
+        gaDataLabel: 'services-cloud-ba',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -32,7 +33,8 @@ const projects = [
         title: 'Reinventing treatment of respiritory issues',
         blobColour: "#FF715A",
         tags: ['DESIGN', 'MOBILE', "IOT"],
-        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
+        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development'],
+        gaDataLabel: 'services-cloud-hailie',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -44,7 +46,8 @@ const projects = [
         title: 'Feels on wheels',
         blobColour: "#FFD60D",
         tags: ['DESIGN', 'MOBILE', 'IOT'],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        gaDataLabel: 'services-cloud-hertz',
     },
 ];
 
@@ -131,11 +134,12 @@ const CloudInfraPage = class extends React.Component {
                                      projectType={p.projectType}
                                      href={p.href}
                                      clientImage={p.clientImage}
+                                     gaDataLabel={p.gaDataLabel}
                         />
                     ))}
                 </div>
 
-                <Footer/>
+                <Footer gaFooterLabel="services_cloud_footer_contact"/>
             </Page>
         );
     };

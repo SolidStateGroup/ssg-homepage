@@ -20,7 +20,8 @@ const projects = [
         title: 'The real-time machine: integrating with 1960s tech',
         blobColour: "#3658B0",
         tags: ['API', "WEB"],
-        projectType: ['Web App Development, ', 'API Development ']
+        projectType: ['Web App Development, ', 'API Development '],
+        gaDataLabel: 'services-web-apps-ba',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -32,7 +33,8 @@ const projects = [
         title: 'The future of film and media financing',
         blobColour: "#D02D55",
         tags: ['DESIGN', "WEB"],
-        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Web App Development, ', 'API Development ']
+        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Web App Development, ', 'API Development '],
+        gaDataLabel: 'services-web-apps-purely',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -44,7 +46,8 @@ const projects = [
         title: 'Visualising data for effective marketing communications',
         blobColour: "#ff003c",
         tags: ['API', "WEB"],
-        projectType: ['UI design, ', 'Web App Development, ', 'API Development ']
+        projectType: ['UI design, ', 'Web App Development, ', 'API Development '],
+        gaDataLabel: 'services-web-apps-wfa',
     },
 ];
 
@@ -109,11 +112,12 @@ const WebAppsPage = class extends React.Component {
                                      projectType={p.projectType}
                                      href={p.href}
                                      clientImage={p.clientImage}
+                                     gaDataLabel={p.gaDataLabel}
                         />
                     ))}
                 </div>
 
-                <Footer/>
+                <Footer gaFooterLabel="services_web-apps_footer_contact"/>
             </Page>
         );
     };

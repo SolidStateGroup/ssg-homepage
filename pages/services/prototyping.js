@@ -20,6 +20,7 @@ const projects = [
         blobColour: '#5EABBA',
         tags: ['DESIGN'],
         projectType: ['UX design, ', 'UI design'],
+        gaDataLabel: 'services-prototyping-electron-trader',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -33,6 +34,7 @@ const projects = [
         blobColour: '#5CC2E1',
         tags: ['DESIGN', 'MOBILE', 'API'],
         projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        gaDataLabel: 'services-prototyping-tands',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -45,6 +47,7 @@ const projects = [
         blobColour: '#D02D55',
         tags: ['DESIGN', 'WEB'],
         projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Web App Development, ', 'API Development '],
+        gaDataLabel: 'services-prototyping-purely',
 
     },
 ];
@@ -132,7 +135,7 @@ const PrototypingPage = class extends React.Component {
                     />
 
                     <ServiceItem
-                      serviceImage="https://www.solidstategroup.com/images/services/onboarding-compressed-new.gif"
+                      video="https://storage.googleapis.com/ssg-website-images/case-studies/purely-capital/quote-confirmationv2.mov"
                       className="flex-row-reverse"
                       imageClassName="img__shadow "
                       serviceListItem={(
@@ -168,11 +171,12 @@ const PrototypingPage = class extends React.Component {
                           projectType={p.projectType}
                           href={p.href}
                           clientImage={p.clientImage}
+                          gaDataLabel={p.gaDataLabel}
                         />
                     ))}
                 </div>
 
-                <Footer/>
+                <Footer gaFooterLabel="services_prototyping_footer_contact"/>
             </Page>
         );
     };
