@@ -19,7 +19,8 @@ const projects = [
         title: 'Subscription service for your feline friends',
         blobColour: "#f7f7f7",
         tags: ['DESIGN', 'BRANDING', 'WEB'],
-        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Web Development, ']
+        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Web Development, '],
+        gaDataLabel: 'services-branding-meow-now',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -31,7 +32,8 @@ const projects = [
         title: 'Changing the [face] of debt tracking',
         blobColour: "#908DF7",
         tags: ['DESIGN', 'MOBILE', 'AUGMENTED REALITY'],
-        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Mobile App Development']
+        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Mobile App Development'],
+        gaDataLabel: 'services-branding-changeplease',
     },
 ];
 
@@ -78,11 +80,12 @@ const BrandingPage = class extends React.Component {
                                      projectType={p.projectType}
                                      href={p.href}
                                      clientImage={p.clientImage}
+                                     gaDataLabel={p.gaDataLabel}
                         />
                     ))}
                 </div>
 
-                <Footer/>
+                <Footer gaFooterLabel="services_branding_footer_contact"/>
             </Page>
         );
     };

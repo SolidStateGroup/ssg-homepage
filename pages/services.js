@@ -98,6 +98,7 @@ const ServicesPage = class extends React.Component {
                           imageClassName="img__shadow "
                           subTitle="Strategy"
                           serviceLink="/services/strategy"
+                          gaServiceLabel="services_strategy"
                           serviceDescription="Our management team has over 50 years combined experience in creating technical solutions to solve business problems. Whether it’s digital transformation, business process re-engineering, or a new product or service, our background in management consulting allows us to fully scope business requirements and translate them into technical solutions."
                           serviceListItem={(
                               <React.Fragment>
@@ -139,6 +140,7 @@ const ServicesPage = class extends React.Component {
 )}
                           subTitle="UX & UI Design"
                           serviceLink="/services/design"
+                          gaServiceLabel="services_design"
                           serviceDescription={'We approach our design projects with passion and expertise born out of a desire to understand customers and deliver value quickly. Great design solves problems, it\'s not just about aesthetics.'}
                         />
 
@@ -149,6 +151,7 @@ const ServicesPage = class extends React.Component {
                           className="flex-row-reverse"
                           subTitle="Mobile App Development"
                           serviceLink="/services/mobile-app-development"
+                          gaServiceLabel="services_mobile"
                           serviceDescription="We use React Native to build amazing mobile apps. Why?
                                         React Native is a real mobile app. Unlike web app wrappers, React Native uses
                                         native platform libraries, creating a completely native experience for your
@@ -179,6 +182,7 @@ const ServicesPage = class extends React.Component {
                           imageClassName="img__shadow "
                           subTitle="Responsive Web Apps"
                           serviceLink="/services/responsive-web-apps"
+                          gaServiceLabel="services_web"
                           serviceListItem={(
                               <React.Fragment>
                                   <ListItemUnderlined
@@ -207,6 +211,7 @@ const ServicesPage = class extends React.Component {
                           className="flex-row-reverse"
                           subTitle="Systems Integration"
                           serviceLink="/services/systems-integration"
+                          gaServiceLabel="services_sys-int"
                           serviceDescription="Our systems integration solutions are designed to perform well at scale, bringing together component subsystems into one business-critical system."
                           serviceListItem={(
                               <React.Fragment>
@@ -235,6 +240,7 @@ const ServicesPage = class extends React.Component {
                           imageClassName="img__shadow "
                           subTitle="API Development"
                           serviceLink="/services/api-development"
+                          gaServiceLabel="services_api"
                           serviceDescription="From our London office, we've been working with
                                         corporations and startups for over 15 years, building secure, bespoke APIs and
                                         scalable integrations with legacy systems. We approach projects with an
@@ -268,6 +274,7 @@ const ServicesPage = class extends React.Component {
                           imageClassName="img__shadow "
                           subTitle="Branding"
                           serviceLink="/services/branding"
+                          gaServiceLabel="services_branding"
                           serviceDescription="We work with small and large businesses to deliver high quality brand guidelines and identities."
                           serviceListItem={(
                               <React.Fragment>

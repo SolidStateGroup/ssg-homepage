@@ -60,7 +60,7 @@ const ProjectItem = global.ProjectItem = class extends React.PureComponent {
                             )}
 
                             <Link prefetch={false} href={this.props.href}>
-                                <ButtonComponent className="project__cta mt-3">View project</ButtonComponent>
+                                <ButtonComponent className="project__cta mt-3" onClick={() => API.trackEvent({ category: 'Buttons', event: 'view', label: this.props.gaDataLabel })}>View project</ButtonComponent>
                             </Link>
                         </div>
                     </div>

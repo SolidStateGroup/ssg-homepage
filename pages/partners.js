@@ -18,7 +18,8 @@ const projects = [
         title: 'Reinventing treatment of respiritory issues',
         blobColour: "#FF715A",
         tags: ['DESIGN', 'MOBILE', "IOT"],
-        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
+        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development'],
+        gaDataLabel: 'partners-projects-hailie',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -30,7 +31,8 @@ const projects = [
         title: 'The real-time machine: integrating with 1960s tech',
         blobColour: "#3658B0",
         tags: ['API', "WEB"],
-        projectType: ['Web App Development, ', 'API Development ']
+        projectType: ['Web App Development, ', 'API Development '],
+        gaDataLabel: 'partners-projects-ba',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -42,7 +44,8 @@ const projects = [
         title: 'Shopping that buys itself',
         blobColour: "#007DBB",
         tags: ['DESIGN', 'MOBILE', 'IOT'],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        gaDataLabel: 'partners-projects-ul-scale',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -54,7 +57,8 @@ const projects = [
         title: 'Feels on wheels',
         blobColour: "#FFD60D",
         tags: ['DESIGN', 'MOBILE', 'IOT'],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        gaDataLabel: 'partners-projects-hertz',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -66,7 +70,8 @@ const projects = [
         title: 'Cakewalk on the catwalk',
         blobColour: "#1a1e5a",
         tags: ['DESIGN', 'MOBILE', "IOT"],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development']
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development'],
+        gaDataLabel: 'partners-projects-visa',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -78,7 +83,8 @@ const projects = [
         title: 'Visualising data for effective marketing communications',
         blobColour: "#ff003c",
         tags: ['API', "WEB"],
-        projectType: ['UI design, ', 'Web App Development, ', 'API Development ']
+        projectType: ['UI design, ', 'Web App Development, ', 'API Development '],
+        gaDataLabel: 'partners-projects-wfa',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -90,7 +96,8 @@ const projects = [
         title: 'Ideas happen anywhere, anytime',
         blobColour: "#173E5A",
         tags: ['DESIGN', 'MOBILE', "API"],
-        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
+        projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        gaDataLabel: 'partners-projects-wazoku',
     },
 ];
 
@@ -119,7 +126,7 @@ const PartnersPage = class extends React.Component {
                           <div className="offset-lg-3 offset-md-1">
                               <h1 className="hero__title mb-4">We partner with the best consultancies on projects for the biggest brands</h1>
                               <Link prefetch={false} href="/contact-form">
-                                  <ButtonPrimary>Work with us</ButtonPrimary>
+                                  <ButtonPrimary onClick={() => API.trackEvent({ category: 'Contact', event: 'view', label: 'partners_hero_contact' })}>Work with us</ButtonPrimary>
                               </Link>
                           </div>
                       </div>
@@ -155,11 +162,11 @@ const PartnersPage = class extends React.Component {
                           <div className="col-md-4 px-md-2 px-0">
                               <dl className="panel__list">
                                   <dt className="light">Call <span className="bold">Matthew</span> on</dt>
-                                  <dd className="bold"><a className="text-white" href="tel:+442076137220"> +44 20 7613 7220</a></dd>
+                                  <dd className="bold"><a className="text-white" href="tel:+442076137220" onClick={() => API.trackEvent({ category: 'Contact', event: 'view', label: 'partners_panel_tel' })}> +44 20 7613 7220</a></dd>
                               </dl>
                               <dl className="panel__list">
                                   <dt className="light">Email our new business team</dt>
-                                  <dd className="bold"><a className="text-white" href="mailto:matthew@solidstategroup.com">matthew@solidstategroup.com</a></dd>
+                                  <dd className="bold"><a className="text-white" href="mailto:matthew@solidstategroup.com" onClick={() => API.trackEvent({ category: 'Contact', event: 'view', label: 'partners_panel_mailto' })}>matthew@solidstategroup.com</a></dd>
                               </dl>
                           </div>
                       </div>

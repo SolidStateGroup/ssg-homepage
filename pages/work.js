@@ -20,6 +20,7 @@ export const projects = [
         blobColour: '#5EABBA',
         tags: ['DESIGN'],
         projectType: ['UX design, ', 'UI design'],
+        gaDataLabel: 'work-projects-electron-trader',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -33,6 +34,7 @@ export const projects = [
         blobColour: '#5CC2E1',
         tags: ['DESIGN', 'MOBILE', 'API'],
         projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        gaDataLabel: 'work-projects-ts',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -45,6 +47,7 @@ export const projects = [
         blobColour: '#D02D55',
         tags: ['DESIGN', 'WEB'],
         projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Web App Development, ', 'API Development '],
+        gaDataLabel: 'work-projects-purely',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -57,6 +60,7 @@ export const projects = [
         blobColour: '#FF715A',
         tags: ['DESIGN', 'MOBILE', 'IOT'],
         projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development'],
+        gaDataLabel: 'work-projects-hailie',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -69,6 +73,7 @@ export const projects = [
         blobColour: '#173E5A',
         tags: ['DESIGN', 'MOBILE', 'API'],
         projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        gaDataLabel: 'work-projects-wazoku',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -81,6 +86,7 @@ export const projects = [
         blobColour: '#3658B0',
         tags: ['API', 'WEB'],
         projectType: ['Web App Development, ', 'API Development '],
+        gaDataLabel: 'work-projects-ba',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -93,6 +99,7 @@ export const projects = [
         blobColour: '#ff003c',
         tags: ['API', 'WEB'],
         projectType: ['UI design, ', 'Web App Development, ', 'API Development '],
+        gaDataLabel: 'work-projects-wfa',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -105,6 +112,7 @@ export const projects = [
         blobColour: '#fe7101',
         tags: ['API', 'MOBILE', 'DESIGN', 'WEB'],
         projectType: ['UX Design, ', 'UI design, ', 'Web App Development, ', 'API Development '],
+        gaDataLabel: 'work-projects-publicate',
     },
 
     {
@@ -118,6 +126,7 @@ export const projects = [
         blobColour: '#f7f7f7',
         tags: ['DESIGN', 'BRANDING', 'WEB'],
         projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Web Development, '],
+        gaDataLabel: 'work-projects-meow-now',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -130,6 +139,7 @@ export const projects = [
         blobColour: '#5BABBB',
         tags: ['DESIGN', 'WEB'],
         projectType: ['UX Design, ', 'UI design, ', 'Web Development, '],
+        gaDataLabel: 'work-projects-electronx',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -142,6 +152,7 @@ export const projects = [
         blobColour: '#007DBB',
         tags: ['DESIGN', 'MOBILE', 'IOT'],
         projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        gaDataLabel: 'work-projects-ul-scale',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -154,6 +165,7 @@ export const projects = [
         blobColour: '#FFD60D',
         tags: ['DESIGN', 'MOBILE', 'IOT'],
         projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        gaDataLabel: 'work-projects-hertz',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -166,6 +178,7 @@ export const projects = [
         blobColour: '#483c3c',
         tags: ['DESIGN', 'MOBILE', 'AUGMENTED REALITY'],
         projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, '],
+        gaDataLabel: 'work-projects-glenfiddich',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -178,6 +191,7 @@ export const projects = [
         blobColour: '#908DF7',
         tags: ['DESIGN', 'MOBILE', 'AUGMENTED REALITY'],
         projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Mobile App Development'],
+        gaDataLabel: 'work-projects-changeplease',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -190,6 +204,7 @@ export const projects = [
         blobColour: '#1a1e5a',
         tags: ['DESIGN', 'MOBILE', 'IOT'],
         projectType: ['UX design, ', 'UI design, ', 'Mobile App Development'],
+        gaDataLabel: 'work-projects-visa',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -202,6 +217,7 @@ export const projects = [
         blobColour: '#D8315B',
         tags: ['DESIGN', 'MOBILE', 'WEB', 'API'],
         projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development, ', 'Web App Development '],
+        gaDataLabel: 'work-projects-dugoutfc',
     },
 
     {
@@ -215,6 +231,7 @@ export const projects = [
         blobColour: '#f6921e',
         tags: ['DESIGN', 'MOBILE', 'API'],
         projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        gaDataLabel: 'work-projects-imperial-hotels',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -227,6 +244,7 @@ export const projects = [
         blobColour: '#368de8',
         tags: ['API', 'WEB'],
         projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development'],
+        gaDataLabel: 'work-projects-patientview',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -239,6 +257,7 @@ export const projects = [
         blobColour: '#46cd86',
         tags: ['DESIGN', 'MOBILE', 'API', 'BRANDING'],
         projectType: ['UX design, ', 'UI design, ', 'Branding, ', 'Mobile App Development, ', 'API Development '],
+        gaDataLabel: 'work-projects-chrorus',
     },
 ];
 
@@ -342,11 +361,12 @@ const WorkPage = class extends React.Component {
                         title={p.title}
                         projectType={p.projectType}
                         clientImage={p.clientImage}
+                        gaDataLabel={p.gaDataLabel}
                       />
                     )}
                   />
               </div>
-              <Footer/>
+              <Footer gaFooterLabel="work_footer_contact"/>
           </Page>
 
         );

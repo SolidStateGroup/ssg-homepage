@@ -21,6 +21,7 @@ const projects = [
         blobColour: '#3658B0',
         tags: ['API', 'WEB'],
         projectType: ['Web App Development, ', 'API Development '],
+        gaDataLabel: 'services-api-ba',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -33,6 +34,7 @@ const projects = [
         blobColour: '#FF715A',
         tags: ['DESIGN', 'MOBILE', 'IOT'],
         projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development'],
+        gaDataLabel: 'services-api-hailie',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -45,6 +47,7 @@ const projects = [
         blobColour: '#FFD60D',
         tags: ['DESIGN', 'MOBILE', 'IOT'],
         projectType: ['UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        gaDataLabel: 'services-api-hertz',
     },
 ];
 
@@ -145,11 +148,12 @@ const APIPage = class extends React.Component {
                           projectType={p.projectType}
                           href={p.href}
                           clientImage={p.clientImage}
+                          gaDataLabel={p.gaDataLabel}
                         />
                     ))}
                 </div>
 
-                <Footer/>
+                <Footer gaFooterLabel="services_api_footer_contact"/>
             </Page>
         );
     };

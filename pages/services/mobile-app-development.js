@@ -21,7 +21,8 @@ const projects = [
         projectImageClass: "project__image--short",
         blobColour: "#5CC2E1",
         tags: ['DESIGN', "MOBILE", "API"],
-        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development ']
+        projectType: ['Research, ', 'UX design, ', 'UI design, ', 'Mobile App Development, ', 'API Development '],
+        gaDataLabel: 'services-mobile-app-tands',
     },
     {
         ButtonComponent: ButtonPrimary,
@@ -33,7 +34,8 @@ const projects = [
         title: 'Reinventing treatment of respiritory issues',
         blobColour: "#FF715A",
         tags: ['DESIGN', 'MOBILE', "IOT"],
-        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development']
+        projectType: ['Web App Development, ', 'API Development, ', 'Mobile App Development'],
+        gaDataLabel: 'services-mobile-app-hailie',
 
     },
 ];
@@ -100,6 +102,7 @@ const MobileAppsPage = class extends React.Component {
                                      projectType={p.projectType}
                                      href={p.href}
                                      clientImage={p.clientImage}
+                                     gaDataLabel={p.gaDataLabel}
                         />
                     ))}
                 </div>
@@ -134,7 +137,7 @@ const MobileAppsPage = class extends React.Component {
                 </div>
 
 
-                <Footer/>
+                <Footer gaFooterLabel="services_mobile-app_footer_contact"/>
             </Page>
         );
     };
