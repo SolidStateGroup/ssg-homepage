@@ -80,11 +80,79 @@ const LeadSoftwareDevJobPage = class extends React.Component {
 
                     <ul>
                         <li>A hard worker with a passion for software quality</li>
-                        <li>5+ years experience in architecting and building web and mobile applications</li>
-                        <li>A computer science/software engineering degree or equivalent</li>
-                        <li>AWS Cloud Practitioner certification or higher</li>
+                        <li>A good leader and an active participant in company development</li>
+                        <li>Client facing and able to translate business requirements to technical specifications</li>
+                        <li>A champion for agile and lean principles</li>
+                        <li>Exploring and driving adoption of new technologies</li>
                     </ul>
 
+                    <p className="bold text-dark mt-5">Our ideal candidate for this role would have an expertise in:</p>
+                    <ul>
+                    <li>Java, Spring</li>
+                        <li>Python</li>
+                        <li>Javascript/Typescript/NodeJS</li>
+                        <li>RDBMS and NoSQL databases</li>
+                        <li>Cloud Architecture (AWS, Google Cloud)</li>
+                        <li>Building RESTful web services</li>
+                        <li>Testing frameworks (e.g. Junit, Spock, Pytest)</li>
+                        <li>AWS Networking and security</li>
+                        <li>AWS Lambda</li>
+                        <li>AWS RDS</li>
+                        <li>AWS API Gateway</li>
+                        <li>Other AWS tools ( Kinesis, Elasticache, DynamoDB, ElasticSearch, Athena, QuickSight, Glue, Redshift, Sagemaker etc)</li>
+                        <li>Infrastructure Orchestration (Terraform / Pulumi etc)</li>
+                    </ul>
+
+                    <p className="bold text-dark mt-5">You should also have experience in:</p>
+
+                    <ul>
+                        <li>Enterprise Integration Patterns, Service-oriented architecture, Microservices patterns and concepts</li>
+                        <li>Ability to clearly communicate problems and solutions to technical &amp; non-technical stakeholders</li>
+                        <li>Experience of high and low level design, architecture and modelling</li>
+                        <li>Docker and server orchestration</li>
+                        <li>Git, TDD, BDD and Agile/Scrum, Kanban</li>
+                        <li>A good understanding of serverless architecture</li>
+                        <li>Environment provisioning &amp; software roll out</li>
+                        <li>CI/CD build pipelines, release management</li>
+                        <li>Developing backup and disaster recovery plans</li>
+                        <li>Executing performance and load testing plans</li>
+                    </ul>
+
+
+                    <p className="bold text-dark mt-5">It would be advantageous if you had knowledge of:</p>
+
+                    <ul>
+                        <li>Message brokers (e.g. Active MQ, Kafka)</li>
+                        <li>Redis, ElasticSearch</li>
+                        <li>Big Data technologies (e.g. Hadoop, Spark)</li>
+                        <li>Functional programming</li>
+                        <li>DataDog / NewRelic</li>
+                    </ul>
+
+
+                    <p className="bold text-dark mt-5">Culture :</p>
+
+                    <p>We're a tight knit team of talented designers and developers and we like to enjoy our successes together, in the pub or out and about at some of the awesome food venues in the Old Street / Shoreditch area.</p>
+
+                    <p>We have weekly inspiration hour on Thursday afternoon where we catch up on the news from current projects and share anything inspiration we've found on our travels through the world of design and engineering.</p>
+
+                    <p>We have seasonal socials where you might find us throwing axes, playing golf, sampling the finest spirits from around the world or even jetting off to SXSW in Austin, Texas.</p>
+
+                    <ul>
+                        <li>Interesting project work with large enterprise companies, scale-ups and startups</li>
+                        <li>Unlimited beer and soft drinks to help keep you going</li>
+                        <li>Personal development allowance for event/expo attendance</li>
+                        <li>Flexible working with a competitive salary</li>
+                        <li>Access to the cycle to work scheme</li>
+                        <li>Options to invest in select startup projects</li>
+                    </ul>
+                </div>
+
+                <div className="section section--grey">
+                    <div className="container">
+                    <p>Please submit CV’s, GitHub accounts and all that sort of thing to <a href="mailto:jobs@solidstategroup.com">jobs@solidstategroup.com</a></p>
+                    <p className="bold text-dark">**Please no agencies**</p>
+                    </div>
 
                 </div>
 
