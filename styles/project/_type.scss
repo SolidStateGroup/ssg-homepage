@@ -76,12 +76,21 @@ p{
     opacity: 0.85;
 }
 
+strong {
+    font-family: Ilisarniq-Bold, sans-serif;
+}
+
 .large-para{
     font-size:1.25rem;
 }
 
 .text-grey {
     color: $brand-dark-lavender;
+}
+
+.text-dark {
+    color: $brand-raisin-black !important;
+    opacity: 1 !important;
 }
 
 .text-primary {
