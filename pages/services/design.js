@@ -8,6 +8,15 @@ import ClientQuote from '../../components/ClientQuote';
 import { ButtonPrimary } from '../../components/base/forms/Button';
 import ProjectItem from '../../components/ProjectItem';
 
+
+import Link from 'next/link';
+import propTypes from 'prop-types';
+import BlogTag from '../../components/BlogTag';
+import blog from '../../static/blog.json';
+import BlogItem, {BlogItemSummary} from '../../components/BlogItem';
+import InfiniteScroll from '../../components/InfiniteScroll';
+import filter from 'lodash/filter';
+
 const projects = [
     {
         ButtonComponent: ButtonPrimary,
@@ -58,10 +67,23 @@ const DesignPage = class extends React.Component {
 
     constructor(props, context) {
         super(props, context);
-        this.state = {};
+        this.state = {
+            filter: 'design',
+        };
     }
 
-    render = () => {
+    getBlog = () => {
+        if (!this.props.router.query.tag) {
+            return blog;
+        }
+        return filter(blog, (item) => {
+            return item.tags.includes(this.props.router.query.tag);
+        });
+    }
+
+    render() {
+        const blogItems = this.getBlog();
+        const filteredBy = this.props.router.query.tag;
         return (
             <Page title={Constants.titles.design} canonical="design">
                 <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
@@ -196,10 +218,37 @@ const DesignPage = class extends React.Component {
                     ))}
                 </div>
 
+                <section className="section">
+                    <div className="container">
+                        <h3 className="section__title--dark text-center mb-5 mt-5">Related blog posts</h3>
+
+                        <div className="blog">
+                            <div className="container mt-5">
+
+                                <div className="row">
+
+                                    <InfiniteScroll
+                                        pageSize={4}
+                                        renderItem={(b)=> {
+                                            return <React.Fragment key={b.title}>
+                                                <BlogItemSummary key={b.title} item={b}/>
+                                            </React.Fragment>
+                                        }}
+                                        chunkSize={3}
+                                        items={filter(blogItems, (b)=>(!b.featured||!!filteredBy))}/>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+
                 <Footer gaFooterLabel="services_design_footer_contact"/>
             </Page>
         );
-    };
+    }
 };
 
 export default DesignPage;
