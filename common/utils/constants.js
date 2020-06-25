@@ -50,6 +50,7 @@ const Constants = global.Constants = {
         services: 'Services',
         partners: 'Partners',
         contact: 'Contact',
+        thanks: 'Thanks',
     },
 };
 
