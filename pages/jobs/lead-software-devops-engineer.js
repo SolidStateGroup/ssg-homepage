@@ -156,7 +156,7 @@ const LeadSoftwareDevJobPage = class extends React.Component {
 
                 </div>
 
-                <Footer gaFooterLabel="home_footer_contact"/>
+                <Footer gaFooterLabel="job_footer_contact"/>
             </Page>
         );
     };
