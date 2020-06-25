@@ -48,7 +48,7 @@ const ARPage = class extends React.Component {
 
     render = () => {
         return (
-          <Page title={Constants.titles.reactNative} canonical="react-native">
+          <Page title={Constants.titles.augmentedReality} canonical="augmented-reality">
               <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                   <Header/>
                   <div className="hero__container flex-1 align-self-stretch row flex-row text-center">
@@ -104,7 +104,7 @@ const ARPage = class extends React.Component {
                     />
                   ))}
               </div>
-              <Footer gaFooterLabel="services_react-native_footer_contact"/>
+              <Footer gaFooterLabel="services_augmented-reality_footer_contact"/>
           </Page>
         );
     };
