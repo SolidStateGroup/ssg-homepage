@@ -18,6 +18,7 @@ const Constants = global.Constants = {
         mobileAppDevelopment: 'Mobile App Development | Solid State Group',
         webAppDevelopment: 'Web App Development | Solid State Group',
         reactNative: 'React Native | Solid State Group',
+        augmentedReality: 'Augmented Reality | Solid State Group',
         flutter: 'Flutter | Solid State Group',
         contact: 'Contact | Solid State Group',
         apiDevelopment: 'API Development | Solid State Group',

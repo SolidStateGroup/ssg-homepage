@@ -52,13 +52,13 @@ const LeadSoftwareDevJobPage = class extends React.Component {
                 <div className="section__content container mt-5 mb-5">
                     <dl className="row">
                         <dt className="col-sm-3"><span className="bold">Job title:</span></dt>
-                        <dd className="col-sm-9">Senior Software Engineer</dd>
+                        <dd className="col-sm-9">Lead Software / DevOps Engineer</dd>
                         <dt className="col-sm-3"><span className="bold">Reporting to:</span></dt>
-                        <dd className="col-sm-9">Technical Director</dd>
+                        <dd className="col-sm-9">Management team</dd>
                         <dt className="col-sm-3"><span className="bold">Working from:</span></dt>
-                        <dd className="col-sm-9">86-90 Paul Street, Shoreditch, London</dd>
+                        <dd className="col-sm-9">Shoreditch, London (Currently remote)</dd>
                         <dt className="col-sm-3"><span className="bold">Salary:</span></dt>
-                        <dd className="col-sm-9">Depends on qualifications</dd>
+                        <dd className="col-sm-9">Based on experience and ability</dd>
                     </dl>
 
                     <p>We are an award winning digital agency specialising in web applications and mobile app development. Our clients range from large enterprises through to funded start-ups.</p>
