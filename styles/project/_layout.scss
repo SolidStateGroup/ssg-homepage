@@ -25,6 +25,19 @@
     &--full-height {
         height: 75vh;
     }
+    &__content{
+        //BEM BETRAYAL
+    
+        ol li, ul li {
+            line-height: 1.9rem;
+            color: #22354a;
+            opacity: 0.85;
+        }
+        dd {
+            color: #22354a;
+            opacity: 0.85;
+        }
+    }
 }
 
 .contact-sidebar {
