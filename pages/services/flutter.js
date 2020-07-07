@@ -61,6 +61,10 @@ const FlutterPage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.servicesFlutter);
+    }
+
     render = () => {
         return (
           <Page title={Constants.titles.flutter} canonical="flutter">

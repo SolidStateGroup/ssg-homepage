@@ -58,6 +58,10 @@ const BespokeSoftwarePage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.bespokeSoftwareDev);
+    }
+
     render = () => {
         return (
             <Page title={Constants.titles.bespokeSoftwareDevelopment} canonical="bespoke-software-development">

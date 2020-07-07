@@ -53,6 +53,21 @@ const Constants = global.Constants = {
         partners: 'Partners',
         contact: 'Contact',
         thanks: 'Thanks',
+
+        serviceApiDev: 'API Development',
+        augmentedReality: 'AR',
+        bespokeSoftwareDev: 'Bespoke Software Development',
+        serviceBranding: 'Branding',
+        serviceCloudInfra: 'Cloud Infrastructure',
+        customSoftwareDev: 'Custom Software Development',
+        servicesDesign: 'Design',
+        servicesFlutter: 'Flutter',
+        mobileAppDev: 'Mobile Application Development',
+        servicePrototyping: 'Prototyping',
+        reactNative: 'React Native',
+        responsiveWebApps: 'Responsive web applications',
+        serviceStrategy: 'Strategy',
+        systemsIntegration: 'Systems Integration',
     },
 };
 
