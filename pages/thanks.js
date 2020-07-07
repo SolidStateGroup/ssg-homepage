@@ -14,6 +14,10 @@ const ContactFormThanksPage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.thanks);
+    }
+
     render = () => {
         return (
             <Page title={Constants.titles.contactFormThanksPage} canonical="thanks">
