@@ -61,6 +61,10 @@ const MobileAppsPage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.reactNative);
+    }
+
     render = () => {
         return (
           <Page title={Constants.titles.reactNative} canonical="react-native">

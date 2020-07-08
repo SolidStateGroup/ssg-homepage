@@ -59,6 +59,10 @@ const CloudInfraPage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.serviceCloudInfra);
+    }
+
     render = () => {
         return (
             <Page title={Constants.titles.cloudInfrastructure} canonical="cloud-infrastructure">

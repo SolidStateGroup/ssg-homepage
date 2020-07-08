@@ -59,6 +59,10 @@ const WebAppsPage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.responsiveWebApps);
+    }
+
     render = () => {
         return (
             <Page title={Constants.titles.responsiveWebApps} canonical="responsive-web-apps">

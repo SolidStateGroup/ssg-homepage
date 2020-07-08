@@ -47,6 +47,10 @@ const StrategyPage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.serviceStrategy);
+    }
+
     render = () => {
         return (
             <Page title={Constants.titles.strategy} canonical="strategy">

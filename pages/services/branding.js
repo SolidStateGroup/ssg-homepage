@@ -46,6 +46,10 @@ const BrandingPage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.serviceBranding);
+    }
+
     render = () => {
         return (
             <Page title={Constants.titles.branding} canonical="branding">

@@ -59,6 +59,10 @@ const APIPage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.serviceApiDev);
+    }
+
     render = () => {
         return (
             <Page title={Constants.titles.apiDevelopment} canonical="api-development">

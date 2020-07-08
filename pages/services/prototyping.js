@@ -61,6 +61,10 @@ const PrototypingPage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.servicePrototyping);
+    }
+
     render = () => {
         return (
             <Page title={Constants.titles.prototyping} canonical="prototyping">

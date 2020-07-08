@@ -59,6 +59,10 @@ const SystemsPage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.systemsIntegration);
+    }
+
     render = () => {
         return (
             <Page title={Constants.titles.systemsIntegration} canonical="systems-integration">

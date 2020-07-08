@@ -48,6 +48,10 @@ const MobileAppsPage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.mobileAppDev);
+    }
+
     render = () => {
         return (
             <Page title={Constants.titles.mobileAppDevelopment} canonical="mobile-app-development">

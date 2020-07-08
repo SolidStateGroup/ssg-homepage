@@ -61,6 +61,10 @@ const DesignPage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.servicesDesign);
+    }
+
     render = () => {
         return (
             <Page title={Constants.titles.design} canonical="design">

@@ -46,6 +46,10 @@ const ARPage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.augmentedReality);
+    }
+
     render = () => {
         return (
           <Page title={Constants.titles.augmentedReality} canonical="augmented-reality">

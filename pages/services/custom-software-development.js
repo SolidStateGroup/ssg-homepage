@@ -58,6 +58,10 @@ const CustomSoftwarePage = class extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.customSoftwareDev);
+    }
+
     render = () => {
         return (
             <Page title={Constants.titles.customSoftwareDevelopment} canonical="custom-software-development">
