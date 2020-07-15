@@ -11,7 +11,7 @@ const Constants = global.Constants = {
     titles: {
         home: 'Solid State Group', // Used by default on all pages
         blog: 'Blog | Solid State Group',
-        work: 'Work | Solid State Group',
+        work: 'Our Work | Solid State Group',
         partners: 'Partners | Solid State Group',
         jobs: 'Jobs | Solid State Group',
         services: 'Services | Solid State Group',
@@ -34,6 +34,7 @@ const Constants = global.Constants = {
         contactForm: 'Contact | Solid State Group',
         contactFormThanksPage: 'Thanks | Solid State Group',
         leadSoftwareDevJobPage: 'Lead Software / DevOps Engineer | Solid State Group',
+        racingPost: 'Racing Post | Solid State Group',
     },
     // meta:description
     descriptions: {

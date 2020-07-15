@@ -12,6 +12,19 @@ export const projects = [
     {
         ButtonComponent: ButtonPrimary,
         projectImage: '/static/images/projects/electron-trader/electron-trader-1@1x.png',
+        srcSet: '/static/images/projects/racing-post/racing-post-1.png 1x, /static/images/projects/racing-post/racing-post-1@2x.png 2x,',
+        clientImage: '/static/images/clients/racing-post.svg',
+        subTitle: 'Responsive website & Mobile App',
+        href: '/projects/racing-post',
+        title: 'New Serverless Data Platform for the home of horse racing news',
+        blobColour: '#d11f25',
+        tags: ['MOBILE', 'API', 'WEB'],
+        projectType: [ 'API Development, ', 'Mobile App Development, ', 'Cloud Infrastructure Implementation'],
+        gaDataLabel: 'work-projects-racing-post',
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        projectImage: '/static/images/projects/electron-trader/electron-trader-1@1x.png',
         srcSet: '/static/images/projects/electron-trader/electron-trader-1@1x.png 1x, /static/images/projects/electron-trader/electron-trader-1@2x.png 2x,',
         clientImage: '/static/images/clients/electron.png',
         subTitle: 'Web Application',
@@ -284,7 +297,7 @@ const WorkPage = class extends React.Component {
 
     render = () => {
         return (
-          <Page title={Constants.titles.services} canonical="work">
+          <Page title={Constants.titles.work} canonical="work">
               <div className="hero hero--half d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                   <Header/>
                   <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
