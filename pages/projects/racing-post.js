@@ -3,7 +3,6 @@ import propTypes from 'prop-types';
 import Page from '../../components/Page';
 import ProjectHero from '../../components/ProjectHero';
 import {TextListItem, WideListItem} from '../../components/ListItem';
-import ClientQuote from '../../components/ClientQuote';
 import ProjectDetailSectionItem, {
     ProjectColourBlockSection,
     ProjectTechSection,
@@ -11,15 +10,12 @@ import ProjectDetailSectionItem, {
 } from '../../components/ProjectDetailSectionItem';
 import Footer from '../../components/Footer';
 import ProjectNav from '../../components/ProjectNav';
-
 // Automatically sets relevant head tags for seo, see _app for the remainder tags
 const TheComponent = class extends Component {
     static displayName = 'TheComponent';
-
     static propTypes = {
         children: propTypes.node,
     };
-
     render() {
         return (
             <React.Fragment>
@@ -34,80 +30,43 @@ const TheComponent = class extends Component {
                         projectType={'Responsive website & Mobile App'}
                         ProjectServiceListItem={
                             <React.Fragment>
-                                <TextListItem listItemText={'UX design,'}/>
-                                <TextListItem listItemText={'UI design'}/>
+                                <TextListItem listItemText={'API Development,'}/>
+                                <TextListItem listItemText={'Mobile App Development'}/>
+                                <TextListItem listItemText={'Cloud Infrastructure Implementation'}/>
                             </React.Fragment>
                         }
                         className="hero--racingpost"
                         projectImage={'/static/images/projects/racing-post/racing-post-1.png'}
                         srcSet={'/static/images/projects/racing-post/racing-post-1.png 1x, /static/images/projects/racing-post/racing-post-1@2x.png 2x'}
                     />
-
                     <div className="container">
-                        <div id="sectionOneTrigger">
+                        <div>
                             <ProjectTextSection
-                                className="sectionOneAnimation"
                                 subTitle="00 / Overview"
-                                description={'There are around a dozen wind generators in the Orkneys, they generate more electricity as the wind speed increases. There are about 120 small “assets” – such as storage heaters in people’s homes, when switched on they consume energy. When the generators are generating too much and there is too little local consumption, the network tells some of the wind generators to turn off (a “constraint”), which costs them money. \n' +
-                                '\n' +
-                                'What the underlying platform does is to allow the generators to offer to pay the assets to turn on, which would in turn lead to the network removing the constraint (so the generators get paid). The state of the system is determined once a minute (an “epoch”), based on messages it receives from both the assets and generators.\n'}
+                                description={'Working as the technology partners alongside the management consultant team at Arthur D. Little, Racing Post brought us in to rebuild their data platform. The main aims were to allow them to bring in new horse racing data streams from all over the world in the most efficient way possible, as well as a rebuild of their B2B and B2C API offerings.'}
                             />
-
                             <ProjectTextSection
-                                className="sectionTwoAnimation"
-                                subTitle="01 / Challenge"
-                                description={'Electron needed us to significantly upgrade the UI of their PoC platform. They needed design ideas that would make the UI standout as a slick, professional, interface. '}
+                                subTitle="01 / New Serverless Data Platform"
+                                description={'The core data pipeline was built with a number of Step Functions, each comprising multiple Lambda functions to ingest, transform, match and load records related to horse racing in the USA and France. It was made highly customisable with configuration files to allow new countries to be added in a matter of hours.'}
                             />
                         </div>
-
-                        <div id="sectionTwoTrigger">
+                        <div>
                             <ProjectDetailSectionItem
-                                className="sectionTwoAnimation"
-                                imageOneclassName="img__shadow"
-                                title={'UI Components'}
-                                imageOne={'/static/images/projects/electron-trader/UI-Components---Light@1x.jpg'}
-                                srcSetImageOne={'/static/images/projects/electron-trader/UI-Components---Light@1x.jpg 1x, /static/images/projects/electron-trader/UI-Components---Light@2x.jpg 2x'}
-                                ProjectServiceListItem={
-                                    <React.Fragment>
-                                        <WideListItem
-                                            listItemText={'UX Design'}/>
-                                        <WideListItem
-                                            listItemText={'UI Style Guide'}/>
-                                        <WideListItem
-                                            listItemText={'UI Design'}/>
-                                        <WideListItem
-                                            listItemText={'Data Visualisation'}/>
-                                    </React.Fragment>}
+                                description="Java Spring Boot APIs were built to expose the data from the new data platform to the customers and Racing Post clients. These new had to replicate the older B2B and B2C APIs they replaced while also exposing the more detailed data."
+                                subTitle={'02/ Rebuild of API services'}
+                                imageOne={'/static/images/projects/racing-post/racing-post-2.png'}
+                                srcSetImageOne={'/static/images/projects/racing-post/racing-post-2.png 1x, /static/images/projects/racing-post/racing-post-2@2x.png 2x'}
                             />
                         </div>
-                        <div id="sectionThreeTrigger">
-                            <ProjectFullImageSection
-                                className="sectionThreeAnimation"
-                                title={'Dashboard UI'}
-                                subTitle={'UI Design'}
-                                imageUrl={'/static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@1x.jpg'}
-                                srcSet={'/static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@1x.jpg 1x, /static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@2x.jpg 2x'}
-                                imageAltText={'Dashboard UI'}
-                            />
-                        </div>
-                    </div>
-
-                    <div className="container sectionFourAnimation" id="sectionFourTrigger">
                         <ProjectTextSection
-                            subTitle="02 / Solution"
-                            description={'Using the Electron brand guidelines as a starting point, we designed and implemented a slick and professional dashboard interface. This included bespoke component design and data visualization.'}/>
-                        <ProjectDetailSectionItem
-                            subTitle={'03 / Design'}
-                            title={'Fonts & Colours'}
-                            className="flex-row-reverse"
-                            imageOne={'/static/images/projects/wazoku/wazoku-font.png'}
-                            description={'Summary of the fonts and colours used in the User Interface design of the application'}
+                            subTitle="03 / Cloud Based Infrastructure"
+                            description={'We handled all devops for the project building all infrastructure as code with Terraform and the serverless framework. Using gitlab pipelines we automated all builds, tests and releases.'}
                         />
-                        <ProjectColourBlockSection
-                            imageOne={'/static/images/projects/electronx/electronx_primary-colours.png'}
-                            imageTwo={'/static/images/projects/electronx/electronx_secondary-colours.png'}/>
+                        <ProjectTextSection
+                            subTitle="04/ New Mobile and Web Platform"
+                            description={'After completing the rebuild of the new data platform and APIs the company requested that we also built their new mobile app and website.'}
+                        />
                     </div>
-
                     <ProjectNav/>
                 </Page>
                 <Footer/>
@@ -115,5 +74,4 @@ const TheComponent = class extends Component {
         );
     }
 };
-
 export default TheComponent;
