@@ -14,7 +14,7 @@ export const projects = [
         projectImage: '/static/images/projects/electron-trader/electron-trader-1@1x.png',
         srcSet: '/static/images/projects/racing-post/racing-post-1.png 1x, /static/images/projects/racing-post/racing-post-1@2x.png 2x,',
         clientImage: '/static/images/clients/racing-post.svg',
-        subTitle: 'Responsive website & Mobile App',
+        subTitle: 'Responsive Website & Mobile App',
         href: '/projects/racing-post',
         title: 'New Serverless Data Platform for the home of horse racing news',
         blobColour: '#d11f25',

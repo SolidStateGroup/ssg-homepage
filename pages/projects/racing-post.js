@@ -66,6 +66,35 @@ const TheComponent = class extends Component {
                             subTitle="04/ New Mobile and Web Platform"
                             description={'After completing the rebuild of the new data platform and APIs the company requested that we also built their new mobile app and website.'}
                         />
+
+                        <ProjectTechSection
+                            subTitle={'05/ Technology Used'}
+                            techLogoItems={
+                                <React.Fragment>
+                                    <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
+                                        <img src='/static/images/tech-icons/dark/react.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
+                                        <img src='/static/images/tech-icons/dark/aws.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center mb-md-0 mb-4">
+                                        <img src='/static/images/tech-icons/dark/java.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
+                                        <img src='/static/images/tech-icons/dark/serverless.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-md-4 col-6 pt-5 text-center">
+                                        <img src='/static/images/tech-icons/dark/python.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-md-4 col-6 pt-5 text-center">
+                                        <img src='/static/images/tech-icons/dark/spring.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-md-4 col-12 pt-5 text-center">
+                                        <img src='/static/images/tech-icons/dark/terraform.svg' className='img-responsive'/>
+                                    </div>
+                                </React.Fragment>
+                            }
+                        />
                     </div>
                     <ProjectNav/>
                 </Page>
