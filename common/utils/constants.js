@@ -35,6 +35,7 @@ const Constants = global.Constants = {
         contactFormThanksPage: 'Thanks | Solid State Group',
         leadSoftwareDevJobPage: 'Lead Software / DevOps Engineer | Solid State Group',
         racingPost: 'Racing Post | Solid State Group',
+        zopa: 'Zopa | Solid State Group',
     },
     // meta:description
     descriptions: {
