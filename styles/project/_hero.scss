@@ -96,6 +96,9 @@
     &--zopa {
         background-color: #00D9C5;
     }
+    &--coral {
+        background-color: #084d8d;
+    }
 }
 
 @include media-breakpoint-down(md) {

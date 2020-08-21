@@ -11,7 +11,20 @@ import InfiniteScroll from '../components/InfiniteScroll';
 export const projects = [
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/electron-trader/electron-trader-1@1x.png',
+        projectImage: '/static/images/projects/ladbrokes/ladbrokes-1.png',
+        srcSet: '/static/images/projects/ladbrokes/ladbrokes-1.png 1x, /static/images/projects/ladbrokes/ladbrokes-1@2x.png 2x,',
+        clientImage: '/static/images/clients/ladbrokes.png',
+        subTitle: 'Web Application',
+        href: '/projects/ladbrokes-coral',
+        title: 'Bringing the entire IT infrastructure within Ladbrokes Coral up to date',
+        blobColour: '#084d8d',
+        tags: ['WEB', 'API', 'IOT'],
+        projectType: [ 'API Development, Web Application, Hardware integrations'],
+        gaDataLabel: 'work-projects-ladbrokes',
+    },
+    {
+        ButtonComponent: ButtonPrimary,
+        projectImage: '/static/images/projects/zopa/zopa-1.png',
         srcSet: '/static/images/projects/zopa/zopa-1.png 1x, /static/images/projects/zopa/zopa-1@2x.png 2x,',
         clientImage: '/static/images/clients/zopa.svg',
         subTitle: 'Mobile App',
@@ -24,7 +37,7 @@ export const projects = [
     },
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/electron-trader/electron-trader-1@1x.png',
+        projectImage: '/static/images/projects/racing-post/racing-post-1.png',
         srcSet: '/static/images/projects/racing-post/racing-post-1.png 1x, /static/images/projects/racing-post/racing-post-1@2x.png 2x,',
         clientImage: '/static/images/clients/racing-post.svg',
         subTitle: 'Responsive Website & Mobile App',
