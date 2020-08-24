@@ -23,11 +23,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title={Constants.titles.zopa} canonical="projects/racing-post">
                     <ProjectHero
-                      ProjectClientName={(
-                          <React.Fragment>
-                              <TextListItem listItemText="Zopa"/>
-                          </React.Fragment>
-)}
+                      clientImage="/static/images/clients/white/zopa-white.svg"
                       projectTitle="New borrowing power service for a FeelGood Money platform"
                       projectType="Mobile App"
                       ProjectServiceListItem={(

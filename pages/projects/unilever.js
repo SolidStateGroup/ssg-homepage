@@ -26,12 +26,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Unilever" canonical="projects/unilever">
                     <ProjectHero
-                        ProjectClientName={
-                            <React.Fragment>
-                                <TextListItem listItemText={'Unilever'}/>
-                            </React.Fragment>
-
-                        }
+                        clientImage="/static/images/clients/white/unilever-white.svg"
                         projectTitle={'Shopping that buys itself'}
                         projectType={'Automated ecommerce via connected scales'}
                         ProjectServiceListItem={

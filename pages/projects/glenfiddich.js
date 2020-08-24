@@ -25,12 +25,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Glenfiddich" canonical="projects/glenfiddich">
                     <ProjectHero
-                        ProjectClientName={
-                            <React.Fragment>
-                                <TextListItem listItemText={'Glenfiddich'}/>
-                            </React.Fragment>
-
-                        }
+                        clientImage="/static/images/clients/white/glenfiddich-white.svg"
                         projectTitle={'Glenfiddich Stag Racing - When Whisky Meets Hackathons'}
                         projectType={'Multiplayer AR racing game for mobile'}
                         ProjectServiceListItem={

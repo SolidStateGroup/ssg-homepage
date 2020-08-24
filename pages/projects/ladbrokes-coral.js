@@ -23,12 +23,8 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title={Constants.titles.ladbrokes} canonical="projects/racing-post">
                     <ProjectHero
-                      ProjectClientName={(
-                          <React.Fragment>
-                              <TextListItem listItemText="Ladbrokes Coral"/>
-                          </React.Fragment>
-)}
-                      projectTitle="Bringing the entire IT infrastructure within Ladbrokes Coral up to date"
+                        clientImage="/static/images/clients/white/ladbrokes-white.png"
+                        projectTitle="Bringing the entire IT infrastructure within Ladbrokes Coral up to date"
                       projectType="Web Application"
                       ProjectServiceListItem={(
                           <React.Fragment>

@@ -25,12 +25,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Patientview" canonical="projects/patientview">
                     <ProjectHero
-                        ProjectClientName={
-                            <React.Fragment>
-                                <TextListItem listItemText={'PatientView'}/>
-                            </React.Fragment>
-
-                        }
+                        clientImage="/static/images/clients/white/patientview-white.png"
                         projectTitle={'The doctor will see you now – wherever, whenever'}
                         projectType={'Secure online platform for clinicians and patients'}
                         ProjectServiceListItem={

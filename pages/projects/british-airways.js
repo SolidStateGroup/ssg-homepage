@@ -23,12 +23,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="British Airways" canonical="projects/british-airways">
                     <ProjectHero
-                        ProjectClientName={
-                            <React.Fragment>
-                                <TextListItem listItemText={'British Airways'}/>
-                            </React.Fragment>
-
-                        }
+                        clientImage="/static/images/clients/white/british-airways-white.svg"
                         projectTitle={'The real-time machine: integrating with 1960s tech'}
                         projectType={'Real-time operational dashboard'}
                         ProjectServiceListItem={

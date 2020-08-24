@@ -1,9 +1,9 @@
 import React from 'react';
 import cn from 'classnames';
 import propTypes from 'prop-types';
-import Header from '../components/Header';
-import ProjectHeroPulse from '../components/animation/ProjectHeroPulse';
-import Button from "./base/forms/Button";
+import Header from './Header';
+import ProjectHeroPulse from './animation/ProjectHeroPulse';
+import Button from './base/forms/Button';
 
 const _propTypes = {
     className: propTypes.string,
@@ -19,18 +19,19 @@ const ProjectHero = global.ProjectHero = class extends React.PureComponent {
 
     componentDidMount() {
         gsap.timeline()
-            .from('.project-hero .container', {duration: 0.5, y: 10, opacity: 0, ease: 'power1'})
-            // .from('.hero__title', {duration: 0.25, x: 10, opacity: 0, ease: 'power1'})
-            // .from('.project-hero__image', {duration: 0.25, x: 10, opacity: 0, ease: 'power1'})
-            // .from('.project-hero__list-wrapper', {duration: 0.25, y: 10, opacity: 0, ease: 'power1'})
+            .from('.project-hero .container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' });
+        // .from('.hero__title', {duration: 0.25, x: 10, opacity: 0, ease: 'power1'})
+        // .from('.project-hero__image', {duration: 0.25, x: 10, opacity: 0, ease: 'power1'})
+        // .from('.project-hero__list-wrapper', {duration: 0.25, y: 10, opacity: 0, ease: 'power1'})
     }
 
     render() {
-        const {children} = this.props;
+        const { children } = this.props;
         return (
             <React.Fragment>
                 <div
-                    className={cn(this.props.className, 'hero project-hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4')}>
+                  className={cn(this.props.className, 'hero project-hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4')}
+                >
                     <Header className="navbar-container--transparent"/>
                     <div className="d-flex flex-1 pt-5 pb-5">
                         <div className="container align-self-center">
@@ -41,9 +42,22 @@ const ProjectHero = global.ProjectHero = class extends React.PureComponent {
 
                                     <div className="project-hero__list-wrapper">
                                         <h6 className="text-uppercase title--light opacity--70 mt-5">Client</h6>
-                                        <ul className="text-list list-inline mb-4">
-                                            {this.props.ProjectClientName}
-                                        </ul>
+                                        {this.props.clientImage ? (
+                                            <img
+                                              src={this.props.clientImage || null}
+                                              alt="Client brand" className="img-fluid mt-2 project-hero__client-logo"
+                                            />
+                                        ) : (
+                                            null
+                                        )}
+
+                                        {this.props.ProjectClientName ? (
+                                            <ul className="text-list list-inline mb-4">
+                                                {this.props.ProjectClientName}
+                                            </ul>
+                                        ) : (
+                                            null
+                                        )}
 
                                         <h6 className="text-uppercase title--light opacity--70 mt-5">Services</h6>
                                         <ul className="text-list list-inline mb-4">
@@ -66,9 +80,10 @@ const ProjectHero = global.ProjectHero = class extends React.PureComponent {
                                 </div>
                                 <div className="offset-md-1 col-md-5 text-center">
                                     <img
-                                        src={this.props.projectImage || '/static/images/projects/tone-and-sculpt/tands-dashboard.png'}
-                                        srcSet={this.props.srcSet || null}
-                                        alt="Project Hero Image" className="img-fluid project-hero__image"/>
+                                      src={this.props.projectImage || '/static/images/projects/tone-and-sculpt/tands-dashboard.png'}
+                                      srcSet={this.props.srcSet || null}
+                                      alt="Project Hero Image" className="img-fluid project-hero__image"
+                                    />
                                     <ProjectHeroPulse/>
                                 </div>
                             </div>

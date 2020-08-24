@@ -89,6 +89,10 @@
         z-index: 1;
         position: relative;
     }
+    &__client-logo {
+        max-width: 280px;
+    }
+    
 }
 
 .project-bottom-nav {

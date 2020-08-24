@@ -20,12 +20,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="WFA" canonical="projects/wfa">
                     <ProjectHero
-                        ProjectClientName={
-                            <React.Fragment>
-                                <TextListItem listItemText={'World Federation of Advertisers'}/>
-                            </React.Fragment>
-
-                        }
+                        clientImage="/static/images/clients/white/wfa-white.svg"
                         projectTitle={'Visualising data for effective marketing communications'}
                         projectType={'Mobile & Web Application'}
                         ProjectServiceListItem={
