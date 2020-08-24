@@ -45,53 +45,84 @@ const TheComponent = class extends Component {
                         <div>
                             <ProjectTextSection
                               subTitle="00 / Overview"
-                              description="Zopa brought us in to join their newly formed mobile development department. We supported them in the creation of a new credit score and borrowing power service. Our engagement was then extended to produce a push notification service that all areas of the business could use to send notifications to their customers."
+                              description={'Ladbrokes Coral required a new EPOS system, that would improve the customer experience within their retail and online channels.\n'
+                              + '\n'
+                              + 'The existing platform was built nearly two decades ago, with data being transmitted once a day.\n'
+                              + '\n'
+                              + 'Solid State Group worked alongside key stakeholders to develop a new platform within the company and bring the entire IT infrastructure within Ladbrokes Coral up to date.\n'
+                              }
                             />
                             <ProjectTextSection
-                              subTitle="01 / Credit Score Application"
-                              description="We worked within their in house team to build the necessary Java microservices for their users to retrieve their up to date credit score. This was then extended to developing how much the users were able to borrow via Zopa’s peer to peer loans through a borrowing power service. The API’s were built using Zopa’s version of Jersey RESTful Web Services."
+                              subTitle="01 / Challenge"
+                              description={'An existing EPOS system was being used throughout Ladbrokes Coral, which was built by a third party. Change requests were costly and time consuming.\n'
+                              + '\n'
+                              + 'The 16,000 employees, working across 3500 shops in the UK, had become accustomed to dealing with the outdated EPOS system. \n'
+                              + '\n'
+                              + 'The challenge was to maintain the existing functionality and shortcuts shop colleagues had become used to, whilst focusing on the customer experience, visibility of the company’s fiscal position, reducing potential fraud and improving the overall usability.\n'}
                             />
                         </div>
                         <div>
                             <ProjectDetailSectionItem
-                              description="We built a push notification service on top of the Firebase Cloud Messaging service that could be reached from all different departments of the business. From individual transactions to company wide notifications, each department could make REST requests or connect to the services Kafka stream to send notifications to the users."
-                              subTitle="02/ Rebuild of API services"
-                              imageOne="/static/images/projects/zopa/zopa-2.png"
-                              srcSetImageOne="/static/images/projects/zopa/zopa-2.png 1x, /static/images/projects/zopa/zopa-2@2x.png 2x"
+                              description={'Solid State began with a 12 week proof of concept phase, rapidly developing a functioning system.\n'
+                              + '\n'
+                              + 'Using an Agile methodology we presented weekly demos to key stakeholders to obtain feedback.\n'
+                              + 'The weekly sprints were focused around a single piece of functionality to draw direct comparisons between the existing EPOS system and the new platform.\n' + '\n'
+                              + 'After the proof of concept phase, we began an industrialisation phase. This involved scaling up the project and bringing internal development teams onboard.\n'}
+                              subTitle="02/ Solution"
+                              imageOne="/static/images/projects/ladbrokes/ladbrokes-2.png"
+                              srcSetImageOne="/static/images/projects/ladbrokes/ladbrokes-2.png 1x, /static/images/projects/ladbrokes/ladbrokes-2@2x.png 2x"
                             />
                         </div>
 
                     </div>
 
                     <ProjectFullImageSection
-                      title="Mobile Development "
+                      title="New EPOS system"
                       className="panel panel--navy"
-                      subTitle="02 / Rebuild of API services"
-                      imageUrl="/static/images/projects/zopa/zopa-3.png"
-                      srcSet="/static/images/projects/zopa/zopa-3.png 1x, /static/images/zopa/zopa-3@2x.png 2x"
-                      imageAltText="Tone and Sculpt UI"
+                      subTitle="02 / MVP solution"
+                      imageUrl="/static/images/projects/ladbrokes/ladbrokes-3.png"
+                      srcSet="/static/images/projects/ladbrokes/ladbrokes-3.png 1x, /static/images/ladbrokes/ladbrokes-3@2x.png 2x"
+                      imageAltText="Ladbrokes Coral UI"
                     />
 
 
                     <div className="container">
+                        <ProjectTextSection
+                            subTitle="02 / Solution"
+                            description={'The MVP solution was released to a small set of trial shops, where feedback was incorporated from both customers and shop colleagues to continually enhancing the experience.\n\n' +
+                            'The new EPOS system is now being rolled out across both the Coral and Ladbrokes brands processing thousands of bets per hour. \n'}
+                        />
+
                         <ProjectTechSection
-                          subTitle="03/ Technology Used"
-                          techLogoItems={(
-                              <React.Fragment>
-                                  <div className="col-6 pt-5 pt-lg-0 text-center">
-                                      <img src="/static/images/tech-icons/dark/kotlin.svg" className="img-responsive"/>
-                                  </div>
-                                  <div className="col-6 pt-5 pt-lg-0 text-center mb-md-0 mb-4">
-                                      <img src="/static/images/tech-icons/dark/java.svg" className="img-responsive"/>
-                                  </div>
-                                  <div className="col-6 pt-5 pt-lg-0 text-center">
-                                      <img src="/static/images/tech-icons/dark/firebase.svg" className="img-responsive"/>
-                                  </div>
-                                  <div className="col-6 pt-5 text-center">
-                                      <img src="/static/images/tech-icons/dark/kafka.svg" className="img-responsive"/>
-                                  </div>
-                              </React.Fragment>
-)}
+                            subTitle={'03/ Technology Used'}
+                            techLogoItems={
+                                <React.Fragment>
+                                    <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
+                                        <img src='/static/images/tech-icons/dark/react.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
+                                        <img src='/static/images/tech-icons/dark/aws.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center mb-md-0 mb-4">
+                                        <img src='/static/images/tech-icons/dark/java.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
+                                        <img src='/static/images/tech-icons/dark/spring.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-lg-3 col-6 pt-5 text-center">
+                                        <img src='/static/images/tech-icons/dark/net.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-lg-3 col-6 pt-5 text-center">
+                                        <img src='/static/images/tech-icons/dark/terraform.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-lg-3 col-6 pt-5 text-center">
+                                        <img src='/static/images/tech-icons/dark/jenkins.svg' className='img-responsive'/>
+                                    </div>
+                                    <div className="col-lg-3 col-6 pt-5 text-center">
+                                        <img src='/static/images/tech-icons/dark/elastic-search.svg' className='img-responsive'/>
+                                    </div>
+                                </React.Fragment>
+                            }
                         />
                     </div>
 

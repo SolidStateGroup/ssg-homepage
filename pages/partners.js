@@ -118,7 +118,7 @@ const PartnersPage = class extends React.Component {
 
   render = () => {
       return (
-          <Page title={Constants.titles.home} canonical="partners">
+          <Page title={Constants.titles.partners} canonical="partners">
               <div className="hero hero--three-quarters d-flex flex-column mx-0 p-4">
                   <Header/>
                   <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
