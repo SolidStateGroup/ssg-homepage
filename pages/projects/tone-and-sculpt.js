@@ -139,7 +139,7 @@ const TheComponent = class extends Component {
                                         <img src='/static/images/tech-icons/dark/docker.svg' className='img-responsive'/>
                                     </div>
                                     <div className="col-md-4 col-6 text-center mb-md-0 mb-4">
-                                        <img src='/static/images/tech-icons/dark/java.svg' className='img-responsive'/>
+                                        <img src='/static/images/tech-icons/dark/python.svg' className='img-responsive'/>
                                     </div>
                                     <div className="col-md-4 col-6 text-center">
                                         <img src='/static/images/tech-icons/dark/postgres.svg' className='img-responsive'/>
