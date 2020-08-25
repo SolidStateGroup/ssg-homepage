@@ -5,6 +5,7 @@ import ProjectHero from '../../components/ProjectHero';
 import { TextListItem, WideListItem } from '../../components/ListItem';
 import ProjectDetailSectionItem, {
     ProjectColourBlockSection,
+    ProjectFullImageSection,
     ProjectTechSection,
     ProjectTextSection,
 } from '../../components/ProjectDetailSectionItem';
@@ -23,8 +24,8 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title={Constants.titles.ladbrokes} canonical="projects/racing-post">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/ladbrokes-white.png"
-                        projectTitle="Bringing the entire IT infrastructure within Ladbrokes Coral up to date"
+                      clientImage="/static/images/clients/white/ladbrokes-white.png"
+                      projectTitle="Bringing the entire IT infrastructure within Ladbrokes Coral up to date"
                       projectType="Web Application"
                       ProjectServiceListItem={(
                           <React.Fragment>
@@ -72,9 +73,18 @@ const TheComponent = class extends Component {
 
                     </div>
 
+                    <div className="container">
+                        <ProjectTextSection
+                          subTitle="02 / Solution"
+                          description="The MVP solution was released to a small set of trial shops, where feedback was incorporated from both customers and shop colleagues to continually enhancing the experience."
+                        />
+
+                    </div>
+
                     <ProjectFullImageSection
-                      title="New EPOS system"
-                      className="panel panel--navy"
+                      title="The new EPOS system is now being rolled out across both the Coral and Ladbrokes brands processing thousands of bets per hour"
+                      className="panel panel--ladbrokes pt-5"
+                      textClassName="col-md-6 offset-md-3"
                       subTitle="02 / MVP solution"
                       imageUrl="/static/images/projects/ladbrokes/ladbrokes-3.png"
                       srcSet="/static/images/projects/ladbrokes/ladbrokes-3.png 1x, /static/images/ladbrokes/ladbrokes-3@2x.png 2x"
@@ -83,43 +93,39 @@ const TheComponent = class extends Component {
 
 
                     <div className="container">
-                        <ProjectTextSection
-                            subTitle="02 / Solution"
-                            description={'The MVP solution was released to a small set of trial shops, where feedback was incorporated from both customers and shop colleagues to continually enhancing the experience.\n\n' +
-                            'The new EPOS system is now being rolled out across both the Coral and Ladbrokes brands processing thousands of bets per hour. \n'}
-                        />
 
                         <ProjectTechSection
-                            subTitle={'03/ Technology Used'}
-                            techLogoItems={
-                                <React.Fragment>
-                                    <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
-                                        <img src='/static/images/tech-icons/dark/react.svg' className='img-responsive'/>
-                                    </div>
-                                    <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
-                                        <img src='/static/images/tech-icons/dark/aws.svg' className='img-responsive'/>
-                                    </div>
-                                    <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center mb-md-0 mb-4">
-                                        <img src='/static/images/tech-icons/dark/java.svg' className='img-responsive'/>
-                                    </div>
-                                    <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
-                                        <img src='/static/images/tech-icons/dark/spring.svg' className='img-responsive'/>
-                                    </div>
-                                    <div className="col-lg-3 col-6 pt-5 text-center">
-                                        <img src='/static/images/tech-icons/dark/net.svg' className='img-responsive'/>
-                                    </div>
-                                    <div className="col-lg-3 col-6 pt-5 text-center">
-                                        <img src='/static/images/tech-icons/dark/terraform.svg' className='img-responsive'/>
-                                    </div>
-                                    <div className="col-lg-3 col-6 pt-5 text-center">
-                                        <img src='/static/images/tech-icons/dark/jenkins.svg' className='img-responsive'/>
-                                    </div>
-                                    <div className="col-lg-3 col-6 pt-5 text-center">
-                                        <img src='/static/images/tech-icons/dark/elastic-search.svg' className='img-responsive'/>
-                                    </div>
-                                </React.Fragment>
-                            }
+                          subTitle="03/ Technology Used"
+                          techLogoItems={(
+                              <React.Fragment>
+                                  <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
+                                      <img src="/static/images/tech-icons/dark/react.svg" className="img-responsive"/>
+                                  </div>
+                                  <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
+                                      <img src="/static/images/tech-icons/dark/aws.svg" className="img-responsive"/>
+                                  </div>
+                                  <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center mb-md-0 mb-4">
+                                      <img src="/static/images/tech-icons/dark/java.svg" className="img-responsive"/>
+                                  </div>
+                                  <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
+                                      <img src="/static/images/tech-icons/dark/spring.svg" className="img-responsive"/>
+                                  </div>
+                                  <div className="col-lg-3 col-6 pt-5 text-center">
+                                      <img src="/static/images/tech-icons/dark/net.svg" className="img-responsive"/>
+                                  </div>
+                                  <div className="col-lg-3 col-6 pt-5 text-center">
+                                      <img src="/static/images/tech-icons/dark/terraform.svg" className="img-responsive"/>
+                                  </div>
+                                  <div className="col-lg-3 col-6 pt-5 text-center">
+                                      <img src="/static/images/tech-icons/dark/jenkins.svg" className="img-responsive"/>
+                                  </div>
+                                  <div className="col-lg-3 col-6 pt-5 text-center">
+                                      <img src="/static/images/tech-icons/dark/elastic-search.svg" className="img-responsive"/>
+                                  </div>
+                              </React.Fragment>
+)}
                         />
+
                     </div>
 
 

@@ -247,8 +247,10 @@ export const ProjectFullImageSection = global.ProjectFullImageSection = class ex
         return (
             <div className={cn(this.props.className, 'p-3')}>
                 <div className="text-center">
-                    <h6 className="title--project-section title--project-section--small text-grey">{props.subTitle}</h6>
-                    <h3>{props.title}</h3>
+                    <div className={this.props.textClassName}>
+                        <h6 className="title--project-section title--project-section--small text-grey">{props.subTitle}</h6>
+                        <h3>{props.title}</h3>
+                    </div>
                     <img src={props.imageUrl} srcSet={props.srcSet || null} alt={props.imageAltText} className="img-fluid  py-5"/>
                 </div>
             </div>

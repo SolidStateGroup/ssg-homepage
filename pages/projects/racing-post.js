@@ -48,7 +48,7 @@ const TheComponent = class extends Component {
                         </div>
                         <div>
                             <ProjectDetailSectionItem
-                                description="Java Spring Boot APIs were built to expose the data from the new data platform to the customers and Racing Post clients. These new had to replicate the older B2B and B2C APIs they replaced while also exposing the more detailed data."
+                                description="Java Spring Boot APIs were built to expose the data from the new data platform to the customers and Racing Post clients. These new services had to replicate the older B2B and B2C APIs they replaced while also exposing the more detailed data."
                                 subTitle={'02/ Rebuild of API services'}
                                 imageOne={'/static/images/projects/racing-post/racing-post-2.png'}
                                 srcSetImageOne={'/static/images/projects/racing-post/racing-post-2.png 1x, /static/images/projects/racing-post/racing-post-2@2x.png 2x'}
