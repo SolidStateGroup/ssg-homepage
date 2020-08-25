@@ -56,10 +56,6 @@ const Footer = class extends React.Component {
                             </div>
                             <div className="col px-md-2 px-0">
                                 <dl>
-                                    <dt className="light">Call us on</dt>
-                                    <dd className="bold"><a href="tel:+442076137220" onClick={() => API.trackEvent({ category: 'Contact', event: 'view', label: 'tel_footer' })}>+44 20 7613 7220</a></dd>
-                                </dl>
-                                <dl>
                                     <dt className="light">Email us at</dt>
                                     <dd className="bold"><a
                                         href="mailto:projects@solidstategroup.com" onClick={() => API.trackEvent({ category: 'Contact', event: 'view', label: 'mailto_footer' })}>projects@solidstategroup.com</a></dd>
