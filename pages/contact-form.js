@@ -141,19 +141,9 @@ const ContactFormPage = class extends React.Component {
                                   className="flex-1 hero__blob-container"
                                 >
                                     <div className="contact-sidebar">
-                                        <p className="text-light">Rather have a chat?</p>
-
-                                        <p className="text-light">Call <a className="bold">Matthew</a> on
-                                            <a href="tel:+442076137220" className="bold"> +44 20 7613 7220</a>
-                                        </p>
-
-                                        <p className="text-light">Email our new business team
-                                            <a className="bold" href="mailto:matthew@solidstategroup.com">
-                                                &nbsp;matthew@solidstategroup.com
-                                            </a>
-                                        </p>
+                                        <p className="text-light mb-0">Or email our new business team:</p>
+                                        <a className="bold" href="mailto:matthew@solidstategroup.com">matthew@solidstategroup.com</a>
                                     </div>
-
 
                                     <img
                                       src="/static/images/hero-blob.svg" alt="hero-blob"
@@ -163,7 +153,6 @@ const ContactFormPage = class extends React.Component {
                             </div>
                         </div>
                     </div>
-
 
                 </div>
                 <Footer/>
