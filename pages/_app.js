@@ -16,6 +16,22 @@ class MyApp extends App {
         }
     }
 
+    componentDidMount () {
+
+        // Include the Crisp code here, without the <script></script> tags
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "f0152f37-cd96-4444-b970-c9aedc8412dd";
+
+        (function() {
+            var d = document;
+            var s = d.createElement("script");
+
+            s.src = "https://client.crisp.chat/l.js";
+            s.async = 1;
+            d.getElementsByTagName("head")[0].appendChild(s);
+        })();
+    };
+
     render() {
         const { Component } = this.props;
         return (
