@@ -2,7 +2,7 @@
 title: What The Gaming Industry Can Teach Corporates About Strategy, Security and Digital Transformation
 published: true
 description: We stretched our creative muscle, ate some fried chicken, and made some epic demos for our ecommerce product.
-author: Niall Quinn
+author: Sara Jones
 avatar: /static/images/blog/sara.jpg
 image: https://storage.googleapis.com/ssg-website-images/Gaming%20blog/The_International_4_Grand_Finals.jpg
 date: 09-nov-2017
