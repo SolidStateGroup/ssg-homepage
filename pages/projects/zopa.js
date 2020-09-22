@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import Page from '../../components/Page';
 import ProjectHero from '../../components/ProjectHero';
-import { TextListItem, WideListItem } from '../../components/ListItem';
+import { TextListItem } from '../../components/ListItem';
 import ProjectDetailSectionItem, {
-    ProjectColourBlockSection,
     ProjectTechSection,
     ProjectTextSection,
 } from '../../components/ProjectDetailSectionItem';
@@ -56,15 +55,6 @@ const TheComponent = class extends Component {
                         </div>
 
                     </div>
-
-                    {/*<ProjectFullImageSection*/}
-                    {/*  title="Mobile Development "*/}
-                    {/*  className="panel panel--navy"*/}
-                    {/*  subTitle="02 / Rebuild of API services"*/}
-                    {/*  imageUrl="/static/images/projects/zopa/zopa-3.png"*/}
-                    {/*  srcSet="/static/images/projects/zopa/zopa-3.png 1x, /static/images/zopa/zopa-3@2x.png 2x"*/}
-                    {/*  imageAltText="Tone and Sculpt UI"*/}
-                    {/*/>*/}
 
                     <ProjectFullImageSection
                         className="panel panel--navy"
