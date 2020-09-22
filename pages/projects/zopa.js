@@ -57,15 +57,23 @@ const TheComponent = class extends Component {
 
                     </div>
 
-                    <ProjectFullImageSection
-                      title="Mobile Development "
-                      className="panel panel--navy"
-                      subTitle="02 / Rebuild of API services"
-                      imageUrl="/static/images/projects/zopa/zopa-3.png"
-                      srcSet="/static/images/projects/zopa/zopa-3.png 1x, /static/images/zopa/zopa-3@2x.png 2x"
-                      imageAltText="Tone and Sculpt UI"
-                    />
+                    {/*<ProjectFullImageSection*/}
+                    {/*  title="Mobile Development "*/}
+                    {/*  className="panel panel--navy"*/}
+                    {/*  subTitle="02 / Rebuild of API services"*/}
+                    {/*  imageUrl="/static/images/projects/zopa/zopa-3.png"*/}
+                    {/*  srcSet="/static/images/projects/zopa/zopa-3.png 1x, /static/images/zopa/zopa-3@2x.png 2x"*/}
+                    {/*  imageAltText="Tone and Sculpt UI"*/}
+                    {/*/>*/}
 
+                    <ProjectFullImageSection
+                        className="panel panel--navy"
+                        title={'Mobile Development'}
+                        subTitle={'02 / Rebuild of API services'}
+                        imageUrl={'/static/images/projects/zopa/zopa-3.png'}
+                        srcSet={'/static/images/projects/zopa/zopa-3.png 1x, /static/images/projects/zopa/zopa-3@2x.png 2x'}
+                        imageAltText={'Zopa UI'}
+                    />
 
                     <div className="container">
                         <ProjectTechSection
