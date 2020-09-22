@@ -82,15 +82,14 @@ const TheComponent = class extends Component {
                     </div>
 
                     <ProjectFullImageSection
-                      title="The new EPOS system is now being rolled out across both the Coral and Ladbrokes brands processing thousands of bets per hour"
-                      className="panel panel--ladbrokes pt-5"
-                      textClassName="col-md-6 offset-md-3"
-                      subTitle="02 / MVP solution"
-                      imageUrl="/static/images/projects/ladbrokes/ladbrokes-3.png"
-                      srcSet="/static/images/projects/ladbrokes/ladbrokes-3.png 1x, /static/images/ladbrokes/ladbrokes-3@2x.png 2x"
-                      imageAltText="Ladbrokes Coral UI"
+                        className="panel panel--ladbrokes pt-5"
+                        textClassName="col-md-6 offset-md-3"
+                        title={'The new EPOS system is now being rolled out across both the Coral and Ladbrokes brands processing thousands of bets per hour'}
+                        subTitle={'02 / MVP solution'}
+                        imageUrl={'/static/images/projects/ladbrokes/ladbrokes-3.png'}
+                        srcSet={'/static/images/projects/ladbrokes/ladbrokes-3.png 1x, /static/images/projects/ladbrokes/ladbrokes-3@2x.png 2x'}
+                        imageAltText={'Ladbrokes Coral UI'}
                     />
-
 
                     <div className="container">
 
