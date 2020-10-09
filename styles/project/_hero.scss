@@ -99,6 +99,9 @@
     &--coral {
         background-color: #084d8d;
     }
+    &--hero-wellbeing {
+        background-color: #15CBCE;
+    }
 }
 
 @include media-breakpoint-down(md) {
