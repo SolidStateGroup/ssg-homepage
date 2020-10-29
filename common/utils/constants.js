@@ -37,6 +37,7 @@ const Constants = global.Constants = {
         racingPost: 'Racing Post | Solid State Group',
         zopa: 'Zopa | Solid State Group',
         ladbrokes: 'Ladbrokes Coral | Solid State Group',
+        heroWellbeing: 'Hero Wellbeing Coral | Solid State Group',
     },
     // meta:description
     descriptions: {
