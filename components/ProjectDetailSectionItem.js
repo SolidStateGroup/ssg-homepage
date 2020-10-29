@@ -40,7 +40,7 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                                 <img
                                     src={this.props.imageOne || '/static/images/services/mobile-app-development.jpg'}
                                     srcSet={this.props.srcSetImageOne}
-                                    alt="UX Design Whiteboard"
+                                    alt={this.props.altImageOne || null}
                                     className={cn(this.props.imageOneclassName, "img-fluid mb-md-0 mb-5")}
                                 />
                             </div>
@@ -52,7 +52,7 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                                 <img
                                     src={this.props.imageTwo || '/static/images/services/ux-andy.jpg'}
                                     srcSet={this.props.srcSetImageTwo}
-                                    alt="UX Design Whiteboard"
+                                    alt={this.props.altImageTwo || null}
                                     className="img-fluid"
                                 />
                             </div>

@@ -213,6 +213,7 @@ const TheComponent = class extends Component {
                             title={'Component based design approach'}
                             subTitle={'04 / Development'}
                             imageOne={'/static/images/projects/hero/storybook.png'}
+                            altImageOne={'Storybook'}
                             srcSetImageOne={'/static/images/projects/hero/storybook.png 1x, /static/images/projects/hero/storybook@2x.png 2x'}
                             description={'We used Sketch, Plant version control and Invision to build a high fidelity prototype that the client signed off, which was based on a new design system. We now needed to start implementing our design system and UI in actual software in order to build the application. \n' +
                             '\n' +
@@ -251,18 +252,18 @@ const TheComponent = class extends Component {
                             techLogoItems={
                                 <React.Fragment>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/angular.svg'
+                                        <img alt="react" src='/static/images/tech-icons/dark/react.svg'
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/rabbit_mq.svg'
+                                        <img alt=".net" src='/static/images/tech-icons/dark/net.svg'
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center mb-md-0 mb-4">
-                                        <img src='/static/images/tech-icons/dark/java.svg' className='img-responsive'/>
+                                        <img alt="mysql" src='/static/images/tech-icons/dark/MySQL.svg' className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/postgres.svg'
+                                        <img alt="aws" src='/static/images/tech-icons/dark/aws.svg'
                                              className='img-responsive'/>
                                     </div>
                                 </React.Fragment>
@@ -278,7 +279,6 @@ const TheComponent = class extends Component {
                                 </React.Fragment>}
 
                         />
-
 
                         <ProjectTextSection
                             subTitle="05 / Headlines"
