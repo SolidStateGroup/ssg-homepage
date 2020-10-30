@@ -197,7 +197,7 @@ const TheComponent = class extends Component {
                             imageOne={'/static/images/projects/hero/Onboarding - 2.png'}
                             srcSetImageOne={'/static/images/projects/hero/Onboarding - 2.png 1x, /static/images/projects/hero/Onboarding - 2@2x.png 2x'}
                             imageTwo={'/static/images/projects/hero/connections.png'}
-                            srcSetImageTwo={'/static/images/projects/hero/connections.png 1x, /static/images/projects/hero/connections.png 2x'}
+                            srcSetImageTwo={'/static/images/projects/hero/connections.png 1x, /static/images/projects/hero/connections@2x.png 2x'}
                             description={'One of the biggest challenges with the project was integrations with the phone health data as well as integrations with other wearables via a 3rd party called Validic. Hero want people to take their health and wellbeing seriously and as a result, the platform allows you to connect all manner of smart devices to measure simple things like your steps, to very complex things like your glucose levels from medical devices.'}
                         />
 
