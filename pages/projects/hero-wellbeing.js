@@ -105,8 +105,8 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                             title={'Users & Audience'}
                             subTitle={'02 / Solution'}
-                            imageOne={'/static/images/projects/hero/My-Health-App-on-mobile.png'}
-                            srcSetImageOne={'/static/images/projects/hero/My-Health-App-on-mobile.png 1x, /static/images/services/My-Health-App-on-mobile.png 2x'}
+                            imageOne={'/static/images/projects/hero/My-Health-App-on-mobile.jpg'}
+                            srcSetImageOne={'/static/images/projects/hero/My-Health-App-on-mobile.jpg 1x, /static/images/services/My-Health-App-on-mobile.jpg 2x'}
                             // imageTwo={'/static/images/services/ux-andy.jpg'}
                             // srcSetImageTwo={'/static/images/services/ux-andy.jpg 1x, /static/images/services/ux-andy@2x.jpg 2x'}
                             description={'The app had two types of user, including organisation leaders who create challenges for their organisation. They also get access to real time data and insights to measure and further support the wellbeing of their staff. \n' +
@@ -141,7 +141,7 @@ const TheComponent = class extends Component {
                             title={'Sketching and Whiteboarding'}
                             subTitle={'03 / UI Redesign'}
                             imageOne={'/static/images/projects/hero/hero-sketch.jpg'}
-                            srcSetImageOne={'/static/images/projects/hero/hero-sketch.jpg 1x, /static/images/projects/hero/hero-sketch.jpg 2x'}
+                            srcSetImageOne={'/static/images/projects/hero/hero-sketch.jpg 1x, /static/images/projects/hero/hero-sketch@2x.jpg 2x'}
                             // imageTwo={'/static/images/services/ux-andy.jpg'}
                             // srcSetImageTwo={'/static/images/services/ux-andy.jpg 1x, /static/images/services/ux-andy@2x.jpg 2x'}
                             description={'We held several virtual whiteboarding sessions with key stakeholders in order to rapidly iterate on designs and address the issues we found within the existing mobile app.'}
@@ -166,6 +166,7 @@ const TheComponent = class extends Component {
 
 
                         <ProjectDetailSectionItem
+                            imageOneclassName="img__shadow"
                             title={'Mobile Dashboard'}
                             subTitle={'03 / UI Redesign'}
                             imageOne={'/static/images/projects/hero/Dashboard.png'}
@@ -188,6 +189,8 @@ const TheComponent = class extends Component {
 
 
                         <ProjectDetailSectionItem
+                            imageOneclassName="img__shadow"
+                            imageTwoclassName="img__shadow"
                             className={'flex-row-reverse'}
                             title={'HealthKit & Google Fit Integrations'}
                             subTitle={'03 / UI Redesign'}
@@ -199,6 +202,7 @@ const TheComponent = class extends Component {
                         />
 
                         <ProjectDetailSectionItem
+                            imageOneclassName="img__shadow"
                             title={'Web app redesign'}
                             subTitle={'03 / UI Redesign'}
                             imageOne={'/static/images/projects/hero/Dashboard-web.png'}
@@ -209,6 +213,7 @@ const TheComponent = class extends Component {
                         />
 
                         <ProjectDetailSectionItem
+                            imageOneclassName="img__shadow"
                             className={'flex-row-reverse'}
                             title={'Component based design approach'}
                             subTitle={'04 / Development'}
