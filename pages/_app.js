@@ -3,7 +3,6 @@ import Head from 'next/head';
 import React from 'react';
 import '../styles/styles.scss';
 import '../project/polyfill';
-import { gsap } from 'gsap';
 
 class MyApp extends App {
     constructor(props) {
@@ -15,20 +14,6 @@ class MyApp extends App {
             require('gsap/MorphSVGPlugin');
         }
     }
-
-    componentDidMount () {
-        window.$crisp = [];
-        window.CRISP_WEBSITE_ID = "f0152f37-cd96-4444-b970-c9aedc8412dd";
-
-        (function() {
-            var d = document;
-            var s = d.createElement("script");
-
-            s.src = "https://client.crisp.chat/l.js";
-            s.async = 1;
-            d.getElementsByTagName("head")[0].appendChild(s);
-        })();
-    };
 
     render() {
         const { Component } = this.props;
