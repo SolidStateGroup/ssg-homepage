@@ -18,7 +18,7 @@ export const projects = [
         href: '/projects/hero-wellbeing',
         title: 'Connected Health, Made Simple',
         blobColour: '#15CBCE',
-        tags: ['WEB', 'API', 'IOT'],
+        tags: ['WEB', 'API', 'IOT', 'MOBILE', 'DESIGN'],
         projectType: ['UX design, UI design, API Development, Web Application, Hardware integrations, Mobile App Development'],
         gaDataLabel: 'work-projects-hero',
     },
