@@ -124,8 +124,6 @@ const TheComponent = class extends Component {
                                         listItemText={'UX Analysis'}/>
                                     <WideListItem
                                         listItemText={'User Journey Maps'}/>
-                                    <WideListItem
-                                        listItemText={'User Research'}/>
                                 </React.Fragment>}
                         />
 

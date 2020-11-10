@@ -60,10 +60,6 @@ const HomePage = class extends React.Component {
 
             .setTween(tl3);
 
-        // scene1.addIndicators({name: "scene 1", colorEnd: "red"});
-        // scene2.addIndicators({name: "scene 2", colorEnd: "purple"});
-        // scene3.addIndicators({name: "scene 3", colorEnd: "yellow"});
-
         controller.addScene([
             scene1,
             scene2,

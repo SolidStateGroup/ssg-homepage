@@ -33,7 +33,7 @@ const ProjectItem = global.ProjectItem = class extends React.PureComponent {
                 ) : (
                     null
                 )}
-                <div className="flex-1 align-self-stretch flex-row">
+                <div className="flex-1 align-self-stretch flex-row project__item-container">
                     <div className="col-md-6 justify-content-start pb-xs-0 pb-3 pt-xs-0 pt-3">
                         <div>
                             <p className="project__subtitle mb-0">{this.props.subTitle || 'Solid State Group'}</p>
