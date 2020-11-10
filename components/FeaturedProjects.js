@@ -17,7 +17,7 @@ const projects = [
         projectImage: '/static/images/projects/hero/hero-1.png',
         srcSet: '/static/images/projects/hero/hero-1.png 1x, /static/images/projects/hero/hero-1@2x.png 2x,',
         subTitle: 'Responsive Web Application & Mobile App',
-        href: '/projects/tone-and-sculpt',
+        href: '/projects/hero-wellbeing',
         title: 'Connected Health, Made Simple',
         tags: ['DESIGN'],
         projectNumber: ['01'],
