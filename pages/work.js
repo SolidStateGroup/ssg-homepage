@@ -289,7 +289,7 @@ export const projects = [
         ButtonComponent: ButtonPrimary,
         href: '/projects/patientview',
         projectImage: '/static/images/projects/patientview/patientview-ipad@1x.png',
-        srcSet: '/static/images/projects/hero/patientview-ipad@1x.png 1x, /static/images/projects/patientview/patientview-ipad@2x.png 2x,',
+        srcSet: '/static/images/projects/patientview/patientview-ipad@1x.png 1x, /static/images/projects/patientview/patientview-ipad@2x.png 2x,',
         clientImage: '/static/images/clients/patientview.png',
         subTitle: 'Secure online platform for clinicians and patients',
         title: 'The doctor will see you now – wherever, whenever',

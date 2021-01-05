@@ -86,7 +86,8 @@ const TheComponent = class extends Component {
                             '\n' +
                             'Our goal was to improve these aspects of Hero’s digital platforms without having to completely rebuild existing product features where possible.\n'
 
-                            }/>
+                            }
+                        />
 
                         <ProjectFullImageSection
                             className="sectionThreeAnimation"
