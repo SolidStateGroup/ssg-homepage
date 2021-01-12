@@ -11,6 +11,19 @@ import InfiniteScroll from '../components/InfiniteScroll';
 export const projects = [
     {
         ButtonComponent: ButtonPrimary,
+        projectImage: '/static/images/projects/cap10/1.png',
+        srcSet: '/static/images/projects/cap10/1.png 1x, /static/images/projects/cap10/1@2x.png 2x,',
+        clientImage: '/static/images/clients/Cap10-logo.svg',
+        subTitle: 'Mobile App',
+        href: '/projects/cap10',
+        title: 'Flexible reporting for businesses',
+        blobColour: '#5873E1',
+        tags: ['WEB', 'API', 'IOT', 'MOBILE', 'DESIGN'],
+        projectType: ['UX design, UI design, API Development, Mobile App Development'],
+        gaDataLabel: 'work-projects-hero',
+    },
+    {
+        ButtonComponent: ButtonPrimary,
         projectImage: '/static/images/projects/hero/hero-1.png',
         srcSet: '/static/images/projects/hero/hero-1.png 1x, /static/images/projects/hero/hero-1@2x.png 2x,',
         clientImage: '/static/images/clients/hero-logo.png',

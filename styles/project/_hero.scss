@@ -102,6 +102,9 @@
     &--hero-wellbeing {
         background-color: #15CBCE;
     }
+    &--cap10 {
+        background-image: linear-gradient(-29deg, #4E4AF2 0%, #30DBE6 100%);
+    }
 }
 
 @include media-breakpoint-down(md) {
