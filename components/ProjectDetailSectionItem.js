@@ -2,12 +2,6 @@ import React from 'react';
 import cn from 'classnames';
 import propTypes from 'prop-types';
 import {ButtonSecondary} from './base/forms/Button';
-import ReactLogo from './TechIcons/ReactLogo';
-import NodeLogo from './TechIcons/NodeLogo';
-import DockerLogo from './TechIcons/DockerLogo';
-import JavaLogo from './TechIcons/JavaLogo';
-import PostgresLogo from './TechIcons/PostgresLogo';
-import AWSLogo from './TechIcons/AWSLogo';
 
 const _propTypes = {
     className: propTypes.string,
