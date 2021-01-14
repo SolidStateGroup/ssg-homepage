@@ -71,6 +71,8 @@ const Constants = global.Constants = {
         responsiveWebApps: 'Responsive web applications',
         serviceStrategy: 'Strategy',
         systemsIntegration: 'Systems Integration',
+
+        workHero: 'Hero Wellbeing',
     },
 };
 
