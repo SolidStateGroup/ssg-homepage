@@ -170,26 +170,26 @@ const TheComponent = class extends Component {
                              className="img-fluid mb-5" alt="tone and sculpt phones"/>
                     </div>
 
-                    {/*<ClientQuote*/}
-                    {/*    image={'/static/images/projects/tone-and-sculpt/phone.png'}*/}
-                    {/*    srcSet="/static/images/projects/tone-and-sculpt/phone.png 1x, /static/images/projects/tone-and-sculpt/phone@2x.png 2x"*/}
-                    {/*    text={'Solid State Group are really easy to work with as they are open to feedback and provide regular updates to be able to take decisions on the fly. They came up with a brilliant idea at our hackathon and they\'ve taken on board the insights from our business to further refine the product later on.'}*/}
-                    {/*    clientName={'Krissy Cela'} clientTitle={'Founder - Tone and Sculpt'}/>*/}
+                    <ClientQuote
+                        image={'/static/images/projects/tone-and-sculpt/phone.png'}
+                        srcSet="/static/images/projects/tone-and-sculpt/phone.png 1x, /static/images/projects/tone-and-sculpt/phone@2x.png 2x"
+                        text={'We worked with SSG to completely rebuild our digital properties, API, CMS and a brand new mobile app for iOS and Android. The team were brilliant under significant time pressure and we felt like we were in expert hands from start to finish.'}
+                        clientName={'Jack Bullimore'} clientTitle={'Co-Founder & CEO at Tone & Sculpt'}/>
 
-                    {/*<div className="section container mt-5 mb-5">*/}
-                    {/*    <div className="row">*/}
-                    {/*        <div className="col-md-4">*/}
-                    {/*            <ProjectStatItem heading={'20,000+'}*/}
-                    {/*                             text={'New users subscribed and paying for the app'}/>*/}
-                    {/*        </div>*/}
-                    {/*        <div className="col-md-4">*/}
-                    {/*            <ProjectStatItem/>*/}
-                    {/*        </div>*/}
-                    {/*        <div className="col-md-4">*/}
-                    {/*            <ProjectStatItem/>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
+                        {/*<div className="section container mt-5 mb-5">*/}
+                        {/*    <div className="row">*/}
+                        {/*        <div className="col-md-4">*/}
+                        {/*            <ProjectStatItem heading={'20,000+'}*/}
+                        {/*                             text={'New users subscribed and paying for the app'}/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="col-md-4">*/}
+                        {/*            <ProjectStatItem/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="col-md-4">*/}
+                        {/*            <ProjectStatItem/>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     <ProjectNav/>
                 </Page>
                 <Footer/>

@@ -9,7 +9,7 @@
         pointer-events: none;
         position: absolute;
         align-items: center;
-        background-color: red;
+        width: 100%;
         .project__subtitle{
             color:$white;
         }
@@ -26,10 +26,13 @@
             }
         }
     }
+    
+    &--hero-wellbeing{
+        background-color: #15CBCE;
+    }
     &--t-and-s{
         background-color: #5CC2E1;
     }
-
     &--purely{
         background-color: #25153C;
     }
@@ -144,6 +147,16 @@
     &--animation-container {
         position: absolute;
         left: -6em;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .project {
+        &__item {
+            &-container {
+                min-height: 500px;
+            }
+        }
     }
 }
 

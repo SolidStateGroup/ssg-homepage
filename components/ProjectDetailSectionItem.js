@@ -40,7 +40,7 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                                 <img
                                     src={this.props.imageOne || '/static/images/services/mobile-app-development.jpg'}
                                     srcSet={this.props.srcSetImageOne}
-                                    alt="UX Design Whiteboard"
+                                    alt={this.props.altImageOne || null}
                                     className={cn(this.props.imageOneclassName, "img-fluid mb-md-0 mb-5")}
                                 />
                             </div>
@@ -52,8 +52,8 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                                 <img
                                     src={this.props.imageTwo || '/static/images/services/ux-andy.jpg'}
                                     srcSet={this.props.srcSetImageTwo}
-                                    alt="UX Design Whiteboard"
-                                    className="img-fluid"
+                                    alt={this.props.altImageTwo || null}
+                                    className={cn(this.props.imageTwoclassName, "img-fluid")}
                                 />
                             </div>
                         ) : (
@@ -251,7 +251,7 @@ export const ProjectFullImageSection = global.ProjectFullImageSection = class ex
                         <h6 className="title--project-section title--project-section--small text-grey">{props.subTitle}</h6>
                         <h3>{props.title}</h3>
                     </div>
-                    <img src={props.imageUrl} srcSet={props.srcSet || null} alt={props.imageAltText} className="img-fluid  py-5"/>
+                    <img src={props.imageUrl} srcSet={props.srcSet || null} alt={props.imageAltText} className={cn(this.props.imageClassName, 'img-fluid  py-5')}  />
                 </div>
             </div>
         );
