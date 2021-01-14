@@ -55,11 +55,8 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                           title="Branding"
                           subTitle="02 / Solution"
-                          // imageOneclassName="img__shadow"
                           imageOne="/static/images/projects/cap10/styleguide.png"
                           srcSetImageOne="/static/images/projects/cap10/styleguide.png 1x, /static/images/cap10/styleguide@2x.png 2x"
-                            // imageTwo={'/static/images/services/ux-andy.jpg'}
-                            // srcSetImageTwo={'/static/images/services/ux-andy.jpg 1x, /static/images/services/ux-andy@2x.jpg 2x'}
                           description={'We started by creating a number of branding routes for the client\'s consideration. They served to focus our ideas and eliminate visual concepts that were not desirable. From here we developed a new route based on client feedback and iterated on this until we had a final brand that the client was happy with.\n'}
                           ProjectServiceListItem={
                               <React.Fragment>
