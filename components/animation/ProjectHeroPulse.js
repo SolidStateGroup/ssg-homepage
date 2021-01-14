@@ -53,7 +53,6 @@ const ProjectHeroPulse = global.ProjectHeroPulse = class extends React.PureCompo
             <React.Fragment>
 
                 <svg ref={div => this.myElement = div} className={cn(this.props.className, ' project-hero--animation-container')} width={729} height={729} viewBox="0 0 729 729">
-                    <title>{"pulse"}</title>
                     <g fill="#FFF" fillRule="evenodd" opacity={0.319}>
                         <circle className="pulse-circle__large" opacity={0.319} cx={364.5} cy={364.5} r={364.5} />
                         <circle className="pulse-circle__large" opacity={0.499} cx={363.5} cy={365.5} r={273.5} />

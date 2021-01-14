@@ -96,8 +96,8 @@ const TheComponent = class extends Component {
                         <ProjectFullImageSection
                           // title="Old mobile app"
                           // subTitle="03 / UI Redesign"
-                          imageUrl="/static/images/projects/cap10/mobile-2.png"
-                          srcSet="/static/images/projects/cap10/mobile-2.png 1x, /static/images/projects/cap10/mobile-2@2x.png 2x"
+                          imageUrl="/static/images/projects/cap10/mobile-2.jpg"
+                          srcSet="/static/images/projects/cap10/mobile-2.jpg 1x, /static/images/projects/cap10/mobile-2@2x.jpg 2x"
                           imageAltText="Dashboard UI"
                         />
 
