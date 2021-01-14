@@ -55,12 +55,19 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                           title="Branding"
                           subTitle="02 / Solution"
-                          imageOneclassName="img__shadow"
-                          imageOne="/static/images/projects/cap10/v4 Layout 2.png"
-                          srcSetImageOne="/static/images/projects/cap10/v4 Layout 2.png 1x, /static/images/cap10/v4 Layout 2@2x.png 2x"
+                          // imageOneclassName="img__shadow"
+                          imageOne="/static/images/projects/cap10/styleguide.png"
+                          srcSetImageOne="/static/images/projects/cap10/styleguide.png 1x, /static/images/cap10/styleguide@2x.png 2x"
                             // imageTwo={'/static/images/services/ux-andy.jpg'}
                             // srcSetImageTwo={'/static/images/services/ux-andy.jpg 1x, /static/images/services/ux-andy@2x.jpg 2x'}
                           description={'We started by creating a number of branding routes for the client\'s consideration. They served to focus our ideas and eliminate visual concepts that were not desirable. From here we developed a new route based on client feedback and iterated on this until we had a final brand that the client was happy with.\n'}
+                          ProjectServiceListItem={
+                              <React.Fragment>
+                                  <WideListItem
+                                      listItemText={'Branding'}/>
+                                  <WideListItem
+                                      listItemText={'Style guide'}/>
+                              </React.Fragment>}
                         />
 
                         <ProjectDetailSectionItem
@@ -73,6 +80,17 @@ const TheComponent = class extends Component {
                             // imageTwo={'/static/images/services/ux-andy.jpg'}
                             // srcSetImageTwo={'/static/images/services/ux-andy.jpg 1x, /static/images/services/ux-andy@2x.jpg 2x'}
                             description={'The UI design uses mostly pale, low chroma colours and subtle effects to create a form that appears like a solid material. These UI elements look solid and robust and fit in nicely with the themes of security and encryption that existed within the app. Gradients are employed to drive interest to specific UI elements of the design, such as primary buttons and data visualisations.'}
+                            ProjectServiceListItem={
+                                <React.Fragment>
+                                    <WideListItem
+                                        listItemText={'UI Design'}/>
+                                    <WideListItem
+                                        listItemText={'Design System'}/>
+                                    <WideListItem
+                                        listItemText={'Clickable prototypes'}/>
+                                    <WideListItem
+                                        listItemText={'Interaction Design'}/>
+                                </React.Fragment>}
                         />
 
                         <ProjectFullImageSection
@@ -83,7 +101,7 @@ const TheComponent = class extends Component {
                           imageAltText="Dashboard UI"
                         />
 
-                        <ProjectFullVideoSection videoLink={'/static/images/projects/cap10/rotato-1.mov'} />
+                        <ProjectFullVideoSection title={'Interaction Design'} videoLink={'/static/images/projects/cap10/rotato-1.mov'} />
 
                          <ProjectTechSection
                              subTitle={'03 / Development'}

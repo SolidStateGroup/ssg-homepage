@@ -260,6 +260,13 @@ export const ProjectFullVideoSection = global.ProjectFullVideoSection = class ex
         const {props} = this;
         return (
             <React.Fragment>
+
+                {this.props.title ? (
+                    <h3 className="text-center mb-5 mt-5">{props.title}</h3>
+                ) : (
+                    null
+                )}
+
                 {this.props.videoLink ? (
                     <div className="col-md-12 pr-0 pl-0">
                         <video width="100%" autoPlay={true} muted={true} loop={true}>
