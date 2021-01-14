@@ -71,11 +71,8 @@ const TheComponent = class extends Component {
                             className="flex-row-reverse"
                             title="UI Design"
                             subTitle="02 / Solution"
-                            // imageOneclassName="img__shadow"
                             imageOne="/static/images/projects/cap10/mobile-1.png"
-                            srcSetImageOne="/static/images/projects/cap10/mobile-1.png 1x, /static/images/cap10/mobile-1@2x.png 2x"
-                            // imageTwo={'/static/images/services/ux-andy.jpg'}
-                            // srcSetImageTwo={'/static/images/services/ux-andy.jpg 1x, /static/images/services/ux-andy@2x.jpg 2x'}
+                            srcSetImageOne="/static/images/projects/cap10/mobile-1.png 1x, /static/images/projects/cap10/mobile-1@2x.png 2x"
                             description={'The UI design uses mostly pale, low chroma colours and subtle effects to create a form that appears like a solid material. These UI elements look solid and robust and fit in nicely with the themes of security and encryption that existed within the app. Gradients are employed to drive interest to specific UI elements of the design, such as primary buttons and data visualisations.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -91,8 +88,6 @@ const TheComponent = class extends Component {
                         />
 
                         <ProjectFullImageSection
-                          // title="Old mobile app"
-                          // subTitle="03 / UI Redesign"
                           imageUrl="/static/images/projects/cap10/mobile-2.jpg"
                           srcSet="/static/images/projects/cap10/mobile-2.jpg 1x, /static/images/projects/cap10/mobile-2@2x.jpg 2x"
                           imageAltText="Dashboard UI"
