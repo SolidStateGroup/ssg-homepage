@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="99px" viewBox="0 0 90 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Cap10-logo</title>
+    <defs>
+        <linearGradient x1="50%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#2F97DF" offset="0%"></stop>
+            <stop stop-color="#5247F8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="64.7707193%" y1="109.729342%" x2="38.947237%" y2="-6.13292015%" id="linearGradient-2">
+            <stop stop-color="#6440FA" offset="0%"></stop>
+            <stop stop-color="#4323C8" offset="100%"></stop>
+            <stop stop-color="#AA1E16" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="57.4310518%" y1="100%" x2="37.2174722%" y2="-39.5998113%" id="linearGradient-3">
+            <stop stop-color="#4E4AF2" offset="0%"></stop>
+            <stop stop-color="#30DBE6" offset="100%"></stop>
+        </linearGradient>
+        <path d="M47.8997789,0.2 L48.399,0.204 L48.4000626,10.7523288 C48.3167542,10.7513149 48.2333248,10.7508065 48.1497772,10.7508065 C36.9660907,10.7508065 27.8999216,19.8609091 27.8999216,31.0987903 C27.8999216,42.3366715 36.9660907,51.4467742 48.1497772,51.4467742 L48.399,51.444 L48.3994507,62.4960354 C48.2332079,62.4986752 48.0666474,62.5 47.8997789,62.5 C30.7790738,62.5 16.9,48.55367 16.9,31.35 C16.9,14.14633 30.7790738,0.2 47.8997789,0.2 Z" id="path-4"></path>
+        <filter x="-54.0%" y="-25.7%" width="246.0%" height="173.8%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="6" dy="7" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-25.4%" y="-11.2%" width="188.9%" height="144.9%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="1" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Cap10-logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Brand-Document--/-v4-logotype-coloured" transform="translate(2.000000, 1.900000)">
+            <g id="Group" transform="translate(7.800000, 75.800000)" fill="#1A1C1F">
+                <path d="M7.483392,14.235984 C9.968112,14.235984 11.955888,13.095936 13.242096,11.312784 L10.37736,9.295776 C9.763488,10.143504 8.62344,10.66968 7.512624,10.66968 C5.349456,10.66968 3.887856,9.120384 3.887856,7.103376 C3.887856,5.1156 5.349456,3.566304 7.512624,3.566304 C8.62344,3.566304 9.763488,4.09248 10.37736,4.940208 L13.242096,2.9232 C11.955888,1.16928 9.968112,0 7.483392,0 C3.50784,0 0,2.77704 0,7.103376 C0,11.429712 3.50784,14.235984 7.483392,14.235984 Z M20.8716479,14.235984 C22.3917119,14.235984 24.2917919,13.622112 25.2564479,12.27744 L25.2564479,13.972896 L29.0858399,13.972896 L29.0858399,0.350784 L25.2564479,0.350784 L25.2564479,1.987776 C24.2917919,0.613872 22.4501759,0.029232 20.8716479,0.029232 C17.3638079,0.029232 14.1775199,2.747808 14.1775199,7.132608 C14.1775199,11.517408 17.3638079,14.235984 20.8716479,14.235984 Z M21.6024479,10.66968 C19.6731359,10.66968 18.0653759,9.120384 18.0653759,7.132608 C18.0653759,5.1156 19.6731359,3.624768 21.6024479,3.624768 C23.3855999,3.624768 25.1395199,5.027904 25.1395199,7.132608 C25.1395199,9.20808 23.4732959,10.66968 21.6024479,10.66968 Z M36.0430559,20.667024 L36.0430559,12.27744 C37.0077119,13.651344 38.8785599,14.235984 40.4278559,14.235984 C43.9356959,14.235984 47.1219839,11.517408 47.1219839,7.132608 C47.1219839,2.747808 43.9356959,0 40.4278559,0 C38.8785599,0 37.0077119,0.613872 36.0430559,1.987776 L36.0430559,0.350784 L32.2136639,0.350784 L32.2136639,20.667024 L36.0430559,20.667024 Z M39.6970559,10.640448 C37.9139039,10.640448 36.1599839,9.237312 36.1599839,7.132608 C36.1599839,5.057136 37.8262079,3.595536 39.6970559,3.595536 C41.6263679,3.595536 43.2048959,5.144832 43.2048959,7.132608 C43.2048959,9.149616 41.6263679,10.640448 39.6970559,10.640448 Z" id="cap" fill-rule="nonzero"></path>
+                <path d="M62.2384001,14.235984 C66.1262561,14.235984 69.5756321,11.429712 69.5756321,7.132608 C69.5756321,2.806272 66.1262561,-3.73034936e-15 62.2384001,-3.73034936e-15 C58.3505441,-3.73034936e-15 54.9011681,2.806272 54.9011681,7.132608 C54.9011681,11.429712 58.3505441,14.235984 62.2384001,14.235984 Z M62.2384001,10.66968 C60.3383201,10.66968 58.7890241,9.237312 58.7890241,7.132608 C58.7890241,4.998672 60.3383201,3.566304 62.2384001,3.566304 C64.1384801,3.566304 65.6877761,4.998672 65.6877761,7.132608 C65.6877761,9.237312 64.1384801,10.66968 62.2384001,10.66968 Z" id="o" fill-rule="nonzero"></path>
+                <g id="1" transform="translate(45.902416, 0.154896)">
+                    <rect id="Rectangle" x="3.794" y="0" width="3.5" height="14"></rect>
+                    <rect id="Rectangle-Copy" transform="translate(3.038000, 2.520000) rotate(55.000000) translate(-3.038000, -2.520000) " x="1.4" y="0.504" width="3.276" height="4.032"></rect>
+                </g>
+            </g>
+            <g id="c10-mARK">
+                <polygon id="1" fill="#CACFFC" fill-rule="nonzero" points="26.81116 62.5 26.81116 0.58864 25.78552 0.58864 0.42424 11.12476 0.42424 22.59328 14.50348 17.18536 14.50348 62.5"></polygon>
+                <path d="M48.05,0.2 C65.25367,0.2 79.2,14.14633 79.2,31.35 C79.2,48.55367 65.25367,62.5 48.05,62.5 C30.84633,62.5 16.9,48.55367 16.9,31.35 C16.9,14.14633 30.84633,0.2 48.05,0.2 Z M48.3012097,10.7508065 C37.0633285,10.7508065 27.9532258,19.8609091 27.9532258,31.0987903 C27.9532258,42.3366715 37.0633285,51.4467742 48.3012097,51.4467742 C59.5390909,51.4467742 68.6491935,42.3366715 68.6491935,31.0987903 C68.6491935,19.8609091 59.5390909,10.7508065 48.3012097,10.7508065 Z" id="Combined-Shape" fill="url(#linearGradient-1)" opacity="0.295689174"></path>
+                <g id="Combined-Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-4"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

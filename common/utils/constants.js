@@ -38,6 +38,7 @@ const Constants = global.Constants = {
         zopa: 'Zopa | Solid State Group',
         ladbrokes: 'Ladbrokes Coral | Solid State Group',
         heroWellbeing: 'Hero Wellbeing | Solid State Group',
+        cap10: 'Cap10 | Solid State Group',
     },
     // meta:description
     descriptions: {
