@@ -73,7 +73,7 @@ const TheComponent = class extends Component {
                             subTitle="02 / Solution"
                             imageOne="/static/images/projects/cap10/mobile-1.png"
                             srcSetImageOne="/static/images/projects/cap10/mobile-1.png 1x, /static/images/projects/cap10/mobile-1@2x.png 2x"
-                            description={'The UI design uses mostly pale, low chroma colours and subtle effects to create a form that appears like a solid material. These UI elements look solid and robust and fit in nicely with the themes of security and encryption that existed within the app. Gradients are employed to drive interest to specific UI elements of the design, such as primary buttons and data visualisations.'}
+                            description={'The UI design uses mostly pale, low chroma colours and subtle effects to create a form that appears like a solid material. These UI elements look solid and robust and fit in nicely with the themes of security and encryption that exists within the app. Gradients are employed to drive interest to specific UI elements of the design, such as primary buttons and data visualisations.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
                                     <WideListItem
