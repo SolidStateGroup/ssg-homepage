@@ -332,24 +332,24 @@ const ServicesPage = class extends React.Component {
                         <div className="flex-row pt-5">
                             <div className="justify-content-center col-md-4 mb-md-0 mb-4">
                                 <Card
-                                  cardLink="https://github.com/SolidStateGroup/rio" cardTechnology="JavaScript"
-                                  cardTechnologyStars="120" cardTechnologyForked="14"
-                                  techColourClass="card__technology--yellow" cardTitle="rio"
+                                    cardLink="https://github.com/Flagsmith/flagsmith-js-client"
+                                    cardTechnology="JavaScript" cardTechnologyStars="22" cardTechnologyForked="8"
+                                    techColourClass="card__technology--yellow" cardTitle="Flagsmith"
+                                    cardText="Flagsmith allows you to manage feature flags and remote config across multiple projects & environments."
                                 />
                             </div>
                             <div className="justify-content-center col-md-4 mb-md-0 mb-4">
                                 <Card
-                                  cardLink="https://github.com/SolidStateGroup/bullet-train-aio"
-                                  cardTechnology="JavaScript" cardTechnologyStars="0" cardTechnologyForked="1"
-                                  techColourClass="card__technology--yellow" cardTitle="bullet-train-aio"
-                                  cardText="Bullet Train All In One Project"
+                                  cardLink="https://github.com/SolidStateGroup/rio" cardTechnology="JavaScript"
+                                  cardTechnologyStars="133" cardTechnologyForked="16"
+                                  techColourClass="card__technology--yellow" cardTitle="RIO"
                                 />
                             </div>
                             <div className="justify-content-center col-md-4">
                                 <Card
                                   cardLink="https://github.com/SolidStateGroup/patientview" cardTechnology="Java"
-                                  cardTechnologyStars="6" cardTechnologyForked="1"
-                                  techColourClass="card__technology--brown" cardTitle="patientview"
+                                  cardTechnologyStars="8" cardTechnologyForked="1"
+                                  techColourClass="card__technology--brown" cardTitle="Patientview"
                                   cardText={'PatientView shows patients\' latest test results plus information about their diagnosis and treatment.'}
                                 />
                             </div>

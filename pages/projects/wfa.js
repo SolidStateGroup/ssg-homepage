@@ -15,6 +15,10 @@ const TheComponent = class extends Component {
         children: propTypes.node,
     };
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.projectWFA);
+    }
+
     render() {
         return (
             <React.Fragment>
