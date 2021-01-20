@@ -16,6 +16,11 @@ const TheComponent = class extends Component {
     static propTypes = {
         children: propTypes.node,
     };
+
+    componentDidMount() {
+        API.trackPage(Constants.pages.projectRP);
+    }
+
     render() {
         return (
             <React.Fragment>

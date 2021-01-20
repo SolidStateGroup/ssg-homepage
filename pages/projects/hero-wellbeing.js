@@ -21,7 +21,7 @@ const TheComponent = class extends Component {
     };
 
     componentDidMount() {
-        API.trackPage(Constants.pages.workHero);
+        API.trackPage(Constants.pages.projectHero);
     }
 
     render() {

@@ -20,6 +20,10 @@ const TheComponent = class extends Component {
         children: propTypes.node,
     };
 
+    componentDidMount() {
+        API.trackPage(Constants.pages.projectTandS);
+    }
+
     render() {
         return (
             <React.Fragment>
