@@ -65,6 +65,16 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                         ) : (
                             null
                         )}
+
+                        {this.props.iframe ? (
+                            <div className="col align-self-end">
+                                {this.props.iframe}
+                            </div>
+                        ) : (
+                            null
+                        )}
+
+
                     </div>
                 </div>
 
@@ -259,7 +269,7 @@ export const ProjectFullVideoSection = global.ProjectFullVideoSection = class ex
     render() {
         const {props} = this;
         return (
-            <React.Fragment>
+            <div className={this.props.className}>
 
                 {this.props.title ? (
                     <h3 className="text-center mb-5 mt-5">{props.title}</h3>
@@ -291,7 +301,7 @@ export const ProjectFullVideoSection = global.ProjectFullVideoSection = class ex
                     null
                 )}
 
-            </React.Fragment>
+            </div>
 
 
         );

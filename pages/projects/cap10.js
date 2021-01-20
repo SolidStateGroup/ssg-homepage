@@ -80,6 +80,20 @@ const TheComponent = class extends Component {
                                         listItemText={'UI Design'}/>
                                     <WideListItem
                                         listItemText={'Design System'}/>
+                                </React.Fragment>}
+                        />
+
+                        <ProjectDetailSectionItem
+                            iframe={
+                                <iframe
+                                    src="https://marvelapp.com/prototype/13i2iiie?emb=1&iosapp=false&frameless=false"
+                                    width="453" height="864" allowTransparency="true" frameBorder="0"/>
+                            }
+                            title="High fidelity prototyping"
+                            subTitle="02 / Solution"
+                            description={'We built a high fidelity clickable prototype that demonstrated all the workflows for the various  user types. We then embellished on this by concepting some motion ideas that would demonstrate how animations and transitions would work in the app.'}
+                            ProjectServiceListItem={
+                                <React.Fragment>
                                     <WideListItem
                                         listItemText={'Clickable prototypes'}/>
                                     <WideListItem
@@ -93,41 +107,41 @@ const TheComponent = class extends Component {
                           imageAltText="Dashboard UI"
                         />
 
-                        <ProjectFullVideoSection title={'Interaction Design'} videoLink={'/static/images/projects/cap10/rotato-1.mov'} />
+                        <ProjectFullVideoSection className="mb-5" title={'Interaction Design'} videoLink={'/static/images/projects/cap10/rotato-1.mov'} />
 
-                         <ProjectTechSection
-                             subTitle={'03 / Development'}
-                             description={'Something about security and the tech stack here.'}
-                            techLogoItems={
-                                <React.Fragment>
-                                    <div className="col-6 text-center">
-                                        <img alt="react" src='/static/images/tech-icons/dark/react.svg'
-                                             className='img-responsive'/>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <img alt=".net" src='/static/images/tech-icons/dark/net.svg'
-                                             className='img-responsive'/>
-                                    </div>
-                                    <div className="col-6 text-center mb-md-0 mb-4">
-                                        <img alt="mysql" src='/static/images/tech-icons/dark/MySQL.svg' className='img-responsive'/>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <img alt="aws" src='/static/images/tech-icons/dark/aws.svg'
-                                             className='img-responsive'/>
-                                    </div>
-                                </React.Fragment>
-                            }
-                            ProjectServiceListItem={
-                                <React.Fragment>
-                                    <WideListItem
-                                        listItemText={'Mobile Development'}/>
-                                    <WideListItem
-                                        listItemText={'Backend Development'}/>
-                                    <WideListItem
-                                        listItemText={'API Development'}/>
-                                </React.Fragment>}
+                         {/*<ProjectTechSection*/}
+                         {/*    subTitle={'03 / Development'}*/}
+                         {/*    description={'Something about security and the tech stack here.'}*/}
+                         {/*   techLogoItems={*/}
+                         {/*       <React.Fragment>*/}
+                         {/*           <div className="col-6 text-center">*/}
+                         {/*               <img alt="react" src='/static/images/tech-icons/dark/react.svg'*/}
+                         {/*                    className='img-responsive'/>*/}
+                         {/*           </div>*/}
+                         {/*           <div className="col-6 text-center">*/}
+                         {/*               <img alt=".net" src='/static/images/tech-icons/dark/net.svg'*/}
+                         {/*                    className='img-responsive'/>*/}
+                         {/*           </div>*/}
+                         {/*           <div className="col-6 text-center mb-md-0 mb-4">*/}
+                         {/*               <img alt="mysql" src='/static/images/tech-icons/dark/MySQL.svg' className='img-responsive'/>*/}
+                         {/*           </div>*/}
+                         {/*           <div className="col-6 text-center">*/}
+                         {/*               <img alt="aws" src='/static/images/tech-icons/dark/aws.svg'*/}
+                         {/*                    className='img-responsive'/>*/}
+                         {/*           </div>*/}
+                         {/*       </React.Fragment>*/}
+                         {/*   }*/}
+                         {/*   ProjectServiceListItem={*/}
+                         {/*       <React.Fragment>*/}
+                         {/*           <WideListItem*/}
+                         {/*               listItemText={'Mobile Development'}/>*/}
+                         {/*           <WideListItem*/}
+                         {/*               listItemText={'Backend Development'}/>*/}
+                         {/*           <WideListItem*/}
+                         {/*               listItemText={'API Development'}/>*/}
+                         {/*       </React.Fragment>}*/}
 
-                         />
+                         {/*/>*/}
 
                          {/*<ProjectTextSection*/}
                          {/*   subTitle="04 / Headlines"*/}
