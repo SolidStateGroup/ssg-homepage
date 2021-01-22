@@ -115,11 +115,11 @@ const DesignPage = class extends React.Component {
                     <div className="row">
                       <div className="col-md-6 text-center">
                           <iframe src="https://marvelapp.com/prototype/27h7b6d6?emb=1&iosapp=false&frameless=false"
-                                  width="453" height="864" allowTransparency="true" frameBorder="0" />
+                                  width="300" height="764" allowTransparency="true" frameBorder="0" />
                       </div>
                         <div className="col-md-6 text-center">
                             <iframe src="https://marvelapp.com/prototype/9b98i63?emb=1&iosapp=false&frameless=false"
-                                    width="453" height="864" allowTransparency="true" frameBorder="0" />
+                                    width="300" height="764" allowTransparency="true" frameBorder="0" />
                         </div>
                     </div>
 
