@@ -112,6 +112,17 @@ const DesignPage = class extends React.Component {
                                  + 'User experience has never been more important for digital products.'}
                     />
 
+                    <div className="row">
+                      <div className="col-md-6 text-center">
+                          <iframe src="https://marvelapp.com/prototype/27h7b6d6?emb=1&iosapp=false&frameless=false"
+                                  width="453" height="864" allowTransparency="true" frameBorder="0" />
+                      </div>
+                        <div className="col-md-6 text-center">
+                            <iframe src="https://marvelapp.com/prototype/9b98i63?emb=1&iosapp=false&frameless=false"
+                                    width="453" height="864" allowTransparency="true" frameBorder="0" />
+                        </div>
+                    </div>
+
                     <ServiceItem
                       srcSet="/static/images/services/ui-components@1x.png 1x, /static/images/services/ui-components@2x.png 2x"
                       serviceImage="/static/images/services/ui-components@1x.png"
