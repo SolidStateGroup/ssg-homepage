@@ -136,6 +136,9 @@ const UserResearchPage = class extends React.Component {
                                     />
                                     <h5>Execute the research</h5>
                                 </div>
+                                <div className="align-self-center mb5 hidden-sm-down">
+                                    <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                                </div>
                                 <div className="col text-center">
                                     <img
                                         src="/static/images/svg-icons/analyse-blob-icon.svg" className="mb-3"
@@ -178,14 +181,14 @@ const UserResearchPage = class extends React.Component {
                         srcSet="/static/images/services/analysing-data.png 1x, /static/images/services/analysing-data@2x.png 2x"
                         className="flex-row-reverse"
                         subTitle="Analysing data"
-                        serviceDescription={'The research should provide data that can be iterated over for more detailed insights or provide actionable drivers for the design process. We use a number of qualitative and quantitative research methods to collate the correct data and present it back to you.'}
+                        serviceDescription={'The research will provide data that can be iterated over for more detailed insights or provide actionable drivers for the design process. We use a number of qualitative and quantitative research methods to collate the correct data and present it to you.'}
                     />
 
                     <ServiceItem
                         srcSet="/static/images/services/insights.png 1x, /static/images/services/insights@2x.png 2x"
                         serviceImage="/static/images/services/insights.png"
                         subTitle="Insights"
-                        serviceDescription={'Once we’ve completed the research and collated all the data, we analyse it and create actions to improve your design.'}
+                        serviceDescription={'Once we’ve completed the research we\'ll use the collated data to provide some insights and actions for your product.  These actions will serve to inform design decisions and indicate ways in which existing products could be improved.'}
                     />
 
                 </div>
