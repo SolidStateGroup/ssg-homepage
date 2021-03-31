@@ -52,7 +52,7 @@ const TheComponent = class extends Component {
                             <ProjectTextSection
                                 className="sectionOneAnimation"
                                 subTitle="00 / Overview"
-                                description={'Routed in elite sport, research and innovation, Hero Wellbeing exists to help create healthy and happy communities. One unique human at a time. They offer a blended digital and in-person approach to deliver a holistic wellbeing programme. \n' +
+                                description={'Rooted in elite sport, research and innovation, Hero Wellbeing exists to help create healthy and happy communities. One unique human at a time. They offer a blended digital and in-person approach to deliver a holistic wellbeing programme. \n' +
                                 '\n' +
                                 'Hero came to SSG to completely overhaul their digital service Hero Navigator, which allows individuals and businesses to progress against goals including sleep, movement, nutrition and mindfulness using wearable technologies.'}
                             />
@@ -111,9 +111,7 @@ const TheComponent = class extends Component {
                             title={'Users & Audience'}
                             subTitle={'02 / Solution'}
                             imageOne={'/static/images/projects/hero/My-Health-App-on-mobile.jpg'}
-                            srcSetImageOne={'/static/images/projects/hero/My-Health-App-on-mobile.jpg 1x, /static/images/services/My-Health-App-on-mobile.jpg 2x'}
-                            // imageTwo={'/static/images/services/ux-andy.jpg'}
-                            // srcSetImageTwo={'/static/images/services/ux-andy.jpg 1x, /static/images/services/ux-andy@2x.jpg 2x'}
+                            srcSetImageOne={'/static/images/projects/hero/My-Health-App-on-mobile.jpg 1x, /static/images/projects/hero/My-Health-App-on-mobile.jpg 2x'}
                             description={'The app had two types of user, including organisation leaders who create challenges for their organisation. They also get access to real time data and insights to measure and further support the wellbeing of their staff. \n' +
                             '\n' +
                             'The second user type was company individuals, who can track their health metrics, explore wellbeing tools and resources and set personalised goals.\n' +

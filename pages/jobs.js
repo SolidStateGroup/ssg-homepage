@@ -14,8 +14,12 @@ const JobsPage = class extends React.Component {
   render = () => {
       return (
           <Page title={Constants.titles.jobs} canonical="jobs">
-              <Header/>
-              <h1>Jobs</h1>
+              <div className="hero hero--full d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
+                  <Header/>
+                  <div className="container">
+                  <h1 className="mt-5">Jobs</h1>
+                  </div>
+              </div>
               <Footer/>
           </Page>
       );

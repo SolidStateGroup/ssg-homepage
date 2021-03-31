@@ -190,7 +190,7 @@ export const projects = [
         title: 'Subscription service for your feline friends',
         blobColour: '#f7f7f7',
         tags: ['DESIGN', 'BRANDING', 'WEB'],
-        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Web Development, '],
+        projectType: ['UX Design, ', 'UI design, ', 'Branding, ', 'Web Development '],
         gaDataLabel: 'work-projects-meow-now',
     },
     {
