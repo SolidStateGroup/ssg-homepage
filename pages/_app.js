@@ -23,7 +23,7 @@ class MyApp extends App {
                     <Head>
                         <meta charSet="utf-8"/>
                         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-                        <meta name="google-site-verification" content="googleb9eb32720fa797f3"/>
+                        <meta name="google-site-verification" content="v7vflMwxmlc2vmrgR_-0IYEvmNx_wzNkxzL6b5wG4hY" />
                         <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
                         <meta
                           name="description"
