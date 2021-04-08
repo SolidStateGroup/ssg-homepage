@@ -27,7 +27,7 @@ const TheComponent = class extends Component {
     render() {
         return (
             <React.Fragment>
-                <Page title={Constants.titles.heroWellbeing} canonical="projects/electron-trader">
+                <Page title={Constants.titles.heroWellbeing} canonical="projects/hero-wellbeing">
                     <ProjectHero
                         clientImage="/static/images/clients/white/hero-logo-white.png"
                         projectTitle={'Connected Health, Made Simple'}

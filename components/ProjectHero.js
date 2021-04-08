@@ -41,12 +41,14 @@ const ProjectHero = global.ProjectHero = class extends React.PureComponent {
                                     <h1 className="hero__title mb-4">{this.props.projectTitle || 'Rebooting female fitness for Tone and Sculpt'}</h1>
 
                                     <div className="project-hero__list-wrapper">
-                                        <h6 className="text-uppercase title--light opacity--70 mt-5">Client</h6>
                                         {this.props.clientImage ? (
-                                            <img
-                                              src={this.props.clientImage || null}
-                                              alt="Client brand" className="img-fluid mt-2 project-hero__client-logo"
-                                            />
+                                          <>
+                                              <h6 className="text-uppercase title--light opacity--70 mt-5">Client</h6>
+                                              <img
+                                                src={this.props.clientImage || null}
+                                                alt="Client brand" className="img-fluid mt-2 project-hero__client-logo"
+                                              />
+                                            </>
                                         ) : (
                                             null
                                         )}

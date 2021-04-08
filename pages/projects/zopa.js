@@ -24,7 +24,7 @@ const TheComponent = class extends Component {
     render() {
         return (
             <React.Fragment>
-                <Page title={Constants.titles.zopa} canonical="projects/racing-post">
+                <Page title={Constants.titles.zopa} canonical="projects/zopa">
                     <ProjectHero
                       clientImage="/static/images/clients/white/zopa-white.svg"
                       projectTitle="New borrowing power service for a FeelGood Money platform"

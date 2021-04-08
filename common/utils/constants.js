@@ -39,6 +39,7 @@ const Constants = global.Constants = {
         ladbrokes: 'Ladbrokes Coral | Solid State Group',
         heroWellbeing: 'Hero Wellbeing | Solid State Group',
         cap10: 'Cap10 | Solid State Group',
+        fitness: 'Bespoke Fitness Apps | Solid State Group',
     },
     // meta:description
     descriptions: {
@@ -73,6 +74,7 @@ const Constants = global.Constants = {
         responsiveWebApps: 'Responsive web applications',
         serviceStrategy: 'Strategy',
         systemsIntegration: 'Systems Integration',
+        serviceFitness: 'Fitness Apps',
 
         projectHero: 'Hero Wellbeing',
         projectBA: 'British Airways',
