@@ -119,6 +119,30 @@ const ServicesPage = class extends React.Component {
                         />
 
                         <ServiceItem
+                          srcSet="/static/images/services/user-research.png 1x, /static/images/services/user-research@2x.png 2x,"
+                          serviceListItem={(
+                              <React.Fragment>
+                                  <ListItemUnderlined
+                                    listItemText="Tone & Sculpt"
+                                    listItemLink="/projects/tone-and-sculpt"
+                                  />
+                                  <ListItemUnderlined
+                                    listItemText="Hero Wellbeing" listItemLink="/projects/hero-wellbeing"
+                                  />
+                                  <ListItemUnderlined
+                                    listItemText="MeowNow" listItemLink="/projects/meownow"
+                                  />
+                              </React.Fragment>
+                            )}
+                          subTitle="User Research"
+                          serviceLink="/services/user-research"
+                          gaServiceLabel="services_userResearch"
+                          serviceDescription="Executing user research and usability testing results in a better user experience for your users and saves you time and money in the long run by identifying and fixing problems early."
+                        />
+
+
+                        <ServiceItem
+                          className="flex-row-reverse"
                           srcSet="/static/images/services/ux-design.jpg 1x, /static/images/services/ux-design@2x.png 2x,"
                           imageClassName="img__shadow "
                           serviceListItem={(
@@ -148,7 +172,6 @@ const ServicesPage = class extends React.Component {
                           serviceImage="/static/images/services/mobile-app-development.jpg"
                           srcSet="/static/images/services/mobile-app-development.jpg 1x, /static/images/services/mobile-app-development@2x.png 2x,"
                           imageClassName="img__shadow "
-                          className="flex-row-reverse"
                           subTitle="Mobile App Development"
                           serviceLink="/services/mobile-app-development"
                           gaServiceLabel="services_mobile"
@@ -177,6 +200,7 @@ const ServicesPage = class extends React.Component {
                         />
 
                         <ServiceItem
+                          className="flex-row-reverse"
                           serviceImage="/static/images/services/web-development.jpg"
                           srcSet="/static/images/services/web-development.jpg 1x, /static/images/services/web-development@2x.jpg 2x,"
                           imageClassName="img__shadow "
@@ -208,7 +232,6 @@ const ServicesPage = class extends React.Component {
                           serviceImage="/static/images/services/hertz@1x.jpg"
                           srcSet="/static/images/services/hertz@1x.jpg 1x, /static/images/services/hertz@2x.jpg 2x,"
                           imageClassName="img__shadow "
-                          className="flex-row-reverse"
                           subTitle="Systems Integration"
                           serviceLink="/services/systems-integration"
                           gaServiceLabel="services_sys-int"
@@ -235,6 +258,7 @@ const ServicesPage = class extends React.Component {
                         />
 
                         <ServiceItem
+                          className="flex-row-reverse"
                           serviceImage="/static/images/services/api-dev@1x.jpg"
                           srcSet="/static/images/services/api-dev@1x.jpg 1x, /static/images/services/api-dev@2x.jpg 2x,"
                           imageClassName="img__shadow "
@@ -268,7 +292,6 @@ const ServicesPage = class extends React.Component {
                         />
 
                         <ServiceItem
-                          className="flex-row-reverse"
                           serviceImage="/static/images/projects/meownow/meownow_brand_board.png"
                           srcSet="/static/images/projects/meownow/meownow_brand_board.png 1x, /static/images/projects/meownow/meownow_brand_board@2x.png 2x,"
                           imageClassName="img__shadow "
@@ -332,10 +355,10 @@ const ServicesPage = class extends React.Component {
                         <div className="flex-row pt-5">
                             <div className="justify-content-center col-md-4 mb-md-0 mb-4">
                                 <Card
-                                    cardLink="https://github.com/Flagsmith/flagsmith-js-client"
-                                    cardTechnology="JavaScript" cardTechnologyStars="22" cardTechnologyForked="8"
-                                    techColourClass="card__technology--yellow" cardTitle="Flagsmith"
-                                    cardText="Flagsmith allows you to manage feature flags and remote config across multiple projects & environments."
+                                  cardLink="https://github.com/Flagsmith/flagsmith-js-client"
+                                  cardTechnology="JavaScript" cardTechnologyStars="22" cardTechnologyForked="8"
+                                  techColourClass="card__technology--yellow" cardTitle="Flagsmith"
+                                  cardText="Flagsmith allows you to manage feature flags and remote config across multiple projects & environments."
                                 />
                             </div>
                             <div className="justify-content-center col-md-4 mb-md-0 mb-4">
