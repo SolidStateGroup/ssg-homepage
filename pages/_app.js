@@ -15,7 +15,7 @@ class MyApp extends App {
         }
     }
 
-    render() {asdasd
+    render() {
         const { Component } = this.props;
         return (
             <Container>
