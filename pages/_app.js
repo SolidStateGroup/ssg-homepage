@@ -15,7 +15,7 @@ class MyApp extends App {
         }
     }
 
-    render() {
+    render() {asdasd
         const { Component } = this.props;
         return (
             <Container>
@@ -53,6 +53,7 @@ class MyApp extends App {
                         <meta name="theme-color" content="#2a93d6"/>
                         {/* Used to prevent a CSS flicker on chrome */}
                         <script type="text/javascript" src="/static/chromefix.js" />
+                        <meta name="google-site-verification" content="jdlgcUpYAkHHGhnv9Mtu75cJ4MuzISGfFQwYzqBCBSA" />
                     </Head>
                     <Component {...this.props}/>
                 </React.Fragment>
