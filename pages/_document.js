@@ -13,7 +13,7 @@ class MyDocument extends Document {
                 <Head />
                 <body>
                     <noscript dangerouslySetInnerHTML={{ __html: `<iframe
-                      src="https://www.googletagmanager.com/ns.html?id=GTM-NXCB72"
+                      src="https://www.googletagmanager.com/ns.html?id=GTM-P6F8VMF"
                       height="0" width="0" style="display:none;visibility:hidden"
                     />` }}
                     />
