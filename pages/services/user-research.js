@@ -166,7 +166,7 @@ const UserResearchPage = class extends React.Component {
                       srcSet="/static/images/services/user-interviews.png 1x, /static/images/services/user-interviews@2x.png 2x"
                       className="flex-row-reverse"
                       subTitle="User interviews"
-                      serviceDescription={'User Interviews are a foundational user-centered design method that is best done early on in the design process. User interviews allow us to define what the true problem is and help make sure that we are solving the correct problem.'}
+                      serviceDescription={'User Interviews are a foundational user-centered design method that provide raw, hands on experiences of using a product. User interviews allow us to define any legitimate problems with an existing product and help make sure that we are focussing on areas that add value for the end user.'}
                     />
 
                     <ServiceItem
