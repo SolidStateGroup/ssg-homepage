@@ -34,7 +34,7 @@ class MyApp extends App {
                 j.async = true;
                 j.src = `https://www.googletagmanager.com/gtm.js?id=${i}${dl}`;
                 f.parentNode.insertBefore(j, f);
-            }(window, document, 'script', 'dataLayer', 'GTM-NXCB72'));
+            }(window, document, 'script', 'dataLayer', 'GTM-P6F8VMF'));
         }
     }
 
