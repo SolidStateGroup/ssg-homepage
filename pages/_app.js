@@ -78,6 +78,7 @@ class MyApp extends App {
                         {/* Used to prevent a CSS flicker on chrome */}
                         <script type="text/javascript" src="/static/chromefix.js" />
                         <meta name="google-site-verification" content="jdlgcUpYAkHHGhnv9Mtu75cJ4MuzISGfFQwYzqBCBSA" />
+                        <script async src={"https://www.googletagmanager.com/gtag/js?id=" + Project.ga}></script>
                     </Head>
                     <Component {...this.props}/>
                 </React.Fragment>
