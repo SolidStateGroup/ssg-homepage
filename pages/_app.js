@@ -35,12 +35,6 @@ class MyApp extends App {
                 j.src = `https://www.googletagmanager.com/gtm.js?id=${i}${dl}`;
                 f.parentNode.insertBefore(j, f);
             }(window, document, 'script', 'dataLayer', 'GTM-P6F8VMF'));
-
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments); }
-            gtag('js', new Date());
-
-            gtag('config', Project.ga);
         }
     }
 
@@ -84,7 +78,6 @@ class MyApp extends App {
                         {/* Used to prevent a CSS flicker on chrome */}
                         <script type="text/javascript" src="/static/chromefix.js" />
                         <meta name="google-site-verification" content="jdlgcUpYAkHHGhnv9Mtu75cJ4MuzISGfFQwYzqBCBSA" />
-                        <script async src={"https://www.googletagmanager.com/gtag/js?id=" + Project.ga}></script>
                     </Head>
                     <Component {...this.props}/>
                 </React.Fragment>
