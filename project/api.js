@@ -63,9 +63,11 @@ const API = {
                 // eslint-disable-next-line
                 console.error('Invalid event provided', data);
             }
-            gtag('event', data.event, {
-                'event_category': data.category,
-                'event_label': data.label,
+            ga('send', {
+                hitType: 'event',
+                eventCategory: data.category,
+                eventAction: data.event,
+                eventLabel: data.label,
             });
         }
 
@@ -85,10 +87,11 @@ const API = {
     },
     trackPage(title) {
         if (Project.ga && typeof window !== 'undefined') {
-            gtag('event', 'page_view', {
-                page_title: title,
-                page_location: document.location.href,
-                page_path: document.location.pathname,
+            ga('send', {
+                hitType: 'pageview',
+                title,
+                location: document.location.href,
+                page: document.location.pathname,
             });
         }
 
