@@ -149,6 +149,7 @@ const PartnersPage = class extends React.Component {
   }
 
     componentDidMount() {
+        API.trackPage(Constants.pages.partners);
         gsap.timeline()
             .from('.hero__container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
             .from('.panel--primary .container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
