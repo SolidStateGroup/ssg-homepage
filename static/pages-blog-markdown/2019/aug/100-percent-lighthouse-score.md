@@ -3,7 +3,6 @@ title: Achieving a perfect 100% Google Lighthouse audit score with Next and Redu
 published: true
 description: Jumping down a satisfying rabbit hole with NextJS
 tags: webdev, showdev, react, javascript
-featured: true
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
 image: https://storage.googleapis.com/ssg-website-images/blog-2019/perfect-score.jpg
