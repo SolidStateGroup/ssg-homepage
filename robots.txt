@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://solidstategroup.com/sitemap.xml
+Sitemap: http://solidstategroup.com/sitemap.xml
