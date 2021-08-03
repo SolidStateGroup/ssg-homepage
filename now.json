@@ -6,15 +6,15 @@
       "destination": "/_next/static/service-worker.js"
     },
     {
-      "source": "^/favicon.ico$",
+      "source": "/favicon.ico",
       "destination": "/static/images/favicon.ico"
     },
     {
-      "source": "^/robots.txt",
+      "source": "/robots.txt",
       "destination": "/static/robots.txt"
     },
     {
-      "source": "^/sitemap.xml",
+      "source": "/sitemap.xml",
       "destination": "/static/sitemap.xml"
     }
   ],
