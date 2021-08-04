@@ -11,6 +11,7 @@ import AWSLogo from '../components/TechIcons/AWSLogo';
 import { ListItemUnderlined } from '../components/ListItem';
 import ServiceItem from '../components/ServiceItem';
 import Card from '../components/Card';
+import Link from 'next/link';
 
 const ServicesPage = class extends React.Component {
     static displayName = 'ServicesPage';
@@ -175,10 +176,14 @@ const ServicesPage = class extends React.Component {
                           subTitle="Mobile App Development"
                           serviceLink="/services/mobile-app-development"
                           gaServiceLabel="services_mobile"
-                          serviceDescription="We use React Native to build amazing mobile apps. Why?
-                                        React Native is a real mobile app. Unlike web app wrappers, React Native uses
-                                        native platform libraries, creating a completely native experience for your
-                                        users."
+                          serviceDescription={<a>Yo</a> +
+                          'Text' +
+                          '\n'}
+                          serviceDescription={<>
+                           {"We use\n"} <Link prefetch={false} href="services/react-native">
+                            React Native
+                          </Link> {"to build amazing mobile apps. Why? React Native is a real mobile app. Unlike web app wrappers, React Native uses native platform libraries, creating a completely native experience for your users.\n"}
+                          </>}
                           serviceListItem={(
                               <React.Fragment>
                                   <ListItemUnderlined

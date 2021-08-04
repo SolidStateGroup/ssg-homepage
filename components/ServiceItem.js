@@ -24,7 +24,7 @@ const ServiceItem = global.ServiceItem = class extends React.PureComponent {
         const {children, ButtonComponent, ...rest} = this.props;
         return (
             <div
-                className={cn(this.props.className, ' row flex-row d-flex align-items-center section--large-padding mb-5')}>
+                className={cn(this.props.className, ' row flex-row d-flex align-items-center section--large-padding mb-5 service-item')}>
                 <div className="col-lg-5 offset-lg-1 col-sm-12 pr-5">
                     <h3 className="title--line-after">{this.props.subTitle || 'Web Application Development'}</h3>
                     <p>{this.props.serviceDescription || 'We work with you to iterate on the various creative deliverables until you achieve your vision.'}</p>
