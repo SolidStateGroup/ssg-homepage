@@ -26,6 +26,15 @@
   }
 }
 
+.rating-list {
+  &__app-store-icon {
+    font-size: 2.4em;
+  }
+  &__star-icon {
+    font-size: 1.25em;
+  }
+}
+
 .wide-list {
   display: flex;
 

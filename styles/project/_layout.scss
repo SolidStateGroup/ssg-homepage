@@ -40,6 +40,18 @@
     }
 }
 
+.rncc {
+    &__bg {
+        background-color: $brandNavy;
+        background: $brandNavy url("/static/images/vector-cubes-bg.svg") center center no-repeat;
+    }
+    &__app-icon {
+        width: 232px;
+        height: 232px;
+        border-radius: 20px;
+    }
+}
+
 .contact-sidebar {
     z-index: 2;
 }
