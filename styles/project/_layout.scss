@@ -61,6 +61,7 @@
         height: 100vh;
         border-top-right-radius: 40px;
         border-bottom-right-radius: 40px;
+        position: fixed;
         &-meta {
             h2 {
                 font-size: 1.75em;
@@ -113,6 +114,11 @@
         text-align: center;
         left: -51px;
         position: relative;
+    }
+    &__bottom-nav {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 }
 
