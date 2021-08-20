@@ -1,13 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
-import Header from '../components/Header';
-import StarRatingListItem from '../components/StartRatingListItem';
-import CardBuildCosts from '../components/CardBuildCosts';
-import StatSlider from '../components/StatSlider';
-import Page from '../components/Page';
-import ProjectBlobImage from '../components/ProjectBlobImage';
+import Header from '../../components/Header';
+import StarRatingListItem from '../../components/StartRatingListItem';
+import CardBuildCosts from '../../components/CardBuildCosts';
+import StatSlider from '../../components/StatSlider';
+import Page from '../../components/Page';
+import ProjectBlobImage from '../../components/ProjectBlobImage';
 
-const ReactNativeConversionCalculator = class extends React.Component {
+const Overview = class extends React.Component {
     static displayName = 'ReactNativeConversionCalculator';
 
 
@@ -63,14 +63,19 @@ const ReactNativeConversionCalculator = class extends React.Component {
                                 </CardBuildCosts>
                             </div>
                             <div className="col-md-5 offset-md-1">
-                            <CardBuildCosts className="card-build-costs__ios" />
+                                <CardBuildCosts className="card-build-costs__ios" cardTitle={'iOS Build Costs\n' +
+                                '(Over 2 Years)'}>
+                                    <StatSlider subTitle={'Development Costs'} title={'£70,000'} min={0} max={70000} />
+                                    <StatSlider className="mt-4" subTitle={'Development Costs'} title={'£70,000'} min={0} max={70000} />
+                                </CardBuildCosts>
                             </div>
                         </div>
 
-                        <div className="col-md-4 offset-md-4 text-center mt-5">
+                        <div className="col-md-4 offset-md-4 text-center mt-5 pb-5">
                             <p className="text-light mb-0">We estimate the total cost of ownership<span className="text-primary"> *</span> over the next 2 years to be:</p>
                             <h1 className="hero__title text-light">£438,000</h1>
                             <p className="text-light mb-0 text-small"><span className="text-primary"> *</span> Information based on our own estimates and research</p>
+                            <ButtonPrimary className="mt-4">Next</ButtonPrimary>
 
 
                         </div>
@@ -85,4 +90,4 @@ const ReactNativeConversionCalculator = class extends React.Component {
     };
 };
 
-export default ReactNativeConversionCalculator;
+export default Overview;

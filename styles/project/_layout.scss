@@ -44,13 +44,83 @@
     &__bg {
         background-color: $brandNavy;
         background: $brandNavy url("/static/images/vector-cubes-bg.svg") center center no-repeat;
+        overflow: hidden;
     }
     &__app-icon {
         width: 232px;
         height: 232px;
         border-radius: 20px;
+        &--small {
+            width: 109px;
+            height: 109px;
+            border-radius: 20px;
+        }
+    }
+    &__sidebar {
+        background-color: $brand-raisin-black;
+        height: 100vh;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        &-meta {
+            h2 {
+                font-size: 1.75em;
+            }
+        }
+        &-nav {
+            background-color: $brandNavy;
+            border-radius: 12px;
+            height: 450px;
+            overflow-y: scroll;
+            scrollbar-color: $brand-primary #e4e4e4;
+            scrollbar-width: thin;
+            &::-webkit-scrollbar {
+                width: 10px;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: $brand-dark-lavender;
+                border-radius: 100px;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 100px;
+                background-color: $brand-primary;
+                //box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+            }
+
+        }
+        &-brand {
+            width: 146px;
+            &-container {
+                position: absolute;
+                bottom: 20px;
+                left: 25px;
+                //display: flex;
+                //height: 25%;
+                //flex-direction: column-reverse;
+            }
+        }
+        .nav-item {
+            width: 100%;
+        }
+
+        .nav-link {
+            &.active {
+                background-color: rgba(32,28,38,0.4);
+            }
+        }
+    }
+    &__hexagon-icon {
+        font-size: 2em;
+        text-align: center;
+        left: -51px;
+        position: relative;
     }
 }
+
+
+
+
+
+
 
 .contact-sidebar {
     z-index: 2;

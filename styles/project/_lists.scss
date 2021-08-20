@@ -33,6 +33,17 @@
   &__star-icon {
     font-size: 1.25em;
   }
+  &--small {
+    .rating-list__app-store-icon {
+      font-size: 1.25em;
+    }
+    .rating-list__star-icon {
+      font-size: .75em;
+    }
+    .rating-list__meta {
+      display: none;
+    }
+  }
 }
 
 .wide-list {

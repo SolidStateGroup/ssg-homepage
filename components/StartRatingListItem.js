@@ -28,7 +28,7 @@ const StarRatingListItem = global.StarRatingListItem = class extends React.PureC
                     <i className={`rating-list__star-icon pl-2 ${this.props.filled ? 'fas fa-star text-gold' : 'far fa-star text-light'}`} />
                     <i className={`rating-list__star-icon pl-2 ${this.props.filled ? 'fas fa-star text-gold' : 'far fa-star text-light'}`} />
                 </div>
-                <div className="pl-3">
+                <div className="pl-3 rating-list__meta">
                     <h4 className="text-light d-inline-block mb-0">{this.props.starRating}</h4>
                     <span className="text-light d-inline-block pl-1">({this.props.numberOfRatings}k)</span>
                 </div>
