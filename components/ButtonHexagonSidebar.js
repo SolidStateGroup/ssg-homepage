@@ -7,6 +7,7 @@ const _propTypes = {
   icon: propTypes.string,
   children: propTypes.node,
   onClick: propTypes.func,
+  ButtonHexagonActive: propTypes.bool,
 };
 
 const ButtonHexagonSidebar = global.ButtonHexagonSidebar = class extends React.PureComponent {
@@ -15,7 +16,7 @@ const ButtonHexagonSidebar = global.ButtonHexagonSidebar = class extends React.P
   static propTypes = _propTypes;
 
   render() {
-    const { props, width, height, icon, fill, stroke, ...rest } = this;
+    const { props, width, height, icon, fill, stroke, ButtonHexagonActive, ...rest } = this;
     return (
       <React.Fragment>
         <Button
@@ -24,7 +25,7 @@ const ButtonHexagonSidebar = global.ButtonHexagonSidebar = class extends React.P
         >
 
           {this.props.ButtonHexagonActive ? (
-            <div className="d-flex align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center rncc__hexagon-button-container">
               <svg width={width || "83px"} height={height || "71px"} viewBox="0 0 83 71">
                 <g id="RNCCC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="RNCCC---Projected-Costs" transform="translate(-42.000000, -393.000000)" fill="#201C26" stroke="#1AC0C6" stroke-width="1.5">
@@ -44,7 +45,7 @@ const ButtonHexagonSidebar = global.ButtonHexagonSidebar = class extends React.P
             </div>
 
           ) : (
-            <div className="d-flex align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center rncc__hexagon-button-container">
               <svg width={width || "80px"} height={height || "70px"} viewBox="0 0 80 70">
                 <g id="RNCCC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="RNCCC---Projected-Costs" transform="translate(-42.000000, -281.000000)" fill="#201C26">

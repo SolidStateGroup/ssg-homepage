@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Header from '../../components/Header';
 import StarRatingListItem from '../../components/StartRatingListItem';
 import CardBuildCosts from '../../components/CardBuildCosts';
+import RNConversionSidebar from '../../components/RNConversionSidebar';
+import RNConversionNavItem from '../../components/RNConversionNavItem';
 import StatSlider from '../../components/StatSlider';
 import Page from '../../components/Page';
 import ButtonHexagonSidebar from '../../components/ButtonHexagonSidebar';
@@ -26,132 +28,13 @@ const ProjectedCosts = class extends React.Component {
 
                 <div className="container-fluid rncc__bg">
                     <div className="row">
-                        <nav id="sidebarMenu" className="rncc__sidebar col-md-5 col-lg-3 sidebar collapse">
-
-                            <div className="rncc__sidebar-meta row pl-3 mt-5 pb-5">
-                                <div className="pl-0">
-                                    <img
-                                      className="rncc__app-icon--small" src="/static/images/clients/app-icon.png"
-                                      srcSet="/static/images/clients/app-icon.png 2x, /static/images/clients/app-icon.png 1x"
-                                    />
-                                </div>
-                                <div className="col">
-                                    <h2 className="text-light mb-0">7 Fitness </h2>
-                                    <p className="text-light mb-2 text-small">Fitness International, LLC</p>
-                                    <StarRatingListItem
-                                      className="rating-list--small" starRating="2" numberOfRatings="4.2"
-                                      filled icon="fab fa-app-store-ios"
-                                    />
-                                    <StarRatingListItem
-                                      className="rating-list--small" starRating="2" numberOfRatings="4.2"
-                                      filled={false} icon="fab fa-google-play"
-                                    />
-                                </div>
-                            </div>
-
-
-                            <ul className="rncc__sidebar-nav nav">
-                                <div className="flex-row pl-3 pt-3 mb-3 no-wrap">
-                                    <i className="fab fa-react text-react-blue" />
-                                    <h6 className="text-light pl-3 mb-0">React Native Conversion Calculator</h6>
-                                </div>
-
-
-                                <li className="nav-item">
-                                    <a className="nav-link active" href="#">
-                                        <div className="flex-row">
-                                            <ButtonHexagonSidebar
-                                              ButtonHexagonActive
-                                              icon="far fa-mobile text-primary"
-                                            />
-                                            <div className="col">
-                                                <h6 className="text-light mb-0">01</h6>
-                                                <h6 className="text-navy-secondary mb-0">Your App</h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">
-                                        <div className="flex-row">
-                                            <ButtonHexagonSidebar
-                                              icon="far fa-mobile"
-                                            />
-                                            <div className="col">
-                                                <h6 className="text-light mb-0">01</h6>
-                                                <h6 className="text-navy-secondary mb-0">Your App</h6>
-                                            </div>
-                                        </div>
-
-
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">
-                                        <div className="flex-row">
-                                            <ButtonHexagonSidebar
-                                              icon="far fa-mobile"
-                                            />
-                                            <div className="col">
-                                                <h6 className="text-light mb-0">01</h6>
-                                                <h6 className="text-navy-secondary mb-0">Your App</h6>
-                                            </div>
-                                        </div>
-
-
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">
-                                        <div className="flex-row">
-                                            <ButtonHexagonSidebar
-                                              icon="far fa-mobile"
-                                            />
-                                            <div className="col">
-                                                <h6 className="text-light mb-0">01</h6>
-                                                <h6 className="text-navy-secondary mb-0">Your App</h6>
-                                            </div>
-                                        </div>
-
-
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">
-                                        <div className="flex-row">
-                                            <ButtonHexagonSidebar
-                                              icon="far fa-mobile"
-                                            />
-                                            <div className="col">
-                                                <h6 className="text-light mb-0">01</h6>
-                                                <h6 className="text-navy-secondary mb-0">Your App</h6>
-                                            </div>
-                                        </div>
-
-
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">
-                                        <div className="flex-row">
-                                            <ButtonHexagonSidebar
-                                              icon="far fa-mobile"
-                                            />
-                                            <div className="col">
-                                                <h6 className="text-light mb-0">01</h6>
-                                                <h6 className="text-navy-secondary mb-0">Your App</h6>
-                                            </div>
-                                        </div>
-
-
-                                    </a>
-                                </li>
-                            </ul>
-                            <div className="rncc__sidebar-brand-container">
-                                <p className="text-navy-secondary bold mb-0">React Native Specialists</p>
-                                <img src="/static/images/ssg-logotype-white.svg" className="rncc__sidebar-brand" alt="SSG"/>
-                            </div>
-                        </nav>
+                        <RNConversionSidebar>
+                            <RNConversionNavItem icon="far fa-mobile" number='01' title='Your App' href="/react-native-conversion-calculator/overview" />
+                            <RNConversionNavItem icon="fas fa-chart-line" number='02' title='Projected Costs' href="/react-native-conversion-calculator/projected-costs" isActive  />
+                            <RNConversionNavItem icon="fas fa-search-dollar" number='03' title='Insights' />
+                            <RNConversionNavItem icon="far fa-file-invoice-dollar" number='04' title='Conversion Costs' />
+                            <RNConversionNavItem icon="far fa-sack-dollar" number='05' title='Savings' />
+                        </RNConversionSidebar>
 
                         <main role="main" className="col-md-7 ml-sm-auto col-lg-9 px-md-4">
                             <h1 className="text-light">Projected costs</h1>
