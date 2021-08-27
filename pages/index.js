@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Header from '../components/Header';
+import Header, { HeaderFixed } from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
 import BaLogo from '../components/ClientLogos/BaLogo';
@@ -31,10 +31,12 @@ const HomePage = class extends React.Component {
         const tl = new gsap.timeline();
         const tl2 = new gsap.timeline();
         const tl3 = new gsap.timeline();
+        // const tl4 = new gsap.timeline();
 
         tl.from('#sectionOneAnimation', 1, { y: 50, oopacity: 0, ease: 'power1' });
         tl2.from('#sectionTwoAnimation', 1, { y: 50, oopacity: 0, ease: 'power1' });
         tl3.from('#sectionThreeAnimation', 1, { y: 50, opacity: 0, ease: 'power1' });
+        // tl4.from('.navbar-fixed', 0.25, { opacity: 0, ease: 'power1' });
 
         const scene1 = new ScrollMagic.Scene({
             triggerElement: '#sectionOneTrigger',
@@ -60,18 +62,32 @@ const HomePage = class extends React.Component {
 
             .setTween(tl3);
 
+        // const scene4 = new ScrollMagic.Scene({
+        //     // triggerElement: '.hero__footer',
+        //     reverse: true,
+        //     // triggerHook: 'onLeave',
+        //     offset: 300,
+        //     // duration: 500
+        //
+        // })
+        //
+        //   .setTween(tl4);
+
         controller.addScene([
             scene1,
             scene2,
             scene3,
+            // scene4,
         ]);
     }
 
     render = () => {
         return (
             <Page title={Constants.titles.home} canonical="">
+                <HeaderFixed />
                 <div className="hero hero--full d-flex flex-column mx-0 p-4">
                     <Header className="navbar-container--transparent"/>
+
                     <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
                         <div className="flex-1 justify-content-start p-5">
                             <div className="offset-lg-3 pl-md-3 pl-0">

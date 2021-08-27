@@ -139,6 +139,12 @@
     }
 }
 
+.navbar-fixed {
+    position: fixed;
+    z-index: 1020;
+    width: 100%;
+}
+
 @include media-breakpoint-down(sm) {
     .brand {
         display: none;
@@ -149,6 +155,9 @@
         &__item {
             display: none;
         }
+    }
+    .navbar-fixed {
+        display: none;
     }
 }
 
