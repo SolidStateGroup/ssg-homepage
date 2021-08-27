@@ -1,6 +1,7 @@
 import React from 'react';
 import cn from 'classnames';
 import propTypes from 'prop-types';
+import Link from 'next/link';
 
 const _propTypes = {
     className: propTypes.string,
@@ -25,9 +26,13 @@ const ClientQuote = global.ClientQuote = class extends React.PureComponent {
                         <div>
                             <blockquote className="light">{this.props.text || 'Solid State Group are the bomb digadi bomb bom boom town. Solid State Group are the bomb digadi bomb bom boom town.  Solid State Group are the bomb digadi bomb bom boom town.  Solid State Group are the bomb digadi bomb bom boom town'}</blockquote>
                             <p className="text-small text-light pt-3">{this.props.clientName || 'Krissy Cela'} / <span className="text-primary">{this.props.clientTitle || 'Founder - Tone and Sculpt'}</span></p>
+                            <Link prefetch={false} href="/work">
+                                <ButtonPrimary className="mt-4">View Our Latest Projects</ButtonPrimary>
+                            </Link>
                         </div>
                     </div>
                 </div>
+
             </div>
         );
     }
