@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Header, { HeaderFixed } from '../components/Header';
+import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
 import BaLogo from '../components/ClientLogos/BaLogo';
