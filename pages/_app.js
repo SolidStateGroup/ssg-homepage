@@ -3,6 +3,7 @@ import Head from 'next/head';
 import React from 'react';
 import '../styles/styles.scss';
 import '../project/polyfill';
+import CookieConsent from 'react-cookie-consent';
 
 class MyApp extends App {
     constructor(props) {
@@ -84,6 +85,27 @@ class MyApp extends App {
                         <script async src={`https://www.googletagmanager.com/gtag/js?id=${Project.ga}`} />
                     </Head>
                     <Component {...this.props}/>
+                    <CookieConsent
+                      enableDeclineButton
+                      declineButtonStyle={{
+                          background: 'transparent',
+                          border: '0',
+                          borderRadius: '0px',
+                          boxShadow: 'none',
+                          color: '#1AC0C6',
+                          cursor: 'pointer',
+                          flex: '0 0 auto',
+                          padding: '5px 10px',
+                          margin: '15px',
+                      }}
+                      containerClasses="cookie-wrapper"
+                      disableButtonStyles
+                      buttonClasses="btn--primary btn__cookie"
+                      buttonText="OK"
+                      flipButtons
+                    >
+                        We use cookies to improve your experience on our site. Please let us know if you agree to all of these cookies.
+                    </CookieConsent>
                 </React.Fragment>
             </Container>
         );

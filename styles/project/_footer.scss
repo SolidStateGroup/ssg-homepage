@@ -67,6 +67,10 @@
     }
 }
 
+.cookie-wrapper {
+    background-color: $brand-raisin-black !important;
+}
+
 @include media-breakpoint-down(md) {
     .map-overlay__title{
         font-size:2em;

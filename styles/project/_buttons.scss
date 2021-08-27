@@ -90,6 +90,11 @@
         background: transparent!important;
         border: none !important;
     }
+    &__cookie {
+        transition: none;
+        min-width: 72px!important;
+        margin-left: 10px;
+    }
 }
 
 button{
