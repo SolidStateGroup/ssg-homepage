@@ -70,10 +70,8 @@ const HomePage = class extends React.Component {
     render = () => {
         return (
             <Page title={Constants.titles.home} canonical="">
-                <HeaderFixed />
                 <div className="hero hero--full d-flex flex-column mx-0 p-4">
                     <Header className="navbar-container--transparent"/>
-
                     <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
                         <div className="flex-1 justify-content-start p-5">
                             <div className="offset-lg-3 pl-md-3 pl-0">

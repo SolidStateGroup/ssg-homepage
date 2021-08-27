@@ -10,6 +10,9 @@
         z-index: 1020;
         width: 100%;
         visibility: hidden;
+        top: 0;
+        left: 0;
+        right: 0;
     }
     &-nav {
         flex-direction: row;

@@ -41,6 +41,29 @@ class Header extends PureComponent {
         this.setState({ menuOpen });
     }
 
+    componentDidMount() {
+        gsap.timeline();
+
+        const controller = new ScrollMagic.Controller();
+
+        const tl1 = new gsap.timeline();
+
+        tl1.from('.navbar-fixed', 0.25, { autoAlpha: 0, pointerEvents: 'none', ease: 'power1' });
+
+        const scene1 = new ScrollMagic.Scene({
+            reverse: true,
+            offset: 100,
+
+        })
+
+          .setTween(tl1);
+
+        controller.addScene([
+            scene1,
+        ]);
+    }
+
+
     render() {
         return (
             <React.Fragment>
@@ -201,66 +224,8 @@ class Header extends PureComponent {
                     </nav>
                 </div>
 
-            </React.Fragment>
-
-        );
-    }
-}
-
-export class HeaderFixed extends PureComponent {
-    static displayName = 'HeaderFixed';
-
-    static propTypes = {
-        className: propTypes.string,
-    };
-
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
-
-    toggle = () => {
-        const menuOpen = !this.state.menuOpen;
-        if (menuOpen) {
-            // fade in anim
-            gsap.to('.mobile-menu', { duration: 0.25, opacity: 1, display: 'block', ease: 'power1' });
-            gsap.to('.mainmenu', { duration: 0.5, y: '5%', opacity: 1, display: 'block', ease: 'power1.inOut' });
-            gsap.from('.pulse-circle', { duration: 0.5, opacity: 0, y: -20, stagger: 0.25 });
-        } else {
-            // fade out anim
-            gsap.to('.mobile-menu', { duration: 0.5, opacity: 0, display: 'none', ease: 'power1' });
-            gsap.to('.mainmenu', { duration: 0.25, y: '0%', opacity: 0, display: 'none', ease: 'power1.inOut' });
-        }
-        this.setState({ menuOpen });
-    }
-
-    componentDidMount() {
-        gsap.timeline();
-
-        const controller = new ScrollMagic.Controller();
-
-        const tl1 = new gsap.timeline();
-
-        tl1.from('.navbar-fixed', 0.25, { autoAlpha: 0, pointerEvents: 'none', ease: 'power1' });
-
-        const scene1 = new ScrollMagic.Scene({
-            reverse: true,
-            offset: 100,
-
-        })
-
-            .setTween(tl1);
-
-        controller.addScene([
-            scene1,
-        ]);
-    }
-
-
-    render() {
-        return (
-            <React.Fragment>
-                <div className={`navbar-container navbar-fixed ${this.props.className || ''}`}>
+                {/*Fixed navigation that fades in*/}
+                <div className="navbar-container navbar-fixed">
                     <nav style={{ flex: 1 }} className={`navbar navbar-expand-lg ${this.state.menuOpen ? 'nav-open' : ''}`}>
                         <Link href="/">
                             <a className="nav-item__link">
@@ -318,9 +283,9 @@ export class HeaderFixed extends PureComponent {
                                 <li className="nav-item">
                                     <a onClick={this.toggle} href="#">
                                         {this.state.menuOpen ? (
-                                            <img alt="Close Menu" src={require('../static/images/svg-icons/close-icon.svg')} className="mobile-menu__icon mobile-menu__icon--close" />
+                                          <img alt="Close Menu" src={require('../static/images/svg-icons/close-icon.svg')} className="mobile-menu__icon mobile-menu__icon--close" />
                                         ) : (
-                                            <img alt="Menu" src={require('../static/images/svg-icons/menu-icon.svg')} className="mobile-menu__icon" />
+                                          <img alt="Menu" src={require('../static/images/svg-icons/menu-icon.svg')} className="mobile-menu__icon" />
                                         )}
                                     </a>
                                 </li>
@@ -408,16 +373,14 @@ export class HeaderFixed extends PureComponent {
                                         </div>
                                     </div>
                                     <p className="text-center text-white pt-3 pb-3">
-                                      Email us at <a href="mailto:projects@solidstategroup.com">projects@solidstategroup.com</a>
+                                        Email us at <a href="mailto:projects@solidstategroup.com">projects@solidstategroup.com</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </nav>
                 </div>
-
             </React.Fragment>
-
         );
     }
 }
