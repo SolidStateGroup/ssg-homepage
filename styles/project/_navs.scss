@@ -1,12 +1,19 @@
-.navbar-container{
-    background:$brandNavy;
-    &--transparent {
-        background: transparent;
+.navbar {
+    &-container {
+        background:$brandNavy;
+        &--transparent {
+            background: transparent;
+        }
     }
-}
-
-.navbar-nav {
-    flex-direction: row;
+    &-fixed {
+        position: fixed;
+        z-index: 1020;
+        width: 100%;
+        visibility: hidden;
+    }
+    &-nav {
+        flex-direction: row;
+    }
 }
 
 .nav-item{
@@ -59,14 +66,7 @@
         }
     }
     &--contact {
-        .contact-icon {
-            transition: all .25s ease-in;
-        }
-        &:hover {
-            .contact-icon {
-                fill: $brand-primary;
-            }
-        }
+
     }
 }
 
@@ -137,12 +137,6 @@
             border-bottom:5px solid $brand-primary;
         }
     }
-}
-
-.navbar-fixed {
-    position: fixed;
-    z-index: 1020;
-    width: 100%;
 }
 
 @include media-breakpoint-down(sm) {

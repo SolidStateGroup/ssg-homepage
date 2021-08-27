@@ -24,19 +24,17 @@ const HomePage = class extends React.Component {
     componentDidMount() {
         API.trackPage(Constants.pages.home);
         gsap.timeline()
-            .from('.hero__container', { duration: 0.5, delay: 0.25, y: 10, opacity: 0, ease: 'power1' });
+            .from('.hero__container', { duration: 0.5, delay: 0.25, y: 10, autoAlpha: 0, ease: 'power1' });
 
         const controller = new ScrollMagic.Controller();
 
         const tl = new gsap.timeline();
         const tl2 = new gsap.timeline();
         const tl3 = new gsap.timeline();
-        // const tl4 = new gsap.timeline();
 
-        tl.from('#sectionOneAnimation', 1, { y: 50, oopacity: 0, ease: 'power1' });
-        tl2.from('#sectionTwoAnimation', 1, { y: 50, oopacity: 0, ease: 'power1' });
+        tl.from('#sectionOneAnimation', 1, { y: 50, opacity: 0, ease: 'power1' });
+        tl2.from('#sectionTwoAnimation', 1, { y: 50, opacity: 0, ease: 'power1' });
         tl3.from('#sectionThreeAnimation', 1, { y: 50, opacity: 0, ease: 'power1' });
-        // tl4.from('.navbar-fixed', 0.25, { opacity: 0, ease: 'power1' });
 
         const scene1 = new ScrollMagic.Scene({
             triggerElement: '#sectionOneTrigger',
@@ -62,22 +60,10 @@ const HomePage = class extends React.Component {
 
             .setTween(tl3);
 
-        // const scene4 = new ScrollMagic.Scene({
-        //     // triggerElement: '.hero__footer',
-        //     reverse: true,
-        //     // triggerHook: 'onLeave',
-        //     offset: 300,
-        //     // duration: 500
-        //
-        // })
-        //
-        //   .setTween(tl4);
-
         controller.addScene([
             scene1,
             scene2,
             scene3,
-            // scene4,
         ]);
     }
 
