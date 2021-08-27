@@ -67,6 +67,7 @@ const MobileAppsPage = class extends React.Component {
                 </div>
                 <div className="container">
                     <ServiceItem
+                      serviceCTA
                       serviceImage="/static/images/services/react-native.png"
                       className="flex-row-reverse"
                       imageClassName="img__shadow "
@@ -75,6 +76,7 @@ const MobileAppsPage = class extends React.Component {
                     />
 
                     <ServiceItem
+                      serviceCTA
                       serviceImage="/static/images/projects/tone-and-sculpt/t&s-phones.jpg"
                       subTitle="Ship fast, for less"
                       serviceDescription={'React Native allows us to build incredibly efficiently, so you can get to market in record time and the shared codebase could reduce the cost of your product build by 40%!\n'
