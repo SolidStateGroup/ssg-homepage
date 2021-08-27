@@ -7,6 +7,7 @@ import ServiceItem from '../../components/ServiceItem';
 import ClientQuote from '../../components/ClientQuote';
 import { ButtonPrimary } from '../../components/base/forms/Button';
 import ProjectItem from '../../components/ProjectItem';
+import ServicesHero from '../../components/ServicesHero';
 
 const projects = [
     {
@@ -70,19 +71,7 @@ const DesignPage = class extends React.Component {
             <Page title={Constants.titles.design} canonical="design">
                 <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                     <Header/>
-                    <div className="hero__container flex-1 align-self-stretch row flex-row text-center">
-                        <div className="flex-1 p-5">
-                            <div className="container">
-                                <h5 className="title--light mb-0">Our Services</h5>
-                                <h1 className="hero__title mb-4">UX & UI Design</h1>
-                                <div className="col-lg-6 offset-lg-3">
-                                    <p className="text-light">
-                                    We approach our design projects with passion and expertise born out of a desire to understand our customers and deliver value quickly. Great design solves problems, it's not just about aesthetics.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <ServicesHero title="UX & UI Design" text="We approach our design projects with passion and expertise born out of a desire to understand our customers and deliver value quickly. Great design solves problems, it's not just about aesthetics." />
                 </div>
                 <div className="container">
                     <ServiceItem

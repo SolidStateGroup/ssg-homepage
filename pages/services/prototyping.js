@@ -7,6 +7,7 @@ import ServiceItem from '../../components/ServiceItem';
 import ClientQuote from '../../components/ClientQuote';
 import { ButtonPrimary } from '../../components/base/forms/Button';
 import ProjectItem from '../../components/ProjectItem';
+import ServicesHero from '../../components/ServicesHero';
 
 const projects = [
     {
@@ -70,19 +71,9 @@ const PrototypingPage = class extends React.Component {
             <Page title={Constants.titles.prototyping} canonical="prototyping">
                 <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                     <Header/>
-                    <div className="hero__container flex-1 align-self-stretch row flex-row text-center">
-                        <div className="flex-1 p-5">
-                            <div className="container">
-                                <h5 className="title--light mb-0">Our Services</h5>
-                                <h1 className="hero__title mb-4">Prototyping</h1>
-                                <div className="col-lg-6 offset-lg-3">
-                                    <p className="text-light">
-                                        Once we understand your users, we can then start prototyping the right product for them and for your business. We initially sketch out basic pages and knit together the associated user journeys. We endeavour to answer questions and solve issues as we build towards a complete set of wireframes; Systematically removing any assumptions with evidence based design decisions.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <ServicesHero
+                      title="Prototyping" text="Once we understand your users, we can then start prototyping the right product for them and for your business. We initially sketch out basic pages and knit together the associated user journeys. We endeavour to answer questions and solve issues as we build towards a complete set of wireframes; Systematically removing any assumptions with evidence based design decisions."
+                    />
                 </div>
                 <div className="container">
                     <ServiceItem
