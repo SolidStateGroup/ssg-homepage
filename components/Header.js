@@ -225,7 +225,7 @@ class Header extends PureComponent {
                 </div>
 
                 {/*Fixed navigation that fades in*/}
-                <div className="navbar-container navbar-fixed">
+                <div className="navbar-container navbar-fixed pl-3 pr-3">
                     <nav style={{ flex: 1 }} className={`navbar navbar-expand-lg ${this.state.menuOpen ? 'nav-open' : ''}`}>
                         <Link href="/">
                             <a className="nav-item__link">
