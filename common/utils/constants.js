@@ -47,6 +47,7 @@ const Constants = global.Constants = {
         home: 'At Solid State Group, we help design and build new digital products, drag legacy technology up to date, and make all your systems work together.',
         reactNative: 'React Native is a real mobile app. Unlike web app wrappers, React Native uses native platform libraries to create a completely native experience for your users.',
         mobileAppDev: 'Using React Native to build amazing mobile apps, we build apps for iOS & Android simultaneously, and can reduce build costs up to 40%! Learn more today.',
+        '/services/strategy': 'Example',
     },
     // meta:description
     keywords: {

@@ -1,32 +1,34 @@
 import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
-// Automatically sets relevant head tags for seo, see _app for the remainder tags
-const Page = class extends Component {
-  static displayName= 'Page';
-
-  static propTypes = {
-      title: propTypes.string.isRequired,
-      canonical: propTypes.string,
-      children: propTypes.node.isRequired,
-  }
-
-  render() {
-      return (
+const TheComponent = ({ title: _title, description: _description, children, canonical }) => {
+    const router = useRouter();
+    const route = router.asPath || router.pathname;
+    const title = _title || Constants.titles[route];
+    const description = _description || Constants.descriptions[route];
+    return (
       <>
           <Head>
-              {this.props.title && (
+              {title && (
               <title>
-                  {this.props.title}
+                  {title}
               </title>
               )}
-              <link rel="canonical" href={`${Project.canonicalUrl}/${this.props.canonical}`} />
+              {description && (
+              <meta name="description" content={description}/>
+              )}
+              <link rel="canonical" href={`${Project.canonicalUrl}/${canonical}`} />
           </Head>
-          {this.props.children}
+          {children}
       </>
-      );
-  }
+    );
 };
-
-export default Page;
+TheComponent.propTypes = {
+    title: propTypes.string,
+    canonical: propTypes.string,
+    description: propTypes.string,
+    children: propTypes.node.isRequired,
+};
+export default TheComponent;
