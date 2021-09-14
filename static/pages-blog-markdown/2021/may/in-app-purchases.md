@@ -6,7 +6,7 @@ featured: true
 author: Lewis Boodt
 published: true
 avatar: /static/images/blog/lewis.png
-image: https://mk0buildfireqbf86ll2.kinstacdn.com/wp-content/uploads/2018/03/boost-your-in-app-purchases.jpg
+image: https://images.unsplash.com/photo-1600783245777-080fd7ff9253?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80
 tags: in app purchases, IOS, android
 ---
 

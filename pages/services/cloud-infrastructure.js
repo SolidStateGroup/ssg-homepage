@@ -8,6 +8,7 @@ import ServiceItem from '../../components/ServiceItem';
 import ClientQuote from '../../components/ClientQuote';
 import {ButtonPrimary} from "../../components/base/forms/Button";
 import Card from "../../components/Card";
+import ServicesHero from '../../components/ServicesHero';
 
 const projects = [
     {
@@ -68,17 +69,9 @@ const CloudInfraPage = class extends React.Component {
             <Page title={Constants.titles.cloudInfrastructure} canonical="cloud-infrastructure">
                 <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                     <Header/>
-                    <div className="hero__container flex-1 align-self-stretch row flex-row text-center">
-                        <div className="flex-1 p-5">
-                            <div className="container">
-                                <h5 className="title--light mb-0">Our Services</h5>
-                                <h1 className="hero__title mb-4">Cloud Infrastructure</h1>
-                                <div className="col-lg-6 offset-lg-3">
-                                    <p className="text-light">We utilise secure cloud environments for startups, scale ups and enterprise clients.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <ServicesHero
+                      title="Cloud Infrastructure" text="We utilise secure cloud environments for startups, scale ups and enterprise clients."
+                    />
                 </div>
 
                 <div className="container">

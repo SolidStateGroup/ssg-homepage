@@ -4,6 +4,8 @@ import React from 'react';
 import '../styles/styles.scss';
 import '../project/polyfill';
 import CookieConsent from 'react-cookie-consent';
+import { HeaderFixed } from '../components/Header';
+import Page from '../components/Page';
 
 class MyApp extends App {
     constructor(props) {
