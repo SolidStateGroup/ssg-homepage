@@ -7,7 +7,7 @@ import StatSlider from '../../components/StatSlider';
 import Page from '../../components/Page';
 import ProjectBlobImage from '../../components/ProjectBlobImage';
 
-const Overview = class extends React.Component {
+const Index = class extends React.Component {
     static displayName = 'ReactNativeConversionCalculator';
 
 
@@ -75,7 +75,7 @@ const Overview = class extends React.Component {
                             <p className="text-light mb-0">We estimate the total cost of ownership<span className="text-primary"> *</span> over the next 2 years to be:</p>
                             <h1 className="hero__title text-light">£438,000</h1>
                             <p className="text-light mb-0 text-small"><span className="text-primary"> *</span> Information based on our own estimates and research</p>
-                            <Link prefetch={false} href="/react-native-conversion-calculator/projected-costs">
+                            <Link prefetch={false} href="projected-costs">
                                 <ButtonPrimary className="mt-4">Next</ButtonPrimary>
                             </Link>
 
@@ -92,4 +92,4 @@ const Overview = class extends React.Component {
     };
 };
 
-export default Overview;
+export default Index;
