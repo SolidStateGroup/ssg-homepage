@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import React from 'react';
-import { ButtonTextBack } from '../components/base/forms/Button';
+import { ButtonPrimary, ButtonTextBack } from '../components/base/forms/Button';
 
 export const converstionSteps = [
     '',
