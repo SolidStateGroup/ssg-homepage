@@ -21,7 +21,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const db = admin.firestore();
     const ref = db.collection('clients').doc(req.query.target);
     const data:Prospect = {
-        logo: 'http://localhost:3000/static/images/clients/app-icon.png',
+        logo: 'https://st2.depositphotos.com/5271867/7754/v/950/depositphotos_77542188-stock-illustration-app-fitness-logo.jpg',
         title: '7 Fitness',
         company: 'Fitness International, LLC',
         ios_rating: 5,
