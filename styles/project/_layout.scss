@@ -27,7 +27,7 @@
     }
     &__content{
         //BEM BETRAYAL
-    
+
         ol li, ul li {
             line-height: 1.9rem;
             color: #22354a;
@@ -42,9 +42,28 @@
 
 .rncc {
     &__bg {
+        min-height: 100vh;
         background-color: $brandNavy;
         background: $brandNavy url("/static/images/vector-cubes-bg.svg") center center no-repeat;
         overflow: hidden;
+        [role="main"] {
+            min-height: 100vh;
+        }
+        >.row {
+            min-height: 100vh;
+        }
+        .pad-top-large {
+            padding-top: 10%;
+        }
+        .pad-top-xl {
+            padding-top: 25%;
+        }
+        .pad-bottom-large {
+            padding-bottom: 10%;
+        }
+        .pad-bottom-md {
+            padding-bottom: 5%;
+        }
     }
     &__app-icon {
         width: 232px;
@@ -69,7 +88,7 @@
         &-nav {
             background-color: $brandNavy;
             border-radius: 12px;
-            height: 450px;
+            flex:1;
             overflow-y: scroll;
             scrollbar-color: $brand-primary #e4e4e4;
             scrollbar-width: thin;
@@ -119,12 +138,6 @@
         width: 100%;
     }
 }
-
-
-
-
-
-
 
 .contact-sidebar {
     z-index: 2;

@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import StarRatingListItem from './StartRatingListItem';
 import ButtonHexagonSidebar from './ButtonHexagonSidebar';
 import RNConversionNavItem from './RNConversionNavItem';
+import { useRouterData } from '../common/useData';
 
 const _propTypes = {
     className: propTypes.string,
@@ -16,7 +17,7 @@ const _propTypes = {
 const TheComponent = (props) => {
     const { children, className, ...rest } = props;
     const router = useRouter();
-    console.log(router);
+    const { data } = useRouterData();
     return (
 
         <nav id="sidebarMenu" className={cn(className, ' rncc__sidebar col-md-5 col-lg-3 sidebar collapse')}>
@@ -26,19 +27,19 @@ const TheComponent = (props) => {
                     <div className="pl-0 cursor-pointer">
                         <img
                           className="rncc__app-icon--small" src="/static/images/clients/app-icon.png"
-                          srcSet="/static/images/clients/app-icon.png 2x, /static/images/clients/app-icon.png 1x"
+                          srcSet={data?.logo}
                         />
                     </div>
                 </Link>
                 <div className="col">
-                    <h2 className="text-light mb-0">7 Fitness </h2>
-                    <p className="text-light mb-2 text-small">Fitness International, LLC</p>
+                    <h2 className="text-light mb-0">{data?.title}</h2>
+                    <p className="text-light mb-2 text-small">{data?.company}</p>
                     <StarRatingListItem
-                      className="rating-list--small" starRating="2" numberOfRatings="4.2"
+                      className="rating-list--small" starRating={data?.ios_rating} numberOfRatings={data?.ios_number_of_ratings}
                       filled icon="fab fa-app-store-ios"
                     />
                     <StarRatingListItem
-                      className="rating-list--small" starRating="2" numberOfRatings="4.2"
+                      className="rating-list--small" starRating={data?.android_rating} numberOfRatings={data?.android_number_of_ratings}
                       filled={false} icon="fab fa-google-play"
                     />
                 </div>
@@ -62,8 +63,14 @@ const TheComponent = (props) => {
                   href="insights"
                   isActive={router.asPath.includes('insights')}
                 />
-                <RNConversionNavItem icon="far fa-file-invoice-dollar" number="04" title="Conversion Costs" href="conversion-costs" isActive={router.asPath.includes('conversion-costs')} />
-                <RNConversionNavItem icon="far fa-sack-dollar" number="05" title="Savings" href="savings" isActive={router.asPath.includes('savings')} />
+                <RNConversionNavItem
+                  icon="far fa-file-invoice-dollar" number="04" title="Conversion Costs"
+                  href="conversion-costs" isActive={router.asPath.includes('conversion-costs')}
+                />
+                <RNConversionNavItem
+                  icon="far fa-sack-dollar" number="05" title="Savings"
+                  href="savings" isActive={router.asPath.includes('savings')}
+                />
             </ul>
             <Link prefetch={false} href="/">
                 <div className="rncc__sidebar-brand-container cursor-pointer">

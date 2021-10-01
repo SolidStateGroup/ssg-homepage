@@ -28,7 +28,13 @@ h2 > span {
     font-weight:bold!important;
     font-family: Ilisarniq-Bold, sans-serif;
 }
-
+.text-big-red {
+    font-size: 60px;
+    font-family: Ilisarniq-Bold, sans-serif;
+    font-weight:bold!important;
+    color: $brand-purely-red;
+    line-height: 72px;
+}
 .bold{
     font-family: 'Ilisarniq-Bold', sans-serif!important;
 }

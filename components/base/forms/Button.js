@@ -14,7 +14,7 @@ const Button = global.Button = class extends React.PureComponent {
     static propTypes = _propTypes;
 
     render() {
-        const { children, ...rest } = this.props;
+        const { children, ButtonHexagonActive, ...rest } = this.props;
         return (
             <button
               ref="button"
@@ -113,6 +113,25 @@ export const ButtonText = global.ButtonText = class extends React.PureComponent 
     }
 };
 
+export const ButtonTextBack = global.ButtonTextBack = class extends React.PureComponent {
+    static displayName = 'ButtonText';
+
+    static propTypes = _propTypes;
+
+    render() {
+        const { buttonText, className, ...rest } = this.props;
+        return (
+            <Button
+              {...rest}
+              className={cn(className, 'btn--text', 'btn--text-back')}
+            >
+                <span className="fa fa-arrow-left mr-1"/>
+                Back
+            </Button>
+        );
+    }
+};
+
 export const ButtonDownload = global.ButtonDownload = class extends React.PureComponent {
     static displayName = 'ButtonDownload';
 
@@ -123,7 +142,7 @@ export const ButtonDownload = global.ButtonDownload = class extends React.PureCo
         return (
             <a
               {...props}
-              href={props.href || "#"}
+              href={props.href || '#'}
               download
               className={cn(props.className, 'btn--download')}
             >{this.props.children}
