@@ -37,13 +37,18 @@ const TheComponent: FunctionComponent<ComponentType> = () => {
                       Your App
                     </h1>
                   (
-                    <>
+                    { data
+                    && (
+                    <div className="fade-in">
                         <div className="row pl-3 mt-5 pb-5">
-                            <div className="col-md-3 pl-0">
+                            <div style={{ height: 237 }} className="col-md-3 pl-0">
+                                {data && (
                                 <img
-                                  className="rncc__app-icon" src="/static/images/clients/app-icon.png"
-                                  srcSet={data?.logo}
+                                  className="rncc__app-icon"
+                                  src={data?.logo}
                                 />
+                                )}
+
                             </div>
                             <div className="col-md-9 pl-0 mb-2">
                                 <h2 className="text-light">{data?.title}</h2>
@@ -140,7 +145,9 @@ const TheComponent: FunctionComponent<ComponentType> = () => {
                         </div>
 
 
-                    </>
+                    </div>
+                    )
+                  }
                     )
 
                 </div>
