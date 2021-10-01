@@ -31,6 +31,7 @@ export interface Insight {
 export interface Rebuild {
     name: string;
     hours: number;
+    checked: boolean;
 }
 
 export interface Prospect {
@@ -98,5 +99,5 @@ export default function useData(title, onErr):UseDataType {
 }
 export function useRouterData(onErr?:()=>{}):UseDataType {
     const r = useRouter();
-    return useData(r.query.id, onErr);
+    return useData(r.query.id, () => r.replace('/404'));
 }

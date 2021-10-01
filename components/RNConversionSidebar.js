@@ -24,25 +24,31 @@ const TheComponent = (props) => {
 
             <div className="rncc__sidebar-meta row pl-3 mt-5 pb-5">
                 <Link prefetch={false} href="/react-native-conversion-calculator/overview">
-                    <div className="pl-0 cursor-pointer">
-                        <img
-                          className="rncc__app-icon--small" src="/static/images/clients/app-icon.png"
-                          srcSet={data?.logo}
-                        />
+                    <div style={{height:109, width:109}} className="pl-0 cursor-pointer">
+                        {data && (
+                          <img
+                            className="rncc__app-icon--small" src="/static/images/clients/app-icon.png"
+                            srcSet={data?.logo}
+                          />
+                        )}
+
                     </div>
                 </Link>
-                <div className="col">
-                    <h2 className="text-light mb-0">{data?.title}</h2>
-                    <p className="text-light mb-2 text-small">{data?.company}</p>
-                    <StarRatingListItem
-                      className="rating-list--small" starRating={data?.ios_rating} numberOfRatings={data?.ios_number_of_ratings}
-                      filled icon="fab fa-app-store-ios"
-                    />
-                    <StarRatingListItem
-                      className="rating-list--small" starRating={data?.android_rating} numberOfRatings={data?.android_number_of_ratings}
-                      filled={false} icon="fab fa-google-play"
-                    />
-                </div>
+                {data && (
+                  <div className="col">
+                      <h2 className="text-light mb-0">{data?.title}</h2>
+                      <p className="text-light mb-2 text-small">{data?.company}</p>
+                      <StarRatingListItem
+                        className="rating-list--small" starRating={data?.ios_rating} numberOfRatings={data?.ios_number_of_ratings}
+                        filled icon="fab fa-app-store-ios"
+                      />
+                      <StarRatingListItem
+                        className="rating-list--small" starRating={data?.android_rating} numberOfRatings={data?.android_number_of_ratings}
+                        filled={false} icon="fab fa-google-play"
+                      />
+                  </div>
+                )}
+
             </div>
 
             <ul className="rncc__sidebar-nav nav">

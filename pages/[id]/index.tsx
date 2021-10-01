@@ -8,6 +8,7 @@ import CardBuildCosts from '../../components/CardBuildCosts';
 import StatSlider from '../../components/StatSlider';
 import Page from '../../components/Page';
 import useData, { useRouterData } from '../../common/useData';
+import { useStep } from '../../common/converstion-steps';
 
 type ComponentType = {}
 
@@ -27,6 +28,7 @@ const TheComponent: FunctionComponent<ComponentType> = () => {
     const totalMonthlyCostAndroid = (meta?.android_monthly_cost * monthsSinceRelease);
     const totalMonthlyCostIOS = (meta?.ios_monthly_cost * monthsSinceRelease);
     const totalCost = meta?.ios_build_cost + meta?.android_build_cost + totalMonthlyCostAndroid + totalMonthlyCostIOS;
+    useStep();
 
     return (
         <Page title={Constants.titles.reactNativeConversionCalculator} canonical="">
@@ -60,6 +62,7 @@ const TheComponent: FunctionComponent<ComponentType> = () => {
                                           starRating={data?.ios_rating}
                                           numberOfRatings={data?.ios_number_of_ratings}
                                           className="mt-3"
+                                          ratingClassName="pl-3"
                                           filled icon="fab fa-app-store-ios"
                                         />
 
@@ -67,6 +70,7 @@ const TheComponent: FunctionComponent<ComponentType> = () => {
                                           starRating={data?.android_rating}
                                           numberOfRatings={data?.android_number_of_ratings}
                                           className="mt-3"
+                                          ratingClassName="pl-3"
                                           filled={false} icon="fab fa-google-play"
                                         />
 
@@ -136,7 +140,7 @@ const TheComponent: FunctionComponent<ComponentType> = () => {
                         </div>
 
                         <div className="col-md-4 offset-md-4 text-center mt-5 pb-5">
-                            <p className="text-light mb-0">We estimate the total cost of ownership<span className="text-primary"> *</span> over the next 2 years to be:</p>
+                            <p className="text-light mb-0">Based on the values above, since release your app has cost:</p>
                             <h1 className="hero__title text-light">{data && Utils.money(totalCost)}</h1>
                             <p className="text-light mb-0 text-small"><span className="text-primary"> *</span> Information based on our own estimates and research</p>
                             <Link href={`${id}/projected-costs`}>

@@ -11,7 +11,7 @@
         background:$brand-raisin-black;
         color:$white;
     }
-    
+
     &--ladbrokes{
         background-color: #084d8d;
         color:$white !important;
@@ -44,6 +44,28 @@
     &__list{
 
     }
+    &--cost {
+        background-color: #201C26;
+        border-radius: 40px;
+        background: #201C26;
+        box-shadow: 0 6px 20px 0 rgba(21, 20, 19, 0.3);
+        &__header {
+            font-size: 18px;
+            font-weight: bold;
+            padding-left: 40px;
+            padding-right: 40px;
+            background: #18171A;
+            line-height: 80px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+        &__body {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
 }
 
 .document{
@@ -63,3 +85,4 @@
         padding:20px 0;
     }
 }
+

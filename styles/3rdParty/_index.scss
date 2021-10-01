@@ -1,2 +1,10 @@
 @import "bootstrap";
 @import "fa/index";
+@import "../variables";
+.rc-switch:focus {
+  box-shadow: none !important;
+}
+.rc-switch-checked {
+  background: #1AC0C6 !important;
+  border-color: #1AC0C6 !important;
+}

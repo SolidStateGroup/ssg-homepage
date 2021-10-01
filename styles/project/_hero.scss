@@ -7,9 +7,21 @@
     &__title {
         font-size: 3em;
 
+        &--red {
+            color: $brand-purely-red;
+        }
+        &--primary {
+            color: $brand-primary;
+        }
         &--hidden {
             opacity: 0;
             display: none;
+        }
+        &--large {
+            font-size: 60px;
+            font-family: Ilisarniq-Bold, sans-serif;
+            font-weight:bold!important;
+            line-height: 72px;
         }
     }
 
