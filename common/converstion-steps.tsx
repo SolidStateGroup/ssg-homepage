@@ -58,7 +58,11 @@ export const useStep = () => {
                         </ButtonPrimary>
                     </Link>
                 ) : (
-                    <div />
+                    <Link href="/contact-form">
+                        <ButtonPrimary className="px-3">
+                          Get in touch
+                        </ButtonPrimary>
+                    </Link>
                 )}
             </nav>
         ),
