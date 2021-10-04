@@ -77,6 +77,10 @@ const TheComponent = (props) => {
                   icon="far fa-sack-dollar" number="05" title="Savings"
                   href="savings" isActive={router.asPath.includes('savings')}
                 />
+                <RNConversionNavItem
+                  icon="fab fa-react" number="06" title="React Native Experts"
+                  href="react-native" isActive={router.asPath.includes('react-native')}
+                />
             </ul>
             <Link prefetch={false} href="/">
                 <div className="rncc__sidebar-brand-container cursor-pointer">

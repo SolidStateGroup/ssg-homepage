@@ -135,7 +135,7 @@ const chartRef = React.createRef();
 
 const TheComponent: FunctionComponent<ComponentType> = ({}) => {
     const { nav } = useStep();
-    const { meta, totalDevelopmentCost, totalNewMonthlyCost, totalMonthlyCost } = useRouterData({});
+    const { meta, totalDevelopmentCost, totalNewMonthlyCost, totalMonthlyCost, totalSavings } = useRouterData();
     useEffect(() => {
         if (!meta) return;
         const arr = new Array(meta?.years_roadmap + 1).fill(0);
@@ -185,7 +185,9 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     <RNConversionSidebar/>
 
                     <main role="main" className="col-md-7 ml-sm-auto col-lg-9 px-md-4">
-                        <h1 className="text-light text-center pad-top-large pad-bottom-large">Projected costs</h1>
+                        <h1 className="text-light text-center pad-top-large">Savings</h1>
+                        <h2 className="hero__title--large hero__title--primary text-center">{meta ? Utils.money(totalSavings) : '...'}</h2>
+                        <div className="text-light text-center pad-bottom-large">Over the next {meta?.years_roadmap} years.</div>
 
                         <canvas id="myChart" width="600" height="200" />
 
