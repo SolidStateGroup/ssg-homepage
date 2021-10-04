@@ -10,6 +10,7 @@ export const converstionSteps = [
     'insights',
     'development',
     'savings',
+    'react-native',
 ];
 
 

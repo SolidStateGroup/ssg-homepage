@@ -68,6 +68,7 @@ type UseDataType = {
     totalBuildCostIOS:number,
     totalBuildCost: number,
     totalNewMonthlyCost: number
+    totalSavings: number
     totalMonthlyCost: number
     totalCost: number,
 }
@@ -132,17 +133,23 @@ export default function useData(title, onErr):UseDataType {
     const totalBuildCostIOS = (meta?.ios_monthly_cost * monthsSinceRelease);
     const totalMonthlyCost = (meta?.android_monthly_cost+meta?.ios_monthly_cost);
     const totalCost = meta?.ios_build_cost + meta?.android_build_cost + totalBuildCostAndroid + totalBuildCostIOS;
+    const totalDevelopmentCost = hours*rate;
+    const totalNewMonthlyCost = (meta?.android_monthly_cost+meta?.ios_monthly_cost)*.6
+    const totalExistingRoadmapCost = (totalMonthlyCost *meta?.years_roadmap);
+    const totalNewRoadmapCost = (totalDevelopmentCost + (totalNewMonthlyCost * meta?.years_roadmap));
+    const totalSavings = totalExistingRoadmapCost - totalNewRoadmapCost;
     return {
         data: data[title],
         meta,
         totalDevelopmentHours: hours,
         rate,
-        totalDevelopmentCost: hours*rate,
+        totalDevelopmentCost,
         monthsSinceRelease,
         totalBuildCostAndroid,
         totalBuildCostIOS,
         totalBuildCost: totalBuildCostAndroid+totalBuildCostIOS,
-        totalNewMonthlyCost: (meta?.android_monthly_cost+meta?.ios_monthly_cost)*.6,
+        totalNewMonthlyCost,
+        totalSavings,
         totalMonthlyCost,
         totalCost,
         setMeta: (key, v) => {
