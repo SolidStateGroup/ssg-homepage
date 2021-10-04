@@ -23,6 +23,16 @@ const API = {
         }
         return cookies.get('t');
     },
+    getAuth(req) {
+        if (req) {
+            const parsedCookies = cookie.parse(req.headers.cookie || '');
+            return parsedCookies && parsedCookies.auth;
+        }
+        return cookies.get('auth');
+    },
+    setAuth(v) {
+        return cookies.set('auth', v);
+    },
     getStoredLocale(req) {
         if (req) {
             // Attempt to get locale saved cookie

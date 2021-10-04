@@ -1,21 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import moment from 'moment';
 import { Prospect } from '../../../common/useData';
-
-require('dotenv').config();
-
-const env = process.env.SERVICE_KEY;
-const admin = require('firebase-admin');
-
-if (!admin.apps.length) {
-    const creds = JSON.parse(env);
-    console.log(creds);
-    // Initialize Firestore.
-    admin.initializeApp({
-        databaseURL: 'https://ssg-prospects.firebaseio.com',
-        credential: admin.credential.cert(creds),
-    });
-}
+import admin from '../../../project/admin';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
     const db = admin.firestore();
@@ -66,7 +52,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     };
     ref.set(data)
         .then(() => {
-            res.status(200).json(data);
+            res.redirect(`/${req.query.target}/edit`);
         })
         .catch((e) => {
             res.status(200).json({ res: e });

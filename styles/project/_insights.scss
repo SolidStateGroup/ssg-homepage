@@ -14,7 +14,7 @@
 }
 
 .insights {
-:nth-child(2) {
+:nth-child(even) {
   .insight {
     flex-direction: row-reverse !important;
     .blob-point {
