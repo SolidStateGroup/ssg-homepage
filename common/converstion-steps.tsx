@@ -6,13 +6,12 @@ import useKeyPress from './useKeypress';
 
 export const converstionSteps = [
     '',
-    'projected-costs',
+    'projected',
     'insights',
-    'conversion-costs',
+    'development',
     'savings',
 ];
 
-export const yearsRoadmap = 5;
 
 export const useStep = () => {
     const r = useRouter();

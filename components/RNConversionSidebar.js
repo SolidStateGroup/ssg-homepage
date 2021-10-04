@@ -62,7 +62,7 @@ const TheComponent = (props) => {
                 />
                 <RNConversionNavItem
                   icon="fas fa-chart-line" number="02" title="Projected Costs"
-                  href="projected-costs" isActive={router.asPath.includes('projected-costs')}
+                  href="projected" isActive={router.asPath.includes('projected')}
                 />
                 <RNConversionNavItem
                   icon="fas fa-search-dollar" number="03" title="Insights"
@@ -71,7 +71,7 @@ const TheComponent = (props) => {
                 />
                 <RNConversionNavItem
                   icon="far fa-file-invoice-dollar" number="04" title="Conversion Costs"
-                  href="conversion-costs" isActive={router.asPath.includes('conversion-costs')}
+                  href="development" isActive={router.asPath.includes('development')}
                 />
                 <RNConversionNavItem
                   icon="far fa-sack-dollar" number="05" title="Savings"

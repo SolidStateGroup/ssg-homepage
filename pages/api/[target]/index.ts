@@ -21,20 +21,21 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const db = admin.firestore();
     const ref = db.collection('clients').doc(req.query.target);
     const data:Prospect = {
-        logo: 'https://st2.depositphotos.com/5271867/7754/v/950/depositphotos_77542188-stock-illustration-app-fitness-logo.jpg',
-        title: '7 Fitness',
-        company: 'Fitness International, LLC',
-        ios_rating: 4,
-        android_rating: 3.5,
-        release_date: moment().add(-18, 'months').format('DD/MM/YYYY'),
-        latest_release_date: moment().format('DD/MM/YYYY'),
-        releases_per_year: 5,
-        android_number_of_ratings: 4200,
-        ios_number_of_ratings: 6000,
         android_build_cost: 70000,
+        android_monthly_cost: 15000,
+        android_number_of_ratings: 4200,
+        android_rating: 3.5,
+        company: 'Fitness International, LLC',
         ios_build_cost: 70000,
-        ios_monthly_cost: 6000,
-        android_monthly_cost: 6000,
+        ios_monthly_cost: 15000,
+        ios_number_of_ratings: 6000,
+        ios_rating: 4,
+        latest_release_date: moment().format('DD/MM/YYYY'),
+        logo: 'https://st2.depositphotos.com/5271867/7754/v/950/depositphotos_77542188-stock-illustration-app-fitness-logo.jpg',
+        release_date: moment().add(-18, 'months').format('DD/MM/YYYY'),
+        releases_per_year: 5,
+        years_roadmap: 10,
+        title: '7 Fitness',
         insights: [
             {
                 title: 'Users',
@@ -47,8 +48,18 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         ],
         rebuild: [
             {
-                name: 'Sign up / Login',
-                hours: 2,
+                name: 'Design',
+                hours: 100,
+                checked: true,
+            },
+            {
+                name: 'UI Development',
+                hours: 150,
+                checked: true,
+            },
+            {
+                name: 'Frontend Development',
+                hours: 150,
                 checked: true,
             },
         ],

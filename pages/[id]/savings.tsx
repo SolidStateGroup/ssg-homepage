@@ -1,56 +1,204 @@
-import React, { FunctionComponent } from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+import React, { FunctionComponent, useEffect, useRef } from 'react';
+import {
+    Chart,
+    ArcElement,
+    LineElement,
+    BarElement,
+    PointElement,
+    BarController,
+    BubbleController,
+    DoughnutController,
+    LineController,
+    PieController,
+    PolarAreaController,
+    RadarController,
+    ScatterController,
+    CategoryScale,
+    LinearScale,
+    LogarithmicScale,
+    RadialLinearScale,
+    TimeScale,
+    TimeSeriesScale,
+    Decimation,
+    Filler,
+    Legend,
+    Title,
+    Tooltip,
+    SubTitle, ChartConfiguration,
+} from 'chart.js';
+
+
+import { borderColor } from 'polished';
 import Page from '../../components/Page'; // we need this to make JSX compile
-import Header from '../../components/Header';
-import StarRatingListItem from '../../components/StartRatingListItem';
-import CardBuildCosts from '../../components/CardBuildCosts';
 import RNConversionSidebar from '../../components/RNConversionSidebar';
-import RNConversionNavItem from '../../components/RNConversionNavItem';
-import StatSlider from '../../components/StatSlider';
-import ButtonHexagonSidebar from '../../components/ButtonHexagonSidebar';
-import ProjectBlobImage from '../../components/ProjectBlobImage';
-import { ButtonTextBack } from '../../components/base/forms/Button';
-import { converstionSteps, useStep } from '../../common/converstion-steps';
+import { useStep } from '../../common/converstion-steps';
+import { useRouterData } from '../../common/useData';
+
+Chart.register(
+    ArcElement,
+    LineElement,
+    BarElement,
+    PointElement,
+    BarController,
+    BubbleController,
+    DoughnutController,
+    LineController,
+    PieController,
+    PolarAreaController,
+    RadarController,
+    ScatterController,
+    CategoryScale,
+    LinearScale,
+    LogarithmicScale,
+    RadialLinearScale,
+    TimeScale,
+    TimeSeriesScale,
+    Decimation,
+    Filler,
+    Legend,
+    Title,
+    Tooltip,
+    SubTitle,
+);
 
 type ComponentType = {}
 
+
+const config: ChartConfiguration = data => ({
+    type: 'line',
+    data,
+    options: {
+        responsive: true,
+        interaction: {
+            mode: 'index',
+            intersect: false,
+        },
+        plugins: {
+            legend: {
+                display: false,
+            },
+            tooltip: {
+                titleColor: '#786F84',
+                bodyColor: 'rgba(255,255,255,0.8)',
+                titleFont: {
+                    weight: '400',
+                },
+                bodyFont: {
+                    size: 11,
+                },
+                backgroundColor: 'rgba(62,55,73,0.8)',
+            },
+            title: {
+                display: false,
+            },
+        },
+        scales: {
+            x: {
+                ticks: {
+                    color: 'rgba(120,111,132,0.8)',
+                    align: 'center',
+                },
+                grid: {
+                    display: false,
+                },
+            },
+            y: {
+                display: true,
+                grid: {
+                    borderWidth: 0,
+                    color: 'rgba(120,111,132,0.8)',
+                },
+                ticks: {
+                    padding: 5,
+                    color: 'rgba(120,111,132,0.8)',
+                    maxTicksLimit: 7,
+                    callback: (value) => {
+                        return Utils.nFormatter(value);
+                    },
+                },
+                position: 'left',
+            },
+            y1: {
+                display: false,
+                ticks: {
+                    maxTicksLimit: 7,
+                    callback: (value) => {
+                        return Utils.nFormatter(value);
+                    },
+                },
+                position: 'left',
+            },
+        },
+    },
+});
+const chartRef = React.createRef();
+
 const TheComponent: FunctionComponent<ComponentType> = ({}) => {
     const { nav } = useStep();
+    const { meta, totalDevelopmentCost, totalNewMonthlyCost, totalMonthlyCost } = useRouterData({});
+    useEffect(() => {
+        if (!meta) return;
+        const arr = new Array(meta?.years_roadmap + 1).fill(0);
+        const data:ChartConfiguration['data'] = {
+            labels: arr.map((_, v) => {
+                if (!v) return 'Today';
+                return `${v} Year${v !== 1 ? 's' : ''}`;
+            }),
+            datasets: [
+                {
+                    label: 'React Native',
+                    data: arr.map((_, v) => {
+                        if (!v) return 0;
+                        return totalDevelopmentCost + (totalNewMonthlyCost * v - 1);
+                    }),
+                    borderColor: '#1AC0C6',
+                    backgroundColor: 'white',
+                    pointRadius: 0,
+                    borderWidth: 2,
+                    yAxisID: 'y',
+                },
+                {
+                    label: 'Native Apps',
+                    data: arr.map((_, v) => {
+                        if (!v) return 0;
+                        return totalMonthlyCost * v;
+                    }),
+                    borderColor: '#D02D55',
+                    pointRadius: 0,
+                    borderWidth: 2,
+                    backgroundColor: 'white',
+                    yAxisID: 'y',
+                },
+            ],
+        };
+        const ctx = document.getElementById('myChart').getContext('2d');
+        chartRef.current = new Chart(ctx, config(data));
+        return () => {
+            chartRef?.current?.destroy();
+        };
+    }, [meta]);
     return (
-      <Page title={Constants.titles.reactNativeConversionCalculator} canonical="">
+        <Page title={Constants.titles.reactNativeConversionCalculator} canonical="">
 
-          <div className="container-fluid rncc__bg">
-              <div className="row">
-                  <RNConversionSidebar/>
+            <div className="container-fluid rncc__bg">
+                <div className="row">
+                    <RNConversionSidebar/>
 
-                  <main role="main" className="col-md-7 ml-sm-auto col-lg-9 px-md-4">
-                      <h1 className="text-light text-center pad-top-large pad-bottom-large">Projected costs</h1>
+                    <main role="main" className="col-md-7 ml-sm-auto col-lg-9 px-md-4">
+                        <h1 className="text-light text-center pad-top-large pad-bottom-large">Projected costs</h1>
 
-                      <p className="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                      <p className="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <p className="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                      <p className="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <p className="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <p className="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <p className="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <p className="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <p className="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <p className="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <p className="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <canvas id="myChart" width="600" height="200" />
 
 
-                      {nav}
+                        {nav}
 
 
-                  </main>
-              </div>
-          </div>
+                    </main>
+                </div>
+            </div>
 
 
-      </Page>
+        </Page>
     );
 };
 

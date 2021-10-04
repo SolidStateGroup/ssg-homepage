@@ -23,11 +23,12 @@ const totalStep = 10000;
 const TheComponent: FunctionComponent<ComponentType> = () => {
     const r = useRouter();
     const id = r.query.id;
-    const { data, setMeta, meta } = useData(id, () => r.replace('/404'));
-    const monthsSinceRelease = 24;
-    const totalMonthlyCostAndroid = (meta?.android_monthly_cost * monthsSinceRelease);
-    const totalMonthlyCostIOS = (meta?.ios_monthly_cost * monthsSinceRelease);
-    const totalCost = meta?.ios_build_cost + meta?.android_build_cost + totalMonthlyCostAndroid + totalMonthlyCostIOS;
+    const {
+        data,
+        setMeta,
+        meta,
+        totalCost,
+    } = useData(id, () => r.replace('/404'));
     useStep();
 
     return (
@@ -143,7 +144,7 @@ const TheComponent: FunctionComponent<ComponentType> = () => {
                             <p className="text-light mb-0">Based on the values above, since release your app has cost:</p>
                             <h1 className="hero__title text-light">{data && Utils.money(totalCost)}</h1>
                             <p className="text-light mb-0 text-small"><span className="text-primary"> *</span> Information based on our own estimates and research</p>
-                            <Link href={`${id}/projected-costs`}>
+                            <Link href={`${id}/projected`}>
                                 <ButtonPrimary className="mt-4">Next</ButtonPrimary>
                             </Link>
                         </div>
