@@ -7,6 +7,7 @@ import ServiceItem from '../../components/ServiceItem';
 import ClientQuote from '../../components/ClientQuote';
 import {ButtonPrimary} from "../../components/base/forms/Button";
 import ProjectItem from "../../components/ProjectItem";
+import ServicesHero from '../../components/ServicesHero';
 
 const projects = [
     {
@@ -55,17 +56,9 @@ const BrandingPage = class extends React.Component {
             <Page title={Constants.titles.branding} canonical="branding">
                 <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                     <Header/>
-                    <div className="hero__container flex-1 align-self-stretch row flex-row text-center">
-                        <div className="flex-1 p-5">
-                            <div className="container">
-                                <h5 className="title--light mb-0">Our Services</h5>
-                                <h1 className="hero__title mb-4">Branding</h1>
-                                <div className="col-lg-6 offset-lg-3">
-                                    <p className="text-light">We work with small and large businesses to deliver high quality brand guidelines and identities.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <ServicesHero
+                      title="Branding" text="We work with small and large businesses to deliver high quality brand guidelines and identities."
+                    />
                 </div>
                 <ClientQuote
                     image={'/static/images/projects/meownow/meownow-1@1x.png'}

@@ -32,7 +32,7 @@ export const projects = [
         title: 'Bringing the entire IT infrastructure within Ladbrokes Coral up to date',
         blobColour: '#084d8d',
         tags: ['WEB', 'API', 'IOT'],
-        projectType: [ 'API Development, Web Application, Hardware integrations'],
+        projectType: ['API Development, Web Application, Hardware integrations'],
         gaDataLabel: 'work-projects-ladbrokes',
     },
     {
@@ -58,7 +58,7 @@ export const projects = [
         title: 'New borrowing power service for a FeelGood Money platform',
         blobColour: '#00D9C5',
         tags: ['MOBILE', 'API'],
-        projectType: [ 'API Development'],
+        projectType: ['API Development'],
         gaDataLabel: 'work-projects-zopa',
     },
     {
@@ -71,7 +71,7 @@ export const projects = [
         title: 'New Serverless Data Platform for the home of horse racing news',
         blobColour: '#d11f25',
         tags: ['MOBILE', 'API', 'WEB'],
-        projectType: [ 'API Development, ', 'Mobile App Development, ', 'Cloud Infrastructure Implementation'],
+        projectType: ['API Development, ', 'Mobile App Development, ', 'Cloud Infrastructure Implementation'],
         gaDataLabel: 'work-projects-racing-post',
     },
     {
@@ -339,8 +339,8 @@ const WorkPage = class extends React.Component {
     componentDidMount() {
         API.trackPage(Constants.pages.work);
         gsap.timeline()
-          .from('.hero__container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
-          .from('.hero__footer .content-nav__item', { x: 10, opacity: 0, stagger: .15, ease: 'power1' });
+            .from('.hero__container', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' })
+            .from('.hero__footer .content-nav__item', { x: 10, opacity: 0, stagger: 0.15, ease: 'power1' });
     }
 
     filterProjects = () => {
@@ -349,90 +349,90 @@ const WorkPage = class extends React.Component {
 
     render = () => {
         return (
-          <Page title={Constants.titles.work} canonical="work">
-              <div className="hero hero--half d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
-                  <Header/>
-                  <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
-                      <div className="flex-1 justify-content-start p-5">
-                          <div className="offset-lg-3">
-                              <h1 className="hero__title mb-4">Our Work</h1>
-                              <p className="text-light">Take a look at the latest and greatest projects
+            <Page title={Constants.titles.work} canonical="work">
+                <div className="hero hero--half d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
+                    <Header/>
+                    <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
+                        <div className="flex-1 justify-content-start p-5">
+                            <div className="offset-lg-3">
+                                <h1 className="hero__title mb-4">Our Work</h1>
+                                <p className="text-light">Take a look at the latest and greatest projects
                                   we’ve built here at Solid State Group.
-                              </p>
-                          </div>
-                      </div>
-                      <div
-                        className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down"
-                      />
-                  </div>
-                  <div className="hero__footer">
-                      <ul className="list-inline hero__footer__links content-nav mb-0">
-                          <li
-                            onClick={() => this.setState({ tab: 'ALL' })}
-                            className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'ALL' })}
-                          >
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                          className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down"
+                        />
+                    </div>
+                    <div className="hero__footer">
+                        <ul className="list-inline hero__footer__links content-nav mb-0">
+                            <li
+                              onClick={() => this.setState({ tab: 'ALL' })}
+                              className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'ALL' })}
+                            >
                               All Projects
-                          </li>
-                          <li
-                            onClick={() => this.setState({ tab: 'DESIGN' })}
-                            className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'DESIGN' })}
-                          >
+                            </li>
+                            <li
+                              onClick={() => this.setState({ tab: 'DESIGN' })}
+                              className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'DESIGN' })}
+                            >
                               Design
-                          </li>
-                          <li
-                            onClick={() => this.setState({ tab: 'MOBILE' })}
-                            className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'MOBILE' })}
-                          >
+                            </li>
+                            <li
+                              onClick={() => this.setState({ tab: 'MOBILE' })}
+                              className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'MOBILE' })}
+                            >
                               Mobile
-                          </li>
-                          <li
-                            onClick={() => this.setState({ tab: 'API' })}
-                            className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'API' })}
-                          >
+                            </li>
+                            <li
+                              onClick={() => this.setState({ tab: 'API' })}
+                              className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'API' })}
+                            >
                               API Dev
-                          </li>
-                          <li
-                            onClick={() => this.setState({ tab: 'IOT' })}
-                            className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'IOT' })}
-                          >
+                            </li>
+                            <li
+                              onClick={() => this.setState({ tab: 'IOT' })}
+                              className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'IOT' })}
+                            >
                               IOT
-                          </li>
-                          <li
-                            onClick={() => this.setState({ tab: 'AUGMENTED REALITY' })}
-                            className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'AUGMENTED REALITY' })}
-                          >
+                            </li>
+                            <li
+                              onClick={() => this.setState({ tab: 'AUGMENTED REALITY' })}
+                              className={cn('content-nav__item  list-inline-item', { 'content-nav__item--active': this.state.tab === 'AUGMENTED REALITY' })}
+                            >
                               Augmented Reality
-                          </li>
+                            </li>
 
-                      </ul>
-                  </div>
-              </div>
+                        </ul>
+                    </div>
+                </div>
 
-              <div className="container mt-md-0 mt-5">
-                  <InfiniteScroll
-                    items={this.filterProjects()}
-                    chunkSize={1}
-                    pageSize={4}
-                    renderItem={(p) => (
-                      <ProjectItem
-                        key={p.title}
-                        href={p.href}
-                        ButtonComponent={p.ButtonComponent}
-                        projectImage={p.projectImage}
-                        srcSet={p.srcSet}
-                        subTitle={p.subTitle}
-                        projectImageClass={p.projectImageClass}
-                        blobColour={p.blobColour}
-                        title={p.title}
-                        projectType={p.projectType}
-                        clientImage={p.clientImage}
-                        gaDataLabel={p.gaDataLabel}
-                      />
-                    )}
-                  />
-              </div>
-              <Footer gaFooterLabel="work_footer_contact"/>
-          </Page>
+                <div className="container mt-md-0 mt-5">
+                    <InfiniteScroll
+                      items={this.filterProjects()}
+                      chunkSize={1}
+                      pageSize={4}
+                      renderItem={p => (
+                          <ProjectItem
+                            key={p.title}
+                            href={p.href}
+                            ButtonComponent={p.ButtonComponent}
+                            projectImage={p.projectImage}
+                            srcSet={p.srcSet}
+                            subTitle={p.subTitle}
+                            projectImageClass={p.projectImageClass}
+                            blobColour={p.blobColour}
+                            title={p.title}
+                            projectType={p.projectType}
+                            clientImage={p.clientImage}
+                            gaDataLabel={p.gaDataLabel}
+                          />
+                      )}
+                    />
+                </div>
+                <Footer gaFooterLabel="work_footer_contact"/>
+            </Page>
 
         );
     };

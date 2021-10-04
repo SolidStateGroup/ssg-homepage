@@ -71,6 +71,7 @@
     "raw-loader": "^4.0.0",
     "rc-switch": "^3.2.2",
     "react": "^16.13.0",
+    "react-cookie-consent": "^6.3.0",
     "react-device-detect": "^1.11.14",
     "react-dom": "^16.13.0",
     "react-infinite-scroll-component": "^5.0.4",
