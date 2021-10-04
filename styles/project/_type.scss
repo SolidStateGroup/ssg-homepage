@@ -28,7 +28,6 @@ h2 > span {
     font-weight:bold!important;
     font-family: Ilisarniq-Bold, sans-serif;
 }
-
 .bold{
     font-family: 'Ilisarniq-Bold', sans-serif!important;
 }
@@ -88,6 +87,10 @@ strong {
     color: $brand-dark-lavender;
 }
 
+.text-gold {
+    color: $brand-gold;
+}
+
 .text-dark {
     color: $brand-raisin-black !important;
     opacity: 1 !important;
@@ -95,6 +98,15 @@ strong {
 
 .text-primary {
     color: $brand-primary;
+}
+
+.text-navy-secondary {
+    color: $brandNavySecondary;
+}
+
+
+.text-react-blue {
+    color: #61DAFB;
 }
 
 .bold {

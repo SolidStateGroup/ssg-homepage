@@ -1,4 +1,4 @@
-import App, { Container } from 'next/app';
+import App from 'next/app';
 import Head from 'next/head';
 import React from 'react';
 import '../styles/styles.scss';
@@ -7,6 +7,7 @@ import CookieConsent from 'react-cookie-consent';
 import { HeaderFixed } from '../components/Header';
 import Page from '../components/Page';
 
+import 'rc-switch/assets/index.css'
 class MyApp extends App {
     constructor(props) {
         super(props);
@@ -47,7 +48,6 @@ class MyApp extends App {
     render() {
         const { Component } = this.props;
         return (
-            <Container>
                 <React.Fragment>
                     <Head>
                         <meta charSet="utf-8"/>
@@ -109,7 +109,6 @@ class MyApp extends App {
                         We use cookies to improve your experience on our site. Please let us know if you agree to all of these cookies.
                     </CookieConsent>
                 </React.Fragment>
-            </Container>
         );
     }
 }

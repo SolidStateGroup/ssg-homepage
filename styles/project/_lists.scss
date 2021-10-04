@@ -26,6 +26,37 @@
   }
 }
 
+.rating-list {
+  height: 20px;
+  width: 165px;
+  &__app-store-icon {
+    font-size: 2.4em;
+  }
+  &__background {
+   position: absolute;
+    width: 200px;
+  }
+  &__foreground {
+   position: absolute;
+    width: 200px;
+  }
+  &__star-icon {
+    font-size: 1.25em;
+  }
+  &--small {
+    .rating-list__app-store-icon {
+      font-size: 1.25em;
+    }
+    .rating-list__star-icon {
+      font-size: .75em;
+      margin-top: 3px;
+    }
+    .rating-list__meta {
+      display: none;
+    }
+  }
+}
+
 .wide-list {
   display: flex;
 

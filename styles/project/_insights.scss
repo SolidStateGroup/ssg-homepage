@@ -1,0 +1,30 @@
+.blob-point {
+  position: relative;
+  svg {
+
+  }
+  &--text {
+    font-weight: 600;
+    position: absolute;
+    color: white;
+    top: 10px;
+    left:40px;
+    font-size: 48px;
+  }
+}
+
+.insights {
+:nth-child(2) {
+  .insight {
+    flex-direction: row-reverse !important;
+    .blob-point {
+      margin-left: 60px;
+      margin-right:0;
+    }
+  }
+}
+  .blob-point {
+    margin-right: 60px;
+  }
+
+}

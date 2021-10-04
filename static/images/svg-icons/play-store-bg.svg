@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="135px" height="162px" viewBox="0 0 135 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>play-store-bg</title>
+    <g id="RNCCC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.0627325149">
+        <g id="RNCCC---Overview" transform="translate(-250.000000, -524.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Cards-/-Build-costs-(android)" transform="translate(250.000000, 518.000000)">
+                <g id="Group" transform="translate(-63.000000, -22.000000)">
+                    <g id="Group" transform="translate(9.000000, 0.000000)">
+                        <path d="M122.872584,94.7452627 L32.4793198,5.25688611 L147.488059,70.4422739 L122.872584,94.7452627 L122.872584,94.7452627 Z M8.8877836,0 C3.56330494,2.74975581 0,7.76401641 0,14.2744677 L0,192.725532 C0,199.235984 3.56330494,204.250244 8.8877836,207 L113.984801,103.479781 L8.8877836,0 Z M183.039193,91.2271928 L158.915209,77.4379762 L132.006113,103.520219 L158.915209,129.602461 L183.530683,115.813245 C190.903038,110.03067 190.903038,97.0097675 183.039193,91.2271928 L183.039193,91.2271928 Z M32.4793198,201.783551 L147.488059,136.598164 L122.872584,112.295175 L32.4793198,201.783551 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

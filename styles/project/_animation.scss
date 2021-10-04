@@ -24,12 +24,52 @@
     100% { transform: translateY(15px); opacity: 0;}
 }
 
-@-webkit-keyframes fadeIn{
-    0% {
-        opacity:0;
+@mixin fade-in($waitTime) {
+    animation:
+            wait #{$waitTime},
+            fade-in 800ms #{$waitTime};
+}
+
+@keyframes wait {
+    0% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+$animationStep:400ms;
+.fade-in {
+    @include fade-in('0ms');
+}
+.fade-in-step {
+    >:nth-child(1) {
+        @include fade-in('0ms');
     }
-    100% {
-        opacity:1;
+    >:nth-child(2) {
+        @include fade-in(1*$animationStep);
+    }
+    >:nth-child(3) {
+        @include fade-in(2*$animationStep);
+    }
+    >:nth-child(4) {
+        @include fade-in(3*$animationStep);
+    }
+    >:nth-child(5) {
+        @include fade-in(4*$animationStep);
+    }
+    >:nth-child(6) {
+        @include fade-in(5*$animationStep);
+    }
+    >:nth-child(7) {
+        @include fade-in(6*$animationStep);
+    }
+    >:nth-child(8) {
+        @include fade-in(7*$animationStep);
+    }
+    >*{
+        animation: fadeIn ease 1.5s;
     }
 }
 

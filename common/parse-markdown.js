@@ -39,7 +39,6 @@ module.exports = (source) => {
             res.sort = -m.valueOf();
         }
         if (item.includes('tags: ')) {
-            console.log("Tags")
             res.tags = map(item.replace('tags: ', '').split(','), i => i.trim().toLowerCase()).sort();
         }
     });

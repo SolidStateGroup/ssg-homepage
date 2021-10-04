@@ -61,6 +61,23 @@
     }
 }
 
+.card-build-costs {
+    background-color: $brand-raisin-black;
+    border-radius: 40px;
+    transition: all .25s ease-out;
+    &:hover {
+        box-shadow: 0 6px 20px 0 rgba(21,20,19,0.30);
+        transform: scale(1.03);
+        background-color: darken($brand-raisin-black, 4);
+    }
+    &__google {
+        background: left 5%/40% 70% no-repeat url("/static/images/svg-icons/play-store-bg.svg") $brand-raisin-black;;
+    }
+    &__ios {
+        background: top left no-repeat url("/static/images/svg-icons/app-store-bg.svg") $brand-raisin-black;;
+    }
+}
+
 @include media-breakpoint-up(lg) {
     .card {
         margin: 0 2em;
