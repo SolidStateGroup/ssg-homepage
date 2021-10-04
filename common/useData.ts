@@ -126,12 +126,12 @@ export default function useData(title, onErr):UseDataType {
     },[meta]);
 
 
-    const monthsSinceRelease = Math.round(meta?.release_date && moment().diff(moment(meta?.release_date, "DD/MM/YYYY"))/2.628e+9);
+    const dateDiff = meta?.release_date && moment().diff(moment(meta?.release_date, "DD/MM/YYYY"));
+    const monthsSinceRelease = Math.round(dateDiff/2.628e+9);
     const totalBuildCostAndroid = (meta?.android_monthly_cost * monthsSinceRelease);
     const totalBuildCostIOS = (meta?.ios_monthly_cost * monthsSinceRelease);
     const totalMonthlyCost = (meta?.android_monthly_cost+meta?.ios_monthly_cost);
     const totalCost = meta?.ios_build_cost + meta?.android_build_cost + totalBuildCostAndroid + totalBuildCostIOS;
-    console.log(monthsSinceRelease)
     return {
         data: data[title],
         meta,
