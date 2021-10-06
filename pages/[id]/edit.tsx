@@ -1,11 +1,12 @@
 import { useRouter } from 'next/router';
 import { HotKeys, configure } from 'react-hotkeys';
-import { FunctionComponent, useEffect, useRef, useState } from 'react';
+import React, { FunctionComponent, useEffect, useRef, useState } from 'react';
 import JSONInput from 'react-json-editor-ajrm';
 import locale from 'react-json-editor-ajrm/locale/en';
 import _data from 'common/utils/_data';
 import { useStep } from '../../common/converstion-steps';
 import useData from '../../common/useData';
+import Prospect from '../../components/Prospect';
 
 let Editor;
 configure({
@@ -114,6 +115,8 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                 />
                 )}
             </HotKeys>
+            <Prospect/>
+
         </div>
     );
 };
