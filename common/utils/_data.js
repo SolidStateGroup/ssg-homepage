@@ -25,7 +25,7 @@ const _data = {
                     };
                     document.getElementById('e2e-error').innerText = JSON.stringify(error);
                 }
-                API.log('API', response.url, response.status, err);
+                // API.log('API', response.url, response.status, err);
                 try {
                     const json = JSON.parse(err);
                     return Promise.reject(json);
@@ -96,7 +96,7 @@ const _data = {
             document.getElementById('e2e-request').innerText = JSON.stringify(payload);
         }
 
-        API.log('API', 'REQUEST', method, url, data, headers);
+        // API.log('API', 'REQUEST', method, url, data, headers);
 
         const req = fetch(url, options);
         return req
@@ -112,7 +112,7 @@ const _data = {
                 return {};
             })
             .then((response) => {
-                API.log('API', 'RESPONSE', method, url, 'Response body', response, 'Original request', options);
+                // API.log('API', 'RESPONSE', method, url, 'Response body', response, 'Original request', options);
                 return response;
             });
     },
