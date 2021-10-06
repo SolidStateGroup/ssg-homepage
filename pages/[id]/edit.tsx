@@ -75,7 +75,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
     }, [data]);
 
     const update = function (e) {
-        e.preventDefault();
+        e?.preventDefault?.();
         setIsSaving(true);
         setTimeout(() => {
             _data.put(`${document.location.origin}/api/${id}/update`, { auth: API.getAuth(), data: dataRef.current })
@@ -97,7 +97,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
               handlers={{ SAVE: update }}
             >
 
-                <Button style={{ opacity: isSaving ? 0.5 : 1, position: 'absolute', zIndex: 1000, top: 10, right: 10 }} className="btn--primary">
+                <Button onClick={update} style={{ opacity: isSaving ? 0.5 : 1, position: 'absolute', zIndex: 1000, top: 10, right: 10 }} className="btn--primary">
                     {isSaving ? 'Saving' : 'Save'}
                 </Button>
                 {newData && (
