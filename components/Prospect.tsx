@@ -113,7 +113,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                       className="card-build-costs__ios" cardTitle="iOS Build Costs"
                     >
                         <StatSlider
-                          subTitle="Development Costs"
+                          subTitle="Initial build cost"
                           title={Utils.money(meta?.ios_build_cost)}
                           onChange={v => setMeta('ios_build_cost', parseInt(v))}
                           value={meta?.ios_build_cost}
@@ -123,7 +123,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                         />
                         <StatSlider
                           className="mt-4"
-                          subTitle="Monthly Maintenance Costs"
+                          subTitle="Monthly development cost"
                           title={Utils.money(meta?.ios_monthly_cost)}
                           onChange={v => setMeta('ios_monthly_cost', parseInt(v))}
                           value={meta?.ios_monthly_cost}
