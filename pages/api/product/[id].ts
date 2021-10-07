@@ -4,7 +4,7 @@ import _data from '../../../common/utils/_data';
 import { App, AppsFigures, AppsFiguresResponse, ExactProduct } from '../../../common/types';
 import { Prospect } from '../../../common/useData';
 import admin from '../../../project/admin';
-
+import Format from '../../../common/utils/base/_format'
 export default async (req: NextApiRequest, res: NextApiResponse) => {
     _data.get(`https://explorer.appfigures.com/data/profiles/product/${req.query.id}`)
         .then((data:AppsFigures) => {
@@ -73,11 +73,12 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
                     ],
                 };
                 const db = admin.firestore();
-                const ref = db.collection('clients').doc(response.name);
+                const name = Format.removeAccents(response.name);
+                const ref = db.collection('clients').doc(name);
 
                 ref.set(prospect)
                     .then(() => {
-                        res.redirect(`/${response.name}/edit`);
+                        res.redirect(`/${name}/edit`);
                     })
                     .catch((e) => {
                         res.status(200).json({ res: 'error' });
