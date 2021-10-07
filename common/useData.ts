@@ -134,7 +134,7 @@ export default function useData(title, onErr):UseDataType {
     const totalMonthlyCost = (meta?.android_monthly_cost+meta?.ios_monthly_cost);
     const totalCost = meta?.ios_build_cost + meta?.android_build_cost + totalBuildCostAndroid + totalBuildCostIOS;
     const totalDevelopmentCost = hours*rate;
-    const totalNewMonthlyCost = (meta?.android_monthly_cost+meta?.ios_monthly_cost)*.6
+    const totalNewMonthlyCost = (meta?.android_monthly_cost+meta?.ios_monthly_cost)*.5
     const totalExistingRoadmapCost = (totalMonthlyCost *meta?.years_roadmap);
     const totalNewRoadmapCost = (totalDevelopmentCost + (totalNewMonthlyCost * meta?.years_roadmap));
     const totalSavings = totalExistingRoadmapCost - totalNewRoadmapCost;
