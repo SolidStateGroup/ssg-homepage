@@ -149,7 +149,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     label: 'React Native',
                     data: arr.map((_, v) => {
                         if (!v) return 0;
-                        return totalDevelopmentCost + (totalNewMonthlyCost * v - 1);
+                        return totalDevelopmentCost + (totalNewMonthlyCost * ((v - 1) * 12));
                     }),
                     borderColor: '#1AC0C6',
                     backgroundColor: 'white',
@@ -161,7 +161,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     label: 'Native Apps',
                     data: arr.map((_, v) => {
                         if (!v) return 0;
-                        return totalMonthlyCost * v;
+                        return totalMonthlyCost * (v * 12);
                     }),
                     borderColor: '#D02D55',
                     pointRadius: 0,
