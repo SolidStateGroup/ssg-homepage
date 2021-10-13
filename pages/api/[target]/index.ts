@@ -13,6 +13,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         android_rating: 3.5,
         company: 'Fitness International, LLC',
         ios_build_cost: 70000,
+        year1AddedMonths:4,
         ios_monthly_cost: 15000,
         ios_number_of_ratings: 6000,
         ios_rating: 4,

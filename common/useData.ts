@@ -40,6 +40,7 @@ export interface Prospect {
     logo: string;
     title: string,
     company: string,
+    year1AddedMonths: number,
     ios_rating: number;
     years_roadmap: number;
     android_number_of_ratings: number;
@@ -61,6 +62,7 @@ type UseDataType = {
   setMeta:(key:ProspectKey, v:any)=>void,
   meta: Prospect|undefined,
   rate: number,
+    year1MaintenanceCost: number
   totalDevelopmentHours: number
   totalDevelopmentCost: number
     monthsSinceRelease:number,
@@ -138,10 +140,12 @@ export default function useData(title, onErr):UseDataType {
     const totalExistingRoadmapCost = (totalMonthlyCost * (meta?.years_roadmap*12));
     const totalNewRoadmapCost = (totalDevelopmentCost + (totalNewMonthlyCost * (meta?.years_roadmap*12)));
     const totalSavings = totalExistingRoadmapCost - totalNewRoadmapCost;
+    const year1MaintenanceCost = (((typeof meta?.year1AddedMonths === "number"? meta?.year1AddedMonths : 4 )/ 12) / 100) * totalNewMonthlyCost
     return {
         data: data[title],
         meta,
         totalDevelopmentHours: hours,
+        year1MaintenanceCost,
         rate,
         totalDevelopmentCost,
         monthsSinceRelease,

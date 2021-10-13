@@ -4,7 +4,8 @@ import _data from '../../../common/utils/_data';
 import { App, AppsFigures, AppsFiguresResponse, ExactProduct } from '../../../common/types';
 import { Prospect } from '../../../common/useData';
 import admin from '../../../project/admin';
-import Format from '../../../common/utils/base/_format'
+import Format from '../../../common/utils/base/_format';
+
 export default async (req: NextApiRequest, res: NextApiResponse) => {
     _data.get(`https://explorer.appfigures.com/data/profiles/product/${req.query.id}`)
         .then((data:AppsFigures) => {
@@ -35,6 +36,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
                 const prospect:Prospect = {
                     android_build_cost: 70000,
                     android_monthly_cost: 15000,
+                    year1AddedMonths: 4,
                     android_number_of_ratings: response.android?.rating?.count || 0,
                     android_rating: androidRating,
                     company: response.developer,

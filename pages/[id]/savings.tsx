@@ -135,7 +135,7 @@ const chartRef = React.createRef();
 
 const TheComponent: FunctionComponent<ComponentType> = ({}) => {
     const { nav } = useStep();
-    const { meta, totalDevelopmentCost, totalNewMonthlyCost, totalMonthlyCost, totalSavings } = useRouterData();
+    const { meta, totalDevelopmentCost, totalNewMonthlyCost, totalMonthlyCost, totalSavings, year1MaintenanceCost } = useRouterData();
     useEffect(() => {
         if (!meta) return;
         const arr = new Array(meta?.years_roadmap + 1).fill(0);
@@ -149,7 +149,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     label: 'React Native',
                     data: arr.map((_, v) => {
                         if (!v) return 0;
-                        return totalDevelopmentCost + (totalNewMonthlyCost * ((v - 1) * 12));
+                        return (totalDevelopmentCost + year1MaintenanceCost) + (totalNewMonthlyCost * ((v - 1) * 12));
                     }),
                     borderColor: '#1AC0C6',
                     backgroundColor: 'white',
