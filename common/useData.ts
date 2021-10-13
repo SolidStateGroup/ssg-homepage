@@ -138,9 +138,9 @@ export default function useData(title, onErr):UseDataType {
     const totalDevelopmentCost = hours*rate;
     const totalNewMonthlyCost = (meta?.android_monthly_cost+meta?.ios_monthly_cost)*.5
     const totalExistingRoadmapCost = (totalMonthlyCost * (meta?.years_roadmap*12));
-    const totalNewRoadmapCost = (totalDevelopmentCost + (totalNewMonthlyCost * (meta?.years_roadmap*12)));
-    const totalSavings = totalExistingRoadmapCost - totalNewRoadmapCost;
     const year1MaintenanceCost = (((typeof meta?.year1AddedMonths === "number"? meta?.year1AddedMonths : 4 )/ 12) / 100) * totalNewMonthlyCost
+    const totalNewRoadmapCost = (totalDevelopmentCost + year1MaintenanceCost + (totalNewMonthlyCost * (meta?.years_roadmap*12)));
+    const totalSavings = totalExistingRoadmapCost - totalNewRoadmapCost;
     return {
         data: data[title],
         meta,
