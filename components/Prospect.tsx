@@ -81,8 +81,11 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     </div>
                 </div>
             </div>
-
-            <div className="row mt-3 pb-5">
+            <div className="mt-3 pb-2">
+              <h5 className="text-light">Estimated cost of your Apps</h5>
+              <p className="text-light">We've estimated the initial build and ongoing maintenance cost of your existing apps.  If this is incorrect, please adjust each value to reflect the real costs.</p>
+            </div>
+            <div className="row mt-3">
                 <div className="col-md-5 mb-4 pl-0">
                     <CardBuildCosts
                       className="card-build-costs__google" cardTitle="Android Build Costs"
@@ -134,8 +137,9 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     </CardBuildCosts>
                 </div>
             </div>
+          <p className="text-primary text-small pb-5">*This information is used exclusively to discuss the development of your digital properties with <strong>YOU</strong> and will not be distributed or shared with anyone outside of Solid State Group</p>
 
-            <div className="col-md-4 offset-md-4 text-center mt-5 pb-5">
+          <div className="col-md-4 offset-md-4 text-center mt-5 pb-5">
                 <p className="text-light mb-0">Based on the values above, since release your app has cost:</p>
                 <h1 className="hero__title text-light">{data && Utils.money(totalCost)}</h1>
                 <p className="text-light mb-0 text-small"><span className="text-primary"> *</span> Information based on our own estimates and research</p>
