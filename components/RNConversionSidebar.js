@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useState } from 'react';
 import cn from 'classnames';
 import propTypes from 'prop-types';
 import Link from 'next/link';
@@ -16,23 +16,25 @@ const TheComponent = (props) => {
     const { className } = props;
     const router = useRouter();
     const { data } = useRouterData();
-
+    const [isActive, setIsActive] = useState(true);
     return (
 
         <React.Fragment>
             <div className="rncc__navbar">
                 <nav >
-                    <a href="#" className="rncc__navbar-icon">
+                    <a onClick={() => setIsActive(!isActive)} href="#" className="rncc__navbar-icon">
                         {/* if menu open */}
-                        <img alt="Close Menu" src={require('../static/images/svg-icons/close-icon.svg')} className="d-lg-none" />
-                        {/* if closed */}
-                        <img alt="Menu" src={require('../static/images/svg-icons/menu-icon.svg')} className="d-lg-none" />
+                        {isActive ? (
+                            <img alt="Close Menu" src={require('../static/images/svg-icons/close-icon.svg')} className="d-lg-none" />
+                        ) : (
+                            <img alt="Menu" src={require('../static/images/svg-icons/menu-icon.svg')} className="d-lg-none" />
+                        )}
                     </a>
                 </nav>
             </div>
 
-            {/*Add hidden class after rncc__sidebar when menu toggled*/}
-            <nav id="sidebarMenu" className={cn(className, ' rncc__sidebar col-md-0 col-lg-3 sidebar collapse')}>
+            {/* Add hidden class after rncc__sidebar when menu toggled */}
+            <nav id="sidebarMenu" className={cn(className, 'rncc__sidebar col-md-0 col-lg-3 sidebar collapse', {hidden:!isActive})}>
                 <div className="rncc__sidebar-meta row pl-3 mt-5 pb-5">
                     <Link prefetch={false} href="./">
                         <div style={{ height: 109, width: 109 }} className="pl-0 cursor-pointer">
