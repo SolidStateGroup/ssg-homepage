@@ -31,7 +31,7 @@ const RNConversionNavItem = global.RNConversionNavItem = class extends React.Pur
                             ButtonHexagonActive={isActive}
                             icon={`${this.props.icon} ${this.props.isActive ? ' text-primary' : ''}`}
                           />
-                          <div className="col">
+                          <div className="col rncc__button-title">
                               <h6 className="text-light mb-0">{this.props.number}</h6>
                               <h6 className="text-navy-secondary mb-0">{this.props.title}</h6>
                           </div>

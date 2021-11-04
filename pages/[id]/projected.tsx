@@ -29,7 +29,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                 <div className="row">
                     <RNConversionSidebar/>
 
-                    <main role="main" className="col-md-7 ml-sm-auto col-lg-9 px-md-4 fade-in">
+                    <main role="main" className="col-md-12 ml-sm-auto col-lg-9 px-md-4 fade-in rncc__main">
                         <h1 className="text-light text-center pad-top-xl">Projected costs</h1>
                         <h2 className="hero__title--large hero__title--red text-center">{meta ? Utils.money(projectedCosts) : '...'}</h2>
                         <p className="text-light text-center">Total cost of ownership over the next <strong>{meta?.years_roadmap}</strong> year{meta?.years_roadmap !== 1 && 's'}</p>
