@@ -25,7 +25,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     <RNConversionSidebar/>
 
                     <main role="main" className="col-md-12 ml-sm-auto col-lg-9 px-md-4 fade-in rncc__main">
-                        <h1 className="text-light text-center pad-top-large mb-4">React Native <strong className="text-primary">Specialists</strong></h1>
+                        <h1 className="text-light text-center pad-top-large mb-4 mt-md-0 mt-5">React Native <strong className="text-primary">Specialists</strong></h1>
                         <div className="text-light text-center">
                             <img style={{width:"100%"}} src="/static/images/rn.png"/>
                         </div>

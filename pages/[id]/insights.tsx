@@ -28,7 +28,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     <RNConversionSidebar/>
 
                     <main role="main" className="col-md-12 ml-sm-auto col-lg-9 px-md-4 fade-in rncc__main">
-                        <h1 className="text-light text-center pad-top-large pad-bottom-md">Insights</h1>
+                        <h1 className="text-light text-center pad-top-large pad-bottom-md mt-md-0 mt-5">Insights</h1>
                         <div className="fade-in-step col-md-5 offset-md-3 insights">
                             {data?.insights?.map((insight, i) => (
                                 <div key={i} className="mb-5">

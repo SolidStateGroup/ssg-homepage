@@ -185,7 +185,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     <RNConversionSidebar/>
 
                     <main role="main" className="col-md-12 ml-sm-auto col-lg-9 px-md-4 fade-in rncc__main">
-                        <h1 className="text-light text-center pad-top-large">Savings</h1>
+                        <h1 className="text-light text-center pad-top-large mt-md-0 mt-5">Savings</h1>
                         <h2 className="hero__title--large hero__title--primary text-center">{meta ? Utils.money(totalSavings) : '...'}</h2>
                         <div className="text-light text-center pad-bottom-large">Over the next {meta?.years_roadmap} years.</div>
 
