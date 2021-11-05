@@ -40,8 +40,8 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                 { data
         && (
         <div className="fade-in">
-            <div className="row pl-3 mt-5 pb-5">
-                <div style={{ height: 237 }} className="col-md-3 pl-0">
+            <div className="row pl-3 pb-5 mt-3">
+                <div className="col-md-2 pl-0 pr-0">
                     {data && (
                     <img
                       className="rncc__app-icon"
@@ -50,7 +50,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     )}
 
                 </div>
-                <div className="col-md-9 pl-0 mb-2">
+                <div className="col-md-10 pl-0 pl-md-4 mb-2">
                     <h2 className="text-light">{data?.title}</h2>
                     <p className="text-light">{data?.company}</p>
                     <div className="row">
@@ -73,7 +73,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                             />
 
                         </div>
-                        <div className="col-md-5">
+                        <div className="col-md-5 mt-4 mt-md-0">
                             <p className="text-light mb-0"><strong>First released:</strong> {data && moment(data?.release_date, 'dd/MM/YYYY').format('Do MMMM YYYY')}</p>
                             <p className="text-light mb-0"><strong>Latest release:</strong> {data && moment(data?.latest_release_date, 'dd/MM/YYYY').format('Do MMMM YYYY')}</p>
                             <p className="text-light"><strong>Average releases per year:</strong> 4.2</p>
@@ -81,7 +81,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     </div>
                 </div>
             </div>
-            <div className="mt-3 pb-2">
+            <div className="pb-2">
               <h5 className="text-light">Estimated cost of your Apps</h5>
               <p className="text-light">We've estimated the initial build and ongoing maintenance cost of your existing apps.  If this is incorrect, please adjust each value to reflect the real costs.</p>
             </div>

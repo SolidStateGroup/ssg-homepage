@@ -41,6 +41,9 @@
         width: 232px;
         height: 232px;
         border-radius: 20px;
+        position: relative;
+        left: -1.5em;
+        top: -1em;
         &--small {
             width: 109px;
             height: 109px;
@@ -146,6 +149,10 @@
         //&__main {
         //    margin-left: 2em;
         //}
+        &__app-icon {
+            width: 180px;
+            height: 180px;
+        }
         &__app-icon--small {
             width: 82px;
             height: 82px;
