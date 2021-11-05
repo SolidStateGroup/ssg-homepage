@@ -45,7 +45,7 @@ export const useStep = () => {
     return {
         step,
         nav: (
-            <nav className="rncc__bottom-nav navbar flex-md-nowrap pr-5 pb-4 pl-0">
+            <nav className="rncc__bottom-nav flex-md-nowrap justify-content-between pr-4 mb-3">
                 {typeof previous === 'string' ? (
                     <Link href={`/${r.query.id}/${previous}`}>
                         <ButtonTextBack className="mr-0 text-primary" />

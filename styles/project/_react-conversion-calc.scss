@@ -109,7 +109,11 @@
     &__bottom-nav {
         position: absolute;
         bottom: 0;
-        width: 100%;
+        width: 98%;
+        display: flex;
+        .btn--primary {
+            min-width: 150px;
+        }
     }
 }
 

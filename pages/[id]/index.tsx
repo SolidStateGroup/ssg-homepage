@@ -34,7 +34,6 @@ const TheComponent: FunctionComponent<ComponentType> = () => {
     return (
         <Page title={Constants.titles.reactNativeConversionCalculator} canonical="">
             <Prospect/>
-
         </Page>
     );
 };
