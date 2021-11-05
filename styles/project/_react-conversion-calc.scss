@@ -58,6 +58,7 @@
             }
         }
         &-nav {
+            height: 450px;
             background-color: $brandNavy;
             border-radius: 12px;
             overflow-y: scroll;
@@ -121,41 +122,45 @@
     .rncc {
         &__sidebar {
             position: fixed;
-            width: 106px;
+            width: 330px;
             z-index: 300;
-            &-brand-container {
-                display: none;
-            }
+            box-shadow: 0 6px 20px 0 rgba(21,20,19,0.30);
+            //&-brand-container {
+            //    display: none;
+            //}
             &-nav {
-                overflow: inherit;
-                .nav-item {
-                    position: relative;
-                    left: -17px;
-                    .btn--hexagon {
-                        width: 80px;
-                    }
-                }
-                .nav-link.active {
-                    background-color: transparent;
-                }
+                height: 450px;
+                //overflow: inherit;
+                //.nav-item {
+                //    position: relative;
+                //    left: -17px;
+                //    .btn--hexagon {
+                //        width: 80px;
+                //    }
+                //}
+                //.nav-link.active {
+                //    background-color: transparent;
+                //}
             }
         }
-        &__main {
-            margin-left: 2em;
-        }
+        //&__main {
+        //    margin-left: 2em;
+        //}
         &__app-icon--small {
-            width: 75px;
-            height: 75px;
+            width: 82px;
+            height: 82px;
         }
         &__rating-info {
-            display: none;
+            h2 {
+                font-size: 24px;
+            }
         }
-        &__react-logo {
-            display: none;
-        }
-        &__button-title {
-            display: none;
-        }
+        //&__react-logo {
+        //    display: none;
+        //}
+        //&__button-title {
+        //    display: none;
+        //}
 
     }
 }

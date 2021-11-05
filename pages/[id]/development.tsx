@@ -25,7 +25,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                 <div className="row">
                     <RNConversionSidebar/>
 
-                    <main role="main" className="col-md-7 ml-sm-auto col-lg-9 px-md-4 fade-in">
+                    <main role="main" className="col-md-12 ml-sm-auto col-lg-9 px-md-4 fade-in rncc__main">
                         <h1 className="text-light text-center pad-top-large">Development Costs</h1>
                         <h2 className="hero__title--large hero__title--primary text-center">{Utils.money(totalDevelopmentCost)}</h2>
                         <p className="text-light text-center">To port to React Native</p>
