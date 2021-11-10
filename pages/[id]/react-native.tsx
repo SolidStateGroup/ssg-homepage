@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Page from '../../components/Page'; // we need this to make JSX compile
@@ -18,6 +18,14 @@ type ComponentType = {}
 
 const TheComponent: FunctionComponent<ComponentType> = ({}) => {
     const { nav } = useStep();
+
+    useEffect(()=>{
+        grecaptcha.render(document.getElementById('recaptcha'), {
+            sitekey: '6Lci2f8UAAAAAHTSYRQC-2NVL9iX1Ibt9hfmeo3-',
+        });
+    },[])
+
+
     return (
         <Page title={Constants.titles.reactNativeConversionCalculator} canonical="">
 
