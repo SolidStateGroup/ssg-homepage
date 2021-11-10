@@ -76,6 +76,9 @@
     &__ios {
         background: top left no-repeat url("/static/images/svg-icons/app-store-bg.svg") $brand-raisin-black;;
     }
+    &__react {
+        background: top left no-repeat url("/static/images/svg-icons/react-bg.svg") $brand-raisin-black;;
+    }
 }
 
 @include media-breakpoint-up(lg) {

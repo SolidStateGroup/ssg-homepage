@@ -26,9 +26,11 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     <RNConversionSidebar/>
 
                     <main role="main" className="col-md-12 ml-sm-auto col-lg-9 px-md-4 fade-in rncc__main">
-                        <h1 className="text-light text-center pad-top-large mt-md-0 mt-5">Development Costs</h1>
-                        <h2 className="hero__title--large hero__title--primary text-center">{Utils.money(totalDevelopmentCost)}</h2>
-                        <p className="text-light text-center">To port to React Native</p>
+                        <div className="offset-md-3 col-md-6">
+                            <h1 className="text-light text-center pad-top-large mt-md-0 mt-5 mb-0">Redevelopment cost estimate</h1>
+                            <h2 className="hero__title--large hero__title--primary text-center">{Utils.money(totalDevelopmentCost)}</h2>
+                            <p className="text-light text-center mt-5">The cost estimates below show high level figures to rewrite each feature of your apps in React Native. Use the toggles to customise the app to only the features you would need.</p>
+                        </div>
                         <div className="container mt-5 mb-5">
                             <CostPanel title="React Native Rebuild" headerRight={<div className="tag tag--grey">{totalDevelopmentHours}h</div>}>
                                 {meta?.rebuild?.map((v, i) => (

@@ -23,7 +23,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                             <h1 className="text-light text-center pad-top-xl">Projected costs for your native apps</h1>
                             <p className="text-light text-center mb-4">Monthly costs over multiple codebases can really add up. They include:</p>
 
-                            <CardBuildCosts >
+                            <CardBuildCosts>
                                 <ul className="text-light fa-ul">
                                     <li><span className="fa-li"><i className="fas fa-times-hexagon text-red"></i></span>Cost of developers time over 2 separate teams
                                     </li>

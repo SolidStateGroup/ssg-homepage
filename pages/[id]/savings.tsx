@@ -33,6 +33,7 @@ import Page from '../../components/Page'; // we need this to make JSX compile
 import RNConversionSidebar from '../../components/RNConversionSidebar';
 import { useStep } from '../../common/converstion-steps';
 import { useRouterData } from '../../common/useData';
+import CardBuildCosts from '../../components/CardBuildCosts';
 
 Chart.register(
     ArcElement,
@@ -184,10 +185,19 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                 <div className="row">
                     <RNConversionSidebar/>
 
-                    <main role="main" className="col-md-12 ml-sm-auto col-lg-9 px-md-4 fade-in rncc__main">
-                        <h1 className="text-light text-center pad-top-large mt-md-0 mt-5">Savings</h1>
-                        <h2 className="hero__title--large hero__title--primary text-center">{meta ? Utils.money(totalSavings) : '...'}</h2>
-                        <div className="text-light text-center pad-bottom-large">Over the next {meta?.years_roadmap} years.</div>
+                    <main role="main" className="col-md-12 ml-sm-auto col-lg-9 px-md-4 fade-in rncc__main mt-md-0 mt-5">
+
+                        <CardBuildCosts className="card-build-costs__react mt-5 mb-5">
+                        <div className="row">
+                            <div className="col-md-6">
+                                <h1 className="text-light mt-md-0">Cost savings over the next 10 years</h1>
+                                <h2 className="hero__title--large hero__title--primary">{meta ? Utils.money(totalSavings) : '...'}</h2>
+                            </div>
+                            <div className="col-md-6">
+                                <p className="text-light">By rewriting your application into React Native you could save up to 50% of the development time not only for monthly maintenance but also for any new major features you intend on developing in the future. These costs are just for this one application, imagine the savings over all apps you own or intend to build in the future.</p>
+                            </div>
+                        </div>
+                        </CardBuildCosts>
 
                         <canvas id="myChart" width="600" height="200" />
 
