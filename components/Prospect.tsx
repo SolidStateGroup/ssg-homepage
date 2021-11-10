@@ -34,14 +34,14 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
             <Header className="navbar-container--transparent"/>
             <div className="container">
                 <h1 className="text-light mt-5 mb-0">
-          Your App
+                  Your Native Apps
                 </h1>
         (
                 { data
         && (
         <div className="fade-in">
-            <div className="row pl-3 pb-5 mt-3">
-                <div className="col-md-2 pl-0 pr-0">
+            <div className="row pb-5">
+                <div className="col-md-2 pl-4 pr-md-5">
                     {data && (
                     <img
                       className="rncc__app-icon"
@@ -50,11 +50,11 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     )}
 
                 </div>
-                <div className="col-md-10 pl-0 pl-md-4 mb-2">
-                    <h2 className="text-light">{data?.title}</h2>
+                <div className="col-md-10 mb-2 pl-md-5">
+                    <h2 className="text-light mb-0">{data?.title}</h2>
                     <p className="text-light">{data?.company}</p>
                     <div className="row">
-                        <div className="col-md-7">
+                        <div className="col-md-6">
 
                             <StarRatingListItem
                               starRating={data?.ios_rating}
@@ -73,17 +73,20 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                             />
 
                         </div>
-                        <div className="col-md-5 mt-4 mt-md-0">
-                            <p className="text-light mb-0"><strong>First released:</strong> {data && moment(data?.release_date, 'dd/MM/YYYY').format('Do MMMM YYYY')}</p>
-                            <p className="text-light mb-0"><strong>Latest release:</strong> {data && moment(data?.latest_release_date, 'dd/MM/YYYY').format('Do MMMM YYYY')}</p>
-                            <p className="text-light"><strong>Average releases per year:</strong> 4.2</p>
+                        <div className="col-md-6 mt-4 mt-md-0">
+                            <p className="text-light mb-0 text-large"><strong>First released:</strong> {data && moment(data?.release_date, 'dd/MM/YYYY').format('Do MMMM YYYY')}</p>
+                            <p className="text-light mb-0 text-large"><strong>Latest release:</strong> {data && moment(data?.latest_release_date, 'dd/MM/YYYY').format('Do MMMM YYYY')}</p>
+                            <p className="text-light text-large"><strong>Average releases per year:</strong> 4.2</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="pb-2">
-              <h5 className="text-light">Estimated cost of your Apps</h5>
-              <p className="text-light">We've estimated the initial build and ongoing maintenance cost of your existing apps.  If this is incorrect, please adjust each value to reflect the real costs.</p>
+            <div className="pb-5">
+                <p className="text-light">Your app is actually two apps. One made for iPhones and ipads (iOS) and one made for Android phones and tablets. Creating and maintaining multiple apps is expensive, or at least it used to be until recently. Let us show you how you could save thousands by switching technologies to React Native and maintaining only one codebase.</p>
+            </div>
+            <div className="pb-4">
+                <h5 className="text-light">Estimated cost of your Apps</h5>
+                <p className="text-light">We've estimated the initial build and ongoing maintenance cost of your existing apps.  If this is incorrect, please adjust each value to reflect the real costs.</p>
             </div>
             <div className="row mt-3">
                 <div className="col-md-5 mb-4 pl-0">
@@ -137,15 +140,15 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     </CardBuildCosts>
                 </div>
             </div>
-          <p className="text-primary text-small pb-5">*This information is used exclusively to discuss the development of your digital properties with <strong>YOU</strong> and will not be distributed or shared with anyone outside of Solid State Group</p>
 
-          <div className="col-md-4 offset-md-4 text-center mt-5 pb-5">
-                <p className="text-light mb-0">Based on the values above, since release your app has cost:</p>
-                <h1 className="hero__title text-light">{data && Utils.money(totalCost)}</h1>
-                <p className="text-light mb-0 text-small"><span className="text-primary"> *</span> Information based on our own estimates and research</p>
+            <div className="col-md-8 offset-md-2 text-center mt-5 pb-5">
+                {/*<p className="text-light mb-0">Based on the values above, since release your native apps have cost:</p>*/}
+                <h1 className="text-light text-center">Based on the values above, since release your native apps have cost:</h1>
+                <h2 className="hero__title--large hero__title--red text-center">{data && Utils.money(totalCost)}</h2>
                 <Link href={`${id}/projected`}>
-                    <ButtonPrimary className="mt-4">Next</ButtonPrimary>
+                    <ButtonPrimary className="mt-4 btn-lg">Next</ButtonPrimary>
                 </Link>
+                <p className="text-light mt-3 text-small">Estimates based on data from Google Play and Apple Apps store. Data is stored securely and is not shared with any external parties.</p>
             </div>
 
 

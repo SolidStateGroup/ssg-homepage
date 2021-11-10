@@ -48,18 +48,18 @@ export const useStep = () => {
             <nav className="rncc__bottom-nav flex-md-nowrap justify-content-between pr-4 mb-3">
                 {typeof previous === 'string' ? (
                     <Link href={`/${r.query.id}/${previous}`}>
-                        <ButtonTextBack className="mr-0 text-primary" />
+                        <ButtonTextBack className="mr-0 text-primary btn-lg" />
                     </Link>
                 ) : <div/>}
                 {typeof next === 'string' ? (
                     <Link href={`/${r.query.id}/${next}`}>
-                        <ButtonPrimary className="px-3">
+                        <ButtonPrimary className="px-3 btn-lg">
                           Next
                         </ButtonPrimary>
                     </Link>
                 ) : (
                     <Link href="/contact-form">
-                        <ButtonPrimary className="px-3">
+                        <ButtonPrimary className="px-3 btn-lg">
                           Get in touch
                         </ButtonPrimary>
                     </Link>

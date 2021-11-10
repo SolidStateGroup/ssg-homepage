@@ -125,6 +125,15 @@
     }
 }
 
+@include media-breakpoint-down(lg) {
+    .rncc {
+        &__app-icon {
+            width: 180px;
+            height: 180px;
+        }
+    }
+}
+
 @include media-breakpoint-down(md) {
     .rncc {
         &__sidebar {
@@ -154,8 +163,8 @@
         //    margin-left: 2em;
         //}
         &__app-icon {
-            width: 180px;
-            height: 180px;
+            width: 160px;
+            height: 160px;
         }
         &__app-icon--small {
             width: 82px;

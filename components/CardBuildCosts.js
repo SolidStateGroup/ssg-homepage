@@ -18,7 +18,7 @@ const CardBuildCosts = global.CardBuildCosts = class extends React.PureComponent
         return (
 
             <div className={cn(this.props.className, ' card-build-costs pl-5 pr-5 ml-0 mr-0 pb-5')}>
-                <p className="text-light text-center pt-4 pb-3">{this.props.cardTitle || 'Card Title'}</p>
+                <p className="text-light text-center pt-4 pb-3">{this.props.cardTitle || null}</p>
                 {this.props.children}
             </div>
 

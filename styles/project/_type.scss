@@ -40,6 +40,10 @@ h2 > span {
     font-size:0.75rem!important;
 }
 
+.text-large {
+    font-size: 21px;
+}
+
 .title {
     &--regular {
         font-family: Ilisarniq-Regular, sans-serif;
@@ -98,6 +102,10 @@ strong {
 
 .text-primary {
     color: $brand-primary;
+}
+
+.text-red {
+    color: $brand-purely-red;
 }
 
 .text-navy-secondary {
