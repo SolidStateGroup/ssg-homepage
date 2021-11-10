@@ -201,9 +201,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
 
                         <canvas id="myChart" width="600" height="200" />
 
-
                         {nav}
-
 
                     </main>
                 </div>

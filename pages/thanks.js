@@ -37,11 +37,6 @@ const ContactFormThanksPage = class extends React.Component {
                                 <div
                                     className="flex-1 hero__blob-container">
                                     <div className="contact-sidebar">
-                                        <p className="text-light">Rather have a chat?</p>
-
-                                        <p className="text-light">Call <a className="bold">Matthew</a> on
-                                            <a href="tel:+44(0)2076137222" className="bold"> +44 (0)207 613 7222</a></p>
-
                                         <p className="text-light">Email our new business team
                                             <a className="bold" href="mailto:matthew@solidstategroup.com">
                                                 &nbsp;matthew@solidstategroup.com</a></p>
