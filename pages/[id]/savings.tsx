@@ -199,7 +199,9 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                         </div>
                         </CardBuildCosts>
 
-                        <canvas id="myChart" width="600" height="200" />
+                        <div className="pb-5 mb-5">
+                            <canvas id="myChart" width="600" height="200" />
+                        </div>
 
                         {nav}
 
