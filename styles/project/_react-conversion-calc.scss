@@ -115,6 +115,10 @@
             min-width: 150px;
         }
     }
+    &__main-container {
+        height: 100vh;
+        justify-content: space-between;
+    }
 }
 
 @include media-breakpoint-up(md) {

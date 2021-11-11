@@ -28,6 +28,41 @@
       checked: true
     },
     {
+      hours: 50,
+      name: 'Find timetable or service',
+      checked: true
+    },
+    {
+      hours: 100,
+      name: 'Buy tickets',
+      checked: true
+    },
+    {
+      checked: true,
+      name: 'Bus times',
+      hours: 150
+    },
+    {
+      hours: 150,
+      name: 'feature 3',
+      checked: true
+    },
+    {
+      hours: 60,
+      name: 'Log in & Sign up',
+      checked: true
+    },
+    {
+      hours: 40,
+      name: 'Disruption updates & Alerts',
+      checked: true
+    },
+    {
+      hours: 50,
+      name: 'Find timetable or service',
+      checked: true
+    },
+    {
       hours: 100,
       name: 'Buy tickets',
       checked: true

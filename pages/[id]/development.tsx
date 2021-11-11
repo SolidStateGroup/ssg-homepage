@@ -32,26 +32,28 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                             <p className="text-light text-center mt-5">The cost estimates below show high level figures to rewrite each feature of your apps in React Native. Use the toggles to customise the app to only the features you would need.</p>
                         </div>
                         <div className="container mt-5 mb-5">
-                            <CostPanel title="React Native Rebuild" headerRight={<div className="tag tag--grey">{totalDevelopmentHours} Hours</div>}>
-                                {meta?.rebuild?.map((v, i) => (
-                                    <Row className={i !== meta.rebuild.length - 1 && 'mb-5'}>
-                                        <Flex className="text-light">
-                                            {v.name}
-                                        </Flex>
-                                        <Row>
-                                            <div className="tag tag--transparent mr-5">
-                                                {v.hours} Hour{v.hours !== 0 ? 's' : ''}
-                                            </div>
-                                            <Switch
-                                              checked={v.checked} onChange={(v) => {
-                                                  meta.rebuild[i].checked = v;
-                                                  setMeta('rebuild', meta.rebuild);
-                                              }}
-                                            />
+                            <div className="pb-5">
+                                <CostPanel title="React Native Rebuild" headerRight={<div className="tag tag--grey">{totalDevelopmentHours} Hours</div>}>
+                                    {meta?.rebuild?.map((v, i) => (
+                                        <Row className={i !== meta.rebuild.length - 1 && 'mb-5'}>
+                                            <Flex className="text-light">
+                                                {v.name}
+                                            </Flex>
+                                            <Row>
+                                                <div className="tag tag--transparent mr-5">
+                                                    {v.hours} Hour{v.hours !== 0 ? 's' : ''}
+                                                </div>
+                                                <Switch
+                                                  checked={v.checked} onChange={(v) => {
+                                                      meta.rebuild[i].checked = v;
+                                                      setMeta('rebuild', meta.rebuild);
+                                                  }}
+                                                />
+                                            </Row>
                                         </Row>
-                                    </Row>
-                                ))}
-                            </CostPanel>
+                                    ))}
+                                </CostPanel>
+                            </div>
                         </div>
                         {nav}
                     </main>
