@@ -38,7 +38,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
 
                         <div className="row mt-5">
                             <div className="col-md-8">
-                                <CardBuildCosts>
+                                <CardBuildCosts className="mb-5">
                                     <form action="https://post.formlyapp.com/ssg?redirect=/thanks" method="POST">
                                         <p className="text-light">Want to know more? Fill out the form and we'll get back to you.</p>
                                         <Input
