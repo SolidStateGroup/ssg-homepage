@@ -38,16 +38,15 @@
         }
     }
     &__app-icon {
-        width: 232px;
-        height: 232px;
+        width: 220px;
+        height: 220px;
         border-radius: 20px;
         position: relative;
-        left: -1.5em;
-        top: -1em;
+        //left: -1.5em;
+        //top: -1em;
         &--small {
             width: 109px;
             height: 109px;
-            border-radius: 20px;
         }
     }
     &__sidebar {
