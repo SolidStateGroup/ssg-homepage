@@ -32,7 +32,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                             <p className="text-light text-center mt-5">The cost estimates below show high level figures to rewrite each feature of your apps in React Native. Use the toggles to customise the app to only the features you would need.</p>
                         </div>
                         <div className="container mt-5 mb-5">
-                            <CostPanel title="React Native Rebuild" headerRight={<div className="tag tag--grey">{totalDevelopmentHours}h</div>}>
+                            <CostPanel title="React Native Rebuild" headerRight={<div className="tag tag--grey">{totalDevelopmentHours} Hours</div>}>
                                 {meta?.rebuild?.map((v, i) => (
                                     <Row className={i !== meta.rebuild.length - 1 && 'mb-5'}>
                                         <Flex className="text-light">
