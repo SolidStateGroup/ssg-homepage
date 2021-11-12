@@ -190,7 +190,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                         <CardBuildCosts className="card-build-costs__react mt-5 mb-5">
                         <div className="row">
                             <div className="col-md-6">
-                                <h1 className="text-light mt-md-0">Cost savings over the next ${meta?.years_roadmap} years</h1>
+                                <h1 className="text-light mt-md-0">Cost savings over the next {meta?.years_roadmap} years</h1>
                                 <h2 className="hero__title--large hero__title--primary">{meta ? Utils.money(totalSavings) : '...'}</h2>
                             </div>
                             <div className="col-md-6">

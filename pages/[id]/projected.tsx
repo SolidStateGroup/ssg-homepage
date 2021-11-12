@@ -39,7 +39,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                                     </ul>
                                 </CardBuildCosts>
 
-                                <p className="text-light text-center mt-5 mb-0">Based only on the monthly maintenance costs for both iOS and Android, your projected total cost of the next ${meta?.years_roadmap} years is:</p>
+                                <p className="text-light text-center mt-5 mb-0">Based only on the monthly maintenance costs for both iOS and Android, your projected total cost of the next {meta?.years_roadmap} years is:</p>
                                 <h2 className="hero__title--large hero__title--red text-center">{meta ? Utils.money(projectedCosts) : '...'}</h2>
                             </div>
 
