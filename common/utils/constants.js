@@ -39,6 +39,7 @@ const Constants = global.Constants = {
         zopa: 'Zopa | Solid State Group',
         ladbrokes: 'Ladbrokes Coral | Solid State Group',
         heroWellbeing: 'Hero Wellbeing | Solid State Group',
+        siteAssist: 'Site Assist | Solid State Group',
         cap10: 'Cap10 | Solid State Group',
         reactNativeConversionCalculator: 'React Native Conversion Calculator | Solid State Group', // Used by default on all pages
     },
@@ -53,6 +54,7 @@ const Constants = global.Constants = {
         '/contact': 'Have any questions about the services we offer? Get in contact and send us a brief today. Send us your web development needs and find out how we can help you!',
         '/contact-form': 'Have any questions about our services? Get in contact and fill out a contact form today with your web development needs and find out how we can help you!',
         '/privacy-policy': 'Read our Privacy Policy, giving you information on how we use personal data and other private information that we collect from you as a user of this site.',
+        '/projects/site-assist': 'View our work with startup Site Assist, a full service project including branding and the design and build of a responsive web app and mobile apps for iOS and Android',
         '/projects/unilever': 'Take a look at the case study from our work with global superbrand Unilever, in which we assisted in making ecommerce more efficient and sustainable.',
         '/projects/hertz': 'View our work with car rental giants Hertz, in which we created a connected mobile application using Ford\'s AppLink technology to soothe customer pain-points.',
         '/projects/glenfiddich': 'View our work with Glenfiddich, designing a mobile multiplayer racing game with integrated augmented reality technology to increase customer engagement.',
@@ -108,6 +110,7 @@ const Constants = global.Constants = {
         systemsIntegration: 'Systems Integration',
 
         projectHero: 'Hero Wellbeing',
+        projectSA: 'Site Assist',
         projectBA: 'British Airways',
         projectCap10: 'Cap10',
         projectCP: 'Change Please',

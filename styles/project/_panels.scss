@@ -25,6 +25,10 @@
         box-shadow: none;
     }
 
+    &--gradient-sa{
+        background-image: linear-gradient(119deg, #1A255B 0%, #0B102E 97%);
+    }
+
     &--gradient-publicate{
         background:linear-gradient( to top, #ff9211, #fe7101);
     }
