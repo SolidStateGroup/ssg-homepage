@@ -20,7 +20,7 @@ const TheComponent = class extends Component {
     };
 
     componentDidMount() {
-        API.trackPage(Constants.pages.imperialHotels);
+        API.trackPage(Constants.pages.projectLC);
     }
 
     render() {
