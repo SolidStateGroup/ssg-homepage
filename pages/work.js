@@ -11,6 +11,19 @@ import InfiniteScroll from '../components/InfiniteScroll';
 export const projects = [
     {
         ButtonComponent: ButtonPrimary,
+        projectImage: '/static/images/projects/site-assist/sa-summary.png',
+        srcSet: '/static/images/projects/site-assist/sa-summary.png 1x, /static/images/projects/site-assist/sa-summary@2x.png 2x,',
+        clientImage: '/static/images/clients/site-assist.svg',
+        subTitle: 'Responsive Web Application & Mobile App',
+        href: '/projects/site-assist',
+        title: 'Digitising the construction industry for a sustainable future',
+        blobColour: '#e09512',
+        tags: ['BRANDING', 'DESIGN', 'MOBILE', 'WEB', 'API'],
+        projectType: ['Branding, UX design, UI design, API Development, Web Application, Mobile App Development'],
+        gaDataLabel: 'work-projects-sa',
+    },
+    {
+        ButtonComponent: ButtonPrimary,
         projectImage: '/static/images/projects/hero/hero-1.png',
         srcSet: '/static/images/projects/hero/hero-1.png 1x, /static/images/projects/hero/hero-1@2x.png 2x,',
         clientImage: '/static/images/clients/hero-logo.png',

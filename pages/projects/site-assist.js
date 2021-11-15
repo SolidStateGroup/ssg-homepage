@@ -29,10 +29,10 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title={Constants.titles.siteAssist} canonical="projects/site-assist">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/sa-wordmark-light.svg"
-                        projectTitle={'Digitising the construction industry for a sustainable future'}
-                        projectType={'Responsive Web Application & Mobile App'}
-                        ProjectServiceListItem={
+                      clientImage="/static/images/clients/white/sa-wordmark-light.svg"
+                      projectTitle={'Digitising the construction industry for a sustainable future'}
+                      projectType={'Responsive Web Application & Mobile App'}
+                      ProjectServiceListItem={
                             <React.Fragment>
                                 <TextListItem listItemText={'UX design,'}/>
                                 <TextListItem listItemText={'UI design,'}/>
@@ -41,21 +41,21 @@ const TheComponent = class extends Component {
                                 <TextListItem listItemText={'Mobile App Development'}/>
                             </React.Fragment>
                         }
-                        className="hero--site-assist"
-                        projectImage={'/static/images/projects/site-assist/site-assist-1.png'}
-                        srcSet={'/static/images/projects/site-assist/site-assist-1.png 1x, /static/images/projects/site-assist/site-assist-1.png 2x'}
+                      className="hero--site-assist"
+                      projectImage={'/static/images/projects/site-assist/sa-summary.png'}
+                      srcSet={'/static/images/projects/site-assist/sa-summary.png 1x, /static/images/projects/site-assist/sa-summary@2x.png 2x'}
                     />
 
                     <div className="container">
                         <div id="sectionOneTrigger">
                             <ProjectTextSection
-                                className="sectionOneAnimation"
-                                subTitle="Overview"
-                                description={'Solid State Group was approached by the founders of SiteAssist at the end of 2020. They were looking for a long-term technical partner to support them in developing their new product. \n' +
+                              className="sectionOneAnimation"
+                              subTitle="Overview"
+                              description={'Site Assist were looking for a long-term technical partner to support them in developing their new product.  They had experienced a huge gap in the construction industry and set about building a digital solution.  \n' +
                                 '\n' +
-                                'They had first-hand experience of a huge gap in the construction industry and set about building a digital solution. SiteAssist was introduced and presented as a SaaS company targeting the construction industry by offering a versatile digital platform to large construction companies who have a need to digitise and streamline current processes on site. \n' +
+                              'Site Assist had an idea for a SaaS product which targeted the construction industry by offering a versatile digital platform to large construction companies, needing to digitise and streamline their existing processes on site. \n' +
                                 '\n' +
-                                'The SA team have many years experience in the construction industry and have experienced the need for modernisation, specifically in the processes that govern permitting and inspections on large construction sites. \n'}
+                              'The Site Assist team have many years experience in the construction industry and understand the need for modernisation in all areas, this product specifically focuses on the processes that govern permitting and inspections on large construction sites. \n'}
                             />
 
                             <ProjectFullImageSection
