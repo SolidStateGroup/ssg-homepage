@@ -11,6 +11,19 @@ import InfiniteScroll from '../components/InfiniteScroll';
 export const projects = [
     {
         ButtonComponent: ButtonPrimary,
+        projectImage: '/static/images/projects/pickswise/1.png',
+        srcSet: '/static/images/projects/pickswise/1.png 1x, /static/images/projects/pickswise/1@2x.png 2x,',
+        clientImage: '/static/images/projects/pickswise/Pickswise-Logo.svg',
+        subTitle: 'Responsive Web Application & Mobile App',
+        href: '/projects/pickswise',
+        title: 'The home of free sports picks, news and experts\' best bets',
+        blobColour: '#041c2c',
+        tags: ['BRANDING', 'DESIGN', 'MOBILE', 'WEB', 'API'],
+        projectType: ['API Development, Web Application, Mobile App Development'],
+        gaDataLabel: 'work-projects-sa',
+    },
+    {
+        ButtonComponent: ButtonPrimary,
         projectImage: '/static/images/projects/site-assist/sa-summary.png',
         srcSet: '/static/images/projects/site-assist/sa-summary.png 1x, /static/images/projects/site-assist/sa-summary@2x.png 2x,',
         clientImage: '/static/images/clients/site-assist.svg',
