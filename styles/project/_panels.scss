@@ -20,6 +20,14 @@
         }
     }
 
+    &--toyota{
+        background-color: #d90022;
+        color:$white !important;
+        h6 {
+            color:$white !important;
+        }
+    }
+
     &--gradient-blue{
         background:linear-gradient( to top, #77D6EC, #42ADD5);
         box-shadow: none;

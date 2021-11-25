@@ -28,71 +28,65 @@ const TheComponent = class extends Component {
           <React.Fragment>
               <Page title={Constants.titles.toyota} canonical="projects/toyota">
                   <ProjectHero
-                    clientImage="/static/images/clients/toyota.svg"
+                    clientImage="/static/images/clients/white/toyota-white.svg"
                     projectTitle="Reducing the complexity of logistics and maintenance in the Car industry"
                     projectType="Mobile Application"
                     ProjectServiceListItem={(
                       <React.Fragment>
-                          <TextListItem listItemText="API Development,"/>
-                          <TextListItem listItemText="Web Application Development,"/>
-                          <TextListItem listItemText="Hardware integrations"/>
+                          <TextListItem listItemText="Mobile Application Development,"/>
+                          <TextListItem listItemText="Hardware integrations,"/>
                       </React.Fragment>
                     )}
                     className="hero--toyota"
-                    projectImage="/static/images/projects/ladbrokes/ladbrokes-1.png"
-                    srcSet="/static/images/projects/ladbrokes/ladbrokes-1.png 1x, /static/images/projects/ladbrokes/ladbrokes-1@2x.png 2x"
+                    projectImage="/static/images/projects/toyota/Toyota-YMS.png"
+                    srcSet="/static/images/projects/toyota/Toyota-YMS.png 1x, /static/images/projects/toyota/Toyota-YMS.png 2x"
                   />
                   <div className="container">
                       <div>
                           <ProjectTextSection
                             subTitle="00 / Overview"
-                            description={'Ladbrokes Coral required a new EPOS system, that would improve the customer experience within their retail and online channels.\n'
+                            description={'Toyota approached us with a request to integrate a software solution with their physical systems and processes.\n'
                             + '\n'
-                            + 'The existing platform was built nearly two decades ago, with data being transmitted once a day.\n'
-                            + '\n'
-                            + 'Solid State Group worked alongside key stakeholders to develop a new platform within the company and bring the entire IT infrastructure within Ladbrokes Coral up to date.\n'
+                            + 'Their entire vehicle inventory needs regular servicing and maintenance, so the brief was to build a mobile app to facilitate their team in quickly identifying the vehicle that needs attention and record the work to be carried out. \n'
                             }
                           />
-                          <ProjectTextSection
-                            subTitle="01 / Challenge"
-                            description={'An existing EPOS system was being used throughout Ladbrokes Coral, which was built by a third party. Change requests were costly and time consuming.\n'
-                            + '\n'
-                            + 'The 16,000 employees, working across 3500 shops in the UK, had become accustomed to dealing with the outdated EPOS system. \n'
-                            + '\n'
-                            + 'The challenge was to maintain the existing functionality and shortcuts shop colleagues had become used to, whilst focusing on the customer experience, visibility of the company’s fiscal position, reducing potential fraud and improving the overall usability.\n'}
-                          />
+                        <ProjectDetailSectionItem
+                          subTitle="01 / Challenge"
+                          description={'The first significant challenge was to reverse engineer an existing piece of undocumented technology to understand how it worked, before we could start designing the new solution.\n'
+                          + '\n'
+                          + 'The process involved inspecting network traffic to build up a picture of the API and associated requests and then build these learnings into a set of requirements, and finally a React Native app.\n'
+                          + '\n'
+                          + 'The entire Toyota team used an older Android device so we had to ensure that we created a robust piece of forward thinking technology, whilst also respecting the limitations of legacy Android devices.\n'
+                          }
+                          imageOne="/static/images/projects/toyota/vin-scan.jpeg"
+                          srcSetImageOne="/static/images/projects/toyota/vin-scan.jpeg 1x, /static/images/projects/toyota/vin-scan.jpeg 2x"
+                        />
                       </div>
                       <div>
-                          <ProjectDetailSectionItem
-                            description={'Solid State began with a 12 week proof of concept phase, rapidly developing a functioning system.\n'
+                          <ProjectTextSection
+                            subTitle="02 / Solution"
+                            description={'We began with the process of reverse engineering the existing system via API traffic and performance monitoring; and began to gradually understand the inner workings of the system, the requests and resultant payload.\n'
+                          + '\n'
+                          + 'By documenting each interaction with the API, we were able to produce a technical architecture document and set about designing the new solution using this as a blueprint.\n'
+                          + '\n'
+                          + 'Once we understood the API we were working with, we put together a simple IA prototype and roadmap proposal for external sign off.\n'
+                          + '\n'
+                          + 'During the development, our weekly sprints were focused around a single endpoint ensuring that we caught all scenarios associated with each feature before moving on to the next.\n' + '\n'
                             + '\n'
-                            + 'Using an Agile methodology we presented weekly demos to key stakeholders to obtain feedback.\n'
-                            + 'The weekly sprints were focused around a single piece of functionality to draw direct comparisons between the existing EPOS system and the new platform.\n' + '\n'
-                            + 'After the proof of concept phase, we began an industrialisation phase. This involved scaling up the project and bringing internal development teams onboard.\n'}
-                            subTitle="02/ Solution"
-                            imageOne="/static/images/projects/toyota/vin-scan.jpeg"
-                            srcSetImageOne="/static/images/projects/toyota/vin-scan.jpeg 1x, /static/images/projects/toyota/vin-scan.jpeg 2x"
-                          />
+                            + 'One of the significant technical features was the VIN number reader which utilised the devices camera to quickly identify the vehicle and request all associated vehicle data for the Toyota operative.\n' + '\n'
+                          + 'When the product was feature complete, we set about comprehensively testing with the same device that the Toyota operatives were using.\n'}
+                        />
                       </div>
 
                   </div>
-
-                  <div className="container">
-                      <ProjectTextSection
-                        subTitle="02 / Solution"
-                        description="The MVP solution was released to a small set of trial shops, where feedback was incorporated from both customers and shop colleagues to continually enhancing the experience."
-                      />
-
-                  </div>
-
                   <ProjectFullImageSection
-                    className="panel panel--ladbrokes pt-5"
+                    className="panel panel--toyota pt-5"
                     textClassName="col-md-6 offset-md-3"
-                    title={'The new EPOS system is now being rolled out across both the Coral and Ladbrokes brands processing thousands of bets per hour'}
-                    subTitle={'02 / MVP solution'}
-                    imageUrl={'/static/images/projects/ladbrokes/ladbrokes-3.png'}
-                    srcSet={'/static/images/projects/ladbrokes/ladbrokes-3.png 1x, /static/images/projects/ladbrokes/ladbrokes-3@2x.png 2x'}
-                    imageAltText={'Ladbrokes Coral UI'}
+                    title={'The new system was rolled out immediately and was in use in the factory lots for all operatives.'}
+                    subTitle={'03 / The App'}
+                    imageUrl={'/static/images/projects/toyota/scan-mockup.png'}
+                    srcSet={'/static/images/projects/toyota/scan-mockup.png 1x, /static/images/projects/toyota/scan-mockup@2x.png 2x'}
+                    imageAltText={'Toyota VIN Scanner'}
                   />
 
                   <div className="container">
@@ -101,30 +95,11 @@ const TheComponent = class extends Component {
                         subTitle="03/ Technology Used"
                         techLogoItems={(
                           <React.Fragment>
-                              <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
+                              <div className="col-lg-6 col-6 pt-5 pt-lg-0 text-center">
                                   <img src="/static/images/tech-icons/dark/react.svg" className="img-responsive"/>
                               </div>
-                              <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
+                              <div className="col-lg-6 col-6 pt-5 pt-lg-0 text-center">
                                   <img src="/static/images/tech-icons/dark/aws.svg" className="img-responsive"/>
-                              </div>
-                              <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center mb-md-0 mb-4">
-                                  <img src="/static/images/tech-icons/dark/java.svg" className="img-responsive"/>
-                              </div>
-                              <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
-                                  <img src="/static/images/tech-icons/dark/spring.svg" className="img-responsive"/>
-                              </div>
-                              <div className="col-lg-3 col-6 pt-5 text-center">
-                                  <img src="/static/images/tech-icons/dark/net.svg" className="img-responsive"/>
-                              </div>
-                              <div className="col-lg-3 col-6 pt-5 text-center">
-                                  <img src="/static/images/tech-icons/dark/terraform.svg" className="img-responsive"/>
-                              </div>
-                              <div className="col-lg-3 col-6 pt-5 text-center">
-                                  <img src="/static/images/tech-icons/dark/jenkins.svg" className="img-responsive"/>
-                              </div>
-                              <div className="col-lg-3 col-6 pt-5 text-center">
-                                  <img src="/static/images/tech-icons/dark/elastic-search.svg"
-                                       className="img-responsive"/>
                               </div>
                           </React.Fragment>
                         )}
