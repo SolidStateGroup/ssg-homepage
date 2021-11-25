@@ -124,6 +124,9 @@
     &--site-assist {
         background-image: linear-gradient(119deg, #1A255B 0%, #0B102E 97%);
     }
+    &--pickswise {
+        background-color: #041c2c;
+    }
 }
 
 @include media-breakpoint-down(md) {
