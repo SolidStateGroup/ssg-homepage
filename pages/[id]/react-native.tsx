@@ -19,6 +19,8 @@ type ComponentType = {}
 const TheComponent: FunctionComponent<ComponentType> = ({}) => {
     const { nav } = useStep();
 
+    const { meta } = useRouterData();
+
     useEffect(()=>{
         grecaptcha.render(document.getElementById('recaptcha'), {
             sitekey: '6Lci2f8UAAAAAHTSYRQC-2NVL9iX1Ibt9hfmeo3-',
@@ -53,6 +55,13 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                                           id="exampleInputEmail1"
                                           inputClassName="form-control form__input mb-3"
                                         />
+                                        <input type="hidden" name="App" value={meta?.title}/>
+                                        <input type="hidden" name="Company" value={meta?.company}/>
+                                        <input type="hidden" name="" value={Utils.money(meta?.android_build_cost)}/>
+                                        <input type="hidden" name="Android Initial Build Cost" value={Utils.money(meta?.android_build_cost)}/>
+                                        <input type="hidden" name="Android Monthly" value={Utils.money(meta?.android_monthly_cost)}/>
+                                        <input type="hidden" name="iOS Initial Build Cost" value={Utils.money(meta?.ios_build_cost)}/>
+                                        <input type="hidden" name="iOS Monthly" value={Utils.money(meta?.ios_monthly_cost)}/>
                                         <div className="form-group">
                                             <label className="form__label" htmlFor="textarea">Comment</label>
                                             <textarea
