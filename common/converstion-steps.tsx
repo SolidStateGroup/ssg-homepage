@@ -22,26 +22,29 @@ export const useStep = () => {
     if (step === -1) step = 0;
     const previous = converstionSteps[step - 1];
     const next = converstionSteps[step + 1];
-    useKeyPress('ArrowRight', () => {
-        if (typeof next === 'string') {
-            r.push(`/${r.query.id}/${next}`);
-        }
-    });
-    useKeyPress('ArrowDown', () => {
-        if (typeof next === 'string') {
-            r.push(`/${r.query.id}/${next}`);
-        }
-    });
-    useKeyPress('ArrowLeft', () => {
-        if (typeof previous === 'string') {
-            r.push(`/${r.query.id}/${previous}`);
-        }
-    });
-    useKeyPress('ArrowUp', () => {
-        if (typeof previous === 'string') {
-            r.push(`/${r.query.id}/${previous}`);
-        }
-    });
+    if (!r?.asPath?.includes("edit")) {
+        useKeyPress('ArrowRight', () => {
+            if (typeof next === 'string') {
+                r.push(`/${r.query.id}/${next}`);
+            }
+        });
+        useKeyPress('ArrowDown', () => {
+            if (typeof next === 'string') {
+                r.push(`/${r.query.id}/${next}`);
+            }
+        });
+        useKeyPress('ArrowLeft', () => {
+            if (typeof previous === 'string') {
+                r.push(`/${r.query.id}/${previous}`);
+            }
+        });
+        useKeyPress('ArrowUp', () => {
+            if (typeof previous === 'string') {
+                r.push(`/${r.query.id}/${previous}`);
+            }
+        });
+    }
+
     return {
         step,
         nav: (
