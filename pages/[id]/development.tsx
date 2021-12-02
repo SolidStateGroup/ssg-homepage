@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Switch from 'rc-switch';
+import cx from 'classnames';
 import Page from '../../components/Page'; // we need this to make JSX compile
 import Header from '../../components/Header';
 import StarRatingListItem from '../../components/StartRatingListItem';
@@ -35,11 +36,13 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                             <div className="pb-5">
                                 <CostPanel title="React Native Rebuild" headerRight={<div className="tag tag--grey">{totalDevelopmentHours} Hours</div>}>
                                     {meta?.rebuild?.map((v, i) => (
-                                        <Row className={i !== meta.rebuild.length - 1 && 'mb-5'}>
-                                            <Flex className="text-light">
-                                                {v.name}
-                                            </Flex>
-                                            <Row>
+                                        <div className={cx('flex-row', i !== meta.rebuild.length - 1 && 'mb-5')}>
+                                            <div className="col-md-6">
+                                                <span className="text-light">
+                                                    {v.name}
+                                                </span>
+                                            </div>
+                                            <div className="col-md-6 d-flex justify-content-md-end mt-3 mt-md-0">
                                                 <div className="tag tag--transparent mr-5">
                                                     {v.hours} Hour{v.hours !== 0 ? 's' : ''}
                                                 </div>
@@ -49,8 +52,8 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                                                       setMeta('rebuild', meta.rebuild);
                                                   }}
                                                 />
-                                            </Row>
-                                        </Row>
+                                            </div>
+                                        </div>
                                     ))}
                                 </CostPanel>
                             </div>

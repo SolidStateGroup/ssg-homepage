@@ -29,7 +29,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
 
                     <main role="main" className="col-md-12 ml-sm-auto col-lg-9 px-md-4 fade-in rncc__main">
                         <h1 className="text-light text-center pad-top-large pad-bottom-md mt-md-0 mt-5">Insights on your Apps</h1>
-                        <div className="fade-in-step col-md-5 offset-md-3 insights">
+                        <div className="fade-in-step col-md-5 offset-md-3 insights pb-5 pb-md-0 mb-md-0 mb-5">
                             {data?.insights?.map((insight, i) => (
                                 <div key={i} className="mb-5">
                                     <Insight key={i} index={i + 1} insight={insight}/>
