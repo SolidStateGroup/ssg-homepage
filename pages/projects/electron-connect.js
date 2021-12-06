@@ -130,7 +130,15 @@ We distilled the requirements into tangible UX artefacts such as personas and a 
                       imageAltText="Dashboard UI"
                     />
 
-                    <div className="container sectionFourAnimation" id="sectionFourTrigger">
+                  <div className="container">
+                    <div className="col-md-12 text-center">
+                      <iframe src="https://marvelapp.com/prototype/5aj805h?emb=1&iosapp=false&frameless=false"
+                              width="100%" height="900" allowTransparency="true" frameBorder="0" />
+                    </div>
+                  </div>
+
+
+                  <div className="container sectionFourAnimation" id="sectionFourTrigger">
                         <ProjectTextSection
                           subTitle="02 / Solution"
                           description="Electron are currently developing the dashboard in house, so once we delivered the design we set up a Zeplin project to easily share our assets and versioned changes with Electron’s developers.
@@ -139,6 +147,8 @@ We distilled the requirements into tangible UX artefacts such as personas and a 
 We produced a scalable design system and high fidelity prototype that Electron are currently using to build out the first version of ElectronConnect.
 "
                         />
+
+
                         {/* <ProjectDetailSectionItem */}
                         {/*  subTitle="03 / Design" */}
                         {/*  title="Fonts & Colours" */}
