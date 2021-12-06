@@ -68,18 +68,13 @@
         &__header {
             font-size: 18px;
             font-weight: bold;
-            padding-left: 40px;
-            padding-right: 40px;
+               padding: 2em 1em;
             background: #18171A;
-            line-height: 80px;
             border-top-left-radius: 40px;
             border-top-right-radius: 40px;
         }
         &__body {
-            padding-top: 60px;
-            padding-bottom: 60px;
-            padding-left: 40px;
-            padding-right: 40px;
+            padding: 2em 1em;
         }
     }
 }

@@ -10,12 +10,16 @@ const TheComponent: FunctionComponent<ComponentType> = ({ title,headerRight,chil
     return (
         <div className="panel--cost">
             <div className="panel--cost__header">
-              <Row space>
-                <div className="text-light">
-                  {title}
+              <div className="flex-row">
+                <div className="col-6">
+                  <span className="text-light">
+                    {title}
+                  </span>
                 </div>
-                {headerRight}
-              </Row>
+                <div className="col-6 d-flex justify-content-end">
+                  {headerRight}
+                </div>
+              </div>
             </div>
           <div className="panel--cost__body">
             {children}

@@ -20,7 +20,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                     <RNConversionSidebar/>
                     <main role="main" className="col-md-12 ml-sm-auto col-lg-9 px-md-4 fade-in rncc__main">
                         {/*<div className="flex-row flex-column rncc__main-container">*/}
-                            <div className="offset-md-2 col-md-8">
+                            <div className="offset-md-2 col-md-8 pb-5 pb-md-0 mb-md-0 mb-5">
                                 <h1 className="text-light text-center pad-top-xl">Projected costs for your native apps</h1>
                                 <p className="text-light text-center mb-4">Monthly costs over multiple codebases can really add up. They include:</p>
 
@@ -39,7 +39,7 @@ const TheComponent: FunctionComponent<ComponentType> = ({}) => {
                                     </ul>
                                 </CardBuildCosts>
 
-                                <p className="text-light text-center mt-5 mb-0">Based only on the monthly maintenance costs for both iOS and Android, your projected total cost of the next 10 years is:</p>
+                                <p className="text-light text-center mt-5 mb-0">Based only on the monthly maintenance costs for both iOS and Android, your projected total cost of the next {meta?.years_roadmap} years is:</p>
                                 <h2 className="hero__title--large hero__title--red text-center">{meta ? Utils.money(projectedCosts) : '...'}</h2>
                             </div>
 
