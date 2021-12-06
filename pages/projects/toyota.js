@@ -29,7 +29,7 @@ const TheComponent = class extends Component {
               <Page title={Constants.titles.toyota} canonical="projects/toyota">
                   <ProjectHero
                     clientImage="/static/images/clients/white/toyota-white.svg"
-                    projectTitle="Reducing the complexity of logistics and maintenance in the Car industry"
+                    projectTitle="Reducing the complexity of logistics and maintenance in the motor industry"
                     projectType="Mobile Application"
                     ProjectServiceListItem={(
                       <React.Fragment>
