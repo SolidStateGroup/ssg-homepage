@@ -47,10 +47,10 @@ const TheComponent = class extends Component {
 
                         <ProjectTextSection
                           className="sectionOneAnimation"
-                          subTitle="Overview"
-                          description={'Site Assist were looking for a long-term technical partner to support them in developing their new product.  They had experienced a huge gap in the construction industry and set about building a digital solution.  \n'
+                          subTitle="01 / Overview"
+                          description={'Spotlight Sports Group have many digital properties and companies in their organisation, one of which is the American sports betting tips site, Pickswise.\n'
                                 + '\n'
-                              + 'Site Assist had an idea for a SaaS product which targeted the construction industry by offering a versatile digital platform to large construction companies, needing to digitise and streamline their existing processes on site. \n'
+                              + 'The existing  application but the company wanted to ensure it was making the most of it\'s market share and went looking for mobile app development experts to serve an ever growing need for a Pickwise mobile app.\n'
                                 + '\n'
                               + 'The Site Assist team have many years experience in the construction industry and understand the need for modernisation in all areas, this product specifically focuses on the processes that govern permitting and inspections on large construction sites. \n'}
                         />
