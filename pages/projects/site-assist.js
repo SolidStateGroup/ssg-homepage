@@ -41,6 +41,15 @@ const TheComponent = class extends Component {
                               <TextListItem listItemText="Mobile App Development"/>
                           </React.Fragment>
 )}
+                      ProjectTechListItem={(
+                          <React.Fragment>
+                              <TextListItem listItemText="React,"/>
+                              <TextListItem listItemText="React Native,"/>
+                              <TextListItem listItemText="Spring,"/>
+                              <TextListItem listItemText="Terraform,"/>
+                              <TextListItem listItemText="AWS"/>
+                          </React.Fragment>
+)}
                       className="hero--site-assist"
                       projectImage="/static/images/projects/site-assist/sa-summary.png"
                       srcSet="/static/images/projects/site-assist/sa-summary.png 1x, /static/images/projects/site-assist/sa-summary@2x.png 2x"
@@ -143,6 +152,7 @@ const TheComponent = class extends Component {
 
                     <div className="container">
                         <ProjectTechSection
+                          description="We developed the project using a mono environment approach, a development process we have adopted at SSG that we believe encourages faster time to market for SaaS products and removes bottlenecks from engineering teams."
                           techLogoItems={(
                               <React.Fragment>
                                   <div className="col-6 text-center">
@@ -153,12 +163,12 @@ const TheComponent = class extends Component {
                                   </div>
                                   <div className="col-6 text-center">
                                       <img
-                                        alt=".net" src="/static/images/tech-icons/dark/net.svg"
+                                        alt=".net" src="/static/images/tech-icons/dark/spring.svg"
                                         className="img-responsive"
                                       />
                                   </div>
                                   <div className="col-6 text-center mb-md-0 mb-4">
-                                      <img alt="mysql" src="/static/images/tech-icons/dark/MySQL.svg" className="img-responsive"/>
+                                      <img alt="mysql" src="/static/images/tech-icons/dark/terraform.svg" className="img-responsive"/>
                                   </div>
                                   <div className="col-6 text-center">
                                       <img
@@ -167,22 +177,8 @@ const TheComponent = class extends Component {
                                       />
                                   </div>
                               </React.Fragment>
-)}
-                          ProjectServiceListItem={(
-                              <React.Fragment>
-                                  <WideListItem
-                                    listItemText="Mobile Development"
-                                  />
-                                  <WideListItem
-                                    listItemText="Backend Development"
-                                  />
-                                  <WideListItem
-                                    listItemText="API Development"
-                                  />
-                              </React.Fragment>
-)}
+                        )}
                         />
-
 
                         <ProjectTextSection
                                 // className="sectionTwoAnimation"

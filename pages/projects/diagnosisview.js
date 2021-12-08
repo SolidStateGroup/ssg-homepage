@@ -42,12 +42,12 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         ProjectTechListItem={
-                            <React.Fragment>
-                                <TextListItem listItemText={'Postgres,'}/>
-                                <TextListItem listItemText={'Java,'}/>
-                                <TextListItem listItemText={'RabbitMQ,'}/>
-                                <TextListItem listItemText={'Angular JS'}/>
-                            </React.Fragment>
+                          <React.Fragment>
+                            <TextListItem listItemText={'React,'}/>
+                            <TextListItem listItemText={'React Native,'}/>
+                            <TextListItem listItemText={'Java,'}/>
+                            <TextListItem listItemText={'Chargebee'}/>
+                          </React.Fragment>
                         }
                         className="hero--patientview"
                         projectImage={"/static/images/projects/diagnosisview/1.png"}
@@ -97,15 +97,11 @@ const TheComponent = class extends Component {
                                    className='img-responsive'/>
                             </div>
                             <div className="col-6 text-center">
-                              <img alt=".net" src='/static/images/tech-icons/dark/net.svg'
+                              <img alt=".net" src='/static/images/tech-icons/dark/java.svg'
                                    className='img-responsive'/>
                             </div>
                             <div className="col-6 text-center mb-md-0 mb-4">
-                              <img alt="mysql" src='/static/images/tech-icons/dark/MySQL.svg' className='img-responsive'/>
-                            </div>
-                            <div className="col-6 text-center">
-                              <img alt="aws" src='/static/images/tech-icons/dark/aws.svg'
-                                   className='img-responsive'/>
+                              <img alt="mysql" src='/static/images/tech-icons/dark/chargebee-logo-black.svg' className='img-responsive'/>
                             </div>
                           </React.Fragment>
                         }
