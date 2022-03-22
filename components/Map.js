@@ -37,8 +37,8 @@ const Map = class extends PureComponent {
                     <div className="offset-md-6">
                         <h2 className="mb-5 map-overlay__title">Come see us in the middle of London's Silicon Roundabout</h2>
                         <p className="mb-0 text-light">Where to find us</p>
-                        <h5>189-190 Shoreditch <br/>High St</h5>
-                        <h5>London, E1 6HU</h5>
+                        <h5>86-90 Paul St</h5>
+                        <h5>London EC2A 4NE</h5>
                     </div>
                 </div>
                 <div className="map-blender"/>

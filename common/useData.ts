@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, doc, onSnapshot } from 'firebase/firestore';
+import { getFirestore, collection, doc, onSnapshot, getDocs } from 'firebase/firestore';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 import moment from 'moment';
@@ -75,6 +75,20 @@ type UseDataType = {
     totalCost: number,
 }
 const rate = 120;
+export const getKeys = async ()=>{
+    const col = collection(db,'clients')
+    const docs = await getDocs(col)
+    let keys = []
+    docs.forEach((d)=>{
+        keys.push(d.id)
+    })
+    return keys
+}
+
+export const clone = ()=> {
+
+}
+
 export default function useData(title, onErr):UseDataType {
     const [isReady, setIsReady] = useState(data[title]);
     const [meta, setMeta] = useState<Prospect>(metas[title]);
