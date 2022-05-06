@@ -72,7 +72,7 @@ const TheComponent = class extends Component {
 We distilled the requirements into tangible UX artefacts such as personas and a low fidelity clickable prototype for all user types.
 "
                           // imageOneclassName="img__shadow"
-                          title="UI Components"
+                          title="UX Research"
                           imageOne="/static/images/projects/electron-connect/3.png"
                           srcSetImageOne="/static/images/projects/electron-connect/3.png 1x, /static/images/projects/electron-connect/3@2x.png 2x"
                           // imageTwo="/static/images/projects/electron-connect/4.png"
@@ -99,7 +99,7 @@ We distilled the requirements into tangible UX artefacts such as personas and a 
                           description="We built on the previous design system we created for Electron’s Trader platform, adding to the existing components and design language to lay the foundation for the first iteration of the product. "
                           className="flex-row-reverse"
                           imageOneclassName="img__shadow"
-                          title="UX Research"
+                          title="UI Components"
                           imageOne="/static/images/projects/electron-connect/Design system.png"
                           srcSetImageOne="/static/images/projects/electron-connect/Design system.png 1x, /static/images/projects/electron-connect/Design system@2x.png 2x"
                           ProjectServiceListItem={(

@@ -204,8 +204,8 @@ const TheComponent = class extends Component {
                     <ClientQuote
                       image="/static/images/projects/site-assist/phone.png"
                       srcSet="/static/images/projects/site-assist/phone.png 1x, /static/images/projects/site-assist/phone@2x.png 2x"
-                      text="We worked with SSG to completely rebuild our digital properties, API, CMS and a brand new mobile app for iOS and Android. The team were brilliant under significant time pressure and we felt like we were in expert hands from start to finish."
-                      clientName="John Smith" clientTitle="Co-Founder & CEO at Site Assist"
+                      text="Wanted to say it’s been an absolute pleasure working with you guys, it’s rare to find people as skilled and honest as you. I had a great time building SiteAssist with you guys until now. I’m a very happy customer."
+                      clientName="Andrei Petric" clientTitle="Co-Founder & CTO at SiteAssist"
                     />
 
                     <ProjectNav/>
