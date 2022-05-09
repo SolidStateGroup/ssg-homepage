@@ -136,10 +136,11 @@ const TheComponent = class extends Component {
 
 
                     <ProjectDetailSectionItem
+                      imageOneclassName="img__shadow"
                       title={'Mobile UI Library'}
                       subTitle="Solution"
-                      imageOne="/static/images/projects/pickswise/3.png"
-                      srcSetImageOne="/static/images/projects/pickswise/3.png 1x, /static/images/projects/pickswise/3@2x.png 2x"
+                      imageOne="/static/images/projects/pickswise/Pickswise-Desktop.png"
+                      srcSetImageOne="/static/images/projects/pickswise/Pickswise-Desktop.png 1x, /static/images/projects/pickswise/Pickswise-Desktop@2x.png 2x"
                       description={'Pickswise wanted to allow other applications to utilise the UI components we created. To accomplish this we used Storybook to document and test the UI components. We also built and documented a release process for UI components to be downloadable and used in other applications.\n' +
                       '\n' +
                       'We also trained the internal team on the differences in approach to standard application development to developing a reusable component library. \n'}
@@ -160,46 +161,50 @@ const TheComponent = class extends Component {
 
 
                     <div className="container">
-                        <ProjectTechSection
-                          techLogoItems={(
-                              <React.Fragment>
-                                  <div className="col-6 text-center">
-                                      <img
-                                        alt="react" src="/static/images/tech-icons/dark/react.svg"
-                                        className="img-responsive"
-                                      />
-                                  </div>
-                                  <div className="col-6 text-center">
-                                      <img
-                                        alt=".net" src="/static/images/tech-icons/dark/net.svg"
-                                        className="img-responsive"
-                                      />
-                                  </div>
-                                  <div className="col-6 text-center mb-md-0 mb-4">
-                                      <img alt="mysql" src="/static/images/tech-icons/dark/MySQL.svg" className="img-responsive"/>
-                                  </div>
-                                  <div className="col-6 text-center">
-                                      <img
-                                        alt="aws" src="/static/images/tech-icons/dark/aws.svg"
-                                        className="img-responsive"
-                                      />
-                                  </div>
-                              </React.Fragment>
-)}
-                          ProjectServiceListItem={(
-                              <React.Fragment>
-                                  <WideListItem
-                                    listItemText="Mobile Development"
-                                  />
-                                  <WideListItem
-                                    listItemText="Backend Development"
-                                  />
-                                  <WideListItem
-                                    listItemText="API Development"
-                                  />
-                              </React.Fragment>
-)}
-                        />
+                      <ProjectTechSection
+                        techLogoItems={(
+                          <React.Fragment>
+                            <div className='col-6 text-center'>
+                              <img
+                                alt='react' src='/static/images/tech-icons/dark/react.svg'
+                                className='img-responsive'
+                              />
+                            </div>
+                            <div className='col-6 text-center'>
+                              <img
+                                alt='react' src='/static/images/tech-icons/dark/react-native-logo.png'
+                                className='img-responsive'
+                              />
+                            </div>
+                            <div className='col-6 text-center'>
+                              <img
+                                alt='.net' src='/static/images/tech-icons/dark/redux-logo.png'
+                                className='img-responsive'
+                              />
+                            </div>
+                            <div className='col-6 text-center mb-md-0 mb-4'>
+                              <img alt='mysql' src='/static/images/tech-icons/dark/Figma.svg'
+                                   className='img-responsive' />
+                            </div>
+                          </React.Fragment>
+                        )}
+                        ProjectServiceListItem={(
+                          <React.Fragment>
+                            <WideListItem
+                              listItemText='Mobile Development'
+                            />
+                            <WideListItem
+                              listItemText='Web Development'
+                            />
+                            <WideListItem
+                              listItemText='Backend Development'
+                            />
+                            <WideListItem
+                              listItemText='API Development'
+                            />
+                          </React.Fragment>
+                        )}
+                      />
 
 
                         <ProjectTextSection
