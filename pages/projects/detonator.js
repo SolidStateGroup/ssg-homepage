@@ -91,8 +91,14 @@ const TheComponent = class extends Component {
                   </div>
 
                     <ProjectFullImageSection
-                      imageUrl="/static/images/projects/site-assist/site-assist-2.jpg"
-                      srcSet="/static/images/projects/site-assist/site-assist-2.jpg 1x, /static/images/projects/site-assist/site-assist-2@2x.jpg 2x"
+                      imageUrl="/static/images/projects/detonator/2.png"
+                      srcSet="/static/images/projects/detonator/2.png 1x, /static/images/projects/detonator/2@2x.png 2x"
+                      imageAltText="Dashboard UI"
+                    />
+
+                    <ProjectFullImageSection
+                      imageUrl="/static/images/projects/detonator/3.png"
+                      srcSet="/static/images/projects/detonator/3.png 1x, /static/images/projects/detonator/3@2x.png 2x"
                       imageAltText="Dashboard UI"
                     />
 
