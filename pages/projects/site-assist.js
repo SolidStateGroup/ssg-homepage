@@ -135,6 +135,9 @@ const TheComponent = class extends Component {
                                   <WideListItem
                                     listItemText="User Journey Maps"
                                   />
+                                <WideListItem
+                                    listItemText="React Native development"
+                                  />
                               </React.Fragment>
 )}
                         />
@@ -204,7 +207,8 @@ const TheComponent = class extends Component {
                     <ClientQuote
                       image="/static/images/projects/site-assist/phone.png"
                       srcSet="/static/images/projects/site-assist/phone.png 1x, /static/images/projects/site-assist/phone@2x.png 2x"
-                      text="Wanted to say it’s been an absolute pleasure working with you guys, it’s rare to find people as skilled and honest as you. I had a great time building SiteAssist with you guys until now. I’m a very happy customer."
+                      text="It’s been an absolute pleasure working with SSG, it’s rare to find people as skilled and honest as the team who brought SiteAssist
+ to life. I had a great time building SA with the guys and I’m a very happy customer."
                       clientName="Andrei Petric" clientTitle="Co-Founder & CTO at SiteAssist"
                     />
 
