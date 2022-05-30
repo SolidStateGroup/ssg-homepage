@@ -27,7 +27,7 @@ const TheComponent = class extends Component {
     render() {
         return (
             <React.Fragment>
-                <Page title={Constants.titles.siteAssist} canonical="projects/pickswise">
+                <Page title={Constants.titles.pickswise} canonical="projects/pickswise">
                     <ProjectHero
                       clientImage="/static/images/projects/pickswise/Pickswise-Logo.svg"
                       projectTitle="The home of free sports picks, news and experts' best bets"
