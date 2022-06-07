@@ -34,8 +34,8 @@ const TheComponent = class extends Component {
                       projectType="Mobile Application & Web application"
                       ProjectServiceListItem={(
                         <React.Fragment>
-                          <TextListItem listItemText='Mobile App Development' />
-                          <TextListItem listItemText='Web Development,' />
+                          <TextListItem listItemText='Mobile App Development,' />
+                          <TextListItem listItemText='Web Development' />
                         </React.Fragment>
 )}
                       className="hero--pickswise"
