@@ -254,6 +254,17 @@ export const ProjectFullImageSection = global.ProjectFullImageSection = class ex
                     <div className={this.props.textClassName}>
                         <h6 className="title--project-section title--project-section--small text-grey">{props.subTitle}</h6>
                         <h3>{props.title}</h3>
+
+                        {this.props.description ? (
+
+                          <div className="offset-md-3 col-md-6">
+                              <p className="project-section-item__text mt-4">{this.props.description}</p>
+                          </div>
+
+                        ) : (
+                          null
+                        )}
+
                     </div>
                     <img src={props.imageUrl} srcSet={props.srcSet || null} alt={props.imageAltText} className={cn(this.props.imageClassName, 'img-fluid  py-5')}  />
                 </div>
@@ -302,6 +313,42 @@ export const ProjectFullVideoSection = global.ProjectFullVideoSection = class ex
                 )}
 
             </div>
+
+
+        );
+    }
+};
+
+export const ProjectPrototypeSection = global.ProjectPrototypeSection = class extends React.PureComponent {
+    static displayName = 'ProjectPrototypeSection';
+    static propTypes = _propTypes;
+
+    render() {
+        const {props} = this;
+        return (
+          <div className={this.props.className}>
+
+              {this.props.title ? (
+                <h3 className="text-center mb-5 mt-5">{props.title}</h3>
+              ) : (
+                null
+              )}
+
+              {this.props.prototypeLink ? (
+
+                <div className="col-md-12 text-center">
+
+                    <iframe width="100%" height="650"
+                            src={this.props.prototypeLink}
+                            allowFullScreen></iframe>
+
+                </div>
+
+              ) : (
+                null
+              )}
+
+          </div>
 
 
         );

@@ -133,6 +133,9 @@
     &--pickswise {
         background-color: #041c2c;
     }
+    &--detonator {
+        background-color: #ED6D05;
+    }
 }
 
 @include media-breakpoint-down(md) {

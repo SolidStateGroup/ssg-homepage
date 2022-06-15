@@ -41,6 +41,7 @@ const Constants = global.Constants = {
         ladbrokes: 'Ladbrokes Coral | Solid State Group',
         heroWellbeing: 'Hero Wellbeing | Solid State Group',
         siteAssist: 'Site Assist | Solid State Group',
+        detonator: 'Detonator | Solid State Group',
         pickswise: 'Pickswise | Solid State Group',
         cap10: 'Cap10 | Solid State Group',
         reactNativeConversionCalculator: 'React Native Conversion Calculator | Solid State Group', // Used by default on all pages
@@ -114,6 +115,7 @@ const Constants = global.Constants = {
 
         projectHero: 'Hero Wellbeing',
         projectSA: 'Site Assist',
+        projectDetonator: 'Detonator',
         projectBA: 'British Airways',
         projectCap10: 'Cap10',
         projectCP: 'Change Please',
