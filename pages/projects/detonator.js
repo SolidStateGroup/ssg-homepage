@@ -93,8 +93,8 @@ const TheComponent = class extends Component {
                         title="Design Discovery"
                         className="flex-row-reverse"
                         subTitle="Solution"
-                        imageOne="/static/images/projects/detonator/Detonator-IA-large.png"
-                        srcSetImageOne="/static/images/projects/detonator/Detonator-IA-large.png 1x, /static/images/projects/detonator/Detonator-IA-large@2x.png 2x"
+                        imageOne="/static/images/projects/detonator/Detonator-IA.png"
+                        srcSetImageOne="/static/images/projects/detonator/Detonator-IA.png 1x, /static/images/projects/detonator/Detonator-IA@2x.png 2x"
                         description={'Over the period of 10 weeks we distilled the project goals, stakeholders, brand requirements and features for the detonator application into a comprehensive list of stories for the MVP.\n' +
                         '\n' +
                         'We started with a discovery session to gather information about the structure of the business and a blueprint for the product we’re hoping to build. This allowed us to gain a greater understanding of the project goals and proposition values for our team.'}
