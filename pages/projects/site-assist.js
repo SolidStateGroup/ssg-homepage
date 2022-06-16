@@ -183,11 +183,32 @@ const TheComponent = class extends Component {
                         )}
                         />
 
-                        <ProjectTextSection
-                                // className="sectionTwoAnimation"
-                          subTitle="Outcome"
-                          description="The new SaaS solution was tested on a large client in the construction industry. The founders were happy with the product that went above and beyond the initial scope of the project. SSG is supporting Site Assist to develop new product features and transition to an in house team."
-                        />
+                      <ProjectDetailSectionItem
+                        // title="UI Design"
+                        subTitle="Outcome"
+                        imageOne="/static/images/projects/site-assist/site-assist-8.jpg"
+                        srcSetImageOne="/static/images/projects/site-assist/site-assist-8.jpg 1x, /static/images/projects/site-assist/site-assist-8.jpg 2x"
+                        description="The new SaaS solution was tested on a large client in the construction industry. The founders were happy with the product that went above and beyond the initial scope of the project. SSG is supporting Site Assist to develop new product features and transition to an in house team."
+                        // ProjectServiceListItem={(
+                        //   <React.Fragment>
+                        //     <WideListItem
+                        //       listItemText="UX Analysis"
+                        //     />
+                        //     <WideListItem
+                        //       listItemText="User Journey Maps"
+                        //     />
+                        //     <WideListItem
+                        //       listItemText="React Native development"
+                        //     />
+                        //   </React.Fragment>
+                        // )}
+                      />
+
+                        {/*<ProjectTextSection*/}
+                        {/*        // className="sectionTwoAnimation"*/}
+                        {/*  subTitle="Outcome"*/}
+                        {/*  description="The new SaaS solution was tested on a large client in the construction industry. The founders were happy with the product that went above and beyond the initial scope of the project. SSG is supporting Site Assist to develop new product features and transition to an in house team."*/}
+                        {/*/>*/}
 
                     </div>
 
@@ -195,12 +216,6 @@ const TheComponent = class extends Component {
                       className="panel panel--gradient-sa"
                       imageUrl="/static/images/projects/site-assist/site-assist-7.png"
                       srcSet="/static/images/projects/site-assist/site-assist-7.png 1x, /static/images/projects/site-assist/site-assist-7@2x.png 2x"
-                      imageAltText="Tone and Sculpt UI"
-                    />
-
-                    <ProjectFullImageSection
-                      imageUrl="/static/images/projects/site-assist/site-assist-8.jpg"
-                      srcSet="/static/images/projects/site-assist/site-assist-8.jpg 1x, /static/images/projects/site-assist/site-assist-8.jpg 2x"
                       imageAltText="Tone and Sculpt UI"
                     />
 
