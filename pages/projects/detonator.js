@@ -110,6 +110,22 @@ const TheComponent = class extends Component {
                         )}
                       />
 
+                      <ProjectFullImageSection
+                        // description="Once we were happy with our design direction, we started assembling a design system that we would use to build out the reader workflow and act as a base for the project UI going forward."
+                        imageUrl="/static/images/projects/detonator/User-Interview.png"
+                        srcSet="/static/images/projects/detonator/User-Interview.png 1x, /static/images/projects/detonator/User-Interview@2x.png 2x"
+                        imageAltText="User Persona"
+                        // title="Design System"
+                      />
+
+                      <ProjectFullImageSection
+                        description="Once we were happy with our design direction, we started assembling a design system that we would use to build out the reader workflow and act as a base for the project UI going forward."
+                        imageUrl="/static/images/projects/detonator/Persona.png"
+                        srcSet="/static/images/projects/detonator/Persona.png 1x, /static/images/projects/detonator/Persona@2x.png 2x"
+                        imageAltText="User Persona"
+                        title="Design System"
+                      />
+
                       {/*<ProjectFullImageSection*/}
                       {/*  title="Mapping out the Information Architecture"*/}
                       {/*  imageUrl="/static/images/projects/detonator/Detonator-IA-large.png"*/}
@@ -181,6 +197,15 @@ const TheComponent = class extends Component {
                   <div className="container">
                     <ProjectPrototypeSection title='High Fidelity Reader Workflow' prototypeLink="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4ME4iMsJ2AmTKE7dm5HJC8%2FDetonator---UI-Design%3Fpage-id%3D428%253A5672%26node-id%3D472%253A9284%26viewport%3D286%252C48%252C1%26scaling%3Dscale-down%26starting-point-node-id%3D472%253A9284"
                     />
+
+                    <ProjectFullImageSection
+                      // description="Once we were happy with our design direction, we started assembling a design system that we would use to build out the reader workflow and act as a base for the project UI going forward."
+                      imageUrl="/static/images/projects/detonator/User-Test.png"
+                      srcSet="/static/images/projects/detonator/User-Test.png 1x, /static/images/projects/detonator/User-Test@2x.png 2x"
+                      imageAltText="Design System"
+                      // title="Design System"
+                    />
+
 
                     <ProjectTextSection
                       className="sectionOneAnimation"

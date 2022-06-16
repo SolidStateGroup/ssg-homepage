@@ -98,7 +98,7 @@ export const projects = [
     //     title: 'Re-introducing reading to a disengaged young audience',
     //     blobColour: '#ED6D05',
     //     tags: ['MOBILE', 'DESIGN'],
-    //     projectType: ['Mobile App Design'],
+    //     projectType: ['UX design, UI design, Interaction Design, Product Management'],
     //     gaDataLabel: 'work-projects-detonator',
     // },
     // {
