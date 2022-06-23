@@ -79,6 +79,16 @@
   }
 }
 
+.primary-bullet-list {
+  li {
+    color: #22354a;
+    &::marker {
+      color: $brand-primary;
+    }
+  }
+
+}
+
 @include media-breakpoint-down(sm) {
 
   .hero__list {
