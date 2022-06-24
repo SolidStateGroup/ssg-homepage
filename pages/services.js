@@ -119,6 +119,34 @@ const ServicesPage = class extends React.Component {
                             )}
                         />
 
+                      <ServiceItem
+                        serviceImage="/static/images/services/Wireframes.png"
+                        srcSet="/static/images/services/Wireframes.png 1x, /static/images/services/Wireframes@2x.png 2x,"
+                        // className="flex-row-reverse"
+                        imageClassName="img__shadow "
+                        subTitle="Design Discovery"
+                        serviceLink="/services/strategy"
+                        gaServiceLabel="services_strategy"
+                        serviceDescription="Our discovery team consists of members of our senior staff from all disciplines including new business / business analysts, UX/UI design, development and project management.
+Our senior team has more than 80 years combined experience in designing and launching products in various industries."
+                        serviceListItem={(
+                          <React.Fragment>
+                            <ListItemUnderlined
+                              listItemText="Tone & Sculpt"
+                              listItemLink="/projects/tone-and-sculpt"
+                            />
+                            <ListItemUnderlined
+                              listItemText="Detonator"
+                              listItemLink="/projects/detonator"
+                            />
+                            <ListItemUnderlined
+                              listItemText="Meow Now"
+                              listItemLink="/projects/meownow"
+                            />
+                          </React.Fragment>
+                        )}
+                      />
+
                         <ServiceItem
                           srcSet="/static/images/services/user-research.png 1x, /static/images/services/user-research@2x.png 2x,"
                           serviceListItem={(

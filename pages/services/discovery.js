@@ -83,12 +83,14 @@ const DiscoveryPage = class extends React.Component {
                     <div className="container">
 
                         <section className="mt-5 mb-5">
-                            {/*<div className="col-md-5">*/}
-                            {/*    <h1 className="text-center">01</h1>*/}
-                            <div className="col-md-4 offset-md-4">
-                                <p className="text-center">Through a number of discovery workshops between your team and ours, we identify:</p>
+                            <div className="col-md-5">
+                                <h1>01</h1>
+                                <p>Through a number of discovery workshops between your team and ours, we identify:</p>
                             </div>
-                            {/*</div>*/}
+
+                            {/* <div className="col-md-4 offset-md-4"> */}
+                            {/*    <p className="text-center">Through a number of discovery workshops between your team and ours, we identify:</p> */}
+                            {/* </div> */}
                             <div className="row mt-5">
                                 <div className="col-md-6">
                                     <ul className="primary-bullet-list">
@@ -140,35 +142,35 @@ const DiscoveryPage = class extends React.Component {
 
                     <section className="mt-5 mb-5 pt-5">
                         <div className="container mt-5">
-                            {/*<h6 className="title--project-section title--project-section--small text-grey mb0 text-center">What is a Discovery Stage?</h6>*/}
+                            {/* <h6 className="title--project-section title--project-section--small text-grey mb0 text-center">What is a Discovery Stage?</h6> */}
                             <h3 className="text-center"><span className="text-primary">Why</span> do a Discovery Stage?</h3>
 
-                            <h4 className="text-center mt-5"><span className="text-primary">Benefits</span> of discovery?</h4>
+                            <h4 className="text-center mt-5"><span className="text-primary">Benefits</span> of Discovery</h4>
 
-                            <div className="row mt-5">
+                            <div className="flex-row mt-5">
                                 <div className="col-md-6">
-                                    <CardBuildCosts>
+                                    <CardBuildCosts className="height-100">
                                         <i className="fas fa-check-circle text-primary d-inline"/>
                                         <h5 className="text-white d-inline pl-2">Reduce risks</h5>
                                         <p className="text-light mt-2">Reduce the risk of missing potential deadlines and exceeding budgets by researching all aspects of the project up front.</p>
                                     </CardBuildCosts>
                                 </div>
-                                <div className="col-md-6">
-                                    <CardBuildCosts>
+                                <div className="col-md-6 mt-md-0 mt-3">
+                                    <CardBuildCosts className="height-100">
                                         <i className="fas fa-check-circle text-primary d-inline"/>
                                         <h5 className="text-white d-inline pl-2">Establish roadmap</h5>
                                         <p className="text-light mt-2">Generate a full timeline of the project with deliverables and costs over multiple releases.</p>
                                     </CardBuildCosts>
                                 </div>
                                 <div className="col-md-6 mt-3">
-                                    <CardBuildCosts>
+                                    <CardBuildCosts className="height-100">
                                         <i className="fas fa-check-circle text-primary d-inline"/>
                                         <h5 className="text-white d-inline pl-2">Build trust</h5>
                                         <p className="text-light mt-2">Regular communication and in-depth discussion / understanding around the product will establish a two-way trust.</p>
                                     </CardBuildCosts>
                                 </div>
                                 <div className="col-md-6 mt-3">
-                                    <CardBuildCosts>
+                                    <CardBuildCosts className="height-100">
                                         <i className="fas fa-check-circle text-primary d-inline"/>
                                         <h5 className="text-white d-inline pl-2">Your business blueprint</h5>
                                         <p className="text-light mt-2">Once the discovery stage is complete you have a complete list of all requirements by release, the associated time and costs and a demo of how the product will look and feel. Perfect for raising money or testing with customers.</p>
@@ -176,25 +178,25 @@ const DiscoveryPage = class extends React.Component {
                                 </div>
                             </div>
 
-                            <h4 className="text-center mt-5 pt-5"><span className="text-red">Dangers</span> of avoiding discovery?</h4>
+                            <h4 className="text-center mt-5 pt-5"><span className="text-red">Dangers</span> of avoiding Discovery?</h4>
 
-                            <div className="row mt-5">
+                            <div className="flex-row mt-5">
                                 <div className="col-md-6">
-                                    <CardBuildCosts>
+                                    <CardBuildCosts className="height-100">
                                         <i className="fas fa-times-hexagon text-red d-inline"/>
                                         <h5 className="text-white d-inline pl-2">Errors and failures</h5>
                                         <p className="text-light mt-2">Caused by the insufficient knowledge of requirements when implementing features.</p>
                                     </CardBuildCosts>
                                 </div>
-                                <div className="col-md-6">
-                                    <CardBuildCosts>
+                                <div className="col-md-6 mt-md-0 mt-3">
+                                    <CardBuildCosts className="height-100">
                                         <i className="fas fa-times-hexagon text-red d-inline"/>
                                         <h5 className="text-white d-inline pl-2">Discouraged investors</h5>
                                         <p className="text-light mt-2">With a vague roadmap and high level estimations of timelines and budgets.</p>
                                     </CardBuildCosts>
                                 </div>
                                 <div className="col-md-12 mt-3">
-                                    <CardBuildCosts>
+                                    <CardBuildCosts className="height-100">
                                         <i className="fas fa-times-hexagon text-red d-inline"/>
                                         <h5 className="text-white d-inline pl-2">Scope creep</h5>
                                         <p className="text-light mt-2">By unearthing large new requirements during the build phase can cause nasty surprises and blow out budgets. This can cause stress to working relationships, projects to fail and investors to become frustrated.</p>
@@ -203,16 +205,10 @@ const DiscoveryPage = class extends React.Component {
                             </div>
 
 
-
-
-
                         </div>
 
 
-
                     </section>
-
-
 
 
                 </div>
@@ -222,38 +218,43 @@ const DiscoveryPage = class extends React.Component {
                     <h3 className="text-center">Discovery Deliverables</h3>
 
                     <ServiceItem
-                      serviceImage="/static/images/services/user-interviews.png"
-                      srcSet="/static/images/services/user-interviews.png 1x, /static/images/services/user-interviews@2x.png 2x"
+                      imageClassName="img__shadow"
+                      serviceImage="/static/images/services/System-Architecture-Dark.png"
+                      srcSet="/static/images/services/System-Architecture-Dark.png 1x, /static/images/services/System-Architecture-Dark@2x.png 2x"
                       className="flex-row-reverse"
                       subTitle="System requirements"
-                      serviceDescription="Specification document - It fully describes the project, its goals, features, suggested technology stack, and architecture overview, migration plans and release plans."
+                      serviceDescription="We deliver a specification document that fully describes the project, its goals, features, suggested technology stack, and architecture overview, migration plans and release plans."
                     />
 
                     <ServiceItem
-                      srcSet="/static/images/services/user-research.png 1x, /static/images/services/user-research@2x.png 2x"
-                      serviceImage="/static/images/services/user-research.png"
+                      imageClassName="img__shadow"
+                      srcSet="/static/images/services/product-roadmap.png 1x, /static/images/services/product-roadmap@2x.png 2x"
+                      serviceImage="/static/images/services/product-roadmap.png"
                       subTitle="Product backlog and roadmap"
                       serviceDescription="A complete list of all user stories in the system prioritised into releases."
                     />
 
                     <ServiceItem
-                      serviceImage="/static/images/services/analysing-data.png"
-                      srcSet="/static/images/services/analysing-data.png 1x, /static/images/services/analysing-data@2x.png 2x"
+                      imageClassName="img__shadow"
+                      serviceImage="/static/images/services/project-timeline.png"
+                      srcSet="/static/images/services/project-timeline.png 1x, /static/images/services/project-timeline@2x.png 2x"
                       className="flex-row-reverse"
                       subTitle="Project Timelines and Estimates"
                       serviceDescription="An accurate estimate of how long the project will take to complete the MVP and the estimated cost broken down by release and by week."
                     />
 
                     <ServiceItem
-                      srcSet="/static/images/services/insights.png 1x, /static/images/services/insights@2x.png 2x"
-                      serviceImage="/static/images/services/insights.png"
+                      imageClassName="img__shadow"
+                      srcSet="/static/images/services/Wireframes.png 1x, /static/images/services/Wireframes@2x.png 2x"
+                      serviceImage="/static/images/services/Wireframes.png"
                       subTitle="Wireframes for the MVP"
-                      serviceDescription={'A complete set of wireframes for the initial release of the product.'}
+                      serviceDescription="A complete set of wireframes for the initial release of the product."
                     />
 
                     <ServiceItem
-                      serviceImage="/static/images/services/analysing-data.png"
-                      srcSet="/static/images/services/analysing-data.png 1x, /static/images/services/analysing-data@2x.png 2x"
+                      imageClassName="img__shadow"
+                      serviceImage="/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg"
+                      srcSet="/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg 1x, /static/images/projects/tone-and-sculpt/macbook-pro-on-table@2x.jpg 2x,"
                       className="flex-row-reverse"
                       subTitle="UX Prototype"
                       serviceDescription="Wireframe screens are linked together to create a clickable prototype so you can navigate through the application and get a feel for depth and usability."

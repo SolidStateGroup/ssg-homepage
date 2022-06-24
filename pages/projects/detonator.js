@@ -98,16 +98,16 @@ const TheComponent = class extends Component {
                         description={'Over the period of 10 weeks we distilled the project goals, stakeholders, brand requirements and features for the detonator application into a comprehensive list of stories for the MVP.\n' +
                         '\n' +
                         'We started with a discovery session to gather information about the structure of the business and a blueprint for the product we’re hoping to build. This allowed us to gain a greater understanding of the project goals and proposition values for our team.'}
-                        ProjectServiceListItem={(
-                          <React.Fragment>
-                            <WideListItem
-                              listItemText="UX Analysis"
-                            />
-                            <WideListItem
-                              listItemText="User Journey Maps"
-                            />
-                          </React.Fragment>
-                        )}
+                        // ProjectServiceListItem={(
+                        //   <React.Fragment>
+                        //     <WideListItem
+                        //       listItemText="UX Analysis"
+                        //     />
+                        //     <WideListItem
+                        //       listItemText="User Journey Maps"
+                        //     />
+                        //   </React.Fragment>
+                        // )}
                       />
 
                       <ProjectFullImageSection
@@ -115,15 +115,14 @@ const TheComponent = class extends Component {
                         imageUrl="/static/images/projects/detonator/User-Interview.png"
                         srcSet="/static/images/projects/detonator/User-Interview.png 1x, /static/images/projects/detonator/User-Interview@2x.png 2x"
                         imageAltText="User Persona"
-                        // title="Design System"
+                        title="User Research Synthesis"
                       />
 
                       <ProjectFullImageSection
-                        description="Once we were happy with our design direction, we started assembling a design system that we would use to build out the reader workflow and act as a base for the project UI going forward."
                         imageUrl="/static/images/projects/detonator/Persona.png"
                         srcSet="/static/images/projects/detonator/Persona.png 1x, /static/images/projects/detonator/Persona@2x.png 2x"
                         imageAltText="User Persona"
-                        title="Design System"
+                        title="User Persona Creation"
                       />
 
                       {/*<ProjectFullImageSection*/}
@@ -146,7 +145,13 @@ const TheComponent = class extends Component {
                               listItemText="UX Analysis"
                             />
                             <WideListItem
-                              listItemText="User Journey Maps"
+                              listItemText="Information Architecture"
+                            />
+                            <WideListItem
+                              listItemText="Wireframing"
+                            />
+                            <WideListItem
+                              listItemText="Low Fidelity Prototype"
                             />
                           </React.Fragment>
                         )}
@@ -173,10 +178,16 @@ const TheComponent = class extends Component {
                         ProjectServiceListItem={(
                           <React.Fragment>
                             <WideListItem
-                              listItemText="UX Analysis"
+                              listItemText="UI Design"
                             />
                             <WideListItem
-                              listItemText="User Journey Maps"
+                              listItemText="Design System"
+                            />
+                            <WideListItem
+                              listItemText="Interaction Design"
+                            />
+                            <WideListItem
+                              listItemText="High Fidelity Prototype"
                             />
                           </React.Fragment>
                         )}
@@ -199,11 +210,12 @@ const TheComponent = class extends Component {
                     />
 
                     <ProjectFullImageSection
+                      className="mt-5"
                       // description="Once we were happy with our design direction, we started assembling a design system that we would use to build out the reader workflow and act as a base for the project UI going forward."
                       imageUrl="/static/images/projects/detonator/User-Test.png"
                       srcSet="/static/images/projects/detonator/User-Test.png 1x, /static/images/projects/detonator/User-Test@2x.png 2x"
                       imageAltText="Design System"
-                      // title="Design System"
+                      title="Usabilty Testing"
                     />
 
 
