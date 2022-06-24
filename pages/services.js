@@ -125,7 +125,7 @@ const ServicesPage = class extends React.Component {
                         // className="flex-row-reverse"
                         imageClassName="img__shadow "
                         subTitle="Design Discovery"
-                        serviceLink="/services/strategy"
+                        serviceLink="/services/discovery"
                         gaServiceLabel="services_strategy"
                         serviceDescription="Our discovery team consists of members of our senior staff from all disciplines including new business / business analysts, UX/UI design, development and project management.
 Our senior team has more than 80 years combined experience in designing and launching products in various industries."
