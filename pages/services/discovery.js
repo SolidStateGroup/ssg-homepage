@@ -215,7 +215,7 @@ const DiscoveryPage = class extends React.Component {
 
                 <div className="container">
 
-                    <h3 className="text-center">Discovery Deliverables</h3>
+                    <h3 className="text-center">Discovery <span className="text-primary">Deliverables</span></h3>
 
                     <ServiceItem
                       imageClassName="img__shadow"
