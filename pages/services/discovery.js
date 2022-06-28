@@ -71,7 +71,7 @@ const DiscoveryPage = class extends React.Component {
             <Page title={Constants.titles.discovery} canonical="discovery">
                 <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                     <Header/>
-                    <ServicesHero title="Design Discovery" text="Through a number of discovery workshops between your team and ours, we identify Issues and opportunities and use that information to prioritise the backlog into MVP and additional releases, produce timeline and cost estimates, create clickable prototypes and much more." />
+                    <ServicesHero title="Discovery" text="Through a number of discovery workshops between your team and ours, we identify Issues and opportunities and use that information to prioritise the backlog into MVP and additional releases, produce timeline and cost estimates, create clickable prototypes and much more." />
                 </div>
 
 
@@ -85,12 +85,9 @@ const DiscoveryPage = class extends React.Component {
                         <section className="mt-5 mb-5">
                             <div className="col-md-5">
                                 <h1>01</h1>
-                                <p>Through a number of discovery workshops between your team and ours, we identify:</p>
+                                <p>Through a number of discovery workshops with your team and ours, we identify:</p>
                             </div>
 
-                            {/* <div className="col-md-4 offset-md-4"> */}
-                            {/*    <p className="text-center">Through a number of discovery workshops between your team and ours, we identify:</p> */}
-                            {/* </div> */}
                             <div className="row mt-5">
                                 <div className="col-md-6">
                                     <ul className="primary-bullet-list">
