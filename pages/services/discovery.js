@@ -147,7 +147,7 @@ const DiscoveryPage = class extends React.Component {
 
                             <h4 className="text-center mt-5"><span className="text-primary">Benefits</span> of Discovery</h4>
 
-                            <div className="flex-row mt-5">
+                            <div className="flex-row mt-5 align-items-stretch">
                                 <div className="col-md-6">
                                     <CardBuildCosts className="height-100">
                                         <i className="fas fa-check-circle text-primary d-inline"/>
@@ -180,7 +180,7 @@ const DiscoveryPage = class extends React.Component {
 
                             <h4 className="text-center mt-5 pt-5"><span className="text-red">Dangers</span> of avoiding Discovery?</h4>
 
-                            <div className="flex-row mt-5">
+                            <div className="flex-row mt-5 align-items-stretch">
                                 <div className="col-md-6">
                                     <CardBuildCosts className="height-100">
                                         <i className="fas fa-times-hexagon text-red d-inline"/>
