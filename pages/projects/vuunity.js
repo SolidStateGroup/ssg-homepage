@@ -27,23 +27,23 @@ const TheComponent = class extends Component {
     render() {
         return (
             <React.Fragment>
-                <Page title={Constants.titles.detonator} canonical="projects/detonator">
+                <Page title={Constants.titles.vuunity} canonical="projects/vuunity">
                     <ProjectHero
                       clientImage="/static/images/projects/detonator/detonator-wordmark.png"
-                      projectTitle="Re-introducing reading to a disengaged young audience"
-                      projectType="Mobile App"
-                      ProjectServiceListItem={(
-                          <React.Fragment>
-                              <TextListItem listItemText="UX design,"/>
-                              <TextListItem listItemText="UI design,"/>
-                              <TextListItem listItemText="Interaction Design,"/>
-                              <TextListItem listItemText="Product Management"/>
-                              {/* <TextListItem listItemText="Mobile App Development"/> */}
-                          </React.Fragment>
-)}
-                      className="hero--detonator"
-                      projectImage="/static/images/projects/detonator/1.png"
-                      srcSet="/static/images/projects/detonator/1.png 1x, /static/images/projects/detonator/1@2x.png 2x"
+                      projectTitle="View the concert your way"
+                      projectType="Responsive Web Application & Mobile App"
+                      ProjectServiceListItem={
+                        <React.Fragment>
+                          <TextListItem listItemText={'UX design,'}/>
+                          <TextListItem listItemText={'UI design,'}/>
+                          <TextListItem listItemText={'API Development,'}/>
+                          <TextListItem listItemText={'Web Application,'}/>
+                          <TextListItem listItemText={'Mobile App Development'}/>
+                        </React.Fragment>
+                      }
+                      className="hero--vuunity"
+                      projectImage="/static/images/projects/vuunity/Vuunity-1.png"
+                      srcSet="/static/images/projects/vuunity/Vuunity-1.png 1x, /static/images/projects/vuunity/Vuunity-1@2x.png 2x"
                     />
 
                     <div className="container">
