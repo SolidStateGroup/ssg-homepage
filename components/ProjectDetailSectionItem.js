@@ -177,7 +177,7 @@ export const ProjectTextSection = global.ProjectTextSection = class extends Reac
         return (
             <div id={this.props.id} className={cn(this.props.className, 'row project__section-item pt-5 pb-5')}>
                 <div className="col-md-4 offset-md-1">
-                    <h6 className="title--project-section title--project-section--small text-grey mb0">{this.props.subTitle || '01 / Overview'}</h6>
+                    <h6 className="title--project-section title--project-section--small text-grey mb0">{this.props.subTitle || null}</h6>
                 </div>
                 <div className="col-md-6 offset-md-1">
 

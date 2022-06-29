@@ -29,18 +29,18 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title={Constants.titles.vuunity} canonical="projects/vuunity">
                     <ProjectHero
-                      clientImage="/static/images/projects/detonator/detonator-wordmark.png"
+                      clientImage="/static/images/projects/vuunity/vuunity-logo-white.svg"
                       projectTitle="View the concert your way"
                       projectType="Responsive Web Application & Mobile App"
-                      ProjectServiceListItem={
-                        <React.Fragment>
-                          <TextListItem listItemText={'UX design,'}/>
-                          <TextListItem listItemText={'UI design,'}/>
-                          <TextListItem listItemText={'API Development,'}/>
-                          <TextListItem listItemText={'Web Application,'}/>
-                          <TextListItem listItemText={'Mobile App Development'}/>
-                        </React.Fragment>
-                      }
+                      ProjectServiceListItem={(
+                          <React.Fragment>
+                              <TextListItem listItemText="UX design,"/>
+                              <TextListItem listItemText="UI design,"/>
+                              <TextListItem listItemText="API Development,"/>
+                              <TextListItem listItemText="Web Application,"/>
+                              <TextListItem listItemText="Mobile App Development"/>
+                          </React.Fragment>
+)}
                       className="hero--vuunity"
                       projectImage="/static/images/projects/vuunity/Vuunity-1.png"
                       srcSet="/static/images/projects/vuunity/Vuunity-1.png 1x, /static/images/projects/vuunity/Vuunity-1@2x.png 2x"
@@ -51,184 +51,168 @@ const TheComponent = class extends Component {
                         <ProjectTextSection
                           className="sectionOneAnimation"
                           subTitle="Overview"
-                          description={'Detonator is a brave new concept to re-introduce reading to a disengaged young audience. \n'
+                          description={'Vuunity is the app that gives you full access to interactive behind the scenes content from a truly unique perspective.\n'
                           + '\n'
-                          + 'The Detonator interactive reader customises the reading experience based on what is being read and the current narrative. Short punchy stories, broken into easy to read chunks with atmospheric background noises, and sticky gamification make reading a far more immersive experience. Detonator users are incentivised to read more by a ranking system and earn rewards which can be equipped to personalise their profile.  \n'
-                          + '\n'
-                          + 'Detonator content is exclusive to the platform and is released periodically to subscribed users.\n'}
+                          + 'Go Behind-the-Scenes like never before. Search for your favourite artists and dive deep into their concerts with full access to before, during and after the show content.'}
                         />
 
 
                     </div>
 
-                    <ProjectFullImageSection
-                      imageUrl="/static/images/projects/detonator/2.png"
-                      srcSet="/static/images/projects/detonator/2.png 1x, /static/images/projects/detonator/2@2x.png 2x"
-                      imageAltText="Dashboard UI"
-                    />
+                    <div className="container">
+                        <ProjectFullImageSection
+                          imageUrl="/static/images/projects/vuunity/vuunity-2.png"
+                          srcSet="/static/images/projects/vuunity/vuunity-2.png 1x, /static/images/projects/vuunity/vuunity-2@2x.png 2x"
+                          imageAltText="Dashboard UI"
+                        />
+                    </div>
 
                     <div className="container">
 
 
                         <ProjectDetailSectionItem
-                              // title={'Users & Audience'}
                           subTitle="Challenge"
-                          imageOne="/static/images/projects/detonator/Kick-Ass-Books-Presentation-2.jpg"
-                          srcSetImageOne="/static/images/projects/detonator/Kick-Ass-Books-Presentation-2.jpg 1x, /static/images/projects/detonator/Kick-Ass-Books-Presentation-2.jpg 2x"
-                          description={'\n'
-                          + 'The Detonator philosophy is to get kids reading again. The reading industry thinks they’ve lost 10-15 year olds to gaming and Tik Tok, so Detonator wanted to capitalise on this gap in the market to produce books and content for kids in that age group which would make reading feel as exciting as playing Fortnite.'}
-//                           ProjectServiceListItem={(
-//                               <React.Fragment>
-//                                   <WideListItem
-//                                     listItemText="UX Analysis"
-//                                   />
-//                                   <WideListItem
-//                                     listItemText="User Journey Maps"
-//                                   />
-//                               </React.Fragment>
-// )}
+                          imageOne="/static/images/projects/vuunity/Vunity-3.png"
+                          srcSetImageOne="/static/images/projects/vuunity/Vunity-3.png 1x, /static/images/projects/vuunity/Vunity-3@2x.png 2x"
+                          description={'This initial build was to discover and connect all the required services to be able to live stream multiple streams concurrently and gracefully switch between them on both web and mobile applications. Once built we would test the scalability of the application for future load.\n'
+                          + '\n'
+                          + 'During or after the initial proof of concept phase, we would kick off the branding for the application and also wireframe each and every page of the mobile and web apps, followed by high fidelity designs for those pages.'}
                         />
 
                         <ProjectDetailSectionItem
-                          title="Design Discovery"
+                          title="Proof of concept"
                           className="flex-row-reverse"
                           subTitle="Solution"
-                          imageOne="/static/images/projects/detonator/Detonator-IA.png"
-                          srcSetImageOne="/static/images/projects/detonator/Detonator-IA.png 1x, /static/images/projects/detonator/Detonator-IA@2x.png 2x"
-                          description={'Over the period of 10 weeks we distilled the project goals, stakeholders, brand requirements and features for the detonator application into a comprehensive list of stories for the MVP.\n'
-                        + '\n'
-                        + 'We started with a discovery session to gather information about the structure of the business and a blueprint for the product we’re hoping to build. This allowed us to gain a greater understanding of the project goals and proposition values for our team.'}
+                          imageOne="/static/images/projects/vuunity/vuunity-4.png"
+                          srcSetImageOne="/static/images/projects/vuunity/vuunity-4.png 1x, /static/images/projects/vuunity/vuunity-4@2x.png 2x"
+                          description="We proposed building the core services of the platform on the Amazon Web Services Elemental Live Streaming services. This would allow us to test the most difficult parts of the platform in each area and would also give us the ability to run load testing of the architecture in order to ascertain running costs which will be essential to be able to plan a business model and therefore be able to raise capital for the project."
                         />
-
-                        <ProjectFullImageSection
-                        // description="Once we were happy with our design direction, we started assembling a design system that we would use to build out the reader workflow and act as a base for the project UI going forward."
-                          imageUrl="/static/images/projects/detonator/User-Interview.png"
-                          srcSet="/static/images/projects/detonator/User-Interview.png 1x, /static/images/projects/detonator/User-Interview@2x.png 2x"
-                          imageAltText="User Persona"
-                          title="User Research Synthesis"
-                        />
-
-                        <ProjectFullImageSection
-                          imageUrl="/static/images/projects/detonator/Persona.png"
-                          srcSet="/static/images/projects/detonator/Persona.png 1x, /static/images/projects/detonator/Persona@2x.png 2x"
-                          imageAltText="User Persona"
-                          title="User Persona Creation"
-                        />
-
-                        {/* <ProjectFullImageSection */}
-                        {/*  title="Mapping out the Information Architecture" */}
-                        {/*  imageUrl="/static/images/projects/detonator/Detonator-IA-large.png" */}
-                        {/*  srcSet="/static/images/projects/detonator/Detonator-IA-large.png 1x, /static/images/projects/detonator/Detonator-IA-large@2x.png 2x" */}
-                        {/*  imageAltText="Detonator IA" */}
-                        {/* /> */}
 
                         <ProjectDetailSectionItem
-                          title="Designing the workflows"
+                        // title="Proof of concept"
                         // className="flex-row-reverse"
                           subTitle="Solution"
-                          imageOne="/static/images/projects/detonator/Wireframes.png"
-                          srcSetImageOne="/static/images/projects/detonator/Wireframes.png 1x, /static/images/projects/detonator/Wireframes@2x.png 2x"
-                          description="We wireframed the entire application creating a clickable prototype of each page and user flow."
-                          ProjectServiceListItem={(
-                              <React.Fragment>
-                                  <WideListItem
-                                    listItemText="UX Analysis"
-                                  />
-                                  <WideListItem
-                                    listItemText="Information Architecture"
-                                  />
-                                  <WideListItem
-                                    listItemText="Wireframing"
-                                  />
-                                  <WideListItem
-                                    listItemText="Low Fidelity Prototype"
-                                  />
-                              </React.Fragment>
-                        )}
+                          imageOne="/static/images/projects/vuunity/vuunity-5.png"
+                          srcSetImageOne="/static/images/projects/vuunity/vuunity-5.png 1x, /static/images/projects/vuunity/vuunity-5@2x.png 2x"
+                          description={'The PoC would cover the following features:\n\n'
+                        + '1. Allow multiple live input streams to be captured, stored and streamed out to multiple devices\n'
+                        + '2. Create a basic React Native mobile application that can view available streams, play and switch between streams\n'
+                        + '3. Create a website that can view available streams, play and switch between streams, and play multiple streams simultaneously\n'
+                        + '4. Test the system with varying mobile devices and web browsers to test scalability, performance and running costs of the AWS architecture.\n'}
                         />
 
-                        <div className="col-md-12 text-center">
+                        {/* <ProjectTextSection */}
+                        {/*  className="flex-row-reverse" */}
+                        {/*  // subTitle="Solution" */}
+                        {/*  description={'The PoC would cover the following features:\n' +*/}
+                        {/*  '- Allow multiple live input streams to be captured, stored and streamed out to multiple devices\n' +*/}
+                        {/*  '- Create a basic React Native mobile application that can view available streams, play and switch between streams\n' +*/}
+                        {/*  '- Create a website that can view available streams, play and switch between streams, and play multiple streams simultaneously\n' +*/}
+                        {/*  '- Test the system with varying mobile devices and web browsers to test scalability, performance and running costs of the AWS architecture.\n'} */}
+                        {/* /> */}
 
-                            <iframe
-                              width="100%" height="650"
-                              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FdMgEG7DS6lG8lwYHhYF2u1%2FDetonator---Wireframes-v1%3Fpage-id%3D71%253A29622%26node-id%3D71%253A29624%26viewport%3D367%252C457%252C0.14%26scaling%3Dscale-down%26starting-point-node-id%3D71%253A29624%26show-proto-sidebar%3D1"
-                              allowFullScreen
-                            />
 
-                        </div>
+                        {/* <ProjectFullImageSection */}
+                        {/* description="Once we were happy with our design direction, we started assembling a design system that we would use to build out the reader workflow and act as a base for the project UI going forward." */}
+                        {/*  imageUrl="/static/images/projects/detonator/User-Interview.png" */}
+                        {/*  srcSet="/static/images/projects/detonator/User-Interview.png 1x, /static/images/projects/detonator/User-Interview@2x.png 2x" */}
+                        {/*  imageAltText="User Persona" */}
+                        {/*  // title="User Research Synthesis" */}
+                        {/* /> */}
 
-
-                        <ProjectDetailSectionItem
-                          title="High Fidelity Design"
-                          className="flex-row-reverse"
+                        <ProjectFullImageSection
+                          imageUrl="/static/images/projects/vuunity/Vunity-6.png"
+                          srcSet="/static/images/projects/vuunity/Vunity-6.png 1x, /static/images/projects/vuunity/Vunity-6@2x.png 2x"
+                          imageAltText="User Persona"
+                          title="Branding, wireframing and design"
                           subTitle="Solution"
-                          imageOne="/static/images/projects/detonator/UI-Sketch.png"
-                          srcSetImageOne="/static/images/projects/detonator/UI-Sketch.png, /static/images/projects/detonator/UI-Sketch@2x.png 2x"
-                          description={'In order for the app to compete with other screen based distractions, Detonator wanted the UI to feel more like a videogame than a traditional e-reader. \n'
-                        + '\n'
-                        + 'We took inspiration from video game interfaces to produce an eye catching UI, with high fidelity animations and transitions to add character to the workflows.'}
-                          ProjectServiceListItem={(
-                              <React.Fragment>
-                                  <WideListItem
-                                    listItemText="UI Design"
-                                  />
-                                  <WideListItem
-                                    listItemText="Design System"
-                                  />
-                                  <WideListItem
-                                    listItemText="Interaction Design"
-                                  />
-                                  <WideListItem
-                                    listItemText="High Fidelity Prototype"
-                                  />
-                              </React.Fragment>
-                        )}
+                          description={'Whilst the proof of concept stage was underway, we kicked off the branding, wireframing and design stage for the project. We created wireframes for each and every page of the application on web and mobile platforms for the MVP. This would include identifying each user type (admin, artist, fan etc) and creating the screens for those users of the different devices.\n'
+                          + '\n'
+                          + 'We then designed the look and feel for all the pages in the wireframes using the brand identity previously created, as well as the interactions in the interface for all devices and touchpoints. The output from this stage was a clickable prototype that fully replicates the end user experience on web and mobile for the MVP release.\n'}
                         />
 
-                    </div>
-
-                    <div className="container">
-                        <ProjectFullImageSection
-                          description="Once we were happy with our design direction, we started assembling a design system that we would use to build out the reader workflow and act as a base for the project UI going forward."
-                          imageUrl="/static/images/projects/detonator/UI Design Iteration.png"
-                          srcSet="/static/images/projects/detonator/UI Design Iteration.png 1x, /static/images/projects/detonator/UI Design Iteration@2x.png 2x"
-                          imageAltText="Design System"
-                          title="UI Design Iterations"
-                        />
-                        <ProjectFullImageSection
-                          imageUrl="/static/images/projects/detonator/3.png"
-                          srcSet="/static/images/projects/detonator/3.png 1x, /static/images/projects/detonator/3@2x.png 2x"
-                          imageAltText="Design System"
-                        />
-                        <ProjectFullImageSection
-                          description="Once we were happy with our design direction, we started assembling a design system that we would use to build out the reader workflow and act as a base for the project UI going forward."
-                          imageUrl="/static/images/projects/detonator/Buttons.png"
-                          srcSet="/static/images/projects/detonator/Buttons.png 1x, /static/images/projects/detonator/Buttons@2x.png 2x"
-                          imageAltText="Design System"
-                          title="Design System"
-                        />
-                    </div>
-
-                    <div className="container">
-                        <ProjectPrototypeSection
-                          title="High Fidelity Reader Workflow" prototypeLink="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4ME4iMsJ2AmTKE7dm5HJC8%2FDetonator---UI-Design%3Fpage-id%3D428%253A5672%26node-id%3D472%253A9284%26viewport%3D286%252C48%252C1%26scaling%3Dscale-down%26starting-point-node-id%3D472%253A9284"
-                        />
-
-                        <ProjectDetailSectionItem
-                          title="Usabilty Testing"
-                          className="flex-row-reverse"
-                          subTitle="Solution"
-                          imageOne="/static/images/projects/detonator/User-Test.png"
-                          srcSetImageOne="/static/images/projects/detonator/User-Test.png, /static/images/projects/detonator/User-Test@2x.png 2x"
-                          description="We tested the prototype via a series of unmoderated usability tests and user interviews. We found that all users completed the goal we’d set for them and provided positive feedback with regards to the design of the app. Using these insights helped us to further refine our high fidelity prototype that Detonator could show to prospective investors."
-                        />
+                        {/* <ProjectDetailSectionItem */}
+                        {/*  title="Minimum Viable Product" */}
+                        {/*  // className="flex-row-reverse" */}
+                        {/*  subTitle="Solution" */}
+                        {/*  imageOne="/static/images/projects/vuunity/vuunity-5.png" */}
+                        {/*  srcSetImageOne="/static/images/projects/vuunity/vuunity-5.png 1x, /static/images/projects/vuunity/vuunity-5@2x.png 2x" */}
+                        {/*  description={'Once the wireframing and design stage was complete we built on the proof of concept codebase to create the minimum viable product (MVP). This is the minimum set of features that could be built which would allow the platform to be sold as a product. \n' +*/}
+                        {/*  '\n' +*/}
+                        {/*  'We defined the MVP for this product to be the following features:\n' +*/}
+                        {/*  '\n' +*/}
+                        {/*  '- Artists will be able to create an account, upload content, create a concert, sell tickets for that concert, go live at the concert and stream the live event to their audience.\n' +*/}
+                        {/*  '- Fans will be able to create an account, browse various artists, consume specific artist content, buy tickets to a concert, consume pre-recorded and live streamed content from the concert.\n' +*/}
+                        {/*  '- Vunity administrators will be able to monitor the different users and manage the accounts. Administrate the various content and concerts. Administrate tickets and get basic statistics about the concert sales.\n'} */}
+                        {/* /> */}
 
                         <ProjectTextSection
-                          className="sectionOneAnimation"
-                          subTitle="Highlights"
-                          description={'As part of the discovery phase, we wireframed the entire application, creating a clickable prototype of each page and user flow and delivered a high fidelity prototype that demonstrated the core workflow of the reader journey for the mobile application to allow prospective investors and other interested parties to get a real feel for how the application looks, feels and sounds. We also provided a detailed breakdown of the stories and cost estimates for the initial phase of the application. \n'
-                      + '\n'
-                      + 'The founders are currently using our outputs from the discovery phase to seek funding to develop an MVP of the detonator mobile application.'}
+                          subTitle="Solution"
+                          title="Minimum Viable Product"
+                          description={'Once the wireframing and design stage was complete we built on the proof of concept codebase to create the minimum viable product (MVP). This is the minimum set of features that could be built which would allow the platform to be sold as a product. \n'
+                        + '\n'
+                        + 'We defined the MVP for this product to be the following features:\n'
+                        }
+                          bulletedList={(
+                              <React.Fragment>
+                                  <li>Artists will be able to create an account, upload content, create a concert, sell tickets for that concert, go live at the concert and stream the live event to their audience.
+                                  </li>
+                                  <li>Fans will be able to create an account, browse various artists, consume specific artist content, buy tickets to a concert, consume pre-recorded and live streamed content from the concert.</li>
+                                  <li>Vunity administrators will be able to monitor the different users and manage the accounts. Administrate the various content and concerts. Administrate tickets and get basic statistics about the concert sales.</li>
+                              </React.Fragment>
+)}
+                        />
+
+                        <ProjectFullImageSection
+                          imageUrl="/static/images/projects/vuunity/vuunity-7.png"
+                          srcSet="/static/images/projects/vuunity/vuunity-7.png 1x, /static/images/projects/vuunity/vuunity-7@2x.png 2x"
+                        />
+
+                      <ProjectTechSection
+                        techLogoItems={
+                          <React.Fragment>
+                            <div className="col-6 text-center">
+                              <img alt="react" src='/static/images/tech-icons/dark/react.svg'
+                                   className='img-responsive'/>
+                            </div>
+                            <div className="col-6 text-center">
+                              <img alt="aws" src='/static/images/tech-icons/dark/aws.svg'
+                                   className='img-responsive'/>
+                            </div>
+                            <div className="col-6 text-center mb-md-0 mb-4">
+                              <img alt="mysql" src='/static/images/tech-icons/dark/react-native-logo.png' className='img-responsive'/>
+                            </div>
+                            <div className="col-6 text-center">
+
+                            </div>
+                          </React.Fragment>
+                        }
+                        ProjectServiceListItem={
+                          <React.Fragment>
+                            <WideListItem
+                              listItemText={'Mobile Development'}/>
+                            <WideListItem
+                              listItemText={'Backend Development'}/>
+                            <WideListItem
+                              listItemText={'API Development'}/>
+                          </React.Fragment>}
+
+                      />
+
+
+                        <ProjectTextSection
+                          subTitle="Outcome"
+                          title="Highlights"
+                          description="Once the basic platform was live, we could then concentrate on the more interactive and advanced features. Some future features planned for the platform include:"
+                          bulletedList={(
+                              <React.Fragment>
+                                  <li>Ecommerce stores for the artist in general, but also for the specific concert that the fan has bought the ticket to.
+                                  </li>
+                                  <li>An Artist fan wall made from content uploaded by the fans and approved by the artists team.</li>
+                                  <li>Live concert chat allowing users to give feedback or chat with their friends whilst watching the concert. This could include a friends wall to be able to video chat together to enjoy the concert together.</li>
+                                  <li>Interactive stage interactions allowing the user to interact with the concert from their mobile device.</li>
+                              </React.Fragment>
+)}
                         />
 
 
