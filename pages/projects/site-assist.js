@@ -87,16 +87,6 @@ const TheComponent = class extends Component {
                           description={'The construction industry is the least productive industry in the U.K as well as one of the most dangerous. The cost of work related injuries in construction is estimated to £1bn per year and workers on site spend on average 7 hours a month on paperwork. Furthermore the industry is also unique due to the amount of subcontractors working in parallel with various tasks. Communication and compliance is therefore crucial in order to deliver a project on time, on budget and in a safe manner.\n'
                               + '\n'
                               + 'There are various digital platforms and mobile applications to digitise inspections as well as permits, yet these are often hard to use, badly implemented and not aimed at small and mid sized sub-contractors. Site Assist’s mission was to create a tool that covers key processes and that could be implemented to a minimum cost. \n'}
-                          ProjectServiceListItem={(
-                              <React.Fragment>
-                                  <WideListItem
-                                    listItemText="UX Analysis"
-                                  />
-                                  <WideListItem
-                                    listItemText="User Journey Maps"
-                                  />
-                              </React.Fragment>
-)}
                         />
 
                         <ProjectDetailSectionItem
@@ -107,14 +97,20 @@ const TheComponent = class extends Component {
                           srcSetImageOne="/static/images/projects/site-assist/site-assist-4.png 1x, /static/images/projects/site-assist/site-assist-4@2x.png 2x"
                           description={'We worked with the founders to flesh out product requirements and build a backlog of features. The initial design phase consisted of competitor analysis, user research and wireframing for both the web and mobile applications. \n'}
                           ProjectServiceListItem={(
-                              <React.Fragment>
-                                  <WideListItem
-                                    listItemText="UX Analysis"
-                                  />
-                                  <WideListItem
-                                    listItemText="User Journey Maps"
-                                  />
-                              </React.Fragment>
+                            <React.Fragment>
+                              <WideListItem
+                                listItemText="UX Analysis"
+                              />
+                              <WideListItem
+                                listItemText="Information Architecture"
+                              />
+                              <WideListItem
+                                listItemText="Wireframing"
+                              />
+                              <WideListItem
+                                listItemText="Low Fidelity Prototype"
+                              />
+                            </React.Fragment>
 )}
                         />
 
@@ -128,18 +124,21 @@ const TheComponent = class extends Component {
                               + 'We created a web application using React and a mobile application with React Native. \n'
                               + '\n'}
                           ProjectServiceListItem={(
-                              <React.Fragment>
-                                  <WideListItem
-                                    listItemText="UX Analysis"
-                                  />
-                                  <WideListItem
-                                    listItemText="User Journey Maps"
-                                  />
-                                <WideListItem
-                                    listItemText="React Native development"
-                                  />
-                              </React.Fragment>
-)}
+                            <React.Fragment>
+                              <WideListItem
+                                listItemText="UI Design"
+                              />
+                              <WideListItem
+                                listItemText="Design System"
+                              />
+                              <WideListItem
+                                listItemText="Interaction Design"
+                              />
+                              <WideListItem
+                                listItemText="High Fidelity Prototype"
+                              />
+                            </React.Fragment>
+                          )}
                         />
 
                     </div>
@@ -181,6 +180,22 @@ const TheComponent = class extends Component {
                                   </div>
                               </React.Fragment>
                         )}
+                          ProjectServiceListItem={(
+                            <React.Fragment>
+                              <WideListItem
+                                listItemText='Mobile Development'
+                              />
+                              <WideListItem
+                                listItemText='Web Development'
+                              />
+                              <WideListItem
+                                listItemText='Backend Development'
+                              />
+                              <WideListItem
+                                listItemText='API Development'
+                              />
+                            </React.Fragment>
+                          )}
                         />
 
                       <ProjectDetailSectionItem

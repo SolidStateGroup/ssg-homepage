@@ -15,6 +15,7 @@ const Constants = global.Constants = {
         partners: 'Partners | Solid State Group',
         jobs: 'Jobs | Solid State Group',
         services: 'Services | Solid State Group',
+        technology: 'Technology | Solid State Group',
         mobileAppDevelopment: 'React Native Mobile App Development - Apps For iOS & Android',
         webAppDevelopment: 'Web App Development | Solid State Group',
         reactNative: 'What Is React Native And How Does It Work For Mobile Apps',
@@ -95,6 +96,8 @@ const Constants = global.Constants = {
         blog: 'Blog',
         work: 'Work',
         services: 'Services',
+
+        technology: 'Technology',
         partners: 'Partners',
         contact: 'Contact',
         thanks: 'Thanks',
