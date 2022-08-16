@@ -74,7 +74,7 @@ function TechPage() {
                     {/*<p className="text-light">Since React Native's inception in 2015, we've built blah blah blah*/}
                     {/*</p>*/}
                 </div>
-                <div className="ml-5 pl-5 pb-5">
+                <div className="ml-md-5 ml-0 pl-5 pl-md-5 pb-0">
                     {/* Timeline goes here */}
                     <div className="example timeline pb-5">
                         <div onMouseLeave={dragStop}>
@@ -86,8 +86,9 @@ function TechPage() {
                               onMouseUp={() => dragStop}
                               onMouseMove={handleDrag}
                             >
-                              <h4 className="text-light mt-5">2022</h4>
-
+                              <div className="d-flex timeline-year-container">
+                                <h5 className="text-light mr-3">2022</h5>
+                              </div>
 
                               {/*{items.map(({ id }) => (*/}
                               {/*      <TimelineItem*/}
@@ -202,7 +203,9 @@ function TechPage() {
                                 year="March 2015"
                                 text="First public release"
                               />
-                              <h4 className="text-light mt-5">2015</h4>
+                              <div className="d-flex timeline-year-container">
+                                <h5 className="text-light mr-3">2015</h5>
+                              </div>
                             </ScrollMenu>
                         </div>
                     </div>

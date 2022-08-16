@@ -1,46 +1,43 @@
-.timeline {
-  &__button {
-    box-shadow: none;
-    width: 50px;
-    height: 200px;
-    border: 0;
-    transition: opacity .25s ease-in-out;
-    z-index: 2;
-    //background: linear-gradient(270deg, #2C2733 32.38%, rgba(44, 39, 51, 0) 100%);
-    font-size: 30px;
-  }
-}
-
 .react-horizontal-scrolling-menu--arrow-right {
   position: absolute;
   right: 0;
-  //background: linear-gradient(270deg, #2C2733 32.38%, rgba(44, 39, 51, 0) 100%);
 }
 
 .react-horizontal-scrolling-menu--arrow-left {
   position: absolute;
-  left: 80px;
-  //background: linear-gradient(270deg, #2C2733 32.38%, rgba(44, 39, 51, 0) 100%);
-  //z-index: 9999;
+  left: 40px;
 }
 
 .react-horizontal-scrolling-menu--inner-wrapper {
   padding: 40px 0;
 }
 
+.timeline {
+  &__button {
+    width: 50px;
+    height: 200px;
+    border: 0;
+    transition: opacity .25s ease-in-out;
+    z-index: 2;
+    font-size: 30px;
+    background: linear-gradient(270deg, #2C2733 32.38%, rgba(44, 39, 51, 0) 100%);
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
 
 .timeline-item {
   display: inline-block;
   width: 170px;
   height: 200px;
   user-select: none;
-  margin: 20px;
+  margin: 20px 10px;
   border-bottom: 1px solid $brand-primary;
   padding-bottom: 2em;
   position: relative;
   &__img {
-    //width: 160px;
-    height: 30px;
+    height: 24px;
   }
   &:before {
       content: url('/static/images/svg-icons/Pulse-Timeline.svg');
@@ -49,5 +46,17 @@
       position: absolute;
     bottom: -23px;
     left: -12px;
+  }
+}
+
+.timeline-year-container {
+  height: 235px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@include media-breakpoint-down(sm) {
+  .react-horizontal-scrolling-menu--arrow-left {
+    left: 0px;
   }
 }
