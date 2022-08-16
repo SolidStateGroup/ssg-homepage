@@ -74,6 +74,7 @@
     "react-cookie-consent": "^6.3.0",
     "react-device-detect": "^1.11.14",
     "react-dom": "^16.13.0",
+    "react-horizontal-scrolling-menu": "^3.2.0",
     "react-hot-keys": "^2.7.1",
     "react-infinite-scroll-component": "^5.0.4",
     "react-json-editor-ajrm": "2.5.13",

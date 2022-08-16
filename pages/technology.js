@@ -3,15 +3,13 @@ import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
-import ReactLogo from '../components/TechIcons/ReactLogo';
-import NodeLogo from '../components/TechIcons/NodeLogo';
-import DockerLogo from '../components/TechIcons/DockerLogo';
-import JavaLogo from '../components/TechIcons/JavaLogo';
-import PostgresLogo from '../components/TechIcons/PostgresLogo';
-import AWSLogo from '../components/TechIcons/AWSLogo';
 import { ListItemUnderlined } from '../components/ListItem';
 import ServiceItem from '../components/ServiceItem';
 import Card from '../components/Card';
+import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
+import { LeftArrow, RightArrow } from "../components/arrows";
+import { TimelineItem } from "../components/TimelineItem";
+import useDrag from "../components/useDrag";
 
 const TechnologyPage = class extends React.Component {
     static displayName = 'TechnologyPage';
@@ -63,6 +61,8 @@ const TechnologyPage = class extends React.Component {
                     </div>
                     <div className="container">
                       {/*Timeline goes here*/}
+
+
                     </div>
                 </div>
                 <div className="section--no-padding">
