@@ -1,0 +1,53 @@
+.timeline {
+  &__button {
+    box-shadow: none;
+    width: 50px;
+    height: 200px;
+    border: 0;
+    transition: opacity .25s ease-in-out;
+    z-index: 2;
+    //background: linear-gradient(270deg, #2C2733 32.38%, rgba(44, 39, 51, 0) 100%);
+    font-size: 30px;
+  }
+}
+
+.react-horizontal-scrolling-menu--arrow-right {
+  position: absolute;
+  right: 0;
+  //background: linear-gradient(270deg, #2C2733 32.38%, rgba(44, 39, 51, 0) 100%);
+}
+
+.react-horizontal-scrolling-menu--arrow-left {
+  position: absolute;
+  left: 80px;
+  //background: linear-gradient(270deg, #2C2733 32.38%, rgba(44, 39, 51, 0) 100%);
+  //z-index: 9999;
+}
+
+.react-horizontal-scrolling-menu--inner-wrapper {
+  padding: 40px 0;
+}
+
+
+.timeline-item {
+  display: inline-block;
+  width: 170px;
+  height: 200px;
+  user-select: none;
+  margin: 20px;
+  border-bottom: 1px solid $brand-primary;
+  padding-bottom: 2em;
+  position: relative;
+  &__img {
+    //width: 160px;
+    height: 30px;
+  }
+  &:before {
+      content: url('/static/images/svg-icons/Pulse-Timeline.svg');
+      width: 46px;
+      height: 46px;
+      position: absolute;
+    bottom: -23px;
+    left: -12px;
+  }
+}

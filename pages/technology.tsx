@@ -66,17 +66,17 @@ function TechPage() {
 
             <div className="section--dark">
                 <div className="container pr-5">
-                    <h2 className="section__title--light"><span
-                      className="text-primary"
-                    >Innovators
-                    </span> since the beginning
-                    </h2>
-                    <p className="text-light">Since React Native's inception in 2015, we've built blah blah blah
-                    </p>
+                    {/*<h2 className="section__title--light text-center"><span*/}
+                    {/*  className="text-primary"*/}
+                    {/*>Innovators*/}
+                    {/*</span> since the beginning*/}
+                    {/*</h2>*/}
+                    {/*<p className="text-light">Since React Native's inception in 2015, we've built blah blah blah*/}
+                    {/*</p>*/}
                 </div>
                 <div className="ml-5 pl-5 pb-5">
                     {/* Timeline goes here */}
-                    <div className="example pt-4 pb-5">
+                    <div className="example timeline pb-5">
                         <div onMouseLeave={dragStop}>
                             <ScrollMenu
                               LeftArrow={LeftArrow}
@@ -86,15 +86,123 @@ function TechPage() {
                               onMouseUp={() => dragStop}
                               onMouseMove={handleDrag}
                             >
-                                {items.map(({ id }) => (
-                                    <TimelineItem
-                                      title={id}
-                                      itemId={id} // NOTE: itemId is required for track items
-                                      key={id}
-                                      onClick={handleItemClick(id)}
-                                      selected={id === selected}
-                                    />
-                                ))}
+                              <h4 className="text-light mt-5">2022</h4>
+
+
+                              {/*{items.map(({ id }) => (*/}
+                              {/*      <TimelineItem*/}
+                              {/*        title={id}*/}
+                              {/*        itemId={id} // NOTE: itemId is required for track items*/}
+                              {/*        key={id}*/}
+                              {/*        onClick={handleItemClick(id)}*/}
+                              {/*        selected={id === selected}*/}
+                              {/*        year={id}*/}
+                              {/*        text={id}*/}
+                              {/*        img="/static/images/ssg-mark-white.svg"*/}
+                              {/*      />*/}
+                              {/*  ))}*/}
+                              <TimelineItem
+                                // title={'hello'}
+                                itemId={0} // NOTE: itemId is required for track items
+                                key={0}
+                                // onClick={handleItemClick(id)}
+                                // selected={id === selected}
+                                year="October 2021"
+                                text="Sports Gambling, Picks & Odds for iOS and Android"
+                                img="/static/images/clients/white/Pickswise-Logo-white.svg"
+                              />
+                              <TimelineItem
+                                itemId={1} // NOTE: itemId is required for track items
+                                key={1}
+                                year="September 2021"
+                                text="Construction Processes made easy on iOS and Android"
+                                img="/static/images/clients/white/site-assist-white.svg"
+                              />
+                              <TimelineItem
+                                itemId={2} // NOTE: itemId is required for track items
+                                key={2}
+                                year="June 2020"
+                                text="Legal support when you need it on iOS and Android"
+                                img="/static/images/clients/white/legal-utopia.png"
+                              />
+                              <TimelineItem
+                                itemId={3}
+                                key={3}
+                                year="June 2020"
+                                text="Corporate health and wellbeing tracker on iOS and Android"
+                                img="/static/images/clients/white/hero-logo-white.png"
+                              />
+                              <TimelineItem
+                                itemId={3}
+                                key={3}
+                                year="June 2019"
+                                text="The home of horse racing on iOS and Android"
+                                img="/static/images/clients/white/racing-post-white.svg"
+                              />
+                              <TimelineItem
+                                itemId={3}
+                                key={3}
+                                year="May 2019"
+                                text="Health and fitness for Krissy Cela on iOS and Android"
+                                img="/static/images/clients/white/tone-and-sculpt-white.svg"
+                              />
+                              <TimelineItem
+                                itemId={3}
+                                key={3}
+                                year="March 2019"
+                                text="Smart device manager for respiratory conditions"
+                                img="/static/images/clients/white/hailie-white.svg"
+                              />
+                              <TimelineItem
+                                itemId={3}
+                                key={3}
+                                year="August 2018"
+                                text="Innovation and development manager on iOS and Android"
+                                img="/static/images/clients/white/wazoku-white.png"
+                              />
+                              <TimelineItem
+                                itemId={3}
+                                key={3}
+                                year="September 2017"
+                                text="Booking & facilities management on iOS and Android"
+                                img="/static/images/clients/white/imperial-white.png"
+                              />
+                              <TimelineItem
+                                itemId={3}
+                                key={3}
+                                year="May 2017"
+                                text="Smart shopping companion app on iOS and Android"
+                                img="/static/images/clients/white/unilever-white.svg"
+                              />
+                              <TimelineItem
+                                itemId={3}
+                                key={3}
+                                year="April 2017"
+                                text="Connected car rentals on iOS"
+                                img="/static/images/clients/white/hertz-white.svg"
+                              />
+                              <TimelineItem
+                                itemId={3}
+                                key={3}
+                                year="January 2016"
+                                text="Mobile healthcare for renal patients on  iOS and Android"
+                                img="/static/images/clients/nhs.svg"
+                              />
+                              <TimelineItem
+                                itemId={3}
+                                key={3}
+                                year="May 2015"
+                                text="Premier League Fantasy football on IOS and Android"
+                                img="/static/images/clients/white/dugout-white.svg"
+                              />
+                              <TimelineItem
+                                title="React Native"
+                                itemId={3}
+                                key={3}
+                                year="March 2015"
+                                text="First public release"
+                              />
+                              <h4 className="text-light mt-5">2015</h4>
                             </ScrollMenu>
                         </div>
                     </div>

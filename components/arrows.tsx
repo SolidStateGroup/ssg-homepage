@@ -16,14 +16,9 @@ function Arrow({
         <button
           disabled={disabled}
           onClick={onClick}
+          className="btn timeline__button"
           style={{
-              cursor: 'pointer',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              right: '1%',
               opacity: disabled ? '0' : '1',
-              userSelect: 'none',
           }}
         >
             {children}
@@ -51,7 +46,7 @@ export function LeftArrow() {
 
     return (
         <Arrow disabled={disabled} onClick={() => scrollPrev()}>
-      Left
+            <i className="fas fa-angle-left text-primary"></i>
         </Arrow>
     );
 }
@@ -74,7 +69,9 @@ export function RightArrow() {
 
     return (
         <Arrow disabled={disabled} onClick={() => scrollNext()}>
-      Right
+      {/*Right arrow here*/}
+      {/*    <i className="fas fa-times-hexagon text-red"></i>*/}
+          <i className="fas fa-angle-right text-primary"></i>
         </Arrow>
     );
 }
