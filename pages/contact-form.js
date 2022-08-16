@@ -146,7 +146,7 @@ const ContactFormPage = class extends React.Component {
                                     </div>
 
                                     <img
-                                      src="/static/images/hero-blob.svg" alt="hero-blob"
+                                      src="/images/hero-blob.svg" alt="hero-blob"
                                       className="img-fluid position-absolute hidden-sm-down"
                                     />
                                 </div>

@@ -66,7 +66,7 @@ There is an automatic blog generator built into this project, any pages within /
          description: Jumping down a satisfying rabbit hole with NextJS
          tags: webdev, showdev, react, javascript
          author: Kyle Johnson
-         avatar: /static/images/blog/kyle.png
+         avatar: /public/images/blog/kyle.png
          date: 26-aug-2019
          ---
          <--- Markdown content here -->

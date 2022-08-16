@@ -29,7 +29,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title={Constants.titles.detonator} canonical="projects/detonator">
                     <ProjectHero
-                      clientImage="/static/images/projects/detonator/detonator-wordmark.png"
+                      clientImage="/images/projects/detonator/detonator-wordmark.png"
                       projectTitle="Re-introducing reading to a disengaged young audience"
                       projectType="Mobile App"
                       ProjectServiceListItem={(
@@ -42,8 +42,8 @@ const TheComponent = class extends Component {
                           </React.Fragment>
 )}
                       className="hero--detonator"
-                      projectImage="/static/images/projects/detonator/1.png"
-                      srcSet="/static/images/projects/detonator/1.png 1x, /static/images/projects/detonator/1@2x.png 2x"
+                      projectImage="/images/projects/detonator/1.png"
+                      srcSet="/images/projects/detonator/1.png 1x, /images/projects/detonator/1@2x.png 2x"
                     />
 
                     <div className="container">
@@ -62,8 +62,8 @@ const TheComponent = class extends Component {
                     </div>
 
                     <ProjectFullImageSection
-                      imageUrl="/static/images/projects/detonator/2.png"
-                      srcSet="/static/images/projects/detonator/2.png 1x, /static/images/projects/detonator/2@2x.png 2x"
+                      imageUrl="/images/projects/detonator/2.png"
+                      srcSet="/images/projects/detonator/2.png 1x, /images/projects/detonator/2@2x.png 2x"
                       imageAltText="Dashboard UI"
                     />
 
@@ -73,8 +73,8 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                               // title={'Users & Audience'}
                           subTitle="Challenge"
-                          imageOne="/static/images/projects/detonator/Kick-Ass-Books-Presentation-2.jpg"
-                          srcSetImageOne="/static/images/projects/detonator/Kick-Ass-Books-Presentation-2.jpg 1x, /static/images/projects/detonator/Kick-Ass-Books-Presentation-2.jpg 2x"
+                          imageOne="/images/projects/detonator/Kick-Ass-Books-Presentation-2.jpg"
+                          srcSetImageOne="/images/projects/detonator/Kick-Ass-Books-Presentation-2.jpg 1x, /images/projects/detonator/Kick-Ass-Books-Presentation-2.jpg 2x"
                           description={'\n'
                           + 'The Detonator philosophy is to get kids reading again. The reading industry thinks they’ve lost 10-15 year olds to gaming and Tik Tok, so Detonator wanted to capitalise on this gap in the market to produce books and content for kids in that age group which would make reading feel as exciting as playing Fortnite.'}
 //                           ProjectServiceListItem={(
@@ -93,8 +93,8 @@ const TheComponent = class extends Component {
                           title="Design Discovery"
                           className="flex-row-reverse"
                           subTitle="Solution"
-                          imageOne="/static/images/projects/detonator/Detonator-IA.png"
-                          srcSetImageOne="/static/images/projects/detonator/Detonator-IA.png 1x, /static/images/projects/detonator/Detonator-IA@2x.png 2x"
+                          imageOne="/images/projects/detonator/Detonator-IA.png"
+                          srcSetImageOne="/images/projects/detonator/Detonator-IA.png 1x, /images/projects/detonator/Detonator-IA@2x.png 2x"
                           description={'Over the period of 10 weeks we distilled the project goals, stakeholders, brand requirements and features for the detonator application into a comprehensive list of stories for the MVP.\n'
                         + '\n'
                         + 'We started with a discovery session to gather information about the structure of the business and a blueprint for the product we’re hoping to build. This allowed us to gain a greater understanding of the project goals and proposition values for our team.'}
@@ -102,23 +102,23 @@ const TheComponent = class extends Component {
 
                         <ProjectFullImageSection
                         // description="Once we were happy with our design direction, we started assembling a design system that we would use to build out the reader workflow and act as a base for the project UI going forward."
-                          imageUrl="/static/images/projects/detonator/User-Interview.png"
-                          srcSet="/static/images/projects/detonator/User-Interview.png 1x, /static/images/projects/detonator/User-Interview@2x.png 2x"
+                          imageUrl="/images/projects/detonator/User-Interview.png"
+                          srcSet="/images/projects/detonator/User-Interview.png 1x, /images/projects/detonator/User-Interview@2x.png 2x"
                           imageAltText="User Persona"
                           title="User Research Synthesis"
                         />
 
                         <ProjectFullImageSection
-                          imageUrl="/static/images/projects/detonator/Persona.png"
-                          srcSet="/static/images/projects/detonator/Persona.png 1x, /static/images/projects/detonator/Persona@2x.png 2x"
+                          imageUrl="/images/projects/detonator/Persona.png"
+                          srcSet="/images/projects/detonator/Persona.png 1x, /images/projects/detonator/Persona@2x.png 2x"
                           imageAltText="User Persona"
                           title="User Persona Creation"
                         />
 
                         {/* <ProjectFullImageSection */}
                         {/*  title="Mapping out the Information Architecture" */}
-                        {/*  imageUrl="/static/images/projects/detonator/Detonator-IA-large.png" */}
-                        {/*  srcSet="/static/images/projects/detonator/Detonator-IA-large.png 1x, /static/images/projects/detonator/Detonator-IA-large@2x.png 2x" */}
+                        {/*  imageUrl="/images/projects/detonator/Detonator-IA-large.png" */}
+                        {/*  srcSet="/images/projects/detonator/Detonator-IA-large.png 1x, /images/projects/detonator/Detonator-IA-large@2x.png 2x" */}
                         {/*  imageAltText="Detonator IA" */}
                         {/* /> */}
 
@@ -126,8 +126,8 @@ const TheComponent = class extends Component {
                           title="Designing the workflows"
                         // className="flex-row-reverse"
                           subTitle="Solution"
-                          imageOne="/static/images/projects/detonator/Wireframes.png"
-                          srcSetImageOne="/static/images/projects/detonator/Wireframes.png 1x, /static/images/projects/detonator/Wireframes@2x.png 2x"
+                          imageOne="/images/projects/detonator/Wireframes.png"
+                          srcSetImageOne="/images/projects/detonator/Wireframes.png 1x, /images/projects/detonator/Wireframes@2x.png 2x"
                           description="We wireframed the entire application creating a clickable prototype of each page and user flow."
                           ProjectServiceListItem={(
                               <React.Fragment>
@@ -162,8 +162,8 @@ const TheComponent = class extends Component {
                           title="High Fidelity Design"
                           className="flex-row-reverse"
                           subTitle="Solution"
-                          imageOne="/static/images/projects/detonator/UI-Sketch.png"
-                          srcSetImageOne="/static/images/projects/detonator/UI-Sketch.png, /static/images/projects/detonator/UI-Sketch@2x.png 2x"
+                          imageOne="/images/projects/detonator/UI-Sketch.png"
+                          srcSetImageOne="/images/projects/detonator/UI-Sketch.png, /images/projects/detonator/UI-Sketch@2x.png 2x"
                           description={'In order for the app to compete with other screen based distractions, Detonator wanted the UI to feel more like a videogame than a traditional e-reader. \n'
                         + '\n'
                         + 'We took inspiration from video game interfaces to produce an eye catching UI, with high fidelity animations and transitions to add character to the workflows.'}
@@ -190,20 +190,20 @@ const TheComponent = class extends Component {
                     <div className="container">
                         <ProjectFullImageSection
                           description="Once we were happy with our design direction, we started assembling a design system that we would use to build out the reader workflow and act as a base for the project UI going forward."
-                          imageUrl="/static/images/projects/detonator/UI Design Iteration.png"
-                          srcSet="/static/images/projects/detonator/UI Design Iteration.png 1x, /static/images/projects/detonator/UI Design Iteration@2x.png 2x"
+                          imageUrl="/images/projects/detonator/UI Design Iteration.png"
+                          srcSet="/images/projects/detonator/UI Design Iteration.png 1x, /images/projects/detonator/UI Design Iteration@2x.png 2x"
                           imageAltText="Design System"
                           title="UI Design Iterations"
                         />
                         <ProjectFullImageSection
-                          imageUrl="/static/images/projects/detonator/3.png"
-                          srcSet="/static/images/projects/detonator/3.png 1x, /static/images/projects/detonator/3@2x.png 2x"
+                          imageUrl="/images/projects/detonator/3.png"
+                          srcSet="/images/projects/detonator/3.png 1x, /images/projects/detonator/3@2x.png 2x"
                           imageAltText="Design System"
                         />
                         <ProjectFullImageSection
                           description="Once we were happy with our design direction, we started assembling a design system that we would use to build out the reader workflow and act as a base for the project UI going forward."
-                          imageUrl="/static/images/projects/detonator/Buttons.png"
-                          srcSet="/static/images/projects/detonator/Buttons.png 1x, /static/images/projects/detonator/Buttons@2x.png 2x"
+                          imageUrl="/images/projects/detonator/Buttons.png"
+                          srcSet="/images/projects/detonator/Buttons.png 1x, /images/projects/detonator/Buttons@2x.png 2x"
                           imageAltText="Design System"
                           title="Design System"
                         />
@@ -218,8 +218,8 @@ const TheComponent = class extends Component {
                           title="Usabilty Testing"
                           className="flex-row-reverse"
                           subTitle="Solution"
-                          imageOne="/static/images/projects/detonator/User-Test.png"
-                          srcSetImageOne="/static/images/projects/detonator/User-Test.png, /static/images/projects/detonator/User-Test@2x.png 2x"
+                          imageOne="/images/projects/detonator/User-Test.png"
+                          srcSetImageOne="/images/projects/detonator/User-Test.png, /images/projects/detonator/User-Test@2x.png 2x"
                           description="We tested the prototype via a series of unmoderated usability tests and user interviews. We found that all users completed the goal we’d set for them and provided positive feedback with regards to the design of the app. Using these insights helped us to further refine our high fidelity prototype that Detonator could show to prospective investors."
                         />
 

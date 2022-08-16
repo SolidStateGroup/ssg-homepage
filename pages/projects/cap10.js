@@ -27,7 +27,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title={Constants.titles.cap10} canonical="projects/electron-trader">
                     <ProjectHero
-                      clientImage="/static/images/clients/Cap10-logotype-white.svg"
+                      clientImage="/images/clients/Cap10-logotype-white.svg"
                       projectTitle="Flexible reporting for businesses"
                       projectType="Mobile App"
                       ProjectServiceListItem={(
@@ -39,8 +39,8 @@ const TheComponent = class extends Component {
                           </React.Fragment>
 )}
                       className="hero--cap10"
-                      projectImage="/static/images/projects/cap10/1.png"
-                      srcSet="/static/images/projects/cap10/1.png 1x, /static/images/projects/cap10/1@2x.png 2x"
+                      projectImage="/images/projects/cap10/1.png"
+                      srcSet="/images/projects/cap10/1.png 1x, /images/projects/cap10/1@2x.png 2x"
                     />
 
                     <div className="container">
@@ -59,8 +59,8 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                           title="Branding"
                           subTitle="02 / Solution"
-                          imageOne="/static/images/projects/cap10/styleguide.png"
-                          srcSetImageOne="/static/images/projects/cap10/styleguide.png 1x, /static/images/projects/cap10/styleguide@2x.png 2x"
+                          imageOne="/images/projects/cap10/styleguide.png"
+                          srcSetImageOne="/images/projects/cap10/styleguide.png 1x, /images/projects/cap10/styleguide@2x.png 2x"
                           description={'We started by creating a number of branding routes for the client\'s consideration. They served to focus our ideas and eliminate visual concepts that were not desirable. From here we developed a new route based on client feedback and iterated on this until we had a final brand that the client was happy with.\n'}
                           ProjectServiceListItem={
                               <React.Fragment>
@@ -75,8 +75,8 @@ const TheComponent = class extends Component {
                             className="flex-row-reverse"
                             title="UI Design"
                             subTitle="02 / Solution"
-                            imageOne="/static/images/projects/cap10/mobile-1.png"
-                            srcSetImageOne="/static/images/projects/cap10/mobile-1.png 1x, /static/images/projects/cap10/mobile-1@2x.png 2x"
+                            imageOne="/images/projects/cap10/mobile-1.png"
+                            srcSetImageOne="/images/projects/cap10/mobile-1.png 1x, /images/projects/cap10/mobile-1@2x.png 2x"
                             description={'The UI design uses mostly pale, low chroma colours and subtle effects to create a form that appears like a solid material. These UI elements look solid and robust and fit in nicely with the themes of security and encryption that exists within the app. Gradients are employed to drive interest to specific UI elements of the design, such as primary buttons and data visualisations.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -106,12 +106,12 @@ const TheComponent = class extends Component {
                         />
 
                         <ProjectFullImageSection
-                          imageUrl="/static/images/projects/cap10/mobile-2.jpg"
-                          srcSet="/static/images/projects/cap10/mobile-2.jpg 1x, /static/images/projects/cap10/mobile-2@2x.jpg 2x"
+                          imageUrl="/images/projects/cap10/mobile-2.jpg"
+                          srcSet="/images/projects/cap10/mobile-2.jpg 1x, /images/projects/cap10/mobile-2@2x.jpg 2x"
                           imageAltText="Dashboard UI"
                         />
 
-                        <ProjectFullVideoSection className="mb-5" title={'Interaction Design'} videoLink={'/static/images/projects/cap10/rotato-1.mov'} />
+                        <ProjectFullVideoSection className="mb-5" title={'Interaction Design'} videoLink={'/images/projects/cap10/rotato-1.mov'} />
 
                          {/*<ProjectTechSection*/}
                          {/*    subTitle={'03 / Development'}*/}
@@ -119,18 +119,18 @@ const TheComponent = class extends Component {
                          {/*   techLogoItems={*/}
                          {/*       <React.Fragment>*/}
                          {/*           <div className="col-6 text-center">*/}
-                         {/*               <img alt="react" src='/static/images/tech-icons/dark/react.svg'*/}
+                         {/*               <img alt="react" src='/images/tech-icons/dark/react.svg'*/}
                          {/*                    className='img-responsive'/>*/}
                          {/*           </div>*/}
                          {/*           <div className="col-6 text-center">*/}
-                         {/*               <img alt=".net" src='/static/images/tech-icons/dark/net.svg'*/}
+                         {/*               <img alt=".net" src='/images/tech-icons/dark/net.svg'*/}
                          {/*                    className='img-responsive'/>*/}
                          {/*           </div>*/}
                          {/*           <div className="col-6 text-center mb-md-0 mb-4">*/}
-                         {/*               <img alt="mysql" src='/static/images/tech-icons/dark/MySQL.svg' className='img-responsive'/>*/}
+                         {/*               <img alt="mysql" src='/images/tech-icons/dark/MySQL.svg' className='img-responsive'/>*/}
                          {/*           </div>*/}
                          {/*           <div className="col-6 text-center">*/}
-                         {/*               <img alt="aws" src='/static/images/tech-icons/dark/aws.svg'*/}
+                         {/*               <img alt="aws" src='/images/tech-icons/dark/aws.svg'*/}
                          {/*                    className='img-responsive'/>*/}
                          {/*           </div>*/}
                          {/*       </React.Fragment>*/}

@@ -29,7 +29,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title={Constants.titles.heroWellbeing} canonical="projects/electron-trader">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/hero-logo-white.png"
+                        clientImage="/images/clients/white/hero-logo-white.png"
                         projectTitle={'Connected Health, Made Simple'}
                         projectType={'Responsive Web Application & Mobile App'}
                         ProjectServiceListItem={
@@ -43,8 +43,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--hero-wellbeing"
-                        projectImage={'/static/images/projects/hero/hero-1.png'}
-                        srcSet={'/static/images/projects/hero/hero-1.png 1x, /static/images/projects/hero/hero-1@2x.png 2x'}
+                        projectImage={'/images/projects/hero/hero-1.png'}
+                        srcSet={'/images/projects/hero/hero-1.png 1x, /images/projects/hero/hero-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -59,8 +59,8 @@ const TheComponent = class extends Component {
 
                             <ProjectFullImageSection
                                 className="sectionThreeAnimation"
-                                imageUrl={'/static/images/projects/hero/hero-phones-flat-mockup.png'}
-                                srcSet={'/static/images/projects/hero/hero-phones-flat-mockup.png 1x, /static/images/projects/hero/hero-phones-flat-mockup@2x.png 2x'}
+                                imageUrl={'/images/projects/hero/hero-phones-flat-mockup.png'}
+                                srcSet={'/images/projects/hero/hero-phones-flat-mockup.png 1x, /images/projects/hero/hero-phones-flat-mockup@2x.png 2x'}
                                 imageAltText={'Dashboard UI'}
                             />
 
@@ -95,8 +95,8 @@ const TheComponent = class extends Component {
 
                         <ProjectFullImageSection
                             className="sectionThreeAnimation"
-                            imageUrl={'/static/images/projects/hero/hero-mobile-app-flowchart.png'}
-                            srcSet={'/static/images/projects/hero/hero-mobile-app-flowchart.png 1x, /static/images/projects/hero/hero-mobile-app-flowchart@2x.png 2x'}
+                            imageUrl={'/images/projects/hero/hero-mobile-app-flowchart.png'}
+                            srcSet={'/images/projects/hero/hero-mobile-app-flowchart.png 1x, /images/projects/hero/hero-mobile-app-flowchart@2x.png 2x'}
                             imageAltText={'Dashboard UI'}
                         />
 
@@ -110,8 +110,8 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                             title={'Users & Audience'}
                             subTitle={'02 / Solution'}
-                            imageOne={'/static/images/projects/hero/My-Health-App-on-mobile.jpg'}
-                            srcSetImageOne={'/static/images/projects/hero/My-Health-App-on-mobile.jpg 1x, /static/images/projects/hero/My-Health-App-on-mobile.jpg 2x'}
+                            imageOne={'/images/projects/hero/My-Health-App-on-mobile.jpg'}
+                            srcSetImageOne={'/images/projects/hero/My-Health-App-on-mobile.jpg 1x, /images/projects/hero/My-Health-App-on-mobile.jpg 2x'}
                             description={'The app had two types of user, including organisation leaders who create challenges for their organisation. They also get access to real time data and insights to measure and further support the wellbeing of their staff. \n' +
                             '\n' +
                             'The second user type was company individuals, who can track their health metrics, explore wellbeing tools and resources and set personalised goals.\n' +
@@ -133,18 +133,18 @@ const TheComponent = class extends Component {
                         <ProjectFullImageSection
                             title={'Old mobile app'}
                             subTitle={'03 / UI Redesign'}
-                            imageUrl={'/static/images/projects/hero/hero-old-mobile-app.jpg'}
-                            srcSet={'/static/images/projects/hero/hero-old-mobile-app.jpg 1x, /static/images/projects/hero/hero-old-mobile-app@2x.jpg 2x'}
+                            imageUrl={'/images/projects/hero/hero-old-mobile-app.jpg'}
+                            srcSet={'/images/projects/hero/hero-old-mobile-app.jpg 1x, /images/projects/hero/hero-old-mobile-app@2x.jpg 2x'}
                             imageAltText={'Dashboard UI'}
                         />
 
                         <ProjectDetailSectionItem
                             title={'Sketching and Whiteboarding'}
                             subTitle={'03 / UI Redesign'}
-                            imageOne={'/static/images/projects/hero/hero-sketch.jpg'}
-                            srcSetImageOne={'/static/images/projects/hero/hero-sketch.jpg 1x, /static/images/projects/hero/hero-sketch@2x.jpg 2x'}
-                            // imageTwo={'/static/images/services/ux-andy.jpg'}
-                            // srcSetImageTwo={'/static/images/services/ux-andy.jpg 1x, /static/images/services/ux-andy@2x.jpg 2x'}
+                            imageOne={'/images/projects/hero/hero-sketch.jpg'}
+                            srcSetImageOne={'/images/projects/hero/hero-sketch.jpg 1x, /images/projects/hero/hero-sketch@2x.jpg 2x'}
+                            // imageTwo={'/images/services/ux-andy.jpg'}
+                            // srcSetImageTwo={'/images/services/ux-andy.jpg 1x, /images/services/ux-andy@2x.jpg 2x'}
                             description={'We held several virtual whiteboarding sessions with key stakeholders in order to rapidly iterate on designs and address the issues we found within the existing mobile app.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -160,8 +160,8 @@ const TheComponent = class extends Component {
                         <ProjectFullImageSection
                             title={'Virtual Whiteboarding'}
                             subTitle={'03 / UI Redesign'}
-                            imageUrl={'/static/images/projects/hero/hero-whiteboarding.jpg'}
-                            srcSet={'/static/images/projects/hero/hero-whiteboarding.jpg 1x, /static/images/projects/hero/hero-old-mobile-app@2x.jpg 2x'}
+                            imageUrl={'/images/projects/hero/hero-whiteboarding.jpg'}
+                            srcSet={'/images/projects/hero/hero-whiteboarding.jpg 1x, /images/projects/hero/hero-old-mobile-app@2x.jpg 2x'}
                             imageAltText={'Dashboard UI'}
                         />
 
@@ -170,10 +170,10 @@ const TheComponent = class extends Component {
                             imageOneclassName="img__shadow"
                             title={'Mobile Dashboard'}
                             subTitle={'03 / UI Redesign'}
-                            imageOne={'/static/images/projects/hero/Dashboard.png'}
-                            srcSetImageOne={'/static/images/projects/hero/Dashboard.png 1x, /static/images/projects/hero/Dashboard@2x.png 2x'}
-                            // imageTwo={'/static/images/services/ux-andy.jpg'}
-                            // srcSetImageTwo={'/static/images/services/ux-andy.jpg 1x, /static/images/services/ux-andy@2x.jpg 2x'}
+                            imageOne={'/images/projects/hero/Dashboard.png'}
+                            srcSetImageOne={'/images/projects/hero/Dashboard.png 1x, /images/projects/hero/Dashboard@2x.png 2x'}
+                            // imageTwo={'/images/services/ux-andy.jpg'}
+                            // srcSetImageTwo={'/images/services/ux-andy.jpg 1x, /images/services/ux-andy@2x.jpg 2x'}
                             description={'We redesigned the primary data visualisation on the dashboard to clearly indicate to users the component parts of holistic wellbeing and how they were progressing towards their daily goals. We also chose to revamp the IA and set about surfacing the most meaningful content to the user on the dashboard such as Current Challenges and Groups.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -195,10 +195,10 @@ const TheComponent = class extends Component {
                             className={'flex-row-reverse'}
                             title={'HealthKit & Google Fit Integrations'}
                             subTitle={'03 / UI Redesign'}
-                            imageOne={'/static/images/projects/hero/Onboarding - 2.png'}
-                            srcSetImageOne={'/static/images/projects/hero/Onboarding - 2.png 1x, /static/images/projects/hero/Onboarding - 2@2x.png 2x'}
-                            imageTwo={'/static/images/projects/hero/connections.png'}
-                            srcSetImageTwo={'/static/images/projects/hero/connections.png 1x, /static/images/projects/hero/connections@2x.png 2x'}
+                            imageOne={'/images/projects/hero/Onboarding - 2.png'}
+                            srcSetImageOne={'/images/projects/hero/Onboarding - 2.png 1x, /images/projects/hero/Onboarding - 2@2x.png 2x'}
+                            imageTwo={'/images/projects/hero/connections.png'}
+                            srcSetImageTwo={'/images/projects/hero/connections.png 1x, /images/projects/hero/connections@2x.png 2x'}
                             description={'One of the biggest challenges with the project was integrations with the phone health data as well as integrations with other wearables via a 3rd party called Validic. Hero want people to take their health and wellbeing seriously and as a result, the platform allows you to connect all manner of smart devices to measure simple things like your steps, to very complex things like your glucose levels from medical devices.'}
                         />
 
@@ -206,8 +206,8 @@ const TheComponent = class extends Component {
                             imageOneclassName="img__shadow"
                             title={'Web app redesign'}
                             subTitle={'03 / UI Redesign'}
-                            imageOne={'/static/images/projects/hero/Dashboard-web.png'}
-                            srcSetImageOne={'/static/images/projects/hero/Dashboard-web.png 1x, /static/images/projects/hero/Dashboard@2x.png 2x'}
+                            imageOne={'/images/projects/hero/Dashboard-web.png'}
+                            srcSetImageOne={'/images/projects/hero/Dashboard-web.png 1x, /images/projects/hero/Dashboard@2x.png 2x'}
                             description={'The old web app had some strange navigation patterns, such as a concept of quick modules in the top navigation for accessing certain pages quickly. This would get cluttered quite quickly as users added more modules, and would not scale well. \n' +
                             '\n' +
                             'We drastically simplified the navigation by adding a fixed side menu with all the core app areas listed accordingly. We then set about reskinning the existing web app based on the newly developed design system we had for the mobile app, to address the inconsistencies spanning Hero’s various digital platforms.  \n'}
@@ -218,9 +218,9 @@ const TheComponent = class extends Component {
                             className={'flex-row-reverse'}
                             title={'Component based design approach'}
                             subTitle={'04 / Development'}
-                            imageOne={'/static/images/projects/hero/storybook.png'}
+                            imageOne={'/images/projects/hero/storybook.png'}
                             altImageOne={'Storybook'}
-                            srcSetImageOne={'/static/images/projects/hero/storybook.png 1x, /static/images/projects/hero/storybook@2x.png 2x'}
+                            srcSetImageOne={'/images/projects/hero/storybook.png 1x, /images/projects/hero/storybook@2x.png 2x'}
                             description={'We used Sketch, Plant version control and Invision to build a high fidelity prototype that the client signed off, which was based on a new design system. We now needed to start implementing our design system and UI in actual software in order to build the application. \n' +
                             '\n' +
                             'We built out our entire design system as a component based library using React JS and Storybook, allowing us to build UI components in isolation so we could develop hard-to-reach states and edge cases before the rest of the frontend team got started on the integration stories. \n' +
@@ -258,18 +258,18 @@ const TheComponent = class extends Component {
                             techLogoItems={
                                 <React.Fragment>
                                     <div className="col-6 text-center">
-                                        <img alt="react" src='/static/images/tech-icons/dark/react.svg'
+                                        <img alt="react" src='/images/tech-icons/dark/react.svg'
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img alt=".net" src='/static/images/tech-icons/dark/net.svg'
+                                        <img alt=".net" src='/images/tech-icons/dark/net.svg'
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center mb-md-0 mb-4">
-                                        <img alt="mysql" src='/static/images/tech-icons/dark/MySQL.svg' className='img-responsive'/>
+                                        <img alt="mysql" src='/images/tech-icons/dark/MySQL.svg' className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img alt="aws" src='/static/images/tech-icons/dark/aws.svg'
+                                        <img alt="aws" src='/images/tech-icons/dark/aws.svg'
                                              className='img-responsive'/>
                                     </div>
                                 </React.Fragment>

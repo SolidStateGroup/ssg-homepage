@@ -25,9 +25,9 @@ const TheComponent = (props) => {
                     <a onClick={() => setIsActive(!isActive)} href="#" className="rncc__navbar-icon">
                         {/* if menu open */}
                         {isActive ? (
-                            <img alt="Close Menu" src={require('../static/images/svg-icons/close-icon.svg')} className="d-lg-none" />
+                            <img alt="Close Menu" src={require('../public/images/svg-icons/close-icon.svg')} className="d-lg-none" />
                         ) : (
-                            <img alt="Menu" src={require('../static/images/svg-icons/menu-icon.svg')} className="d-lg-none" />
+                            <img alt="Menu" src={require('../public/images/svg-icons/menu-icon.svg')} className="d-lg-none" />
                         )}
                     </a>
                 </nav>
@@ -40,7 +40,7 @@ const TheComponent = (props) => {
                         <div style={{ height: 109, width: 109 }} className="pl-0 cursor-pointer">
                             {data && (
                             <img
-                              className="rncc__app-icon--small" src="/static/images/clients/app-icon.png"
+                              className="rncc__app-icon--small" src="/images/clients/app-icon.png"
                               srcSet={data?.logo}
                             />
                             )}
@@ -98,7 +98,7 @@ const TheComponent = (props) => {
                 <Link prefetch={false} href="/">
                     <div className="rncc__sidebar-brand-container cursor-pointer">
                         <p className="text-navy-secondary bold mb-0">React Native Specialists</p>
-                        <img src="/static/images/ssg-logotype-white.svg" className="rncc__sidebar-brand" alt="SSG"/>
+                        <img src="/images/ssg-logotype-white.svg" className="rncc__sidebar-brand" alt="SSG"/>
                     </div>
                 </Link>
             </nav>
@@ -110,7 +110,7 @@ const TheComponent = (props) => {
                         <div className="pl-0 cursor-pointer">
                             {data && (
                               <img
-                                className="rncc__app-icon--small" src="/static/images/clients/app-icon.png"
+                                className="rncc__app-icon--small" src="/images/clients/app-icon.png"
                                 srcSet={data?.logo}
                               />
                             )}
@@ -168,7 +168,7 @@ const TheComponent = (props) => {
                 <Link prefetch={false} href="/">
                     <div className="rncc__sidebar-brand-container cursor-pointer">
                         <p className="text-navy-secondary bold mb-0">React Native Specialists</p>
-                        <img src="/static/images/ssg-logotype-white.svg" className="rncc__sidebar-brand" alt="SSG"/>
+                        <img src="/images/ssg-logotype-white.svg" className="rncc__sidebar-brand" alt="SSG"/>
                     </div>
                 </Link>
             </nav>

@@ -66,7 +66,7 @@ const ProjectItem = global.ProjectItem = class extends React.PureComponent {
                     </div>
                     <div className="col-md-6 align-items-center justify-content-center text-center project__image-container">
                         <div className="blob__container">
-                            <img src={this.props.projectImage || "/static/images/projects/tone-and-sculpt/phone.png"}
+                            <img src={this.props.projectImage || "/public/images/projects/tone-and-sculpt/phone.png"}
                                  srcSet={this.props.srcSet || null}
                                  alt="Blob Graphic"
                                  className={cn(this.props.projectImageClass, 'project__image img-fluid blob__image')}/>

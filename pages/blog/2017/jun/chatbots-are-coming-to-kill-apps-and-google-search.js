@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2017/jun/chatbots-are-coming-to-kill-apps-and-google-search.md';
+import md from '../../../../public/pages-blog-markdown/2017/jun/chatbots-are-coming-to-kill-apps-and-google-search.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

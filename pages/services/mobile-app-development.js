@@ -13,9 +13,9 @@ import ServicesHero from '../../components/ServicesHero';
 const projects = [
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/tone-and-sculpt/tands-dashboard.png',
-        srcSet: '/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
-        clientImage: '/static/images/clients/tone-and-sculpt.svg',
+        projectImage: '/images/projects/tone-and-sculpt/tands-dashboard.png',
+        srcSet: '/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
+        clientImage: '/images/clients/tone-and-sculpt.svg',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
         title: 'Rebooting female fitness for Tone and Sculpt',
@@ -28,9 +28,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/hailie',
-        projectImage: '/static/images/projects/hailie/hailie-phone@1x.png',
-        srcSet: '/static/images/projects/hailie/hailie-phone@1x.png 1x, /static/images/projects/hailie/hailie-phone@2x.png 2x,',
-        clientImage: '/static/images/clients/hailie.svg',
+        projectImage: '/images/projects/hailie/hailie-phone@1x.png',
+        srcSet: '/images/projects/hailie/hailie-phone@1x.png 1x, /images/projects/hailie/hailie-phone@2x.png 2x,',
+        clientImage: '/images/clients/hailie.svg',
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
         blobColour: '#FF715A',
@@ -68,7 +68,7 @@ const MobileAppsPage = class extends React.Component {
                 <div className="container">
                     <ServiceItem
                       serviceCTA
-                      serviceImage="/static/images/services/react-native.png"
+                      serviceImage="/images/services/react-native.png"
                       className="flex-row-reverse"
                       imageClassName="img__shadow "
                       subTitle="Buy one get one free on apps"
@@ -77,7 +77,7 @@ const MobileAppsPage = class extends React.Component {
 
                     <ServiceItem
                       serviceCTA
-                      serviceImage="/static/images/projects/tone-and-sculpt/t&s-phones.jpg"
+                      serviceImage="/images/projects/tone-and-sculpt/t&s-phones.jpg"
                       subTitle="Ship fast, for less"
                       serviceDescription={'React Native allows us to build incredibly efficiently, so you can get to market in record time and the shared codebase could reduce the cost of your product build by 40%!\n'
                         + '\n'}
@@ -87,8 +87,8 @@ const MobileAppsPage = class extends React.Component {
                 <ClientQuote
                   text={'Solid State Group are really easy to work with as they are open to feedback and provide regular updates to be able to take decisions on the fly. They came up with a brilliant idea at our hackathon and they\'ve taken on board the insights from our business to further refine the product later on.'}
                   clientName="Joe Comiskey"
-                  image="/static/images/projects/unilever/unilever-1@1x.png"
-                  srcSet="/static/images/projects/unilever/unilever-1@1x.png 1x, /static/images/projects/unilever/unilever-1@2x.png 2x"
+                  image="/images/projects/unilever/unilever-1@1x.png"
+                  srcSet="/images/projects/unilever/unilever-1@1x.png 1x, /images/projects/unilever/unilever-1@2x.png 2x"
                   clientTitle="Head of eCommerce Capability, Innovation and Strategy, UK Unilever"
                 />
 

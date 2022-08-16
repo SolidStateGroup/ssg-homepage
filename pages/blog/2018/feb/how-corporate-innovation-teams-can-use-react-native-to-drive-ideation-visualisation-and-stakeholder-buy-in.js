@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2018/feb/how-corporate-innovation-teams-can-use-react-native-to-drive-ideation-visualisation-and-stakeholder-buy-in.md';
+import md from '../../../../public/pages-blog-markdown/2018/feb/how-corporate-innovation-teams-can-use-react-native-to-drive-ideation-visualisation-and-stakeholder-buy-in.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

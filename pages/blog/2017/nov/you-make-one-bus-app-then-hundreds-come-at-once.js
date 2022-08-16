@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2017/nov/you-make-one-bus-app-then-hundreds-come-at-once.md';
+import md from '../../../../public/pages-blog-markdown/2017/nov/you-make-one-bus-app-then-hundreds-come-at-once.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

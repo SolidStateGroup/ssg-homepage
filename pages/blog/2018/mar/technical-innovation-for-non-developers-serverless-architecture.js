@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2018/mar/technical-innovation-for-non-developers-serverless-architecture.md';
+import md from '../../../../public/pages-blog-markdown/2018/mar/technical-innovation-for-non-developers-serverless-architecture.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

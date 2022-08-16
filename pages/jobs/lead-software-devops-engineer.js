@@ -41,7 +41,7 @@ const LeadSoftwareDevJobPage = class extends React.Component {
                                 <div
                                   className="flex-1 align-items-center justify-content-center hero__blob-container hidden-sm-down"
                                 >
-                                    <img src="/static/images/hero-blob-3.svg" alt="hero-blob" className="img-fluid"/>
+                                    <img src="/images/hero-blob-3.svg" alt="hero-blob" className="img-fluid"/>
                                 </div>
                             </div>
                         </div>

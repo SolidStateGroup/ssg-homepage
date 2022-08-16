@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2017/oct/5-things-to-look-for-in-react-native-developers.md';
+import md from '../../../../public/pages-blog-markdown/2017/oct/5-things-to-look-for-in-react-native-developers.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

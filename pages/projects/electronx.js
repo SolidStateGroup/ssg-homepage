@@ -29,7 +29,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Electron X" canonical="projects/electronx">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/electron-white.png"
+                        clientImage="/images/clients/white/electron-white.png"
                         projectTitle={'Tapping into the future of the electricity market'}
                         projectType={'Responsive website'}
                         ProjectServiceListItem={
@@ -48,8 +48,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--electronx"
-                        projectImage={"/static/images/projects/electronx/Macbook_color@1x.png"}
-                        srcSet={'/static/images/projects/electronx/Macbook_color@1x.png 1x, /static/images/projects/electronx/Macbook_color@2x.png 2x'}
+                        projectImage={"/images/projects/electronx/Macbook_color@1x.png"}
+                        srcSet={'/images/projects/electronx/Macbook_color@1x.png 1x, /images/projects/electronx/Macbook_color@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -66,8 +66,8 @@ const TheComponent = class extends Component {
                         <ProjectFullImageSection
                             title={'Landing Page UI'}
                             subTitle={'01 / Landing Page'}
-                            imageUrl={'/static/images/projects/electronx/electronx_landing-page.png'}
-                            srcSet={'/static/images/projects/electronx/electronx_landing-page.png 1x, /static/images/projects/electronx/electronx_landing-page@2x.png 2x'}
+                            imageUrl={'/images/projects/electronx/electronx_landing-page.png'}
+                            srcSet={'/images/projects/electronx/electronx_landing-page.png 1x, /images/projects/electronx/electronx_landing-page@2x.png 2x'}
                             imageAltText={'Responsive UI'}
                         />
                         <ProjectTextSection
@@ -78,8 +78,8 @@ const TheComponent = class extends Component {
                     <ProjectFullImageSection
                         className={'panel--navy'}
                         title={'Fully Responsive'}
-                        imageUrl={'/static/images/projects/electronx/electronx_mobile.png'}
-                        srcSet={'/static/images/projects/electronx/electronx_mobile.png 1x, /static/images/projects/electronx/electronx_mobile.png 2x'}
+                        imageUrl={'/images/projects/electronx/electronx_mobile.png'}
+                        srcSet={'/images/projects/electronx/electronx_mobile.png 1x, /images/projects/electronx/electronx_mobile.png 2x'}
                         imageAltText={'Responsive UI'}
                     />
 
@@ -88,10 +88,10 @@ const TheComponent = class extends Component {
                             subTitle={'03 / Design'}
                             title={'Fonts & Colours'}
                             className="flex-row-reverse"
-                            imageOne={'/static/images/projects/wazoku/wazoku-font.png'}
+                            imageOne={'/images/projects/wazoku/wazoku-font.png'}
                             description={'Summary of the fonts and colours used in the User Interface design of the application'}
                         />
-                        <ProjectColourBlockSection imageOne={'/static/images/projects/electronx/electronx_primary-colours.png'} imageTwo={'/static/images/projects/electronx/electronx_secondary-colours.png'} />
+                        <ProjectColourBlockSection imageOne={'/images/projects/electronx/electronx_primary-colours.png'} imageTwo={'/images/projects/electronx/electronx_secondary-colours.png'} />
                     </div>
 
                     <ProjectNav/>

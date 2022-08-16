@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2018/feb/react-native-for-scale-ups-use-cases-and-future-proofing.md';
+import md from '../../../../public/pages-blog-markdown/2018/feb/react-native-for-scale-ups-use-cases-and-future-proofing.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

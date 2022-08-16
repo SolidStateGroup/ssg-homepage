@@ -14,9 +14,9 @@ import ServicesHero from '../../components/ServicesHero';
 const projects = [
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/tone-and-sculpt/tands-dashboard.png',
-        srcSet: '/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
-        clientImage: '/static/images/clients/tone-and-sculpt.svg',
+        projectImage: '/images/projects/tone-and-sculpt/tands-dashboard.png',
+        srcSet: '/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
+        clientImage: '/images/clients/tone-and-sculpt.svg',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
         title: 'Rebooting female fitness for Tone and Sculpt',
@@ -29,9 +29,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/hailie',
-        projectImage: '/static/images/projects/hailie/hailie-phone@1x.png',
-        srcSet: '/static/images/projects/hailie/hailie-phone@1x.png 1x, /static/images/projects/hailie/hailie-phone@2x.png 2x,',
-        clientImage: '/static/images/clients/hailie.svg',
+        projectImage: '/images/projects/hailie/hailie-phone@1x.png',
+        srcSet: '/images/projects/hailie/hailie-phone@1x.png 1x, /images/projects/hailie/hailie-phone@2x.png 2x,',
+        clientImage: '/images/clients/hailie.svg',
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
         blobColour: '#FF715A',
@@ -43,9 +43,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/change-please',
-        projectImage: '/static/images/projects/change-please/Rotato-Snapshot@1x.png',
-        srcSet: '/static/images/projects/change-please/Rotato-Snapshot@1x.png 1x, /static/images/projects/change-please/Rotato-Snapshot@2x.png 2x,',
-        clientImage: '/static/images/clients/change-please.svg',
+        projectImage: '/images/projects/change-please/Rotato-Snapshot@1x.png',
+        srcSet: '/images/projects/change-please/Rotato-Snapshot@1x.png 1x, /images/projects/change-please/Rotato-Snapshot@2x.png 2x,',
+        clientImage: '/images/clients/change-please.svg',
         subTitle: 'The lean, mean, face detecting, debt tracking machine',
         title: 'Changing the [face] of debt tracking',
         blobColour: '#908DF7',
@@ -86,7 +86,7 @@ const MobileAppsPage = class extends React.Component {
                 </div>
                 <div className="container">
                     <ServiceItem
-                      serviceImage="/static/images/services/rn-apps.png"
+                      serviceImage="/images/services/rn-apps.png"
                       className="flex-row"
                       imageClassName="img__shadow "
                       subTitle="Tried and trusted"
@@ -95,7 +95,7 @@ const MobileAppsPage = class extends React.Component {
 
                     <ServiceItem
                       serviceCTA
-                      serviceImage="/static/images/services/react-native.png"
+                      serviceImage="/images/services/react-native.png"
                       className="flex-row-reverse"
                       imageClassName="img__shadow "
                       subTitle="One codebase two platforms"
@@ -109,7 +109,7 @@ const MobileAppsPage = class extends React.Component {
                     />
 
                     <ServiceItem
-                      serviceImage="/static/images/projects/tone-and-sculpt/t&s-phones.jpg"
+                      serviceImage="/images/projects/tone-and-sculpt/t&s-phones.jpg"
                       subTitle="Ship fast, for less"
                       serviceDescription={'React Native allows us to build incredibly efficiently, so you can get to market in record time and the shared codebase could reduce the cost of your product build by 40%!\n'
                     + '\n'}

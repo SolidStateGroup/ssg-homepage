@@ -29,7 +29,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Mainstay Consulting" canonical="projects/mainstay">
                     <ProjectHero
-                      clientImage="/static/images/projects/mainstay/Mainstay-Logo.svg"
+                      clientImage="/images/projects/mainstay/Mainstay-Logo.svg"
                       projectTitle="De-risking digital transformation"
                       projectType="Responsive Web Application"
                       ProjectServiceListItem={
@@ -49,8 +49,8 @@ const TheComponent = class extends Component {
                         </React.Fragment>
                       }
                       className="hero--mainstay"
-                      projectImage="/static/images/projects/mainstay/Laptop-03.png"
-                      srcSet="/static/images/projects/mainstay/Laptop-03.png 1x, /static/images/projects/mainstay/Laptop-03@2x.png 2x"
+                      projectImage="/images/projects/mainstay/Laptop-03.png"
+                      srcSet="/images/projects/mainstay/Laptop-03.png 1x, /images/projects/mainstay/Laptop-03@2x.png 2x"
                     />
 
                     <div className="container">
@@ -77,10 +77,10 @@ const TheComponent = class extends Component {
                         {/* " */}
                         {/*                          // imageOneclassName="img__shadow" */}
                         {/*                          title="UI Components" */}
-                        {/*                          imageOne="/static/images/projects/electron-connect/3.png" */}
-                        {/*                          srcSetImageOne="/static/images/projects/electron-connect/3.png 1x, /static/images/projects/electron-connect/3@2x.png 2x" */}
-                        {/*                          // imageTwo="/static/images/projects/electron-connect/4.png" */}
-                        {/*                          // srcSetImageTwo="/static/images/projects/electron-connect/4.png 1x, /static/images/projects/electron-connect/4@2x.png 2x" */}
+                        {/*                          imageOne="/images/projects/electron-connect/3.png" */}
+                        {/*                          srcSetImageOne="/images/projects/electron-connect/3.png 1x, /images/projects/electron-connect/3@2x.png 2x" */}
+                        {/*                          // imageTwo="/images/projects/electron-connect/4.png" */}
+                        {/*                          // srcSetImageTwo="/images/projects/electron-connect/4.png 1x, /images/projects/electron-connect/4@2x.png 2x" */}
                         {/*                          ProjectServiceListItem={( */}
                         {/*                              <React.Fragment> */}
                         {/*                                <WideListItem */}
@@ -102,8 +102,8 @@ const TheComponent = class extends Component {
                     </div>
 
                     <ProjectFullImageSection
-                      imageUrl="/static/images/projects/mainstay/2.jpg"
-                      srcSet="/static/images/projects/mainstay/2.jpg 1x, /static/images/projects/mainstay/2@2x.jpg 2x"
+                      imageUrl="/images/projects/mainstay/2.jpg"
+                      srcSet="/images/projects/mainstay/2.jpg 1x, /images/projects/mainstay/2@2x.jpg 2x"
                       imageAltText="Dashboard UI"
                     />
 
@@ -124,8 +124,8 @@ const TheComponent = class extends Component {
                           imageOneclassName="img__shadow"
                           subTitle="Solution"
                       // title="Design System"
-                          imageOne="/static/images/projects/mainstay/3.png"
-                          srcSetImageOne="/static/images/projects/mainstay/3.png 1x, /static/images/projects/mainstay/3@2x.png 2x"
+                          imageOne="/images/projects/mainstay/3.png"
+                          srcSetImageOne="/images/projects/mainstay/3.png 1x, /images/projects/mainstay/3@2x.png 2x"
                           ProjectServiceListItem={(
                               <React.Fragment>
                                   <WideListItem
@@ -147,22 +147,22 @@ const TheComponent = class extends Component {
                               <React.Fragment>
                                   <div className="col-6 text-center">
                                       <img
-                                        alt="react" src="/static/images/tech-icons/dark/react.svg"
+                                        alt="react" src="/images/tech-icons/dark/react.svg"
                                         className="img-responsive"
                                       />
                                   </div>
                                   <div className="col-6 text-center">
                                       <img
-                                        alt=".net" src="/static/images/tech-icons/dark/spring.svg"
+                                        alt=".net" src="/images/tech-icons/dark/spring.svg"
                                         className="img-responsive"
                                       />
                                   </div>
                                   <div className="col-6 text-center mb-md-0 mb-4">
-                                      <img alt="mysql" src="/static/images/tech-icons/dark/terraform.svg" className="img-responsive"/>
+                                      <img alt="mysql" src="/images/tech-icons/dark/terraform.svg" className="img-responsive"/>
                                   </div>
                                   <div className="col-6 text-center">
                                       <img
-                                        alt="aws" src="/static/images/tech-icons/dark/aws.svg"
+                                        alt="aws" src="/images/tech-icons/dark/aws.svg"
                                         className="img-responsive"
                                       />
                                   </div>

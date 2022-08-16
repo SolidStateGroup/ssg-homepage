@@ -26,7 +26,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Purely Capital" canonical="projects/purely-capital">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/purely-capital-white.png"
+                        clientImage="/images/clients/white/purely-capital-white.png"
                         projectTitle={'The future of media financing'}
                         projectType={'Web Application'}
                         ProjectServiceListItem={
@@ -48,8 +48,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--purely-capital"
-                        projectImage={"/static/images/projects/purely-capital/pc-summary-mac.png"}
-                        srcSet={'/static/images/projects/purely-capital/pc-summary-mac.png 1x, /static/images/projects/purely-capital/pc-summary-mac@2x.png 2x'}
+                        projectImage={"/images/projects/purely-capital/pc-summary-mac.png"}
+                        srcSet={'/images/projects/purely-capital/pc-summary-mac.png 1x, /images/projects/purely-capital/pc-summary-mac@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -61,8 +61,8 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                             subTitle={'Design Discovery'}
                             title={'UX Research'}
-                            imageOne={'/static/images/projects/purely-capital/purely_wireframes.png'}
-                            srcSetImageOne={'/static/images/projects/purely-capital/purely_wireframes.png 1x, /static/images/projects/purely-capital/purely_wireframes@2x.png 2x'}
+                            imageOne={'/images/projects/purely-capital/purely_wireframes.png'}
+                            srcSetImageOne={'/images/projects/purely-capital/purely_wireframes.png 1x, /images/projects/purely-capital/purely_wireframes@2x.png 2x'}
                             description={'We created a prototype that was built with Sketch and Invision. This let users move through the core workflows and indentified any pain points in the web app. '}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -79,8 +79,8 @@ const TheComponent = class extends Component {
                             subTitle={'UX Process'}
                             className="flex-row-reverse"
                             title={'UI Design'}
-                            imageOne={'/static/images/projects/purely-capital/purely_desktop-1.png'}
-                            srcSetImageOne={'/static/images/projects/purely-capital/purely_desktop-1.png 1x, /static/images/projects/purely-capital/purely_desktop-1@2x.png 2x'}
+                            imageOne={'/images/projects/purely-capital/purely_desktop-1.png'}
+                            srcSetImageOne={'/images/projects/purely-capital/purely_desktop-1.png 1x, /images/projects/purely-capital/purely_desktop-1@2x.png 2x'}
                             description={'We built on our wireframes with a high fidelity design language for the application process, as well as the dashboard interface.'}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -117,8 +117,8 @@ const TheComponent = class extends Component {
                         <div className="section">
                             <div className="container">
                                 <img className="img-fluid"
-                                     src="/static/images/projects/purely-capital/purely-phones@1x.png"
-                                     srcSet="/static/images/projects/purely-capital/purely-phones@1x.png 1x, /static/images/projects/purely-capital/purely-phones@2x.png 2x"/>
+                                     src="/images/projects/purely-capital/purely-phones@1x.png"
+                                     srcSet="/images/projects/purely-capital/purely-phones@1x.png 1x, /images/projects/purely-capital/purely-phones@2x.png 2x"/>
                             </div>
                         </div>
 
@@ -126,18 +126,18 @@ const TheComponent = class extends Component {
                             techLogoItems={
                                 <React.Fragment>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/react.svg' alt="react" className='img-responsive'/>
+                                        <img src='/images/tech-icons/dark/react.svg' alt="react" className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/java.svg' alt="java" className='img-responsive'/>
+                                        <img src='/images/tech-icons/dark/java.svg' alt="java" className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/GraphQL-dark.svg'
+                                        <img src='/images/tech-icons/dark/GraphQL-dark.svg'
                                              alt="graph ql"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center mb-md-0 mb-4">
-                                        <img src='/static/images/tech-icons/dark/Webpack.svg'
+                                        <img src='/images/tech-icons/dark/Webpack.svg'
                                              alt="webpack"
                                              className='img-responsive'/>
                                     </div>

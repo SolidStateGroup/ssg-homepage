@@ -30,7 +30,7 @@ const TheComponent = class extends Component {
                 <Page title="EvolveYou (previously Tone & Sculpt)" canonical="projects/tone-and-sculpt">
                     <ProjectHero
                       projectTitle={'Rebooting female fitness for EvolveYou (previously Tone & Sculpt)'}
-                      clientImage="/static/images/projects/tone-and-sculpt/Evolve-You-Logo-White.svg"
+                      clientImage="/images/projects/tone-and-sculpt/Evolve-You-Logo-White.svg"
                       ProjectServiceListItem={(
                           <React.Fragment>
                               <TextListItem listItemText="Research,"/>
@@ -50,7 +50,7 @@ const TheComponent = class extends Component {
                           </React.Fragment>
 )}
                       className="hero--tone-and-sculpt"
-                      srcSet="/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x"
+                      srcSet="/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x"
                     />
 
                     <div className="container sectionOneAnimation" id="sectionOneTrigger">
@@ -64,10 +64,10 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                           title="UX Research"
                           subTitle="01 / DESIGN DISCOVERY"
-                          imageOne="/static/images/services/ux-niall.jpg"
-                          srcSetImageOne="/static/images/services/ux-niall.jpg 1x, /static/images/services/ux-niall@2x.jpg 2x"
-                          imageTwo="/static/images/services/ux-andy.jpg"
-                          srcSetImageTwo="/static/images/services/ux-andy.jpg 1x, /static/images/services/ux-andy@2x.jpg 2x"
+                          imageOne="/images/services/ux-niall.jpg"
+                          srcSetImageOne="/images/services/ux-niall.jpg 1x, /images/services/ux-niall@2x.jpg 2x"
+                          imageTwo="/images/services/ux-andy.jpg"
+                          srcSetImageTwo="/images/services/ux-andy.jpg 1x, /images/services/ux-andy@2x.jpg 2x"
                           description="After consolidating feedback from their users, our high level objectives were to drastically improve the user experience and interface, to provide a more personalised and bespoke experience for users and make the app a truly social platform. "
                           ProjectServiceListItem={(
                               <React.Fragment>
@@ -90,8 +90,8 @@ const TheComponent = class extends Component {
                           className="flex-row-reverse"
                           title="Prototyping"
                           subTitle="02 / WIREFRAMES & PROTOTYPES"
-                          imageOne="/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg"
-                          srcSetImageOne="/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg 1x, /static/images/projects/tone-and-sculpt/macbook-pro-on-table@2x.jpg  2x"
+                          imageOne="/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg"
+                          srcSetImageOne="/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg 1x, /images/projects/tone-and-sculpt/macbook-pro-on-table@2x.jpg  2x"
                           description={'We undertook a detailed design discovery phase which consisted of competitor analysis, \n'
                             + 'user research, user journey maps and more to help contextualize our design decisions going forward.'}
                           ProjectServiceListItem={(
@@ -121,8 +121,8 @@ const TheComponent = class extends Component {
                               className="sectionTwoAnimation"
                               title="UI Components"
                               subTitle="03 / UI Design"
-                              imageUrl="/static/images/projects/tone-and-sculpt/ui-components.png"
-                              srcSet="/static/images/projects/tone-and-sculpt/ui-components.png 1x, /static/images/projects/tone-and-sculpt/ui-components@2x.png 2x"
+                              imageUrl="/images/projects/tone-and-sculpt/ui-components.png"
+                              srcSet="/images/projects/tone-and-sculpt/ui-components.png 1x, /images/projects/tone-and-sculpt/ui-components@2x.png 2x"
                               imageAltText="Tone and Sculpt UI"
                             />
                         </div>
@@ -130,8 +130,8 @@ const TheComponent = class extends Component {
 
                     <ProjectFullImageSection
                       className="panel panel--gradient-blue"
-                      imageUrl="/static/images/projects/tone-and-sculpt/3-screen.png"
-                      srcSet="/static/images/projects/tone-and-sculpt/3-screen.png 1x, /static/images/projects/tone-and-sculpt/3-screen@2x.png 2x"
+                      imageUrl="/images/projects/tone-and-sculpt/3-screen.png"
+                      srcSet="/images/projects/tone-and-sculpt/3-screen.png 1x, /images/projects/tone-and-sculpt/3-screen@2x.png 2x"
                       imageAltText="Tone and Sculpt UI"
                     />
 
@@ -145,22 +145,22 @@ const TheComponent = class extends Component {
                           techLogoItems={(
                               <React.Fragment>
                                   <div className="col-md-4 col-6 text-center">
-                                      <img src="/static/images/tech-icons/dark/react.svg" className="img-responsive"/>
+                                      <img src="/images/tech-icons/dark/react.svg" className="img-responsive"/>
                                   </div>
                                   <div className="col-md-4 col-6 text-center">
-                                      <img src="/static/images/tech-icons/dark/node.svg" className="img-responsive"/>
+                                      <img src="/images/tech-icons/dark/node.svg" className="img-responsive"/>
                                   </div>
                                   <div className="col-md-4 col-6 text-center">
-                                      <img src="/static/images/tech-icons/dark/docker.svg" className="img-responsive"/>
+                                      <img src="/images/tech-icons/dark/docker.svg" className="img-responsive"/>
                                   </div>
                                   <div className="col-md-4 col-6 text-center mb-md-0 mb-4">
-                                      <img src="/static/images/tech-icons/dark/python.svg" className="img-responsive"/>
+                                      <img src="/images/tech-icons/dark/python.svg" className="img-responsive"/>
                                   </div>
                                   <div className="col-md-4 col-6 text-center">
-                                      <img src="/static/images/tech-icons/dark/postgres 1.svg" className="img-responsive"/>
+                                      <img src="/images/tech-icons/dark/postgres 1.svg" className="img-responsive"/>
                                   </div>
                                   <div className="col-md-4 col-6 text-center">
-                                      <img src="/static/images/tech-icons/dark/aws.svg" className="img-responsive"/>
+                                      <img src="/images/tech-icons/dark/aws.svg" className="img-responsive"/>
                                   </div>
                               </React.Fragment>
 )}
@@ -186,15 +186,15 @@ const TheComponent = class extends Component {
 
                     <div className="d-flex justify-content-center">
                         <img
-                          src="/static/images/projects/tone-and-sculpt/t&s-phones.jpg"
-                          srcSet="/static/images/projects/tone-and-sculpt/t&s-phones.jpg 1x, /static/images/projects/tone-and-sculpt/t&s-phones@2x.jpg 2x"
+                          src="/images/projects/tone-and-sculpt/t&s-phones.jpg"
+                          srcSet="/images/projects/tone-and-sculpt/t&s-phones.jpg 1x, /images/projects/tone-and-sculpt/t&s-phones@2x.jpg 2x"
                           className="img-fluid mb-5" alt="tone and sculpt phones"
                         />
                     </div>
 
                     <ClientQuote
-                      image="/static/images/projects/tone-and-sculpt/phone.png"
-                      srcSet="/static/images/projects/tone-and-sculpt/phone.png 1x, /static/images/projects/tone-and-sculpt/phone@2x.png 2x"
+                      image="/images/projects/tone-and-sculpt/phone.png"
+                      srcSet="/images/projects/tone-and-sculpt/phone.png 1x, /images/projects/tone-and-sculpt/phone@2x.png 2x"
                       text="We worked with SSG to completely rebuild our digital properties, API, CMS and a brand new mobile app for iOS and Android. The team were brilliant under significant time pressure and we felt like we were in expert hands from start to finish."
                       clientName="Jack Bullimore" clientTitle="Co-Founder & CEO at Tone & Sculpt"
                     />

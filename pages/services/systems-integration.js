@@ -14,9 +14,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/british-airways',
-        projectImage: '/static/images/projects/ba/ba-summary-ipad.png',
-        srcSet: '/static/images/projects/ba/ba-summary-ipad.png 1x, /static/images/projects/ba/ba-summary-ipad@2x.png 2x,',
-        clientImage: '/static/images/clients/british-airways.svg',
+        projectImage: '/images/projects/ba/ba-summary-ipad.png',
+        srcSet: '/images/projects/ba/ba-summary-ipad.png 1x, /images/projects/ba/ba-summary-ipad@2x.png 2x,',
+        clientImage: '/images/clients/british-airways.svg',
         subTitle: 'Real-time operational dashboard',
         title: 'The real-time machine: integrating with 1960s tech',
         blobColour: "#3658B0",
@@ -27,9 +27,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/hailie',
-        projectImage: '/static/images/projects/hailie/hailie-phone@1x.png',
-        srcSet: '/static/images/projects/hailie/hailie-phone@1x.png 1x, /static/images/projects/hailie/hailie-phone@2x.png 2x,',
-        clientImage: '/static/images/clients/hailie.svg',
+        projectImage: '/images/projects/hailie/hailie-phone@1x.png',
+        srcSet: '/images/projects/hailie/hailie-phone@1x.png 1x, /images/projects/hailie/hailie-phone@2x.png 2x,',
+        clientImage: '/images/clients/hailie.svg',
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
         blobColour: "#FF715A",
@@ -40,9 +40,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/hertz',
-        projectImage: '/static/images/projects/hertz/hertz-1@1x.png',
-        srcSet: '/static/images/projects/hertz/hertz-1@1x.png 1x, /static/images/projects/hertz/hertz-1@2x.png 2x,',
-        clientImage: '/static/images/clients/hertz-colour.png',
+        projectImage: '/images/projects/hertz/hertz-1@1x.png',
+        srcSet: '/images/projects/hertz/hertz-1@1x.png 1x, /images/projects/hertz/hertz-1@2x.png 2x,',
+        clientImage: '/images/clients/hertz-colour.png',
         subTitle: 'Connected Car mobile application',
         title: 'Feels on wheels',
         blobColour: "#FFD60D",
@@ -77,8 +77,8 @@ const SystemsPage = class extends React.Component {
 
                 <div className="container">
                     <ServiceItem
-                        serviceImage="/static/images/services/hertz@1x.jpg"
-                        srcSet="/static/images/services/hertz@1x.jpg 1x, /static/images/services/hertz@2x.jpg 2x,"
+                        serviceImage="/images/services/hertz@1x.jpg"
+                        srcSet="/images/services/hertz@1x.jpg 1x, /images/services/hertz@2x.jpg 2x,"
 
                         subTitle={'We build robust and reliable software that scales'}
                         serviceDescription={'Recent examples include connected hardware for a bespoke clinicians dashboard, vehicle data integrations and a connected car mobile application.'}
@@ -103,8 +103,8 @@ const SystemsPage = class extends React.Component {
 
 
                 <ClientQuote
-                    image={'/static/images/projects/ba/ba-ipad.png'}
-                    srcSet={'/static/images/projects/ba/ba-ipad.png 1x, /static/images/projects/ba/ba-ipad@2x.png 2x'}
+                    image={'/images/projects/ba/ba-ipad.png'}
+                    srcSet={'/images/projects/ba/ba-ipad.png 1x, /images/projects/ba/ba-ipad@2x.png 2x'}
                     text={'A huge thanks to you and everybody involved in developing the dashboard. It gets more useful with every iteration. We all now need to learn to use it to maximum advantage, so we all have a shared, accurate, knowledge of what\'s going on in the operation.'}
                     clientName={'Managing Director'} clientTitle={'Operations at British Airways'}/>
 

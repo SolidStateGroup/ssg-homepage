@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2018/oct/how-i-did-it-i-left-the-bbc-while-heavily-pregnant-to-found-a-parents-tech-startup.md';
+import md from '../../../../public/pages-blog-markdown/2018/oct/how-i-did-it-i-left-the-bbc-while-heavily-pregnant-to-found-a-parents-tech-startup.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

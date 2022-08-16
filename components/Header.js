@@ -71,12 +71,12 @@ class Header extends PureComponent {
                     <nav style={{ flex: 1 }} className={`navbar navbar-expand-lg ${this.state.menuOpen ? 'nav-open' : ''}`}>
                         <Link href="/">
                             <a className="nav-item__link">
-                                <img src="/static/images/ssg-logotype-white.svg" className="brand" alt="SSG"/>
+                                <img src="/images/ssg-logotype-white.svg" className="brand" alt="SSG"/>
                             </a>
                         </Link>
                         <Link href="/">
                             <a className="nav-item__link">
-                                <img src="/static/images/ssg-mark-white.svg" className="brand-mark" alt="SSG"/>
+                                <img src="/images/ssg-mark-white.svg" className="brand-mark" alt="SSG"/>
                             </a>
                         </Link>
                         <div style={{ flex: 1 }} className="navbar" id="navbarSupportedContent">
@@ -126,9 +126,9 @@ class Header extends PureComponent {
                                 <li className="nav-item">
                                     <a onClick={this.toggle} href="#">
                                         {this.state.menuOpen ? (
-                                            <img alt="Close Menu" src={require('../static/images/svg-icons/close-icon.svg')} className="mobile-menu__icon mobile-menu__icon--close" />
+                                            <img alt="Close Menu" src={require('../public/images/svg-icons/close-icon.svg')} className="mobile-menu__icon mobile-menu__icon--close" />
                                         ) : (
-                                            <img alt="Menu" src={require('../static/images/svg-icons/menu-icon.svg')} className="mobile-menu__icon" />
+                                            <img alt="Menu" src={require('../public/images/svg-icons/menu-icon.svg')} className="mobile-menu__icon" />
                                         )}
                                     </a>
                                 </li>
@@ -201,17 +201,17 @@ class Header extends PureComponent {
                                     <div className="row">
                                         <div className="col">
                                             <a href="https://www.facebook.com/solidstategroup" target="_blank" rel="noreferrer">
-                                                <img alt="Facebook" src={require('../static/images/platforms/facebook.svg')}/>
+                                                <img alt="Facebook" src={require('../public/images/platforms/facebook.svg')}/>
                                             </a>
                                         </div>
                                         <div className="col">
                                             <a href="https://twitter.com/solidstategroup" target="_blank" rel="noreferrer">
-                                                <img alt="Twitter" src={require('../static/images/platforms/twitter.svg')}/>
+                                                <img alt="Twitter" src={require('../public/images/platforms/twitter.svg')}/>
                                             </a>
                                         </div>
                                         <div className="col">
                                             <a href="https://github.com/SolidStateGroup" target="_blank" rel="noreferrer">
-                                                <img alt="GitHub" src={require('../static/images/svg-icons/github-image.svg')}/>
+                                                <img alt="GitHub" src={require('../public/images/svg-icons/github-image.svg')}/>
                                             </a>
                                         </div>
                                     </div>
@@ -229,12 +229,12 @@ class Header extends PureComponent {
                     <nav style={{ flex: 1 }} className={`navbar navbar-expand-lg ${this.state.menuOpen ? 'nav-open' : ''}`}>
                         <Link href="/">
                             <a className="nav-item__link">
-                                <img src="/static/images/ssg-logotype-white.svg" className="brand" alt="SSG"/>
+                                <img src="/images/ssg-logotype-white.svg" className="brand" alt="SSG"/>
                             </a>
                         </Link>
                         <Link href="/">
                             <a className="nav-item__link">
-                                <img src="/static/images/ssg-mark-white.svg" className="brand-mark" alt="SSG"/>
+                                <img src="/images/ssg-mark-white.svg" className="brand-mark" alt="SSG"/>
                             </a>
                         </Link>
                         <div style={{ flex: 1 }} className="navbar" id="navbarSupportedContent">
@@ -283,9 +283,9 @@ class Header extends PureComponent {
                                 <li className="nav-item">
                                     <a onClick={this.toggle} href="#">
                                         {this.state.menuOpen ? (
-                                          <img alt="Close Menu" src={require('../static/images/svg-icons/close-icon.svg')} className="mobile-menu__icon mobile-menu__icon--close" />
+                                          <img alt="Close Menu" src={require('../public/images/svg-icons/close-icon.svg')} className="mobile-menu__icon mobile-menu__icon--close" />
                                         ) : (
-                                          <img alt="Menu" src={require('../static/images/svg-icons/menu-icon.svg')} className="mobile-menu__icon" />
+                                          <img alt="Menu" src={require('../public/images/svg-icons/menu-icon.svg')} className="mobile-menu__icon" />
                                         )}
                                     </a>
                                 </li>
@@ -358,17 +358,17 @@ class Header extends PureComponent {
                                     <div className="row">
                                         <div className="col">
                                             <a href="https://www.facebook.com/solidstategroup" target="_blank" rel="noreferrer">
-                                                <img alt="Facebook" src={require('../static/images/platforms/facebook.svg')}/>
+                                                <img alt="Facebook" src={require('../public/images/platforms/facebook.svg')}/>
                                             </a>
                                         </div>
                                         <div className="col">
                                             <a href="https://twitter.com/solidstategroup" target="_blank" rel="noreferrer">
-                                                <img alt="Twitter" src={require('../static/images/platforms/twitter.svg')}/>
+                                                <img alt="Twitter" src={require('../public/images/platforms/twitter.svg')}/>
                                             </a>
                                         </div>
                                         <div className="col">
                                             <a href="https://github.com/SolidStateGroup" target="_blank" rel="noreferrer">
-                                                <img alt="GitHub" src={require('../static/images/svg-icons/github-image.svg')}/>
+                                                <img alt="GitHub" src={require('../public/images/svg-icons/github-image.svg')}/>
                                             </a>
                                         </div>
                                     </div>

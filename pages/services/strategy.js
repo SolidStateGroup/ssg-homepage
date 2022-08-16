@@ -13,9 +13,9 @@ import ServicesHero from '../../components/ServicesHero';
 const projects = [
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/tone-and-sculpt/tands-dashboard.png',
-        srcSet: '/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
-        clientImage: '/static/images/clients/tone-and-sculpt.svg',
+        projectImage: '/images/projects/tone-and-sculpt/tands-dashboard.png',
+        srcSet: '/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
+        clientImage: '/images/clients/tone-and-sculpt.svg',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
         title: 'Rebooting female fitness for Tone and Sculpt',
@@ -28,9 +28,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/meownow',
-        projectImage: '/static/images/projects/meownow/meownow-1@1x.png',
-        srcSet: '/static/images/projects/meownow/meownow-1@1x.png 1x, /static/images/projects/meownow/meownow-1@2x.png 2x,',
-        clientImage: '/static/images/clients/meownow.svg',
+        projectImage: '/images/projects/meownow/meownow-1@1x.png',
+        srcSet: '/images/projects/meownow/meownow-1@1x.png 1x, /images/projects/meownow/meownow-1@2x.png 2x,',
+        clientImage: '/images/clients/meownow.svg',
         subTitle: 'Responsive Website',
         title: 'Subscription service for your feline friends',
         blobColour: '#f7f7f7',
@@ -63,27 +63,27 @@ const StrategyPage = class extends React.Component {
                 <div className="container">
 
                     <ServiceItem
-                      serviceImage="/static/images/services/web-development.jpg"
+                      serviceImage="/images/services/web-development.jpg"
                       subTitle="Team construction"
                       serviceDescription="Alongside the correct technical solution, it’s also crucial to construct a functional project team to execute the project. We assess the strengths in the client team and plug any gaps with members of ours, from business analysts to product managers, delivery managers, data analysts and testers. We can also help hire and train additional members of your team when it comes time to expand your workforce."
                     />
 
                     <ServiceItem
                       className="flex-row-reverse"
-                      serviceImage="/static/images/services/ssg-idea-validation-trans.png"
+                      serviceImage="/images/services/ssg-idea-validation-trans.png"
                       subTitle="Business validation"
                       serviceDescription="If you’re launching a new product or service, generating real data based on a lightweight prototype can help validate the product and market fit before spending significant capital. Our business validation services range from ad campaigns, low fidelity prototypes, increasing in fidelity all the way up to rapid application builds."
                     />
 
                     <ServiceItem
-                      serviceImage="/static/images/projects/meownow/tails_cat-ads@1x.png"
+                      serviceImage="/images/projects/meownow/tails_cat-ads@1x.png"
                       subTitle="Test & Learn"
                       serviceDescription="Our test and learn services have helped startups and large enterprises to test the appetite for new products or propositions, the acceptance for pricing models and price points and the implementation of new features for existing products."
                     />
                 </div>
                 <ClientQuote
-                  image="/static/images/projects/meownow/meownow-1@1x.png"
-                  srcSet="/static/images/projects/meownow/meownow-1@1x.png 1x, /static/images/projects/meownow/meownow-1@2x.png 2x"
+                  image="/images/projects/meownow/meownow-1@1x.png"
+                  srcSet="/images/projects/meownow/meownow-1@1x.png 1x, /images/projects/meownow/meownow-1@2x.png 2x"
                   text={'The work you all did was great - and beyond the test being successful, the energy it created internally just seeing something that felt so real... it\'s been awesome thanks so much - really enjoyed working with you all.'}
                   clientName="Laura Cannon" clientTitle="New Market & Strategies"
                 />

@@ -71,13 +71,13 @@
         background-color: darken($brand-raisin-black, 4);
     }
     &__google {
-        background: left 5%/40% 70% no-repeat url("/static/images/svg-icons/play-store-bg.svg") $brand-raisin-black;;
+        background: left 5%/40% 70% no-repeat url("/images/svg-icons/play-store-bg.svg") $brand-raisin-black;;
     }
     &__ios {
-        background: top left no-repeat url("/static/images/svg-icons/app-store-bg.svg") $brand-raisin-black;;
+        background: top left no-repeat url("/images/svg-icons/app-store-bg.svg") $brand-raisin-black;;
     }
     &__react {
-        background: top left no-repeat url("/static/images/svg-icons/react-bg.svg") $brand-raisin-black;;
+        background: top left no-repeat url("/images/svg-icons/react-bg.svg") $brand-raisin-black;;
     }
 }
 

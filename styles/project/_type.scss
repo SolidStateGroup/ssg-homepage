@@ -143,7 +143,7 @@ strong {
 blockquote{
     position: relative;
     &:before{
-        content: url("/static/images/svg-icons/quote-mark.svg");
+        content: url("/images/svg-icons/quote-mark.svg");
         position: absolute;
         top: -.35em;
         left: -.5em;

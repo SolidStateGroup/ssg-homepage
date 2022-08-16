@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2018/oct/how-i-started-a-tech-business---as-told-by-seven-of-londons-top-entrepreneurs.md';
+import md from '../../../../public/pages-blog-markdown/2018/oct/how-i-started-a-tech-business---as-told-by-seven-of-londons-top-entrepreneurs.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

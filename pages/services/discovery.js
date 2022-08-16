@@ -13,9 +13,9 @@ import CardBuildCosts from '../../components/CardBuildCosts';
 const projects = [
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/hero/hero-1.png',
-        srcSet: '/static/images/projects/hero/hero-1.png 1x, /static/images/projects/hero/hero-1@2x.png 2x,',
-        clientImage: '/static/images/clients/hero-logo.png',
+        projectImage: '/images/projects/hero/hero-1.png',
+        srcSet: '/images/projects/hero/hero-1.png 1x, /images/projects/hero/hero-1@2x.png 2x,',
+        clientImage: '/images/clients/hero-logo.png',
         subTitle: 'Responsive Web Application & Mobile App',
         href: '/projects/hero-wellbeing',
         title: 'Connected Health, Made Simple',
@@ -26,9 +26,9 @@ const projects = [
     },
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/tone-and-sculpt/tands-dashboard.png',
-        srcSet: '/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
-        clientImage: '/static/images/clients/tone-and-sculpt.svg',
+        projectImage: '/images/projects/tone-and-sculpt/tands-dashboard.png',
+        srcSet: '/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
+        clientImage: '/images/clients/tone-and-sculpt.svg',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
         title: 'Rebooting female fitness for Tone and Sculpt',
@@ -41,9 +41,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/meownow',
-        projectImage: '/static/images/projects/meownow/meownow-1@1x.png',
-        srcSet: '/static/images/projects/meownow/meownow-1@1x.png 1x, /static/images/projects/meownow/meownow-1@2x.png 2x,',
-        clientImage: '/static/images/clients/meownow.svg',
+        projectImage: '/images/projects/meownow/meownow-1@1x.png',
+        srcSet: '/images/projects/meownow/meownow-1@1x.png 1x, /images/projects/meownow/meownow-1@2x.png 2x,',
+        clientImage: '/images/clients/meownow.svg',
         subTitle: 'Responsive Website',
         title: 'Subscription service for your feline friends',
         blobColour: '#f7f7f7',
@@ -216,8 +216,8 @@ const DiscoveryPage = class extends React.Component {
 
                     <ServiceItem
                       imageClassName="img__shadow"
-                      serviceImage="/static/images/services/System-Architecture-Dark.png"
-                      srcSet="/static/images/services/System-Architecture-Dark.png 1x, /static/images/services/System-Architecture-Dark@2x.png 2x"
+                      serviceImage="/images/services/System-Architecture-Dark.png"
+                      srcSet="/images/services/System-Architecture-Dark.png 1x, /images/services/System-Architecture-Dark@2x.png 2x"
                       className="flex-row-reverse"
                       subTitle="System requirements"
                       serviceDescription="We deliver a specification document that fully describes the project, its goals, features, suggested technology stack, and architecture overview, migration plans and release plans."
@@ -225,16 +225,16 @@ const DiscoveryPage = class extends React.Component {
 
                     <ServiceItem
                       imageClassName="img__shadow"
-                      srcSet="/static/images/services/product-roadmap.png 1x, /static/images/services/product-roadmap@2x.png 2x"
-                      serviceImage="/static/images/services/product-roadmap.png"
+                      srcSet="/images/services/product-roadmap.png 1x, /images/services/product-roadmap@2x.png 2x"
+                      serviceImage="/images/services/product-roadmap.png"
                       subTitle="Product backlog and roadmap"
                       serviceDescription="A complete list of all user stories in the system prioritised into releases."
                     />
 
                     <ServiceItem
                       imageClassName="img__shadow"
-                      serviceImage="/static/images/services/project-timeline.png"
-                      srcSet="/static/images/services/project-timeline.png 1x, /static/images/services/project-timeline@2x.png 2x"
+                      serviceImage="/images/services/project-timeline.png"
+                      srcSet="/images/services/project-timeline.png 1x, /images/services/project-timeline@2x.png 2x"
                       className="flex-row-reverse"
                       subTitle="Project Timelines and Estimates"
                       serviceDescription="An accurate estimate of how long the project will take to complete the MVP and the estimated cost broken down by release and by week."
@@ -242,16 +242,16 @@ const DiscoveryPage = class extends React.Component {
 
                     <ServiceItem
                       imageClassName="img__shadow"
-                      srcSet="/static/images/services/Wireframes.png 1x, /static/images/services/Wireframes@2x.png 2x"
-                      serviceImage="/static/images/services/Wireframes.png"
+                      srcSet="/images/services/Wireframes.png 1x, /images/services/Wireframes@2x.png 2x"
+                      serviceImage="/images/services/Wireframes.png"
                       subTitle="Wireframes for the MVP"
                       serviceDescription="A complete set of wireframes for the initial release of the product."
                     />
 
                     <ServiceItem
                       imageClassName="img__shadow"
-                      serviceImage="/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg"
-                      srcSet="/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg 1x, /static/images/projects/tone-and-sculpt/macbook-pro-on-table@2x.jpg 2x,"
+                      serviceImage="/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg"
+                      srcSet="/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg 1x, /images/projects/tone-and-sculpt/macbook-pro-on-table@2x.jpg 2x,"
                       className="flex-row-reverse"
                       subTitle="UX Prototype"
                       serviceDescription="Wireframe screens are linked together to create a clickable prototype so you can navigate through the application and get a feel for depth and usability."
@@ -263,7 +263,7 @@ const DiscoveryPage = class extends React.Component {
                     <div className="container">
                         <div className="flex-row">
                             <div className="col-md-2 text-center hidden-sm-down">
-                                <img src="/static/images/svg-icons/partner-icon.svg" alt="partner icon"/>
+                                <img src="/images/svg-icons/partner-icon.svg" alt="partner icon"/>
                             </div>
                             <div className="col-md-6 px-md-5 px-0">
                                 <h3 className="panel__title">Interested in working with us?</h3>
@@ -283,8 +283,8 @@ const DiscoveryPage = class extends React.Component {
                 </div>
 
                 <ClientQuote
-                  image="/static/images/projects/meownow/meownow-1@1x.png"
-                  srcSet="/static/images/projects/meownow/meownow-1@1x.png 1x, /static/images/projects/meownow/meownow-1@2x.png 2x"
+                  image="/images/projects/meownow/meownow-1@1x.png"
+                  srcSet="/images/projects/meownow/meownow-1@1x.png 1x, /images/projects/meownow/meownow-1@2x.png 2x"
                   text={'The work you all did was great - and beyond the test being successful, the energy it created internally just seeing something that felt so real... it\'s been awesome thanks so much - really enjoyed working with you all.'}
                   clientName="Laura Cannon" clientTitle="New Market & Strategies"
                 />

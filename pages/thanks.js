@@ -42,7 +42,7 @@ const ContactFormThanksPage = class extends React.Component {
                                                 &nbsp;matthew@solidstategroup.com</a></p>
                                     </div>
 
-                                    <img src="/static/images/hero-blob.svg" alt="hero-blob"
+                                    <img src="/images/hero-blob.svg" alt="hero-blob"
                                          className="img-fluid position-absolute hidden-sm-down"/>
                                 </div>
                             </div>

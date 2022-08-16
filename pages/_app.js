@@ -58,7 +58,7 @@ class MyApp extends App {
                           name="description"
                           content={Constants.descriptions.home}
                         />
-                        <meta property="og:image" content="/static/images/homepage.png" />
+                        <meta property="og:image" content="/images/homepage.png" />
                         <meta
                           name="keywords"
                           content={Constants.keywords.home}
@@ -66,23 +66,23 @@ class MyApp extends App {
                         <title>
                             {Constants.titles.home}
                         </title>
-                        <link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png"/>
+                        <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"/>
                         <link
                           rel="icon" type="image/png" sizes="32x32"
-                          href="/static/images/favicon-32x32.png"
+                          href="/images/favicon-32x32.png"
                         />
                         <link
                           rel="icon" type="image/png" sizes="16x16"
-                          href="/static/images/favicon-16x16.png"
+                          href="/images/favicon-16x16.png"
                         />
                         <link
                           rel="icon" type="image/png" sizes="192x192"
-                          href="/static/images/favicon-192x192.png"
+                          href="/images/favicon-192x192.png"
                         />
                         <script src="https://www.google.com/recaptcha/api.js" />
                         <meta name="theme-color" content="#2a93d6"/>
                         {/* Used to prevent a CSS flicker on chrome */}
-                        <script type="text/javascript" src="/static/chromefix.js" />
+                        <script type="text/javascript" src="/chromefix.js" />
                         <meta name="google-site-verification" content="jdlgcUpYAkHHGhnv9Mtu75cJ4MuzISGfFQwYzqBCBSA" />
                         <script async src={`https://www.googletagmanager.com/gtag/js?id=${Project.ga}`} />
                     </Head>

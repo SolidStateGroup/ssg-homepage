@@ -12,9 +12,9 @@ import ServicesHero from '../../components/ServicesHero';
 const projects = [
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/hero/hero-1.png',
-        srcSet: '/static/images/projects/hero/hero-1.png 1x, /static/images/projects/hero/hero-1@2x.png 2x,',
-        clientImage: '/static/images/clients/hero-logo.png',
+        projectImage: '/images/projects/hero/hero-1.png',
+        srcSet: '/images/projects/hero/hero-1.png 1x, /images/projects/hero/hero-1@2x.png 2x,',
+        clientImage: '/images/clients/hero-logo.png',
         subTitle: 'Responsive Web Application & Mobile App',
         href: '/projects/hero-wellbeing',
         title: 'Connected Health, Made Simple',
@@ -25,9 +25,9 @@ const projects = [
     },
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/tone-and-sculpt/tands-dashboard.png',
-        srcSet: '/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
-        clientImage: '/static/images/clients/tone-and-sculpt.svg',
+        projectImage: '/images/projects/tone-and-sculpt/tands-dashboard.png',
+        srcSet: '/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
+        clientImage: '/images/clients/tone-and-sculpt.svg',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
         title: 'Rebooting female fitness for Tone and Sculpt',
@@ -40,9 +40,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/meownow',
-        projectImage: '/static/images/projects/meownow/meownow-1@1x.png',
-        srcSet: '/static/images/projects/meownow/meownow-1@1x.png 1x, /static/images/projects/meownow/meownow-1@2x.png 2x,',
-        clientImage: '/static/images/clients/meownow.svg',
+        projectImage: '/images/projects/meownow/meownow-1@1x.png',
+        srcSet: '/images/projects/meownow/meownow-1@1x.png 1x, /images/projects/meownow/meownow-1@2x.png 2x,',
+        clientImage: '/images/clients/meownow.svg',
         subTitle: 'Responsive Website',
         title: 'Subscription service for your feline friends',
         blobColour: '#f7f7f7',
@@ -80,57 +80,57 @@ const UserResearchPage = class extends React.Component {
                             <div className="flex-row">
                                 <div className="col text-center">
                                     <img
-                                      src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3"
+                                      src="/images/svg-icons/research-blob-icon.svg" className="mb-3"
                                       alt="Research"
                                     />
                                     <h5>Define the goals & objectives</h5>
                                 </div>
                                 <div className="align-self-center mb5 hidden-sm-down">
-                                    <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                                    <img src="/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                                 </div>
                                 <div className="col text-center">
                                     <img
-                                      src="/static/images/svg-icons/design-blob-icon.svg" className="mb-3"
+                                      src="/images/svg-icons/design-blob-icon.svg" className="mb-3"
                                       alt="Outline"
                                     />
                                     <h5>Outline your hypotheses</h5>
                                 </div>
                                 <div className="align-self-center mb5 hidden-sm-down">
-                                    <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                                    <img src="/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                                 </div>
                                 <div className="col text-center">
                                     <img
-                                      src="/static/images/svg-icons/development-blob-icon.svg" className="mb-3"
+                                      src="/images/svg-icons/development-blob-icon.svg" className="mb-3"
                                       alt="Tools"
                                     />
                                     <h5>Select the right tools</h5>
                                 </div>
                                 <div className="align-self-center mb5 hidden-sm-down">
-                                    <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                                    <img src="/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                                 </div>
                                 <div className="col text-center">
                                     <img
-                                      src="/static/images/svg-icons/identify-blob-icon.svg" className="mb-3"
+                                      src="/images/svg-icons/identify-blob-icon.svg" className="mb-3"
                                       alt="Identify"
                                     />
                                     <h5>Identify the correct audience</h5>
                                 </div>
                                 <div className="align-self-center mb5 hidden-sm-down">
-                                    <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                                    <img src="/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                                 </div>
                                 <div className="col text-center">
                                     <img
-                                      src="/static/images/svg-icons/product-blob-icon.svg" className="mb-3"
+                                      src="/images/svg-icons/product-blob-icon.svg" className="mb-3"
                                       alt="Execute Research"
                                     />
                                     <h5>Execute the research</h5>
                                 </div>
                                 <div className="align-self-center mb5 hidden-sm-down">
-                                    <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                                    <img src="/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                                 </div>
                                 <div className="col text-center">
                                     <img
-                                      src="/static/images/svg-icons/analyse-blob-icon.svg" className="mb-3"
+                                      src="/images/svg-icons/analyse-blob-icon.svg" className="mb-3"
                                       alt="Analyse"
                                     />
                                     <h5>Analyse & create actions</h5>
@@ -138,7 +138,7 @@ const UserResearchPage = class extends React.Component {
                             </div>
                             <div className="col">
                                 <img
-                                  src="/static/images/svg-icons/arrow-gradient-left-turn.svg"
+                                  src="/images/svg-icons/arrow-gradient-left-turn.svg"
                                   className="img-fluid img__full-width pl-5 pr-5 hidden-sm-down" alt="Cycle GFX"
                                 />
                                 <div className="text-center">
@@ -151,31 +151,31 @@ const UserResearchPage = class extends React.Component {
 
                 <div className="container">
                     <ServiceItem
-                      serviceImage="/static/images/services/user-interviews.png"
-                      srcSet="/static/images/services/user-interviews.png 1x, /static/images/services/user-interviews@2x.png 2x"
+                      serviceImage="/images/services/user-interviews.png"
+                      srcSet="/images/services/user-interviews.png 1x, /images/services/user-interviews@2x.png 2x"
                       className="flex-row-reverse"
                       subTitle="User interviews"
                       serviceDescription="User Interviews are a foundational user-centered design method that provide raw, hands on experiences of using a product. User interviews allow us to define any legitimate problems with an existing product and help make sure that we are focussing on areas that add value for the end user."
                     />
 
                     <ServiceItem
-                      srcSet="/static/images/services/user-research.png 1x, /static/images/services/user-research@2x.png 2x"
-                      serviceImage="/static/images/services/user-research.png"
+                      srcSet="/images/services/user-research.png 1x, /images/services/user-research@2x.png 2x"
+                      serviceImage="/images/services/user-research.png"
                       subTitle="Usability testing"
                       serviceDescription="Usability testing results in a better user experience for your users and saves you time and money in the long run by identifying and fixing problems early."
                     />
 
                     <ServiceItem
-                      serviceImage="/static/images/services/analysing-data.png"
-                      srcSet="/static/images/services/analysing-data.png 1x, /static/images/services/analysing-data@2x.png 2x"
+                      serviceImage="/images/services/analysing-data.png"
+                      srcSet="/images/services/analysing-data.png 1x, /images/services/analysing-data@2x.png 2x"
                       className="flex-row-reverse"
                       subTitle="Analysing data"
                       serviceDescription="The research will provide data that can be iterated over for more detailed insights or provide actionable drivers for the design process. We use a number of qualitative and quantitative research methods to collate the correct data and present it to you."
                     />
 
                     <ServiceItem
-                      srcSet="/static/images/services/insights.png 1x, /static/images/services/insights@2x.png 2x"
-                      serviceImage="/static/images/services/insights.png"
+                      srcSet="/images/services/insights.png 1x, /images/services/insights@2x.png 2x"
+                      serviceImage="/images/services/insights.png"
                       subTitle="Insights"
                       serviceDescription={'Once we’ve completed the research we\'ll use the collated data to provide some insights and actions for your product.  These actions will serve to inform design decisions and indicate ways in which existing products could be improved.'}
                     />
@@ -183,8 +183,8 @@ const UserResearchPage = class extends React.Component {
                 </div>
 
                 <ClientQuote
-                  image="/static/images/projects/meownow/meownow-1@1x.png"
-                  srcSet="/static/images/projects/meownow/meownow-1@1x.png 1x, /static/images/projects/meownow/meownow-1@2x.png 2x"
+                  image="/images/projects/meownow/meownow-1@1x.png"
+                  srcSet="/images/projects/meownow/meownow-1@1x.png 1x, /images/projects/meownow/meownow-1@2x.png 2x"
                   text={'The work you all did was great - and beyond the test being successful, the energy it created internally just seeing something that felt so real... it\'s been awesome thanks so much - really enjoyed working with you all.'}
                   clientName="Laura Cannon" clientTitle="New Market & Strategies"
                 />

@@ -29,7 +29,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title={Constants.titles.vuunity} canonical="projects/vuunity">
                     <ProjectHero
-                      clientImage="/static/images/projects/vuunity/vuunity-logo-white.svg"
+                      clientImage="/images/projects/vuunity/vuunity-logo-white.svg"
                       projectTitle="View the concert your way"
                       projectType="Responsive Web Application & Mobile App"
                       ProjectServiceListItem={(
@@ -42,8 +42,8 @@ const TheComponent = class extends Component {
                           </React.Fragment>
 )}
                       className="hero--vuunity"
-                      projectImage="/static/images/projects/vuunity/Vuunity-1.png"
-                      srcSet="/static/images/projects/vuunity/Vuunity-1.png 1x, /static/images/projects/vuunity/Vuunity-1@2x.png 2x"
+                      projectImage="/images/projects/vuunity/Vuunity-1.png"
+                      srcSet="/images/projects/vuunity/Vuunity-1.png 1x, /images/projects/vuunity/Vuunity-1@2x.png 2x"
                     />
 
                     <div className="container">
@@ -61,8 +61,8 @@ const TheComponent = class extends Component {
 
                     <div className="container">
                         <ProjectFullImageSection
-                          imageUrl="/static/images/projects/vuunity/vuunity-2.png"
-                          srcSet="/static/images/projects/vuunity/vuunity-2.png 1x, /static/images/projects/vuunity/vuunity-2@2x.png 2x"
+                          imageUrl="/images/projects/vuunity/vuunity-2.png"
+                          srcSet="/images/projects/vuunity/vuunity-2.png 1x, /images/projects/vuunity/vuunity-2@2x.png 2x"
                           imageAltText="Dashboard UI"
                         />
                     </div>
@@ -72,8 +72,8 @@ const TheComponent = class extends Component {
 
                         <ProjectDetailSectionItem
                           subTitle="Challenge"
-                          imageOne="/static/images/projects/vuunity/Vunity-3.png"
-                          srcSetImageOne="/static/images/projects/vuunity/Vunity-3.png 1x, /static/images/projects/vuunity/Vunity-3@2x.png 2x"
+                          imageOne="/images/projects/vuunity/Vunity-3.png"
+                          srcSetImageOne="/images/projects/vuunity/Vunity-3.png 1x, /images/projects/vuunity/Vunity-3@2x.png 2x"
                           description={'This initial build was to discover and connect all the required services to be able to live stream multiple streams concurrently and gracefully switch between them on both web and mobile applications. Once built we would test the scalability of the application for future load.\n'
                           + '\n'
                           + 'During or after the initial proof of concept phase, we would kick off the branding for the application and also wireframe each and every page of the mobile and web apps, followed by high fidelity designs for those pages.'}
@@ -83,8 +83,8 @@ const TheComponent = class extends Component {
                           title="Proof of concept"
                           className="flex-row-reverse"
                           subTitle="Solution"
-                          imageOne="/static/images/projects/vuunity/vuunity-4.png"
-                          srcSetImageOne="/static/images/projects/vuunity/vuunity-4.png 1x, /static/images/projects/vuunity/vuunity-4@2x.png 2x"
+                          imageOne="/images/projects/vuunity/vuunity-4.png"
+                          srcSetImageOne="/images/projects/vuunity/vuunity-4.png 1x, /images/projects/vuunity/vuunity-4@2x.png 2x"
                           description="We proposed building the core services of the platform on the Amazon Web Services Elemental Live Streaming services. This would allow us to test the most difficult parts of the platform in each area and would also give us the ability to run load testing of the architecture in order to ascertain running costs which will be essential to be able to plan a business model and therefore be able to raise capital for the project."
                         />
 
@@ -92,8 +92,8 @@ const TheComponent = class extends Component {
                         // title="Proof of concept"
                         // className="flex-row-reverse"
                           subTitle="Solution"
-                          imageOne="/static/images/projects/vuunity/vuunity-5.png"
-                          srcSetImageOne="/static/images/projects/vuunity/vuunity-5.png 1x, /static/images/projects/vuunity/vuunity-5@2x.png 2x"
+                          imageOne="/images/projects/vuunity/vuunity-5.png"
+                          srcSetImageOne="/images/projects/vuunity/vuunity-5.png 1x, /images/projects/vuunity/vuunity-5@2x.png 2x"
                           description={'The PoC would cover the following features:\n\n'
                         + '1. Allow multiple live input streams to be captured, stored and streamed out to multiple devices\n'
                         + '2. Create a basic React Native mobile application that can view available streams, play and switch between streams\n'
@@ -114,15 +114,15 @@ const TheComponent = class extends Component {
 
                         {/* <ProjectFullImageSection */}
                         {/* description="Once we were happy with our design direction, we started assembling a design system that we would use to build out the reader workflow and act as a base for the project UI going forward." */}
-                        {/*  imageUrl="/static/images/projects/detonator/User-Interview.png" */}
-                        {/*  srcSet="/static/images/projects/detonator/User-Interview.png 1x, /static/images/projects/detonator/User-Interview@2x.png 2x" */}
+                        {/*  imageUrl="/images/projects/detonator/User-Interview.png" */}
+                        {/*  srcSet="/images/projects/detonator/User-Interview.png 1x, /images/projects/detonator/User-Interview@2x.png 2x" */}
                         {/*  imageAltText="User Persona" */}
                         {/*  // title="User Research Synthesis" */}
                         {/* /> */}
 
                         <ProjectFullImageSection
-                          imageUrl="/static/images/projects/vuunity/Vunity-6.png"
-                          srcSet="/static/images/projects/vuunity/Vunity-6.png 1x, /static/images/projects/vuunity/Vunity-6@2x.png 2x"
+                          imageUrl="/images/projects/vuunity/Vunity-6.png"
+                          srcSet="/images/projects/vuunity/Vunity-6.png 1x, /images/projects/vuunity/Vunity-6@2x.png 2x"
                           imageAltText="User Persona"
                           title="Branding, wireframing and design"
                           subTitle="Solution"
@@ -135,8 +135,8 @@ const TheComponent = class extends Component {
                         {/*  title="Minimum Viable Product" */}
                         {/*  // className="flex-row-reverse" */}
                         {/*  subTitle="Solution" */}
-                        {/*  imageOne="/static/images/projects/vuunity/vuunity-5.png" */}
-                        {/*  srcSetImageOne="/static/images/projects/vuunity/vuunity-5.png 1x, /static/images/projects/vuunity/vuunity-5@2x.png 2x" */}
+                        {/*  imageOne="/images/projects/vuunity/vuunity-5.png" */}
+                        {/*  srcSetImageOne="/images/projects/vuunity/vuunity-5.png 1x, /images/projects/vuunity/vuunity-5@2x.png 2x" */}
                         {/*  description={'Once the wireframing and design stage was complete we built on the proof of concept codebase to create the minimum viable product (MVP). This is the minimum set of features that could be built which would allow the platform to be sold as a product. \n' +*/}
                         {/*  '\n' +*/}
                         {/*  'We defined the MVP for this product to be the following features:\n' +*/}
@@ -164,23 +164,23 @@ const TheComponent = class extends Component {
                         />
 
                         <ProjectFullImageSection
-                          imageUrl="/static/images/projects/vuunity/vuunity-7.png"
-                          srcSet="/static/images/projects/vuunity/vuunity-7.png 1x, /static/images/projects/vuunity/vuunity-7@2x.png 2x"
+                          imageUrl="/images/projects/vuunity/vuunity-7.png"
+                          srcSet="/images/projects/vuunity/vuunity-7.png 1x, /images/projects/vuunity/vuunity-7@2x.png 2x"
                         />
 
                       <ProjectTechSection
                         techLogoItems={
                           <React.Fragment>
                             <div className="col-6 text-center">
-                              <img alt="react" src='/static/images/tech-icons/dark/react.svg'
+                              <img alt="react" src='/images/tech-icons/dark/react.svg'
                                    className='img-responsive'/>
                             </div>
                             <div className="col-6 text-center">
-                              <img alt="aws" src='/static/images/tech-icons/dark/aws.svg'
+                              <img alt="aws" src='/images/tech-icons/dark/aws.svg'
                                    className='img-responsive'/>
                             </div>
                             <div className="col-6 text-center mb-md-0 mb-4">
-                              <img alt="mysql" src='/static/images/tech-icons/dark/react-native-logo.png' className='img-responsive'/>
+                              <img alt="mysql" src='/images/tech-icons/dark/react-native-logo.png' className='img-responsive'/>
                             </div>
                             <div className="col-6 text-center">
 

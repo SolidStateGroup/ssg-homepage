@@ -27,9 +27,9 @@ const TheComponent = class extends Component {
     render() {
         return (
             <React.Fragment>
-                <Page title="Publicate" canonical="projects/publicate">
+                <Page title="Publicate" canonical="projectsate">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/publicate-white.png"
+                        clientImage="/images/clients/whiteate-white.png"
                         projectTitle={'Straightening out corporate documentation'}
                         projectType={'Tablet & Web Application'}
                         ProjectServiceListItem={
@@ -49,8 +49,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--publicate"
-                        projectImage={"/static/images/projects/publicate/publicate-summary-ipad@1x.png"}
-                        srcSet={'/static/images/projects/publicate/publicate-summary-ipad@1x.png 1x, /static/images/projects/publicate/publicate-summary-ipad@2x.png 2x'}
+                        projectImage={"/images/projectsateate-summary-ipad@1x.png"}
+                        srcSet={'/images/projectsateate-summary-ipad@1x.png 1x, /images/projectsateate-summary-ipad@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -65,8 +65,8 @@ const TheComponent = class extends Component {
                         className={'panel--navy'}
                         title={'Orientation Sensitive UI'}
                         subTitle={'01 / UI Design'}
-                        imageUrl={'/static/images/projects/publicate/publicate-ipads@1x.png'}
-                        srcSet={'/static/images/projects/publicate/publicate-ipads@1x.png 1x, /static/images/projects/publicate/publicate-ipads@2x.png 2x'}
+                        imageUrl={'/images/projectsateate-ipads@1x.png'}
+                        srcSet={'/images/projectsateate-ipads@1x.png 1x, /images/projectsateate-ipads@2x.png 2x'}
                         imageAltText={'Responsive UI'}
                     />
 
@@ -75,15 +75,15 @@ const TheComponent = class extends Component {
                             techLogoItems={
                                 <React.Fragment>
                                     <div className="col-4 text-center">
-                                        <img src='/static/images/tech-icons/dark/react.svg' alt="react"
+                                        <img src='/images/tech-icons/dark/react.svg' alt="react"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-4 text-center">
-                                        <img src='/static/images/tech-icons/dark/java.svg' alt="java"
+                                        <img src='/images/tech-icons/dark/java.svg' alt="java"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-4 text-center mb-md-0 mb-4">
-                                        <img alt="webpack" src='/static/images/tech-icons/dark/Webpack.svg'
+                                        <img alt="webpack" src='/images/tech-icons/dark/Webpack.svg'
                                              className='img-responsive'/>
                                     </div>
                                 </React.Fragment>
@@ -105,7 +105,7 @@ const TheComponent = class extends Component {
 
                     <div className="panel panel--gradient-publicate">
                         <div className="container text-center">
-                            <img src="/static/images/projects/publicate/publicate-ipad-swot@1x.png" srcSet={'/static/images/projects/publicate/publicate-ipad-swot@1x.png 1x, /static/images/projects/publicate/publicate-ipad-swot@2x.png 2x'} alt={'Publicate UI'} className="img-fluid"/>
+                            <img src="/images/projectsateate-ipad-swot@1x.png" srcSet={'/images/projectsateate-ipad-swot@1x.png 1x, /images/projectsateate-ipad-swot@2x.png 2x'} alt={'Publicate UI'} className="img-fluid"/>
                         </div>
                     </div>
                     <ProjectNav/>

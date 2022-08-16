@@ -29,7 +29,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Visa" canonical="projects/visa">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/visa-white.svg"
+                        clientImage="/images/clients/white/visa-white.svg"
                         projectTitle={'Cakewalk on the catwalk'}
                         projectType={'Instant payment integration with NFC Ring'}
                         ProjectServiceListItem={
@@ -46,8 +46,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--visa"
-                        projectImage={"/static/images/projects/visa/visa-1@1x.png"}
-                        srcSet={'/static/images/projects/visa/visa-1@1x.png 1x, /static/images/projects/visa/visa-1@2x.png 2x'}
+                        projectImage={"/images/projects/visa/visa-1@1x.png"}
+                        srcSet={'/images/projects/visa/visa-1@1x.png 1x, /images/projects/visa/visa-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -71,7 +71,7 @@ const TheComponent = class extends Component {
                     <ProjectFullImageSection
                         className={'panel--navy pt-5 pb-5'}
                         title={'NFC Ring device'}
-                        imageUrl={'/static/images/projects/visa/hoh-rings.png'}
+                        imageUrl={'/images/projects/visa/hoh-rings.png'}
                         imageAltText={'Mobile AR'}
                     />
 
@@ -96,15 +96,15 @@ const TheComponent = class extends Component {
                             techLogoItems={
                                 <React.Fragment>
                                     <div className="col-4 text-center">
-                                        <img src='/static/images/tech-icons/dark/node.svg' alt="node"
+                                        <img src='/images/tech-icons/dark/node.svg' alt="node"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-4 text-center">
-                                        <img src='/static/images/tech-icons/dark/Express.svg' alt="express"
+                                        <img src='/images/tech-icons/dark/Express.svg' alt="express"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-4 text-center">
-                                        <img src='/static/images/tech-icons/dark/Jade.svg'
+                                        <img src='/images/tech-icons/dark/Jade.svg'
                                              alt="jade"
                                              className='img-responsive'/>
                                     </div>
