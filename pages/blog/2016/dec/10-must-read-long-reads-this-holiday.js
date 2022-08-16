@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2016/dec/10-must-read-long-reads-this-holiday.md';
+import md from '../../../../public/pages-blog-markdown/2016/dec/10-must-read-long-reads-this-holiday.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

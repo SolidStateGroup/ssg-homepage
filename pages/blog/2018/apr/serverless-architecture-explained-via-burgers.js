@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2018/apr/serverless-architecture-explained-via-burgers.md';
+import md from '../../../../public/pages-blog-markdown/2018/apr/serverless-architecture-explained-via-burgers.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

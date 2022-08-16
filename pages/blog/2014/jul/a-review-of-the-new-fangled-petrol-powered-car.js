@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2014/jul/a-review-of-the-new-fangled-petrol-powered-car.md';
+import md from '../../../../public/pages-blog-markdown/2014/jul/a-review-of-the-new-fangled-petrol-powered-car.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

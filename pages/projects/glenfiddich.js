@@ -29,7 +29,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Glenfiddich" canonical="projects/glenfiddich">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/glenfiddich-white.svg"
+                        clientImage="/images/clients/white/glenfiddich-white.svg"
                         projectTitle={'Glenfiddich Stag Racing - When Whisky Meets Hackathons'}
                         projectType={'Multiplayer AR racing game for mobile'}
                         ProjectServiceListItem={
@@ -44,8 +44,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--glenfiddich"
-                        projectImage={"/static/images/projects/glenfiddich/glenfiddich-1@1x.png"}
-                        srcSet={'/static/images/projects/glenfiddich/glenfiddich-1@1x.png 1x, /static/images/projects/glenfiddich/glenfiddich-1@2x.png 2x'}
+                        projectImage={"/images/projects/glenfiddich/glenfiddich-1@1x.png"}
+                        srcSet={'/images/projects/glenfiddich/glenfiddich-1@1x.png 1x, /images/projects/glenfiddich/glenfiddich-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -63,8 +63,8 @@ const TheComponent = class extends Component {
                         className={'panel--navy pt-5 pb-5'}
                         title={'Mobile APP UI Design'}
                         subTitle={'01 / Design'}
-                        imageUrl={'/static/images/projects/glenfiddich/glenfiddich-phones@1x.png'}
-                        srcSet={'/static/images/projects/glenfiddich/glenfiddich-phones@1x.png 1x, /static/images/projects/glenfiddich/glenfiddich-phones@2x.png 2x'}
+                        imageUrl={'/images/projects/glenfiddich/glenfiddich-phones@1x.png'}
+                        srcSet={'/images/projects/glenfiddich/glenfiddich-phones@1x.png 1x, /images/projects/glenfiddich/glenfiddich-phones@2x.png 2x'}
                         imageAltText={'Mobile AR'}
                     />
 

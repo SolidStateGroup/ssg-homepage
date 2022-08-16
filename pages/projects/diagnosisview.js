@@ -29,7 +29,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="DiagnosisView" canonical="projects/diagnosisview">
                     <ProjectHero
-                        clientImage="/static/images/projects/diagnosisview/dv-brand.png"
+                        clientImage="/images/projects/diagnosisview/dv-brand.png"
                         projectTitle={'Providing advanced patient info for healthcare students and practitioners'}
                         projectType={'Responsive Web Application & Mobile App'}
                         ProjectServiceListItem={
@@ -50,8 +50,8 @@ const TheComponent = class extends Component {
                           </React.Fragment>
                         }
                         className="hero--patientview"
-                        projectImage={"/static/images/projects/diagnosisview/1.png"}
-                        srcSet={'/static/images/projects/diagnosisview/1.png 1x, /static/images/projects/diagnosisview/1@2x.png 2x'}
+                        projectImage={"/images/projects/diagnosisview/1.png"}
+                        srcSet={'/images/projects/diagnosisview/1.png 1x, /images/projects/diagnosisview/1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -67,8 +67,8 @@ const TheComponent = class extends Component {
                         <ProjectFullImageSection
                             // title={'Patientview UI'}
                             // subTitle={'Overview'}
-                            imageUrl={'/static/images/projects/diagnosisview/2.jpg'}
-                            srcSet={'/static/images/projects/diagnosisview/2.jpg 1x, /static/images/projects/diagnosisview/2@2x.jpg 2x'}
+                            imageUrl={'/images/projects/diagnosisview/2.jpg'}
+                            srcSet={'/images/projects/diagnosisview/2.jpg 1x, /images/projects/diagnosisview/2@2x.jpg 2x'}
                             imageAltText={'Patientview UI'}
                         />
 
@@ -82,8 +82,8 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                             subTitle={'Solution'}
                             className="flex-row-reverse"
-                            imageOne={'/static/images/projects/diagnosisview/1.png'}
-                            srcSetImageOne={'/static/images/projects/diagnosisview/1.png 1x, /static/images/projects/diagnosisview/1@2x.png 2x'}
+                            imageOne={'/images/projects/diagnosisview/1.png'}
+                            srcSetImageOne={'/images/projects/diagnosisview/1.png 1x, /images/projects/diagnosisview/1@2x.png 2x'}
                             description={'We developed the mobile application using React Native. This allowed us to reuse a lot of logic when it came to developing the web application, which was built with React. \n' +
                             '\n' +
                             'The project is in ongoing development with The University of Edinburgh, with the roadmap including an improved API and mapping further resources.\n'}
@@ -93,15 +93,15 @@ const TheComponent = class extends Component {
                         techLogoItems={
                           <React.Fragment>
                             <div className="col-6 text-center">
-                              <img alt="react" src='/static/images/tech-icons/dark/react.svg'
+                              <img alt="react" src='/images/tech-icons/dark/react.svg'
                                    className='img-responsive'/>
                             </div>
                             <div className="col-6 text-center">
-                              <img alt=".net" src='/static/images/tech-icons/dark/java.svg'
+                              <img alt=".net" src='/images/tech-icons/dark/java.svg'
                                    className='img-responsive'/>
                             </div>
                             <div className="col-6 text-center mb-md-0 mb-4">
-                              <img alt="mysql" src='/static/images/tech-icons/dark/chargebee-logo-black.svg' className='img-responsive'/>
+                              <img alt="mysql" src='/images/tech-icons/dark/chargebee-logo-black.svg' className='img-responsive'/>
                             </div>
                           </React.Fragment>
                         }

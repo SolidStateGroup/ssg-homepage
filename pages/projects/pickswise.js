@@ -29,7 +29,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title={Constants.titles.pickswise} canonical="projects/pickswise">
                     <ProjectHero
-                      clientImage="/static/images/projects/pickswise/Pickswise-Logo.svg"
+                      clientImage="/images/projects/pickswise/Pickswise-Logo.svg"
                       projectTitle="The home of free sports picks, news and experts' best bets"
                       projectType="Mobile Application & Web application"
                       ProjectServiceListItem={(
@@ -39,8 +39,8 @@ const TheComponent = class extends Component {
                         </React.Fragment>
 )}
                       className="hero--pickswise"
-                      projectImage="/static/images/projects/pickswise/1.png"
-                      srcSet="/static/images/projects/pickswise/1.png 1x, /static/images/projects/pickswise/1@2x.png 2x"
+                      projectImage="/images/projects/pickswise/1.png"
+                      srcSet="/images/projects/pickswise/1.png 1x, /images/projects/pickswise/1@2x.png 2x"
                     />
 
                     <div className="container">
@@ -76,8 +76,8 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                           title={'Rapid React Native Development'}
                           subTitle="Solution"
-                          imageOne="/static/images/projects/pickswise/3.png"
-                          srcSetImageOne="/static/images/projects/pickswise/3.png 1x, /static/images/projects/pickswise/3@2x.png 2x"
+                          imageOne="/images/projects/pickswise/3.png"
+                          srcSetImageOne="/images/projects/pickswise/3.png 1x, /images/projects/pickswise/3@2x.png 2x"
                           description={'Solid State Group have been iterating on a proprietary React Native boilerplate project since Facebook released the technology in 2015, this allowed us to get a skeleton stable application deployed very quickly.\n' +
                           '\n' +
                           'We developed on a feature basis using Kanban methodology, signing them off with Pickswise’s internal team. We submitted the application early whilst developing features which ensured that the application was released on time. \n'}
@@ -87,8 +87,8 @@ const TheComponent = class extends Component {
                         className="flex-row-reverse"
                         title={'React Native Training'}
                         subTitle="Solution"
-                        imageOne="/static/images/projects/pickswise/1.png"
-                        srcSetImageOne="/static/images/projects/pickswise/1.png 1x, /static/images/projects/pickswise/1@2x.png 2x"
+                        imageOne="/images/projects/pickswise/1.png"
+                        srcSetImageOne="/images/projects/pickswise/1.png 1x, /images/projects/pickswise/1@2x.png 2x"
                         description={'Following the successful release, it was important for Pickswise to build out their internal teams in React Native. Whilst building post-MVP features we also helped train their new team, providing documentation and training post-MVP to the point where they could start developing features on their own.\n'}
                       />
 
@@ -98,8 +98,8 @@ const TheComponent = class extends Component {
                     </div>
 
                   <ProjectFullImageSection
-                    imageUrl="/static/images/projects/pickswise/2.png"
-                    srcSet="/static/images/projects/pickswise/2.png 1x, /static/images/projects/pickswise/2@2x.png 2x"
+                    imageUrl="/images/projects/pickswise/2.png"
+                    srcSet="/images/projects/pickswise/2.png 1x, /images/projects/pickswise/2@2x.png 2x"
                     imageAltText="Dashboard UI"
                     className="panel panel--bg-pickswise"
                   />
@@ -129,8 +129,8 @@ const TheComponent = class extends Component {
                     />
 
                     <ProjectFullImageSection
-                      imageUrl="/static/images/projects/pickswise/Pickswise-Architecture.png"
-                      srcSet="/static/images/projects/pickswise/Pickswise-Architecture.png 1x, /static/images/projects/pickswise/Pickswise-Architecture@2x.png 2x"
+                      imageUrl="/images/projects/pickswise/Pickswise-Architecture.png"
+                      srcSet="/images/projects/pickswise/Pickswise-Architecture.png 1x, /images/projects/pickswise/Pickswise-Architecture@2x.png 2x"
                       imageAltText="Common Architecture"
                     />
 
@@ -139,8 +139,8 @@ const TheComponent = class extends Component {
                       imageOneclassName="img__shadow"
                       title={'Mobile UI Library'}
                       subTitle="Solution"
-                      imageOne="/static/images/projects/pickswise/Pickswise-Desktop.png"
-                      srcSetImageOne="/static/images/projects/pickswise/Pickswise-Desktop.png 1x, /static/images/projects/pickswise/Pickswise-Desktop@2x.png 2x"
+                      imageOne="/images/projects/pickswise/Pickswise-Desktop.png"
+                      srcSetImageOne="/images/projects/pickswise/Pickswise-Desktop.png 1x, /images/projects/pickswise/Pickswise-Desktop@2x.png 2x"
                       description={'Pickswise wanted to allow other applications to utilise the UI components we created. To accomplish this we used Storybook to document and test the UI components. We also built and documented a release process for UI components to be downloadable and used in other applications.\n' +
                       '\n' +
                       'We also trained the internal team on the differences in approach to standard application development to developing a reusable component library. \n'}
@@ -150,8 +150,8 @@ const TheComponent = class extends Component {
                       className="flex-row-reverse"
                       title={'Training for cross-platform development'}
                       subTitle="Solution"
-                      imageOne="/static/images/projects/pickswise/Pickswise-Desktop-2.png"
-                      srcSetImageOne="/static/images/projects/pickswise/Pickswise-Desktop-2.png 1x, /static/images/projects/pickswise/Pickswise-Desktop-2@2x.png 2x"
+                      imageOne="/images/projects/pickswise/Pickswise-Desktop-2.png"
+                      srcSetImageOne="/images/projects/pickswise/Pickswise-Desktop-2.png 1x, /images/projects/pickswise/Pickswise-Desktop-2@2x.png 2x"
                       description={'After creating a reusable web and mobile architecture, our next step was to guide the team on developing and maintaining feature parity across the 2 platforms. For this we provided workshops and recorded video training sessions on best practices, CI/CD and testing.'}
                     />
 
@@ -166,24 +166,24 @@ const TheComponent = class extends Component {
                           <React.Fragment>
                             <div className='col-6 text-center'>
                               <img
-                                alt='react' src='/static/images/tech-icons/dark/react.svg'
+                                alt='react' src='/images/tech-icons/dark/react.svg'
                                 className='img-responsive'
                               />
                             </div>
                             <div className='col-6 text-center'>
                               <img
-                                alt='react' src='/static/images/tech-icons/dark/react-native-logo.png'
+                                alt='react' src='/images/tech-icons/dark/react-native-logo.png'
                                 className='img-responsive'
                               />
                             </div>
                             <div className='col-6 text-center'>
                               <img
-                                alt='.net' src='/static/images/tech-icons/dark/redux-logo.png'
+                                alt='.net' src='/images/tech-icons/dark/redux-logo.png'
                                 className='img-responsive'
                               />
                             </div>
                             <div className='col-6 text-center mb-md-0 mb-4'>
-                              <img alt='mysql' src='/static/images/tech-icons/dark/Figma.svg'
+                              <img alt='mysql' src='/images/tech-icons/dark/Figma.svg'
                                    className='img-responsive' />
                             </div>
                           </React.Fragment>
@@ -221,8 +221,8 @@ const TheComponent = class extends Component {
                     </div>
 
                     {/*<ClientQuote*/}
-                    {/*  image="/static/images/projects/pickswise/1.png"*/}
-                    {/*  srcSet="/static/images/projects/pickswise/1.png 1x, /static/images/projects/pickswise/1@2x.png 2x"*/}
+                    {/*  image="/images/projects/pickswise/1.png"*/}
+                    {/*  srcSet="/images/projects/pickswise/1.png 1x, /images/projects/pickswise/1@2x.png 2x"*/}
                     {/*  text="We worked with SSG to completely rebuild our digital properties, API, CMS and a brand new mobile app for iOS and Android. The team were brilliant under significant time pressure and we felt like we were in expert hands from start to finish."*/}
                     {/*  clientName="John Smith" clientTitle="Co-Founder & CEO at Site Assist"*/}
                     {/*/>*/}

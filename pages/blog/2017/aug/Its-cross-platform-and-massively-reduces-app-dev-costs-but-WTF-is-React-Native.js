@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2017/aug/Its-cross-platform-and-massively-reduces-app-dev-costs-but-WTF-is-React-Native.md';
+import md from '../../../../public/pages-blog-markdown/2017/aug/Its-cross-platform-and-massively-reduces-app-dev-costs-but-WTF-is-React-Native.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

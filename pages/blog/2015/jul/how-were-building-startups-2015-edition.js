@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2015/jul/how-were-building-startups-2015-edition.md';
+import md from '../../../../public/pages-blog-markdown/2015/jul/how-were-building-startups-2015-edition.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

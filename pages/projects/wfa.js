@@ -24,7 +24,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="WFA" canonical="projects/wfa">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/wfa-white.svg"
+                        clientImage="/images/clients/white/wfa-white.svg"
                         projectTitle={'Visualising data for effective marketing communications'}
                         projectType={'Mobile & Web Application'}
                         ProjectServiceListItem={
@@ -43,8 +43,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--wfa"
-                        projectImage={"/static/images/projects/wfa/wfa-1.png"}
-                        srcSet={'/static/images/projects/wfa/wfa-1.png 1x, /static/images/projects/wfa/wfa-1@2x.png 2x'}
+                        projectImage={"/images/projects/wfa/wfa-1.png"}
+                        srcSet={'/images/projects/wfa/wfa-1.png 1x, /images/projects/wfa/wfa-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -64,8 +64,8 @@ const TheComponent = class extends Component {
                         className={'panel--navy'}
                         title={'Visualising dynamic charts'}
                         subTitle={'03 / UI Design'}
-                        imageUrl={'/static/images/projects/wfa/wfa-2.png'}
-                        srcSet={'/static/images/projects/wfa/wfa-2.png 1x, /static/images/projects/wfa/wfa-2@2x.png 2x'}
+                        imageUrl={'/images/projects/wfa/wfa-2.png'}
+                        srcSet={'/images/projects/wfa/wfa-2.png 1x, /images/projects/wfa/wfa-2@2x.png 2x'}
                         imageAltText={'WFA Dashboard'}
                     />
 
@@ -74,20 +74,20 @@ const TheComponent = class extends Component {
                             techLogoItems={
                                 <React.Fragment>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/react.svg' alt="react"
+                                        <img src='/images/tech-icons/dark/react.svg' alt="react"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/java.svg' alt="java"
+                                        <img src='/images/tech-icons/dark/java.svg' alt="java"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/docker.svg'
+                                        <img src='/images/tech-icons/dark/docker.svg'
                                              alt="docker"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center mb-md-0 mb-4">
-                                        <img alt="webpack" src='/static/images/tech-icons/dark/Webpack.svg'
+                                        <img alt="webpack" src='/images/tech-icons/dark/Webpack.svg'
                                              className='img-responsive'/>
                                     </div>
                                 </React.Fragment>

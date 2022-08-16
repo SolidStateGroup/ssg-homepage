@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Link from 'next/link';
 import propTypes from 'prop-types';
 import BlogTag from '../../components/BlogTag';
-import blog from '../../static/blog.json';
+import blog from '../../public/blog.json';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Page from '../../components/Page';

@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2017/nov/introducing-ssg-labs.md';
+import md from '../../../../public/pages-blog-markdown/2017/nov/introducing-ssg-labs.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

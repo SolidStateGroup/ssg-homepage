@@ -1,5 +1,5 @@
 .hero {
-    background: $brandNavy url("/static/images/vector-cubes-bg.svg") center center no-repeat;
+    background: $brandNavy url("/images/vector-cubes-bg.svg") center center no-repeat;
     overflow: visible;
     width: 100%;
     color: #fff;
@@ -26,13 +26,13 @@
     }
 
     &__gfx-container {
-        background: url("/static/images/pulse-bg.svg") center center no-repeat;
+        background: url("/images/pulse-bg.svg") center center no-repeat;
         background-size: contain;
         height: 100%;
     }
 
     &__blob-container {
-        background: url("/static/images/dot-texture.svg") center right no-repeat;
+        background: url("/images/dot-texture.svg") center right no-repeat;
         background-size: 188px;
         position: relative;
         height: 100%;

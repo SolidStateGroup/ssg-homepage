@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2018/may/glenfiddich-stag-racing-when-whisky-meets-hackathons.md';
+import md from '../../../../public/pages-blog-markdown/2018/may/glenfiddich-stag-racing-when-whisky-meets-hackathons.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

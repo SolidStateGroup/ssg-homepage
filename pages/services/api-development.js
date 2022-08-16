@@ -14,9 +14,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/british-airways',
-        projectImage: '/static/images/projects/ba/ba-summary-ipad.png',
-        srcSet: '/static/images/projects/ba/ba-summary-ipad.png 1x, /static/images/projects/ba/ba-summary-ipad@2x.png 2x,',
-        clientImage: '/static/images/clients/british-airways.svg',
+        projectImage: '/images/projects/ba/ba-summary-ipad.png',
+        srcSet: '/images/projects/ba/ba-summary-ipad.png 1x, /images/projects/ba/ba-summary-ipad@2x.png 2x,',
+        clientImage: '/images/clients/british-airways.svg',
         subTitle: 'Real-time operational dashboard',
         title: 'The real-time machine: integrating with 1960s tech',
         blobColour: '#3658B0',
@@ -27,9 +27,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/hailie',
-        projectImage: '/static/images/projects/hailie/hailie-phone@1x.png',
-        srcSet: '/static/images/projects/hailie/hailie-phone@1x.png 1x, /static/images/projects/hailie/hailie-phone@2x.png 2x,',
-        clientImage: '/static/images/clients/hailie.svg',
+        projectImage: '/images/projects/hailie/hailie-phone@1x.png',
+        srcSet: '/images/projects/hailie/hailie-phone@1x.png 1x, /images/projects/hailie/hailie-phone@2x.png 2x,',
+        clientImage: '/images/clients/hailie.svg',
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
         blobColour: '#FF715A',
@@ -40,9 +40,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/hertz',
-        projectImage: '/static/images/projects/hertz/hertz-1@1x.png',
-        srcSet: '/static/images/projects/hertz/hertz-1@1x.png 1x, /static/images/projects/hertz/hertz-1@2x.png 2x,',
-        clientImage: '/static/images/clients/hertz-colour.png',
+        projectImage: '/images/projects/hertz/hertz-1@1x.png',
+        srcSet: '/images/projects/hertz/hertz-1@1x.png 1x, /images/projects/hertz/hertz-1@2x.png 2x,',
+        clientImage: '/images/clients/hertz-colour.png',
         subTitle: 'Connected Car mobile application',
         title: 'Feels on wheels',
         blobColour: '#FFD60D',
@@ -81,8 +81,8 @@ const APIPage = class extends React.Component {
                 <div className="container">
 
                     <ServiceItem
-                      serviceImage="/static/images/services/api-dev@1x.jpg"
-                      srcSet="/static/images/services/api-dev@1x.jpg 1x, /static/images/services/api-dev@2x.jpg 2x,"
+                      serviceImage="/images/services/api-dev@1x.jpg"
+                      srcSet="/images/services/api-dev@1x.jpg 1x, /images/services/api-dev@2x.jpg 2x,"
                       subTitle="We build robust and reliable software that scales"
                       serviceDescription="Recent projects include updating the entire IT infrastructure for Ladbrokes Coral and developing a business-facing API of real-time airline data for British Airways."
                       serviceListItem={(
@@ -108,15 +108,15 @@ const APIPage = class extends React.Component {
 
                     <ServiceItem
                       className="flex-row-reverse"
-                      serviceImage="/static/images/services/iMac3@1x.jpg"
-                      srcSet="/static/images/services/iMac3@1x.jpg 1x, /static/images/services/iMac3@2x.jpg 2x"
+                      serviceImage="/images/services/iMac3@1x.jpg"
+                      srcSet="/images/services/iMac3@1x.jpg 1x, /images/services/iMac3@2x.jpg 2x"
                       subTitle="Extensive range of trusted partners"
                       serviceDescription="We work with a number of partners with expertise in a wide range of technologies, verticals, and methodologies. Our team consists of highly experienced software engineers from all competencies, which allows us to scale our teams rapidly to fit the client demands."
                     />
 
                     <ServiceItem
-                      serviceImage="/static/images/services/web-development.jpg"
-                      srcSet="/static/images/services/web-development.jpg 1x, /static/images/services/web-development@2x.jpg 2x,"
+                      serviceImage="/images/services/web-development.jpg"
+                      srcSet="/images/services/web-development.jpg 1x, /images/services/web-development@2x.jpg 2x,"
                       subTitle="Technical specialists"
                       serviceDescription="We specialise in building secure, bespoke APIs and scalable integrations with legacy systems. As well as ground up builds for new endeavours for startups, scale-ups and large enterprise companies."
                     />
@@ -125,8 +125,8 @@ const APIPage = class extends React.Component {
                 </div>
 
                 <ClientQuote
-                  image="/static/images/projects/ba/ba-ipad.png"
-                  srcSet="/static/images/projects/ba/ba-ipad.png 1x, /static/images/projects/ba/ba-ipad@2x.png 2x"
+                  image="/images/projects/ba/ba-ipad.png"
+                  srcSet="/images/projects/ba/ba-ipad.png 1x, /images/projects/ba/ba-ipad@2x.png 2x"
                   text={'A huge thanks to you and everybody involved in developing the dashboard. It gets more useful with every iteration. We all now need to learn to use it to maximum advantage, so we all have a shared, accurate, knowledge of what\'s going on in the operation.'}
                   clientName="Managing Director" clientTitle="Operations at British Airways"
                 />

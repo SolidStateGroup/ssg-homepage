@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2017/mar/we-built-a-giant-pixel-wall-for-fun-but-what-we-learnt-went-a-lot-further.md';
+import md from '../../../../public/pages-blog-markdown/2017/mar/we-built-a-giant-pixel-wall-for-fun-but-what-we-learnt-went-a-lot-further.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

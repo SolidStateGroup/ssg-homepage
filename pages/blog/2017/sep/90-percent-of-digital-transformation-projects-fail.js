@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2017/sep/90-percent-of-digital-transformation-projects-fail.md';
+import md from '../../../../public/pages-blog-markdown/2017/sep/90-percent-of-digital-transformation-projects-fail.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

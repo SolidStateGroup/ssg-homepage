@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2018/feb/how-do-i-use-a-react-native-app-to-raise-a-seed-round.md';
+import md from '../../../../public/pages-blog-markdown/2018/feb/how-do-i-use-a-react-native-app-to-raise-a-seed-round.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

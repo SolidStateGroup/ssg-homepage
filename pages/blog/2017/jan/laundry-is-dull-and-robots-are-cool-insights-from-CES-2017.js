@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2017/jan/laundry-is-dull-and-robots-are-cool-insights-from-CES-2017.md';
+import md from '../../../../public/pages-blog-markdown/2017/jan/laundry-is-dull-and-robots-are-cool-insights-from-CES-2017.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2017/jul/can-I-wear-shorts.md';
+import md from '../../../../public/pages-blog-markdown/2017/jul/can-I-wear-shorts.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

@@ -13,9 +13,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/meownow',
-        projectImage: '/static/images/projects/meownow/meownow-1@1x.png',
-        srcSet: '/static/images/projects/meownow/meownow-1@1x.png 1x, /static/images/projects/meownow/meownow-1@2x.png 2x,',
-        clientImage: '/static/images/clients/meownow.svg',
+        projectImage: '/images/projects/meownow/meownow-1@1x.png',
+        srcSet: '/images/projects/meownow/meownow-1@1x.png 1x, /images/projects/meownow/meownow-1@2x.png 2x,',
+        clientImage: '/images/clients/meownow.svg',
         subTitle: 'Responsive Website',
         title: 'Subscription service for your feline friends',
         blobColour: "#f7f7f7",
@@ -26,9 +26,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/change-please',
-        projectImage: '/static/images/projects/change-please/Rotato-Snapshot@1x.png',
-        srcSet: '/static/images/projects/change-please/Rotato-Snapshot@1x.png 1x, /static/images/projects/change-please/Rotato-Snapshot@2x.png 2x,',
-        clientImage: '/static/images/clients/change-please.svg',
+        projectImage: '/images/projects/change-please/Rotato-Snapshot@1x.png',
+        srcSet: '/images/projects/change-please/Rotato-Snapshot@1x.png 1x, /images/projects/change-please/Rotato-Snapshot@2x.png 2x,',
+        clientImage: '/images/clients/change-please.svg',
         subTitle: 'The lean, mean, face detecting, debt tracking machine',
         title: 'Changing the [face] of debt tracking',
         blobColour: "#908DF7",
@@ -61,8 +61,8 @@ const BrandingPage = class extends React.Component {
                     />
                 </div>
                 <ClientQuote
-                    image={'/static/images/projects/meownow/meownow-1@1x.png'}
-                    srcSet={'/static/images/projects/meownow/meownow-1@1x.png 1x, /static/images/projects/meownow/meownow-1@2x.png 2x'}
+                    image={'/images/projects/meownow/meownow-1@1x.png'}
+                    srcSet={'/images/projects/meownow/meownow-1@1x.png 1x, /images/projects/meownow/meownow-1@2x.png 2x'}
                     text={'The work you all did was great - and beyond the test being successful, the energy it created internally just seeing something that felt so real... it\'s been awesome thanks so much - really enjoyed working with you all.'}
                     clientName={'Laura Cannon'} clientTitle={'New Market & Strategies'}/>
                 <div className="container">

@@ -10,9 +10,9 @@ import ProjectItem from '../components/ProjectItem';
 const projects = [
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/ladbrokes/ladbrokes-1.png',
-        srcSet: '/static/images/projects/ladbrokes/ladbrokes-1.png 1x, /static/images/projects/ladbrokes/ladbrokes-1@2x.png 2x,',
-        clientImage: '/static/images/clients/ladbrokes.png',
+        projectImage: '/images/projects/ladbrokes/ladbrokes-1.png',
+        srcSet: '/images/projects/ladbrokes/ladbrokes-1.png 1x, /images/projects/ladbrokes/ladbrokes-1@2x.png 2x,',
+        clientImage: '/images/clients/ladbrokes.png',
         subTitle: 'Web Application',
         href: '/projects/ladbrokes-coral',
         title: 'Bringing the entire IT infrastructure within Ladbrokes Coral up to date',
@@ -23,9 +23,9 @@ const projects = [
     },
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/zopa/zopa-1.png',
-        srcSet: '/static/images/projects/zopa/zopa-1.png 1x, /static/images/projects/zopa/zopa-1@2x.png 2x,',
-        clientImage: '/static/images/clients/zopa.svg',
+        projectImage: '/images/projects/zopa/zopa-1.png',
+        srcSet: '/images/projects/zopa/zopa-1.png 1x, /images/projects/zopa/zopa-1@2x.png 2x,',
+        clientImage: '/images/clients/zopa.svg',
         subTitle: 'Mobile App',
         href: '/projects/zopa',
         title: 'New borrowing power service for a FeelGood Money platform',
@@ -36,9 +36,9 @@ const projects = [
     },
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/racing-post/racing-post-1.png',
-        srcSet: '/static/images/projects/racing-post/racing-post-1.png 1x, /static/images/projects/racing-post/racing-post-1@2x.png 2x,',
-        clientImage: '/static/images/clients/racing-post.svg',
+        projectImage: '/images/projects/racing-post/racing-post-1.png',
+        srcSet: '/images/projects/racing-post/racing-post-1.png 1x, /images/projects/racing-post/racing-post-1@2x.png 2x,',
+        clientImage: '/images/clients/racing-post.svg',
         subTitle: 'Responsive Website & Mobile App',
         href: '/projects/racing-post',
         title: 'New Serverless Data Platform for the home of horse racing news',
@@ -50,9 +50,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/hailie',
-        projectImage: '/static/images/projects/hailie/hailie-phone@1x.png',
-        srcSet: '/static/images/projects/hailie/hailie-phone@1x.png 1x, /static/images/projects/hailie/hailie-phone@2x.png 2x,',
-        clientImage: '/static/images/clients/hailie.svg',
+        projectImage: '/images/projects/hailie/hailie-phone@1x.png',
+        srcSet: '/images/projects/hailie/hailie-phone@1x.png 1x, /images/projects/hailie/hailie-phone@2x.png 2x,',
+        clientImage: '/images/clients/hailie.svg',
         subTitle: 'iOS and Android Mobile App',
         title: 'Reinventing treatment of respiritory issues',
         blobColour: "#FF715A",
@@ -63,9 +63,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/british-airways',
-        projectImage: '/static/images/projects/ba/ba-summary-ipad.png',
-        srcSet: '/static/images/projects/ba/ba-summary-ipad.png 1x, /static/images/projects/ba/ba-summary-ipad@2x.png 2x,',
-        clientImage: '/static/images/clients/british-airways.svg',
+        projectImage: '/images/projects/ba/ba-summary-ipad.png',
+        srcSet: '/images/projects/ba/ba-summary-ipad.png 1x, /images/projects/ba/ba-summary-ipad@2x.png 2x,',
+        clientImage: '/images/clients/british-airways.svg',
         subTitle: 'Real-time operational dashboard',
         title: 'The real-time machine: integrating with 1960s tech',
         blobColour: "#3658B0",
@@ -76,9 +76,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/unilever',
-        projectImage: '/static/images/projects/unilever/unilever-1@1x.png',
-        srcSet: '/static/images/projects/unilever/unilever-1@1x.png 1x, /static/images/projects/unilever/unilever-1@2x.png 2x,',
-        clientImage: '/static/images/clients/unilever-colour.svg',
+        projectImage: '/images/projects/unilever/unilever-1@1x.png',
+        srcSet: '/images/projects/unilever/unilever-1@1x.png 1x, /images/projects/unilever/unilever-1@2x.png 2x,',
+        clientImage: '/images/clients/unilever-colour.svg',
         subTitle: 'Automated ecommerce via connected scales',
         title: 'Shopping that buys itself',
         blobColour: "#007DBB",
@@ -89,9 +89,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/hertz',
-        projectImage: '/static/images/projects/hertz/hertz-1@1x.png',
-        srcSet: '/static/images/projects/hertz/hertz-1@1x.png 1x, /static/images/projects/hertz/hertz-1@2x.png 2x,',
-        clientImage: '/static/images/clients/hertz-colour.png',
+        projectImage: '/images/projects/hertz/hertz-1@1x.png',
+        srcSet: '/images/projects/hertz/hertz-1@1x.png 1x, /images/projects/hertz/hertz-1@2x.png 2x,',
+        clientImage: '/images/clients/hertz-colour.png',
         subTitle: 'Connected Car mobile application',
         title: 'Feels on wheels',
         blobColour: "#FFD60D",
@@ -102,9 +102,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/visa',
-        projectImage: '/static/images/projects/visa/visa-1@1x.png',
-        srcSet: '/static/images/projects/visa/visa-1@1x.png 1x, /static/images/projects/visa/visa-1@2x.png 2x,',
-        clientImage: '/static/images/clients/visa-colour.svg',
+        projectImage: '/images/projects/visa/visa-1@1x.png',
+        srcSet: '/images/projects/visa/visa-1@1x.png 1x, /images/projects/visa/visa-1@2x.png 2x,',
+        clientImage: '/images/clients/visa-colour.svg',
         subTitle: 'Instant payment integration with NFC Ring',
         title: 'Cakewalk on the catwalk',
         blobColour: "#1a1e5a",
@@ -115,9 +115,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/wfa',
-        projectImage: '/static/images/projects/wfa/wfa-1.png',
-        srcSet: '/static/images/projects/wfa/wfa-1.png 1x, /static/images/projects/wfa/wfa-1@2x.png 2x,',
-        clientImage: '/static/images/clients/wfa.svg',
+        projectImage: '/images/projects/wfa/wfa-1.png',
+        srcSet: '/images/projects/wfa/wfa-1.png 1x, /images/projects/wfa/wfa-1@2x.png 2x,',
+        clientImage: '/images/clients/wfa.svg',
         subTitle: 'Web Application',
         title: 'Visualising data for effective marketing communications',
         blobColour: "#ff003c",
@@ -128,9 +128,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/wazoku',
-        projectImage: '/static/images/projects/wazoku/2.png',
-        srcSet: '/static/images/projects/wazoku/2.png 1x, /static/images/projects/wazoku/2@2x.png 2x,',
-        clientImage: '/static/images/clients/wazoku.png',
+        projectImage: '/images/projects/wazoku/2.png',
+        srcSet: '/images/projects/wazoku/2.png 1x, /images/projects/wazoku/2@2x.png 2x,',
+        clientImage: '/images/clients/wazoku.png',
         subTitle: 'iOS and Android Mobile App',
         title: 'Ideas happen anywhere, anytime',
         blobColour: "#173E5A",
@@ -171,7 +171,7 @@ const PartnersPage = class extends React.Component {
                           </div>
                       </div>
                       <div className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down">
-                          <img src="/static/images/clients/partners.svg" alt="Blob Graphic" className="img-fluid"/>
+                          <img src="/images/clients/partners.svg" alt="Blob Graphic" className="img-fluid"/>
                       </div>
                   </div>
                   <div className="hero__footer hidden-md-down">
@@ -190,7 +190,7 @@ const PartnersPage = class extends React.Component {
                   <div className="container">
                       <div className="flex-row">
                           <div className="col-md-2 text-center hidden-sm-down">
-                              <img src="/static/images/svg-icons/partner-icon.svg" alt="partner icon"/>
+                              <img src="/images/svg-icons/partner-icon.svg" alt="partner icon"/>
                           </div>
                           <div className="col-md-6 px-md-5 px-0">
                               <h3 className="panel__title">Interested in working with us?</h3>

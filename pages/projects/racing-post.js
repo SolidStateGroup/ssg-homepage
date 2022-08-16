@@ -26,7 +26,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title={Constants.titles.racingPost}  canonical="projects/racing-post">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/racing-post-white.svg"
+                        clientImage="/images/clients/white/racing-post-white.svg"
                         projectTitle={'New Serverless Data Platform for the home of horse racing news'}
                         projectType={'Responsive website & Mobile App'}
                         ProjectServiceListItem={
@@ -37,8 +37,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--racingpost"
-                        projectImage={'/static/images/projects/racing-post/racing-post-1.png'}
-                        srcSet={'/static/images/projects/racing-post/racing-post-1.png 1x, /static/images/projects/racing-post/racing-post-1@2x.png 2x'}
+                        projectImage={'/images/projects/racing-post/racing-post-1.png'}
+                        srcSet={'/images/projects/racing-post/racing-post-1.png 1x, /images/projects/racing-post/racing-post-1@2x.png 2x'}
                     />
                     <div className="container">
                         <div>
@@ -55,8 +55,8 @@ const TheComponent = class extends Component {
                             <ProjectDetailSectionItem
                                 description="Java Spring Boot APIs were built to expose the data from the new data platform to the customers and Racing Post clients. These new services had to replicate the older B2B and B2C APIs they replaced while also exposing the more detailed data."
                                 subTitle={'02/ Rebuild of API services'}
-                                imageOne={'/static/images/projects/racing-post/racing-post-2.png'}
-                                srcSetImageOne={'/static/images/projects/racing-post/racing-post-2.png 1x, /static/images/projects/racing-post/racing-post-2@2x.png 2x'}
+                                imageOne={'/images/projects/racing-post/racing-post-2.png'}
+                                srcSetImageOne={'/images/projects/racing-post/racing-post-2.png 1x, /images/projects/racing-post/racing-post-2@2x.png 2x'}
                             />
                         </div>
                         <ProjectTextSection
@@ -73,25 +73,25 @@ const TheComponent = class extends Component {
                             techLogoItems={
                                 <React.Fragment>
                                     <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
-                                        <img src='/static/images/tech-icons/dark/react.svg' className='img-responsive'/>
+                                        <img src='/images/tech-icons/dark/react.svg' className='img-responsive'/>
                                     </div>
                                     <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
-                                        <img src='/static/images/tech-icons/dark/aws.svg' className='img-responsive'/>
+                                        <img src='/images/tech-icons/dark/aws.svg' className='img-responsive'/>
                                     </div>
                                     <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center mb-md-0 mb-4">
-                                        <img src='/static/images/tech-icons/dark/java.svg' className='img-responsive'/>
+                                        <img src='/images/tech-icons/dark/java.svg' className='img-responsive'/>
                                     </div>
                                     <div className="col-lg-3 col-6 pt-5 pt-lg-0 text-center">
-                                        <img src='/static/images/tech-icons/dark/serverless.svg' className='img-responsive'/>
+                                        <img src='/images/tech-icons/dark/serverless.svg' className='img-responsive'/>
                                     </div>
                                     <div className="col-md-4 col-6 pt-5 text-center">
-                                        <img src='/static/images/tech-icons/dark/python.svg' className='img-responsive'/>
+                                        <img src='/images/tech-icons/dark/python.svg' className='img-responsive'/>
                                     </div>
                                     <div className="col-md-4 col-6 pt-5 text-center">
-                                        <img src='/static/images/tech-icons/dark/spring.svg' className='img-responsive'/>
+                                        <img src='/images/tech-icons/dark/spring.svg' className='img-responsive'/>
                                     </div>
                                     <div className="col-md-4 col-12 pt-5 text-center">
-                                        <img src='/static/images/tech-icons/dark/terraform.svg' className='img-responsive'/>
+                                        <img src='/images/tech-icons/dark/terraform.svg' className='img-responsive'/>
                                     </div>
                                 </React.Fragment>
                             }
