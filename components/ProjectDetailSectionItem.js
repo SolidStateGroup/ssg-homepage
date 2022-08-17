@@ -32,7 +32,7 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                         {this.props.imageOne ? (
                             <div className="col align-self-end">
                                 <img
-                                    src={this.props.imageOne || '/static/images/services/mobile-app-development.jpg'}
+                                    src={this.props.imageOne || '/images/services/mobile-app-development.jpg'}
                                     srcSet={this.props.srcSetImageOne}
                                     alt={this.props.altImageOne || null}
                                     className={cn(this.props.imageOneclassName, "img-fluid mb-md-0 mb-5")}
@@ -44,7 +44,7 @@ const ProjectDetailSectionItem = global.ProjectDetailSectionItem = class extends
                         {this.props.imageTwo ? (
                             <div className="col align-self-end">
                                 <img
-                                    src={this.props.imageTwo || '/static/images/services/ux-andy.jpg'}
+                                    src={this.props.imageTwo || '/images/services/ux-andy.jpg'}
                                     srcSet={this.props.srcSetImageTwo}
                                     alt={this.props.altImageTwo || null}
                                     className={cn(this.props.imageTwoclassName, "img-fluid")}
@@ -140,22 +140,22 @@ export const ProjectTechSection = global.ProjectTechSection = class extends Reac
                         ) : (
                             <React.Fragment>
                                 <div className="col-md-4 col-6 text-center">
-                                    <img src='/static/images/tech-icons/dark/react.svg' className='img-responsive'/>
+                                    <img src='/images/tech-icons/dark/react.svg' className='img-responsive'/>
                                 </div>
                                 <div className="col-md-4 col-6 text-center">
-                                    <img src='/static/images/tech-icons/dark/node.svg' className='img-responsive'/>
+                                    <img src='/images/tech-icons/dark/node.svg' className='img-responsive'/>
                                 </div>
                                 <div className="col-md-4 col-6 text-center">
-                                    <img src='/static/images/tech-icons/dark/docker.svg' className='img-responsive'/>
+                                    <img src='/images/tech-icons/dark/docker.svg' className='img-responsive'/>
                                 </div>
                                 <div className="col-md-4 col-6 text-center mb-md-0 mb-4">
-                                    <img src='/static/images/tech-icons/dark/java.svg' className='img-responsive'/>
+                                    <img src='/images/tech-icons/dark/java.svg' className='img-responsive'/>
                                 </div>
                                 <div className="col-md-4 col-6 text-center">
-                                    <img src='/static/images/tech-icons/dark/postgres.svg' className='img-responsive'/>
+                                    <img src='/images/tech-icons/dark/postgres.svg' className='img-responsive'/>
                                 </div>
                                 <div className="col-md-4 col-6 text-center">
-                                    <img src='/static/images/tech-icons/dark/aws.svg' className='img-responsive'/>
+                                    <img src='/images/tech-icons/dark/aws.svg' className='img-responsive'/>
                                 </div>
                             </React.Fragment>
                         )}
@@ -222,14 +222,14 @@ export const ProjectColourBlockSection = global.ProjectColourBlockSection = clas
                 <div className={cn(this.props.className, 'row project__section-item pt-5 pb-5')}>
                     <div className="offset-md-1 col-md-5">
                         <h3 className="mb-3">Primary Colours</h3>
-                        <img src={this.props.imageOne || '/static/images/projects/wazoku/wazoku-colours.png'}
+                        <img src={this.props.imageOne || '/images/projects/wazoku/wazoku-colours.png'}
                              className="img-fluid"/>
                     </div>
                 </div>
                 <div className="row py-4">
                     <div className="offset-sm-7 col-md-5">
                         <h3 className="mb-3">Secondary Colours</h3>
-                        <img src={this.props.imageTwo || '/static/images/projects/wazoku/wazoku-secondary-colours.png'}
+                        <img src={this.props.imageTwo || '/images/projects/wazoku/wazoku-secondary-colours.png'}
                              className="img-fluid"/>
                     </div>
                 </div>

@@ -26,7 +26,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Wazoku" canonical="projects/wazoku">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/wazoku-white.png"
+                        clientImage="/images/clients/white/wazoku-white.png"
                         projectTitle={'Ideas happen anywhere, anytime'}
                         projectType={'Mobile Application'}
                         ProjectServiceListItem={
@@ -46,8 +46,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--wazoku"
-                        projectImage={"/static/images/projects/wazoku/2.png"}
-                        srcSet={'/static/images/projects/wazoku/2.png 1x, /static/images/projects/wazoku/2@2x.png 2x'}
+                        projectImage={"/images/projects/wazoku/2.png"}
+                        srcSet={'/images/projects/wazoku/2.png 1x, /images/projects/wazoku/2@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -61,8 +61,8 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                             subTitle={'Solution'}
                             title={'React Native'}
-                            imageOne={'/static/images/projects/wazoku/wazoku-phones@1x.png'}
-                            srcSetImageOne={'/static/images/projects/wazoku/wazoku-phones@1x.png 1x, /static/images/projects/wazoku/wazoku-phones@2x.png 2x'}
+                            imageOne={'/images/projects/wazoku/wazoku-phones@1x.png'}
+                            srcSetImageOne={'/images/projects/wazoku/wazoku-phones@1x.png 1x, /images/projects/wazoku/wazoku-phones@2x.png 2x'}
                             description={'Using React Native we built an app that was able to fully capture all of Wazoku’s requirements. Data encryption was achieved across all data including their custom SQLite databases. An offline queue solution was built that interlinked offline actions in such a way that any actions that depended on another one succeeding would be skipped if that action had failed for any particular reason while also generating an appropriate in-app notification.\n' +
                             '\n'}
                             ProjectServiceListItem={
@@ -83,7 +83,7 @@ const TheComponent = class extends Component {
                             subTitle={'Design'}
                             title={'Fonts & Colours'}
                             className="flex-row-reverse"
-                            imageOne={'/static/images/projects/wazoku/wazoku-font.png'}
+                            imageOne={'/images/projects/wazoku/wazoku-font.png'}
                             description={'Summary of the fonts and colours used in the User Interface design of the application'}
                         />
 
@@ -94,20 +94,20 @@ const TheComponent = class extends Component {
                             techLogoItems={
                                 <React.Fragment>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/react.svg' alt="react"
+                                        <img src='/images/tech-icons/dark/react.svg' alt="react"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/java.svg' alt="java"
+                                        <img src='/images/tech-icons/dark/java.svg' alt="java"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/docker.svg'
+                                        <img src='/images/tech-icons/dark/docker.svg'
                                              alt="docker"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center mb-md-0 mb-4">
-                                        <img alt="webpack" src='/static/images/tech-icons/dark/Webpack.svg'
+                                        <img alt="webpack" src='/images/tech-icons/dark/Webpack.svg'
                                              className='img-responsive'/>
                                     </div>
                                 </React.Fragment>

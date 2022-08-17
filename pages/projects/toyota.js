@@ -28,7 +28,7 @@ const TheComponent = class extends Component {
           <React.Fragment>
               <Page title={Constants.titles.toyota} canonical="projects/toyota">
                   <ProjectHero
-                    clientImage="/static/images/clients/white/toyota-white.svg"
+                    clientImage="/images/clients/white/toyota-white.svg"
                     projectTitle="Reducing the complexity of logistics and maintenance in the motor industry"
                     projectType="Mobile Application"
                     ProjectServiceListItem={(
@@ -38,8 +38,8 @@ const TheComponent = class extends Component {
                       </React.Fragment>
                     )}
                     className="hero--toyota"
-                    projectImage="/static/images/projects/toyota/Toyota-YMS.png"
-                    srcSet="/static/images/projects/toyota/Toyota-YMS.png 1x, /static/images/projects/toyota/Toyota-YMS.png 2x"
+                    projectImage="/images/projects/toyota/Toyota-YMS.png"
+                    srcSet="/images/projects/toyota/Toyota-YMS.png 1x, /images/projects/toyota/Toyota-YMS.png 2x"
                   />
                   <div className="container">
                       <div>
@@ -58,8 +58,8 @@ const TheComponent = class extends Component {
                           + '\n'
                           + 'The entire Toyota team used an older Android device so we had to ensure that we created a robust piece of forward thinking technology, whilst also respecting the limitations of legacy Android devices.\n'
                           }
-                          imageOne="/static/images/projects/toyota/vin-scan.jpeg"
-                          srcSetImageOne="/static/images/projects/toyota/vin-scan.jpeg 1x, /static/images/projects/toyota/vin-scan.jpeg 2x"
+                          imageOne="/images/projects/toyota/vin-scan.jpeg"
+                          srcSetImageOne="/images/projects/toyota/vin-scan.jpeg 1x, /images/projects/toyota/vin-scan.jpeg 2x"
                         />
                       </div>
                       <div>
@@ -84,8 +84,8 @@ const TheComponent = class extends Component {
                     textClassName="col-md-6 offset-md-3"
                     title={'The new system was rolled out immediately and was in use in the factory lots for all operatives.'}
                     subTitle={'03 / The App'}
-                    imageUrl={'/static/images/projects/toyota/scan-mockup.png'}
-                    srcSet={'/static/images/projects/toyota/scan-mockup.png 1x, /static/images/projects/toyota/scan-mockup@2x.png 2x'}
+                    imageUrl={'/images/projects/toyota/scan-mockup.png'}
+                    srcSet={'/images/projects/toyota/scan-mockup.png 1x, /images/projects/toyota/scan-mockup@2x.png 2x'}
                     imageAltText={'Toyota VIN Scanner'}
                   />
 
@@ -96,10 +96,10 @@ const TheComponent = class extends Component {
                         techLogoItems={(
                           <React.Fragment>
                               <div className="col-lg-6 col-6 pt-5 pt-lg-0 text-center">
-                                  <img src="/static/images/tech-icons/dark/react.svg" className="img-responsive"/>
+                                  <img src="/images/tech-icons/dark/react.svg" className="img-responsive"/>
                               </div>
                               <div className="col-lg-6 col-6 pt-5 pt-lg-0 text-center">
-                                  <img src="/static/images/tech-icons/dark/aws.svg" className="img-responsive"/>
+                                  <img src="/images/tech-icons/dark/aws.svg" className="img-responsive"/>
                               </div>
                           </React.Fragment>
                         )}

@@ -30,7 +30,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Unilever" canonical="projects/unilever">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/unilever-white.svg"
+                        clientImage="/images/clients/white/unilever-white.svg"
                         projectTitle={'Shopping that buys itself'}
                         projectType={'Automated ecommerce via connected scales'}
                         ProjectServiceListItem={
@@ -49,8 +49,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--unilever"
-                        projectImage={"/static/images/projects/unilever/unilever-1@1x.png"}
-                        srcSet={'/static/images/projects/unilever/unilever-1@1x.png 1x, /static/images/projects/unilever/unilever-1@2x.png 2x'}
+                        projectImage={"/images/projects/unilever/unilever-1@1x.png"}
+                        srcSet={'/images/projects/unilever/unilever-1@1x.png 1x, /images/projects/unilever/unilever-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -65,7 +65,7 @@ const TheComponent = class extends Component {
                     <ProjectFullImageSection
                         title={'Connected Scale'}
                         subTitle={'01 / Connected Scale'}
-                        imageUrl={'/static/images/projects/unilever/scale.png'}
+                        imageUrl={'/images/projects/unilever/scale.png'}
                         imageAltText={'Responsive UI'}
                     />
 
@@ -84,8 +84,8 @@ const TheComponent = class extends Component {
                             subTitle={'02 / Prototyping'}
                             title={'UX Wireframes'}
                             className="flex-row-reverse"
-                            imageOne={'/static/images/projects/unilever/unilever-wireframes.png'}
-                            srcSetImageOne={'/static/images/projects/unilever/unilever-wireframes.png 1x, /static/images/projects/unilever/unilever-wireframes@2x.png 2x'}
+                            imageOne={'/images/projects/unilever/unilever-wireframes.png'}
+                            srcSetImageOne={'/images/projects/unilever/unilever-wireframes.png 1x, /images/projects/unilever/unilever-wireframes@2x.png 2x'}
                             description={'Summary of the fonts and colours used in the User Interface design of the application'}
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -102,14 +102,14 @@ const TheComponent = class extends Component {
                         <ProjectFullImageSection
                             title={'Mobile APP UI Design'}
                             subTitle={'03 / Design'}
-                            imageUrl={'/static/images/projects/unilever/unilever-replensih-onboarding.png'}
+                            imageUrl={'/images/projects/unilever/unilever-replensih-onboarding.png'}
                             imageAltText={'Mobile app onboarding'}
                         />
                         <ProjectDetailSectionItem
                             subTitle={'04 / Prototyping'}
                             title={'Rapid Prototyping / Hardware Fabrication'}
                             description={'Summary of the fonts and colours used in the User Interface design of the application'}
-                            imageOne={'/static/images/projects/unilever/Button-UX-6b.jpg'}
+                            imageOne={'/images/projects/unilever/Button-UX-6b.jpg'}
                             imageOneclassName="img__shadow"
                             ProjectServiceListItem={
                                 <React.Fragment>
@@ -128,7 +128,7 @@ const TheComponent = class extends Component {
                             className="flex-row-reverse"
                             title={'Mobile Development & Bluetooth integration'}
                             description={'Summary of the fonts and colours used in the User Interface design of the application'}
-                            imageOne={'/static/images/projects/unilever/unilever-onboarding.png'}
+                            imageOne={'/images/projects/unilever/unilever-onboarding.png'}
                         />
                     </div>
 
@@ -139,15 +139,15 @@ const TheComponent = class extends Component {
                             techLogoItems={
                                 <React.Fragment>
                                     <div className="col-4 text-center">
-                                        <img src='/static/images/tech-icons/dark/react.svg' alt="react"
+                                        <img src='/images/tech-icons/dark/react.svg' alt="react"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-4 text-center">
-                                        <img src='/static/images/tech-icons/dark/Google_Cloud_Platform.svg' alt="GCP"
+                                        <img src='/images/tech-icons/dark/Google_Cloud_Platform.svg' alt="GCP"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-4 text-center">
-                                        <img src='/static/images/tech-icons/dark/Raspberry_Pi.svg'
+                                        <img src='/images/tech-icons/dark/Raspberry_Pi.svg'
                                              alt="docker"
                                              className='img-responsive'/>
                                     </div>
@@ -179,8 +179,8 @@ const TheComponent = class extends Component {
                     <ClientQuote
                         text={'Solid State Group are really easy to work with as they are open to feedback and provide regular updates to be able to take decisions on the fly. They came up with a brilliant idea at our hackathon and they\'ve taken on board the insights from our business to further refine the product later on.'}
                         clientName={'Joe Comiskey'}
-                        image={'/static/images/projects/unilever/unilever-1@1x.png'}
-                        srcSet={'/static/images/projects/unilever/unilever-1@1x.png 1x, /static/images/projects/unilever/unilever-1@2x.png 2x'}
+                        image={'/images/projects/unilever/unilever-1@1x.png'}
+                        srcSet={'/images/projects/unilever/unilever-1@1x.png 1x, /images/projects/unilever/unilever-1@2x.png 2x'}
                         clientTitle={'Head of eCommerce Capability, Innovation and Strategy, UK Unilever'}/>
                     <ProjectNav/>
                 </Page>

@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2019/may/overcoming-bottlenecks-between-design-frontend-and-backend-developers.md';
+import md from '../../../../public/pages-blog-markdown/2019/may/overcoming-bottlenecks-between-design-frontend-and-backend-developers.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

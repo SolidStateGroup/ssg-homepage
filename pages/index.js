@@ -85,8 +85,8 @@ const HomePage = class extends React.Component {
                         </div>
                         <div className="flex-1 flex-column align-items-center hidden-sm-down">
                             <ProjectBlobImage
-                              blobColour="#69D9D3" src="/static/images/hero-devices@1x.png"
-                              srcSet="/static/images/hero-devices@2x.png 2x, /static/images/hero-devices@1x.png 1x"
+                              blobColour="#69D9D3" src="/images/hero-devices@1x.png"
+                              srcSet="/images/hero-devices@2x.png 2x, /images/hero-devices@1x.png 1x"
                             />
                         </div>
                     </div>
@@ -179,51 +179,51 @@ const HomePage = class extends React.Component {
                             <div className="flex-row">
                                 <div className="col text-center">
                                     <img
-                                      src="/static/images/svg-icons/research-blob-icon.svg" className="mb-3"
+                                      src="/images/svg-icons/research-blob-icon.svg" className="mb-3"
                                       alt="Research"
                                     />
                                     <h5>Research</h5>
                                     <p>Define business objectives and gather insights on product and market fit</p>
                                 </div>
                                 <div className="align-self-center mb5 hidden-sm-down">
-                                    <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                                    <img src="/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                                 </div>
                                 <div className="col text-center">
                                     <img
-                                      src="/static/images/svg-icons/design-blob-icon.svg" className="mb-3"
+                                      src="/images/svg-icons/design-blob-icon.svg" className="mb-3"
                                       alt="Design"
                                     />
                                     <h5>Design</h5>
                                     <p>Define the product in stories, generate estimates, create UX/UI and design prototypes</p>
                                 </div>
                                 <div className="align-self-center mb5 hidden-sm-down">
-                                    <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                                    <img src="/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                                 </div>
                                 <div className="col text-center">
                                     <img
-                                      src="/static/images/svg-icons/development-blob-icon.svg" className="mb-3"
+                                      src="/images/svg-icons/development-blob-icon.svg" className="mb-3"
                                       alt="Development"
                                     />
                                     <h5>Development</h5>
                                     <p>Develop infrastructure, APIs, websites and mobile applications through multiple sprints</p>
                                 </div>
                                 <div className="align-self-center mb5 hidden-sm-down">
-                                    <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                                    <img src="/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                                 </div>
                                 <div className="col text-center">
                                     <img
-                                      src="/static/images/svg-icons/release-blob-icon.svg" className="mb-3"
+                                      src="/images/svg-icons/release-blob-icon.svg" className="mb-3"
                                       alt="Release"
                                     />
                                     <h5>Release</h5>
                                     <p>Test all assets, integrate analytics, deploy to client, client tests and release to production</p>
                                 </div>
                                 <div className="align-self-center mb5 hidden-sm-down">
-                                    <img src="/static/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
+                                    <img src="/images/svg-icons/arrow-right-icon.svg" alt="arrow-right"/>
                                 </div>
                                 <div className="col text-center">
                                     <img
-                                      src="/static/images/svg-icons/product-blob-icon.svg" className="mb-3"
+                                      src="/images/svg-icons/product-blob-icon.svg" className="mb-3"
                                       alt="Product Development"
                                     />
                                     <h5>Product Development</h5>
@@ -232,7 +232,7 @@ const HomePage = class extends React.Component {
                             </div>
                             <div className="col">
                                 <img
-                                  src="/static/images/svg-icons/arrow-gradient-left-turn.svg"
+                                  src="/images/svg-icons/arrow-gradient-left-turn.svg"
                                   className="img-fluid img__full-width pl-5 pr-5 hidden-sm-down" alt="Cycle GFX"
                                 />
                                 <div className="text-center">

@@ -86,7 +86,7 @@ getStory('Services')
     .add('default', () =>      <ServiceItem
         serviceListItem={<React.Fragment><ListItemUnderlined listItemText={'Tone & Sculpt'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Purely Capital'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Wazoku Idea App'} listItemLink={'/'}/><ListItemUnderlined listItemText={'Unilever'} listItemLink={'/'}/></React.Fragment>}
         subTitle={'UX Design'}
-        serviceImage={'/static/images/services/mobile-app-development.jpg'}
+        serviceImage={'/public/images/services/mobile-app-development.jpg'}
         serviceDescription={'From our London office, we\'ve been working with startups and corporations for over 15 years, building cross-platform, enterprise-grade, entrepreneurial websites and apps for digital transformation projects.'}/>);
 
 getStory('ClientLogos')

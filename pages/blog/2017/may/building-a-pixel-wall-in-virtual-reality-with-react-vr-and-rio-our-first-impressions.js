@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2017/may/building-a-pixel-wall-in-virtual-reality-with-react-vr-and-rio-our-first-impressions.md';
+import md from '../../../../public/pages-blog-markdown/2017/may/building-a-pixel-wall-in-virtual-reality-with-react-vr-and-rio-our-first-impressions.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

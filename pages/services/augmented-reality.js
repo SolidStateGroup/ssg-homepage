@@ -14,9 +14,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/glenfiddich',
-        projectImage: '/static/images/projects/glenfiddich/glenfiddich-1@1x.png',
-        srcSet: '/static/images/projects/glenfiddich/glenfiddich-1@1x.png 1x, /static/images/projects/glenfiddich/glenfiddich-1@2x.png 2x,',
-        clientImage: '/static/images/clients/glenfiddich.svg',
+        projectImage: '/images/projects/glenfiddich/glenfiddich-1@1x.png',
+        srcSet: '/images/projects/glenfiddich/glenfiddich-1@1x.png 1x, /images/projects/glenfiddich/glenfiddich-1@2x.png 2x,',
+        clientImage: '/images/clients/glenfiddich.svg',
         subTitle: 'Multiplayer AR racing game for mobile',
         title: 'Glenfiddich Stag Racing - When Whisky Meets Hackathons',
         blobColour: '#483c3c',
@@ -27,9 +27,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/change-please',
-        projectImage: '/static/images/projects/change-please/Rotato-Snapshot@1x.png',
-        srcSet: '/static/images/projects/change-please/Rotato-Snapshot@1x.png 1x, /static/images/projects/change-please/Rotato-Snapshot@2x.png 2x,',
-        clientImage: '/static/images/clients/change-please.svg',
+        projectImage: '/images/projects/change-please/Rotato-Snapshot@1x.png',
+        srcSet: '/images/projects/change-please/Rotato-Snapshot@1x.png 1x, /images/projects/change-please/Rotato-Snapshot@2x.png 2x,',
+        clientImage: '/images/clients/change-please.svg',
         subTitle: 'The lean, mean, face detecting, debt tracking machine',
         title: 'Changing the [face] of debt tracking',
         blobColour: "#908DF7",
@@ -63,12 +63,12 @@ const ARPage = class extends React.Component {
               <div className="container">
 
                   <ServiceItem
-                    serviceImage={'/static/images/projects/glenfiddich/glenfiddich-1@2x.png'}
+                    serviceImage={'/images/projects/glenfiddich/glenfiddich-1@2x.png'}
                     subTitle={'Powerful content for your content marketing strategy'}
                     serviceDescription={'AR content can form powerful content for your content marketing strategy, it can broaden your brand presence before a buyer gets anywhere near your new leads inbox.'}/>
 
                   <ServiceItem
-                    serviceImage={'/static/images/services/unity.jpg'}
+                    serviceImage={'/images/services/unity.jpg'}
                     imageClassName={'img__shadow '}
                     className={'flex-row-reverse'}
                     subTitle={'Built with Unity'}
@@ -77,7 +77,7 @@ const ARPage = class extends React.Component {
 
 
                   <ServiceItem
-                      serviceImage={'/static/images/services/ar-1.jpg'}
+                      serviceImage={'/images/services/ar-1.jpg'}
                       imageClassName={'img__shadow '}
                       subTitle={'Move fast, change often'}
                       serviceDescription={'Before Christmas we conceptualised, built, and distributed a complete AR app in just three weeks. For us, our AR app grew out of our desire to test our abilities with a new technology, and design something above and beyond a bog-standard Christmas card.'}/>

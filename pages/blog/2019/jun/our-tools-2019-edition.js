@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2019/jun/our-tools-2019-edition.md';
+import md from '../../../../public/pages-blog-markdown/2019/jun/our-tools-2019-edition.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

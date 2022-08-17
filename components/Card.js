@@ -36,11 +36,11 @@ const Card = global.Card = class extends React.PureComponent {
                             <p className={cn('text-white card__technology', this.props.techColourClass)}>{this.props.cardTechnology || 'JavaScript'}</p>
                         </div>
                         <div className="col-md-6">
-                            <img src="/static/images/svg-icons/star-thin-icon.svg" />
+                            <img src="/images/svg-icons/star-thin-icon.svg" />
                             <p className="d-inline-block text-white ml-2">{this.props.cardTechnologyStars || '120'}</p>
                         </div>
                         <div className="col-md-6">
-                            <img src="/static/images/svg-icons/git-branch-icon.svg" />
+                            <img src="/images/svg-icons/git-branch-icon.svg" />
                             <p className="d-inline-block text-white ml-2">{this.props.cardTechnologyForked || '20'}</p>
                         </div>
                     </div>

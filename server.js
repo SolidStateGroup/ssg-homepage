@@ -33,7 +33,7 @@ Promise.all([
 ]).then(() => {
     const server = express();
     const sw = join(__dirname, '.next/service-worker.js');
-    const favicon = join(__dirname, '/static/images/favicon.ico');
+    const favicon = join(__dirname, '/public/images/favicon.ico');
     const sitemap = join(__dirname, '/static/sitemap.xml');
     const robots = join(__dirname, '/static/robots.txt');
     const apple = join(__dirname, '/static/apple-app-site-association');

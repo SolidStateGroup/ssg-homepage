@@ -12,10 +12,10 @@ import ServicesHero from '../../components/ServicesHero';
 const projects = [
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/electron-trader/electron-trader-1@1x.png',
-        srcSet: '/static/images/projects/electron-trader/electron-trader-1@1x.png 1x, /static/images/projects/electron-trader/electron-trader-1@2x.png 2x,',
+        projectImage: '/images/projects/electron-trader/electron-trader-1@1x.png',
+        srcSet: '/images/projects/electron-trader/electron-trader-1@1x.png 1x, /images/projects/electron-trader/electron-trader-1@2x.png 2x,',
         subTitle: 'Web Application',
-        clientImage: '/static/images/clients/electron.png',
+        clientImage: '/images/clients/electron.png',
         href: '/projects/electron-trader',
         title: 'Tapping into the future of the electricity market',
         blobColour: '#5EABBA',
@@ -25,11 +25,11 @@ const projects = [
     },
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/tone-and-sculpt/tands-dashboard.png',
-        srcSet: '/static/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /static/images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
+        projectImage: '/images/projects/tone-and-sculpt/tands-dashboard.png',
+        srcSet: '/images/projects/tone-and-sculpt/tands-dashboard.png 1x, /images/projects/tone-and-sculpt/tands-dashboard@2x.png 2x,',
         subTitle: 'iOS and Android Mobile App',
         href: '/projects/tone-and-sculpt',
-        clientImage: '/static/images/clients/tone-and-sculpt.svg',
+        clientImage: '/images/clients/tone-and-sculpt.svg',
         title: 'Rebooting female fitness for Tone and Sculpt',
         projectImageClass: 'project__image--short',
         blobColour: '#5CC2E1',
@@ -39,10 +39,10 @@ const projects = [
     },
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/purely-capital/pc-summary-mac.png',
-        srcSet: '/static/images/projects/purely-capital/pc-summary-mac.png 1x, /static/images/projects/purely-capital/pc-summary-mac@2x.png 2x,',
+        projectImage: '/images/projects/purely-capital/pc-summary-mac.png',
+        srcSet: '/images/projects/purely-capital/pc-summary-mac.png 1x, /images/projects/purely-capital/pc-summary-mac@2x.png 2x,',
         subTitle: 'Responsive Web Application',
-        clientImage: '/static/images/clients/purely-capital-dark@2x.png',
+        clientImage: '/images/clients/purely-capital-dark@2x.png',
         href: '/projects/purely-capital',
         title: 'The future of film and media financing',
         blobColour: '#D02D55',
@@ -75,8 +75,8 @@ const DesignPage = class extends React.Component {
                 </div>
                 <div className="container">
                     <ServiceItem
-                      serviceImage="/static/images/services/ux-design.jpg"
-                      srcSet="/static/images/services/ux-design.jpg 1x, /static/images/services/ux-design@2x.png 2x"
+                      serviceImage="/images/services/ux-design.jpg"
+                      srcSet="/images/services/ux-design.jpg 1x, /images/services/ux-design@2x.png 2x"
                       className="flex-row-reverse"
                       imageClassName="img__shadow "
                       serviceListItem={(
@@ -113,8 +113,8 @@ const DesignPage = class extends React.Component {
                     </div>
 
                     <ServiceItem
-                      srcSet="/static/images/services/ui-components@1x.png 1x, /static/images/services/ui-components@2x.png 2x"
-                      serviceImage="/static/images/services/ui-components@1x.png"
+                      srcSet="/images/services/ui-components@1x.png 1x, /images/services/ui-components@2x.png 2x"
+                      serviceImage="/images/services/ui-components@1x.png"
                       serviceListItem={(
                           <React.Fragment>
                               <WideListItem
@@ -163,8 +163,8 @@ const DesignPage = class extends React.Component {
                 <ClientQuote
                   text={'Solid State Group are really easy to work with as they are open to feedback and provide regular updates to be able to take decisions on the fly. They came up with a brilliant idea at our hackathon and they\'ve taken on board the insights from our business to further refine the product later on.'}
                   clientName="Joe Comiskey"
-                  image="/static/images/projects/unilever/unilever-1@1x.png"
-                  srcSet="/static/images/projects/unilever/unilever-1@1x.png 1x, /static/images/projects/unilever/unilever-1@2x.png 2x"
+                  image="/images/projects/unilever/unilever-1@1x.png"
+                  srcSet="/images/projects/unilever/unilever-1@1x.png 1x, /images/projects/unilever/unilever-1@2x.png 2x"
                   clientTitle="Head of eCommerce Capability, Innovation and Strategy, UK Unilever"
                 />
 

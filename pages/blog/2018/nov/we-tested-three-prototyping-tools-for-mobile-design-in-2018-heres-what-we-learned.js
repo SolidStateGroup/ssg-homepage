@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2018/nov/we-tested-three-prototyping-tools-for-mobile-design-in-2018-heres-what-we-learned.md';
+import md from '../../../../public/pages-blog-markdown/2018/nov/we-tested-three-prototyping-tools-for-mobile-design-in-2018-heres-what-we-learned.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

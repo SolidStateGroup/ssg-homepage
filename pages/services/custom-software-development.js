@@ -13,9 +13,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/british-airways',
-        projectImage: '/static/images/projects/ba/ba-summary-ipad.png',
-        srcSet: '/static/images/projects/ba/ba-summary-ipad.png 1x, /static/images/projects/ba/ba-summary-ipad@2x.png 2x,',
-        clientImage: '/static/images/clients/british-airways.svg',
+        projectImage: '/images/projects/ba/ba-summary-ipad.png',
+        srcSet: '/images/projects/ba/ba-summary-ipad.png 1x, /images/projects/ba/ba-summary-ipad@2x.png 2x,',
+        clientImage: '/images/clients/british-airways.svg',
         subTitle: 'Real-time operational dashboard',
         title: 'The real-time machine: integrating with 1960s tech',
         blobColour: "#3658B0",
@@ -25,9 +25,9 @@ const projects = [
     },
     {
         ButtonComponent: ButtonPrimary,
-        projectImage: '/static/images/projects/purely-capital/pc-summary-mac.png',
-        srcSet: '/static/images/projects/purely-capital/pc-summary-mac.png 1x, /static/images/projects/purely-capital/pc-summary-mac@2x.png 2x,',
-        clientImage: '/static/images/clients/purely-capital-dark@2x.png',
+        projectImage: '/images/projects/purely-capital/pc-summary-mac.png',
+        srcSet: '/images/projects/purely-capital/pc-summary-mac.png 1x, /images/projects/purely-capital/pc-summary-mac@2x.png 2x,',
+        clientImage: '/images/clients/purely-capital-dark@2x.png',
         subTitle: 'Responsive Web Application',
         href: '/projects/purely-capital',
         title: 'The future of film and media financing',
@@ -39,9 +39,9 @@ const projects = [
     {
         ButtonComponent: ButtonPrimary,
         href: '/projects/wfa',
-        projectImage: '/static/images/projects/wfa/wfa-1.png',
-        srcSet: '/static/images/projects/wfa/wfa-1.png 1x, /static/images/projects/wfa/wfa-1@2x.png 2x,',
-        clientImage: '/static/images/clients/wfa.svg',
+        projectImage: '/images/projects/wfa/wfa-1.png',
+        srcSet: '/images/projects/wfa/wfa-1.png 1x, /images/projects/wfa/wfa-1@2x.png 2x,',
+        clientImage: '/images/clients/wfa.svg',
         subTitle: 'Web Application',
         title: 'Visualising data for effective marketing communications',
         blobColour: "#ff003c",
@@ -75,8 +75,8 @@ const CustomSoftwarePage = class extends React.Component {
                 <div className="container">
                     <ServiceItem
                         subTitle="We build robust and reliable software that scales"
-                        serviceImage="/static/images/services/iMac3@1x.jpg"
-                        srcSet="/static/images/services/iMac3@1x.jpg 1x, /static/images/services/iMac3@2x.jpg 2x"
+                        serviceImage="/images/services/iMac3@1x.jpg"
+                        srcSet="/images/services/iMac3@1x.jpg 1x, /images/services/iMac3@2x.jpg 2x"
                         serviceDescription="We work with you to identify what your product needs to be and how best to serve your target demographic. We choose the best technologies for your project using years of experience working on startup builds, scale-ups and large enterprise projects."
                         serviceListItem={(
                             <React.Fragment>
@@ -102,16 +102,16 @@ const CustomSoftwarePage = class extends React.Component {
                     <ServiceItem
                         className="flex-row-reverse"
                         subTitle="Development roadmap"
-                        serviceImage="/static/images/services/web-development.jpg"
-                        srcSet="/static/images/services/web-development.jpg 1x, /static/images/services/web-development@2x.jpg 2x,"
+                        serviceImage="/images/services/web-development.jpg"
+                        srcSet="/images/services/web-development.jpg 1x, /images/services/web-development@2x.jpg 2x,"
                         serviceDescription={'Once we have a complete set of requirements, we\'ll define a development roadmap to get you to market, as quickly as possible, with a quality product.'}
                     />
 
                 </div>
 
                 <ClientQuote
-                    image={'/static/images/projects/ba/ba-ipad.png'}
-                    srcSet={'/static/images/projects/ba/ba-ipad.png 1x, /static/images/projects/ba/ba-ipad@2x.png 2x'}
+                    image={'/images/projects/ba/ba-ipad.png'}
+                    srcSet={'/images/projects/ba/ba-ipad.png 1x, /images/projects/ba/ba-ipad@2x.png 2x'}
                     text={'A huge thanks to you and everybody involved in developing the dashboard. It gets more useful with every iteration. We all now need to learn to use it to maximum advantage, so we all have a shared, accurate, knowledge of what\'s going on in the operation.'}
                     clientName={'Managing Director'} clientTitle={'Operations at British Airways'}/>
 

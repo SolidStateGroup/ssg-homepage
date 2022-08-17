@@ -46,7 +46,7 @@ const Footer = class extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col text-center hidden-sm-down">
-                                <img src="/static/images/svg-icons/partner-icon.svg" alt="something"/>
+                                <img src="/images/svg-icons/partner-icon.svg" alt="something"/>
                             </div>
                             <div className="col col-lg-6 px-md-5 px-0">
                                 <h3 className="footer__title">Interested in working with us?</h3>

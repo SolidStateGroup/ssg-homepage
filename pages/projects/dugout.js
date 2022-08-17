@@ -30,7 +30,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Dugout FC" canonical="projects/dugout">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/dugout-white.svg"
+                        clientImage="/images/clients/white/dugout-white.svg"
                         projectTitle={'Making fantasy football a reality'}
                         projectType={'Developing with React and React Native'}
                         ProjectServiceListItem={
@@ -50,8 +50,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--dugout"
-                        projectImage={"/static/images/projects/dugout/dugout-1@1x.png"}
-                        srcSet={'/static/images/projects/dugout/dugout-1@1x.png 1x, /static/images/projects/dugout/dugout-1@2x.png 2x'}
+                        projectImage={"/images/projects/dugout/dugout-1@1x.png"}
+                        srcSet={'/images/projects/dugout/dugout-1@1x.png 1x, /images/projects/dugout/dugout-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -64,7 +64,7 @@ const TheComponent = class extends Component {
                     </div>
 
                     <ProjectFullImageSection
-                        imageUrl={'/static/images/projects/dugout/draft-ui.jpg'}
+                        imageUrl={'/images/projects/dugout/draft-ui.jpg'}
                         imageAltText={'Draft UI'}
                     />
 
@@ -74,8 +74,8 @@ const TheComponent = class extends Component {
                             subTitle={'01 / Challenge'}
                             title={'Challenge'}
                             className="flex-row-reverse"
-                            imageOne={'/static/images/projects/dugout/dugout-2@1x.png'}
-                            srcSetImageOne={'/static/images/projects/dugout/dugout-2@1x.png 1x, /static/images/projects/dugout/dugout-2@2x.png 2x'}
+                            imageOne={'/images/projects/dugout/dugout-2@1x.png'}
+                            srcSetImageOne={'/images/projects/dugout/dugout-2@1x.png 1x, /images/projects/dugout/dugout-2@2x.png 2x'}
                             description={'Dugout FC wanted to create the ultimate cross-platform fantasy football experience: a second-screen app for their users to enjoy while watching the English Premier League on TV.\n' +
                             '\n' +
                             'It had to be an engaging, social experience that users would log into every day and stick with for the whole season.\n' +
@@ -87,8 +87,8 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                             subTitle={'02 / Solution'}
                             title={'Solution'}
-                            imageOne={'/static/images/projects/dugout/dugout-3@1x.png'}
-                            srcSetImageOne={'/static/images/projects/dugout/dugout-3@1x.png 1x, /static/images/projects/dugout/dugout-3@2x.png 2x'}
+                            imageOne={'/images/projects/dugout/dugout-3@1x.png'}
+                            srcSetImageOne={'/images/projects/dugout/dugout-3@1x.png 1x, /images/projects/dugout/dugout-3@2x.png 2x'}
                             description={'We focused on the web app initially, racing to complete it in time for the client’s vital pre-season marketing window in July.\n' +
                             '\n' +
                             'Then we followed up with mobile apps for iOS and Android, building both simultaneously.\n' +
@@ -116,20 +116,20 @@ const TheComponent = class extends Component {
                             techLogoItems={
                                 <React.Fragment>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/react.svg' alt="react"
+                                        <img src='/images/tech-icons/dark/react.svg' alt="react"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/java.svg' alt="java"
+                                        <img src='/images/tech-icons/dark/java.svg' alt="java"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/docker.svg'
+                                        <img src='/images/tech-icons/dark/docker.svg'
                                              alt="docker"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center mb-md-0 mb-4">
-                                        <img alt="webpack" src='/static/images/tech-icons/dark/Webpack.svg'
+                                        <img alt="webpack" src='/images/tech-icons/dark/Webpack.svg'
                                              className='img-responsive'/>
                                     </div>
                                 </React.Fragment>
@@ -159,8 +159,8 @@ const TheComponent = class extends Component {
                     <ClientQuote
                         text={'“The guys at SSG were incredibly invested in the product and the build. Our product sees the majority of its traffic at the weekend when everyone is usually enjoying their free time, but the team spent their personal time ensuring the game was where it needed to be every weekend.”'}
                         clientName={'Andrew Mofatt'}
-                        image={'/static/images/projects/dugout/dugout-1@1x.png'}
-                        srcSet={'/static/images/projects/dugout/dugout-1@1x.png 1x, /static/images/projects/dugout/dugout-1@2x.png 2x'}
+                        image={'/images/projects/dugout/dugout-1@1x.png'}
+                        srcSet={'/images/projects/dugout/dugout-1@1x.png 1x, /images/projects/dugout/dugout-1@2x.png 2x'}
                         clientTitle={'Founder, Dugout FC'}/>
                     <ProjectNav/>
                 </Page>

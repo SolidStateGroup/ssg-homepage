@@ -27,7 +27,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="British Airways" canonical="projects/british-airways">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/british-airways-white.svg"
+                        clientImage="/images/clients/white/british-airways-white.svg"
                         projectTitle={'The real-time machine: integrating with 1960s tech'}
                         projectType={'Real-time operational dashboard'}
                         ProjectServiceListItem={
@@ -45,8 +45,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--ba"
-                        projectImage={"/static/images/projects/ba/ba-summary-ipad.png"}
-                        srcSet={'/static/images/projects/ba/ba-summary-ipad.png 1x, /static/images/projects/ba/ba-summary-ipad@2x.png 2x'}
+                        projectImage={"/images/projects/ba/ba-summary-ipad.png"}
+                        srcSet={'/images/projects/ba/ba-summary-ipad.png 1x, /images/projects/ba/ba-summary-ipad@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -70,8 +70,8 @@ const TheComponent = class extends Component {
                             subTitle={'Solution'}
                             title={'Fully implemented system'}
                             className="flex-row-reverse"
-                            imageOne={'/static/images/projects/ba/ba-ipad.png'}
-                            srcSetImageOne={'/static/images/projects/ba/ba-ipad.png 1x, /static/images/projects/ba/ba-ipad@2x.png 2x'}
+                            imageOne={'/images/projects/ba/ba-ipad.png'}
+                            srcSetImageOne={'/images/projects/ba/ba-ipad.png 1x, /images/projects/ba/ba-ipad@2x.png 2x'}
                             description={'Using Open Source tools, we had a prototype back-end working with end-to-end data after four weeks, and a fully implemented system in three months. We also developed a web-based front end that was available on web, mobile and tablet.\n' +
                             '\n' +
                             'The project was run using agile methods, with fortnightly updates given to the client as part of our sprint cycle.'}
@@ -88,20 +88,20 @@ const TheComponent = class extends Component {
                             techLogoItems={
                                 <React.Fragment>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/angular.svg' alt="angular"
+                                        <img src='/images/tech-icons/dark/angular.svg' alt="angular"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/java.svg' alt="java"
+                                        <img src='/images/tech-icons/dark/java.svg' alt="java"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/rabbit_mq.svg'
+                                        <img src='/images/tech-icons/dark/rabbit_mq.svg'
                                              alt="rabbit mq"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center mb-md-0 mb-4">
-                                        <img alt="webpack" src='/static/images/tech-icons/dark/redis.svg'
+                                        <img alt="webpack" src='/images/tech-icons/dark/redis.svg'
                                              className='img-responsive'/>
                                     </div>
                                 </React.Fragment>
@@ -112,8 +112,8 @@ const TheComponent = class extends Component {
                             'The system was built on fully-redundant infrastructure, providing high availability 24x7x365.'} />
                     </div>
                     <ClientQuote
-                        image={'/static/images/projects/ba/ba-ipad.png'}
-                        srcSet={'/static/images/projects/ba/ba-ipad.png 1x, /static/images/projects/ba/ba-ipad@2x.png 2x'}
+                        image={'/images/projects/ba/ba-ipad.png'}
+                        srcSet={'/images/projects/ba/ba-ipad.png 1x, /images/projects/ba/ba-ipad@2x.png 2x'}
                         text={'A huge thanks to you and everybody involved in developing the dashboard. It gets more useful with every iteration. We all now need to learn to use it to maximum advantage, so we all have a shared, accurate, knowledge of what\'s going on in the operation.'}
                         clientName={'Managing Director'} clientTitle={'Operations at British Airways'}/>
                   <ProjectNav/>

@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2018/sep/how-i-did-it-i-left-telefonica-for-a-healthcare-tech-startup.md';
+import md from '../../../../public/pages-blog-markdown/2018/sep/how-i-did-it-i-left-telefonica-for-a-healthcare-tech-startup.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

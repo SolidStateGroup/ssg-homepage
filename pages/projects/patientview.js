@@ -29,7 +29,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Patientview" canonical="projects/patientview">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/patientview-white.png"
+                        clientImage="/images/clients/white/patientview-white.png"
                         projectTitle={'The doctor will see you now – wherever, whenever'}
                         projectType={'Secure online platform for clinicians and patients'}
                         ProjectServiceListItem={
@@ -47,8 +47,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--patientview"
-                        projectImage={"/static/images/projects/patientview/patientview-ipad@1x.png"}
-                        srcSet={'/static/images/projects/patientview/patientview-ipad@1x.png 1x, /static/images/projects/patientview/patientview-ipad@2x.png 2x'}
+                        projectImage={"/images/projects/patientview/patientview-ipad@1x.png"}
+                        srcSet={'/images/projects/patientview/patientview-ipad@1x.png 1x, /images/projects/patientview/patientview-ipad@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -64,8 +64,8 @@ const TheComponent = class extends Component {
                         <ProjectFullImageSection
                             title={'Patientview UI'}
                             subTitle={'Overview'}
-                            imageUrl={'/static/images/projects/patientview/patientview-iMac@1x.png'}
-                            srcSet={'/static/images/projects/patientview/patientview-iMac@1x.png 1x, /static/images/projects/patientview/patientview-iMac@2x.png 2x'}
+                            imageUrl={'/images/projects/patientview/patientview-iMac@1x.png'}
+                            srcSet={'/images/projects/patientview/patientview-iMac@1x.png 1x, /images/projects/patientview/patientview-iMac@2x.png 2x'}
                             imageAltText={'Patientview UI'}
                         />
 
@@ -82,8 +82,8 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                             subTitle={'Solution'}
                             className="flex-row-reverse"
-                            imageOne={'/static/images/projects/patientview/patientview-ipad@1x.png'}
-                            srcSetImageOne={'/static/images/projects/patientview/patientview-ipad@1x.png 1x, /static/images/projects/patientview/patientview-ipad@2x.png 2x'}
+                            imageOne={'/images/projects/patientview/patientview-ipad@1x.png'}
+                            srcSetImageOne={'/images/projects/patientview/patientview-ipad@1x.png 1x, /images/projects/patientview/patientview-ipad@2x.png 2x'}
                             description={'Solid State utilised an agile approach which allowed us to focus on the features which mattered most to patients and staff. In 2015 PatientView 2.0 was launched to patients and received positive feedback. At the time the original PatientView was still supported allowing for the transition of less used features to be migrated at later dates. The new platform had an immediate effect giving us the ability to deploy changes quicker and at a lower cost. Also by rearchitecting the application we were also able to broaden its usefulness to a number of new specialties including patients without a particular speciality as long as they can send data.\n' +
                             '\n' +
                             'Solid State remains a trusted partner to support and deliver new features on a continuous bases. The number of patients currently using PatientView is now over 50,000.'}
@@ -95,18 +95,18 @@ const TheComponent = class extends Component {
                             techLogoItems={
                                 <React.Fragment>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/angular.svg'
+                                        <img src='/images/tech-icons/dark/angular.svg'
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/rabbit_mq.svg'
+                                        <img src='/images/tech-icons/dark/rabbit_mq.svg'
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center mb-md-0 mb-4">
-                                        <img src='/static/images/tech-icons/dark/java.svg' className='img-responsive'/>
+                                        <img src='/images/tech-icons/dark/java.svg' className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/postgres.svg'
+                                        <img src='/images/tech-icons/dark/postgres.svg'
                                              className='img-responsive'/>
                                     </div>
                                 </React.Fragment>

@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2017/nov/what-the-gaming-industry-can-teach-corporates-about-strategy-security-and-digital-transformation.md';
+import md from '../../../../public/pages-blog-markdown/2017/nov/what-the-gaming-industry-can-teach-corporates-about-strategy-security-and-digital-transformation.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

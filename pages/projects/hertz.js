@@ -30,7 +30,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Hertz" canonical="projects/hertz">
                     <ProjectHero
-                        clientImage="/static/images/clients/black/hertz-black.svg"
+                        clientImage="/images/clients/black/hertz-black.svg"
                         projectTitle={'Feels on wheels'}
                         projectType={'Connected Car mobile application'}
                         ProjectServiceListItem={
@@ -49,8 +49,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--hertz"
-                        projectImage={"/static/images/projects/hertz/hertz-1@1x.png"}
-                        srcSet={'/static/images/projects/hertz/hertz-1@1x.png 1x, /static/images/projects/hertz/hertz-1@2x.png 2x'}
+                        projectImage={"/images/projects/hertz/hertz-1@1x.png"}
+                        srcSet={'/images/projects/hertz/hertz-1@1x.png 1x, /images/projects/hertz/hertz-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -71,7 +71,7 @@ const TheComponent = class extends Component {
                     </div>
 
                     <ProjectFullImageSection
-                        imageUrl={'/static/images/projects/hertz/hertz-full-width-image-1.jpg'}
+                        imageUrl={'/images/projects/hertz/hertz-full-width-image-1.jpg'}
                     />
 
                     <div className="container">
@@ -90,8 +90,8 @@ const TheComponent = class extends Component {
                         <ProjectDetailSectionItem
                             subTitle={'03 / Mobile App Design'}
                             title={'iOS mobile app'}
-                            imageOne={'/static/images/projects/hertz/hertz-phones@1x.png'}
-                            srcSetImageOne={'/static/images/projects/hertz/hertz-phones@1x.png 1x, /static/images/projects/hertz/hertz-phones@2x.png 2x'}
+                            imageOne={'/images/projects/hertz/hertz-phones@1x.png'}
+                            srcSetImageOne={'/images/projects/hertz/hertz-phones@1x.png 1x, /images/projects/hertz/hertz-phones@2x.png 2x'}
                             description={'Another common peeve is having to fill up the car with petrol just before returning it. So, on the last day of the rental, the app asks if the customer would like to buy fuel from Hertz at a discount – saving them the hassle of having to find a petrol station on their way back. If they prefer to fill up on the way, the app guides them to the petrol station nearest to the Hertz office.\n' +
                             '\n' +
                             'Of course, nobody wants to be fiddling with their phone while driving. So we made sure that our app integrated seamlessly with AppLink to display all this information on both the iOS device and on the touchscreen built into the Ford vehicle.'}
@@ -120,20 +120,20 @@ const TheComponent = class extends Component {
                             techLogoItems={
                                 <React.Fragment>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/react.svg' alt="react"
+                                        <img src='/images/tech-icons/dark/react.svg' alt="react"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/java.svg' alt="java"
+                                        <img src='/images/tech-icons/dark/java.svg' alt="java"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center">
-                                        <img src='/static/images/tech-icons/dark/docker.svg'
+                                        <img src='/images/tech-icons/dark/docker.svg'
                                              alt="docker"
                                              className='img-responsive'/>
                                     </div>
                                     <div className="col-6 text-center mb-md-0 mb-4">
-                                        <img alt="webpack" src='/static/images/tech-icons/dark/Webpack.svg'
+                                        <img alt="webpack" src='/images/tech-icons/dark/Webpack.svg'
                                              className='img-responsive'/>
                                     </div>
                                 </React.Fragment>

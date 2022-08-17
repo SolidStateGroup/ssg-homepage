@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2018/oct/how-i-did-it-i-left-procter-and-gamble-to-start-londons-biggest-female-entrepreneurs-network.md';
+import md from '../../../../public/pages-blog-markdown/2018/oct/how-i-did-it-i-left-procter-and-gamble-to-start-londons-biggest-female-entrepreneurs-network.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

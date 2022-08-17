@@ -29,7 +29,7 @@ const TheComponent = class extends Component {
             <React.Fragment>
                 <Page title="Electron Trader Client" canonical="projects/electron-trader">
                     <ProjectHero
-                        clientImage="/static/images/clients/white/electron-white.png"
+                        clientImage="/images/clients/white/electron-white.png"
                         projectTitle={'Tapping into the future of the electricity market'}
                         projectType={'Responsive website'}
                         ProjectServiceListItem={
@@ -39,8 +39,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--electron-dashboard"
-                        projectImage={'/static/images/projects/electron-trader/electron-trader-1@1x.png'}
-                        srcSet={'/static/images/projects/electron-trader/electron-trader-1@1x.png 1x, /static/images/projects/electron-trader/electron-trader-1@2x.png 2x'}
+                        projectImage={'/images/projects/electron-trader/electron-trader-1@1x.png'}
+                        srcSet={'/images/projects/electron-trader/electron-trader-1@1x.png 1x, /images/projects/electron-trader/electron-trader-1@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -65,8 +65,8 @@ const TheComponent = class extends Component {
                                 className="sectionTwoAnimation"
                                 imageOneclassName="img__shadow"
                                 title={'UI Components'}
-                                imageOne={'/static/images/projects/electron-trader/UI-Components---Light@1x.jpg'}
-                                srcSetImageOne={'/static/images/projects/electron-trader/UI-Components---Light@1x.jpg 1x, /static/images/projects/electron-trader/UI-Components---Light@2x.jpg 2x'}
+                                imageOne={'/images/projects/electron-trader/UI-Components---Light@1x.jpg'}
+                                srcSetImageOne={'/images/projects/electron-trader/UI-Components---Light@1x.jpg 1x, /images/projects/electron-trader/UI-Components---Light@2x.jpg 2x'}
                                 ProjectServiceListItem={
                                     <React.Fragment>
                                         <WideListItem
@@ -85,8 +85,8 @@ const TheComponent = class extends Component {
                                 className="sectionThreeAnimation"
                                 title={'Dashboard UI'}
                                 subTitle={'UI Design'}
-                                imageUrl={'/static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@1x.jpg'}
-                                srcSet={'/static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@1x.jpg 1x, /static/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@2x.jpg 2x'}
+                                imageUrl={'/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@1x.jpg'}
+                                srcSet={'/images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@1x.jpg 1x, /images/projects/electron-trader/Electron-Trader-Dashboard-Dark-v3@2x.jpg 2x'}
                                 imageAltText={'Dashboard UI'}
                             />
                         </div>
@@ -100,12 +100,12 @@ const TheComponent = class extends Component {
                             subTitle={'03 / Design'}
                             title={'Fonts & Colours'}
                             className="flex-row-reverse"
-                            imageOne={'/static/images/projects/wazoku/wazoku-font.png'}
+                            imageOne={'/images/projects/wazoku/wazoku-font.png'}
                             description={'Summary of the fonts and colours used in the User Interface design of the application'}
                         />
                         <ProjectColourBlockSection
-                            imageOne={'/static/images/projects/electronx/electronx_primary-colours.png'}
-                            imageTwo={'/static/images/projects/electronx/electronx_secondary-colours.png'}/>
+                            imageOne={'/images/projects/electronx/electronx_primary-colours.png'}
+                            imageTwo={'/images/projects/electronx/electronx_secondary-colours.png'}/>
                     </div>
 
                     <ProjectNav/>

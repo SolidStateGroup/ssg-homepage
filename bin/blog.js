@@ -2,8 +2,8 @@ const join = require('path').join;
 const sortBy = require('lodash/sortBy');
 const uniq = require('lodash/uniq');
 
-const testFolder = join(__dirname, '../static/pages-blog-markdown');
-const blogOutput = join(__dirname, '../static/blog.json');
+const testFolder = join(__dirname, '../public/pages-blog-markdown');
+const blogOutput = join(__dirname, '../public/blog.json');
 const fs = require('fs');
 const path = require('path');
 const parseMarkdown = require('../common/parse-markdown');

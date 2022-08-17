@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2017/jun/the-real-mvp-validating-a-business-in-two-days.md';
+import md from '../../../../public/pages-blog-markdown/2017/jun/the-real-mvp-validating-a-business-in-two-days.md';
 import BlogPost from '../../../../components/BlogPost';
 
 

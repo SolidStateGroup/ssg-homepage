@@ -48,7 +48,7 @@ const ServicesPage = class extends React.Component {
                                 <div
                                   className="flex-1 align-items-center justify-content-center hero__blob-container hidden-sm-down"
                                 >
-                                    <img src="/static/images/hero-blob-3.svg" alt="hero-blob" className="img-fluid"/>
+                                    <img src="/images/hero-blob-3.svg" alt="hero-blob" className="img-fluid"/>
                                 </div>
                             </div>
                         </div>
@@ -93,8 +93,8 @@ const ServicesPage = class extends React.Component {
                     <div className="container align-self-center">
 
                         <ServiceItem
-                          serviceImage="/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg"
-                          srcSet="/static/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg 1x, /static/images/projects/tone-and-sculpt/macbook-pro-on-table@2x.jpg 2x,"
+                          serviceImage="/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg"
+                          srcSet="/images/projects/tone-and-sculpt/macbook-pro-on-table.jpg 1x, /images/projects/tone-and-sculpt/macbook-pro-on-table@2x.jpg 2x,"
                           className="flex-row-reverse"
                           imageClassName="img__shadow "
                           subTitle="Strategy"
@@ -120,8 +120,8 @@ const ServicesPage = class extends React.Component {
                         />
 
                       <ServiceItem
-                        serviceImage="/static/images/services/Wireframes.png"
-                        srcSet="/static/images/services/Wireframes.png 1x, /static/images/services/Wireframes@2x.png 2x,"
+                        serviceImage="/images/services/Wireframes.png"
+                        srcSet="/images/services/Wireframes.png 1x, /images/services/Wireframes@2x.png 2x,"
                         // className="flex-row-reverse"
                         imageClassName="img__shadow "
                         subTitle="Discovery"
@@ -148,7 +148,7 @@ Our senior team has more than 80 years combined experience in designing and laun
                       />
 
                         <ServiceItem
-                          srcSet="/static/images/services/user-research.png 1x, /static/images/services/user-research@2x.png 2x,"
+                          srcSet="/images/services/user-research.png 1x, /images/services/user-research@2x.png 2x,"
                           serviceListItem={(
                               <React.Fragment>
                                   <ListItemUnderlined
@@ -172,7 +172,7 @@ Our senior team has more than 80 years combined experience in designing and laun
 
                         <ServiceItem
                           className="flex-row-reverse"
-                          srcSet="/static/images/services/ux-design.jpg 1x, /static/images/services/ux-design@2x.png 2x,"
+                          srcSet="/images/services/ux-design.jpg 1x, /images/services/ux-design@2x.png 2x,"
                           imageClassName="img__shadow "
                           serviceListItem={(
                               <React.Fragment>
@@ -198,8 +198,8 @@ Our senior team has more than 80 years combined experience in designing and laun
                         />
 
                         <ServiceItem
-                          serviceImage="/static/images/services/mobile-app-development.jpg"
-                          srcSet="/static/images/services/mobile-app-development.jpg 1x, /static/images/services/mobile-app-development@2x.png 2x,"
+                          serviceImage="/images/services/mobile-app-development.jpg"
+                          srcSet="/images/services/mobile-app-development.jpg 1x, /images/services/mobile-app-development@2x.png 2x,"
                           imageClassName="img__shadow "
                           subTitle="Mobile App Development"
                           serviceLink="/services/mobile-app-development"
@@ -234,8 +234,8 @@ Our senior team has more than 80 years combined experience in designing and laun
 
                         <ServiceItem
                           className="flex-row-reverse"
-                          serviceImage="/static/images/services/web-development.jpg"
-                          srcSet="/static/images/services/web-development.jpg 1x, /static/images/services/web-development@2x.jpg 2x,"
+                          serviceImage="/images/services/web-development.jpg"
+                          srcSet="/images/services/web-development.jpg 1x, /images/services/web-development@2x.jpg 2x,"
                           imageClassName="img__shadow "
                           subTitle="Responsive Web Apps"
                           serviceLink="/services/responsive-web-apps"
@@ -251,7 +251,7 @@ Our senior team has more than 80 years combined experience in designing and laun
                                     listItemLink="/projects/purely-capital"
                                   />
                                   <ListItemUnderlined
-                                    listItemText="Publicate" listItemLink="/projects/publicate"
+                                    listItemText="Publicate" listItemLink="/projectsate"
                                   />
                                   <ListItemUnderlined
                                     listItemText="Dugout FC" listItemLink="/projects/dugout"
@@ -262,8 +262,8 @@ Our senior team has more than 80 years combined experience in designing and laun
                         />
 
                         <ServiceItem
-                          serviceImage="/static/images/services/hertz@1x.jpg"
-                          srcSet="/static/images/services/hertz@1x.jpg 1x, /static/images/services/hertz@2x.jpg 2x,"
+                          serviceImage="/images/services/hertz@1x.jpg"
+                          srcSet="/images/services/hertz@1x.jpg 1x, /images/services/hertz@2x.jpg 2x,"
                           imageClassName="img__shadow "
                           subTitle="Systems Integration"
                           serviceLink="/services/systems-integration"
@@ -292,8 +292,8 @@ Our senior team has more than 80 years combined experience in designing and laun
 
                         <ServiceItem
                           className="flex-row-reverse"
-                          serviceImage="/static/images/services/api-dev@1x.jpg"
-                          srcSet="/static/images/services/api-dev@1x.jpg 1x, /static/images/services/api-dev@2x.jpg 2x,"
+                          serviceImage="/images/services/api-dev@1x.jpg"
+                          srcSet="/images/services/api-dev@1x.jpg 1x, /images/services/api-dev@2x.jpg 2x,"
                           imageClassName="img__shadow "
                           subTitle="API Development"
                           serviceLink="/services/api-development"
@@ -325,8 +325,8 @@ Our senior team has more than 80 years combined experience in designing and laun
                         />
 
                         <ServiceItem
-                          serviceImage="/static/images/projects/meownow/meownow_brand_board.png"
-                          srcSet="/static/images/projects/meownow/meownow_brand_board.png 1x, /static/images/projects/meownow/meownow_brand_board@2x.png 2x,"
+                          serviceImage="/images/projects/meownow/meownow_brand_board.png"
+                          srcSet="/images/projects/meownow/meownow_brand_board.png 1x, /images/projects/meownow/meownow_brand_board@2x.png 2x,"
                           imageClassName="img__shadow "
                           subTitle="Branding"
                           serviceLink="/services/branding"

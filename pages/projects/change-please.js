@@ -55,8 +55,8 @@ const TheComponent = class extends Component {
                             </React.Fragment>
                         }
                         className="hero--change-please"
-                        projectImage={"/static/images/projects/change-please/Rotato-Snapshot@1x.png"}
-                        srcSet={'/static/images/projects/change-please/Rotato-Snapshot@1x.png 1x, /static/images/projects/change-please/Rotato-Snapshot@2x.png 2x'}
+                        projectImage={"/images/projects/change-please/Rotato-Snapshot@1x.png"}
+                        srcSet={'/images/projects/change-please/Rotato-Snapshot@1x.png 1x, /images/projects/change-please/Rotato-Snapshot@2x.png 2x'}
                     />
 
                     <div className="container">
@@ -72,8 +72,8 @@ const TheComponent = class extends Component {
                         className={'panel--navy pt-5 pb-5'}
                         title={'Mobile APP UI Design'}
                         subTitle={'01 / Design'}
-                        imageUrl={'/static/images/projects/change-please/cp-2@1x.png'}
-                        srcSet={'/static/images/projects/change-please/cp-2@1x.png 1x, /static/images/projects/change-please/cp-2@2x.png 2x'}
+                        imageUrl={'/images/projects/change-please/cp-2@1x.png'}
+                        srcSet={'/images/projects/change-please/cp-2@1x.png 1x, /images/projects/change-please/cp-2@2x.png 2x'}
                         imageAltText={'Mobile AR'}
                     />
 

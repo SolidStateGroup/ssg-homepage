@@ -1,6 +1,6 @@
 
 import propTypes from 'prop-types';
-import md from '../../../../static/pages-blog-markdown/2018/mar/how-we-built-it-the-secure-healthcare-app.md';
+import md from '../../../../public/pages-blog-markdown/2018/mar/how-we-built-it-the-secure-healthcare-app.md';
 import BlogPost from '../../../../components/BlogPost';
 
 
