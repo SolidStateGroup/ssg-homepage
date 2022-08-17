@@ -50,6 +50,7 @@ function TechPage() {
                         <div className="row">
                             <div className="col-md-7 justify-content-start pt-5">
                                 <h5 className="title--light mb-0">Our Tech</h5>
+                                <i className="fas fa-user"/>
                                 <h1 className="hero__title mb-4">React Native <span className="text-primary bold">Specialists</span></h1>
                                 <p className="text-light">We use React Native to build amazing mobile apps. Why? React Native is a real mobile app. Unlike web app wrappers, React Native uses native platform libraries, creating a completely native experience for your users.
                                 </p>
