@@ -388,8 +388,8 @@ Our senior team has more than 80 years combined experience in designing and laun
                         <div className="flex-row pt-5">
                             <div className="justify-content-center col-md-4 mb-md-0 mb-4">
                                 <Card
-                                  cardLink="https://github.com/Flagsmith/flagsmith-js-client"
-                                  cardTechnology="JavaScript" cardTechnologyStars="22" cardTechnologyForked="8"
+                                  cardLink="https://github.com/Flagsmith/flagsmith"
+                                  cardTechnology="JavaScript" cardTechnologyStars="1.8k" cardTechnologyForked="129"
                                   techColourClass="card__technology--yellow" cardTitle="Flagsmith"
                                   cardText="Flagsmith allows you to manage feature flags and remote config across multiple projects & environments."
                                 />
@@ -397,7 +397,7 @@ Our senior team has more than 80 years combined experience in designing and laun
                             <div className="justify-content-center col-md-4 mb-md-0 mb-4">
                                 <Card
                                   cardLink="https://github.com/SolidStateGroup/rio" cardTechnology="JavaScript"
-                                  cardTechnologyStars="133" cardTechnologyForked="16"
+                                  cardTechnologyStars="146" cardTechnologyForked="21"
                                   techColourClass="card__technology--yellow" cardTitle="RIO"
                                 />
                             </div>

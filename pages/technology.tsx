@@ -220,10 +220,10 @@ function TechPage() {
                 <div className="container align-self-center">
 
                     <ServiceItem
-                      serviceImage="/static/images/services/AWS-tech-partner.png"
-                      srcSet="/static/images/services/AWS-tech-partner.png 1x, /static/images/services/AWS-tech-partner@2x.png 2x,"
+                      serviceImage="/static/images/services/open-source.png"
+                      srcSet="/static/images/services/open-source.png 1x, /static/images/services/open-source.png 2x,"
                       className="flex-row-reverse"
-                      imageClassName="img__shadow "
+                      // imageClassName="img__shadow "
                       subTitle="Actively Open Source"
                       // serviceLink="/services/strategy"
                       gaServiceLabel="services_strategy"
@@ -238,6 +238,10 @@ function TechPage() {
                               listItemText="Flagsmith"
                               listItemLink="https://github.com/Flagsmith/flagsmith"
                             />
+                            <ListItemUnderlined
+                              listItemText="PatientView"
+                              listItemLink="https://github.com/SolidStateGroup/patientview"
+                            />
                         </React.Fragment>
                       )}
                     />
@@ -245,7 +249,7 @@ function TechPage() {
                     <ServiceItem
                       serviceImage="/static/images/services/AWS-tech-partner.png"
                       srcSet="/static/images/services/AWS-tech-partner.png 1x, /static/images/services/AWS-tech-partner@2x.png 2x,"
-                      className="flex-row-reverse"
+                      // className="flex-row-reverse"
                       imageClassName="img__shadow "
                       subTitle="AWS Experts"
                       // serviceLink="/services/strategy"
@@ -264,34 +268,6 @@ function TechPage() {
                               <ListItemUnderlined
                                 listItemText="Dugout FC"
                                 listItemLink="/projects/dugout"
-                              />
-                          </React.Fragment>
-                )}
-                    />
-
-                    <ServiceItem
-                      serviceImage="/static/images/services/Wireframes.png"
-                      srcSet="/static/images/services/Wireframes.png 1x, /static/images/services/Wireframes@2x.png 2x,"
-                // className="flex-row-reverse"
-                      imageClassName="img__shadow "
-                      subTitle="Discovery"
-                      serviceLink="/services/discovery"
-                      gaServiceLabel="services_strategy"
-                      serviceDescription="Our discovery team consists of members of our senior staff from all disciplines including new business / business analysts, UX/UI design, development and project management.
-Our senior team has more than 80 years combined experience in designing and launching products in various industries."
-                      serviceListItem={(
-                          <React.Fragment>
-                              <ListItemUnderlined
-                                listItemText="React Native Performance Monitor"
-                                listItemLink="https://github.com/Flagsmith/flagsmith"
-                              />
-                              <ListItemUnderlined
-                                listItemText="Detonator"
-                                listItemLink="/projects/detonator"
-                              />
-                              <ListItemUnderlined
-                                listItemText="Meow Now"
-                                listItemLink="/projects/meownow"
                               />
                           </React.Fragment>
                 )}
