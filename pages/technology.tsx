@@ -57,7 +57,7 @@ function TechPage() {
                             <div
                               className="flex-1 align-items-center justify-content-center hero__blob-container hidden-sm-down"
                             >
-                                <img src="/static/images/hero-blob-3.svg" alt="hero-blob" className="img-fluid"/>
+                                <img src="/images/hero-blob-3.svg" alt="hero-blob" className="img-fluid"/>
                             </div>
                         </div>
                     </div>
@@ -110,91 +110,91 @@ function TechPage() {
                                 // selected={id === selected}
                                   year="October 2021"
                                   text="Sports Gambling, Picks & Odds for iOS and Android"
-                                  img="/static/images/clients/white/Pickswise-Logo-white.svg"
+                                  img="/images/clients/white/Pickswise-Logo-white.svg"
                                 />
                                 <TimelineItem
                                   itemId={1} // NOTE: itemId is required for track items
                                   key={1}
                                   year="September 2021"
                                   text="Construction Processes made easy on iOS and Android"
-                                  img="/static/images/clients/white/site-assist-white.svg"
+                                  img="/images/clients/white/site-assist-white.svg"
                                 />
                                 <TimelineItem
                                   itemId={2} // NOTE: itemId is required for track items
                                   key={2}
                                   year="June 2020"
                                   text="Legal support when you need it on iOS and Android"
-                                  img="/static/images/clients/white/legal-utopia.png"
+                                  img="/images/clients/white/legal-utopia.png"
                                 />
                                 <TimelineItem
                                   itemId={3}
                                   key={3}
                                   year="June 2020"
                                   text="Corporate health and wellbeing tracker on iOS and Android"
-                                  img="/static/images/clients/white/hero-logo-white.png"
+                                  img="/images/clients/white/hero-logo-white.png"
                                 />
                                 <TimelineItem
                                   itemId={3}
                                   key={3}
                                   year="June 2019"
                                   text="The home of horse racing on iOS and Android"
-                                  img="/static/images/clients/white/racing-post-white.svg"
+                                  img="/images/clients/white/racing-post-white.svg"
                                 />
                                 <TimelineItem
                                   itemId={3}
                                   key={3}
                                   year="May 2019"
                                   text="Health and fitness for Krissy Cela on iOS and Android"
-                                  img="/static/images/clients/white/tone-and-sculpt-white.svg"
+                                  img="/images/clients/white/tone-and-sculpt-white.svg"
                                 />
                                 <TimelineItem
                                   itemId={3}
                                   key={3}
                                   year="March 2019"
                                   text="Smart device manager for respiratory conditions"
-                                  img="/static/images/clients/white/hailie-white.svg"
+                                  img="/images/clients/white/hailie-white.svg"
                                 />
                                 <TimelineItem
                                   itemId={3}
                                   key={3}
                                   year="August 2018"
                                   text="Innovation and development manager on iOS and Android"
-                                  img="/static/images/clients/white/wazoku-white.png"
+                                  img="/images/clients/white/wazoku-white.png"
                                 />
                                 <TimelineItem
                                   itemId={3}
                                   key={3}
                                   year="September 2017"
                                   text="Booking & facilities management on iOS and Android"
-                                  img="/static/images/clients/white/imperial-white.png"
+                                  img="/images/clients/white/imperial-white.png"
                                 />
                                 <TimelineItem
                                   itemId={3}
                                   key={3}
                                   year="May 2017"
                                   text="Smart shopping companion app on iOS and Android"
-                                  img="/static/images/clients/white/unilever-white.svg"
+                                  img="/images/clients/white/unilever-white.svg"
                                 />
                                 <TimelineItem
                                   itemId={3}
                                   key={3}
                                   year="April 2017"
                                   text="Connected car rentals on iOS"
-                                  img="/static/images/clients/white/hertz-white.svg"
+                                  img="/images/clients/white/hertz-white.svg"
                                 />
                                 <TimelineItem
                                   itemId={3}
                                   key={3}
                                   year="January 2016"
                                   text="Mobile healthcare for renal patients on  iOS and Android"
-                                  img="/static/images/clients/nhs.svg"
+                                  img="/images/clients/nhs.svg"
                                 />
                                 <TimelineItem
                                   itemId={3}
                                   key={3}
                                   year="May 2015"
                                   text="Premier League Fantasy football on IOS and Android"
-                                  img="/static/images/clients/white/dugout-white.svg"
+                                  img="/images/clients/white/dugout-white.svg"
                                 />
                                 <TimelineItem
                                   title="React Native"
@@ -220,8 +220,8 @@ function TechPage() {
                 <div className="container align-self-center">
 
                     <ServiceItem
-                      serviceImage="/static/images/services/open-source.png"
-                      srcSet="/static/images/services/open-source.png 1x, /static/images/services/open-source.png 2x,"
+                      serviceImage="/images/services/open-source.png"
+                      srcSet="/images/services/open-source.png 1x, /images/services/open-source.png 2x,"
                       className="flex-row-reverse"
                       // imageClassName="img__shadow "
                       subTitle="Actively Open Source"
@@ -247,8 +247,8 @@ function TechPage() {
                     />
 
                     <ServiceItem
-                      serviceImage="/static/images/services/AWS-tech-partner.png"
-                      srcSet="/static/images/services/AWS-tech-partner.png 1x, /static/images/services/AWS-tech-partner@2x.png 2x,"
+                      serviceImage="/images/services/AWS-tech-partner.png"
+                      srcSet="/images/services/AWS-tech-partner.png 1x, /images/services/AWS-tech-partner@2x.png 2x,"
                       // className="flex-row-reverse"
                       imageClassName="img__shadow "
                       subTitle="AWS Experts"
