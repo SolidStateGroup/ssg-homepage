@@ -50,6 +50,7 @@ class MyApp extends App {
         return (
                 <React.Fragment>
                     <Head>
+                        <script src="https://kit.fontawesome.com/37c2646263.js" crossOrigin="anonymous"></script>
                         <meta charSet="utf-8"/>
                         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
                         <meta name="google-site-verification" content="v7vflMwxmlc2vmrgR_-0IYEvmNx_wzNkxzL6b5wG4hY" />
