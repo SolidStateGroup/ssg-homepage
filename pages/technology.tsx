@@ -229,20 +229,20 @@ function TechPage() {
                       gaServiceLabel="services_strategy"
                       serviceDescription="We are active in the open source community. We work with a wide range of tools, with a focus on open source technologies. Something about building successful open source products here"
                       serviceListItem={(
-                        <React.Fragment>
-                            <ListItemUnderlined
-                              listItemText="React Native Performance Monitor"
-                              listItemLink="https://github.com/Flagsmith/react-native-performance-monitor"
-                            />
-                            <ListItemUnderlined
-                              listItemText="Flagsmith"
-                              listItemLink="https://github.com/Flagsmith/flagsmith"
-                            />
-                            <ListItemUnderlined
-                              listItemText="PatientView"
-                              listItemLink="https://github.com/SolidStateGroup/patientview"
-                            />
-                        </React.Fragment>
+                          <React.Fragment>
+                              <ListItemUnderlined
+                                listItemText="React Native Performance Monitor"
+                                listItemLink="https://github.com/Flagsmith/react-native-performance-monitor"
+                              />
+                              <ListItemUnderlined
+                                listItemText="Flagsmith"
+                                listItemLink="https://github.com/Flagsmith/flagsmith"
+                              />
+                              <ListItemUnderlined
+                                listItemText="PatientView"
+                                listItemLink="https://github.com/SolidStateGroup/patientview"
+                              />
+                          </React.Fragment>
                       )}
                     />
 
