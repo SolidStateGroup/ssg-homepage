@@ -5,7 +5,7 @@
 
 .react-horizontal-scrolling-menu--arrow-left {
   position: absolute;
-  left: 40px;
+  left: -60px;
 }
 
 .react-horizontal-scrolling-menu--inner-wrapper {
@@ -57,6 +57,6 @@
 
 @include media-breakpoint-down(sm) {
   .react-horizontal-scrolling-menu--arrow-left {
-    left: 0px;
+    left: -50px;
   }
 }

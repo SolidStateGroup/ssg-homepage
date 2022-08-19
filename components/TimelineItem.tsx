@@ -5,7 +5,7 @@ import { VisibilityContext } from 'react-horizontal-scrolling-menu';
 export function TimelineItem({
     itemId,
     selected,
-    onClick,
+    // onClick,
     title,
     year,
     text,
@@ -13,7 +13,7 @@ export function TimelineItem({
 }: {
   itemId: string;
   selected: boolean;
-  onClick: Function;
+  // onClick: Function;
   title: string;
   year: string;
   text: string;
@@ -25,8 +25,8 @@ export function TimelineItem({
 
     return (
         <div
-          onClick={() => onClick()}
-          role="button"
+          // onClick={() => onClick()}
+          // role="button"
           tabIndex={0}
           className="timeline-item"
         >

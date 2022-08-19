@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import Header from '../components/Header';
@@ -20,6 +20,13 @@ const getItems = () => Array(20)
     .map((_, ind) => ({ id: getId(ind) }));
 
 function TechPage() {
+
+    useEffect(()=>{
+        gsap.timeline()
+          .from('.hero__container', { duration: 0.5, delay: 0.25, y: 10, opacity: 0, ease: 'power1' })
+          .from('.timeline', { duration: 0.5, y: 10, opacity: 0, ease: 'power1' });
+    },[])
+
     const [items] = React.useState(getItems);
 
     // NOTE: for drag by mouse
@@ -42,7 +49,7 @@ function TechPage() {
 
     return (
     <>
-        <Page title={Constants.titles.technology} canonical="technology">
+        <Page title={Constants.titles.services} canonical="technology">
             <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                 <Header/>
                 <div className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
@@ -55,9 +62,9 @@ function TechPage() {
                                 </p>
                             </div>
                             <div
-                              className="flex-1 align-items-center justify-content-center hero__blob-container hidden-sm-down"
+                              className="flex-1 align-items-center justify-content-center hidden-sm-down"
                             >
-                                <img src="/images/hero-blob-3.svg" alt="hero-blob" className="img-fluid"/>
+                                <img src="/images/svg-icons/React-10.svg" alt="react-logo" className="img-fluid"/>
                             </div>
                         </div>
                     </div>
@@ -76,7 +83,7 @@ function TechPage() {
                 </div>
                 <div className="ml-md-5 ml-0 pl-5 pl-md-5 pb-0">
                     {/* Timeline goes here */}
-                    <div className="example timeline pb-5">
+                    <div className="timeline pb-5">
                         <div onMouseLeave={dragStop}>
                             <ScrollMenu
                               LeftArrow={LeftArrow}
@@ -262,15 +269,27 @@ function TechPage() {
                                 listItemLink="/projects/tone-and-sculpt"
                               />
                               <ListItemUnderlined
-                                listItemText="Meow Now"
-                                listItemLink="/projects/meownow"
+                                listItemText="Ladbrokes Coral"
+                                listItemLink="/projects/ladbrokes-coral"
                               />
                               <ListItemUnderlined
-                                listItemText="Dugout FC"
-                                listItemLink="/projects/dugout"
+                                listItemText="Racing Post"
+                                listItemLink="/projects/racing-post"
                               />
                           </React.Fragment>
                 )}
+                    />
+
+                    <ServiceItem
+                      serviceImage="/images/services/tech-stack.png"
+                      srcSet="/images/services/tech-stack.png 1x, /images/services/tech-stack@2x.png 2x,"
+                      className="flex-row-reverse"
+                      // imageClassName="img__shadow "
+                      subTitle="Delivering projects quickly and reliably"
+                      // serviceLink="/services/strategy"
+                      gaServiceLabel="services_strategy"
+                      serviceDescription="We design, develop, test, and deliver your projects quickly and reliably. We work with a wide range of tools, with a focus on open source technologies.
+."
                     />
 
                 </div>
