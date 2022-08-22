@@ -161,7 +161,8 @@ const UserResearchPage = class extends React.Component {
                     <ServiceItem
                       srcSet="/images/services/user-research.png 1x, /images/services/user-research@2x.png 2x"
                       serviceImage="/images/services/user-research.png"
-                      subTitle="Usability testing"
+                      subTitle="User testing"
+                      serviceLink="user-testing"
                       serviceDescription="Usability testing results in a better user experience for your users and saves you time and money in the long run by identifying and fixing problems early."
                     />
 
