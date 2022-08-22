@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
@@ -11,7 +12,6 @@ import AWSLogo from '../components/TechIcons/AWSLogo';
 import { ListItemUnderlined } from '../components/ListItem';
 import ServiceItem from '../components/ServiceItem';
 import Card from '../components/Card';
-import Link from 'next/link';
 
 const ServicesPage = class extends React.Component {
     static displayName = 'ServicesPage';
@@ -67,23 +67,26 @@ const ServicesPage = class extends React.Component {
                     </div>
                     <div className="container">
                         <div className="flex-row mt-5 mb-5">
-                            <div className="col-md-2 col-6 text-center">
+                            <div className="col services-tech-icon text-center">
                                 <ReactLogo className="client-logo--large"/>
                             </div>
-                            <div className="col-md-2 col-6 text-center">
+                            <div className="col services-tech-icon text-center">
                                 <NodeLogo className="client-logo--medium"/>
                             </div>
-                            <div className="col-md-2 col-6 text-center">
+                            <div className="col services-tech-icon text-center">
                                 <DockerLogo className="client-logo--medium"/>
                             </div>
-                            <div className="col-md-2 col-6 text-center mb-md-0 mb-4">
+                            <div className="col services-tech-icon text-center mb-md-0 mb-4">
                                 <JavaLogo className="client-logo--small"/>
                             </div>
-                            <div className="col-md-2 col-6 text-center">
+                            <div className="col services-tech-icon text-center">
                                 <PostgresLogo className="client-logo--large"/>
                             </div>
-                            <div className="col-md-2 col-6 text-center">
+                            <div className="col services-tech-icon text-center">
                                 <AWSLogo className="client-logo--medium"/>
+                            </div>
+                            <div className="col services-tech-icon text-center">
+                                <img src="/images/tech-icons/light/python.svg" className="img-fluid mt-md-0 mt-4"/>
                             </div>
                         </div>
                     </div>
@@ -119,33 +122,33 @@ const ServicesPage = class extends React.Component {
                             )}
                         />
 
-                      <ServiceItem
-                        serviceImage="/images/services/Wireframes.png"
-                        srcSet="/images/services/Wireframes.png 1x, /images/services/Wireframes@2x.png 2x,"
+                        <ServiceItem
+                          serviceImage="/images/services/Wireframes.png"
+                          srcSet="/images/services/Wireframes.png 1x, /images/services/Wireframes@2x.png 2x,"
                         // className="flex-row-reverse"
-                        imageClassName="img__shadow "
-                        subTitle="Discovery"
-                        serviceLink="/services/discovery"
-                        gaServiceLabel="services_strategy"
-                        serviceDescription="Our discovery team consists of members of our senior staff from all disciplines including new business / business analysts, UX/UI design, development and project management.
+                          imageClassName="img__shadow "
+                          subTitle="Discovery"
+                          serviceLink="/services/discovery"
+                          gaServiceLabel="services_strategy"
+                          serviceDescription="Our discovery team consists of members of our senior staff from all disciplines including new business / business analysts, UX/UI design, development and project management.
 Our senior team has more than 80 years combined experience in designing and launching products in various industries."
-                        serviceListItem={(
-                          <React.Fragment>
-                            <ListItemUnderlined
-                              listItemText="Tone & Sculpt"
-                              listItemLink="/projects/tone-and-sculpt"
-                            />
-                            <ListItemUnderlined
-                              listItemText="Detonator"
-                              listItemLink="/projects/detonator"
-                            />
-                            <ListItemUnderlined
-                              listItemText="Meow Now"
-                              listItemLink="/projects/meownow"
-                            />
-                          </React.Fragment>
+                          serviceListItem={(
+                              <React.Fragment>
+                                  <ListItemUnderlined
+                                    listItemText="Tone & Sculpt"
+                                    listItemLink="/projects/tone-and-sculpt"
+                                  />
+                                  <ListItemUnderlined
+                                    listItemText="Detonator"
+                                    listItemLink="/projects/detonator"
+                                  />
+                                  <ListItemUnderlined
+                                    listItemText="Meow Now"
+                                    listItemLink="/projects/meownow"
+                                  />
+                              </React.Fragment>
                         )}
-                      />
+                        />
 
                         <ServiceItem
                           srcSet="/images/services/user-research.png 1x, /images/services/user-research@2x.png 2x,"
@@ -204,13 +207,13 @@ Our senior team has more than 80 years combined experience in designing and laun
                           subTitle="Mobile App Development"
                           serviceLink="/services/mobile-app-development"
                           gaServiceLabel="services_mobile"
-                          serviceDescription={<a>Yo</a> +
-                          'Text' +
-                          '\n'}
+                          serviceDescription={`${<a>Yo</a>
+                          }Text`
+                          + '\n'}
                           serviceDescription={<>
-                           {"We use\n"} <Link prefetch={false} href="services/react-native">
+                              {'We use\n'} <Link prefetch={false} href="services/react-native">
                             React Native
-                          </Link> {"to build amazing mobile apps. Why? React Native is a real mobile app. Unlike web app wrappers, React Native uses native platform libraries, creating a completely native experience for your users.\n"}
+                              </Link> {'to build amazing mobile apps. Why? React Native is a real mobile app. Unlike web app wrappers, React Native uses native platform libraries, creating a completely native experience for your users.\n'}
                           </>}
                           serviceListItem={(
                               <React.Fragment>
