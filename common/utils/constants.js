@@ -34,6 +34,7 @@ const Constants = global.Constants = {
         discovery: 'Discovery | Solid State Group',
         prototyping: 'Prototyping | Solid State Group',
         responsiveWebApps: 'Responsive Web Apps | Solid State Group',
+        cloudImplementation: 'Cloud Implementation | Solid State Group',
         systemsIntegration: 'Systems Integration | Solid State Group',
         contactForm: 'Contact | Solid State Group',
         contactFormThanksPage: 'Thanks | Solid State Group',
@@ -118,6 +119,7 @@ const Constants = global.Constants = {
         servicePrototyping: 'Prototyping',
         reactNative: 'React Native',
         responsiveWebApps: 'Responsive web applications',
+        cloudImplementation: 'Cloud Implementation',
         serviceStrategy: 'Strategy',
         systemsIntegration: 'Systems Integration',
 
