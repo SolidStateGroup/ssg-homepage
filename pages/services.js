@@ -151,6 +151,7 @@ Our senior team has more than 80 years combined experience in designing and laun
                         />
 
                         <ServiceItem
+                          className="flex-row-reverse"
                           srcSet="/images/services/user-research.png 1x, /images/services/user-research@2x.png 2x,"
                           serviceListItem={(
                               <React.Fragment>
@@ -207,7 +208,7 @@ Our senior team has more than 80 years combined experience in designing and laun
                           subTitle="Mobile App Development"
                           serviceLink="/services/mobile-app-development"
                           gaServiceLabel="services_mobile"
-                          serviceDescription={`${<a>Yo</a>
+                          serviceDescription={`${<a></a>
                           }Text`
                           + '\n'}
                           serviceDescription={<>
@@ -265,6 +266,66 @@ Our senior team has more than 80 years combined experience in designing and laun
                         />
 
                         <ServiceItem
+                          serviceImage="/images/services/api-dev@1x.jpg"
+                          srcSet="/images/services/api-dev@1x.jpg 1x, /images/services/api-dev@2x.jpg 2x,"
+                          imageClassName="img__shadow "
+                          subTitle="API Development"
+                          serviceLink="/services/api-development"
+                          gaServiceLabel="services_api"
+                          serviceDescription="From our London office, we've been working with
+                                        corporations and startups for over 15 years, building secure, bespoke APIs and
+                                        scalable integrations with legacy systems. We approach projects with an
+                                        experienced team equipped with rapid application development tools to develop,
+                                        test, and deliver bespoke software quickly."
+                          serviceListItem={(
+                              <React.Fragment>
+                                  <ListItemUnderlined
+                                    listItemText="Hailie"
+                                    listItemLink="/projects/hailie"
+                                  />
+                                  <ListItemUnderlined
+                                    listItemText="Hertz"
+                                    listItemLink="/projects/hertz"
+                                  />
+                                  <ListItemUnderlined
+                                    listItemText="Unilever"
+                                    listItemLink="/projects/unilever"
+                                  />
+                                  <ListItemUnderlined
+                                    listItemText="Visa" listItemLink="/projects/visa"
+                                  />
+                              </React.Fragment>
+                        )}
+                        />
+
+                        <ServiceItem
+                          className="flex-row-reverse"
+                          serviceImage="/images/services/System-Architecture-Dark.png"
+                          srcSet="/images/services/System-Architecture-Dark.png 1x, /images/services/System-Architecture-Dark@2x.png 2x,"
+                          imageClassName="img__shadow "
+                          subTitle="Cloud Services"
+                          serviceLink="/services/cloud-implementation"
+                          gaServiceLabel="cloudServices_api"
+                          serviceDescription="We have experience building a variety of infrastructure set ups from modern micro-services and serverless to legacy monolithe solutions. Using infrastructure as code best practices, we ensure your environment is secure, scalable and manageable. Our developers have training and qualifications with all the major cloud providers including AWS, GCP and Azure."
+                          serviceListItem={(
+                              <React.Fragment>
+                                  <ListItemUnderlined
+                                    listItemText="Ladbrokes Coral"
+                                    listItemLink="/projects/ladbrokes-coral"
+                                  />
+                                  <ListItemUnderlined
+                                    listItemText="Racing Post"
+                                    listItemLink="/projects/racing-post"
+                                  />
+                                  <ListItemUnderlined
+                                    listItemText="Vuunity"
+                                    listItemLink="/projects/vuunity"
+                                  />
+                              </React.Fragment>
+                        )}
+                        />
+
+                        <ServiceItem
                           serviceImage="/images/services/hertz@1x.jpg"
                           srcSet="/images/services/hertz@1x.jpg 1x, /images/services/hertz@2x.jpg 2x,"
                           imageClassName="img__shadow "
@@ -295,39 +356,6 @@ Our senior team has more than 80 years combined experience in designing and laun
 
                         <ServiceItem
                           className="flex-row-reverse"
-                          serviceImage="/images/services/api-dev@1x.jpg"
-                          srcSet="/images/services/api-dev@1x.jpg 1x, /images/services/api-dev@2x.jpg 2x,"
-                          imageClassName="img__shadow "
-                          subTitle="API Development"
-                          serviceLink="/services/api-development"
-                          gaServiceLabel="services_api"
-                          serviceDescription="From our London office, we've been working with
-                                        corporations and startups for over 15 years, building secure, bespoke APIs and
-                                        scalable integrations with legacy systems. We approach projects with an
-                                        experienced team equipped with rapid application development tools to develop,
-                                        test, and deliver bespoke software quickly."
-                          serviceListItem={(
-                              <React.Fragment>
-                                  <ListItemUnderlined
-                                    listItemText="Hailie"
-                                    listItemLink="/projects/hailie"
-                                  />
-                                  <ListItemUnderlined
-                                    listItemText="Hertz"
-                                    listItemLink="/projects/hertz"
-                                  />
-                                  <ListItemUnderlined
-                                    listItemText="Unilever"
-                                    listItemLink="/projects/unilever"
-                                  />
-                                  <ListItemUnderlined
-                                    listItemText="Visa" listItemLink="/projects/visa"
-                                  />
-                              </React.Fragment>
-)}
-                        />
-
-                        <ServiceItem
                           serviceImage="/images/projects/meownow/meownow_brand_board.png"
                           srcSet="/images/projects/meownow/meownow_brand_board.png 1x, /images/projects/meownow/meownow_brand_board@2x.png 2x,"
                           imageClassName="img__shadow "

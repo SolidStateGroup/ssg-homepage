@@ -71,7 +71,7 @@ const CloudImplementationPage = class extends React.Component {
                 <div className="hero d-flex flex-column mx-0 pt-4 pr-4 pb-0 pl-4">
                     <Header/>
                     <ServicesHero
-                      title="Cloud Implementation" text="We have experience building a variety of infrastructure set ups from modern micro-services and serverless to legacy monolithe solutions. Using infrastructure as code best practices, we ensure your environment is secure, scalable and manageable. Our developers have training and qualifications with all the major cloud providers including AWS, GCP and Azure."
+                      title="Cloud Services" text="We have experience building a variety of infrastructure set ups from modern micro-services and serverless to legacy monolithe solutions. Using infrastructure as code best practices, we ensure your environment is secure, scalable and manageable. Our developers have training and qualifications with all the major cloud providers including AWS, GCP and Azure."
                     />
                 </div>
                 <div className="container">
