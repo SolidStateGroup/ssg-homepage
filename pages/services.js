@@ -175,7 +175,6 @@ Our senior team has more than 80 years combined experience in designing and laun
 
 
                         <ServiceItem
-                          className="flex-row-reverse"
                           srcSet="/images/services/ux-design.jpg 1x, /images/services/ux-design@2x.png 2x,"
                           imageClassName="img__shadow "
                           serviceListItem={(
@@ -202,6 +201,7 @@ Our senior team has more than 80 years combined experience in designing and laun
                         />
 
                         <ServiceItem
+                          className="flex-row-reverse"
                           serviceImage="/images/services/mobile-app-development.jpg"
                           srcSet="/images/services/mobile-app-development.jpg 1x, /images/services/mobile-app-development@2x.png 2x,"
                           imageClassName="img__shadow "
@@ -237,7 +237,6 @@ Our senior team has more than 80 years combined experience in designing and laun
                         />
 
                         <ServiceItem
-                          className="flex-row-reverse"
                           serviceImage="/images/services/web-development.jpg"
                           srcSet="/images/services/web-development.jpg 1x, /images/services/web-development@2x.jpg 2x,"
                           imageClassName="img__shadow "
@@ -266,6 +265,7 @@ Our senior team has more than 80 years combined experience in designing and laun
                         />
 
                         <ServiceItem
+                          className="flex-row-reverse"
                           serviceImage="/images/services/api-dev@1x.jpg"
                           srcSet="/images/services/api-dev@1x.jpg 1x, /images/services/api-dev@2x.jpg 2x,"
                           imageClassName="img__shadow "
@@ -299,7 +299,6 @@ Our senior team has more than 80 years combined experience in designing and laun
                         />
 
                         <ServiceItem
-                          className="flex-row-reverse"
                           serviceImage="/images/services/System-Architecture-Dark.png"
                           srcSet="/images/services/System-Architecture-Dark.png 1x, /images/services/System-Architecture-Dark@2x.png 2x,"
                           imageClassName="img__shadow "
@@ -326,6 +325,7 @@ Our senior team has more than 80 years combined experience in designing and laun
                         />
 
                         <ServiceItem
+                          className="flex-row-reverse"
                           serviceImage="/images/services/hertz@1x.jpg"
                           srcSet="/images/services/hertz@1x.jpg 1x, /images/services/hertz@2x.jpg 2x,"
                           imageClassName="img__shadow "
@@ -355,7 +355,6 @@ Our senior team has more than 80 years combined experience in designing and laun
                         />
 
                         <ServiceItem
-                          className="flex-row-reverse"
                           serviceImage="/images/projects/meownow/meownow_brand_board.png"
                           srcSet="/images/projects/meownow/meownow_brand_board.png 1x, /images/projects/meownow/meownow_brand_board@2x.png 2x,"
                           imageClassName="img__shadow "
