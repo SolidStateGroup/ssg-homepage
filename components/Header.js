@@ -96,11 +96,11 @@ class Header extends PureComponent {
                                         <a className="nav-item__link nav-item__link--circle">Partners</a>
                                     </ActiveLink>
                                 </li>
-                                <li className="nav-item">
-                                    <ActiveLink prefetch={false} href="/technology">
-                                        <a className="nav-item__link nav-item__link--circle">Technology</a>
-                                    </ActiveLink>
-                                </li>
+                                {/*<li className="nav-item">*/}
+                                {/*    <ActiveLink prefetch={false} href="/technology">*/}
+                                {/*        <a className="nav-item__link nav-item__link--circle">Technology</a>*/}
+                                {/*    </ActiveLink>*/}
+                                {/*</li>*/}
                                 <li className="nav-item">
                                     <ActiveLink prefetch={false} href="/blog">
                                         <a className="nav-item__link nav-item__link--circle">Blog</a>
@@ -260,11 +260,11 @@ class Header extends PureComponent {
                                         <a className="nav-item__link nav-item__link--circle">Partners</a>
                                     </ActiveLink>
                                 </li>
-                                <li className="nav-item">
-                                    <ActiveLink prefetch={false} href="/technology">
-                                        <a className="nav-item__link nav-item__link--circle">Technology</a>
-                                    </ActiveLink>
-                                </li>
+                                {/*<li className="nav-item">*/}
+                                {/*    <ActiveLink prefetch={false} href="/technology">*/}
+                                {/*        <a className="nav-item__link nav-item__link--circle">Technology</a>*/}
+                                {/*    </ActiveLink>*/}
+                                {/*</li>*/}
                                 <li className="nav-item">
                                     <ActiveLink prefetch={false} href="/blog">
                                         <a className="nav-item__link nav-item__link--circle">Blog</a>
@@ -358,7 +358,7 @@ class Header extends PureComponent {
                                         <a href="/work" className="mainmenu__item" >Work</a>
                                         <a href="/services" className="mainmenu__item">Services</a>
                                         <a href="/partners" className="mainmenu__item">Partners</a>
-                                        <a href="/technology" className="mainmenu__item">Technology</a>
+                                        {/*<a href="/technology" className="mainmenu__item">Technology</a>*/}
                                         <a href="/blog" className="mainmenu__item">Blog</a>
                                         <a href="/contact" className="mainmenu__item" onClick={() => API.trackEvent({ category: 'Buttons', event: 'view', label: 'mobile_header_contact' })}>Contact</a>
                                     </div>
