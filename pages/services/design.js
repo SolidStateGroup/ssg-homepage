@@ -101,14 +101,12 @@ const DesignPage = class extends React.Component {
                                  + 'User experience has never been more important for digital products.'}
                     />
 
-                    <div className="row">
-                      <div className="col-md-6 text-center">
-                          <iframe src="https://marvelapp.com/prototype/27h7b6d6?emb=1&iosapp=false&frameless=false"
-                                  width="300" height="764" allowTransparency="true" frameBorder="0" />
-                      </div>
+                    <div className="row mb-5">
                         <div className="col-md-6 text-center">
-                            <iframe src="https://marvelapp.com/prototype/9b98i63?emb=1&iosapp=false&frameless=false"
-                                    width="300" height="764" allowTransparency="true" frameBorder="0" />
+                            <img className="img-fluid img__shadow" src="/images/projects/tone-and-sculpt/My T & S - Plan active 2.png" srcSet="/images/projects/tone-and-sculpt/My T & S - Plan active 2.png 1x, /images/projects/tone-and-sculpt/My T & S - Plan active 2@2x.png 2x" />
+                        </div>
+                        <div className="col-md-6 text-center">
+                            <img className="img-fluid img__shadow" src="/images/projects/tone-and-sculpt/Dashboard@1x.png" srcSet="/images/projects/tone-and-sculpt/Dashboard@1x.png 1x, /images/projects/tone-and-sculpt/Dashboard2x.png 2x" />
                         </div>
                     </div>
 
@@ -139,7 +137,7 @@ const DesignPage = class extends React.Component {
                     />
 
                     <ServiceItem
-                      video="https://storage.googleapis.com/ssg-website-images/case-studies/purely-capital/quote-confirmationv2.mov"
+                      video="/images/projects/purely-capital/quote-confirmationv2.mov"
                       className="flex-row-reverse"
                       serviceListItem={(
                           <React.Fragment>
@@ -168,19 +166,19 @@ const DesignPage = class extends React.Component {
                   clientTitle="Head of eCommerce Capability, Innovation and Strategy, UK Unilever"
                 />
 
-                {/*Resources section*/}
-                {/*<div className="section section--grey">*/}
-                {/*    <h2 className="section__title--dark text-center">Resources</h2>*/}
-                {/*    <div className="offset-md-4 col-md-4 mt-4">*/}
-                {/*        <p className="text-center">Download our resources and samples to get a better idea of our process and styleguide.*/}
-                {/*        </p>*/}
-                {/*    </div>*/}
-                {/*    <div className="flex-row justify-content-center mt-5 mb-5">*/}
-                {/*        <ButtonDownload href="/static/downloads/SSG-design-process.pdf">SSG-Styleguide__FINAL-12345678.sketch</ButtonDownload>*/}
-                {/*        <ButtonDownload href="/static/downloads/SSG-design-process.pdf">ssg-process-deck.pdf</ButtonDownload>*/}
-                {/*        <ButtonDownload href="/static/downloads/SSG-design-process.pdf">pres.pdf</ButtonDownload>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
+                {/* Resources section */}
+                {/* <div className="section section--grey"> */}
+                {/*    <h2 className="section__title--dark text-center">Resources</h2> */}
+                {/*    <div className="offset-md-4 col-md-4 mt-4"> */}
+                {/*        <p className="text-center">Download our resources and samples to get a better idea of our process and styleguide. */}
+                {/*        </p> */}
+                {/*    </div> */}
+                {/*    <div className="flex-row justify-content-center mt-5 mb-5"> */}
+                {/*        <ButtonDownload href="/static/downloads/SSG-design-process.pdf">SSG-Styleguide__FINAL-12345678.sketch</ButtonDownload> */}
+                {/*        <ButtonDownload href="/static/downloads/SSG-design-process.pdf">ssg-process-deck.pdf</ButtonDownload> */}
+                {/*        <ButtonDownload href="/static/downloads/SSG-design-process.pdf">pres.pdf</ButtonDownload> */}
+                {/*    </div> */}
+                {/* </div> */}
 
                 <div className="container">
                     <h3 className="section__title--dark text-center mb-5 mt-5">Design case studies</h3>

@@ -2,10 +2,8 @@ import React, { PureComponent } from 'react';
 import { importCssPromise, importScriptPromise } from '../project/import-promise';
 import withScrollHelper from './withScrollHelper';
 import cn from "classnames";
-import Button from "./base/forms/Button";
 
-
-const center = [-0.07748552114208766, 51.52460961142979];
+const center = [-0.08370543068965465, 51.52616000497203];
 
 // Automatically sets relevant head tags for seo, see _app for the remainder tags
 const Map = class extends PureComponent {
