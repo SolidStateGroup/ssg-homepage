@@ -107,14 +107,6 @@ const TheComponent = class extends Component {
                       imageAltText="Dashboard UI"
                     />
 
-                    {/* <div className="container"> */}
-                    {/*  <div className="col-md-12 text-center"> */}
-                    {/*    <iframe src="https://marvelapp.com/prototype/5aj805h?emb=1&iosapp=false&frameless=false" */}
-                    {/*            width="100%" height="900" allowTransparency="true" frameBorder="0" /> */}
-                    {/*  </div> */}
-                    {/* </div> */}
-
-
                     <div className="container sectionFourAnimation" id="sectionFourTrigger">
 
 
