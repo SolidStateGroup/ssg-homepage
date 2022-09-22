@@ -14,6 +14,7 @@ import ProjectNav from '../../components/ProjectNav';
 // Automatically sets relevant head tags for seo, see _app for the remainder tags
 const TheComponent = class extends Component {
     static displayName = 'TheComponent';
+
     static propTypes = {
         children: propTypes.node,
     };
@@ -62,98 +63,98 @@ const TheComponent = class extends Component {
                           imageOne="/images/projects/cap10/styleguide.png"
                           srcSetImageOne="/images/projects/cap10/styleguide.png 1x, /images/projects/cap10/styleguide@2x.png 2x"
                           description={'We started by creating a number of branding routes for the client\'s consideration. They served to focus our ideas and eliminate visual concepts that were not desirable. From here we developed a new route based on client feedback and iterated on this until we had a final brand that the client was happy with.\n'}
-                          ProjectServiceListItem={
+                          ProjectServiceListItem={(
                               <React.Fragment>
                                   <WideListItem
-                                      listItemText={'Branding'}/>
+                                    listItemText="Branding"
+                                  />
                                   <WideListItem
-                                      listItemText={'Style guide'}/>
-                              </React.Fragment>}
+                                    listItemText="Style guide"
+                                  />
+                              </React.Fragment>
+)}
                         />
 
                         <ProjectDetailSectionItem
-                            className="flex-row-reverse"
-                            title="UI Design"
-                            subTitle="02 / Solution"
-                            imageOne="/images/projects/cap10/mobile-1.png"
-                            srcSetImageOne="/images/projects/cap10/mobile-1.png 1x, /images/projects/cap10/mobile-1@2x.png 2x"
-                            description={'The UI design uses mostly pale, low chroma colours and subtle effects to create a form that appears like a solid material. These UI elements look solid and robust and fit in nicely with the themes of security and encryption that exists within the app. Gradients are employed to drive interest to specific UI elements of the design, such as primary buttons and data visualisations.'}
-                            ProjectServiceListItem={
-                                <React.Fragment>
-                                    <WideListItem
-                                        listItemText={'UI Design'}/>
-                                    <WideListItem
-                                        listItemText={'Design System'}/>
-                                </React.Fragment>}
+                          className="flex-row-reverse"
+                          title="UI Design"
+                          subTitle="02 / Solution"
+                          imageOne="/images/projects/cap10/mobile-1.png"
+                          srcSetImageOne="/images/projects/cap10/mobile-1.png 1x, /images/projects/cap10/mobile-1@2x.png 2x"
+                          description="The UI design uses mostly pale, low chroma colours and subtle effects to create a form that appears like a solid material. These UI elements look solid and robust and fit in nicely with the themes of security and encryption that exists within the app. Gradients are employed to drive interest to specific UI elements of the design, such as primary buttons and data visualisations."
+                          ProjectServiceListItem={(
+                              <React.Fragment>
+                                  <WideListItem
+                                    listItemText="UI Design"
+                                  />
+                                  <WideListItem
+                                    listItemText="Design System"
+                                  />
+                              </React.Fragment>
+)}
                         />
 
                         <ProjectDetailSectionItem
-                            iframe={
-                                <iframe
-                                    src="https://marvelapp.com/prototype/13i2iiie?emb=1&iosapp=false&frameless=false"
-                                    width="453" height="864" allowTransparency="true" frameBorder="0"/>
-                            }
-                            title="High fidelity prototyping"
-                            subTitle="02 / Solution"
-                            description={'We built a high fidelity clickable prototype that demonstrated all the workflows for the various  user types. We then embellished on this by concepting some motion ideas that would demonstrate how animations and transitions would work in the app.'}
-                            ProjectServiceListItem={
-                                <React.Fragment>
-                                    <WideListItem
-                                        listItemText={'Clickable prototypes'}/>
-                                    <WideListItem
-                                        listItemText={'Interaction Design'}/>
-                                </React.Fragment>}
+                          imageOne="/images/projects/cap10/mobile-2.jpg"
+                          srcSetImageOne="/images/projects/cap10/mobile-2.jpg 1x, /images/projects/cap10/mobile-2@2x.jpg 2x"
+                          title="High fidelity prototyping"
+                          subTitle="02 / Solution"
+                          description="We built a high fidelity clickable prototype that demonstrated all the workflows for the various  user types. We then embellished on this by concepting some motion ideas that would demonstrate how animations and transitions would work in the app."
+                          ProjectServiceListItem={(
+                              <React.Fragment>
+                                  <WideListItem
+                                    listItemText="Clickable prototypes"
+                                  />
+                                  <WideListItem
+                                    listItemText="Interaction Design"
+                                  />
+                              </React.Fragment>
+)}
                         />
 
-                        <ProjectFullImageSection
-                          imageUrl="/images/projects/cap10/mobile-2.jpg"
-                          srcSet="/images/projects/cap10/mobile-2.jpg 1x, /images/projects/cap10/mobile-2@2x.jpg 2x"
-                          imageAltText="Dashboard UI"
-                        />
+                        <ProjectFullVideoSection className="mb-5" title="Interaction Design" videoLink="/images/projects/cap10/rotato-1.mov" />
 
-                        <ProjectFullVideoSection className="mb-5" title={'Interaction Design'} videoLink={'/images/projects/cap10/rotato-1.mov'} />
+                        {/* <ProjectTechSection */}
+                        {/*    subTitle={'03 / Development'} */}
+                        {/*    description={'Something about security and the tech stack here.'} */}
+                        {/*   techLogoItems={ */}
+                        {/*       <React.Fragment> */}
+                        {/*           <div className="col-6 text-center"> */}
+                        {/*               <img alt="react" src='/images/tech-icons/dark/react.svg' */}
+                        {/*                    className='img-responsive'/> */}
+                        {/*           </div> */}
+                        {/*           <div className="col-6 text-center"> */}
+                        {/*               <img alt=".net" src='/images/tech-icons/dark/net.svg' */}
+                        {/*                    className='img-responsive'/> */}
+                        {/*           </div> */}
+                        {/*           <div className="col-6 text-center mb-md-0 mb-4"> */}
+                        {/*               <img alt="mysql" src='/images/tech-icons/dark/MySQL.svg' className='img-responsive'/> */}
+                        {/*           </div> */}
+                        {/*           <div className="col-6 text-center"> */}
+                        {/*               <img alt="aws" src='/images/tech-icons/dark/aws.svg' */}
+                        {/*                    className='img-responsive'/> */}
+                        {/*           </div> */}
+                        {/*       </React.Fragment> */}
+                        {/*   } */}
+                        {/*   ProjectServiceListItem={ */}
+                        {/*       <React.Fragment> */}
+                        {/*           <WideListItem */}
+                        {/*               listItemText={'Mobile Development'}/> */}
+                        {/*           <WideListItem */}
+                        {/*               listItemText={'Backend Development'}/> */}
+                        {/*           <WideListItem */}
+                        {/*               listItemText={'API Development'}/> */}
+                        {/*       </React.Fragment>} */}
 
-                         {/*<ProjectTechSection*/}
-                         {/*    subTitle={'03 / Development'}*/}
-                         {/*    description={'Something about security and the tech stack here.'}*/}
-                         {/*   techLogoItems={*/}
-                         {/*       <React.Fragment>*/}
-                         {/*           <div className="col-6 text-center">*/}
-                         {/*               <img alt="react" src='/images/tech-icons/dark/react.svg'*/}
-                         {/*                    className='img-responsive'/>*/}
-                         {/*           </div>*/}
-                         {/*           <div className="col-6 text-center">*/}
-                         {/*               <img alt=".net" src='/images/tech-icons/dark/net.svg'*/}
-                         {/*                    className='img-responsive'/>*/}
-                         {/*           </div>*/}
-                         {/*           <div className="col-6 text-center mb-md-0 mb-4">*/}
-                         {/*               <img alt="mysql" src='/images/tech-icons/dark/MySQL.svg' className='img-responsive'/>*/}
-                         {/*           </div>*/}
-                         {/*           <div className="col-6 text-center">*/}
-                         {/*               <img alt="aws" src='/images/tech-icons/dark/aws.svg'*/}
-                         {/*                    className='img-responsive'/>*/}
-                         {/*           </div>*/}
-                         {/*       </React.Fragment>*/}
-                         {/*   }*/}
-                         {/*   ProjectServiceListItem={*/}
-                         {/*       <React.Fragment>*/}
-                         {/*           <WideListItem*/}
-                         {/*               listItemText={'Mobile Development'}/>*/}
-                         {/*           <WideListItem*/}
-                         {/*               listItemText={'Backend Development'}/>*/}
-                         {/*           <WideListItem*/}
-                         {/*               listItemText={'API Development'}/>*/}
-                         {/*       </React.Fragment>}*/}
+                        {/* /> */}
 
-                         {/*/>*/}
-
-                         {/*<ProjectTextSection*/}
-                         {/*   subTitle="04 / Headlines"*/}
-                         {/*   description={'We successfully released the new mobile app with a bespoke global fitness challenge that invited 40,000 users from Vodafone’s global teams to join and take part using their wearables or phone health data.\n' +*/}
-                         {/*   '\n' +*/}
-                         {/*   'We delivered two versatile, fully whitelablled web and mobile app products in 2 months.'*/}
-                         {/*   }*/}
-                         {/*/>*/}
+                        {/* <ProjectTextSection */}
+                        {/*   subTitle="04 / Headlines" */}
+                        {/*   description={'We successfully released the new mobile app with a bespoke global fitness challenge that invited 40,000 users from Vodafone’s global teams to join and take part using their wearables or phone health data.\n' +*/}
+                        {/*   '\n' +*/}
+                        {/*   'We delivered two versatile, fully whitelablled web and mobile app products in 2 months.' */}
+                        {/*   } */}
+                        {/* /> */}
 
                     </div>
 
