@@ -5,7 +5,7 @@ import ProjectHero from '../../components/ProjectHero';
 import { TextListItem, WideListItem } from '../../components/ListItem';
 import ClientQuote from '../../components/ClientQuote';
 import ProjectDetailSectionItem, {
-    ProjectColourBlockSection,
+    ProjectColourBlockSection, ProjectFullVideoSection,
     ProjectTechSection,
     ProjectTextSection,
 } from '../../components/ProjectDetailSectionItem';
@@ -210,8 +210,14 @@ const TheComponent = class extends Component {
                     </div>
 
                     <div className="container">
+
+                        <ProjectFullVideoSection
+                          autoPlay={false} controls muted={false}
+                          className="mb-5" title="High Fidelity Reader Workflow" videoLink="/images/projects/detonator/Noodle Fuel Demo 03 - Audio Balanced.mp4"
+                        />
+
                         <ProjectPrototypeSection
-                          title="High Fidelity Reader Workflow" prototypeLink="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4ME4iMsJ2AmTKE7dm5HJC8%2FDetonator---UI-Design%3Fpage-id%3D428%253A5672%26node-id%3D472%253A9284%26viewport%3D286%252C48%252C1%26scaling%3Dscale-down%26starting-point-node-id%3D472%253A9284"
+                          title="Clickable Prototype" prototypeLink="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4ME4iMsJ2AmTKE7dm5HJC8%2FDetonator---UI-Design%3Fpage-id%3D428%253A5672%26node-id%3D472%253A9284%26viewport%3D286%252C48%252C1%26scaling%3Dscale-down%26starting-point-node-id%3D472%253A9284"
                         />
 
                         <ProjectDetailSectionItem

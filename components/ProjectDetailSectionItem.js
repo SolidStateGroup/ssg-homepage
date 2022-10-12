@@ -290,7 +290,7 @@ export const ProjectFullVideoSection = global.ProjectFullVideoSection = class ex
 
                 {this.props.videoLink ? (
                     <div className="col-md-12 pr-0 pl-0">
-                        <video width="100%" autoPlay={true} muted={true} loop={true}>
+                        <video width="100%" autoPlay={this.props.autoPlay} muted={this.props.muted} loop={true} controls={this.props.controls}>
                             <source
                                 src={this.props.videoLink || "https://storage.cloud.google.com/ssg-website-images/video/Hailie%204k.mov"}
                                 type="video/mp4"/>
