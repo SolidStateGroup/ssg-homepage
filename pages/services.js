@@ -417,8 +417,8 @@ Our senior team has more than 80 years combined experience in designing and laun
                     <p>We work with a wide range of tools, with a focus on open source technologies.</p>
                   </div>
                     <div className="container-fluid">
-                        <div className="flex-row pt-5">
-                            <div className="justify-content-center col-lg-3 mb-lg-0 mb-4">
+                        <div className="row pt-5">
+                            <div className="col-lg-3 mb-lg-0 mb-4">
                                 <Card
                                   cardLink="https://github.com/Flagsmith/flagsmith"
                                   cardTechnology="JavaScript" cardTechnologyStars="1.8k" cardTechnologyForked="129"
@@ -426,14 +426,14 @@ Our senior team has more than 80 years combined experience in designing and laun
                                   cardText="Flagsmith allows you to manage feature flags and remote config across multiple projects & environments."
                                 />
                             </div>
-                            <div className="justify-content-center col-lg-3 mb-lg-0 mb-4">
+                            <div className="col-lg-3 mb-lg-0 mb-4">
                                 <Card
                                   cardLink="https://github.com/SolidStateGroup/rio" cardTechnology="JavaScript"
                                   cardTechnologyStars="146" cardTechnologyForked="21"
                                   techColourClass="card__technology--yellow" cardTitle="RIO"
                                 />
                             </div>
-                            <div className="justify-content-center col-lg-3 mb-lg-0 mb-4">
+                            <div className="col-lg-3 mb-lg-0 mb-4">
                                 <Card
                                   cardLink="https://github.com/SolidStateGroup/patientview" cardTechnology="Java"
                                   cardTechnologyStars="8" cardTechnologyForked="1"
@@ -441,7 +441,7 @@ Our senior team has more than 80 years combined experience in designing and laun
                                   cardText={'PatientView shows patients\' latest test results plus information about their diagnosis and treatment.'}
                                 />
                             </div>
-                            <div className="justify-content-center col-lg-3">
+                            <div className="col-lg-3">
                                 <Card
                                   cardLink="https://github.com/open-feature/python-sdk" cardTechnology="Python"
                                   cardTechnologyStars="3" cardTechnologyForked="3"
