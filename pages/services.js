@@ -439,6 +439,14 @@ Our senior team has more than 80 years combined experience in designing and laun
                                   cardText={'PatientView shows patients\' latest test results plus information about their diagnosis and treatment.'}
                                 />
                             </div>
+                            <div className="justify-content-center col-md-4">
+                                <Card
+                                  cardLink="https://github.com/open-feature/python-sdk" cardTechnology="Python"
+                                  cardTechnologyStars="3" cardTechnologyForked="3"
+                                  techColourClass="card__technology--blue" cardTitle="OpenFeature"
+                                  cardText={'OpenFeature is creating an open standard for feature flag management to support a robust feature flag ecosystem using cloud native technologies.'}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
