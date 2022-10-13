@@ -213,7 +213,7 @@ const TheComponent = class extends Component {
 
                         <ProjectFullVideoSection
                           autoPlay={false} controls muted={false}
-                          className="mb-5" title="High Fidelity Reader Workflow" videoLink="/images/projects/detonator/Noodle Fuel Demo 03 - Audio Balanced.mp4"
+                          className="mb-5" title="High Fidelity Reader Workflow" videoLink="/images/projects/detonator/Noodle-Fuel-Demo-Audio-Balanced.mp4"
                         />
 
                         <ProjectPrototypeSection

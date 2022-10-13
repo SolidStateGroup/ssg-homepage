@@ -18,6 +18,7 @@ const JobsPage = class extends React.Component {
                   <Header/>
                   <div className="container">
                   <h1 className="mt-5">Jobs</h1>
+                    <p className="text-light">We currently have no open vacancies.</p>
                   </div>
               </div>
               <Footer/>
