@@ -87,31 +87,19 @@ const TheComponent = class extends Component {
                           description="We started our discovery process by reviewing any existing children’s wellness products on the market. We found there were quite a few products that focused on specific areas regarding mediation, sleep stories and movement videos, yet none offered the full package."
                         />
 
-                        {/* <ProjectFullImageSection */}
-                        {/*  title="Mapping out the Information Architecture" */}
-                        {/*  imageUrl="/images/projects/detonator/Detonator-IA-large.png" */}
-                        {/*  srcSet="/images/projects/detonator/Detonator-IA-large.png 1x, /images/projects/detonator/Detonator-IA-large@2x.png 2x" */}
-                        {/*  imageAltText="Detonator IA" */}
-                        {/* /> */}
-
                         <ProjectDetailSectionItem
-                          title="Designing the workflows: Web App"
-                          className="flex-row-reverse"
+                          title="Information Architecture"
                           subTitle="Solution"
                           imageOne="/images/projects/the-happy-base/happy-base-4.png"
                           srcSetImageOne="/images/projects/the-happy-base/happy-base-4.png 1x, /images/projects/the-happy-base/happy-base-4@2x.png 2x"
-                          description={'The web app had to take into account 3 user types:\n'
-                            + '\n'
-                            + 'Super User: Responsible for the creation of all entities on the Happy Base platform such as Schools, Activities and Key Stages.\n'
-                            + '\n'
-                            + 'School Administrators: have access to a dashboard that flags when students are not engaging and provides data visualizations around overall School Happiness.\n'
-                            + '\n'
-                            + 'Teachers: have access to a dashboard with recommended activities for their class and information around class activity.'}
+                          description={'There were lots of factors to think about when approaching a problem of this scale. From data transparency to personalised user interfaces for each user type, we had our hands full designing an MVP that would initially target Primary and Prep Schools and children in Key Stage 1 & 2.\n' +
+                            '\n' +
+                            'Once we’d captured the requirements for the MVP, we started to assemble the information architecture and data structures for both the web platforms and mobile applications.'}
                         />
 
                         <ProjectDetailSectionItem
                           title="Designing the workflows: Web App"
-                        // className="flex-row-reverse"
+                        className="flex-row-reverse"
                           subTitle="Solution"
                           imageOne="/images/projects/the-happy-base/happy-base-5.png"
                           srcSetImageOne="/images/projects/the-happy-base/happy-base-5.png 1x, /images/projects/the-happy-base/happy-base-5@2x.png 2x"
@@ -125,7 +113,6 @@ const TheComponent = class extends Component {
 
                         <ProjectDetailSectionItem
                           title="Designing the workflows: Consumer App"
-                          className="flex-row-reverse"
                           subTitle="Solution"
                           imageOne="/images/projects/the-happy-base/happy-base-6.png"
                           srcSetImageOne="/images/projects/the-happy-base/happy-base-6.png 1x, /images/projects/the-happy-base/happy-base-6@2x.png 2x"
@@ -215,14 +202,14 @@ const TheComponent = class extends Component {
 
                     <div className="container">
 
-                        {/*<ProjectFullVideoSection*/}
-                        {/*  autoPlay={false} controls muted={false}*/}
-                        {/*  className="mb-5" title="High Fidelity Prototype" videoLink="/images/projects/detonator/Noodle-Fuel-Demo-Audio-Balanced.mp4"*/}
-                        {/*/>*/}
-
-                        <ProjectPrototypeSection
-                          title="High Fidelity Prototype" prototypeLink="https://www.figma.com/proto/W4lhFV65GmDSJV8Hu19iuZ/HappyBase---UI-Design?page-id=1461%3A15740&node-id=1461%3A19826&viewport=521%2C472%2C0.25&scaling=scale-down&starting-point-node-id=1461%3A19826"
+                        <ProjectFullVideoSection
+                          autoPlay={false} controls muted={false}
+                          className="mb-5" title="High Fidelity Prototype" videoLink="/images/projects/the-happy-base/UI-Video.mp4"
                         />
+
+                        {/*<ProjectPrototypeSection*/}
+                        {/*  title="High Fidelity Prototype" prototypeLink="https://www.figma.com/proto/W4lhFV65GmDSJV8Hu19iuZ/HappyBase---UI-Design?page-id=1461%3A15740&node-id=1461%3A19826&viewport=521%2C472%2C0.25&scaling=scale-down&starting-point-node-id=1461%3A19826"*/}
+                        {/*/>*/}
 
                       {/*TODO*/}
                       {/*  <ProjectTextSection*/}
