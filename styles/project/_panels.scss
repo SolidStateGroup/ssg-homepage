@@ -33,6 +33,10 @@
         box-shadow: none;
     }
 
+    &--gradient-hb {
+        background-image: linear-gradient(180deg, #32356B 0%, #414483 100%);
+    }
+
     &--gradient-sa{
         background-image: linear-gradient(119deg, #1A255B 0%, #0B102E 97%);
     }
