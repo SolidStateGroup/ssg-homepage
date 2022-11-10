@@ -139,6 +139,9 @@
     &--vuunity {
         background-color: #02AEEE;
     }
+    &--happy-base {
+        background-image: linear-gradient(180deg, #32356B 0%, #414483 100%);
+    }
 }
 
 @include media-breakpoint-down(md) {
