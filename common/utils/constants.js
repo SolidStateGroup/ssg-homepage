@@ -47,6 +47,7 @@ const Constants = global.Constants = {
         siteAssist: 'Site Assist | Solid State Group',
         detonator: 'Detonator | Solid State Group',
         theHappyBase: 'The Happy Base | Solid State Group',
+        JohnsonMatthey: 'Johnson Matthey | Solid State Group',
         vuunity: 'Vuunity | Solid State Group',
         pickswise: 'Pickswise | Solid State Group',
         cap10: 'Cap10 | Solid State Group',
