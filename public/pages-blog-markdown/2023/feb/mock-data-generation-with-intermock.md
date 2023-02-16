@@ -4,7 +4,7 @@ description: How is prioritizing data design and generating mock data is heping 
 date: 16-feb-2023
 author: Rashila Pandey
 published: true
-avatar: public/images/blog/rashila.jpg
+avatar: /public/images/blog/rashila.jpg
 image: https://storage.googleapis.com/ssg-website-images/data-design-and-generation-intermock/digital-art.png
 tags: typescipt, data-design
 ---
