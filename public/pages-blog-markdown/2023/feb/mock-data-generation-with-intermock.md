@@ -5,7 +5,7 @@ date: 16-feb-2023
 featured: true
 author: Rashila Pandey
 published: true
-avatar: /public/images/blog/rashila.jpg
+avatar: /images/blog/rashila.jpg
 image: https://storage.googleapis.com/ssg-website-images/data-design-and-generation-intermock/digital-art.png
 tags: typescipt, data-design
 ---
