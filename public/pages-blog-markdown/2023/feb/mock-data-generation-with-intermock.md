@@ -2,6 +2,7 @@
 title: Prioritizing Data Design and Data Generation with Intermock
 description: How is prioritizing data design and generating mock data is heping us in our development process
 date: 16-feb-2023
+featured: true
 author: Rashila Pandey
 published: true
 avatar: public/images/blog/rashila.jpg
