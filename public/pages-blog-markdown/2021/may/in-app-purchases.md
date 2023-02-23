@@ -2,7 +2,6 @@
 title: When to use Apple and Google's in-app purchasing & Subscriptions service.
 description: A quick look at when to use Apple and Google's in-app purchasing & subscriptions offerings when building Apps.
 date: 19-may-2021
-featured: true
 author: Lewis Boodt
 published: true
 avatar: /public/images/blog/lewis.png
