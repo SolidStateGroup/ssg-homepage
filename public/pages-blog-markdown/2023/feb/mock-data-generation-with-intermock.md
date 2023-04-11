@@ -2,7 +2,6 @@
 title: Synchronise your development team by creating a data design in sprint 0
 description: How prioritising data design and generating mock data is helping us in our development process
 date: 23-feb-2023
-featured: true
 author: Rashila Pandey
 published: true
 avatar: /images/blog/rashila.jpg
