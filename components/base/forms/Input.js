@@ -3,6 +3,7 @@
  */
 import cn from 'classnames';
 
+import React from 'react'
 const Input = class extends React.Component {
     static displayName = 'Input'
 

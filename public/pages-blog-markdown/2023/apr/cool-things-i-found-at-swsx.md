@@ -6,7 +6,7 @@ featured: true
 author: Matt Evans
 published: true
 avatar: /images/blog/matt.jpg
-image: https://storage.googleapis.com/ssg-website-images/12%20Cool%20things%20I%20found%20at%20SXSW%202023/PXL_20230311_210108475.MP.jpg
+image: https://storage.googleapis.com/ssg-website-images/12%20Cool%20things%20I%20found%20at%20SXSW%202023/sxsw.jpg
 tags: events
 ---
 
@@ -40,7 +40,7 @@ The most exciting moment though was when Josh was handed what appeared to be a [
 Tim Dodd (Everyday Astronaut), Jack Beyer (Nasa Spaceflight), Ryan Chylinski (Cosmic Perspective) and Jenny Hautmann (Supercluster) gave us a day in the life chasing space launches around the world. No sleep, not eating, the stress of pre-set cameras in restricted zones, it was interesting to hear how and why they do what they do.
 
 ![Tim Dodd the everday astronaut](https://storage.googleapis.com/ssg-website-images/12%20Cool%20things%20I%20found%20at%20SXSW%202023/PXL_20230311_212644210.jpg)
-![Jack Beyer (Nasa Spaceflight), Ryan Chylinski (Cosmic Perspective) and Jenny Hautmann (Supercluster)](https://storage.googleapis.com/ssg-website-images/12%20Cool%20things%20I%20found%20at%20SXSW%202023/PXL_20230311_210108475.MP.jpg)
+![Jack Beyer (Nasa Spaceflight), Ryan Chylinski (Cosmic Perspective) and Jenny Hautmann (Supercluster)](https://storage.googleapis.com/ssg-website-images/12%20Cool%20things%20I%20found%20at%20SXSW%202023/sxsw.jpg)
 
 If you're a bit of a space nerd, check out the talk on the SXSW site
 [https://schedule.sxsw.com/2023/events/PP129993](https://schedule.sxsw.com/2023/events/PP129993)

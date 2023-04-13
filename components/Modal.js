@@ -14,6 +14,7 @@ export const ModalFooter = _ModalFooter;
 export const Modal = _Modal;
 export const ModalBody = _ModalBody;
 
+import React from 'react'
 
 const withModal = (WrappedComponent) => {
     class HOC extends React.Component {

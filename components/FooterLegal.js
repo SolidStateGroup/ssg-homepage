@@ -1,5 +1,6 @@
 import propTypes from 'prop-types';
 
+import React from 'react'
 
 const FooterLegal = class extends React.Component {
     static displayName = 'FooterLegal';

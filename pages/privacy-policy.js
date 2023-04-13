@@ -2,7 +2,6 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Page from '../components/Page';
-
 const PrivacyPage = class extends React.Component {
     static displayName = 'PrivacyPage';
 
