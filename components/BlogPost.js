@@ -1,5 +1,5 @@
 // import propTypes from 'prop-types';
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 import Head from 'next/head';
@@ -18,7 +18,7 @@ export default class BlogPost extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {loading: true};
+        this.state = { loading: true };
     }
 
     componentDidMount() {
@@ -27,12 +27,13 @@ export default class BlogPost extends Component {
         } = parseMarkdown(this.props.source);
 
         API.trackPage(`Post - ${title}`);
-        this.setState({loading: false});
+        this.setState({ loading: false });
     }
 
     renderSEOTags = () => {
         const {
             title,
+            image,
             date,
             description,
             author,
@@ -45,6 +46,7 @@ export default class BlogPost extends Component {
                 {this.props.route && (
                     <link rel="canonical" href={`${Project.canonicalUrl}${this.props.route}`}/>
                 )}
+                <meta property="og:image" content={image || '/images/homepage.png'} />
                 <meta data-rh="true" property="og:site_name" content={Project.siteName}/>
                 <meta data-rh="true" property="og:type" content="article"/>
                 <meta data-rh="true" property="og:title" content={title}/>
@@ -56,9 +58,9 @@ export default class BlogPost extends Component {
                 <meta data-rh="true" property="article:published_time" content={date}/>
                 {typeof window !== 'undefined' && Project.isso && (
                     <script
-                        src="/static/comments.js"
-                        data-isso-require-author="true"
-                        data-isso={Project.isso}
+                      src="/static/comments.js"
+                      data-isso-require-author="true"
+                      data-isso={Project.isso}
                     />
                 )}
                 <title>
@@ -83,7 +85,8 @@ export default class BlogPost extends Component {
                     {this.renderSEOTags()}
                     <div className="hero mx-0 pt-4 pr-4 pb-0 pl-4">
                         <div
-                            className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left">
+                          className="hero__container flex-1 align-self-stretch row flex-row text-center text-md-left"
+                        >
 
                             <div className="col-md-8 offset-md-2 text-center pl-5 pr-5 pt-5">
                                 <h1 className="blog__title mb-4">{title}</h1>
@@ -105,15 +108,15 @@ export default class BlogPost extends Component {
                             </div>
 
                             <div
-                                className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down"
+                              className="flex-1 align-items-center justify-content-center hero__gfx-container hidden-sm-down"
                             />
                         </div>
                     </div>
                     <div className="col-md-6 offset-md-3 mt-5">
                         <div className="blog__content">
                             <ReactMarkdown
-                                escapeHtml={false}
-                                source={content}
+                              escapeHtml={false}
+                              source={content}
                             />
                         </div>
                     </div>
