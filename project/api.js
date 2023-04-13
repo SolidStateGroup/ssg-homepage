@@ -5,6 +5,8 @@ import cookies from 'js-cookie';
 import Project from '../common/project';
 import './libs';
 
+import React from 'react';
+global.React = React;
 const API = {
     ajaxHandler(type, e) {
         return { type, error: e.message };

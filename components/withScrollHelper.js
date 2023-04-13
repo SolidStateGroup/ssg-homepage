@@ -1,3 +1,5 @@
+
+import React from 'react'
 export default (WrappedComponent) => {
     class HOC extends React.Component {
         static displayName = 'withFoo';

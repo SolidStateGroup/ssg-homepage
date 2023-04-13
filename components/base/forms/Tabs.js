@@ -4,6 +4,7 @@
 import { isMobile } from 'react-device-detect';
 import Button from './Button';
 
+import React from 'react'
 const _isMobile = isMobile;
 
 const Tabs = class extends React.Component {

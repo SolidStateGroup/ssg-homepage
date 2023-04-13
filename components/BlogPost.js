@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 import Footer from './Footer';
 import Header from './Header';
 import parseMarkdown from '../common/parse-markdown';
@@ -38,35 +39,41 @@ export default class BlogPost extends Component {
             description,
             author,
         } = parseMarkdown(this.props.source);
+        console.log(image)
         return (
-            <Head>
-                <meta charSet="utf-8"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-                <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
-                {this.props.route && (
-                    <link rel="canonical" href={`${Project.canonicalUrl}${this.props.route}`}/>
+            <>
+                <Head>
+                    <meta charSet="utf-8"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+                    <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
+                    {this.props.route && (
+                        <link rel="canonical" href={`${Project.canonicalUrl}${this.props.route}`}/>
+                    )}
+                    <meta data-rh="true" property="og:site_name" content={Project.siteName}/>
+                    <meta data-rh="true" property="og:type" content="article"/>
+                    <meta data-rh="true" property="og:title" content={title}/>
+                    <meta data-rh="true" property="og:description" content={description}/>
+                    <meta data-rh="true" name="description" content={description}/>
+                    <meta data-rh="true" property="article:author" content={author}/>
+                    <meta data-rh="true" name="author" content={author}/>
+                    <meta data-rh="true" name="robots" content="index,follow"/>
+                    <meta data-rh="true" property="article:published_time" content={date}/>
+                    {typeof window !== 'undefined' && Project.isso && (
+                        <script
+                          src="/static/comments.js"
+                          data-isso-require-author="true"
+                          data-isso={Project.isso}
+                        />
+                    )}
+                    <title>
+                        {title}
+                    </title>
+                </Head>
+                {image && (
+                    <NextSeo openGraph={{ images: [{ url: image }] }}/>
                 )}
-                <meta property="og:image" content={image || '/images/homepage.png'} />
-                <meta data-rh="true" property="og:site_name" content={Project.siteName}/>
-                <meta data-rh="true" property="og:type" content="article"/>
-                <meta data-rh="true" property="og:title" content={title}/>
-                <meta data-rh="true" property="og:description" content={description}/>
-                <meta data-rh="true" name="description" content={description}/>
-                <meta data-rh="true" property="article:author" content={author}/>
-                <meta data-rh="true" name="author" content={author}/>
-                <meta data-rh="true" name="robots" content="index,follow"/>
-                <meta data-rh="true" property="article:published_time" content={date}/>
-                {typeof window !== 'undefined' && Project.isso && (
-                    <script
-                      src="/static/comments.js"
-                      data-isso-require-author="true"
-                      data-isso={Project.isso}
-                    />
-                )}
-                <title>
-                    {title}
-                </title>
-            </Head>
+            </>
+
         );
     }
 
