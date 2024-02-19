@@ -11,6 +11,19 @@ import InfiniteScroll from '../components/InfiniteScroll';
 export const projects = [
     {
         ButtonComponent: ButtonPrimary,
+        projectImage: '/images/projects/built-by-becky/1.png',
+        srcSet: '/images/projects/built-by-becky/1.png 1x, /images/projects/built-by-becky/1@2x.png 2x,',
+        clientImage: '/images/projects/pickswise/built-by-becky-logo.svg',
+        subTitle: 'Responsive Web Application & Mobile App',
+        href: '/projects/built-by-becky',
+        title: 'Helping women feel amazing at any age',
+        blobColour: '#FF6392',
+        tags: ['DESIGN', 'MOBILE', 'WEB', 'API'],
+        projectType: ['UX design, UI design, API Development, Web Application, Mobile App Development'],
+        gaDataLabel: 'work-projects-built-by-becky',
+    },
+    {
+        ButtonComponent: ButtonPrimary,
         projectImage: '/images/projects/pickswise/1.png',
         srcSet: '/images/projects/pickswise/1.png 1x, /images/projects/pickswise/1@2x.png 2x,',
         clientImage: '/images/projects/pickswise/Pickswise-Logo.svg',
