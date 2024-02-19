@@ -88,6 +88,7 @@ ${'\n'}
                         />
 
                         <ProjectTextSection
+                          title="Discovery Phase"
                           subTitle="02 / Solution"
                           description={`We initiated the project with a discovery phase, drawing upon our extensive knowledge of health and fitness apps from previous experience. Our focus was to delve into Becky's specific vision, understanding the distinctive features and strengths she envisioned for her application.
 
@@ -99,9 +100,41 @@ With the defined requirements in place, we identified project milestones and det
                               `}
                         />
 
+                        <ProjectDetailSectionItem
+                          title="Design System"
+                          subTitle="02 / Solution"
+                          imageOne="/images/projects/built-by-becky/design-system.png"
+                          srcSetImageOne="/images/projects/built-by-becky/design-system.png 1x, /images/projects/built-by-becky/design-system.png 2x"
+                          description={`We developed a design system to illustrate how the product would work, at the same time we can use this to help make development more seamless.
+                          Solid State Group have been iterating on a proprietary React Native boilerplate project since Facebook released the technology in 2015, this allowed us to implement the design system quickly.\\n'
+                       `}
+                        />
+                        <ProjectDetailSectionItem
+                          title="Workout Content"
+                          subTitle="02 / Solution"
+                          imageOne="/images/projects/built-by-becky/4.png"
+                          srcSetImageOne="/images/projects/built-by-becky/4.png 1x, /images/projects/built-by-becky/4@2x.png 2x"
+                          description={`We developed a system whereby users could start short and long form exercises as part of a workout or program.${'\n'}
+It was realised early after the initial release we needed more to this, we later added circuits, supersets and tri-sets to let Becky better serve her content.
+`}
+                        />
+                        <ProjectDetailSectionItem
+                          title="Sharing web and mobile functionality"
+                          subTitle="02 / Solution"
+                          imageOne="/images/projects/built-by-becky/1@2x.png"
+                          description="Due to App Store fees and general shareability it was desirable to have a partnering web application where people could subscribe. Our codebase has been developed in a way whereby common functionality can be shared across both platforms saving time and money as well as reducing bugs."
+                        />
+
+                        <ProjectFullImageSection
+                          imageUrl="/images/projects/built-by-becky/bbb-architecture.png"
+                          srcSet="/images/projects/built-by-becky/bbb-architecture.png 1x, /images/projects/built-by-becky/bbb-architecture@2x.png 2x"
+                          imageAltText="Common Architecture"
+                        />
+
+
 
                         <ProjectTextSection
-                          subTitle="05 / Headlines"
+                          subTitle="04 / Headlines"
                           description={`We achieved a successful launch of the new mobile and web app.${'\n'}
 The combination of positive feedback and increasing user engagement has resulted in a strong growing subscriber base, turning Built by Becky into a healthy recurring revenue generating digital business. `}
                         />
