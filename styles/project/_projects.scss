@@ -26,7 +26,10 @@
             }
         }
     }
-    
+
+    &--built-by-becky{
+        background-color: #282A2C;
+    }
     &--hero-wellbeing{
         background-color: #15CBCE;
     }
@@ -95,7 +98,7 @@
     &__client-logo {
         max-width: 280px;
     }
-    
+
 }
 
 .project-bottom-nav {
