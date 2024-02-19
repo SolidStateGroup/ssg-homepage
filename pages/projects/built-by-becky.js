@@ -134,7 +134,7 @@ It was realised early after the initial release we needed more to this, we later
 
 
                         <ProjectTextSection
-                          subTitle="04 / Headlines"
+                          subTitle="03 / Headlines"
                           description={`We achieved a successful launch of the new mobile and web app.${'\n'}
 The combination of positive feedback and increasing user engagement has resulted in a strong growing subscriber base, turning Built by Becky into a healthy recurring revenue generating digital business. `}
                         />
