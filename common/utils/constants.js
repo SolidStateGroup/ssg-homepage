@@ -43,6 +43,7 @@ const Constants = global.Constants = {
         toyota: 'Toyota | Solid State Group',
         zopa: 'Zopa | Solid State Group',
         ladbrokes: 'Ladbrokes Coral | Solid State Group',
+        builtByBecky: 'Built by Becky | Solid State Group',
         heroWellbeing: 'Hero Wellbeing | Solid State Group',
         siteAssist: 'Site Assist | Solid State Group',
         detonator: 'Detonator | Solid State Group',
